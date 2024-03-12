@@ -1,0 +1,29 @@
+history:
+  -
+    version:  v1.3.6
+    codename: NAB-teaser-6
+    note:     video thumbs
+  -
+    version:  v1.3.5
+    codename: NAB-teaser-5
+    note:     most demo outlines in place
+  -
+    version:  v1.3.4
+    codename: NAB-teaser-4
+    note:     fixed HTML typos, more content on demo pages
+  -
+    version:  v1.3.3
+    codename: NAB-teaser-2
+    note:     autobuild with CI/CD
+  -
+    version:  v1.3.2
+    codename: NAB-teaser-1
+    note:     autobuild with CI/CD
+  -
+    version:  v1.3.1
+    codename: Christmas 2023
+    note:     results of IBC and links to demos
+  -
+    version:  v1.3.0
+    codename: IBC-2023
+    note:     IBC content for the show

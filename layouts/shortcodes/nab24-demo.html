@@ -1,0 +1,51 @@
+{{/* --- nab24-card -----------------------------------------------------------
+
+Load yaml from data/nab2024 and use the `demo` object to render the cards
+
+*/}}
+
+{{- $demoId := .Get 0 -}}
+{{- $demoIndex := (math.Sub $demoId 1) -}}
+{{- $demoPartial := printf "nab2024/%02d-demo" $demoId -}}
+{{- $cOuter := "purple" -}}
+{{- $cDescription := "orange" -}}
+{{- $cDemo := "blue" -}}
+{{- $title := "none" -}}
+{{- $meta := "none" -}}
+{{- $img := "none" -}}
+
+{{ with collections.Index $.Site.Data.nab2024.demo ($demoIndex) }}
+{{- $title = .title | markdownify -}}
+{{- $meta = .meta | markdownify -}}
+{{- $img = .imageUrl -}}
+{{end}}
+<div class="ui purple segment">
+  <div class="ui grid">
+    <div class="middle aligned row">
+      <div class="four wide column">
+        <h1>
+          <div class="header">{{ $title }}</div>
+        </h1>
+      </div>
+      <div class="twelve wide column">
+        <div class="meta">{{ $meta }}<small>(( logos and sponsors go here))</small></div>
+      </div>
+    </div>
+  </div>
+
+  {{/* -------------------------------------------------------------------- */}}
+  <div class="ui {{$cDescription}} segment" style="background-color:#fef6f1;">
+    <a class="tiny left floating ui {{$cDescription}} label">
+      <h4>{{$demoId}}</h4>
+    </a>
+    <div class="description">
+      <img src="{{ $img }}" class="ui left floated tiny image" />
+      {{- .Inner | markdownify -}}
+    </div>
+  </div>
+  {{/* -------------------------------------------------------------------- */}}
+  <div class="ui {{$cDemo}} segment">
+    {{ partial $demoPartial (dict "demoPartial" $demoPartial) }}
+    {{/* $demoPartial */}}
+  </div>
+</div>

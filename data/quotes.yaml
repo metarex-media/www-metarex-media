@@ -1,0 +1,36 @@
+quotes:
+# this is the start of a quote
+  - use:        yes
+    anonymous:  yes
+    id:
+    text: |
+      This is an example of some long text that can span multiple lines
+      and ends on an indented line.
+    name:
+    role:
+    affiliation:
+    imgUrl:
+
+# this is the start of a quote
+  - use:        no
+    anonymous:  yes
+    id:         bruce-generic
+    text: |
+      This is an example of some long text that can span multiple lines
+      and ends on an indented line.
+    name:        Bruce Devlin
+    role:        Executive Director
+    affiliation: Metarex.media
+    date:
+    imgUrl:
+
+# this is the start of a quote
+  - use:        yes
+    anonymous:  yes
+    text: |
+      This is an example of some long text that can span multiple lines
+      and ends on an indented line.
+    name:
+    role:
+    affiliation:
+    imgUrl:

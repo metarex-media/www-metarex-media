@@ -1,0 +1,28 @@
+{{/* f/message ----------------------------------------------------------------
+
+Usage
+=====
+- {{% f/message "header" "description" "image/url.png" "ui message" %}}
+
+- {{% f/message
+-------- header = "Some heading text"
+--- description = "Some body text"
+----------- src = "image/url.svg"
+--------- class = "ui red message"
+%}}
+
+examples
+========
+- {{% f/message "Announcements" "none" %}}
+
+-------------------------------------------------------------------------- */}}
+{{- $header := .Get 0 -}}
+{{- with .Get "header" }}{{ $header = . }}{{- end -}}
+{{- $description := .Get 1 -}}
+{{- with .Get "description" }}{{ $description = . }}{{- end -}}
+{{- $src := .Get 2 -}}
+{{- with .Get "src"}}{{ $src = . }}{{- end -}}
+{{- $class := .Get 3 | default "ui message" -}}
+{{- with .Get "class" }}{{ $class = . }}{{- end -}}
+{{/* --------------------------------------------------------------------- */}}
+{{- partial "f/message" (dict "header" $header "description" $description "src" $src "class" $class ) -}}

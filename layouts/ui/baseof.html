@@ -1,0 +1,44 @@
+<!doctype html>
+{{ `<!-- mrx ui/baseof.html -->` | safeHTML }}
+<html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="{{ with .Page.Params.body_class }} {{ . }}{{ end }}">
+  <div class="ui wide container">
+    <header>
+      {{ partial "navbar.html" . }}
+    </header>
+  </div>
+
+  <div class="ui wide container">
+    <div class="ui grid">
+      <div class="row">
+        <div class="eight wide column">
+          <main role="main" class="ui main">
+          {{ partial "version-banner.html" . }}
+          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+          {{ block "main" . }}{{ end }}
+        </main>
+        </div>
+        <div class="eight wide column">
+          <div class="ui segment">
+            <div class="ui message">
+              <div id="mrx-reg-header" class="header">reg query ...</div>
+            </div>
+            <div id="mrx-reg-response">Register query in progress</div>
+            <div id="mrx-reg-help"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+  </div>
+  {{ partial "body_scripts.html" . }}
+</body>
+
+</html>

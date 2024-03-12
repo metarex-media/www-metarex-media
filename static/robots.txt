@@ -1,0 +1,9 @@
+# Block GPTbot
+User-agent: GPTbot
+Disallow: /
+
+# Allow others
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /a/

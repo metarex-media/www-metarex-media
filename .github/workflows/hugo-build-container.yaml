@@ -1,0 +1,173 @@
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Build Metarex staging website to container
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+      - rc
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# global environment
+env:
+  REPO: mrmxf
+  IMAGE: mrx-website
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages:    write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run
+# in-progress and latest queued. However, do NOT cancel in-progress runs as we
+# want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  bark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bark some context vairables
+        run: |
+          printf "GitHub workflow\n"
+          printf "Hub: %19s  %s" "whoami\n"               "$(whoami)"
+          printf "Hub: %19s  %s" "pwd\n"                  "$(pwd)"
+          printf "Hub: %19s  %s" "PATH\n"                 "$PATH"
+          printf "Hub: %19s  %s" "github.actor\n"         "${{ github.actor }}"
+          printf "Hub: %19s  %s" "github.ref\n"           "${{ github.ref }}"
+          printf "Hub: %19s  %s" "github.head_ref\n"      "${{ github.head_ref }}"
+          printf "Hub: %19s  %s" "github.repository\n"    "${{ github.repository }}"
+          printf "Hub: %19s  %s" "github.workspace\n"     "${{ github.workspace }}"
+          printf "Hub: %19s  %s" "github.server_url\n"    "${{ github.server_url }}"
+          printf "Hub: %19s  %s" "runner.temp\n"          "${{ runner.temp }}"
+          echo ""
+
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    needs: bark
+    env:
+      HUGO_VERSION: 0.123.2
+      BASE_URL: "https://staging.metarex.media/"
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      -
+        name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: '${{ github.workspace }}/go.mod'
+      -
+        name: Install Hugo CLI
+        run: |
+          wget -O \
+             ${{ runner.temp }}/hugo.deb \
+             https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      -
+        name: Install Dart Sass
+        run: sudo snap install dart-sass
+      -
+        name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      -
+        name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "$BASE_URL/"
+      -
+        name: Get website version
+        run: |
+              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]+')
+              echo "pushing website version $vCODE"
+              echo "export vCODE=$vCODE"  >> job-chain.sh
+      -
+        name: Check website version persists
+        run: |
+              echo "website version check is $vCODE"
+      -
+        name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name:  www-metarex-media
+          path: |
+                ./public
+                Dockerfile
+                job-chain.sh
+          if-no-files-found: error
+          retention-days:    1
+
+  # Deployment job
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment: staging
+    steps:
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USR }}
+          password: ${{ secrets.DOCKER_PWD }}
+      -
+        name: Restore artifact
+        uses: actions/download-artifact@v4
+        with:
+          name:   www-metarex-media
+
+      -
+        name: Check website & set version
+        run: |
+              source job-chain.sh
+              echo "Deploying website version ($vCODE)"
+              echo "vCODE=$vCODE" >> $GITHUB_ENV
+              echo "website version is: $vCode"
+              echo "pushing to hub: ${{ env.REPO  }}/${{ env.IMAGE  }}:$vCODE"
+              ls -al ./public
+              echo "--- Dockerfile -------------------------------------------"
+              cat Dockerfile
+      -
+        name: Check env visibility
+        run: |
+              echo "BEFORE source     vCode=($vCODE)"
+              echo "BEFORE source env.vCode=($env.vCODE)"
+              source job-chain.sh
+              echo " AFTER source     vCode=($vCODE)"
+              echo " AFTER source env.vCode=($env.vCODE)"
+      -
+        name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          # important that we use path context otherwise no output!
+          context:   .
+          push:      true
+          tags: |
+                "${{ env.REPO  }}/${{ env.IMAGE  }}:${{ env.vCODE }}"
+          platforms: linux/amd64,linux/arm64

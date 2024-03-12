@@ -1,0 +1,43 @@
+{{/*
+Render a link to a named page resource.
+
+Usage [optional-params]:
+{{< resource/listByGroup "GroupName">}}
+
+  FrontMatter:
+  resources:
+  - src: presskit.zip
+  title: Press kit
+  params:
+  icon: archive
+  download: true
+  - src: presstext.pdf
+  title: Press text
+  params:
+  icon: pdf
+  download: true
+
+  */}}
+  {{ $group := .Get 0 }}
+  {{ if .IsNamedParams }}{{ $group := .Get "group" }}{{ end }}
+  <div class="ui relaxed divided selection list">
+    {{ range $.Page.Params.Resources }}
+    {{ if eq .params.group $group }}
+    {{ $icon := .params.icon | default "file" }}
+    <div class="item">
+      <i class="large {{ $icon }} middle aligned icon"></i>
+      <div class="content">
+        <a class="header" href="{{ .src }}">{{ .title }}</a>
+        <div class="description">
+          {{ .params.description }}
+          {{ if and .src .params.description}}<br />{{ end }}
+          <a href="{{ .src }}">
+            <i class="linkify middle aligned icon"></i>
+            {{ .src }}
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>

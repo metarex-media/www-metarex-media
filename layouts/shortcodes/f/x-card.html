@@ -1,0 +1,51 @@
+{{/* fomantic-ui card plain
+
+    Usage:
+    {{% card
+        id="cardID anchors"
+        description="Body Text or omitted"
+        src="image/url/or/omitted"
+        srcId="media-id"
+        mediaClass="mini | small | medium etc"
+        header="Header in bold or omitted"
+        meta="Meta below heading or omitted"
+    %}}
+*/}}
+{{ $src := .Get "src"                                                         }}
+{{ $id        := .Get "id"                                                    }}
+{{ $ext       := path.Ext $src                                                }}
+{{ $srcIs     := cond (eq $ext ".mp4") "video" "image"                        }}
+{{ $class := "ui  card"                                                       }}
+<div class="{{ $class }}">
+{{ if .Get "src"                                                              }}
+{{   $mediaClass := .Get "mediaClass"                                         }}
+{{   if eq $srcIs "video"}}
+  <video class="ui image" autoplay loop>
+    <source src="/meeja/mrx-rexy-nab-2023.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+{{   else}}
+  <div class="image">
+    <img class="{{ $mediaClass }} ui image" src="{{ $src }}"/>
+  </div>
+  {{   end                                                                    }}
+{{ end                                                                        }}
+  <div class="content">
+{{ if .Get "header"                                                           }}
+    <div class="header">
+      {{- .Get "header" | markdownify -}}
+    </div>
+{{ end                                                                        }}
+{{ if .Get "meta"                                                             }}
+    <div class="meta"><span class="category">
+      {{- .Get "meta" | markdownify -}}
+    </span></div>
+{{ end                                                                        }}
+{{ if  or ( .Get "description" ) (.Inner)                                     }}
+    <div class="description">
+      {{- .Get "description" -}}{{if strings.Contains .Inner "<div"
+    }}{{- .Inner -}}{{else}}{{- .Inner | markdownify -}}{{end}}
+    </div>
+{{ end                                                                        }}
+  </div>
+</div>

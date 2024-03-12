@@ -1,0 +1,32 @@
+# hugo gitignore
+
+# ignore synthesised outputs
+public/
+resources/
+static/rnf/
+
+# ignore npm or yarn generated postcss source files
+node_modules/
+package-lock.json
+yarn.lock
+
+# ignore the hugo & mrmxf build artifacts
+.hugo_build.lock
+clogrc/core
+
+# ignore the tmp folder but not the readme inside it
+tmp/*
+!tmp/readme.md
+
+#ignore mac cruft
+**/*/.DS_Store
+.DS_Store
+# IDE files
+.idea
+
+# VS Code
+/.vscode/**
+!/.vscode/cspell.json
+# vim temporary files
+*~
+*.sw?
