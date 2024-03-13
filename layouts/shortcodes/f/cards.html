@@ -1,0 +1,12 @@
+{{/* simple wrapper to embed cards
+*/}}
+{{ $class := .Get "class" | default "ui link cards" }}{{/* ---------------- */}}
+<div class="ui centered grid">
+  <div class="row">
+    <div class="basic padded segment">
+      <div class="{{- $class -}}">
+        {{- .Inner -}}
+      </div>
+    </div>
+  </div>
+</div>

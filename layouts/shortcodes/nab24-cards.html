@@ -1,0 +1,25 @@
+{{/* --- nab24-cards -----------------------------------------------------------
+
+Load yaml from data/nab2024 and use the `demo` object to render the cards
+
+*/}}
+<div class="ui link cards"></div>
+{{ range collections.Index $.Site.Data.nab2024.demo }}
+<div class="card">
+  {{/* --- image / video --------------------------------------------------*/}}
+  <div class="image" style="background-color:#DDDD;">
+    <img src="{{ .imageUrl }}" />
+  </div>
+  {{/* --- content of card ------------------------------------------------*/}}
+  <div class="attached content">
+    {{/* --- header with link ---------------------------------------------*/}}
+    <div class="header"><a href="{{ .detailUrl }}/">{{ .title  | markdownify }}</a></div>
+    <div class="meta">{{ .description | markdownify }}</div>
+    <div class="description">{{ .body | markdownify }}</div>
+    <div class="ui basic purple bottom attached small button" onclick="window.location.href='{{ .detailUrl }}/'">
+      Go To Demo
+    </div>
+  </div>
+</div>
+{{end}}
+</div>

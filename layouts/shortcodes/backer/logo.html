@@ -1,0 +1,34 @@
+{{/*
+insert a logo into the logo wall shortcode
+
+parameters
+$name: uses image "$name-logo.xxx" in static/img/backer
+$title: text below logo. Uses $nasme if missing
+$height: used to force a height - default is 100px
+$url: if present then a url to a new page is made
+example:
+{{< backer/logo name="mrmxf">}}
+  */}}
+  {{ $name := .Get "name" | default "missing" }}
+  {{ $HH := .Get "height" | default "100" }}
+  {{ $WW := (mul (float $HH) 1.5) }}
+  {{ $title := .Get "title" | default $name }}
+
+  {{ $ext :="" }}
+  {{ $fileUrl := (printf "/img/backer/%s-logo" $name) }}
+  {{ if os.FileExists (printf "static/%s.jpg" $fileUrl )}}{{ $ext =".jpg"}}{{end}}
+  {{ if os.FileExists (printf "static/%s.png" $fileUrl )}}{{ $ext =".png"}}{{end}}
+  {{ if os.FileExists (printf "static/%s.svg" $fileUrl )}}{{ $ext =".svg"}}{{end}}
+
+  {{ $fileUrl := (printf "%s%s" $fileUrl $ext) }}
+  {{ if eq $ext "" }}{{ $fileUrl = "/img/backer/missing-logo.svg" }}{{end}}
+
+  {{ $logo := resources.Get $fileUrl }}
+
+  <div style="display:inline-block;text-align:center;padding:1em;margin:auto;">
+    {{ if .Get "url" }}<a href='{{ .Get "url" }}' target='_blank'>{{ end }}
+      <img src="{{ $fileUrl }}" style="height:{{ $HH }}px;width:{{ $WW }}px;object-fit:contain;" />
+      <p style="font-size:70%;">{{ $title }}</p>
+      {{ if .Get "url" }}
+    </a>{{ end }}
+  </div>

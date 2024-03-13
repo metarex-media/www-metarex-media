@@ -1,0 +1,9 @@
+{{/*
+  insert a section logo into the logo wall shortcode
+
+  example:
+    {{< backer/section name="Partner" >}}
+*/}}
+{{ $name        := .Get "name"   | default "missing"                          }}
+
+<div class="ui olive message"><div class="header">{{ $name }}</div></div>

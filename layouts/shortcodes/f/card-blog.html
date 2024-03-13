@@ -1,0 +1,47 @@
+{{/*
+    Shortcode to create a latest blog card with the featured media on the RIGHT.
+    wordcoutn assumes 220 words/minute
+*/}}
+{{ $title  := "None"       }}
+{{ $url     := ""          }}
+{{ $urltgt  := ""          }}
+{{ $src   := ""          }}
+{{ $summary := ""          }}
+{{ $link    := ""          }}
+{{ $duration := ""         }}
+{{ range first 3 ( where .Site.Pages "Type" "blog"  ) | last 1                }}
+  {{ $url      = .RelPermalink                                                 }}
+  {{ $urltgt   = "_self"                                                       }}
+  {{ $title    = .LinkTitle                                                    }}
+  {{ $featured  := (.Resources.ByType "image").GetMatch "*featured*"           }}
+  {{ $src    = $featured.RelPermalink                                        }}
+  {{ $summary  = .Plain | safeHTML | truncate 300                              }}
+  {{ $minutes := add ( div ( countwords  .Plain ) 220 ) 1                      }}
+  {{ $duration = printf "~%v min read" $minutes                                }}
+  {{  $link    = .RelPermalink                                                 }}
+{{ end                                                                        }}
+{{ $ext       := path.Ext $src                                              }}
+{{ $srcIs   := cond (eq $ext ".mp4") "video" "image"                        }}
+<div class="ui card">
+{{   with $src }}
+{{     if eq $srcIs "video"}}
+    <video class="ui image" autoplay loop>
+      <source src="{{ $src }}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <figcaption class="mt-2 mt-md-0"><small class="text-muted">{{ . | html }}</small></figcaption>
+{{     else                                                                   }}
+    <a href="{{ $link }}"><img class="ui centered image" src="{{ $src }}" /></a>
+{{   end                                                                      }}
+{{ end                                                                        }}
+  <div class="content">
+    <div class="header"><a href="{{ $link }}">{{ $title }}</a></div>
+    <div class="meta">
+      <span class="category"></span>{{ $duration }}</span>
+    </div>
+    <div class="description">
+      {{ $summary }}
+      <a href="{{ $link }}" aria-label="{{ T "ui_read_more"}} - {{ $title }}">{{ T "ui_read_more"}}</a>
+    </div>
+  </div>
+  </div>

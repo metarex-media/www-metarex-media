@@ -1,0 +1,125 @@
+variables:
+  vGOLANG: 1.21
+  vHUGO: 0.122.0
+  vDART: 1.70.0
+  vNDOE: 20.x
+  GIT_DEPTH: 0
+  GIT_STRATEGY: clone
+  GIT_SUBMODULE_STRATEGY: recursive
+  TZ: Europe/London
+  PROJECT: www-metarex-media
+  REPO:    mrmxf
+
+stages:
+  - bark
+  - hugo
+  - docker
+  - test
+  - deploy
+  - hook
+
+default:
+  image: golang:1.20.6-bookworm
+
+bark:
+  stage: bark
+  script:
+    - printf "GitLab pipeline\n===============\n"
+    - printf "Lab %19s  %s" "\$GITLAB_USER_ID"                      "$GITLAB_USER_ID"
+    - printf "Lab %19s  %s" "\$CI_COMMIT_BRANCH"                    "$CI_COMMIT_BRANCH"
+    - printf "Lab %19s  %s" "\$GITLAB_USER_LOGIN"                   "$GITLAB_USER_LOGIN"
+
+    - echo ""
+    - printf "Lab %19s  %s" "\$GITLAB_USER_EMAIL"                   "$GITLAB_USER_EMAIL"
+    - printf "Lab %19s  %s" "\$GITLAB_USER_NAME"                    "$GITLAB_USER_NAME"
+    - printf "Lab %19s  %s" "\$CI_PIPELINE_SOURCE"                  "$CI_PIPELINE_SOURCE"
+    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_ID"                 "$CI_MERGE_REQUEST_ID"
+    - printf "Lab %19s  %s" "\$GITLAB_USER_LOGIN"                   "$GITLAB_USER_LOGIN"
+    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_APPROVED"           "$CI_MERGE_REQUEST_APPROVED"
+    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_LABELS"             "$CI_MERGE_REQUEST_LABELS"
+    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_REF_PATH"           "$CI_MERGE_REQUEST_REF_PATH"
+    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+    - printf "Lab %19s  %s" "\$CI_BUILDS_DIR"                       "$CI_BUILDS_DIR"
+    - printf "Lab %19s  %s" "\$CI_COMMIT_DESCRIPTION"               "$CI_COMMIT_DESCRIPTION"
+    - printf "Lab %19s  %s" "\$CI_COMMIT_TAG"                       "$CI_COMMIT_TAG"
+    - printf "Lab %19s  %s" "\$CI_JOB_STAGE"                        "$CI_JOB_STAGE"
+    - printf "Lab %19s  %s" "\$CI_JOB_TOKEN"                        "$CI_JOB_TOKEN"
+    - printf "Lab %19s  %s" "\$CI_PIPELINE_NAME"                    "$CI_PIPELINE_NAME"
+    - printf "Lab %19s  %s" "\$CI_PROJECT_DIR"                      "$CI_PROJECT_DIR"
+    - printf "Lab %19s  %s" "\$CI_PROJECT_PATH"                     "$CI_PROJECT_PATH"
+    - printf "Lab %19s  %s" "\$CI_RUNNER_VERSION"                   "$CI_RUNNER_VERSION"
+    - printf "Lab %19s  %s" "\$CI_SERVER"                           "$CI_SERVER"
+    - printf "Lab %19s  %s" "\$KUBECONFIG"                          "$KUBECONFIG"
+    - echo ""
+
+
+build-pages:
+  stage: hugo
+  image: golang:1.20.6-bookworm
+  script:
+    # Install brotli
+    - apt-get update
+    - apt-get install -y brotli
+    # Install Dart Sass
+    - curl -LJO https://github.com/sass/dart-sass/releases/download/${vDART}/dart-sass-${vDART}-linux-x64.tar.gz
+    - tar -xf dart-sass-${vDART}-linux-x64.tar.gz
+    - cp -r dart-sass/ /usr/local/bin
+    - rm -rf dart-sass*
+    - export PATH=/usr/local/bin/dart-sass:$PATH
+    # Install Hugo
+    - curl -LJO https://github.com/gohugoio/hugo/releases/download/v${vHUGO}/hugo_extended_${vHUGO}_linux-amd64.deb
+    - apt-get install -y ./hugo_extended_${vHUGO}_linux-amd64.deb
+    - rm hugo_extended_${vHUGO}_linux-amd64.deb
+    # Install Node.js
+    - curl -fsSL https://deb.nodesource.com/setup_${vNDOE} | bash -
+    - apt-get install -y nodejs
+    # Install Node.js dependencies
+    - "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+    # Build
+    - hugo --gc --minify
+    # Compress
+    - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec gzip -f -k {} \;
+    - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec brotli -f -k {} \;
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+
+
+build-docker:
+  stage: docker
+  needs: [build-pages]
+  script:
+    - echo "$GITLAB_USER_LOGIN - build the Docker image(s)"
+
+test-job1:
+  stage: test
+  needs: [build-docker]
+  script:
+    - echo "Should probably test something here"
+
+test-job2:
+  stage: test
+  needs: [build-docker]
+  script:
+    - echo "This job tests something else, but takes more time than test-job1."
+    - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
+    - echo "which simulates a test that runs 20 seconds longer than test-job1"
+    - sleep 20
+
+deploy-prod:
+  stage: deploy
+  needs: [test, test2]
+  script:
+    - echo "push the image to docker"
+    - docker login -u $DOCKER_USR --password-stdin <<<$DOCKER_PWD
+    - docker image ls mrmxf/www-metarex-media
+    - echo push to the image repo
+  environment: production
+
+hook-website:
+  stage: hook
+  needs: [deploy-prod]
+  script:
+    - echo "fire the hook to the wesbite"
