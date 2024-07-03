@@ -3,7 +3,13 @@
 # ignore synthesised outputs
 public/
 resources/
+static/r
 static/rnf/
+#ignore the apps deployed here
+static/app/demos/
+svelte/demos/static/r
+svelte/demos/static/build
+svelte/demos/static/.svelte-kit
 
 # ignore npm or yarn generated postcss source files
 node_modules/
@@ -18,15 +24,17 @@ clogrc/core
 tmp/*
 !tmp/readme.md
 
+
 #ignore mac cruft
 **/*/.DS_Store
 .DS_Store
 # IDE files
 .idea
 
-# VS Code
-/.vscode/**
+# VS Code - keep these
+#/.vscode/**
 !/.vscode/cspell.json
+
 # vim temporary files
 *~
 *.sw?

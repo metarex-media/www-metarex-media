@@ -9,7 +9,8 @@ let mrxReg = {
     $(mrxReg.div).html(`<div id=""waiting...`)
 
     $.ajax({
-      url: `/reg/${regId}/register.json`,
+      //url: `/reg/${regId}/register.json`
+      url: `/reg/${regId}`,
       type: 'GET',
       cache: false,
       success: function (result) {

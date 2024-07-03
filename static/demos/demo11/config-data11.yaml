@@ -1,0 +1,16 @@
+source:
+  - id:  beach
+    metarexId: "MRX.123.456.789.abc"
+    url: /meeja/mrx1-beach.mp4
+  - id:  fire
+    metarexId: "MRX.123.456.789.abc"
+    url: /meeja/mrx2-fire.mp4
+  - id:  roar
+    metarexId: "MRX.123.456.789.abc"
+    url: /meeja/mrx3-roar.mp4
+  - id:  fish
+    metarexId: "MRX.123.456.789.abc"
+    url: /meeja/mrx4-fish.mp4
+  - id:  how?
+    metarexId: "MRX.123.456.789.abc"
+    url: /meeja/mrx5-explainer.mp4

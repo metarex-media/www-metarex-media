@@ -17,6 +17,7 @@
   },
   "homepage": "https://metarex.media",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0"

@@ -1,0 +1,11 @@
+{{/* Print the bare clause number */}}
+{{- $h1 := (.Page.Scratch.Get "H1") | int -}}
+{{- $h2 := (.Page.Scratch.Get "H2") | int -}}
+{{- $h3 := (.Page.Scratch.Get "H3") | int -}}
+{{- $h4 := (.Page.Scratch.Get "H4") | int -}}
+{{- $h5 := (.Page.Scratch.Get "H5") | int -}}
+{{- $h6 := (.Page.Scratch.Get "H6") | int -}}
+{{- $_ := (.Page.Scratch.Get "Hseparator") -}}
+{{- $pfx := (.Page.Scratch.Get "Hprefix") -}}
+{{- $sfx := (.Page.Scratch.Get "Hsuffix") -}}
+{{- printf "%s%v%s%v%s%s" $pfx $h1 $_ $h2 $_ $sfx -}}

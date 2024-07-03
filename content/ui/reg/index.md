@@ -2,9 +2,7 @@
 title:     "Register"
 linkTitle: "/ui/reg/"
 weight: 80
-menu:
-  main:
-    weight: 100
+
 DEBUG: false
 # js can be `src`=file and/or inlined from assets/js
 js:

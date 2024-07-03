@@ -1,0 +1,49 @@
+{{/* fomantic-ui donation card */}}
+{{- $c := .Get 0 }}
+{{ $d := index $.Page.Params $c }}
+{{ $value := index $d "value"}}
+{{ $title := index $d "title"}}
+{{ $description := index $d "description"}}
+{{ $url :=index $d "url"}}
+{{ $src :=index $d "src"}}
+{{ $id := printf "donate-%d" $.Ordinal }}
+{{ $ext := path.Ext $src }}
+{{ $srcIs := cond (eq $ext ".mp4") "video" "image" }}
+<div class="center aligned column">
+  <div class="ui card">
+    {{ if $src }}
+    {{ if eq $srcIs "video"}}
+    <video class="ui image" autoplay loop>
+      <source src="{{$src}}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    {{ else}}
+    <div class="image">
+      <img class="ui medium image" src="{{ $src }}" />
+    </div>
+    {{ end }}{{/* else - image */}}
+    {{ end }}{{/* is $src */}}
+
+    <div id="donate-button-container">
+      <div id="{{$id}}"></div>
+      <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+      <script>
+      PayPal.Donation.Button({
+      env:'production',
+      hosted_button_id:'G9KTZLXM8P59A',
+      image: {
+      src:'https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif',
+      alt:'Donate with PayPal button',
+      title:'PayPal - The safer, easier way to pay online!',
+      }
+      }).render('#{{$id}}');
+      </script>
+      </div>
+
+    <div class="content">
+      {{ with $title }}<div class="header">{{- . | markdownify -}}</div>{{ end }}
+      {{ with $description }}
+      <div class="description">{{- . | markdownify -}}</div>{{ end }}
+    </div>
+  </div>
+</div>
