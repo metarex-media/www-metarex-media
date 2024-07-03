@@ -2,6 +2,7 @@
 #hidden
 draft: true
 
+type:        docs
 title:       "Work Packages"
 linkTitle:   "Work Packages"
 weight:      200

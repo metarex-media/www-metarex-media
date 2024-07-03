@@ -2,6 +2,7 @@
 title:       "Free Software"
 linkTitle:   "Free Software"
 weight:      300
+type:        docs
 description: What software can you expect from Metarex.
 categories: ["Backer"]
 tags: ["backer"]

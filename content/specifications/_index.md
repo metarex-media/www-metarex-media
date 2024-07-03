@@ -1,28 +1,46 @@
 ---
 title:       Specifications
 linkTitle:   Specifications
+date:        2024-07-03
 weight:      30
+type:       docs
 description: How does metarex.media work under the hood?
 ---
 
-{{% pageinfo %}}
-
-Wrap all metadata in a standardized container with a standardized identifier and
-a standardized timing model then link it all to a register that reveals a
-manifest of the container contents.
-
-{{% /pageinfo %}}
+{{< f/message
+    header="Technical Specifications"
+    description="Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
+    src="/img/dino/mrx-logo-0300.png"
+    class="ui center aligned olive message"
+>}}
 
 ### The Metarex Container
 
-Start by reading the [MRX container overview]({{< relref
-"container-overview.md">}}) that leads you through how we chose the container
-amongst the many available. From that point, you can read the detailed spec of
-the [MRX container specification]({{< relref "mrx-container-wip.md" >}})  as it exists today. It it work in progress
-and there may be further detailed discussions in the metarex
-[GitHub](https://github.com/metarex-media/mrx-container) repository.
+Start by reading the [MRX container introduction][01] that leads you through the
+container design choices amongst the many containers available. From that
+point, you can read the detailed spec of the [MRX container][02] in its
+work-in-progress status. There may be further detailed discussions in the
+metarex [GitHub][03] repository's [issues][03] section.
 
-[ARRI Broadcast Day]: /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
-[MXF profile]:        /docs/technology/metarex-mxf-2022/           "Metarex MXF Profile"
-[MXF-live profile]:   /docs/reference/mxf-live-2019/               "MXF Live Profile"
-[SMPTE ST 377-2]:     https://doi.org/10.5594/SMPTE.ST377-2.2019   "MXF KXS"
+There's also the easy-access [White Paper blog from 2024][04].
+
+### The Metarex Register
+
+The register converts a `metarexId` e.g. [MRX.123.456.789.reg][id] into a set
+of links where you can find information and services related to that metadata
+type.
+
+The specification for the JSON that is returned from a [register query][12]
+has the `metarexId` [MRX.123.456.789.reg][id]. You can use the [web app][10]
+to browse the register or to add your own content (registration required) or
+you can inspect the register using the API [here][11].
+
+[01]: /specifications/introduction/
+[02]: /specifications/mrx-container-spec/
+[03]: https://github.com/metarex-media/mrx-container/issues
+[04]: /blog/2024/03/21/2024-03-25-white-paper-blog/
+
+[10]: /app/reg/
+[11]: /reg/
+[12]: https://metarex.media/app/reg/search
+[id]: https://metarex.media/app/reg/search?qry=reg&mrxId=MRX.123.456.789.reg

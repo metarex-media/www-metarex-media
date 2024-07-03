@@ -1,7 +1,8 @@
 ---
-title:       Container
-linkTitle:   Container
-weight:      30
+title:       Introduction
+linkTitle:   Introduction
+date:        2024-06-17
+weight:      10
 description: How does metarex.media work under the hood?
 ---
 
@@ -88,6 +89,6 @@ Some desires of the final {{% metarex %}} MXF profile:
   377-2]).
 
 [ARRI Broadcast Day]: /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
-[MXF profile]:        /docs/technology/metarex-mxf-2022/           "Metarex MXF Profile"
-[MXF-live profile]:   /docs/reference/mxf-live-2019/               "MXF Live Profile"
+[MXF profile]:        /specifications/mrx-container-spec/          "Metarex MXF Profile"
+[MXF-live profile]:   /specifications/mxf-live-2019/               "MXF Live Profile"
 [SMPTE ST 377-2]:     https://doi.org/10.5594/SMPTE.ST377-2.2019   "MXF KXS"

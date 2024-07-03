@@ -1,6 +1,8 @@
 ---
 title:     Goals
 linkTitle: Goals
+date:      2022-12-12
+type:        docs
 ---
 {{< f/block id    = "summary" >}}
 <!-- markdownlint-disable MD025 -->

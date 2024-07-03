@@ -107,7 +107,7 @@ text">regular</span>** [backers][b] so that we can finish this phase of
 delivering our [free software][f] and make it production ready for you to use.
 
 [f]: https://github.com/metarex-media
-[b]: /docs/project/backers/
+[b]: /backers/
 
 {{< /f/block >}}
 
@@ -144,10 +144,10 @@ finish line.
 Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
 [W.1931][n]
 
-[b]: /docs/project/backers/
+[b]: /backers/
 [s]: https://signiant.com/
 [n]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
-[b]: /docs/project/backers/
+[b]: /backers/
 
 {{< sitelinks >}}
 {{< /f/block >}}

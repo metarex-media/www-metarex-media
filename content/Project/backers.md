@@ -2,6 +2,7 @@
 title:       "Backers - making it happen"
 linkTitle:   "Backers - making it happen"
 date:        2024-03-26
+type:        docs
 weight:      900
 description: How the Project is Funded.
 categories: ["Backer"]

@@ -8,18 +8,19 @@ title:     Metarex
 linkTitle: Metarex
 ---
 
-
+{{< o/block blockType = "include" src = "project/Archive/IBC2023/IBC-2023-summary.md" >}
+{{< f/cards class = "ui two stackable cards" >}}
 <!-- ###  Row boundary #################################################### -->
 {{< f/row >}}{{< f/cards class = "ui two stackable cards" >}}
 
 {{< f/card-blog 0 >}}
-{{% include "docs/Archive/IBC2023/IBC-2023-summary.md" %}}
+{{% include "project/Archive/IBC2023/IBC-2023-summary.md" %}}
 
 {{< /f/cards >}}{{< /f/row >}}
 <!-- ###  Row boundary #################################################### -->
 {{< f/row >}}{{< f/cards class = "ui two stackable cards" >}}
 
-{{% include "docs/Archive/cards/goals+aims.md" %}}
+{{% include "project/Archive/cards/goals+aims.md" %}}
 {{< f/card-blog 1 >}}
 
 {{< /f/cards >}}{{< /f/row >}}
@@ -27,7 +28,7 @@ linkTitle: Metarex
 <!--  Backer List --------------------------------------------------------  -->
 
 <div class="ui padded center aligned olive segment">
-{{<   include    "docs/Admin/backer-list.md" >}}
+{{<   include    "project/Admin/backer-list.md" >}}
 </div>
 <!-- ###  Row boundary ##################################################### -->
 <!--  Flow chart ----------------------------------------------------------  -->
@@ -39,20 +40,20 @@ linkTitle: Metarex
 <!--  Introduction -------------------------------------------------------  -->
 
 <div class="ui padded olive segment">
-{{<   include    "docs/Project/introduction.md" >}}
+{{<   include    "project/introduction.md" >}}
 </div>
 <!-- ###  Row boundary #################################################### -->
 <!--  Goals --------------------------------------------------------------  -->
 
 <div class="ui padded olive segment">
-{{<   include    "docs/Project/goals.md" >}}
+{{<   include    "project/goals.md" >}}
 </div>
 
 <!-- ###  Row boundary #################################################### -->
 <!--  Videos --------------------------------------------------------------  -->
 
 <div class="ui padded olive segment">
-{{<   include    "docs/Project/videos.md" >}}
+{{<   include    "project/videos.md" >}}
 </div>
 
 <!--  ---------------------------------------------------------------------  -->
@@ -96,7 +97,7 @@ packages that result in:
 The initial backers, company incorpration, board and draft work plan will be in
 place by 2022-12-31. First grant applications & proposals can be received
 against the work plan 2023-01-01. Gantt Chart on the
-[Project]({{< relref "docs/project" >}} "Project")
+[Project]({{< relref "/project" >}} "Project")
 page.
 
 The project will continue until 2024-12-31 and then be wound up by the board

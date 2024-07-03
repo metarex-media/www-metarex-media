@@ -53,7 +53,7 @@ let's lay out our objectives:
 [1]: https://github.com/metarex-media
 [2]: https://github.com/metarex-media/mrx-container
 [3]: https://metarex.media/ui/reg/
-[4]: /docs/project/backers/
+[4]: /backers/
 
 {{% sitelinks %}}
 {{< /f/block >}}
@@ -317,7 +317,7 @@ Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth
 
 [1]: https://signiant.com/
 [2]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
-[3]: /docs/project/backers/
+[3]: /backers/
 
 {{< sitelinks >}}
 {{< /f/block >}}

@@ -1,6 +1,7 @@
 ---
 title:       "Introduction"
 linkTitle:   "Introduction"
+type:        docs
 weight:      50
 description: Why is MetaRex needed?
 date:       2023-08-08

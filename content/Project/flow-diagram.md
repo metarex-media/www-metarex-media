@@ -3,6 +3,7 @@ title:         Flow Diagram
 linkTitle:     Flow Diagram
 date:         2024-02-29
 description:  How Metarex flows metadata
+type:        docs
 ---
 
 {{% f/block id="gg" %}}

@@ -36,12 +36,9 @@ Once you've (cloned or forked & cloned) the repo, you need to install both
 environment to ensure I could update the site from anywhere, anytime on any
 device 😃.
 
-[Docsy]:             https://github.com/google/docsy
-[fomantic ui]:       https://fomantic-ui.com/
 [gitpod]:            https://www.gitpod.io/
 [golang]:            https://go.dev/doc/install
 [Hugo]:              https://gohugo.io/installation/
-[Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [metarex.media]:     https://metarex.media
 [fohuw]:             https://github.com/mrmxf/fohuw
 [ww]:                https://github.com/metarex-media/www-metarex-media

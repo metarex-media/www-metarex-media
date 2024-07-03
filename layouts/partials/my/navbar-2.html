@@ -3,7 +3,7 @@
 <nav class="ui bottom attached centered fluid borderless wrapping menu">
   {{ range .Site.Menus.menu2.ByWeight -}}
 
-  {{- if .HasChildren -}}{{ template "navChild" (dict "page" $thisPage "menu" .) }}
+  {{- if .HasChildren -}}{{ template "navBasic" (dict "page" $thisPage "menu" .) }}
   {{else}}{{ template "navBasic" (dict "page" $thisPage "menu" .) }}{{ end -}}
 
   {{ end -}}

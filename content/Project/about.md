@@ -38,7 +38,7 @@ post-production metadata than it is to lose it or leave it behind.
 <!--  ---------------------------------------------------------------------  -->
 
 {{% blocks/lead                                                              %}}
-{{<   include    "content/docs/Admin/backer-list.md"                         >}}
+{{<   include    "/project/Admin/backer-list.md"                         >}}
 {{% /blocks/lead                                                             %}}
 
 <!--  ---------------------------------------------------------------------  -->

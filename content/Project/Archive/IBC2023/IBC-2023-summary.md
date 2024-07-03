@@ -33,7 +33,7 @@ linkTitle:   IBC-2023 Summary
 <div class="ui orange message">
   <a href="https://metarex.media/meet"                       >Book a meeting</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="/docs/specifications/"                            >Read the Specs</a>
+  <a href="/specifications/"                            >Read the Specs</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/metarex-media/"   target="_blank">See the Code</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;

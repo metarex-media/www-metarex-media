@@ -42,4 +42,4 @@ Check our the [backers] page to see how you can help.
 [DPP]:         https://www.thedpp.com/events/leaders-briefing-2022
 [NAB]:         /blog/2022/09/18/2022-09-18-ibc/
 [IBC]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/
-[backers]: /docs/project/backers/
+[backers]:     /backers/

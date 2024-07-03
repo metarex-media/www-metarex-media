@@ -5,8 +5,6 @@ linkTitle: "Downloads"
 url:       "/downloads/"
 
 aliases:
-- /docs/download
-- /docs/downloads
 - /download
 
 weight: 80

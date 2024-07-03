@@ -20,8 +20,8 @@ tags:        ["docs", "project"]
     class="ui center aligned olive message"
 >}}
 
-**Status**: [view timeline](/docs/project/status).
-**IBC Accelerator 2023** [Responsive Narrative Factory](/docs/ibc2023).
+**Status**: [view timeline](/project/status).
+**IBC Accelerator 2023** [Responsive Narrative Factory](/project/archive/ibc2023/).
 
 ## Rationale
 
@@ -121,5 +121,5 @@ of the project closure.
 [DPP]:         /blog/2022/11/16/2022-11-16-dpp-leaders-briefing/
 [IBC]:         /blog/2022/09/18/ibc-show-2022/
 [NAB]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/
-[status]:      /docs/project/status/
-[backers]:    /docs/project/backers/
+[status]:      /project/status/
+[backers]:    /backers/

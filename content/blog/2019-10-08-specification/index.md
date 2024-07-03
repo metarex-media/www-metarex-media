@@ -21,6 +21,6 @@ This specification was the impetus for starting the Metarex project. We hope to
 repeat the demo on a larger scale with a more generic solution in 2024.
 
 [blog]:         /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
-[docs section]: /docs/reference/mxf-live-2019/
+[docs section]: /specifications/mxf-live-2019/
 
 {{< /card/media >}}

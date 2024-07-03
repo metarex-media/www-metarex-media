@@ -1,7 +1,7 @@
 ---
-title:     Specification
-linkTitle: Specification
-date:      2024-06-16
+title:     Container Specification
+linkTitle: Container Spec.
+date:      2024-07-03
 weight:    20
 description: >
   Work in progress container specification.
@@ -351,7 +351,7 @@ Material Package (Figure 1)
 
 {{% f/image "/img/doc/mxf-live-fig-1.png" "MXF Live" "ui centered large image" %}}
 
-{{% d/caption "Linkage of MXF Live DM Track in MXF Header Data" "figure" %}}
+{{% o/caption "Linkage of MXF Live DM Track in MXF Header Data" "figure" %}}
 
 The new keys and labels used for the descriptive metadata are taken from ARRI
 private space. Table 1 shows the scheme applied to make up the keys within ARRI
@@ -374,7 +374,7 @@ is in Section Table 3.
 | 14-15         | Further Classification                  |                   | Distinction within each group   |
 | 16            | Index                                   | `00`              | Index in case of more than one item of the same type, e.g. multiple data streams, or distinction within group. |
 
-{{% d/caption "2 - UL Key Definitions for this Specification (multi-byte values in network order)" "table" %}}
+{{% o/caption "2 - UL Key Definitions for this Specification (multi-byte values in network order)" "table" %}}
 
 | Item Name                                                                |  UL Key
 |--------------------------------------------------------------------      |-------------------------------------
@@ -388,7 +388,7 @@ is in Section Table 3.
 | MXF Live Primary (Master) Stream Flag                                    |`urn:smpte:ul060e2b34.0101010d.0e170104.03010103`
 | MXF Live Streaming Mode                                                  |`urn:smpte:ul060e2b34.0101010d.0e170104.03010104`
 
-{{% d/caption "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" "table" %}}
+{{% o/caption "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" "table" %}}
 
 **Note:** These keys are preliminary keys to be used during experimental
 state; they are subject to change without notice.

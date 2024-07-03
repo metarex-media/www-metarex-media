@@ -15,7 +15,7 @@ tags:        ["project",  "IBC", "RNF", "Infuse"]
 >}}
 # MetaRex at IBC 2023: Responsive Narrative Factory
 
-The **[Responsive Narrative Factory]** ([RNF](/docs/ibc2023)) is an [IBC Accelerator] project that will
+The **[Responsive Narrative Factory]** (**[RNF]**) is an [IBC Accelerator] project that will
 be showcased at this year's IBC show between 15 & 18 September at the RAI
 centre, Amsterdam.
 
@@ -27,6 +27,9 @@ can be achieved when you mix the following in a simple demonstration:
 * great content
 * customer interaction
 * IBC show guest
+[Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+[RNF]:                          /project/archive/ibc2023/
+[BBC]:
 {{< /f/block >}}
 <!-- ####################################################################### -->
 {{< f/block  >}}
@@ -42,7 +45,7 @@ Technical, timeline and demonstration details will appear on our [RNF] page so
 you can follow along and maybe even download the metarex code from our [github].
 
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
-[RNF]:                          /docs/ibc2023/
+[RNF]:                          /project/archive/ibc2023/
 {{< /f/block >}}
 <!-- ####################################################################### -->
 {{< f/block
@@ -54,7 +57,7 @@ The [Responsive Narrative
 Factory](https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory)
 will be showcased as an [IBC
 Accelerator](https://show.ibc.org/accelerator-media-innovation-programme) at
-[IBC 2023](https://show.ibc.org/). Our [RNF](/docs/ibc2023/) page reveals all
+[IBC 2023](https://show.ibc.org/). Our [RNF] page reveals all
 the secrets of our demonstration.
 
 
@@ -62,5 +65,5 @@ the secrets of our demonstration.
 [IBC]:                          https://show.ibc.org/
 [Infuse Video]:                 https://www.infuse.video/
 [MPTS2023]:                     /blog/2023/05/04/2023-05-04-metarex-mpts-2023-may-mega-update/
-[RNF]:                          /docs/ibc2023/
+[RNF]:                          /project/archive/ibc2023/
 {{< /f/block >}}

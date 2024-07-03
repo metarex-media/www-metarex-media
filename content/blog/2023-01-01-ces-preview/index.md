@@ -73,5 +73,5 @@ other social media.
 <!-- ####################################################################### -->
 
 [blog]:     /blog                    "Blog"
-[backers]:  /docs/project/backers/   "Backers"
+
 {{< /f/block>}}
