@@ -4,6 +4,8 @@
 # this theme is  migrating away from bootstrap towards a full fomantic site
 # with simplified shortcuts that are created with partials to reduce custom code.
 
+# CLI upgrade to the latest theme:   hugo mod get github.com/mrmxf/fohuw@main
+
 # uncomment line below for temporary local development of module
 # replacements: "github.com/mrmxf/fohuw -> ../../fohuw"
 hugoVersion:

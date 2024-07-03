@@ -1,0 +1,21 @@
+{{/* Increment and display a level one header
+An empty store returns an empty string which becomes zero!
+*/}}
+{{- $h1 := (.Page.Scratch.Get "H1") | int -}}
+{{- $h2 := (.Page.Scratch.Get "H2") | int -}}
+{{- $h3 := (.Page.Scratch.Get "H3") | int -}}
+{{- $h4 := (.Page.Scratch.Get "H4") | int -}}
+{{- $h5 := (.Page.Scratch.Get "H5") | int -}}
+{{- $h6 := (.Page.Scratch.Get "H6") | int -}}
+{{- $_ := (.Page.Scratch.Get "Hseparator") -}}
+{{- $pfx := (.Page.Scratch.Get "Hprefix") -}}
+{{- $sfx := (.Page.Scratch.Get "Hsuffix") -}}
+{{- $V := .Get 0 | default $h4 -}}
+{{- $V = math.Add $V 1 -}}
+{{ .Page.Scratch.Set "H1" $h1 -}}
+{{ .Page.Scratch.Set "H2" $h2 -}}
+{{ .Page.Scratch.Set "H3" $h3 -}}
+{{ .Page.Scratch.Set "H4" $V -}}
+{{ .Page.Scratch.Set "H5" 0 -}}
+{{ .Page.Scratch.Set "H6" 0 -}}
+{{ partial "H/4" . }}

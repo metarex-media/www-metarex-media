@@ -1,2 +1,8 @@
 github.com/mrmxf/fohuw v0.1.4 h1:IxcjfVlEVbGu5aFSPs5VPWvi3O3yTFc29fxMxvzdN3E=
 github.com/mrmxf/fohuw v0.1.4/go.mod h1:sxPUIf9wb5MuMpWYLgm4rX8MU02fAbKYGqtqrPFW63g=
+github.com/mrmxf/fohuw v0.1.5-0.20240626145455-ea126e87717f h1:zbEV9ag7sOVjPWysJg4fX5S3+6SvaFk0McJh394hrLM=
+github.com/mrmxf/fohuw v0.1.5-0.20240626145455-ea126e87717f/go.mod h1:+dvhswVuN+0Iw8bMauzUJdeIIqU8ox0f93zCimd2qcs=
+github.com/mrmxf/fohuw v0.1.5-0.20240626152122-f11ed5c45508 h1:zgxtj9ItC4JQGJiP7+cheDY/L/i3j97FlAjpMRfC1Qo=
+github.com/mrmxf/fohuw v0.1.5-0.20240626152122-f11ed5c45508/go.mod h1:+dvhswVuN+0Iw8bMauzUJdeIIqU8ox0f93zCimd2qcs=
+github.com/mrmxf/fohuw v0.1.5-0.20240626152542-d7ce9af96a8a h1:CRi+6HE6ZbRxaHhipT4ah3boeP/M4UdC7hya0nx1ErE=
+github.com/mrmxf/fohuw v0.1.5-0.20240626152542-d7ce9af96a8a/go.mod h1:+dvhswVuN+0Iw8bMauzUJdeIIqU8ox0f93zCimd2qcs=

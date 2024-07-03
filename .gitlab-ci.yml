@@ -1,65 +1,67 @@
+# GitLab Workflow for building and deploying a Hugo site to GitHub Pages
+# needs $MRX_DOCKER_USR - the account username for docker hub
+# needs $MRX_DOCKER_PWD - the account password for docker hub
+# needs $MRX_DOCKER_NS - the account namespace for docker hub e.g. metarexmedia
 variables:
-  vGOLANG: 1.21
-  vHUGO: 0.122.0
-  vDART: 1.70.0
-  vNDOE: 20.x
+  IMAGE:         www-metarex-media
+  vGOLANG:       1.21
+  vHUGO:         0.123.2
+  BASE_URL:      ""
+  vDART:         1.70.0
+  # node version `node` will install the latest version with nvm
+  vNODE:         node
+  vDOCKER_IMAGE: 26.0
+  REGISTRY:      hub.docker.com
   GIT_DEPTH: 0
   GIT_STRATEGY: clone
   GIT_SUBMODULE_STRATEGY: recursive
   TZ: Europe/London
-  PROJECT: www-metarex-media
-  REPO:    mrmxf
+  barkId:       "GitLab:"
+  # docker will fail to login unless the certdir is specified
+  DOCKER_TLS_CERTDIR: "/certs"
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH =="main"
+      when: never
+    - if: $CI_COMMIT_BRANCH =="rc"
+    - if: $CI_COMMIT_BRANCH =="svelte-ux"
 
 stages:
-  - bark
-  - hugo
-  - docker
   - test
+  - build
   - deploy
-  - hook
+  # - hook
 
 default:
-  image: golang:1.20.6-bookworm
+  image: golang:latest
 
+# --- bark --------------------------------------------------------------------
 bark:
-  stage: bark
+  stage: build
   script:
-    - printf "GitLab pipeline\n===============\n"
-    - printf "Lab %19s  %s" "\$GITLAB_USER_ID"                      "$GITLAB_USER_ID"
-    - printf "Lab %19s  %s" "\$CI_COMMIT_BRANCH"                    "$CI_COMMIT_BRANCH"
-    - printf "Lab %19s  %s" "\$GITLAB_USER_LOGIN"                   "$GITLAB_USER_LOGIN"
+    - g1="GITLAB_USER_ID                       CI_COMMIT_BRANCH             GITLAB_USER_LOGIN        MRX_DOCKER_USR   REGISTRY           CI_REGISTRY         GITLAB_USER_EMAIL   GITLAB_USER_NAME"
+    - g2="CI_COMMIT_TAG                        CI_COMMIT_DESCRIPTION        CI_BUILDS_DIR            CI_PROJECT_DIR   CI_PROJECT_PATH    CI_PIPELINE_SOURCE  CI_MERGE_REQUEST_ID CI_PROJECT_PATH"
+    - g3="CI_MERGE_REQUEST_SOURCE_BRANCH_NAME  CI_MERGE_REQUEST_REF_PATH    CI_MERGE_REQUEST_LABELS  CI_MERGE_REQUEST_APPROVED"
+    - g4="CI_RUNNER_VERSION                    CI_SERVER  CI_PIPELINE_NAME  CI_JOB_STAGE             CI_JOB_TOKEN     CI_MERGE_REQUEST_APPROVED  KUBECONFIG"
+    - gg=(g1 g2 g3 g4)
+    # print each group with a line separator
+    - for g in "${gg[@]}"; do echo " "; for n in ${!g}; do printf "%s %36s = %s\n" $barkId "\$$n" "${!n}"; done; done
 
-    - echo ""
-    - printf "Lab %19s  %s" "\$GITLAB_USER_EMAIL"                   "$GITLAB_USER_EMAIL"
-    - printf "Lab %19s  %s" "\$GITLAB_USER_NAME"                    "$GITLAB_USER_NAME"
-    - printf "Lab %19s  %s" "\$CI_PIPELINE_SOURCE"                  "$CI_PIPELINE_SOURCE"
-    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_ID"                 "$CI_MERGE_REQUEST_ID"
-    - printf "Lab %19s  %s" "\$GITLAB_USER_LOGIN"                   "$GITLAB_USER_LOGIN"
-    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_APPROVED"           "$CI_MERGE_REQUEST_APPROVED"
-    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_LABELS"             "$CI_MERGE_REQUEST_LABELS"
-    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_REF_PATH"           "$CI_MERGE_REQUEST_REF_PATH"
-    - printf "Lab %19s  %s" "\$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME" "$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
-    - printf "Lab %19s  %s" "\$CI_BUILDS_DIR"                       "$CI_BUILDS_DIR"
-    - printf "Lab %19s  %s" "\$CI_COMMIT_DESCRIPTION"               "$CI_COMMIT_DESCRIPTION"
-    - printf "Lab %19s  %s" "\$CI_COMMIT_TAG"                       "$CI_COMMIT_TAG"
-    - printf "Lab %19s  %s" "\$CI_JOB_STAGE"                        "$CI_JOB_STAGE"
-    - printf "Lab %19s  %s" "\$CI_JOB_TOKEN"                        "$CI_JOB_TOKEN"
-    - printf "Lab %19s  %s" "\$CI_PIPELINE_NAME"                    "$CI_PIPELINE_NAME"
-    - printf "Lab %19s  %s" "\$CI_PROJECT_DIR"                      "$CI_PROJECT_DIR"
-    - printf "Lab %19s  %s" "\$CI_PROJECT_PATH"                     "$CI_PROJECT_PATH"
-    - printf "Lab %19s  %s" "\$CI_RUNNER_VERSION"                   "$CI_RUNNER_VERSION"
-    - printf "Lab %19s  %s" "\$CI_SERVER"                           "$CI_SERVER"
-    - printf "Lab %19s  %s" "\$KUBECONFIG"                          "$KUBECONFIG"
-    - echo ""
-
-
-build-pages:
-  stage: hugo
-  image: golang:1.20.6-bookworm
+# --- hugo --------------------------------------------------------------------
+hugo:
+  stage: build
+  needs: [bark]
   script:
     # Install brotli
     - apt-get update
     - apt-get install -y brotli
+    # install nvm for easy Node management
+    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    # pull in the nvm env variables
+    - source ~/.bashrc
+    # Install Node.js
+    - nvm install $vNODE
     # Install Dart Sass
     - curl -LJO https://github.com/sass/dart-sass/releases/download/${vDART}/dart-sass-${vDART}-linux-x64.tar.gz
     - tar -xf dart-sass-${vDART}-linux-x64.tar.gz
@@ -70,56 +72,68 @@ build-pages:
     - curl -LJO https://github.com/gohugoio/hugo/releases/download/v${vHUGO}/hugo_extended_${vHUGO}_linux-amd64.deb
     - apt-get install -y ./hugo_extended_${vHUGO}_linux-amd64.deb
     - rm hugo_extended_${vHUGO}_linux-amd64.deb
-    # Install Node.js
-    - curl -fsSL https://deb.nodesource.com/setup_${vNDOE} | bash -
-    - apt-get install -y nodejs
     # Install Node.js dependencies
-    - "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+    - |
+      if [[ -f package-lock.json || -f npm-shrinkwrap.json ]] ; then
+        npm ci  || true
+      else
+        npm i || true
+      fi
+    # Hugo fails unexpectedly if the theme folder does not exist.
+    -  mkdir -p themes/fohuw
     # Build
-    - hugo --gc --minify
+    - |
+      hugo mod get
+      hugo --gc --minify
     # Compress
     - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec gzip -f -k {} \;
     - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec brotli -f -k {} \;
+    # Get website version
+    - |
+      vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+      echo "pushing website version $vCODE"
+      echo "export vCODE=$vCODE"              >> job-chain.sh
+      echo "export BRANCH=$CI_COMMIT_BRANCH"  >> job-chain.sh
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+      - job-chain.sh
 
 
-build-docker:
-  stage: docker
-  needs: [build-pages]
-  script:
-    - echo "$GITLAB_USER_LOGIN - build the Docker image(s)"
-
-test-job1:
-  stage: test
-  needs: [build-docker]
-  script:
-    - echo "Should probably test something here"
-
-test-job2:
-  stage: test
-  needs: [build-docker]
-  script:
-    - echo "This job tests something else, but takes more time than test-job1."
-    - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
-    - echo "which simulates a test that runs 20 seconds longer than test-job1"
-    - sleep 20
-
-deploy-prod:
+# --- deploy ------------------------------------------------------------------
+deploy:
   stage: deploy
-  needs: [test, test2]
+  image: docker:$vDOCKER_IMAGE
+  services:
+    - docker:$vDOCKER_IMAGE-dind
+  before_script:
+    - echo "$MRX_DOCKER_PWD" | docker login -u "$MRX_DOCKER_USR" --password-stdin
+    - docker info
   script:
-    - echo "push the image to docker"
-    - docker login -u $DOCKER_USR --password-stdin <<<$DOCKER_PWD
-    - docker image ls mrmxf/www-metarex-media
-    - echo push to the image repo
-  environment: production
+    #create env from upstream dependencies
+    - source job-chain.sh
+    - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
 
-hook-website:
-  stage: hook
-  needs: [deploy-prod]
+    - echo "Logged into docker($MRX_DOCKER_USR) via gitlab($GITLAB_USER_LOGIN)"
+    #- docker buildx create --name multibuild
+    #- docker buildx use multibuild
+
+    - TARGETamd="$MRX_DOCKER_NS/$IMAGE-amd:$vCODE"
+    - TARGETarm="$MRX_DOCKER_NS/$IMAGE-arm:$vCODE"
+
+    #- docker buildx build -t $TARGET --push --platform linux/amd64,linux/arm64,linux/arm/v7 .
+    - echo "Build & push to $TARGETamd"
+    - docker buildx build -t "$TARGETamd" --push --platform linux/amd64 .
+    - docker buildx imagetools inspect "$TARGETamd"
+
+    - echo "Build & push to $TARGETarm"
+    - docker buildx build -t "$TARGETarm" --push --platform linux/arm64 .
+    - docker buildx imagetools inspect "$TARGETarm"
+
+# --- hook ------------------------------------------------------------------
+hook:
+  stage: deploy
+  needs: [deploy]
   script:
-    - echo "fire the hook to the wesbite"
+    - echo "fire the CI/CD hook to the wesbite signalling no errors"
+    - curl https://staging.metarex.media/a/hook/cicd/gitlab/$IMAGE

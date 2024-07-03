@@ -6,4 +6,4 @@
 */}}
 {{ $name        := .Get "name"   | default "missing"                          }}
 
-<div class="ui olive message"><div class="header">{{ $name }}</div></div>
+<div class="ui olive message"><div class="header">{{ $name | markdownify }}</div></div>

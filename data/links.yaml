@@ -1,0 +1,18 @@
+links:
+  - name: "Depth of Field Calculator"
+    slug: "calc-dof"
+    credit: "Phil Holland"
+    url: "https://phfx.com/tools/depthOfFieldCalc/"
+    lastModified: 2024-06-05
+    category: ["tools"]
+    tag: ["osvp", "camera", "metadata", "calculator", "cinema"]
+  - name: "Depth of Field Calculator"
+    slug: "calc-dof"
+    url: "https://phfx.com/tools/depthOfFieldCalc/"
+    lastModified: 2024-06-05
+    category: ["tools"]
+    tag: ["osvp", "camera", "metadata", "calculator", "cinema"]
+sources:
+  - id: "Phil Holland"
+    url: "https://www.phfx.com/"
+    about: "Phil Holland is a Director and Cinematographer based out of Los Angeles, California. With a passion for high quality compelling motion picture content and a keen interest in state of the technology ."

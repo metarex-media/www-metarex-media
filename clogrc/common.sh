@@ -16,7 +16,13 @@ c="\e[3"; R=1m; G=2m; B=4m; C=6m; M=5m; Y=3m; K=0m; W=7m; cX="\e[0m"
 cC=$c$B; cU=$c$C; cT=$c$K; cI=$c$Y; cE=$c$R; cW=$c$M; cS=$c$G; cF=$c$W; cH=$c$C
 # printf "$cC cmd$cU url$cT txt$cI inf$cE err$cW wrn$cS ok!$cF fle$cH hdr$cX\n"
 
-# --- tagging ------------------------------------------------------------------
+# --- platform & branch-- only set ic clog is installed and sourced -----------
+
+bCPU="$cPU"
+bOSV="$cOS"
+gBRANCH=$(git branch --show-current)
+
+# --- tagging -----------------------------------------------------------------
 
 function fTagLocal () {  git tag -a "$1" HEAD -m "$2" ; }
 function fTagRemote() {  git push origin "$1" ; }
@@ -75,7 +81,7 @@ function getRemoteTag () {
   esac
   # if there was an error then return the current error count
   [ "$?" -ne 0 ]  && ((OOPS++)) && return $OOPS       # unknown error on stdout
-  TAG=$(echo $TAG | head -1 | sed -r 's/.*(v[\.0-9]*).*/\1/')
+  TAG=$(echo $TAG | head -1 | sed -r 's/.*\/([\.0-9]*).*/\1/')
 
   [[ "$TAG" == "" ]] && printf "notag" && ((OOPS++))
   printf  "%s" $TAG
@@ -83,9 +89,9 @@ function getRemoteTag () {
 }
 
 # colourTag
-# $1 - reference tag vA.B.C
-# $2 -  semantic tag vX.Y.Z
-# usage: pretty=$( colourTag v1.2.3 v1.2.4 )
+# $1 - reference tag A.B.C
+# $2 -  semantic tag X.Y.Z
+# usage: pretty=$( colourTag 1.2.3 1.2.4 )
 
 function colourTag () {
   # color major & minor rev: Success / Error
@@ -103,19 +109,50 @@ function colourTag () {
 
   printf "$msg$cT"
 }
-
-# --- check functions - fReport  ----------------------------------------------
+# --- check functions - fAddReport  ----------------------------------------------
 
 # Print out the status of something
 # $1 = category string e.g. "github"
-# $2 = msg text
-# $3 = highlight for the thing (e.g. $cE for error)
-# $4 = name of the thing
-# $5 = flag for the reference tag
+# $2 = message text
+# $3 = color for the thing (e.g. $cE for error)
+# $4 = value of the thing
+# $5 = show highlight arrow with this text if present
+function fAddReport() {
+  #initialise storage if empty
+  [ -z ${reportStrings+x} ] && reportStrings=()
+
+  local catColor="" message="" value="" arrow=""
+
+  [[ -n "$5" ]] && arrow="$cE<$cW--$cI--$cS--$5$cX"
+  case "$1" in
+    project                      ) catColor=${cS} ;;
+    golang|python|code|hugo      ) catColor=${cC} ;;
+    local|action                 ) catColor=${cI} ;;
+    remote                       ) catColor=${cH} ;;
+    bitbucket|"dep: bitbucket"   ) catColor=${cF} ;;
+    github|"dep: github"         ) catColor=${cS} ;;
+    gitlab|"dep: github"         ) catColor=${cW} ;;
+    worktree|tree|hash|tags      ) catColor=${cE} ;;
+    *                            ) catColor=${cT} ;;
+  esac
+  message=$(printf "${catColor}%12s $cT %22s" "$1" "$2")
+  value="$3$4"
+  reportStrings+=("$(printf "${category} $message $value $arrow$cX")")
+}
+
+# --- check functions - fShowReport  ----------------------------------------------
+
+function fShowReport() {
+  [ -z ${reportStrings+x} ] && "No Report available" && exit 1
+
+  for i in ${!reportStrings[@]}; do echo "${reportStrings[$i]}"; done
+}
+
 function fReport() {
   isRef=""
   [[ -n "$5" ]] && isRef="$cE<$cW--$cI--$cS--ref tag$cX"
   case "$1" in
+    "local")                         category=$(printf "${cI}%12s" "$1") ;;
     "golang"|"python"|"code"|"hugo") category=$(printf "${cC}%12s" "$1") ;;
     "local")                         category=$(printf "${cI}%12s" "$1") ;;
     "remote")                        category=$(printf "${cH}%12s" "$1") ;;
@@ -132,23 +169,26 @@ function fReport() {
 
 # supply extra args as $1
 
-fSphinx(){
+function fSphinx(){
   printf "${cI}INFO$cT Building documentation$cT with$cC sphinx-build$cX\n"
   sphinx-build $1 docs/ docs/_build/
 }
 
 # --- remind dev they're on a critical branch ---------------------------------
-gBRANCH=$(git branch --show-current)
-  m=$cE'   __  __     _     ___   _  _     ___   ___     _     _  _    ___   _  _ '$cX"\n"
-m=$m$cE'  |  \/  |   /_\   |_ _| | \| |   | _ ) | _ \   /_\   | \| |  / __| | || |'$cX"\n"
-m=$m$cE'  | |\/| |  / _ \   | |  | .` |   | _ \ |   /  / _ \  | .` | | (__  | __ |'$cX"\n"
-m=$m$cE'  |_|  |_| /_/ \_\ |___| |_|\_|   |___/ |_|_\ /_/ \_\ |_|\_|  \___| |_||_|'$cX"\n"
-[[ "$_COMMON_SH_DONE" != "TRUE" ]] && [[ "$gBRANCH" == "main" ]] && printf "$m"
 
-  m=$cS'                _                               _    '$cX"\n"
-m=$m$cS'   _ _   __    | |__   _ _   __ _   _ _    __  | |_  '$cX"\n"
-m=$m$cS'  | `_| / _|   | `_ \ | `_| / _` | | ` \  / _| | ` \ '$cX"\n"
-m=$m$cS'  |_|   \__|   |_.__/ |_|   \__,_| |_||_| \__| |_||_|'$cX"\n"
-[[ "$_COMMON_SH_DONE" != "TRUE" ]] && [[ "$gBRANCH" == "rc" ]] && printf "$m"
-_COMMON_SH_DONE=TRUE
+function fShowBranchBanner(){
+    m=$cE'   __  __     _     ___   _  _     ___   ___     _     _  _    ___   _  _ '$cX"\n"
+  m=$m$cE'  |  \/  |   /_\   |_ _| | \| |   | _ ) | _ \   /_\   | \| |  / __| | || |'$cX"\n"
+  m=$m$cE'  | |\/| |  / _ \   | |  | .` |   | _ \ |   /  / _ \  | .` | | (__  | __ |'$cX"\n"
+  m=$m$cE'  |_|  |_| /_/ \_\ |___| |_|\_|   |___/ |_|_\ /_/ \_\ |_|\_|  \___| |_||_|'$cX"\n"
+  [[ "$_COMMON_SH_DONE" != "TRUE" ]] && [[ "$gBRANCH" == "main" ]] && printf "$m"
+
+    m=$cS'                _                               _    '$cX"\n"
+  m=$m$cS'   _ _   __    | |__   _ _   __ _   _ _    __  | |_  '$cX"\n"
+  m=$m$cS'  | `_| / _|   | `_ \ | `_| / _` | | ` \  / _| | ` \ '$cX"\n"
+  m=$m$cS'  |_|   \__|   |_.__/ |_|   \__,_| |_||_| \__| |_||_|'$cX"\n"
+  [[ "$_COMMON_SH_DONE" != "TRUE" ]] && [[ "$gBRANCH" == "rc" ]] && printf "$m"
+}
+
 # --- end ---------------------------------------------------------------------
+_COMMON_SH_DONE=TRUE

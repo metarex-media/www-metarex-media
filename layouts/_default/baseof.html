@@ -3,11 +3,12 @@
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
 
 <head>
-  {{ partial "head.html" . }}
-  <meta http-equiv="Content-Security-Policy"  content="frame-src https://faq.metarex.media;">
+  {{ partial "my/site-head-begin.html" . }}
+  {{ partial "docsy/head.html" . }}
+  {{ partial "my/site-head-end.html" . }}
 </head>
 
-<body class="{{ with .Page.Params.body_class }} {{ . }}{{ end }}">
+<body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
   <div class="ui wide container">
     <header>
       {{ partial "navbar.html" . }}
@@ -33,7 +34,7 @@
     </div>
   </div>
   </div>
-  {{ partial "body_scripts.html" . }}
+  {{ partial "body-scripts.html" . }}
 </body>
 
 </html>

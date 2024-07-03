@@ -1,0 +1,5 @@
+{{/* print the clause number of a named reference
+     partial "second-para"
+*/}}
+{{- $anchors = .Page.Scratch.Get "Anchors" -}}
+{{- printf "%s" (index $anchors . ) -}}

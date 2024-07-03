@@ -3,10 +3,10 @@
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
 
 <head>
-  {{ partial "head.html" . }}
+  {{ partial "docsy/head.html" . }}
 </head>
 
-<body class="{{ with .Page.Params.body_class }} {{ . }}{{ end }}">
+<body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
   <div class="ui wide container">
     <header>
       {{ partial "navbar.html" . }}
@@ -19,7 +19,7 @@
         <div class="eight wide column">
           <main role="main" class="ui main">
           {{ partial "version-banner.html" . }}
-          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "docsy/breadcrumb.html" . }}{{ end }}
           {{ block "main" . }}{{ end }}
         </main>
         </div>
@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-  {{ partial "body_scripts.html" . }}
+  {{ partial "body-scripts.html" . }}
 </body>
 
 </html>

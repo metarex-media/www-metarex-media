@@ -1,0 +1,5 @@
+{{/* printf  "format" param-name */}}
+{{- $format := .Get 0 -}}
+{{- $paramName := .Get 1 -}}
+{{- $value:= .Page.Param $paramName -}}
+{{- fmt.Printf $format $value -}}
