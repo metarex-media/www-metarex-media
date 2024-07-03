@@ -3,6 +3,9 @@ title:     Goals
 linkTitle: Goals
 date:      2022-12-12
 type:        docs
+resources:
+   -
+     src:  img/featured-goals.jpg
 ---
 {{< f/block id    = "summary" >}}
 <!-- markdownlint-disable MD025 -->

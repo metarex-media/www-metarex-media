@@ -5,38 +5,28 @@
 {{ $description := "" }}
 {{ $link := "" }}
 {{ $meta := "" }}
+{{ $featured := "" }}
 {{/* --- find latest blog ------------------------------------------------ */}}
-{{ range first 3 ( where .Site.Pages "Type" "blog" ) | last 1 }}
+{{ range first 3 ( where .page.Site.Pages "Type" "blog" ) | last 1 }}
 {{ $srcLink = .RelPermalink }}
 {{ $header = .LinkTitle }}
-{{ $featured := (.Resources.ByType "image").GetMatch "*featured*" }}
-{{ $src = $featured.RelPermalink }}
+{{ $featured = (.Resources.ByType "image").GetMatch "*featured*" }}
 {{ $description = .Plain | safeHTML | truncate 300 }}
 {{ $minutes := add ( div ( countwords .Plain ) 220 ) 1 }}
 {{ $meta = printf "~%v min read" $minutes }}
 {{ $link = .RelPermalink }}
 {{ end }}
-<div class="ui {{.Get " class"}} card">
-  {{ with $src }}
-  {{ if eq $srcIs "video"}}
-  <video class="ui image" autoplay loop>
-    <source src="{{ $src }}" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <figcaption class="mt-2 mt-md-0"><small class="text-muted">{{ . | html }}</small></figcaption>
-  {{ else }}
-  <a href="{{ $link }}"><img class="ui image" src="{{ $src }}" /></a>
-  {{ end }}
-  {{ end }}
-  <div class="content">
-    <div class="header"><a href="{{ $link }}">{{ $header }}</a></div>
-    <div class="meta">
-      <span class="category"></span>{{ $meta }}</span>
-    </div>
-    <div class="description">
-      {{ $description }}
-      <a href="{{ $link }}" aria-label="{{ T " ui_read_more"}} - {{ $header }}">{{ T "ui_read_more"}}</a>
-    </div>
-    Inside content
-  </div>
-</div>
+{{/* --- update the dict for the block -----------------------------------*/}}
+{{- $d := merge . (dict "src" "") -}}
+{{if $featured}}
+{{- $d = merge $d (dict "src" $featured.RelPermalink) -}}
+{{- $d = merge $d (dict "srcLink" $srcLink) -}}
+{{- $d = merge $d (dict "headerLink" $srcLink) -}}
+{{- $d = merge $d (dict "srcWidth" 0.25) -}}
+{{end}}
+{{- $d = merge $d (dict "header" $header) -}}
+{{- $d = merge $d (dict "description" $description) -}}
+{{- $min := add ( div ( countwords $description ) 220 ) 1 -}}
+{{- $d = merge $d (dict "meta" (printf "~%v min read" $min)) -}}
+
+{{ partial "o/block" $d }}
