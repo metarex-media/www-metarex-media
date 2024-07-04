@@ -17,7 +17,8 @@ on:
 # global environment
 env:
   IMAGE: www-metarex-media
-  vHUGO: 0.123.2
+  vHUGO: 0.128.1
+  vNODE: 20.15
   # don't force a BASE_URL so that a container works for both
   # https://test.xxx/ and https://xxx/
   BASE_URL: ""
@@ -160,8 +161,8 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USR }}
-          password: ${{ secrets.DOCKER_PWD }}
+          username: ${{ secrets.MRX_DOCKER_USR }}
+          password: ${{ secrets.MRX_DOCKER_PWD }}
       -
         name: Restore artifact
         uses: actions/download-artifact@v4
