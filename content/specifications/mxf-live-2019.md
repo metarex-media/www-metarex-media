@@ -2,6 +2,7 @@
 title:       MXF-Live-2019
 linkTitle:   mxf-live-2019
 date:        2022-10-23
+type:        docs
 description: The original MXF-Live specification as used in the mxf-live project.
 ---
 <!-- markdownlint-disable MD051 (link fragment check) -->

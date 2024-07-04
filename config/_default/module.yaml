@@ -7,7 +7,8 @@
 # CLI upgrade to the latest theme:   hugo mod get github.com/mrmxf/fohuw@main
 
 # uncomment line below for temporary local development of module
-# replacements: "github.com/mrmxf/fohuw -> ../../fohuw"
+#
+replacements: "github.com/mrmxf/fohuw -> ../../fohuw"
 hugoVersion:
   extended: true
   min: v0.123.0

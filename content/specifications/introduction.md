@@ -2,7 +2,7 @@
 title:       Introduction
 linkTitle:   Introduction
 date:        2024-06-17
-weight:      10
+type:        docs
 description: How does metarex.media work under the hood?
 ---
 
