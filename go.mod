@@ -1,5 +1,5 @@
 module github.com/metarex-media/www-metarex-media
 
-go 1.22.1
+go 1.22.5
 
-require github.com/mrmxf/fohuw v0.1.6 // indirect
+require github.com/mrmxf/fohuw v0.1.8 // indirect
