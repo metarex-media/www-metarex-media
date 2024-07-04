@@ -50,9 +50,56 @@ menus:
     weight:     120
 
 # --- Git ---------------------------------------------------------------------
+# --- Menus -------------------------------------------------------------------
+# uncomment this line to automatically generate a top level section menu
+# keep the comment if you only want some of the top level menus to appear
+# sectionPagesMenu: main
+
+menus:
+  main:
+  - name:       Technology
+    identifier: tech
+  - name:       Specifications
+    URL:        /specifications/
+    parent:     tech
+    weight:     10
+    identifier: specs
+  - name:       app/reg
+    URL:        /app/reg/
+    parent:     tech
+    weight:     50
+    identifier: appreg
+  - name:       app/demos
+    URL:        /app/demos/
+    parent:     tech
+    weight:     51
+    identifier: appdemos
+  menu2:
+  - name:       Buy us &nbsp;<em>Coffee</em>
+    URL:        /donate/
+    identifier: coffee
+    pre:
+    post:       " 🍵"
+    weight:     100
+  - name:       Buy us &nbsp;<em>Cake</em>
+    URL:        /donate/
+    identifier: cake
+    pre:
+    post:       " 🍰"
+    weight:     110
+  - name:       Feed &nbsp;<em>Rexy</em>
+    URL:        /donate/
+    identifier: feed
+    pre:
+    post:       " 🥩"
+    weight:     120
+
+# --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.
 enableGitInfo: true
 
+# --- Taxonomies --------------------------------------------------------------
+# Comment out to enable taxonomies in fohuw
 # --- Taxonomies --------------------------------------------------------------
 # Comment out to enable taxonomies in fohuw
 # disableKinds: ["taxonomy", "taxonomyTerm"]
@@ -67,10 +114,12 @@ taxonomies:
   category: categories
 
 # --- Permalink --------------------------------------------------------------
+# --- Permalink --------------------------------------------------------------
 # Configure how URLs look like per section.
 permalinks:
   blog: "/:section/:year/:month/:day/:slug/"
 
+# --- Image processing --------------------------------------------------------
 # --- Image processing --------------------------------------------------------
 imaging:
   resampleFilter: CatmullRom
@@ -78,12 +127,18 @@ imaging:
   anchor: Smart
 
 # --- Services ----------------------------------------------------------------
+# --- Services ----------------------------------------------------------------
 services:
   googleAnalytics:
     # Comment out the next line to disable GA tracking. Also disables the
     # feature described in [params.ui.feedback].
     #id: UA-00000000-0
 
+# --- Language ----------------------------------------------------------------
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+# Useful when translating.
+enableMissingTranslationPlaceholders: false
 # --- Language ----------------------------------------------------------------
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
@@ -99,6 +154,7 @@ languages:
     params:
       description: Metadata Resource Express
 
+# --- Markdown ----------------------------------------------------------------
 # --- Markdown ----------------------------------------------------------------
 markup:
   goldmark:
@@ -121,6 +177,7 @@ markup:
     noClasses:          true
     tabWidth:           2
 
+# --- Output formats ----------------------------------------------------------
 # --- Output formats ----------------------------------------------------------
 # Comment out if you don't want the "print entire section" link enabled.
 outputs:

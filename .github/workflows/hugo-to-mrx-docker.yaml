@@ -55,6 +55,14 @@ jobs:
           fetch-depth: 0
       -
         name: Bark some context vairables
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      -
+        name: Bark some context vairables
         run: |
           printf "GitHub workflow\n"
           printf "Hub: %19s  %s\n" "whoami"               "$(whoami)"
@@ -92,6 +100,7 @@ jobs:
           wget -O \
              ${{ runner.temp }}/hugo.deb \
              https://github.com/gohugoio/hugo/releases/download/v${vHUGO}/hugo_extended_${vHUGO}_linux-amd64.deb \
+             https://github.com/gohugoio/hugo/releases/download/v${vHUGO}/hugo_extended_${vHUGO}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       -
         name: Install Dart Sass
@@ -127,6 +136,7 @@ jobs:
       -
         name: Get website version
         run: |
+              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
               vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
               echo "pushing website version $vCODE"
               echo "export vCODE=$vCODE"  >> job-chain.sh
