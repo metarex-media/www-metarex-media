@@ -1,6 +1,6 @@
 # GitHub Workflow for building and deploying a Hugo site to GitHub Pages
-# needs secrets.DOCKER_USR - the account username for docker hub
-# needs secrets.DOCKER_PWD - the account password for docker hub
+# needs secrets.MRX_DOCKER_USR - the account username for docker hub
+# needs secrets.MRX_DOCKER_PAT - the account password for docker hub
 # needs vars.MRX_DOCKER_NS - the account namespace for docker hub e.g. mrmxf
 name: Build Metarex staging website to container
 
@@ -162,7 +162,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.MRX_DOCKER_USR }}
-          password: ${{ secrets.MRX_DOCKER_PWD }}
+          password: ${{ secrets.MRX_DOCKER_PAT }}
       -
         name: Restore artifact
         uses: actions/download-artifact@v4
@@ -182,12 +182,22 @@ jobs:
               echo "--- Dockerfile -------------------------------------------"
               cat Dockerfile
       -
-        name: Build and push
+        name: Build and push - ARM
         uses: docker/build-push-action@v5
         with:
           # important that we use path context otherwise no output!
           context:   .
           push:      true
           tags: |
-                "${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}:${{ env.vCODE }}"
-          platforms: linux/amd64,linux/arm64
+                "${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}-arm:${{ env.vCODE }}"
+          platforms: linux/arm64
+      -
+        name: Build and push - AMD
+        uses: docker/build-push-action@v5
+        with:
+          # important that we use path context otherwise no output!
+          context:   .
+          push:      true
+          tags: |
+                "${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}-amd:${{ env.vCODE }}"
+          platforms: linux/amd64
