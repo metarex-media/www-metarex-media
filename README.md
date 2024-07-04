@@ -30,11 +30,20 @@ level components, most of which can be found on
 
 ## Forking, cloning & editing
 
-Once you've (cloned or forked & cloned) the repo, you need to install both
-[golang] and [hugo] in your development environment. My preference was to use
-[gitpod] which runs VS Code in your browser (on a phone on a train) as the dev
-environment to ensure I could update the site from anywhere, anytime on any
-device 😃.
+Once you've (cloned or forked & cloned) the repo, you need to install both the
+latest [golang] and the latest [hugo] in your development environment. My
+preference was to use [gitpod] which runs VS Code in your browser (on a phone
+on a train) as the dev environment to ensure I could update the site from
+anywhere, anytime on any device 😃.
+
+```sh
+# pull the hugo theme and other dependencies
+hugo mod get
+# run the dev server and view http://localhost:1313
+hugo server
+# production build the site in /public
+hugo --gc --minify --baseURL "http://my-metarex.local/"
+```
 
 [gitpod]:            https://www.gitpod.io/
 [golang]:            https://go.dev/doc/install
