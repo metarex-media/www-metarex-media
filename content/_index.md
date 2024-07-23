@@ -6,12 +6,17 @@
 #                                                                  |___/
 title:     Metarex
 linkTitle: Metarex
+date:      2024-07-11
 ---
 
 {{< o/block blockType = "include" from = "blog/2024-03-07-rnf-best-accelerator" />}}
 {{< o/block blockType = "blog" />}}
 
 {{< o/block blockType = "include" from = "project/goals" />}}
+
+{{< o/block blockType = "include" from = "project/flow-diagram"
+ src = "/img/mrx-flow.png"
+/>}}
 
 {{< o/block blockType = "include" from = "project/Admin/backer-list"
  src = "/img/dino/mrx-logo.svg"

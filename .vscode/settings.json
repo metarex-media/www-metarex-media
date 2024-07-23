@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "amberbardell",
+        "appdemos",
         "Arqiva",
         "ARRI",
         "autobuild",
@@ -64,6 +65,7 @@
         "mrmxf",
         "MRXID",
         "Nablet",
+        "nbsp",
         "Neumann",
         "Newhaven",
         "ninjs",
@@ -126,7 +128,7 @@
         "xtract",
         "Zeko"
     ],
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Quiet Light",
     "frontMatter.content.pageFolders": [],
     "editor.wordWrap": "on",
     "markdown.preview.fontSize": 12,

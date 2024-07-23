@@ -1,5 +1,7 @@
 # hugo gitignore
 
+tmp-*
+
 # ignore synthesised outputs
 public/
 resources/
@@ -33,7 +35,7 @@ tmp/*
 
 # VS Code - keep these
 #/.vscode/**
-!/.vscode/cspell.json
+#!/.vscode/cspell.json
 
 # vim temporary files
 *~
