@@ -22,10 +22,9 @@ variables:
 
 workflow:
   rules:
-    - if: $CI_COMMIT_BRANCH =="main"
+    - if: $CI_COMMIT_BRANCH == "main"
       when: never
-    - if: $CI_COMMIT_BRANCH =="rc"
-    - if: $CI_COMMIT_BRANCH =="svelte-ux"
+    - if: $CI_COMMIT_BRANCH == "rc"
 
 stages:
   - test

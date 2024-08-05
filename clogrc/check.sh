@@ -7,7 +7,7 @@
 #   \_/\_/   \_/\_/   \_/\_/        |_|_|_| \___|  \__| \__,_| |_|   \___| /_\_\       |_|_|_| \___| \__,_| |_| \__,_|
 [ -n "$CHECK_ALREADY_SOURCED" ] && return 0
 CHECK_ALREADY_SOURCED=YES
-[ -f clogrc/_inc.sh   ] && source clogrc/_inc.sh    # repo name etc.
+[ -f clogrc/_cfg.sh   ] && source clogrc/_cfg.sh    # repo name etc.
 [ -f clogrc/common.sh ] && source clogrc/common.sh  # helper functions
 
 fShowBranchBanner

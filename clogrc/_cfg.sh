@@ -2,9 +2,9 @@
 #  __ __ __ __ __ __ __ __ __  ___   _ __    ___  | |_   __ _   _ _   ___  __ __  ___   _ __    ___   __| | (_)  __ _
 #  \ V  V / \ V  V / \ V  V / |___| | '  \  / -_) |  _| / _` | | '_| / -_) \ \ / |___| | '  \  / -_) / _` | | | / _` |
 #   \_/\_/   \_/\_/   \_/\_/        |_|_|_| \___|  \__| \__,_| |_|   \___| /_\_\       |_|_|_| \___| \__,_| |_| \__,_|
-source <(clog Inc)
+if [ -z "$(echo $SHELL|grep zsh)" ];then eval "$(clog Inc)";else source <(clog Inc);fi
 PROJECT=www-metarex-media
-bEXE="www-metarex-media"
+bEXE="$PROJECT"
 svelteFolder="svelte"
 callingSCRIPT="${0##*/}"
 vCodeType="hugo"

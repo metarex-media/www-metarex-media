@@ -1,5 +1,9 @@
 history:
   -
+    version:  1.5.0
+    date:     2024-07-03
+    note:     IBC announcement
+  -
     version:  1.4.9
     codename: new block structure
     date:     2024-07-03
