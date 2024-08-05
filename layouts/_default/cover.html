@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ "<!-- fohuw _default/cover.html -->" | safeHTML }}
+<style>
+  body {
+    background: url({{ $.Page.Param "coversrc" }}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+{{ with .Content }}
+<div class="ui segment">{{ . }}</div>
+{{ end }}
+{{ end }}
