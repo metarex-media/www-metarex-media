@@ -23,7 +23,6 @@ variables:
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
-      when: never
     - if: $CI_COMMIT_BRANCH == "rc"
 
 stages:
