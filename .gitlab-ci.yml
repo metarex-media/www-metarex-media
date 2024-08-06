@@ -4,8 +4,8 @@
 # needs $MRX_DOCKER_NS - the account namespace for docker hub e.g. metarexmedia
 variables:
   IMAGE:         www-metarex-media
-  vGOLANG:       1.21
-  vHUGO:         0.123.2
+  vGOLANG:       1.22
+  vHUGO:         0.128.1
   BASE_URL:      ""
   vDART:         1.70.0
   # node version `node` will install the latest version with nvm

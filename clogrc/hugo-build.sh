@@ -30,7 +30,7 @@ OPTS="-q --force-rm"
 DoPUSH="$1"
 
 fInfo "building the static website to $cF$DST/: $cC hugo$cX"
-hugo --gc --quiet --minify
+hugo --gc  --minify
 [ $? -gt 0 ] && ((buildErrs++)) && fError "hugo build failed ($err)" && exit 1
 
 fOk   "building the static website to $cF$DST/$cs Success$cX"
