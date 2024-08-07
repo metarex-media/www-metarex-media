@@ -24,7 +24,8 @@ if [ -z "$TAG" ] ; then
   TAG=dev
 fi
 NAME="www-metarex-media"
-IMAGE="mrmxf/$NAME"
+DOCKER_NS=metarexmedia
+IMAGE="$DOCKER_NS/$NAME"
 GREP_SEARCH="mrx"
 OPTS="-q --force-rm"
 DoPUSH="$1"

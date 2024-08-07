@@ -12,3 +12,8 @@ vCodeSrc="data/history.yaml"
 # A golang module must have a "v" semver prefix. A website does not
 vCODE=$(cat $vCodeSrc | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
 bMSG=$(cat  $vCodeSrc | grep note | head -1 | sed -nr "s/note: (.*)/\1/p" | xargs)
+
+bDEPends=("Hugo Version")
+bDEPtest=("[[ \"$(hugo version | grep -oE '\.[0-9]+\.')\" == \".128.\" ]]")
+bDEPfail=("sphinx missing")
+bDEPxtra=("apt-get install python3-sphinx")
