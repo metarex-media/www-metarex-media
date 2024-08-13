@@ -6,13 +6,13 @@
 #                                                                  |___/
 title:     Metarex
 linkTitle: Metarex
-date:      2024-07-11
+date:      2024-08-13
 ---
 
 {{< o/block
     blockType = "cover"
     from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexy-prints.jpg"
+    src = "project/coverpages/rexycover-240806.jpg"
 />}}
 
 {{< o/block
