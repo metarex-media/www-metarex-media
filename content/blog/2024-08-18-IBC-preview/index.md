@@ -13,12 +13,26 @@ params:
 
 <img class="ui centered bordered rounded image" src="/img/blog/sponthanks-2024-08-10.png">
 
-Many thanks to our great sponsors.
+Many thanks to our great sponsors, backers and partners. We couldn't do this
+without you.
 
-We couldn't do this without you. Over the next few weeks we'll be telling you.
-about our sponsors, their metadata products and services and how {{% metarex %}}
-fits into their world.
+Over the next few weeks we'll be telling you about our sponsors, their metadata
+products and services and how {{% metarex %}} fits into their world. You can
+sign up to visit them and win a cuddly Rexy at IBC here:
+[https://bit.ly/rexy-ibc-2024][th].
 
-Please sign up for our [IBC Treasure Hunt][th] and win a cuddly rexy for your
-children, or your loved one, or yourself! Follow {{% metarex %}} to catch a
-glimpse of Rexy before the show. She's shy!.
+The instructions for our [IBC Treasure Hunt][th] are on the [treasure hunt][tr]
+page of the website. The more of our partners you visit, the bigger the chance
+of winning a cuddly rexy for your children, or your loved one, or yourself!
+
+Follow {{% metarex %}} on [LinkedIn][li] to catch a glimpse of Rexy before the
+show. She's shy and only appears in jigsaw form at the moment!
+
+<a href="https://uk.linkedin.com/company/metarex-media"><i class="linkedin
+icon"></i></a> [LinkedIn][libc]
+
+
+[th]: https://bit.ly/rexy-ibc-2024
+[tr]: /project/treasure-hunt/
+[li]: https://uk.linkedin.com/company/metarex-media
+[libc]: https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
