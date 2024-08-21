@@ -41,7 +41,7 @@ check:
           - hugo-version: '[[ $VALUE != "v0.133." ]]'
         help-msg: update the version of hugo or update clog.config.yaml/check
   # --- clog Check gitlab-env -------------------------------------------------
-  gitlab-env:
+  gl-env:
     report:
       vHUGO:
       vGOLANG:
