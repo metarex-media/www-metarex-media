@@ -5,7 +5,7 @@
 variables:
   IMAGE:         www-metarex-media
   vGOLANG:       1.22
-  vHUGO:         0.128.1
+  vHUGO:         0.133.1
   BASE_URL:      ""
   vDART:         1.70.0
   # node version `node` will install the latest version with nvm

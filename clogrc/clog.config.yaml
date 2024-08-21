@@ -1,0 +1,110 @@
+---
+# yamllint disable rule:colons
+# clog Jumbo "clog.core.config"
+#                                 _      _
+#   ___  __ __  ___   _ _   _ _  (_)  __| |  ___   ___
+#  / _ \ \ V / / -_) | '_| | '_| | | / _` | / -_) (_-<
+#  \___/  \_/  \___| |_|   |_|   |_| \__,_| \___| /__/
+### when clog starts it uses these config values to override the defaults.
+
+# --- shell snippets ----------------------------------------------------------
+commandsnippets:
+  watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
+shellsnippets:
+  vCODE:           cat data/history.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
+  git-message-ref: cat releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"+)(.*)"+$/\2/p'
+  # --- dev commands ----------------------------------------------------------
+  godoc: godoc    -http=localhost:6060 http://localhost:6060/pkg/gitlab.com/mrmxf/clog/ &&     open http://localhost:6060/pkg/gitlab.com/mrmxf/clog/
+  godocmac: godoc -http=localhost:6060 http://localhost:6060/pkg/gitlab.com/mrmxf/clog/ && xdg-open http://localhost:6060/pkg/gitlab.com/mrmxf/clog/
+
+# --- cicd clog ---------------------------------------------------------------
+cicd:
+  # These shell snippets become first class citizens and run without "Sh". They
+  # will override any script with the same command name - be careful"
+
+  # results in a new folder in the bucket:
+  #    files - s3:/<bucket>/<prefix>/<semver>/<build-artifact>
+  #    json -  s3:/<bucket>/<prefix>/<project>-latest.json
+  s3:
+    auth: keys-env
+    awsAccess: AWS_ACCESS_KEY_ID
+    awsSecret: AWS_SECRET_ACCESS_KEY
+    region: AWS_REGION
+    bucket: AWS_BUCKET
+    prefix: AWS_S3_PREFIX
+    command: cp
+
+# --- check project -----------------------------------------------------------
+check:
+  # setting to debug will break the workflow but give you more information
+  # setting to warning or error will effectively mute most of the output
+  checkLogLevel: Info
+  # === clog Check default ----------------------------------------------------
+  default:
+    # report on clog-only properties
+    # report:
+    #   tag-ref:       clog Sh vCode
+    # a dependency check passes if the return status is 0 or the text value matches
+    dependencies:
+      - name: Golang Version
+        snippet: cat go.mod | grep -oE 'go\s([0-9]+\.[0-9]+)' | head -1 | grep -oE '[0-9]+\.[0-9]+'
+        error-msg: 1.22 expected Golang version
+        error-if:
+          - golang-version: '[[ $VALUE != "1.22" ]]'
+        help-msg: update the version of golang or update clog.config.yaml/check
+      - name: Hugo Version
+        snippet: hugo version|grep -oE 'v([0-9]+\.[0-9]+)\.'|head -1
+        error-msg: v0.133. expected Golang version
+        error-if:
+          - hugo-version: '[[ $VALUE != "v0.133." ]]'
+        help-msg: update the version of hugo or update clog.config.yaml/check
+  # === clog Check deploy --------------------------------------------------------
+  deploy:
+    dependencies:
+      - name: CLOG_BUCKET env
+        snippet: echo "$CLOG_BUCKET"
+        error-msg: Clog Bucket not set - cannot deploy
+        error-if:
+          - $CLOG_BUCKET-nil: '[ -z "$CLOG_BUCKET" ]'
+        help-msg: set CLOG_BUCKET to a valid S3 destination
+      - name: AWS CLI v2
+        snippet: aws --version | grep aws-cli/2. | head -c 10
+        error-msg: aws cli v2 not found
+        error-if:
+          - expect_v2: '[[ $VALUE != "aws-cli/2." ]]'
+        help-msg: install aws cli v2
+      - name: AWS Bucket Access
+        snippet: 'aws s3 cp --dryrun LICENSE $CLOG_BUCKET/LICENSE'
+        error-msg: aws cli cannot write to $CLOG_BUCKET
+        error-if:
+          - bucket_write: '[ $STATUS -gt 0 ]'
+        help-msg: check bucket path and permissions
+
+  # === clog Check gitlab ----------------------------------------------------
+  gitlab:
+    # report on the gitlab environment (empty snippet results in an echo)
+    report:
+    - PATH:
+    - CI_COMMIT_BRANCH:
+    - CI_COMMIT_REF_SLUG:
+    - CI_PIPELINE_SOURCE:
+    - CI_MERGE_REQUEST_APPROVED:
+    - CI_MERGE_REQUEST_ID:
+    - CI_MERGE_REQUEST_LABELS:
+    - CI_MERGE_REQUEST_REF_PATH:
+    - CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:
+    - CI_BUILDS_DIR:
+    - CI_COMMIT_DESCRIPTION:
+    - CI_COMMIT_TAG:
+    - CI_JOB_STAGE:
+    - CI_JOB_TOKEN:
+    - CI_PIPELINE_NAME:
+    - CI_PROJECT_DIR:
+    - CI_PROJECT_PATH:
+    - CI_RUNNER_VERSION:
+    - CI_SERVER:
+    - GITLAB_USER_EMAIL:
+    - GITLAB_USER_ID:
+    - GITLAB_USER_LOGIN:
+    - GITLAB_USER_NAME:
+    - KUBECONFIG:
