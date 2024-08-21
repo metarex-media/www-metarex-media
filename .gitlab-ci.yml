@@ -7,7 +7,7 @@ variables:
   vGOLANG: "1.22"
   vHUGO: "0.133.0"
   BASE_URL: ""
-  vDART: " 1.70.0"
+  vDART: "1.77.8"
   # node version `node` will install the latest version with nvm
   vNODE: node
   vDOCKER_IMAGE: "26.0"
