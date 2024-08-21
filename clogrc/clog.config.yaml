@@ -22,7 +22,7 @@ check:
   # setting to warning or error will effectively mute most of the output
   checkLogLevel: Info
   # --- clog Check default ----------------------------------------------------
-  default:
+  build:
     # report on clog-only properties
     # report:
     #   tag-ref:       clog Sh vCode

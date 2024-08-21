@@ -76,6 +76,9 @@ hugo:
       fi
     # Hugo fails unexpectedly if the theme folder does not exist.
     - mkdir -p themes/fohuw
+    # check all the dependencies match the dev testing environment
+    - curl https://mrmxf.com/get/clog | bash
+    - clog Check build
     # Build
     - |
       hugo mod get
