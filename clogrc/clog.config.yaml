@@ -41,6 +41,8 @@ check:
           - hugo-version: '[[ $VALUE != "v0.133." ]]'
         help-msg: update the version of hugo or update clog.config.yaml/check
   # --- clog Check docker logins ----------------------------------------------
+  docker:
+    dependencies:
       - name: Docker Username
         snippet: echo "$MRX_DOCKER_USR"
         error-msg: "$MRX_DOCKER_USR is unset"

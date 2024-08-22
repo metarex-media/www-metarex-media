@@ -97,7 +97,7 @@ deploy:
     - docker info
   script:
     #create env from upstream dependencies
-    - source clogrc/_cfg.sh
+    - vCODE="$(cat data/history.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
     - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
 
     - TARGETamd="$MRX_DOCKER_NS/$PROJECT-amd:$vCODE"
