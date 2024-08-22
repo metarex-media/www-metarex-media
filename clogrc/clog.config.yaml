@@ -40,6 +40,25 @@ check:
         error-if:
           - hugo-version: '[[ $VALUE != "v0.133." ]]'
         help-msg: update the version of hugo or update clog.config.yaml/check
+  # --- clog Check docker logins ----------------------------------------------
+      - name: Docker Username
+        snippet: echo "$MRX_DOCKER_USR"
+        error-msg: "$MRX_DOCKER_USR is unset"
+        error-if:
+          - DOCKER_USR_unset: '[ -z "$MRX_DOCKER_USR" ]]'
+        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
+      - name: Docker Password
+        snippet: '[ -z "$MRX_DOCKER_PWD" ] && echo "no password"'
+        error-msg: "$MRX_DOCKER_PWD is unset"
+        error-if:
+          - DOCKER_PWD_unset: '[ -z "$MRX_DOCKER_PWD" ]'
+        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
+      - name: Docker Password
+        snippet: '[ -z "$MRX_DOCKER_NS" ] && echo "no password"'
+        error-msg: "$MRX_DOCKER_NS is unset"
+        error-if:
+          - MRX_DOCKER_NS_unset: '[ -z "$MRX_DOCKER_NS" ]'
+        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
   # --- clog Check gitlab-env -------------------------------------------------
   gl-env:
     report:
@@ -53,21 +72,9 @@ check:
   # --- clog Check deploy -----------------------------------------------------
   deploy:
     dependencies:
-      - name: CLOG_BUCKET env
-        snippet: echo "$CLOG_BUCKET"
-        error-msg: Clog Bucket not set - cannot deploy
+      - name: Docker installed
+        snippet: docker --version
+        error-msg: docker not found
         error-if:
-          - $CLOG_BUCKET-nil: '[ -z "$CLOG_BUCKET" ]'
-        help-msg: set CLOG_BUCKET to a valid S3 destination
-      - name: AWS CLI v2
-        snippet: aws --version | grep aws-cli/2. | head -c 10
-        error-msg: aws cli v2 not found
-        error-if:
-          - expect_v2: '[[ $VALUE != "aws-cli/2." ]]'
-        help-msg: install aws cli v2
-      - name: AWS Bucket Access
-        snippet: 'aws s3 cp --dryrun LICENSE $CLOG_BUCKET/LICENSE'
-        error-msg: aws cli cannot write to $CLOG_BUCKET
-        error-if:
-          - bucket_write: '[ $STATUS -gt 0 ]'
-        help-msg: check bucket path and permissions
+          - expect_docker: '[ -z "$VALUE" ]'
+        help-msg: install docker engine or docker desktop
