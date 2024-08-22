@@ -10,7 +10,7 @@ variables:
   vDART: "1.77.8"
   # node version `node` will install the latest version with nvm
   vNODE: node
-  vDOCKER_IMAGE: "26.0"
+  vDOCKER_IMAGE: "27-cli"
   REGISTRY: hub.docker.com
   GIT_DEPTH: 0
   GIT_STRATEGY: clone
@@ -89,6 +89,7 @@ deploy:
   services:
     - docker:$vDOCKER_IMAGE-dind
   before_script:
+    - apk update && apk upgrade && apk add curl
     - curl https://mrmxf.com/get/clog | bash
     - clog Check docker
     - echo "$MRX_DOCKER_PWD" | docker login -u "$MRX_DOCKER_USR" --password-stdin

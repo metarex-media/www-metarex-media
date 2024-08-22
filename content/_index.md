@@ -9,6 +9,8 @@ linkTitle: Metarex
 date:      2024-08-13
 ---
 
+{{< o/block blockType = "blog" count = 2 skip = 0 />}}
+
 {{< o/block
     blockType = "cover"
     from = "project/coverpages/rexycover.md"
@@ -19,7 +21,6 @@ date:      2024-08-13
     blockType = "include"
     from = "blog/2024-03-07-rnf-best-accelerator"
 />}}
-{{< o/block blockType = "blog" />}}
 
 {{< o/block blockType = "include" from = "project/goals" />}}
 
