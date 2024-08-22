@@ -3,7 +3,6 @@
 # needs $MRX_DOCKER_PWD - the account password for docker hub
 # needs $MRX_DOCKER_NS - the account namespace for docker hub e.g. metarexmedia
 variables:
-  IMAGE: www-metarex-media
   vGOLANG: "1.22"
   vHUGO: "0.133.0"
   BASE_URL: ""
@@ -98,6 +97,7 @@ deploy:
   script:
     #create env from upstream dependencies
     - vCODE="$(cat data/history.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
+    - PROJECT=www-metarex-media
     - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
 
     - TARGETamd="$MRX_DOCKER_NS/$PROJECT-amd:$vCODE"
