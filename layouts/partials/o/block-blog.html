@@ -11,7 +11,7 @@
 {{ $blogCount := add $count $skip }}
 {{ $dot := . }}
 {{/* --- debug the blog  filtering --------------------------------------- */}}
-{{ if true }}{{ range first $blogCount ( where .page.Site.Pages "Type" "blog" )  | last $count }}
+{{ if false }}{{ range first $blogCount ( where .page.Site.Pages "Type" "blog" )  | last $count }}
 <pre>
   count:        {{ $count }}
   skip:         {{ $skip }}

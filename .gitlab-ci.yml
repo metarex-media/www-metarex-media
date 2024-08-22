@@ -78,6 +78,9 @@ hugo:
     - find public -type f -regex '.*\.\(css\|html\|js\|txt\|xml\)$' -exec brotli -f -k {} \;
     # Get website version
     - source clogrc/_cfg.sh && echo "$PROJECT website version $vCODE in artifacts"
+    # clog has a problem running in alpine at the moment, dso do checks here
+    - curl https://mrmxf.com/get/clog | bash
+    - clog Check docker
   artifacts:
     paths:
       - public
@@ -90,13 +93,9 @@ deploy:
     - docker:$vDOCKER_IMAGE-dind
   before_script:
     - apk update && apk upgrade && apk add curl
-    - curl https://mrmxf.com/get/clog | bash
-    - clog Check docker
     - echo "$MRX_DOCKER_PWD" | docker login -u "$MRX_DOCKER_USR" --password-stdin
     - docker info
   script:
-    - curl https://mrmxf.com/get/clog | bash
-    - clog Check deploy
     #create env from upstream dependencies
     - source clogrc/_cfg.sh
     - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
@@ -113,6 +112,8 @@ deploy:
     - docker buildx build -t "$TARGETarm" --push --platform linux/arm64 .
     - docker buildx imagetools inspect "$TARGETarm"
 
+    - curl https://mrmxf.com/get/clog | bash
+    - clog Check deploy
 # --- hook ------------------------------------------------------------------
 hook:
   stage: deploy
