@@ -1,7 +1,11 @@
-history:
+releases:
+  -
+    version:  1.5.3
+    date:     2024-08-23
+    note:     TBD
   -
     version:  1.5.2
-    date:     2024-08-21
+    date:     2024-08-22
     note:     IBC blog SDVI+V-Nova
   -
     version:  1.5.1

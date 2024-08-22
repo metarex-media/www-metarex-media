@@ -104,8 +104,8 @@ jobs:
       -
         name: Get website version
         run: |
-              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+              vCODE=$(cat data/releases.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+              vCODE=$(cat data/releases.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
               echo "pushing website version $vCODE"
               echo "export vCODE=$vCODE"  >> job-chain.sh
       -

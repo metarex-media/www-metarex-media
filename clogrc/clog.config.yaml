@@ -13,8 +13,8 @@ commandsnippets:
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
 
 shellsnippets:
-  vCODE:           cat data/history.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
-  git-message-ref: cat data/history.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
+  vCODE:           cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
+  git-message-ref: cat data/releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
 
 # --- check project -----------------------------------------------------------
 check:

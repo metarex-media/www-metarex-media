@@ -1,6 +1,6 @@
 # www-metarex-media static website - built with Hugo
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmetarex-media%2Fwww-metarex-media%2Fmain%2Fdata%2Fhistory.yaml&query=%24.history%5B0%5D.version&logo=github&label=www-metarex-media&labelColor=4F702A)
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmetarex-media%2Fwww-metarex-media%2Fmain%2Fdata%2Freleases.yaml&query=%24.releases%5B0%5D.version&logo=github&label=www-metarex-media&labelColor=4F702A)
 ![GitHub Build](https://img.shields.io/github/actions/workflow/status/mrmxf/mm-www-metarex-media/hugo-build-container?branch=main&labelColor=4F702A)
 
 The [metarex.media] website built with [Hugo] and the [fohuw] theme. The end
