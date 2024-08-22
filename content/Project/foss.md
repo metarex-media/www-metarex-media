@@ -4,8 +4,8 @@ linkTitle:   "Free Software"
 weight:      300
 type:        docs
 description: What software can you expect from Metarex.
-categories: ["Backer"]
-tags: ["backer"]
+categories: ["backers"]
+tags: ["backers"]
 ---
 {{< f/message
     header="Free Open Source Software"

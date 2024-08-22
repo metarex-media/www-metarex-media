@@ -5,10 +5,11 @@
 if [ -z "$(echo $SHELL|grep zsh)" ];then eval "$(clog Inc)";else source <(clog Inc);fi
 PROJECT=www-metarex-media
 bEXE="$PROJECT"
+bDOCKER_NS="metarexmedia"
 svelteFolder="svelte"
 callingSCRIPT="${0##*/}"
 vCodeType="hugo"
 vCodeSrc="data/history.yaml"
 # A golang module must have a "v" semver prefix. A website does not
-vCODE=$(cat $vCodeSrc | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-bMSG=$(cat  $vCodeSrc | grep note | head -1 | sed -nr "s/note: (.*)/\1/p" | xargs)
+vCODE=$(clog Sh vCODE)
+bMSG=$(clog Sh git-message-ref)

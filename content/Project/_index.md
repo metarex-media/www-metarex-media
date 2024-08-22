@@ -9,7 +9,7 @@ menu:
   main:
     identifier: project
     weight: 100
-categories:  ["Project"]
+categories:  ["project"]
 tags:        ["docs", "project"]
 ---
 

@@ -7,8 +7,8 @@ title:       "Work Packages"
 linkTitle:   "Work Packages"
 weight:      200
 description: How the Work is going to be divided.
-categories: ["Backer"]
-tags: ["backer", "packages", "project"]
+categories: ["backers"]
+tags: ["backers", "packages", "project"]
 ---
 
 {{% pageinfo %}} see the blog post about the We're going to make all the

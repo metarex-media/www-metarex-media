@@ -2,14 +2,23 @@
 title:       2024-08-21 Thank you nxtedition
 linkTitle:   2024-08-21 Thank you nxtedition
 date:        2024-08-21
-description: "{{% metarex %}} needs you - come and see why at W.1931"
+description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "award"]
+tags:        ["project",  "backers"]
 params:
   publish:
     linkedin:  true
 ---
 
+**[nxtedition][nxt]** is one of our wonderful backers and we couldn’t be successful
+without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
+you'll have a chance of ***wining a cuddly Rexy!*** The more partners and
+backers you visit, the greater chance you'll win on Sunday afternoon in the IBC
+[AI Zone][rxydraw]. Sign up at [https://bit.ly/rexy-ibc-2024][ths].
+Instructions on the [treasure hunt page][thp].
+
+Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+the show. She’s shy and only appears in jigsaw form at the moment!
 
 <img class="ui centered bordered rounded image" src="featured-nxtedition.png" alt="nxtedition">
 
@@ -25,22 +34,25 @@ Visit **[nxtedition][nxtfp]** at IBC 2024, booth number **[7.A02][nxtfp]** and
 experience first-hand how they are transforming media production, powering
 journalists and creatives to get the news out fast and first!
 
+[#nxtedition](https://www.linkedin.com/search/results/all/?keywords=%23nxtedition)
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
 [#rexy](https://www.linkedin.com/search/results/all/?keywords=%23rexy)
-[#nxtedition](https://www.linkedin.com/search/results/all/?keywords=%23nxtedition)
 [#media](https://www.linkedin.com/search/results/all/?keywords=%23media)
 [#metadata](https://www.linkedin.com/search/results/all/?keywords=%23metadata)
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<a href="https://uk.linkedin.com/company/metarex-media"><i class="linkedin
-icon"></i></a> [LinkedIn][libc]
+<i class="linkedin icon"></i>[@nxtediton](https://www.linkedin.com/company/nxtedition/)
+<i class="linkedin icon"></i>[@metarex][limrx]
+<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
 
-[dmo]:   https://metarex.media/app/demos/
-[li]:    https://uk.linkedin.com/company/metarex-media
-[libc]:  https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
-[nxt]:   https://nxtedition.com
-[nxtfp]: https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.A02
-[th]:    https://bit.ly/rexy-ibc-2024
-[tr]:    /project/treasure-hunt/
+[nxt]:    https://nxtedition.com
+[nxtfp]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.A02
+
+[dmo]:     https://metarex.media/app/demos/
+[limrx]:   https://uk.linkedin.com/company/metarex-media
+[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
+[ths]:     https://bit.ly/rexy-ibc-2024
+[thp]:     /project/treasure-hunt/

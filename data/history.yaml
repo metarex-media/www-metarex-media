@@ -1,8 +1,12 @@
 history:
   -
+    version:  1.5.2
+    date:     2024-08-21
+    note:     IBC blog SDVI+V-Nova
+  -
     version:  1.5.1
     date:     2024-08-21
-    note:     IBC blog nxedition
+    note:     IBC blog nxtedition
   -
     version:  1.5.0
     date:     2024-08-03

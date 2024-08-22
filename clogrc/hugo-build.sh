@@ -8,7 +8,8 @@
 # | |_) )| |_| || || | ( (_| |  | | | || | | || | | |       | | | || ____|  | |_ / ___ || |    | ____| ) X (        | | | || ____|( (_| || |/ ___ |
 # |____/ |____/ |_| \_) \____|   \___/  \___/  \___/        |_|_|_||_____)   \__)\_____||_|    |_____)(_/ \_)       |_|_|_||_____) \____||_|\_____|
 source <(clog Inc)
-[ -f clogrc/check.sh   ] && source clogrc/check.sh  "ignore-errors"
+source clogrc/_cfg.sh
+clog Check
 
 buildErrs=0
 DST=public
@@ -18,14 +19,7 @@ fInfo "purging old builds:  $ $cC$CMD$cX"
 $CMD
 [ $? -gt 0 ] && ((buildErrs++)) && fError "purging faild - continuiing anyway"
 
-TAG=$(git describe)
-if [ -z "$TAG" ] ; then
-  fWarning "No recent tag found using tag$cE dev"
-  TAG=dev
-fi
-NAME="www-metarex-media"
-DOCKER_NS=metarexmedia
-IMAGE="$DOCKER_NS/$NAME"
+IMAGE="$bDOCKER_NS/$PROJECT"
 GREP_SEARCH="mrx"
 OPTS="-q --force-rm"
 DoPUSH="$1"
@@ -36,8 +30,8 @@ hugo --gc  --minify
 
 fOk   "building the static website to $cF$DST/$cs Success$cX"
 fInfo "executing$cC docker build$cT with opts: $cW$OPTS\n$cX"
-AMDtarget="$IMAGE-amd:$TAG"; dAMDtarget="$cW$IMAGE$cT-amd:$cE$TAG$cX"
-ARMtarget="$IMAGE-arm:$TAG"; dARMtarget="$cW$IMAGE$cT-arm:$cE$TAG$cX"
+AMDtarget="$IMAGE-amd:$vCODE"; dAMDtarget="$cW$IMAGE$cT-amd:$cE$vCODE$cX"
+ARMtarget="$IMAGE-arm:$vCODE"; dARMtarget="$cW$IMAGE$cT-arm:$cE$vCODE$cX"
 
 fInfo "Build image $dAMDtarget"
 docker build $OPTS -t "$AMDtarget" --platform linux/amd64 .
@@ -47,26 +41,15 @@ fInfo "Build image $dARMtarget"
 docker build $OPTS -t "$ARMtarget" --platform linux/arm64 .
 [ $? -gt 0 ] && ((buildErrs++))
 
-fInfo "Inspecting Intel:"
-docker buildx imagetools inspect "$AMDtarget"  | grep -E "Digest|Platform" | head -2
-fInfo "Inspecting Arm:"
-docker buildx imagetools inspect "$ARMtarget"  | grep -E "Digest|Platform" | head -2
-
 BuildImageFound="$(docker images | grep "$GREP_SEARCH")"
 [[ $buildErrs > 0 ]] || [ -z BuildImageFound ]  && \
    fError "Build failed or $cE $GREP_SEARCH$cT docker images not found locally\n" \
    fError"Aborting....\n" \
    exit 1
 
-if [ -n "$DoPush" ] ; then
-  fInfo "push:    docker push $dARMtarget"
-  docker push "$ARMtarget"
-  fInfo "push:    docker push $dAMDtarget"
-  docker push "$AMDtarget"
-fi
-
-fInfo "1. start:   docker run --detach --rm --publish 11999:80 --name$cI $NAME $dAMDtarget$cX"
-fInfo "     or:    docker run --detach --rm --publish 11999:80 --name$cI $NAME $dARMtarget$cX"
-fInfo "2. stop:    docker stop$cW $NAME$cX"
-[ -z "$DoPUSH" ] && fInfo "3. push:    docker push $dAMDtarget"
-[ -z "$DoPUSH" ] && fInfo "4. push:    docker push $dARMtarget"
+fInfo "1. start:$cC     docker$cT run --detach --rm --publish 11999:80 --name$cI $NAME $dAMDtarget$cX"
+fInfo "     or:$cC      docker$cT run --detach --rm --publish 11999:80 --name$cI $NAME $dARMtarget$cX"
+fInfo "2. stop:$cC      docker$cT stop$cW $NAME$cX"
+fInfo "3. deploy:$cC    clog$cT deploy$cW $NAME$cX"
+[ -z "$DoPUSH" ] && fInfo "3. push:$cC    docker$cT push $dAMDtarget"
+[ -z "$DoPUSH" ] && fInfo "4. push:$cC    docker$cT push $dARMtarget"

@@ -37,7 +37,7 @@ packages that result in:
 The initial backers, company incorpration, board and draft work plan will be in
 place by 2022-12-31. First grant applications & proposals can be received
 against the work plan 2023-01-01. Gantt Chart on the
-[Project]({{< relref "/project" >}} "Project")
+[Project]({{< relref "/project" >}} "project")
 page.
 
 The project will continue until 2024-12-31 and then be wound up by the board

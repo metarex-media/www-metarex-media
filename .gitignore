@@ -1,6 +1,5 @@
 # hugo gitignore
 
-tmp-*
 
 # ignore synthesised outputs
 public/
@@ -22,10 +21,10 @@ yarn.lock
 .hugo_build.lock
 clogrc/core
 
-# ignore the tmp folder but not the readme inside it
-tmp/*
+# ignore tmp- files & tmp folder but not the readme inside it
+tmp/
 !tmp/readme.md
-
+tmp-*
 
 #ignore mac cruft
 **/*/.DS_Store
