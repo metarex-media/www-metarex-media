@@ -40,7 +40,7 @@ bark:
   script:
     - curl https://mrmxf.com/get/clog | bash
     - clog Check
-    - clog Check gitlab-env
+    - clog Check gitlab-core-env
     - clog Check gl-env
 
 # --- hugo --------------------------------------------------------------------
