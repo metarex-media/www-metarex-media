@@ -11,8 +11,8 @@ params:
 ---
 
 **[V-Nova][web]** is one of our wonderful backers and we couldn’t be successful
-without them. If you sign up to Rexy's fun **[IBC treasure hunt][th]** then
-you'll have a chance of ***wining a cuddly Rexy!*** The more partners and
+without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
+you'll have a chance of ***winning a cuddly Rexy!*** The more partners and
 backers you visit, the greater chance you'll win on Sunday afternoon in the IBC
 [AI Zone][rxydraw]. Sign up at [https://bit.ly/rexy-ibc-2024][ths].
 Instructions on the [treasure hunt page][thp].

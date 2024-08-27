@@ -10,9 +10,9 @@ params:
     linkedin:  true
 ---
 
-**[V-Nova][web]** is one of our wonderful backers and we couldn’t be successful
-without them. If you sign up to Rexy's fun **[IBC treasure hunt][th]** then
-you'll have a chance of ***wining a cuddly Rexy!*** The more partners and
+**[qibb][web]** is one of our wonderful backers and we couldn’t be successful
+without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
+you'll have a chance of ***winning a cuddly Rexy!*** The more partners and
 backers you visit, the greater chance you'll win on Sunday afternoon in the IBC
 [AI Zone][rxydraw]. Sign up at [https://bit.ly/rexy-ibc-2024][ths].
 Instructions on the [treasure hunt page][thp].
@@ -20,7 +20,7 @@ Instructions on the [treasure hunt page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img class="ui centered bordered rounded image" src="featured-v-nova.png" alt="V-Nova">
+<img class="ui centered bordered rounded image" src="featured-qibb.png" alt="V-Nova">
 
 **[qibb][web]** is supporting {{% metarex %}} in creating no-code visual
 workflows.
