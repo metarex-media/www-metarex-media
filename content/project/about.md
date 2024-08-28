@@ -1,5 +1,6 @@
 ---
 title:       About Metarex
+date:        2024-08-28
 linkTitle:   About
 url:         /about
 type:        docs
@@ -12,33 +13,21 @@ menu:
 # Use the block/cover shortcode to have a picture landing page
 ---
 
-{{< cover-image
-      title=    "MetaRex"
-			imageUrl= "/img/dino/mrx-splash-color.svg"
-			logoPath= "static/img/dino/mrx-splash-color-1000.png"
-			height=   "full"
-			color=    "dark"
-			scrollTo= "#td-block-1"
-			btn1=     "Home"	        	url1= "/"
-  >}}
+{{< choo-choo	src = "/img/dino/mrx-splash-color.svg" >}}
 
-## Metadata Resource Express
-
-{{< /cover-image >}}
+#### All Aboard the METAdata Resource EXpress
+{{< /choo-choo >}}
 <!--  ---------------------------------------------------------------------  -->
-{{% blocks/lead %}}
 
+{{< o/block src = "/img/dino/mrx-logo.svg"  srcWidth = 0.01 >}}
 {{%metarex%}}.media is a project dedicated to transporting,
 registering and preserving timely metadata for media. The goal is to generate a
 body of open source software that makes it easier to preserve production and
 post-production metadata than it is to lose it or leave it behind.
-
-{{% /blocks/lead %}}
+{{< /o/block >}}
 
 <!--  ---------------------------------------------------------------------  -->
 
-{{% blocks/lead                                                              %}}
-{{<   include    "/project/Admin/backer-list.md"                         >}}
-{{% /blocks/lead                                                             %}}
+{{<   include    "/project/admin/backer-list.md"                         >}}
 
 <!--  ---------------------------------------------------------------------  -->
