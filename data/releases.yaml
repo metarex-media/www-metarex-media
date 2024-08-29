@@ -1,5 +1,9 @@
 releases:
   -
+    version:  1.5.5
+    date:     2024-08-30
+    note:     remote-filming blogs
+  -
     version:  1.5.4
     date:     2024-08-29
     note:     august blogs
