@@ -1,7 +1,7 @@
 ---
 title:       2024-08-30 Thank you Remote Filming
 linkTitle:   2024-08-30 Thank you Remote Filming
-date:        2024-08-30
+date:        2024-08-29
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "backers"]
