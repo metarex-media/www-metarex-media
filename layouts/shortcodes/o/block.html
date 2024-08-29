@@ -30,7 +30,7 @@
   {{/* ------ `srcOn` is left | right | none------------------------------ */}}
   {{- $srcOn := .Get "srcOn" | default "left" -}}
   {{/* ------ `srcWidth` is 0.0-1.0 & becomes "xxx wide" for grid control- */}}
-  {{- $srcWidth := .Get "srcWidth" | default 0.3 -}}
+  {{- $srcWidth := .Get "srcWidth" | default 0.25 -}}
   {{- if not $src -}}{{ $srcWidth = 0.0 }}{{- end -}}
   {{/* ------ `srcLink` is the href for clicking the image---------------- */}}
   {{- $srcLink := .Get "srcLink" | default $headerLink -}}

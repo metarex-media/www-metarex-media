@@ -13,6 +13,7 @@ date:      2024-08-13
 
 {{< o/block
     blockType = "cover"
+    header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
     src = "project/coverpages/rexycover-240806.jpg"
 />}}

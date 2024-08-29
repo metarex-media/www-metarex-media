@@ -12,10 +12,13 @@ menu:
 
 # Use the block/cover shortcode to have a picture landing page
 ---
-
+<style>
+  span.ui.green.text { color: #73a33d;}
+</style>
 {{< choo-choo	src = "/img/dino/mrx-splash-color.svg" >}}
 
-#### All Aboard the METAdata Resource EXpress
+#### All Aboard the <span class="ui green text" >META</span>data <span class="ui green text" >R</span>esource <span class="ui green text" >EX</span>press
+
 {{< /choo-choo >}}
 <!--  ---------------------------------------------------------------------  -->
 

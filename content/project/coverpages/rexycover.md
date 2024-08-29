@@ -1,7 +1,8 @@
 ---
-title:  2024-08-13 We're going to IBC!
-date:   2024-08-13
-layout: cover
+title:      2024-08-13 We're going to IBC!
+linkTitle:  2024-08-13 We're going to IBC!
+date:       2024-08-13
+layout:     cover
 params:
   coversrc: /project/coverpages/rexycover-240806.jpg
 ---

@@ -62,26 +62,26 @@ Sunday afternoon!
 
 * **Exhibiting Companies**
   * [arqiva](https://arqiva.com/)
-  * [bbc (r&d)](https://www.bbc.co.uk/programmes/p0f8xhj4/)
-  * backblaze
+  <!-- * [bbc (r&d)](https://www.bbc.co.uk/programmes/p0f8xhj4/) -->
+  * [backblaze]
   * [cinnafilm](https://cinnafilm.com/)
   * [codemill](https://www.codemill.se/)
-  * deluxe
+  <!-- * deluxe -->
   * [digit](https://studiodigit.co.uk/)
   * [ezdrm](https://ezdrm.com/)
-  * global M
+  * [GlobalM](/blog/2024/08/28/2024-08-28-thank-you-globalm/)
   * [graymeta](https://graymeta.com/)
-  * [infuse video](https://infuse.video/)
-  * matrox
+  * [lont.ai (formerly infuse video))](https://www.lont.ai/)
+  <!-- * matrox -->
   * [media mavens](https://metarex.media/)
   * [metaglue](https://metaglue.com/)
-  * [nxtedition](https://nxtedition.com/)
-  * [sdvi](https://sdvi.com/)
+  * [nxtedition](/blog/2024/08/21/2024-08-21-thank-you-nxtedition/)
+  * [qibb](/blog/2024/08/27/2024-08-27-thank-you-qibb/)
+  * [sdvi](/blog/2024/08/22/2024-08-22-thank-you-sdvi/)
   * [tagvs](https://tagvs.com/)
   * [testronic](https://testroniclabs.com/)
-  * Venera
-  * [v-nova](https://v-nova.com/)
-
+  * [Venera](/blog/2024/08/29/2024-08-29-thank-you-venera/)
+  * [v-nova](/blog/2024/08/23/2024-08-23-thank-you-v-nova/)
 </div>
 <div class="column">
 
