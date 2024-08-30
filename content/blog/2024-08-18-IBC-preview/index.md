@@ -2,7 +2,7 @@
 title: 2024-08-18 IBC preview V-Nova, nxtedition, SDVI
 linkTitle: 2024-08-18 IBC preview V-Nova, nxtedition, SDVI
 date: 2024-08-19
-description: "{{% metarex %}} needs you - come and see why at W.1931"
+description: "{{% metarex %}} needs you - sign up and make metadata flow!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "award"]
 params:
@@ -35,4 +35,4 @@ icon"></i></a> [LinkedIn][libc]
 [th]: https://bit.ly/rexy-ibc-2024
 [tr]: /project/treasure-hunt/
 [li]: https://uk.linkedin.com/company/metarex-media
-[libc]: https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[libc]: https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy

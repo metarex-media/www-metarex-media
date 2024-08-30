@@ -2,7 +2,7 @@
 title:       2024-03-27 Virtual Production
 linkTitle:   2024-03-27 Virtual Production
 date:        2024-03-27
-description: "{{% metarex %}} needs you - come and see why at W.1931"
+description: "{{% metarex %}} needs you - sign up and make metadata flow!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project", "smpte", "osvp"]
 params:

@@ -57,7 +57,7 @@ Visit the V-Nova booths at IBC 2024, booth numbers **[5.A2A]**, **[5.B40]**,
 
 [dmo]:     https://metarex.media/app/demos/
 [limrx]:   https://uk.linkedin.com/company/metarex-media
-[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://bit.ly/rexy-ibc-2024
 [thp]:     /project/treasure-hunt/
