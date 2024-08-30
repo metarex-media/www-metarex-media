@@ -11,7 +11,7 @@ params:
 ---
 
 
-<img class="ui centered bordered rounded image" src="/img/blog/sponthanks-2024-08-10.png">
+<img class="ui centered bordered rounded image" src="/img/blog/sponthanks-2024-08-10.png" alt="Thank you sponsors">
 
 Many thanks to our great sponsors, backers and partners. We couldn't do this
 without you.
@@ -30,7 +30,6 @@ show. She's shy and only appears in jigsaw form at the moment!
 
 <a href="https://uk.linkedin.com/company/metarex-media"><i class="linkedin
 icon"></i></a> [LinkedIn][libc]
-
 
 [th]: https://bit.ly/rexy-ibc-2024
 [tr]: /project/treasure-hunt/

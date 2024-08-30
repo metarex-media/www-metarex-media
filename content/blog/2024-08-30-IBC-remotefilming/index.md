@@ -61,8 +61,6 @@ and how **simple** it is [on our website][web].
 <i class="linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    http://www.remotefilming.com/
-[meet]:   https://www.veneratech.com/ibc2024
-[7.D45]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.D45
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
