@@ -2,7 +2,7 @@
 title:       2024-03-27 Virtual Production
 linkTitle:   2024-03-27 Virtual Production
 date:        2024-03-27
-description: "{{% metarex %}} needs you - come and see why at W.1931"
+description: "{{% metarex %}} needs you - sign up and make metadata flow!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project", "smpte", "osvp"]
 params:
@@ -86,7 +86,7 @@ taking over.
 
 <div class="ui container segment">
   <a href="https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production" _target="blank">
-    <img class="ui fluid image" src= "ris-2023-roadmap.svg">
+    <img class="ui fluid image" src= "ris-2023-roadmap.svg" alt="RIS>
   </a>
 </div>
 
@@ -94,6 +94,7 @@ taking over.
   id    = "examples"
 >}}
 
+<!-- markdownlint-disable MD026 -->
 ### We Need You!
 
 We'll be showing {{% metarex %}} use-case examples for Virtual Production at
@@ -144,10 +145,8 @@ finish line.
 Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
 [W.1931][n]
 
-[b]: /backers/
 [s]: https://signiant.com/
 [n]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
-[b]: /backers/
 
 {{< sitelinks >}}
 {{< /f/block >}}

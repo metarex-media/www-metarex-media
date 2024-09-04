@@ -1,7 +1,7 @@
 ---
 title:       2024-08-30 Thank you Remote Filming
 linkTitle:   2024-08-30 Thank you Remote Filming
-date:        2024-08-29
+date:        2024-08-30
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "backers"]
@@ -61,11 +61,9 @@ and how **simple** it is [on our website][web].
 <i class="linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    http://www.remotefilming.com/
-[meet]:   https://www.veneratech.com/ibc2024
-[7.D45]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.D45
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
-[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://bit.ly/rexy-ibc-2024
 [thp]:     /project/treasure-hunt/

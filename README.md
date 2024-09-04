@@ -1,8 +1,8 @@
 # www-metarex-media static website - built with Hugo
-
+<!-- CLOG-BADGE-START -->
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmetarex-media%2Fwww-metarex-media%2Fmain%2Fdata%2Freleases.yaml&query=%24.releases%5B0%5D.version&logo=github&label=www-metarex-media&labelColor=4F702A)
 ![GitHub Build](https://img.shields.io/github/actions/workflow/status/mrmxf/mm-www-metarex-media/hugo-build-container?branch=main&labelColor=4F702A)
-
+<!-- CLOG-BADGE-END -->
 The [metarex.media] website built with [Hugo] and the [fohuw] theme. The end
 result is a static website that can sit on an S3 bucket, USB stick or similar
 and runs just fine without a database or high power server.
@@ -26,7 +26,6 @@ level components, most of which can be found on
 | /r         | _bulky storage_         |   -     | externally hosted media store               |
 | /reg       | [mrx-reg-svr][rs]       |   -     | register service (GitHub)                   |
 | /svc/demos | [mrx-svc-demos][ds]     |   -     | demo service (GitHub)                       |
-
 
 ## Forking, cloning & editing
 

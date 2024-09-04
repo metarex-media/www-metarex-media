@@ -59,7 +59,7 @@ is: <https://calendly.com/globalm-sales/meet-globalm-at-the-ibc-2024>
 [1.B23]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=A&selectedBooth=1.B23
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
-[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://bit.ly/rexy-ibc-2024
 [thp]:     /project/treasure-hunt/

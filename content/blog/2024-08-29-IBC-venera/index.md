@@ -64,7 +64,7 @@ this [link][meet] and you can also visit them in [Hall 7, Stand #D45][7.D45].
 [7.D45]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.D45
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
-[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
+[lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://bit.ly/rexy-ibc-2024
 [thp]:     /project/treasure-hunt/
