@@ -49,7 +49,7 @@ hugo:
   script:
     - curl https://mrmxf.com/get/clog | bash
     - apt-get update && apt-get install -y brotli
-    # nvm (Node management) - config is wriitten to  ~/.bashrc
+    # nvm (Node management) - config is written to  ~/.bashrc
     - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
     - source ~/.bashrc
     # Node & DART SASS
