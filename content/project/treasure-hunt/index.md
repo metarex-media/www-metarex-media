@@ -63,14 +63,12 @@ Sunday afternoon!
 * **Exhibiting Companies**
   * [arqiva](https://arqiva.com/)
   <!-- * [bbc (r&d)](https://www.bbc.co.uk/programmes/p0f8xhj4/) -->
-  * [backblaze]
   * [cinnafilm](https://cinnafilm.com/)
   * [codemill](https://www.codemill.se/)
   <!-- * deluxe -->
   * [digit](https://studiodigit.co.uk/)
   * [ezdrm](https://ezdrm.com/)
   * [GlobalM](/blog/2024/08/28/2024-08-28-thank-you-globalm/)
-  * [graymeta](https://graymeta.com/)
   * [lont.ai (formerly infuse video))](https://www.lont.ai/)
   <!-- * matrox -->
   * [media mavens](https://metarex.media/)
@@ -78,10 +76,12 @@ Sunday afternoon!
   * [nxtedition](/blog/2024/08/21/2024-08-21-thank-you-nxtedition/)
   * [qibb](/blog/2024/08/27/2024-08-27-thank-you-qibb/)
   * [sdvi](/blog/2024/08/22/2024-08-22-thank-you-sdvi/)
+  * [signiant](/blog/2024/09/05/2024-09-05-thank-you-signiant/)
   * [tagvs](https://tagvs.com/)
   * [testronic](https://testroniclabs.com/)
   * [Venera](/blog/2024/08/29/2024-08-29-thank-you-venera/)
   * [v-nova](/blog/2024/08/23/2024-08-23-thank-you-v-nova/)
+
 </div>
 <div class="column">
 

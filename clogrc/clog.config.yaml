@@ -15,6 +15,9 @@ commandsnippets:
 shellsnippets:
   vCODE:           cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
   git-message-ref: cat data/releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
+  lfs-install: |
+    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+    sudo apt-get install git-lfs
 
 # --- check project -----------------------------------------------------------
 check:
@@ -40,6 +43,12 @@ check:
         error-if:
           - hugo-version: '[[ $VALUE != "v0.133." ]]'
         help-msg: update the version of hugo or update clog.config.yaml/check
+      - name: Git-LFS
+        snippet: git lfs version|grep -oE '[0-9]+\.[0-9]+'|head -1
+        error-msg: Git LFS not installed
+        error-if:
+          - lfs-version: '[[ "$VALUE" < "3.5" ]]'
+        help-msg: try clog Sh lfs-install
   # --- clog Check docker logins ----------------------------------------------
   docker:
     dependencies:
