@@ -46,3 +46,4 @@ away to make Media Metadata Flow.
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://bit.ly/rexy-ibc-2024
 [thp]:     /project/treasure-hunt/
+[contact]: /contact
