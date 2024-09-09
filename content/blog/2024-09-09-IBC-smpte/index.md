@@ -16,10 +16,9 @@ params:
 couldn’t be successful without them. If you sign up to Rexy's fun **[IBC
 treasure hunt][ths]** then you'll have a chance of ***winning a cuddly Rexy!***
 The more partners and backers you visit, the greater chance you'll win on
-**Sunday** at **17:00** in the IBC [AI Zone][rxydraw] on the V-Nova booth. Sign
-up at
-[https://bit.ly/rexy-ibc-2024][ths]. Instructions on the [treasure hunt
-page][thp].
+**Sunday 15th Sep** at **17:00** in the IBC [AI Zone][rxydraw] on the V-Nova
+booth. Sign up at [https://bit.ly/rexy-ibc-2024][ths]. Instructions on the
+[treasure hunt page][thp].
 
 <img  class="ui centered large bordered rounded image" src="featured-{{% param img
 %}}.png" alt="{{% param img %}}">
