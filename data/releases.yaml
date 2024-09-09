@@ -1,5 +1,10 @@
 releases:
   -
+    version:  1.5.8
+    date:     2024-09-09
+    note:     IBC run-up
+    build:    preview
+  -
     version:  1.5.7
     date:     2024-08-30
     note:     IBC Signiant

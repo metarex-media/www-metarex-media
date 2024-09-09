@@ -35,7 +35,7 @@ been granted international standard status by MPEG/ISO and SMPTE.
 solutions'
 
 Visit the V-Nova booths at IBC 2024, booth numbers **[5.A2A]**, **[5.B40]**,
-**[14.A103]**, to see their rage of software products and solutions.
+**[14.AI03]**, to see their rage of software products and solutions.
 
 [#V-Nova](https://www.linkedin.com/search/results/all/?keywords=%23v-nova)
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
@@ -53,7 +53,7 @@ Visit the V-Nova booths at IBC 2024, booth numbers **[5.A2A]**, **[5.B40]**,
 [web]:   https://www.v-nova.com/
 [5.A2A]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=K&selectedBooth=5.A24
 [5.B40]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=K&selectedBooth=5.A24
-[14.A103]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
+[14.AI03]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 
 [dmo]:     https://metarex.media/app/demos/
 [limrx]:   https://uk.linkedin.com/company/metarex-media
