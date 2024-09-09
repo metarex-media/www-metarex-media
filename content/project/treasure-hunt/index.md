@@ -56,6 +56,7 @@ Rexy toy on Sunday at 17:00 in the IBC [AI Zone][rxydraw].
 
 **[Sign up here Now!](https://forms.office.com/e/zgKxUSPaCa)**
 
+[rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 {{< /f/block >}}
 
 {{< f/block
@@ -129,5 +130,3 @@ Rexy toy on Sunday at 17:00 in the IBC [AI Zone][rxydraw].
 </div>
 </div>
 {{< /f/block >}}
-
-[rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
