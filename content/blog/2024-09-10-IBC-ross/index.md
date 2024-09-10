@@ -28,7 +28,7 @@ booth. Sign up at [https://bit.ly/rexy-ibc-2024][ths]. Instructions on the
 
 Join **[{{% param backer %}}][web]**  as they celebrate their 50<sup>th</sup>
 anniversary with a bigger presence than ever before in a new, larger space at
-boorh [8.B91]. If Rexy's lucky there might even be a pair of special edition
+booth [8.B91]. If Rexy's lucky there might even be a pair of special edition
 50<sup>th</sup> anniversary Ross socks in her size!
 
 **[{{% param backer %}}][web]** offers a range of solutions that enable
