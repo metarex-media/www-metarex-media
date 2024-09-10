@@ -35,6 +35,13 @@ to attend and will help you navigate the impacts of technology in our Industry.
 * **Saturday, Sept. 14: 16:30 – 17:15 in E102**
   * [Navigating Guidelines, Policies, and Standards in a Changing Media Landscape][std]
 
+**[{{% param backer %}}][web]** is a global society of more than 5,000 diverse
+and engaged members, including media and creative professionals, media
+technologists, and engineers, all working together to drive the industry
+forward with technical brilliance. Transforming the industry through
+Standard Technology Committees with 800 engineering standards and guidelines
+developed to advance global interoperability of hardware and software.
+
 For more information and to see all the exciting things **[{{% param backer
 %}}][web]** are working on, [pay them a visit them at IBC][meet].
 
