@@ -1,7 +1,7 @@
 ---
-title:       2024-09-12 Thank you DPP
-linkTitle:   2024-09-12 Thank you DPP
-date:        2024-09-12
+title:       2024-09-11 Thank you DPP
+linkTitle:   2024-09-11 Thank you DPP
+date:        2024-09-11
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "backers"]

@@ -1,7 +1,7 @@
 ---
-title:       2024-09-11 Rexy Prize Draw
-linkTitle:   2024-09-11 Rexy Prize Draw
-date:        2024-09-11
+title:       2024-09-12 Rexy Prize Draw
+linkTitle:   2024-09-12 Rexy Prize Draw
+date:        2024-09-12
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "backers"]

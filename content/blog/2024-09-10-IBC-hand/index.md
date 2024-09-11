@@ -1,6 +1,6 @@
 ---
 title:       2024-09-10 Thank you HAND Identity
-linkTitle:   2024-09-10 Thank you HAND Identity
+linkTitle:   2024-09-10 Thank you HAND
 date:        2024-09-10
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
