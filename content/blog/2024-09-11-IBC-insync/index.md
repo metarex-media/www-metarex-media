@@ -8,7 +8,7 @@ tags:        ["project",  "backers"]
 params:
   publish:
     linkedin:  true
-  backer: Insync Technology
+  backer: InSync Technology
   img: insync
   web: https://www.insync.tv
   lin: https://www.linkedin.com/company/insync-technology-ltd/
@@ -42,8 +42,6 @@ solutions. For more information, visit  [their website][web].
 **[{{% param backer %}}][web]** will be at IBC, so be sure to visit their
 [booth] in Hall 2 – **[2.C30]** to find out more about frame rates and format
 conversions!
-
-#framerateconversion #metarex.media #dinorexy #dinohunt #IBC2024 #InSync Technology Ltd.
 
 [@{{% param backer %}}]({{% param lin %}})
 [#InSync](https://www.linkedin.com/search/results/all/?keywords=%23insync)
