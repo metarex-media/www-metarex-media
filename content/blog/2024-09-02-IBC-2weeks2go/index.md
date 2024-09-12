@@ -16,7 +16,7 @@ Less than 2 weeks to go until IBC!
 
 Rexy is enjoying th UK sunshine and reading a little family history before her
 big Debut on Sunday afternoon in the IBC [AI Zone][rxydraw]. Sign up at
-[https://bit.ly/rexy-ibc-2024][ths] to have a chance of ***winning her!*** The
+[https://auth.metarex.media/ui/registration][ths] to have a chance of ***winning her!*** The
 more {{% metarex %}} partners and backers you visit at the show, the greater
 chance you'll win. Instructions on our [treasure hunt page][thp].
 
@@ -43,5 +43,5 @@ the show. She’s shy in public and is hiding from cameras at the moment!
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc20024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-[ths]:     https://bit.ly/rexy-ibc-2024
+[ths]:     https://auth.metarex.media/ui/registration
 [thp]:     /project/treasure-hunt/

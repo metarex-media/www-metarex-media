@@ -21,7 +21,7 @@ show herself in real life at IBC 2024 at **17:00, Sunday 15 September** at the
 We will be thanking more of [our great sponsors, backers and partners][thp] on
 [LinkedIn][lirxy] this week. We couldn't do this without them! You can sign up
 to visit them and **[win a cuddly Rexy][ths]** at IBC here:
-[https://bit.ly/rexy-ibc-2024][ths]. The more of our partners you visit, the
+[https://auth.metarex.media/ui/registration][ths]. The more of our partners you visit, the
 bigger the chance of winning a cuddly rexy for your children, or your loved
 one, or yourself! Full instructions on the [IBC Treasure Hunt page][thp].
 
@@ -47,5 +47,5 @@ how to make them better and what metadata processing you would like to see!
 [dmo]:     https://metarex.media/app/demos/
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
-[ths]:     https://bit.ly/rexy-ibc-2024
+[ths]:     https://auth.metarex.media/ui/registration
 [thp]:     /project/treasure-hunt/

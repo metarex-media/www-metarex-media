@@ -19,7 +19,7 @@ without you.
 Over the next few weeks we'll be telling you about our sponsors, their metadata
 products and services and how {{% metarex %}} fits into their world. You can
 sign up to visit them and win a cuddly Rexy at IBC here:
-[https://bit.ly/rexy-ibc-2024][th].
+[https://auth.metarex.media/ui/registration][th].
 
 The instructions for our [IBC Treasure Hunt][th] are on the [treasure hunt][tr]
 page of the website. The more of our partners you visit, the bigger the chance
@@ -31,7 +31,7 @@ show. She's shy and only appears in jigsaw form at the moment!
 <a href="https://uk.linkedin.com/company/metarex-media"><i class="linkedin
 icon"></i></a> [LinkedIn][libc]
 
-[th]: https://bit.ly/rexy-ibc-2024
+[th]: https://auth.metarex.media/ui/registration
 [tr]: /project/treasure-hunt/
 [li]: https://uk.linkedin.com/company/metarex-media
 [libc]: https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy

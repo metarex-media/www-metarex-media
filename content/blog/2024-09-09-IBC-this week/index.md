@@ -15,7 +15,7 @@ params:
 **[{{% param backer %}}][web]** is off to IBC. She hasn't quite figured out
 selfies yet, but  on Sunday afternoon in the IBC [AI Zone][rxydraw] she'll be
 ready for her first public outing. Sign up at
-[https://bit.ly/rexy-ibc-2024][ths] and try out the Rexy [treasure hunt
+[https://auth.metarex.media/ui/registration][ths] and try out the Rexy [treasure hunt
 page][thp] and you could win Rexy for your kids, your bestie or yourself!
 
 Visit our [sponsors and backers][thp] to see the best in Metadata workflows at
@@ -44,6 +44,6 @@ away to make Media Metadata Flow.
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-[ths]:     https://bit.ly/rexy-ibc-2024
+[ths]:     https://auth.metarex.media/ui/registration
 [thp]:     /project/treasure-hunt/
 [contact]: /contact

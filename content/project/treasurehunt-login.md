@@ -8,7 +8,7 @@ url:       "/treasure-hunt/login"
 <!-- markdownlint-disable MD001 MD034 -->
 <div class="ui center aligned  segment">
 
-{{< banner "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!" "pink">}}
+{{< banner "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!<br><span class='ui blue text'>**Please rescan the qr code**</span> in front of you if you have just signed up." "pink">}}
 
 {{< f/block
   id    = "opening"

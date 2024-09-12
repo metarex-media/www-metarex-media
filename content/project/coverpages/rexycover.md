@@ -26,5 +26,5 @@ The more partners you visit, the more entries you get for the prize draw to win
 a special, handmade Rexy on Sunday afternoon with V-Nova in the AI zone! It’s
 completely free to enter, so why not?  [Sign up here now!][enter]
 
-[enter]:    https://bit.ly/rexy-ibc-2024
+[enter]:    https://auth.metarex.media/ui/registration
 [qrimg]:    /project/treasure-hunt/ibc-partner.png
