@@ -26,7 +26,7 @@ See you at 17:00 on the **V-Nova** booth 14.AI03!
 
 <img  class="ui centered large bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
 
-https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=K&selectedBooth=5.A50)
+[@ezdrm @ 5.A50](https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=K&selectedBooth=5.A50)
 [@GlobalM @ 1.B23](https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=A&selectedBooth=1.B23)
 [@InSync Technology @ 2.C30](https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=M&selectedBooth=2.C30)
 [@nxtedition @ 7.A02](https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=C&selectedBooth=7.A02)
