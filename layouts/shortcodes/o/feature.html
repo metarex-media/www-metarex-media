@@ -1,0 +1,22 @@
+{{/*
+---* A feature is pulled from the file content/features/NAME.md
+---*    name     = "NAME.md"            # filename to be pulled
+---*    divClass = "ui basic segment"   # the class of the outer div
+---*    msgClass = "ui basic message"   # the class of the inner div
+*/}}
+{{/* --- create a page object for the included page ---------------------- */}}
+{{- $name := .Get "name" -}}
+{{- $link := .Get "link" -}}
+{{/* - $p = .Site.GetPage $name */}}
+{{ $divClass := .Get "divClass" | default "ui basic segment" }}
+{{ $msgClass := .Get "msgClass" | default "ui basic message" }}
+<div class="{{$divClass}}">
+<div class= "{{$msgClass}}">
+  {{- if $link }}<a href="{{ $link }}">{{ end }}
+  <h2 class="header">{{.Page.Title}} - {{$name}}</h2>
+  {{- with .Get "src"}}
+  <img class= "ui medium image" src="{{ . }}">
+  {{ end -}}
+{{ .Inner | markdownify}}
+  {{- if $link }}</a>{{ end }}
+</div></div>

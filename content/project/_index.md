@@ -77,6 +77,8 @@ lose metadata when content is processed by third parties.
   with common tools and a body of free software that reduces the barrier to
   transporting and preserving media chain metadata.
 
+<a id="history"></a>
+
 ## History
 
 Throughout 2022, at [NAB], [IBC] and the [DPP] Leader's Briefing, the {{% metarex%}}

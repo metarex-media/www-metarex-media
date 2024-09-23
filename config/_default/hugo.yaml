@@ -10,6 +10,10 @@ enableRobotsTXT: true
 # keep the comment if you only want some of the top level menus to appear
 # sectionPagesMenu: main
 
+#   __  __          _
+#  |  \/  |  __ _  (_)  _ _      _ __    ___   _ _    _  _
+#  | |\/| | / _` | | | | ' \    | '  \  / -_) | ' \  | || |
+#  |_|  |_| \__,_| |_| |_||_|   |_|_|_| \___| |_||_|  \_,_|
 menus:
   main:
   - name:       Technology
@@ -29,25 +33,43 @@ menus:
     parent:     tech
     weight:     51
     identifier: appdemos
+#                                   _ _     ___
+#   _ __    ___   _ _    _  _     _| | |_  |_  )
+#  | '  \  / -_) | ' \  | || |   |_  .  _|  / /
+#  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
+#                                  |_|_|
   menu2:
-  - name:       Buy us &nbsp;<em>Coffee</em>
-    URL:        /donate/
-    identifier: coffee
-    pre:
-    post:       " 🍵"
+  - name:       See us on LinkedIn
+    URL:        https://www.linkedin.com/search/results/all/?keywords=%23metarex
+    identifier: LinkedIn
+    pre:        '<i class="linkedin icon"></i>'
+    post:       " 🦖"
     weight:     100
+  - name:       See the IBC Winner
+    URL:        /donate/
+    identifier: cake
+    pre:
+    post:       " 🦖"
+    weight:     110
+  - name:       Hear from GlobalM
+    URL:        /donate/
+    identifier: globalM
+    pre:
+    post:       " x"
+    weight:     120
   - name:       Buy us &nbsp;<em>Cake</em>
     URL:        /donate/
     identifier: cake
     pre:
     post:       " 🍰"
     weight:     110
-  - name:       Feed &nbsp;<em>Rexy</em>
+  - name:       Try a demo
     URL:        /donate/
     identifier: feed
     pre:
     post:       " 🥩"
     weight:     120
+# linsks to linkedin left & right
 
 # --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.

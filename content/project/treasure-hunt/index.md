@@ -3,12 +3,6 @@ title:       Treasure Hunt at IBC 2024
 linkTitle:   Treasure Hunt at IBC 2024
 date:        2024-07-01
 weight:      10
-menu:
-  menu2:
-    name:     Win a Rexy at IBC 2024
-    pre:      <img class="ui avatar image" src="/img/dino/mrx-logo.svg">
-    post:     " 🎉🥳"
-    weight:   10
 
 ---
 <!-- markdownlint-disable MD001 MD034 -->
