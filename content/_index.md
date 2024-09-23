@@ -39,7 +39,7 @@ date:      2024-08-13
     msgClass = "ui blue message"
     name     = "What's the benefit?"
     src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
-    link     = "http://localhost:1313/project/faq/"
+    link     = "/project/faq/"
   />}}
 {{< /o/features >}}
 
