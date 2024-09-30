@@ -1,0 +1,10 @@
+{{ $urlStub := .Page.RelPermalink }}
+{{ $isHome := eq .Site.Home.RelPermalink $urlStub }}
+{{ $isRexy := strings.HasPrefix $urlStub "/rexy" }}
+<pre>
+      .Site.Home.RelPermalink {{ .Site.Home.RelPermalink }}
+                     $urlStub {{ $urlStub }}
+  $urlStub ({{$urlStub}})
+   $isHome ({{$isHome}})
+   $isRexy ({{$isRexy}})
+</pre>

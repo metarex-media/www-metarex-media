@@ -18,7 +18,7 @@ date:      2024-08-13
     msgClass = "ui green message"
     name     = "Why a Dinosaur?"
     src      = "/img/dino/mrx-logo.svg"
-    link     = "/project/#history"
+    link     = "/rexy"
   />}}
   {{< o/feature
     divClass = "ui yellow segment"

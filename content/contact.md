@@ -14,13 +14,13 @@ url:         "/contact/"
 tags:        ["contact"]
 ---
 
-<div>
+<div class = "ui basic container segment">
 <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
 <script>
   hbspt.forms.create({
     region: "eu1",
     portalId: "26321893",
-    formId: "f86605a5-fcbf-422f-95c3-7ae60c7a3235"
+    formId: "1d3f7bc6-2bf8-463e-90c8-989beb75dcfd"
   });
 </script>
 </div>
