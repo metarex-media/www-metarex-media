@@ -45,18 +45,12 @@ menus:
     pre:        '<i class="linkedin icon"></i>'
     post:       " 🦖"
     weight:     100
-  - name:       See the IBC Winner
-    URL:        /donate/
-    identifier: cake
-    pre:
-    post:       " 🦖"
-    weight:     110
-  - name:       Hear from GlobalM
-    URL:        /donate/
-    identifier: globalM
-    pre:
-    post:       " x"
-    weight:     120
+  # - name:       See the IBC Winner
+  #   URL:        /donate/
+  #   identifier: cake
+  #   pre:
+  #   post:       " 🦖"
+  #   weight:     110
   - name:       Buy us &nbsp;<em>Cake</em>
     URL:        /donate/
     identifier: cake
@@ -64,7 +58,7 @@ menus:
     post:       " 🍰"
     weight:     110
   - name:       Try a demo
-    URL:        /donate/
+    URL:        /app/demos/
     identifier: feed
     pre:
     post:       " 🥩"
