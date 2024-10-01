@@ -6,8 +6,8 @@
 {{ $link := "" }}
 {{ $meta := "" }}
 {{ $featured := "" }}
-{{ $count := 1 }}{{ if (isset . "count") }}{{ $count = .count }}{{ end }}
-{{ $skip := 0 }}{{ if (isset . "skip") }}{{ $skip = index . "skip" }}{{ end }}
+{{ $count := 1 }}{{ if . }}{{ if (isset . "count") }}{{ $count = .count }}{{ end }}{{ end }}
+{{ $skip := 0 }}{{ if . }}{{ if (isset . "skip") }}{{ $skip = index . "skip" }}{{ end }}{{ end }}
 {{ $blogCount := add $count $skip }}
 {{ $dot := . }}
 {{/* --- debug the blog  filtering --------------------------------------- */}}
