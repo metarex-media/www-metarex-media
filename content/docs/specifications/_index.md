@@ -35,12 +35,12 @@ has the `metarexId` [MRX.123.456.789.reg][id]. You can use the [web app][10]
 to browse the register or to add your own content (registration required) or
 you can inspect the register using the API [here][11].
 
-[01]: /specifications/introduction/
-[02]: /specifications/mrx-container-spec/
+[01]: {{% relref "/docs/specifications/introduction/" %}}
+[02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}
 [03]: https://github.com/metarex-media/mrx-container/issues
-[04]: /blog/2024/03/21/2024-03-25-white-paper-blog/
+[04]: {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
 
-[10]: /app/reg/
-[11]: /reg/
+[10]: {{% relref "/" %}}app/reg/
+[11]: {{% relref "/" %}}reg/
 [12]: https://metarex.media/app/reg/search
 [id]: https://metarex.media/app/reg/search?qry=reg&mrxId=MRX.123.456.789.reg
