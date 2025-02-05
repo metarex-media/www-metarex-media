@@ -6,8 +6,22 @@
 {{ $link := "" }}
 {{ $meta := "" }}
 {{ $featured := "" }}
+{{ $count := 1 }}{{ if . }}{{ if (isset . "count") }}{{ $count = .count }}{{ end }}{{ end }}
+{{ $skip := 0 }}{{ if . }}{{ if (isset . "skip") }}{{ $skip = index . "skip" }}{{ end }}{{ end }}
+{{ $blogCount := add $count $skip }}
+{{ $dot := . }}
+{{/* --- debug the blog  filtering --------------------------------------- */}}
+{{ if false }}{{ range first $blogCount ( where .page.Site.Pages "Type" "blog" )  | last $count }}
+<pre>
+  count:        {{ $count }}
+  skip:         {{ $skip }}
+  Title:        {{.Title}}
+  Date:         {{.Date}}
+  LinkTitle:    {{.LinkTitle}}
+  RelPermalink: {{.RelPermalink}}
+</pre><hr>{{end}}{{end}}
 {{/* --- find latest blog ------------------------------------------------ */}}
-{{ range first 3 ( where .page.Site.Pages "Type" "blog" ) | last 1 }}
+{{ range first $blogCount ( where .page.Site.Pages "Type" "blog" )  | last $count }}
 {{ $srcLink = .RelPermalink }}
 {{ $header = .LinkTitle }}
 {{ $featured = (.Resources.ByType "image").GetMatch "*featured*" }}
@@ -15,9 +29,9 @@
 {{ $minutes := add ( div ( countwords .Plain ) 220 ) 1 }}
 {{ $meta = printf "~%v min read" $minutes }}
 {{ $link = .RelPermalink }}
-{{ end }}
+
 {{/* --- update the dict for the block -----------------------------------*/}}
-{{- $d := merge . (dict "src" "") -}}
+{{- $d := merge $dot (dict "src" "") -}}
 {{if $featured}}
 {{- $d = merge $d (dict "src" $featured.RelPermalink) -}}
 {{- $d = merge $d (dict "srcLink" $srcLink) -}}
@@ -30,3 +44,4 @@
 {{- $d = merge $d (dict "meta" (printf "~%v min read" $min)) -}}
 
 {{ partial "o/block" $d }}
+{{ end }}{{/* end of range*/}}

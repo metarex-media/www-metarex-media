@@ -1,12 +1,12 @@
 # --- Hugo .Site.Params are all in this yaml -----------------------------------
 copyright: metarex.media
-privacy_policy: /privacy
-contact: /contact
+privacy_policy:   /privacy
+contact:          /contact
 time_format_blog: 2006-01-02
 
 gdpr:
   owner: Metarex.media Ltd
-  email: admin@metarex.media
+  email: hello@metarex.media
 
 # --- libraries loaded in partial scripts.html -----------------------------------
 mermaid:
@@ -120,7 +120,7 @@ ui:
   sidebar_menu_compact: false
   # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
   sidebar_search_disable: true
-  # define a secondary menu e.g. for promos / payments etc.
+  # define a partial for a secondary menu e.g. for promos / payments etc.
   navbar2: my/navbar-2.html
 # --- Feedback -----------------------------------------------------------------
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
@@ -139,42 +139,44 @@ feedback:
 # add "hide_readingtime: true" to the page's front matter
 readingtime:
   enable: true
+  # default words per minute when calculating reading time
+  wpm:    220
 
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+# End user relevant links show up on the footer and community page.
+# icon names are here: https://fomantic-ui.com/elements/icon.html
 links:
-user:
-  - name: Newsletter
-    url: /contact
-    icon: fa fa-envelope
-    desc: Discussion and help from your fellow users
-  - name: Discord
-    url: https://discord.gg/uBxZXYZARw
-    icon: "fab fa-discord"
-    desc: "Join #metarex.media on Discord to give us your thoughts!"
+  user:
+    - name: Newsletter
+      url: /contact
+      icon: envelope outline
+      desc: Sign up for our newsletter
+    - name: Discord
+      url: https://discord.gg/uBxZXYZARw
+      icon: "discord"
+      desc: "Join #metarex.media on Discord to give us your thoughts!"
+    - name: Contact
+      url: https://contact/
+      icon: "envelope"
+      desc: "Contact us for more information"
+    - name: RSS
+      url: https://discord.gg/uBxZXYZARw
+      icon: "rss"
+      desc: "RSS feed for website updates"
 
-#   - name: "Stack Overflow"
-#     url: "https://example.org/stack"
-#     icon: "fab fa-stack-overflow"
-#     desc: "Practical questions and curated answers"
+  # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+  developer:
+    - name: GitHub
+      url: https://github.com/metarex-media
+      icon: github
+      desc: Development takes place here!
+    - name: Metarex Register
+      url: https://metarex-media/app/reg
+      icon: laptop code
+      desc: Browse the metarex regoster
 
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-developer:
-  - name: GitHub
-    url: https://github.com/metarex-media
-    icon: fab fa-github
-    desc: Development takes place here!
-#   - name: "Slack"
-#     url: "https://example.org/slack"
-#     icon: "fab fa-slack"
-#     desc: "Chat with other project developers"
-#   - name: "Developer mailing list"
-#     url: "https://example.org/mail"
-#     icon: "fa fa-envelope"
-#     desc: "Discuss development issues around the project"
-
-# Site relevant links. These will show up on right side of footer and in the community page if you have one.
-site:
-  - name: Privacy Policy
-    url: docs/reference/project/privacy/
-    icon: "fab fa-user-shield"
-    desc: "metarex.media privacy policy"
+  # Site relevant links. These will show up on right side of footer and in the community page if you have one.
+  site:
+    - name: Privacy Policy
+      url: docs/reference/project/privacy/
+      icon: "fab fa-user-shield"
+      desc: "metarex.media privacy policy"

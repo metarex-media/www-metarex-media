@@ -1,5 +1,6 @@
 # hugo gitignore
 
+
 # ignore synthesised outputs
 public/
 resources/
@@ -20,10 +21,10 @@ yarn.lock
 .hugo_build.lock
 clogrc/core
 
-# ignore the tmp folder but not the readme inside it
-tmp/*
+# ignore tmp- files & tmp folder but not the readme inside it
+tmp/
 !tmp/readme.md
-
+tmp-*
 
 #ignore mac cruft
 **/*/.DS_Store
@@ -33,7 +34,7 @@ tmp/*
 
 # VS Code - keep these
 #/.vscode/**
-!/.vscode/cspell.json
+#!/.vscode/cspell.json
 
 # vim temporary files
 *~

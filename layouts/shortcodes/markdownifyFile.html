@@ -1,0 +1,10 @@
+{{/*
+
+  markdownify a file relative to the root of the project
+
+  e.g.
+    {{< markdownifyFile  "content/docs/backers.md" >}}
+    {{< markdownifyFile  "content/hidden/boilerplate.md" >}}
+*/}}
+{{- $f := .Get 0 -}}
+{{- readFile $f | markdownify -}}

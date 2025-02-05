@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ "<!-- mrx a/single.html -->" | safeHTML }}
+{{/* --- ibc24 placeholders ---------------------------------------------------
+
+Load yaml from dat and render the cards
+
+*/}}
+{{ with .Content }}
+{{ . }}
+{{ end }}
+{{ $thisFile := "" }}
+{{ with .Page.File }}{{ $thisFile = .BaseFileName }}{{ end }}
+{{ range collections.Index $.Site.Data.ddibc.k }}
+{{ if eq $thisFile .k }}
+<div class="ui horizontal fluid card">
+  {{ $btn := printf "Go to the <strong>%s</strong> website" .c }}
+  {{ with .btn }}{{ $btn = . }}{{ end }}
+  {{/* --- logo in the card image area ------------------------------------*/}}
+  <div class="ui medium image">
+    <img style = "padding:1em;" src="{{ .l }}" />
+  </div>
+  {{/* --- content of card ------------------------------------------------*/}}
+  <div class="attached content">
+
+    {{/* --- header with link ---------------------------------------------*/}}
+    <div class="header"><a href="{{ .r }}/">{{ .c | markdownify }}</a></div>
+    <p>Many thanks for visiting the {{ .c }} booth as part of the
+    {{ partial "metarex-styled" }} IBC 2024 Treasure Hunt.</p>
+    <p>If you've logged in, then we've recoreded your visit and you get one
+      extra token in Sunday's Grand Draw for a cuddly Rexy.
+      If you're not registered yet, then head to the
+      <strong><a href="/project/treasure-hunt/">Treasure Hunt page</a></strong>
+      and your chance to sign up and win a cuddly Rexy!
+     </p>
+    <div class="ui centered bordered large image"><img src="{{ .i }}" /></div>
+    <div class="meta">Visit <a href="{{ .r }}/"><strong>{{ .c | markdownify }}</strong></a></div>
+    <div class="description">{{ .b | markdownify }}</div>
+    <div class="ui basic purple bottom attached button" onclick="window.location.href='{{ .r }}/'">{{$btn | safeHTML}}</div>
+  </div>
+</div>
+{{end}}
+{{end}}
+{{ end }}
