@@ -44,44 +44,9 @@ defaults:
     shell: bash
 
 jobs:
-  bark:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      -
-        name: Bark some context vairables
-      -
-        name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      -
-        name: Bark some context vairables
-        run: |
-          printf "GitHub workflow\n"
-          printf "Hub: %19s  %s\n" "whoami"               "$(whoami)"
-          printf "Hub: %19s  %s\n" "pwd"                  "$(pwd)"
-          printf "Hub: %19s  %s\n" "PATH"                 "$PATH"
-          printf "Hub: %19s  %s\n" "vars.MRX_DOCKER_NS"   "${{ vars.MRX_DOCKER_NS }}"
-          printf "Hub: %19s  %s\n" "github.actor"         "${{ github.actor }}"
-          printf "Hub: %19s  %s\n" "github.ref"           "${{ github.ref }}"
-          printf "Hub: %19s  %s\n" "github.head_ref"      "${{ github.head_ref }}"
-          printf "Hub: %19s  %s\n" "github.repository"    "${{ github.repository }}"
-          printf "Hub: %19s  %s\n" "github.workspace"     "${{ github.workspace }}"
-          printf "Hub: %19s  %s\n" "github.server_url"    "${{ github.server_url }}"
-          printf "Hub: %19s  %s\n" "runner.temp"          "${{ runner.temp }}"
-          echo ""
-
   # Build job
   build:
     runs-on: ubuntu-latest
-    needs: bark
     steps:
       -
         name: Checkout
@@ -89,6 +54,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      -
+        name: Bark some context vairables
+        uses: mrmxf/action-bark
       -
         name: Set up Go
         uses: actions/setup-go@v4
@@ -136,8 +104,8 @@ jobs:
       -
         name: Get website version
         run: |
-              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-              vCODE=$(cat data/history.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+              vCODE=$(cat data/releases.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
+              vCODE=$(cat data/releases.yaml | grep version | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
               echo "pushing website version $vCODE"
               echo "export vCODE=$vCODE"  >> job-chain.sh
       -

@@ -18,6 +18,10 @@
   {{- $meta := .Get "meta" -}}
   {{/* --- from param --(path to source file when blockType=include)-------*/}}
   {{- $from := .Get "from" -}}
+  {{/* --- count param --(number of things to show e.g. blogs)-------*/}}
+  {{- $count := .Get "count" | default 1 -}}
+  {{/* --- skip param --(number of things to skip before output e.g. blogs)*/}}
+  {{- $skip := .Get "skip" | default 0 -}}
   {{/* --- src params -----------------------------------------------------*/}}
   {{/* ------ `src` is the url to an image or video----------------------- */}}
   {{- $src := .Get "src" -}}
@@ -26,7 +30,7 @@
   {{/* ------ `srcOn` is left | right | none------------------------------ */}}
   {{- $srcOn := .Get "srcOn" | default "left" -}}
   {{/* ------ `srcWidth` is 0.0-1.0 & becomes "xxx wide" for grid control- */}}
-  {{- $srcWidth := .Get "srcWidth" | default 0.3 -}}
+  {{- $srcWidth := .Get "srcWidth" | default 0.25 -}}
   {{- if not $src -}}{{ $srcWidth = 0.0 }}{{- end -}}
   {{/* ------ `srcLink` is the href for clicking the image---------------- */}}
   {{- $srcLink := .Get "srcLink" | default $headerLink -}}
@@ -58,10 +62,12 @@
   {{/* --- populate the dict for the partial --------------------------------*/}}
   {{- $d = merge $d (dict "blockType" $blockType) -}}
   {{- $d = merge $d (dict "blockClass" $blockClass) -}}
+  {{- $d = merge $d (dict "count" $count) -}}
   {{- $d = merge $d (dict "description" $description) -}}
   {{- $d = merge $d (dict "inner" $inner) -}}
   {{- $d = merge $d (dict "header" $header) -}}
   {{- $d = merge $d (dict "meta" $meta) -}}
+  {{- $d = merge $d (dict "skip" $skip) -}}
   {{- $d = merge $d (dict "src" $src) -}}
   {{- $d = merge $d (dict "srcId" $srcId) -}}
   {{- $d = merge $d (dict "srcOn" $srcOn) -}}
