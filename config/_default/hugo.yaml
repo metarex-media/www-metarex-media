@@ -16,53 +16,57 @@ enableRobotsTXT: true
 #  |_|  |_| \__,_| |_| |_||_|   |_|_|_| \___| |_||_|  \_,_|
 menus:
   main:
-  - name:       Technology
-    identifier: tech
-  - name:       Specifications
-    URL:        /specifications/
-    parent:     tech
-    weight:     10
-    identifier: specs
-  - name:       app/reg
-    URL:        /app/reg/
-    parent:     tech
-    weight:     50
-    identifier: appreg
-  - name:       app/demos
-    URL:        /app/demos/
-    parent:     tech
-    weight:     51
-    identifier: appdemos
-#                                   _ _     ___
-#   _ __    ___   _ _    _  _     _| | |_  |_  )
-#  | '  \  / -_) | ' \  | || |   |_  .  _|  / /
-#  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
-#                                  |_|_|
+    - name: Technology
+      identifier: tech
+    - name: Specifications
+      pageRef: /docs/specifications/
+      parent: tech
+      weight: 10
+    - name: Studies
+      pageRef: /docs/studies/
+      parent: tech
+      weight: 20
+      identifier: specs
+    - name: app/reg
+      pageRef: /app/reg/
+      parent: tech
+      weight: 50
+      identifier: appreg
+    - name: app/demos
+      pageRef: /app/demos/
+      parent: tech
+      weight: 51
+      identifier: appdemos
+  #                                   _ _     ___
+  #   _ __    ___   _ _    _  _     _| | |_  |_  )
+  #  | '  \  / -_) | ' \  | || |   |_  .  _|  / /
+  #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
+  #                                  |_|_|
   menu2:
-  - name:       See us on LinkedIn
-    URL:        https://www.linkedin.com/search/results/all/?keywords=%23metarex
-    identifier: LinkedIn
-    pre:        '<i class="linkedin icon"></i>'
-    post:       " 🦖"
-    weight:     100
-  # - name:       See the IBC Winner
-  #   URL:        /donate/
-  #   identifier: cake
-  #   pre:
-  #   post:       " 🦖"
-  #   weight:     110
-  - name:       Buy us &nbsp;<em>Cake</em>
-    URL:        /donate/
-    identifier: cake
-    pre:
-    post:       " 🍰"
-    weight:     110
-  - name:       Try a demo
-    URL:        /app/demos/
-    identifier: feed
-    pre:
-    post:       " 🥩"
-    weight:     120
+    - name: See us on LinkedIn
+      pageRef: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+      identifier: LinkedIn
+      pre: '<i class="linkedin icon"></i>'
+      post: " 🦖"
+      weight: 100
+    # - name:       See the IBC Winner
+    #   URL:        /donate/
+    #   identifier: cake
+    #   pre:
+    #   post:       " 🦖"
+    #   weight:     110
+    - name: Buy us &nbsp;<em>Cake</em>
+      pageRef: /donate/
+      identifier: cake
+      pre:
+      post: " 🍰"
+      weight: 110
+    - name: Try a demo
+      pageRef: /app/demos/
+      identifier: feed
+      pre:
+      post: " 🥩"
+      weight: 120
 # linsks to linkedin left & right
 
 # --- Git ---------------------------------------------------------------------
@@ -77,7 +81,7 @@ enableGitInfo: true
 
 # ignore `tmp-` files in /content /data & i*ln
 ignoreFiles:
-- \.tmp-$
+  - \.tmp-$
 
 # You can add your own taxonomies
 taxonomies:
@@ -101,7 +105,6 @@ services:
     # Comment out the next line to disable GA tracking. Also disables the
     # feature described in [params.ui.feedback].
     #id: UA-00000000-0
-
 
 # --- Language ----------------------------------------------------------------
 defaultContentLanguage: "en"
@@ -127,18 +130,18 @@ markup:
   highlight:
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # THIS MUST BE FALSE for mermaid to work!!!
-    guessSyntax:        false
+    guessSyntax: false
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
-    style:              vs
-    anchorLineNos:      false
-    codeFences:         true
-    lineAnchors:        ""
+    style: vs
+    anchorLineNos: false
+    codeFences: true
+    lineAnchors: ""
     # hl_Lines:           1
     # lineNoStart:        1
-    lineNos:            true
+    lineNos: true
     lineNumbersInTable: true
-    noClasses:          true
-    tabWidth:           2
+    noClasses: true
+    tabWidth: 2
 
 # --- Output formats ----------------------------------------------------------
 # Comment out if you don't want the "print entire section" link enabled.

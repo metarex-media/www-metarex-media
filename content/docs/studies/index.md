@@ -13,16 +13,14 @@ description: Case Studies for using Metarex
     class="ui center aligned olive message"
 >}}
 
-### The Metarex Container
+{{% metarex %}} allows metadata to flow in a wide variety of situations. Below
+is a list of case studies, some of which we're already working on. Other's
+we're looking for sponsors to tailor the free software to your precise needs.
 
-Describe List Here.
+Read & enjoy
+
+* [Live Production Monitoring]({{% relref "/docs/studies" %}})
 
 [01]: {{% relref "/docs/specifications/introduction/" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}
-[03]: https://github.com/metarex-media/mrx-container/issues
 [04]: {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
-
-[10]: https://metarex.media/app/reg/
-[11]: https://metarex.media/reg/
-[12]: https://metarex.media/app/reg/search
-[id]: https://metarex.media/app/reg/search?qry=reg&mrxId=MRX.123.456.789.reg

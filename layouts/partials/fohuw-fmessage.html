@@ -1,0 +1,27 @@
+{{/*
+eg >>> partial 'f/message' (dict "header" $headingText "description" $bodyText "src" $imageUrl "class" $class )
+req >> class defaults to "ui message"
+*/}}
+{{- $p := "f/message" -}}{{- $m := printf "missing %s" .src -}}
+{{- $class := "ui message" -}}
+{{- with .class -}}{{- $class = . -}}{{- end -}}
+{{- $widthL := "not used" -}}
+{{- $widthR := "sixteen" -}}
+{{- with .src -}}{{- $widthL = "one" -}}{{- $widthR = "fifteen" -}}{{- end -}}
+<div class="{{$class}}">
+  <div class="ui compact grid">
+    <div class="row">
+      {{- with .src -}}
+      <div class="compact center aligned {{$widthL}} wide column">
+        <img class="ui mini image" src="{{.}}">
+      </div>
+      {{- end -}}
+      <div class="{{$widthR}} wide column">
+        {{- with .header }}<div class="header">{{.  | markdownify }}</div>{{- end -}}
+        <div class="content">
+          {{- with .description }}{{. | markdownify}}{{- end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

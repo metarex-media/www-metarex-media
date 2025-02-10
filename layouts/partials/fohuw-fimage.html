@@ -1,0 +1,12 @@
+<!-- f/image partial -->
+{{ $color := "purple"}}
+{{- $p := "f/image" -}}
+{{- if not .src -}}{{- partial "dbg/errArg" (dict "p" $p "a" ".src" "m" "is nil" ) -}}{{- end -}}
+{{- if not .alt -}}{{- partial "dbg/errArg" (dict "p" $p "a" ".alt" "m" "is nil" ) -}}{{- end -}}
+{{- if not .class -}}{{- partial "dbg/errArg" (dict "p" $p "a" ".class" "m" "is nil" ) -}}{{- end -}}
+{{- if .link -}}<a href="{{.link}}">{{- end -}}
+<img class="{{.class}}" src="{{.src}}" {{with .alt }}alt="{{.}}"{{end}} />
+{{- if .link -}}</a>{{- end -}}
+  {{- if .caption -}}<div class="ui  center aligned small bottom attached {{$color}} message">
+  {{ .caption }}
+</div>{{- end -}}

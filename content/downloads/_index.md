@@ -2,10 +2,11 @@
 title:     "Downloads"
 linkTitle: "Downloads"
 
-url:       "/downloads/"
+url:       "/dl/"
 
 aliases:
 - /download
+- /downloads
 
 weight: 80
 menu:

@@ -1,0 +1,16 @@
+{{/* fohuw fluid image partial
+    .src = image source
+    .alt = alt text
+    .text = caption text
+*/}}
+{{- $from := "fohuw-image-fluid" -}}
+{{- if not .src -}}
+{{ $msg := "fohuw-image-fluid missing .src param" }}
+{{- partial "fohuw-debug" (dict "mode" "log" "text" $msg ) -}}
+{{- end -}}
+{{- if not .alt -}}
+{{ $msg := "fohuw-image-fluid missing .alt param" }}
+{{- partial "fohuw-debug" (dict "mode" "log" "text" $msg ) -}}
+{{- end -}}
+<img class="ui fluid image" src="{{.src}}" alt="{{.alt}}" />
+{{- if .text -}}{{partial "fohuw-caption" .}}{{- end -}}
