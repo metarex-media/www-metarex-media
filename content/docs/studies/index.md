@@ -19,7 +19,7 @@ we're looking for sponsors to tailor the free software to your precise needs.
 
 Read & enjoy
 
-* [Live Production Monitoring]({{% relref "/docs/studies" %}})
+* [Live Production Monitoring]({{% relref "/docs/studies/monitoring" %}})
 
 [01]: {{% relref "/docs/specifications/introduction/" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}

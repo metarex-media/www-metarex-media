@@ -18,13 +18,13 @@ snippets:
     sudo apt-get install git-lfs
   install:
     hugo: |
-      VER=$(hugo -h  > /dev/null 2>&1)
       eval "$(clog Inc)"
+      VER=$(hugo -h  > /dev/null 2>&1)
       if [[ $? -eq 0 ]] ; then
         fInfo "$oK hugo$cT installed$cX"
       else
         fInfo "$cC hugo$cT missing ... installing ...$cX"
-        VER="0.138.0"
+        VER="0.143.1"
         SRC="https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.tar.gz"
         # check if we're on arm and update the source
         if [[ "aarch64" == $(uname -m) ]]; then
