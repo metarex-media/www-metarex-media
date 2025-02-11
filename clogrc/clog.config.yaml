@@ -11,7 +11,9 @@
 snippets:
   test: 'python3 -m http.server 1414 -d ./public && open localhost:1414'
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
-  vCODE: cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
+  git:
+    tag:
+      ref: yq -r '.releases[0].version'  data/releases.yaml
   git-message-ref: cat data/releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
   lfs-install: |
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash

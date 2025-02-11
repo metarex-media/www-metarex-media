@@ -11,5 +11,5 @@ callingSCRIPT="${0##*/}"
 vCodeType="hugo"
 vCodeSrc="data/releases.yaml"
 # A golang module must have a "v" semver prefix. A website does not
-vCODE=$(clog Sh vCODE)
-bMSG=$(clog Sh git-message-ref)
+vCODE=$(clog git tag ref)
+bMSG=$(clog git-message-ref)

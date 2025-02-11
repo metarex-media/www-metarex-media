@@ -17,11 +17,11 @@ DST=public
 CMD="rm -fr $DST/*"
 fInfo "purging old builds:  $ $cC$CMD$cX"
 $CMD
-[ $? -gt 0 ] && ((buildErrs++)) && fError "purging faild - continuiing anyway"
+[ $? -gt 0 ] && ((buildErrs++)) && fError "purging failed - continuiing anyway"
 
 IMAGE="$bDOCKER_NS/$PROJECT"
 GREP_SEARCH="mrx"
-OPTS="-q --force-rm"
+OPTS="-q --force-rm --push"
 DoPUSH="$1"
 
 fInfo "building the static website to $cF$DST/: $cC hugo$cX"
@@ -34,11 +34,11 @@ AMDtarget="$IMAGE-amd:$vCODE"; dAMDtarget="$cW$IMAGE$cT-amd:$cE$vCODE$cX"
 ARMtarget="$IMAGE-arm:$vCODE"; dARMtarget="$cW$IMAGE$cT-arm:$cE$vCODE$cX"
 
 fInfo "Build image $dAMDtarget"
-docker build $OPTS -t "$AMDtarget" --platform linux/amd64 .
+docker build $OPTS -t "$AMDtarget" --platform linux/amd64  .
 [ $? -gt 0 ] && ((buildErrs++))
 
 fInfo "Build image $dARMtarget"
-docker build $OPTS -t "$ARMtarget" --platform linux/arm64 .
+docker build $OPTS -t "$ARMtarget" --platform linux/arm64  .
 [ $? -gt 0 ] && ((buildErrs++))
 
 BuildImageFound="$(docker images | grep "$GREP_SEARCH")"

@@ -19,8 +19,9 @@ we're looking for sponsors to tailor the free software to your precise needs.
 
 Read & enjoy
 
-* [Live Production Monitoring]({{% relref "/docs/studies/monitoring" %}})
+* [Live Production Monitoring][lpm]
 
-[01]: {{% relref "/docs/specifications/introduction/" %}}
-[02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}
-[04]: {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
+[01]:   {{% relref "/docs/specifications/introduction/" %}}
+[02]:   {{% relref "/docs/specifications/mrx-container-spec/" %}}
+[04]:   {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
+[lpm]:  monitoring/
