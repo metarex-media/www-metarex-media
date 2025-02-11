@@ -1,6 +1,6 @@
-# usage> demo
+# clog> demo
 # short> www-metarex-media demos
-# long>  start the components
+# extra>  start the components
 
 mrxAppSvr="mmtristan/mrx-elt-demo-amd"         ; appSvrName="mrx-app-svr" ;appSvrPorts=8080:8080
 mrxRegSvr="metarexmedia/mrx-reg-svr-amd"       ; regSvrName="mrx-reg-svr" ;regSvrPorts=12013:8070

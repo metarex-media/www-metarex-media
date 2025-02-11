@@ -7,40 +7,23 @@
 #  \___/  \_/  \___| |_|   |_|   |_| \__,_| \___| /__/
 ### when clog starts it uses these config values to override the defaults.
 
-# --- shell snippets ----------------------------------------------------------
+# --- shell snippets for this project -----------------------------------------
 snippets:
   test: 'python3 -m http.server 1414 -d ./public && open localhost:1414'
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
     tag:
       ref: yq -r '.releases[0].version'  data/releases.yaml
-  git-message-ref: cat data/releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
+    message:
+      ref:  yq -r '.releases[0].note'  data/releases.yaml
+  project:
+    config: |
+      PROJECT=www-metarex-media
+      DOCKER_NS="metarexmedia"
+
   lfs-install: |
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
     sudo apt-get install git-lfs
-  install:
-    hugo: |
-      eval "$(clog Inc)"
-      VER=$(hugo -h  > /dev/null 2>&1)
-      if [[ $? -eq 0 ]] ; then
-        fInfo "$oK hugo$cT installed$cX"
-      else
-        fInfo "$cC hugo$cT missing ... installing ...$cX"
-        VER="0.143.1"
-        SRC="https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.tar.gz"
-        # check if we're on arm and update the source
-        if [[ "aarch64" == $(uname -m) ]]; then
-          SRC="https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-arm64.tar.gz"
-        fi
-        # get the tarball - following 302 redirections to the real source
-        curl --silent --output /tmp/hugo.tar.gz --location $SRC
-        sudo tar --extract --file /tmp/hugo.tar.gz --directory /usr/local/bin hugo
-        # install the scss compiler if needed
-        if [[ -e "package.json" ]] ; then
-          npm install --silent postcss-cli
-        fi
-        fOk "$oK hugo$cT installed$cX"
-      fi
 
 
 # --- check project -----------------------------------------------------------

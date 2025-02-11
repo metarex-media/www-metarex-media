@@ -1,55 +1,45 @@
-# usage> build
-# short> www-metarex-media
-# long>  build the hugo site
+# clog> build  # build www-metarex-media docker images
 #  _             _  _       _                                                                                                          _  _
 # | |           (_)| |     | |                                               _                                                        | |(_)
 # | |__   _   _  _ | |   __| |   _ _ _  _ _ _  _ _ _  _____  ____   _____  _| |_  _____   ____  _____  _   _  _____  ____   _____   __| | _  _____
 # |  _ \ | | | || || |  / _  |  | | | || | | || | | |(_____)|    \ | ___ |(_   _)(____ | / ___)| ___ |( \ / )(_____)|    \ | ___ | / _  || |(____ |
 # | |_) )| |_| || || | ( (_| |  | | | || | | || | | |       | | | || ____|  | |_ / ___ || |    | ____| ) X (        | | | || ____|( (_| || |/ ___ |
 # |____/ |____/ |_| \_) \____|   \___/  \___/  \___/        |_|_|_||_____)   \__)\_____||_|    |_____)(_/ \_)       |_|_|_||_____) \____||_|\_____|
-source <(clog Inc)
-source clogrc/_cfg.sh
-clog Check
+eval "$(clog Inc)"
+eval "$(clog project config)"
+eval "$(cat clogrc/help-hugo.sh)"
+# clog Check
 
-buildErrs=0
-DST=public
+$devMode=[ -z "$1" ]
 
-CMD="rm -fr $DST/*"
-fInfo "purging old builds:  $ $cC$CMD$cX"
-$CMD
-[ $? -gt 0 ] && ((buildErrs++)) && fError "purging failed - continuiing anyway"
+if $devMode; then
+   fInfo "${cE}DEVELOPMENT$cW mode"
+  # we're in development mode, so build quickly
+  opts="--gc --logLevel info"
+else
+   fInfo "${cE}Production$cW mode"
+fi
+fHugoBuild "$opts"
 
-IMAGE="$bDOCKER_NS/$PROJECT"
-GREP_SEARCH="mrx"
-OPTS="-q --force-rm --push"
-DoPUSH="$1"
+# override these values to use development friendly values
+if $devMode; then
+   opts="--push"
+fi
+dockerfile="clogrc/dockerfile"
+VV="$(clog git tag ref)"
+# ignore the repo environment if set
+repo="metarexmedia"
 
-fInfo "building the static website to $cF$DST/: $cC hugo$cX"
-hugo --gc  --minify
-[ $? -gt 0 ] && ((buildErrs++)) && fError "hugo build failed ($err)" && exit 1
+fHugoDocker "$opts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$VV"
+fHugoDocker "$opts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$VV"
 
-fOk   "building the static website to $cF$DST/$cs Success$cX"
-fInfo "executing$cC docker build$cT with opts: $cW$OPTS\n$cX"
-AMDtarget="$IMAGE-amd:$vCODE"; dAMDtarget="$cW$IMAGE$cT-amd:$cE$vCODE$cX"
-ARMtarget="$IMAGE-arm:$vCODE"; dARMtarget="$cW$IMAGE$cT-arm:$cE$vCODE$cX"
-
-fInfo "Build image $dAMDtarget"
-docker build $OPTS -t "$AMDtarget" --platform linux/amd64  .
-[ $? -gt 0 ] && ((buildErrs++))
-
-fInfo "Build image $dARMtarget"
-docker build $OPTS -t "$ARMtarget" --platform linux/arm64  .
-[ $? -gt 0 ] && ((buildErrs++))
-
-BuildImageFound="$(docker images | grep "$GREP_SEARCH")"
-[[ $buildErrs > 0 ]] || [ -z BuildImageFound ]  && \
-   fError "Build failed or $cE $GREP_SEARCH$cT docker images not found locally\n" \
-   fError"Aborting....\n" \
+BuildImageFound="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$VV")"
+if [ -z "$BuildImageFound" ]; then
+   fError "Build failed? Docker image (www-metarex-media:$VV) not found locally\n"
+   fError "Aborting....\n"
    exit 1
+fi
 
-fInfo "1. start:$cC     docker$cT run --detach --rm --publish 11999:80 --name$cI $NAME $dAMDtarget$cX"
-fInfo "     or:$cC      docker$cT run --detach --rm --publish 11999:80 --name$cI $NAME $dARMtarget$cX"
-fInfo "2. stop:$cC      docker$cT stop$cW $NAME$cX"
-fInfo "3. deploy:$cC    clog$cT deploy$cW $NAME$cX"
-[ -z "$DoPUSH" ] && fInfo "3. push:$cC    docker$cT push $dAMDtarget"
-[ -z "$DoPUSH" ] && fInfo "4. push:$cC    docker$cT push $dARMtarget"
+if $devMode; then
+  fInfo "1.$cC clog test$cT to try the docker image"
+fi

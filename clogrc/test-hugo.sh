@@ -1,6 +1,5 @@
-# usage> test
-# short> run the docker image of the site
-# long>  run the docker image of the site
+# clog> test
+# short> test docker image on port 12020
 #                                            _           _   _
 #   _ __    _ _  __ __  ___  __ __ __  ___  | |__   ___ (_) | |_   ___
 #  | '  \  | '_| \ \ / |___| \ V  V / / -_) | '_ \ (_-< | | |  _| / -_)
