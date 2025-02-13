@@ -1,11 +1,12 @@
 ---
-title:    Live Production Monitoring
+title:     Live Production Monitoring
+linkTitle: Live Production Monitoring
 date:     2025-02-10
 ---
 
 {{% fo
     t = "image-fluid"
-    src = "live-monitoring-generic.svg"
+    src = "monitoring-generic.svg"
     alt = "MetaRex Generic Live Production Scenario"
     text = "MetaRex Generic Live Production Scenario" /%}}
 
