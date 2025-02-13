@@ -1,4 +1,4 @@
-# clog> build  # build www-metarex-media docker images
+# clog> build  # build & push www-metarex-media docker images
 #  _             _  _       _                                                                                                          _  _
 # | |           (_)| |     | |                                               _                                                        | |(_)
 # | |__   _   _  _ | |   __| |   _ _ _  _ _ _  _ _ _  _____  ____   _____  _| |_  _____   ____  _____  _   _  _____  ____   _____   __| | _  _____
@@ -33,8 +33,8 @@ repo="metarexmedia"
 fHugoDocker "$opts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$VV"
 fHugoDocker "$opts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$VV"
 
-BuildImageFound="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$VV")"
-if [ -z "$BuildImageFound" ]; then
+FoundLocally="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$VV")"
+if [ -z "$FoundLocally" ]; then
    fError "Build failed? Docker image (www-metarex-media:$VV) not found locally\n"
    fError "Aborting....\n"
    exit 1
