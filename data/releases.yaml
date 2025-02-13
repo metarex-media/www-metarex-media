@@ -1,157 +1,34 @@
 releases:
-  - { version:  1.7.0, date: 2025-02-10, note: case studies, build: staging }
-  -
-    version:  1.6.0
-    date:     2024-09-23
-    note:     post-IBC
-    build:    preview
-  -
-    version:  1.5.8
-    date:     2024-09-09
-    note:     IBC run-up
-    build:    preview
-  -
-    version:  1.5.7
-    date:     2024-08-30
-    note:     IBC Signiant
-    build:    preview
-  -
-    version:  1.5.6
-    date:     2024-08-30
-    note:     IBC preview2
-    build:    preview
-  -
-    version:  1.5.5
-    date:     2024-08-30
-    note:     remote-filming blogs
-    build:    production
-  -
-    version:  1.5.4
-    date:     2024-08-29
-    note:     august blogs
-  -
-    version:  1.5.3
-    date:     2024-08-27
-    note:     qibb
-  -
-    version:  1.5.2
-    date:     2024-08-22
-    note:     IBC blog SDVI+V-Nova
-  -
-    version:  1.5.1
-    date:     2024-08-21
-    note:     IBC blog nxtedition
-  -
-    version:  1.5.0
-    date:     2024-08-03
-    note:     IBC announcement
-  -
-    version:  1.4.9
-    codename: new block structure
-    date:     2024-07-03
-    note:     new block structure for github
-  -
-    version:  1.4.8
-    codename: new front page
-    date:     2024-07-02
-    note:     front page highlights
-  -
-    version:  1.4.7
-    codename: treasure hunt
-    date:     2024-07-02
-    note:     treasure hunt pages
-  -
-    version:  1.4.6
-    codename: fixed menus
-    date:     2024-06-25
-    note:     live demos on website
-  -
-    version:  1.4.5
-    codename: live demos on website
-    date:     2024-06-05
-    note:     live demos on website
-  -
-    version:  1.4.4
-    codename: docker-demo-deploy
-    date:     2024-05-24
-    note:     online demos in docker
-  -
-    version:  1.4.3
-    codename: post-MPTS-staging
-    date:     2024-05-23
-    note:     online demos
-  -
-    version:  1.4.2
-    codename: post-NAB
-    date:     2024-04-20
-    note:     blog & docs
-  -
-    version:  1.4.1
-    codename: NAB-show
-    date:     2024-04-09
-    note:     demo05 preview
-  -
-    version:  1.4.0
-    codename: NAB-show
-    date:     2024-04-09
-    note:     demo09 preview
-  -
-    version:  1.3.11
-    codename: NAB-preview
-    date:     2024-04-02
-    note:     metarex & news blog
-  -
-    version:  1.3.10
-    codename: NAB-preview
-    date:     2024-04-01
-    note:     svelte integration
-  -
-    version:  1.3.9
-    codename: NAB-preview
-    date:     2024-03-27
-    note:     svg logos
-  -
-    version:  1.3.8
-    codename: NAB-interaction
-    date:     2024-03-25
-    note:     svelte demos
-  -
-    version:  1.3.7
-    codename: NAB-blog-2024-03-21
-    date:     2024-03-21
-    note:     svelte demo dev drafts
-  -
-    version:  1.3.6
-    codename: NAB-teaser-6
-    date:     2024-03-13
-    note:     video thumbs
-  -
-    version:  1.3.5
-    codename: NAB-teaser-5
-    date:     2024-03-12
-    note:     most demo outlines in place
-  -
-    version:  1.3.4
-    codename: NAB-teaser-4
-    date:     2024-03-10
-    note:     fixed HTML typos, more content on demo pages
-  -
-    version:  1.3.3
-    codename: NAB-teaser-2
-    date:     2024-03-10
-    note:     autobuild with CI/CD
-  -
-    version:  1.3.2
-    codename: NAB-teaser-1
-    date:     2024-03-01
-    note:     autobuild with CI/CD
-  -
-    version:  1.3.1
-    codename: Christmas 2023
-    date:     2023-12-22
-    note:     results of IBC and links to demos
-  -
-    version:  1.3.0
-    codename: IBC-2023
-    date:     2023-09-05
-    note:     IBC content for the show
+  - { version:  1.7.0, date: 2025-02-10, build: product, note: case studies}
+  - { version:  1.6.0, date: 2024-09-23, build: staging, note: post-IBC}
+  - { version:  1.5.8, date: 2024-09-09, build: staging, note: IBC run-up}
+  - { version:  1.5.7, date: 2024-08-30, build: staging, note: IBC Signiant}
+  - { version:  1.5.6, date: 2024-08-30, build: staging, note: IBC preview2}
+  - { version:  1.5.5, date: 2024-08-30, build: product, note: remote-filming blogs}
+  - { version:  1.5.4, date: 2024-08-29, build: product, note: august blogs}
+  - { version:  1.5.3, date: 2024-08-27, build: product, note: qibb}
+  - { version:  1.5.2, date: 2024-08-22, build: product, note: IBC blog SDVI+V-Nova}
+  - { version:  1.5.1, date: 2024-08-21, build: product, note: IBC blog nxtedition}
+  - { version:  1.5.0, date: 2024-08-03, build: product, note: IBC announcement}
+  - { version:  1.4.9, date: 2024-07-03, build: product, note: new block structure for github}
+  - { version:  1.4.8, date: 2024-07-02, build: product, note: front page highlights}
+  - { version:  1.4.7, date: 2024-07-02, build: product, note: treasure hunt pages}
+  - { version:  1.4.6, date: 2024-06-25, build: product, note: live demos on website}
+  - { version:  1.4.5, date: 2024-06-05, build: product, note: live demos on website}
+  - { version:  1.4.4, date: 2024-05-24, build: product, note: online demos in docker}
+  - { version:  1.4.3, date: 2024-05-23, build: product, note: online demos}
+  - { version:  1.4.2, date: 2024-04-20, build: product, note: blog & docs}
+  - { version:  1.4.1, date: 2024-04-09, build: product, note: demo05 preview}
+  - { version:  1.4.0, date: 2024-04-09, build: product, note: demo09 preview}
+  - { version:  1.3.11,date: 2024-04-02, build: product, note: metarex & news blog}
+  - { version:  1.3.10,date: 2024-04-01, build: product, note: svelte integration}
+  - { version:  1.3.9, date: 2024-03-27, build: product, note: svg logos}
+  - { version:  1.3.8, date: 2024-03-25, build: product, note: svelte demos}
+  - { version:  1.3.7, date: 2024-03-21, build: product, note: svelte demo dev drafts}
+  - { version:  1.3.6, date: 2024-03-13, build: product, note: video thumbs}
+  - { version:  1.3.5, date: 2024-03-12, build: product, note: most demo outlines in place}
+  - { version:  1.3.4, date: 2024-03-10, build: product, note: fixed HTML typos, more content on demo pages}
+  - { version:  1.3.3, date: 2024-03-10, build: product, note: autobuild with CI/CD}
+  - { version:  1.3.2, date: 2024-03-01, build: product, note: autobuild with CI/CD}
+  - { version:  1.3.1, date: 2023-12-22, build: product, note: results of IBC and links to demos}
+  - { version:  1.3.0, date: 2023-09-05, build: product, note: IBC content for the show}

@@ -8,7 +8,7 @@
 eval "$(clog Inc)"
 eval "$(clog project config)"
 eval "$(cat clogrc/help-hugo.sh)"
-# clog Check
+clog Check build
 
 $devMode=[ -z "$1" ]
 
