@@ -4,11 +4,8 @@ linkTitle: Live Production Monitoring
 date:     2025-02-10
 ---
 
-{{% fo
-    t = "image-fluid"
-    src = "monitoring-generic.svg"
-    alt = "MetaRex Generic Live Production Scenario"
-    text = "MetaRex Generic Live Production Scenario" /%}}
+{{% fo t = "help" /%}}
+
 
 In a live event there are are many links involved between getting the action
 to the viewers with minimal delay. 4 decades ago, there was only one type of

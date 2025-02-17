@@ -40,8 +40,8 @@ fHugoDocker() {
   [ -n "$t3" ] && t3="--tag=$t3"
   [ -n "$t4" ] && t4="--tag=$t4"
   fInfo "building hugo docker image"
-  fInfo "${cC}docker buildx build$cW \"$opts\"$cS \"--platform=$platform\"$cT $t1 $t2 $t3 $t4 \"$dockerfile\" ."
-              docker buildx build     "$opts"      "--platform=$platform" \
+  fInfo "${cC}docker buildx build$cW $opts$cS \"--platform=$platform\"$cT $t1 $t2 $t3 $t4 \"$dockerfile\" ."
+              docker buildx build    $opts      "--platform=$platform" \
               $t1   $t2 $t3 $t4 \
               "$dockerfile" .
 }

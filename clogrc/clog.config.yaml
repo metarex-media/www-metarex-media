@@ -10,6 +10,8 @@
 # --- shell snippets for this project -----------------------------------------
 snippets:
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
+  is-production: |
+    [ "prod" == "$(yq -r '.releases[0].build'  data/releases.yaml)" ]
   git:
     tag:
       ref: yq -r '.releases[0].version'  data/releases.yaml
