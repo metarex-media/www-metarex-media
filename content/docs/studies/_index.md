@@ -18,9 +18,11 @@ we're looking for sponsors to tailor the free software to your precise needs.
 
 Read & enjoy
 
+* AI [Training & Retraining][trn]
 * Live [Production Monitoring][mon]
 
-[mon]:   {{% relref "/docs/studies/monitoring/" %}}
+[mon]:   {{% relref "/docs/studies/monitoring/index.md" %}}
+[trn]:   {{% relref "/docs/studies/ai-content-at-rest/index.md" %}}
 [01]:   {{% relref "/docs/specifications/introduction/" %}}
 [02]:   {{% relref "/docs/specifications/mrx-container-spec/" %}}
 [04]:   {{% relref "/blog/2024-03-21-white-paper-blog/" %}}

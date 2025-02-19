@@ -117,6 +117,7 @@ Lsuffix
 ltrimstr
 markdownify
 markdownit
+matroska
 matrox
 meeja
 messagelatest
@@ -144,6 +145,7 @@ originsemver
 osvp
 Ouistreham
 overriden
+packetizing
 pdate
 piersdeseilligny
 plantuml
@@ -154,6 +156,7 @@ prioritises
 prismjs
 pygments
 qrdata
+quicktime
 raidersofthelostpast
 rangav
 ransform

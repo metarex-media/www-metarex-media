@@ -6,13 +6,12 @@ type:        docs
 description: How does metarex.media work under the hood?
 ---
 
-{{% pageinfo %}}
-
-Wrap all metadata in a standardized container with a standardized identifier and
-a standardized timing model then link it all to a register that reveals a
-manifest of the container contents.
-
-{{% /pageinfo %}}
+{{< f/message
+    header="Metarex Introduction"
+    description="Metarex is like a zip file envelope with a timeline... like an electronic FedEx service."
+    src="/img/dino/mrx-logo-0300.png"
+    class="ui center aligned olive message"
+>}}
 
 ### Core principals
 
@@ -20,18 +19,18 @@ The core technology works like this:
 
 * **Sender**
   * Categorize metadata as { (`binary` or `text`) and (`clocked` or `unclocked`) }
-  * Wrap metadata in an MXF container according to category
-  * Add metarex identification (`mrxId`) metadata & timing information
-  * Check / Register the `mrxId` in a public register so that anyone can figure out what the metadata is
-  * Map the mxf containers into a network transport for real time distribution if needed
+  * Put metadata in an envelope according to category
+  * Stamp envelope with a metarex Id (`mrxId`) & timing information
+  * Publish the `mrxId` in a public register so that anyone can figure out what the metadata is
+  * Map the envelope(s) into a network transport for real time distribution
 * **Receiver**
-  * Unmap network transport into a sequence of mxf containers
-  * Store / preserve /mux / process the mxf containers as a file or stream
-  * Get `mrxId` registration info [from the register](/reg)
+  * Unmap network transport into a sequence of metarex envelopes
+  * Store / preserve / mux / process the envelopes as a file or stream
+  * Get `mrxId` registration info [from the register]({{% relref "/app/reg/" %}})
   * Process metadata / download a plugin / display a message based on the
     registration information provided by the owner of the registration record.
 
-### MXF
+### The {{% metarex %}} envelope - MXF
 
 #### Why [MXF](https://www.amazon.co.uk/MXF-Book-Introduction-Material-eXchange/dp/024080693X)
 
@@ -42,22 +41,22 @@ elements, there are a few requirements that were needed:
 2. clock metadata with precise clocks
 3. lock metadata timing to existing media clocks e.g. video / audio
 4. synchronize metadata with other streams e.g. video / audio / rtp / gps
-5. containerize text based metadata
-6. containerize unsynced timed data e.g. subtitles / elapsed time / script progress
+5. envelope text based metadata
+6. envelope unsynced timed data e.g. subtitles / elapsed time / script progress
 7. carry any metadata type without transcoding
 8. can securely encrypt content with an established Key Management Regime
-7. extend the system as it matures
+9. extend the system as it matures
 
 Many candidates were considered including `tar`, `zip`, `quicktime`, `matroska`
 yet all of them lacked one or more of the key infrastructure elements to satisfy
 the requirements.
-**[MXF](https://www.amazon.co.uk/MXF-Book-Introduction-Material-eXchange/dp/024080693X)**
-is 20 years old, widely deployed, has a sophisticated timing model,
-encapsulation model, an ID infrastructure that gives every MXF file in existence
-a unique number, an extensible data model, a field-tested encryption model, and
-has extension mechanisms including the ability to define in-file dictionaries
-for sophisticated parsing. There are also many different implementations
-including one in [ffmpeg](httpps://ffmpeg.org).
+
+**[MXF][01]**is 20 years old, widely deployed, has a sophisticated timing
+model, encapsulation model, an ID infrastructure that gives every MXF file in
+existence a unique number, an extensible data model, a field-tested encryption
+model, and has extension mechanisms including the ability to define in-file
+dictionaries for sophisticated parsing. There are also many different
+implementations including one in [ffmpeg](httpps://ffmpeg.org).
 
 Basically, MXF already has the tools needed and the other options require
 significant work to create a general purpose global solution.
@@ -74,9 +73,9 @@ project to help us complete the work an give away the software.
 Some desires of the final {{% metarex %}} MXF profile:
 
 * it **must** be possible to serialize & stream an `mrx.mxf` over a network
-* it **must** be possible to concatenate a stream of `mrx.mfx` containers to an
+* it **must** be possible to concatenate a stream of `mrx.mfx` envelopes to an
   atomic OP1a MXF file
-* every partition of an `mrx.mxf` file **must** only contain one thing(Header,
+* every partition of an `mrx.mxf` file **must** only contain one thing (Header,
   Index, Body, GSP, Footer etc.)
 * an `mrx.mxf` file **must** contain a minimum amount of descriptive metadata
   (DM-MRX) to enable rich identification via the MetaRex register.
@@ -88,7 +87,8 @@ Some desires of the final {{% metarex %}} MXF profile:
 * an `mrx.mxf` file **might** contain richer meta-metadata using KXS ([SMPTE ST
   377-2]).
 
+[01]: https://www.amazon.co.uk/MXF-Book-Introduction-Material-eXchange/dp/024080693X
 [ARRI Broadcast Day]: /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
-[MXF profile]:        /docs/specifications/mrx-container-spec/          "Metarex MXF Profile"
-[MXF-live profile]:   /docs/specifications/mxf-live-2019/               "MXF Live Profile"
+[MXF profile]:        /docs/specifications/mrx-envelope-spec/      "Metarex MXF Profile"
+[MXF-live profile]:   /docs/specifications/mxf-live-2019/          "MXF Live Profile"
 [SMPTE ST 377-2]:     https://doi.org/10.5594/SMPTE.ST377-2.2019   "MXF KXS"
