@@ -66,6 +66,7 @@ jobs:
           else
             npm i || true
           fi
+          echo "Pushing to ${{ secrets.DOCKER_USR }}"
       - 
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -89,7 +90,7 @@ jobs:
       #     context:   .
       #     push:      true
       #     tags: |
-      #           "${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}-arm:${{ env.vCODE }}"
+      #           "${{ secrets.DOCKER_NS  }}/${{ env.IMAGE  }}-arm:${{ env.vCODE }}"
       #     platforms: linux/arm64
       # -
       #   name: Build and push - AMD
@@ -99,5 +100,5 @@ jobs:
       #     context:   .
       #     push:      true
       #     tags: |
-      #           "${{ vars.MRX_DOCKER_NS  }}/${{ env.IMAGE  }}-amd:${{ env.vCODE }}"
+      #           "${{ secrets.DOCKER_NS  }}/${{ env.IMAGE  }}-amd:${{ env.vCODE }}"
       #     platforms: linux/amd64
