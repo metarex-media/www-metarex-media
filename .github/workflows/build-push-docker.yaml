@@ -58,6 +58,7 @@ jobs:
       -
         name: Install tools
         run: |
+          clog install yq
           clog install hugo
           sudo snap install dart-sass
           if [[ -f package-lock.json || -f npm-shrinkwrap.json ]] ; then
