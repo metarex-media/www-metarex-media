@@ -66,6 +66,8 @@ jobs:
           else
             npm i || true
           fi
+          echo "--------------------------------------------------------------"
+          echo "environment ${{ vars.environment }}"
           echo "Pushing to ${{ secrets.DOCKER_USR }}"
       - 
         name: Set up QEMU
