@@ -1,7 +1,7 @@
 ---
 title:       Project
 linkTitle:   Project
-date:        2023-06-27
+date:        2025-02-19
 weight:      10
 type:       docs
 description: What is the MetaRex.media project? Where did it come from? What will it deliver?
@@ -12,6 +12,7 @@ menu:
 categories:  ["project"]
 tags:        ["docs", "project"]
 ---
+{{/*<!-- markdownlint-disable MD033-->*/}}
 
 {{< f/message
     header="metarex.media"
@@ -26,7 +27,7 @@ tags:        ["docs", "project"]
 ## Rationale
 
 It's super easy to send anything by FedEx - even a baby dinosaur. You put your
-stuff in a box and they slap 2 labels on it.
+stuff in a box and they slap two labels on it.
 
 1. The Destination - send to {{% metarex %}} HQ
 2. The Manifest - a bar code that points to a database. The record in the
@@ -86,39 +87,32 @@ team did a lot of talking to  content creators, facility owners, software
 vendors and many others about what were the blockers that stopped metadata being
 a first class citizen. The biggest issue was "_The metadata gets lost_".
 
-{{< card/media
-    alt=      "mxf-live demo at ARRI"
-    position= "left"
-    size=     "small"
-    imageUrl= "/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/international-broadcast-day-2019-demo.jpg"
-    linkUrl=  "/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/"
+{{< fo
+    t =        "fblock"
+    alt =      "mxf-live demo at ARRI"
+    position = "left"
+    size =     "small"
+    imageUrl = "/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/international-broadcast-day-2019-demo.jpg"
+    linkUrl =  "/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/"
 >}}
 
-{{% metarex %}} was shown to work back in 1998, when the original MXF team demonstrated
-file workflows with [metadata preservation] at the BBC in a project called
-[G-FORS] (see page 219 of linked PDF). The demo was brought up to date with live
-netowrking and VFX and shown at the [ARRI Broadcast Day] in 2019, but in 2022
-there still wasn't a similar solution available on the market. Games companies
-complained that every new virtual set was a custom engineering job, just to get
-the metadata to the right place at the right time.
+Metarex  was shown to work back in 1998, when the original MXF team
+demonstrated file workflows with [metadata preservation][01] at the BBC in a
+project called [G-FORS][02] (see page 219 of linked PDF). The demo was brought
+up to date with live networking and VFX and shown at the [ARRI Broadcast
+Day][03] in 2019, but in 2022 there still wasn't a similar solution available
+on the market. Games companies complained that every new virtual set was a
+custom engineering job, just to get the metadata to the right place at the
+right time.
 
-[metadata preservation]: https://www.govinfo.gov/content/pkg/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c/pdf/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c.pdf
-[G-FORS]:                https://www.tvtechnology.com/news/mxf-gets-ready-for-nab-are-you-ready-for-it-242793
-[ARRI Broadcast Day]:    /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
+[01]: https://www.govinfo.gov/content/pkg/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c/pdf/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c.pdf
+[02]: https://www.tvtechnology.com/news/mxf-gets-ready-for-nab-are-you-ready-for-it-242793
+[03]: {{% relref "/blog/2019-07-20-ARRI-Open-Day/index.md" %}}
 
-{{< /card/media >}}
+{{</fo>}}
+<br>
 
-{{% metarex %}} is in full flight. We need [backers] to create a
-financial reserve from which we can give out grants to engineering teams to
-create the Open Source that we need to enable free tooling for all. Please make
-a small financial or engineering contribution if a working global media metadata
-ecosystem is of interest to you or your company.
-
-The project will end in Q1 2025 with the project board deciding on the details
-of the project closure.
-
-
-
+{{< metarex >}} has successfully completed its first phase and has created a pool of software available on {{% github %}}.
 
 [DPP]:         /blog/2022/11/16/2022-11-16-dpp-leaders-briefing/
 [IBC]:         /blog/2022/09/18/ibc-show-2022/

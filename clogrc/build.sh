@@ -8,9 +8,10 @@
 eval "$(clog Inc)"
 eval "$(clog project config)"
 eval "$(cat clogrc/help-hugo.sh)"
+clog Check pre-build
 clog Check build
 
-if $(clog is-production); then
+if $(clog is-prod-release); then
   clog Log -W "PRODUCTION mode"
   hopts=""
   dopts="--push"
@@ -28,6 +29,10 @@ repo="metarexmedia"
 fHugoDocker "$hopts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$(clog git tag ref)"
 fHugoDocker "$hopts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$(clog git tag ref)"
 
+[ -n "$GITHUB_ACTIONS" ]&&clog Log -I "build complete"&&exit 0
+
+# interactive builds...
+
 FoundLocally="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$(clog git tag ref)")"
 if [ -z "$FoundLocally" ]; then
    fError "Build failed? Docker image (www-metarex-media:$(clog git tag ref)) not found locally\n"
@@ -35,7 +40,7 @@ if [ -z "$FoundLocally" ]; then
    exit 1
 fi
 
-if $(clog is-production); then
+if $(clog is-prod-release); then
    clog Log -W "PRODUCTION mode build complete"
 else
   clog Log -I "development build complete"

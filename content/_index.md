@@ -17,22 +17,22 @@ date:      2024-08-13
     divClass = "ui green segment"
     msgClass = "ui green message"
     name     = "Why a Dinosaur?"
-    src      = "/img/dino/mrx-logo.svg"
-    link     = "/rexy"
+    src      = "img/dino/mrx-logo.svg"
+    link     = "rexy/"
   />}}
   {{< o/feature
     divClass = "ui yellow segment"
     msgClass = "ui yellow message"
     name     = "What does it Do?"
-    src      = "/project/introduction/featured-fedex.jpg"
-    link     = "/project/introduction/"
+    src      = "project/introduction/featured-fedex.jpg"
+    link     = "project/introduction/"
   />}}
   {{< o/feature
     divClass = "ui red segment"
     msgClass = "ui red message"
-    name     = "How does it work?"
-    src      = "/img/mrx-flow.png"
-    link     = "/project/flow-diagram/"
+    name     = "Case Studies"
+    src      = "docs/studies/case-studies.webp"
+    link     = "docs/studies/"
   />}}
   {{< o/feature
     divClass = "ui blue segment"

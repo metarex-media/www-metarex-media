@@ -22,7 +22,7 @@ menus:
       pageRef: /docs/specifications/
       parent: tech
       weight: 10
-    - name: Studies
+    - name: Case Studies
       pageRef: /docs/studies/
       parent: tech
       weight: 20

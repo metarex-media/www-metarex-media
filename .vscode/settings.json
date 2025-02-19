@@ -34,6 +34,12 @@
       120
     ]
   },
+  "[md]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      120
+    ]
+  },
   "[javascript]": {
     "editor.rulers": [
       120

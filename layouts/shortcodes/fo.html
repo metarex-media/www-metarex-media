@@ -12,7 +12,7 @@ Props(see fohuw-help partial or insert `fo t="help"` in your code):
           count = number of things to show e.g. blogs
     description = hover text or similar
            from = path to source file (instead of a Page) when t=include
-         header = is the markdown h1 text
+         header = is the markdown h1 text or "Figure 1" in a caption
     headerLink  = href around header element
              id = "some id to create an anchor"
            link = default href around any element
@@ -27,7 +27,7 @@ Props(see fohuw-help partial or insert `fo t="help"` in your code):
       srcPoster = image displayed if src is a video or non-image resource
        srcWidth = float from 0.0 ↔ 1.0 for the proportion of the column that is image/video/resource
        srcLink  = href around src. defaults to `link`
-           text = "short markdown to be rendered"
+           text = "short markdown to be rendered e.g. as caption"
 
          Inner contains markdown and is after the rendered description
 */}}
@@ -51,6 +51,7 @@ Props(see fohuw-help partial or insert `fo t="help"` in your code):
   {{- $srcOn := .Get "srcOn" | default "left" -}}
   {{- $srcPoster := .Get "srcPoster" -}}
   {{- $srcWidth := .Get "srcWidth" | default 0.25 -}}
+  {{- $text := .Get "text" -}}
   {{/* --- src logic ------------------------------------------------------*/}}
     {{- if not $src -}}{{ $srcWidth = 0.0 }}{{- end -}}
   {{- $srcIsVideo := false -}}
@@ -94,6 +95,7 @@ Props(see fohuw-help partial or insert `fo t="help"` in your code):
   {{- $d = merge $d (dict "srcPoster" $srcPoster) -}}
   {{- $d = merge $d (dict "srcIsVideo" $srcIsVideo) -}}
   {{- $d = merge $d (dict "srcIsImage" $srcIsImage) -}}
+  {{- $d = merge $d (dict "text" $text) -}}
   {{- $partialPrefix := "fohuw" -}}
   {{- if $t }}{{ $partialPrefix = printf "%s-%s" $partialPrefix $t }}{{ end -}}
   {{- partial $partialPrefix $d -}}
