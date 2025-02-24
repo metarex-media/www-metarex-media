@@ -19,6 +19,7 @@ This is <span class="ui red text">bad</span>!
 
 {{% fo
    t = "image"
+   blockClass = "ui container"
    src = "/img/mrx-concept-plumbing.svg"
    srcClass = "ui centered image"
    alt = "MetaRex Concept"

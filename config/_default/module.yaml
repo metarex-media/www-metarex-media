@@ -6,11 +6,11 @@
 
 # CLI upgrade to the latest theme:   hugo mod get github.com/mrmxf/fohuw@main
 
-# uncomment line below for temporary local development of module
-# replacements: "github.com/mrmxf/fohuw -> ../../fohuw"
 hugoVersion:
   extended: true
-  min: v0.143.1
+  min: v0.144.2
 imports:
   - path: github.com/mrmxf/fohuw
     disable: false
+# uncomment line below for temporary local development of module
+replacements: "github.com/mrmxf/fohuw->../../pub-mrmxf/fohuw"

@@ -1,10 +1,16 @@
 ---
 title:     Live Production Monitoring
 linkTitle: Live Production Monitoring
-date:     2025-02-10
+date:     2025-02-24
 ---
 
-{{% fo t = "help" /%}}
+{{% fo
+    t = "image"
+    src = "monitoring-generic.svg"
+    alt = "Generic monitoring flow"
+    header = "Figure 1"
+    text = "Generic monitoring flow  for a live event"
+ /%}}
 
 
 In a live event there are are many links involved between getting the action
@@ -98,7 +104,7 @@ standard IT web services. The slow elements (caching metarexIDs,  authentication
 warming up serverless API functions) can be done in advance of the event. This
 allows speedy processing of the workflows.
 
-### Status 2025-02-10
+### Status 2025-02-24
 
 Most of the components exist to trial this workflow:
 
@@ -106,14 +112,27 @@ Most of the components exist to trial this workflow:
 * an envelope specification
 * golang code for inserting and extracting documents from the envelope
 * a specification for service representation in the register
-* a [prototype register](https://metarex.media/reg)
+* a [prototype register][reg]
 
 We are looking for supporters to turn this into a real Proof Of Concept in
 two phases:
 
-1. Q1/Q2 20205 - optimise the {{%metarex%}} software for a vendors sending and
-   listening equipment. This will involve creating, registering and testing
-   a proprietary document format in a simulated or real network.
+1. Q1/Q2 20205 - optimise the {{%metarex%}} software into a `mrx-worker`
+   module for a vendors sending and listening equipment. This will involve
+   creating, registering and testing a proprietary document format in a
+   simulated or real network.
 2. Deploying the test system at a real event.
 
 We estimate about 4 weeks of engineering for each phase.
+
+<div class="ui container">
+{{% fo
+   t = "image"
+   src = "mrx-worker2.svg"
+   srcClass = "ui fluid image"
+   alt = "mrx-worker"
+   text = "Metarex Worker structure"
+   header = "Figure 2"
+/%}}
+</div>
+[reg]: {{% relref "/app/reg/" %}}

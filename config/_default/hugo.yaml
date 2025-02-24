@@ -19,21 +19,21 @@ menus:
     - name: Technology
       identifier: tech
     - name: Specifications
-      pageRef: /docs/specifications/
+      URL: /docs/specifications/
       parent: tech
       weight: 10
     - name: Case Studies
-      pageRef: /docs/studies/
+      URL: /docs/studies/
       parent: tech
       weight: 20
       identifier: specs
     - name: app/reg
-      pageRef: /app/reg/
+      URL: /app/reg/
       parent: tech
       weight: 50
       identifier: appreg
     - name: app/demos
-      pageRef: /app/demos/
+      URL: /app/demos/
       parent: tech
       weight: 51
       identifier: appdemos
@@ -44,7 +44,7 @@ menus:
   #                                  |_|_|
   menu2:
     - name: See us on LinkedIn
-      pageRef: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+      URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
       pre: '<i class="linkedin icon"></i>'
       post: " 🦖"
@@ -56,18 +56,18 @@ menus:
     #   post:       " 🦖"
     #   weight:     110
     - name: Buy us &nbsp;<em>Cake</em>
-      pageRef: /donate/
+      URL: /donate/
       identifier: cake
       pre:
       post: " 🍰"
       weight: 110
     - name: Try a demo
-      pageRef: /app/demos/
+      URL: /app/demos/
       identifier: feed
       pre:
       post: " 🥩"
       weight: 120
-# linsks to linkedin left & right
+# links to linkedin left & right
 
 # --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.
