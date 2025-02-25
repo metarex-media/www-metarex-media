@@ -12,14 +12,14 @@ menu:
 categories:  ["project"]
 tags:        ["docs", "project"]
 ---
-{{/*<!-- markdownlint-disable MD033-->*/}}
+<!-- markdownlint-disable MD033-->
 
-{{< f/message
+{{< fo t="banner"
     header="metarex.media"
-    description="is like a zip file with a timeline. It's used like an electronic FedEx service."
+    text="is like a zip file with a timeline. It's used like an electronic FedEx service."
     src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
->}}
+    class="ui olive message"
+/>}}
 
 **Status**: [view timeline](/project/status).
 **IBC Accelerator 2023** [Responsive Narrative Factory](/project/archive/ibc2023/).

@@ -8,7 +8,7 @@ tags:        ["dawn chorus"]
 weight:      199
 ---
 
-{{% banner "Dawn Chorus is an Immersive Audio Metarex Collaboration." %}}
+{{< fo t = "banner" text =  "Dawn Chorus is an Immersive Audio Metarex Collaboration." class = "ui olive message" />}}
 
 See the [Proof of Concept Spec](poc)
 

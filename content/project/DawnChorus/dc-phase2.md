@@ -8,7 +8,7 @@ tags:        ["dawn-chorus", "phase-2"]
 weight:      199
 ---
 
-{{% banner "Dawn Chorus Phase 2." %}}
+{{< fo t = "banner" text =  "Dawn Chorus Phase 2." />}}
 
 ## Dawn Chorus Phase 2
 

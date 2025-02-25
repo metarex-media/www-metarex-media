@@ -1,2 +1,6 @@
 github.com/mrmxf/fohuw v0.2.0 h1:A9ca9EVfGTLNpYjYXZwKQWA6kz8eXzC1ULQWTqW+HXc=
 github.com/mrmxf/fohuw v0.2.0/go.mod h1:+u8MXhVbH/ebgl21sX4aKxnP/BgqrDX7AYsZAuJ66Kw=
+github.com/mrmxf/fohuw v0.3.0 h1:5/wPMKu1TxETCFoIl2P3/XCN5ZJynbTg2uU/PtP2iww=
+github.com/mrmxf/fohuw v0.3.0/go.mod h1:SHfqb/A0xAgKlaXO6q3N6aJ5aGVoT6aPng5POjdfew4=
+github.com/mrmxf/fohuw v0.3.1 h1:v+ZmrV2WvSSyCCFUw1piBFdMDgvXdPdamkIavc2A65M=
+github.com/mrmxf/fohuw v0.3.1/go.mod h1:SHfqb/A0xAgKlaXO6q3N6aJ5aGVoT6aPng5POjdfew4=

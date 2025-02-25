@@ -1,7 +1,7 @@
 ---
-title:     "Downloads"
-linkTitle: "Downloads"
-
+title:      Downloads
+linkTitle:  Downloads
+date:      2025-02-25
 url:       "/dl/"
 
 aliases:
@@ -56,18 +56,18 @@ resources:
 
 ---
 
-## Logos and styles
+### Logos and styles
 
 These are all available on the [style](/style) page.
 
-## Backer Agreement
+### Backer Agreement
 
 You can download a sample of the current backer agreement. If you become a
 backer, then a signable version will be sent to you along with your invoice.
 
 {{< resource/listByGroup "Project Documents" >}}
 
-## Samples
+### Samples
 
 Sample files are continually updated during the project. Typically the versions
 on the various GitHub repos will be less reliable that the older, published

@@ -8,7 +8,7 @@ weight:      10
 <!-- markdownlint-disable MD001 MD034 -->
 <div class="ui center aligned  segment">
 
-{{< banner "IBC 2024 - Win a cuddly Rexy - join our treasure hunt." "blue">}}
+{{< fo t = "banner" text = "IBC 2024 - Win a cuddly Rexy - join our treasure hunt."/>}}
 
 {{< f/block
   id    = "opening"

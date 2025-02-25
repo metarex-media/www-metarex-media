@@ -4,4 +4,4 @@ linkTitle: "Archive"
 weight: 900
 ---
 
-{{% banner "Rest home for our past events"  %}}
+{{< fo t = "banner" text =  "Rest home for our past events"  />}}

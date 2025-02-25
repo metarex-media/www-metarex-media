@@ -11,12 +11,12 @@
 snippets:
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   is-prod-release: |
-    [ "prod" == "$(yq -r '.releases[0].build'  data/releases.yaml)" ]
+    [ "prod" == "$(yq -r '.releases[0].build'  assets/data/releases.yaml)" ]
   git:
     tag:
-      ref: yq -r '.releases[0].version'  data/releases.yaml
+      ref: echo "yq -r '.releases[0].version'  assets/data/releases.yaml"
     message:
-      ref:  yq -r '.releases[0].note'  data/releases.yaml
+      ref:  yq -r '.releases[0].note'  assets/data/releases.yaml
   project:
     config: |
       PROJECT=www-metarex-media

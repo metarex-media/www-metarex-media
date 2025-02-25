@@ -8,7 +8,7 @@ tags:        ["dawn-chorus", "poc"]
 weight:      199
 ---
 
-{{% banner "Dawn Chorus Proof Of Concept Proposal." %}}
+{{< fo t = "banner" text =  "Dawn Chorus Proof Of Concept Proposal." />}}
 
 ## Proof of Concept
 
