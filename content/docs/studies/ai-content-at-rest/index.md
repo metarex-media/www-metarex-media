@@ -29,58 +29,171 @@ description: How metarex and VC-6 improve training and re-training workflows
    src = "car.svg"
    srcClass = "ui fluid image"
    alt = "Workflow"
-   text = "Content at rest workflow"
    header = "Figure 2"
+   text = "Content at rest workflow"
 /%}}
 
-#### To make this a reality for everyone ...
+The PoC works like this:
+{{< fo
+    t = "block"
+    src = "/brand/logo.svg"
+    srcClass = "ui fluid image"
+    srcWidth = 0.05
+    text = "Generic monitoring flow  for a live event"
+ >}}
+
+1. Ingest - nothing special - just store [VC-6][vc6] asset like any other asset
+2. Define a metadata document identifying the properties of each available
+   resolution in the stored content (e.g.
+   `src`=`s3:bucket/asset.vc6?resolution=0`).
+3. Define an API for the `src` parameter the media (i.e. a string compatible
+   with `S3:frames` or `aws:rekognition` or `THEOplayer` or `shaka-player` or
+   `video.js`)
+4. BASIC - high volume AI pass
+   * choose the lowest practical resolution and scan every asset for
+     audio-visual-engagement metrics
+   * use a human assisted AI decision tree to filter the list to a reasonable
+     number of feeds for editorial review // 2nd pass metrics generation
+5. MID - full scan of candidate feeds / clips
+   * increase the resolution & re-scan every asset with higher fidelity
+     settings to retrieve better metrics / transcripts / Quality data on each
+     clip.
+6. FULL - clips selected for air
+   * Extra work for compliance / editorial / graphics passes on highest
+     required resolution.
+
+The important part of this PoC is that no proxies are generated. The content
+exists as a single asset that's programmatically retrieved from generic storage
+that has been optimised for the user's workflow needs.
+{{< /fo >}}
+
+## The processing in more detail
+
+### 1. Ingest<a id="1"></a>
+
+For this explanation, we'll assume that every ingested frame can be identified
+with a uri like this:
+
+```javascript
+// simple declarative statement in some programming language:
+uri = "mode:location/asset.vc6?api-specific-selectors"
+```
+
+### 2. Hierarchy properties metadata<a id="2"></a>
+
+An example document could be really simple JSON:
+
+```javascript
+[
+   {"w":3840, "h":2160, "name":"4k"},
+   {"w":1920, "h":1080, "name":"HD", "alias": "hi"},
+   {"w":960,  "h":540,  "name":"qHD"},
+   {"w":480,  "h":270,  "name":"q2D", "alias": "mi"},
+   {"w":240,  "h":135,  "name":"q3D", "alias": "lo"}
+]
+```
+
+This example assumes secret information that the array is ordered from highest
+bitrate/compute load to lowest bitrate/compute load, pixels are square and each
+layer has the same colorimetry. Production examples may be more complex and may
+utilise more features of the underlying [VC-6][vc6] codec.
+
+For metarex to provide some automatic functionality, it needs a schema to
+validate this new document. Here's one that was made in about 50 seconds with
+an [online tool][01] and registered on the metarex.media register.
+
+```javascript
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://metarex.media/reg/0195477a-e716-709f-a18f-15ab454471ec/aicar",
+  "type": "array",
+  "default": [],
+  "title": "Metarex AICAR ladder schema",
+  "items": {
+     "type": "object",
+     "title": "A Schema",
+     "required": ["w","h","name"],
+     "properties": {
+       "w": {
+         "type": "integer",
+         "title": "width",
+         "examples": [3840,1920,960,480,240]
+       },
+       "h": {
+           "type": "integer",
+           "title": "height",
+           "examples": [2160,1080,540,270,135]
+       },
+       "name": {
+         "type": "string",
+         "title": "name",
+         "examples": ["4k","HD","qHD","q2D","q3D"]
+       },
+       "alias": {
+         "type": "string",
+         "title": "alias",
+         "examples": ["hi","mi","lo"]
+       }
+     },
+     "example": [
+        {"w": 3840,"h": 2160,"name": "4k"},
+        {"w": 1920,"h": 1080,"name": "HD", "alias": "hi"},
+        {"w": 960,"h": 540,"name": "qHD", "alias": "mi"},
+        {"w": 480,"h": 270,"name": "q2D"},
+        {"w": 240,"h": 135,"name": "q3D", "alias": "lo"}
+     ]
+  }
+}
+```
+
+### 3. Make a simple media API
+
+A sample API definition is available on API Hub
+[/apis/Mr-MXF/AICAR-demo/1.0.0#/][03]/
+
+It takes a request of the form:
+
+```url
+https://mrmxf.com/a/mrx/aicar/get/asset/rexy-roar0036.vc6&res=mi
+```
+
+and returns a vc6 stream of the appropriate resolution that's extracted from
+the single stored content.
+
+Trivial, but most importantly it's extensible for different resolution ladders,
+different uri types, updating API versions and even different compression types
+
+### 4. BASIC - put it all together
+
+{{% fo t = "image" src = "aicar-basic-flow.png" srcClass = "ui centered image"
+   alt = "Basic Flow" header = "Figure 3" text = "Basic Flow" /%}}
+
+The BASIC flow needs to be low cost, yet "good-enough" to triage all the
+inputs. The simplified node-red workflow about shows a simplistic demo that
+can run in a browser on a website.
+
+A fuller demo would use industry vendor solutions for workflow, storage, AI.
+
+## To make this a reality for everyone…
 
 We need to complete our `mrx-worker` module. This code integrates all the
 necessary building blocks of metarex into a single repo that allows several
 different operating modes
 
 1. Stand alone executable (intel, arm, Win, Mac, Linux)
-2. Embedded network service for use inside a product or cluster
+2. Embedded network service for use inside a product or cluster ([Figure
+   4](#fig-4))
 3. Authenticated network service for use in a mixed security environment
 
-<div class="ui three column grid">
-<div class="ui column">
-<div class="ui segment">
-{{% fo
-   t = "image"
-   src = "mrx-worker1.svg"
-   srcClass = "ui fluid image"
-   alt = "MetaRex Concept"
-   text = "mrx-worker embedded API build"
-   header = "Figure 3"
-/%}}
-</div>
-</div>
-<div class="ui column">
-<div class="ui segment">
-{{% fo
+<a id="fig-4"></a>{{% fo
+   id = "fig-4"
    t = "image"
    src = "mrx-worker2.svg"
-   srcClass = "ui fluid image"
+   srcClass = "ui large centered image"
    alt = "MetaRex Concept"
    text = "mrx-worker embedded services"
    header = "Figure 4"
 /%}}
-</div>
-</div>
-<div class="ui column">
-<div class="ui segment">
-{{% fo
-   t = "image"
-   src = "mrx-worker3.svg"
-   srcClass = "ui fluid image"
-   alt = "MetaRex Concept"
-   text = "mrx-worker authenticated worker"
-   header = "Figure 5"
-/%}}
-</div>
-</div>
-</div>
 
 ### Status 2025-02-10
 
@@ -101,3 +214,7 @@ two phases:
 2. Deploying the test system at a real event.
 
 We estimate about 5 weeks of engineering for each phase.
+
+[01]: https://jsonschema.net/
+[03]: https://app.swaggerhub.com/apis/Mr-MXF/AICAR-demo/1.0.0#/
+[vc6]: https://www.v-nova.com/vc-6-higher-quality-at-lower-bitrates/vc6-encoding-and-decoding-sdk/

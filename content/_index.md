@@ -48,10 +48,10 @@ date:      2024-08-13
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< o/block blockType = "blog" count = 2 skip = 0 />}}
+{{< fo t = "blog" count = 2 skip = 0 />}}
 
-{{< o/block
-    blockType = "cover"
+{{< fo
+    t = "cover"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
     src = "project/coverpages/rexycover-240806.jpg"

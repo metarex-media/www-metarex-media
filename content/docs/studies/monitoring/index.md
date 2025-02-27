@@ -7,11 +7,11 @@ date:     2025-02-24
 {{% fo
     t = "image"
     src = "monitoring-generic.svg"
+    srcClass = "ui fluid image"
     alt = "Generic monitoring flow"
     header = "Figure 1"
     text = "Generic monitoring flow  for a live event"
  /%}}
-
 
 In a live event there are are many links involved between getting the action
 to the viewers with minimal delay. 4 decades ago, there was only one type of
@@ -30,9 +30,35 @@ MetaRex takes a novel approach to the problem where we aim to provide
 resilience across multiple networks and to give the vendors and operators a
 chance to cooperate whilst maintaining control of their own data when needed.
 
-The solution works like this
+The solution works like this:
+{{< fo
+    t = "block"
+    src = "/brand/logo.svg"
+    srcClass = "ui fluid image"
+    srcWidth = 0.05
+    text = "Generic monitoring flow  for a live event"
+ >}}
 
-1. An operator or vendor publishes the schema for their metadata via
+1. Use your own custom metadata for the measurement
+2. Publish the schema for that metadata (in a product, in a room, in a facility or globally)
+3. Publish some services for that metadata
+4. Put the metadata in a metarex envelope
+5. Put the envelope in the Transport Stream / ST2110 / NDI / SRT feed
+6. Extract the envelope from the feed (generic software)
+7. Open the envelope to find the class of metadata inside via the `metarexId` (generic software)
+8. Use a service to process that metadata e.g. convert for display, place in a
+   queue, compare with a value from a different feed. (custom software)
+
+Of the 8 steps, only steps #1 & #8 are custom software for your app. The remaining
+steps are handled by {{<metarex>}}. This means you concentrate on the value-add
+of your metadata, {{<metarex>}} handles the plumbing and waste disposal.
+{{</fo>}}
+
+## The processing in more detail
+
+### 1. Define some custom metadata
+
+An operator or vendor publishes the schema for their metadata via
    {{%metarex%}}. The simplest form of this is to register a `metarexId` for a
    proprietary measurement document. For example, an instance document might
    look like this:
@@ -49,6 +75,11 @@ The solution works like this
 
    A real example would be more sophisticated, but this document shows a
    `metarexID` that could be looked up in the register.
+
+### 2. Publish the schema
+
+### 3. Publish some services
+
 2. Now we know the format of a document, let's use it to forward a measurement
    of the link between the Production and the Broadcaster (`linkPB`) for every
    frame (or packet or time-unit) of the signal.
@@ -129,7 +160,7 @@ We estimate about 4 weeks of engineering for each phase.
 {{% fo
    t = "image"
    src = "mrx-worker2.svg"
-   srcClass = "ui fluid image"
+   srcClass = "ui large image"
    alt = "mrx-worker"
    text = "Metarex Worker structure"
    header = "Figure 2"

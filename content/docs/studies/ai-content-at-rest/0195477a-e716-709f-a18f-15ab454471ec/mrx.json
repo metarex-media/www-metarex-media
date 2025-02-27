@@ -1,0 +1,28 @@
+{
+  "metarexId": "0195477a-e716-709f-a18f-15ab454471ec",
+  "name": "AI content at rest - resolutions",
+  "description": "Definition of the resolutions used in the demo",
+  "media-type": "application/json",
+  "registerEntrySemVer": "0.2.0",
+  "mrx": {
+    "example": "https://raw.githubusercontent.com/metarex-media/mrx-hosted/main/0195477a-e716-709f-a18f-15ab454471ec/example.json",
+    "specification": "https://github.com/metarex-media/mrx-hosted/blob/main/MRX.123.456.789.reg/spec.md",
+    "schema": "https://raw.githubusercontent.com/metarex-media/mrx-hosted/main/0195477a-e716-709f-a18f-15ab454471ec/schema.json",
+    "services": [
+      {
+        "id": "register",
+        "name": "MetaRex global register",
+        "description": "The main register from which others may cache cloned data",
+        "server": "https://metarex.media/reg",
+        "openapi": "https://raw.githubusercontent.com/metarex-media/mrx-hosted/main/MRX.123.456.789.abc/openapi-register.json",
+        "in": [
+          "MRX.123.456.789.abc",
+          "MRX.123.456.789.reg"
+        ],
+        "out": [
+          "MRX.123.456.789.reg"
+        ]
+      }
+    ]
+  }
+}

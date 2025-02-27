@@ -43,19 +43,25 @@ menus:
   #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
   #                                  |_|_|
   menu2:
-    - name: See us on LinkedIn
+    - name: MetaRex on LinkedIn
       URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
       pre: '<i class="linkedin icon"></i>'
       post: " 🦖"
       weight: 100
+    - name: MetaRex on GitHub
+      URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
+      identifier: GitHub
+      pre: '<i class="github icon"></i>'
+      post: " 🦖"
+      weight: 110
     # - name:       See the IBC Winner
     #   URL:        /donate/
     #   identifier: cake
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Buy us &nbsp;<em>Cake</em>
+    - name: Feed rexy &nbsp;<em>Cake</em>
       URL: /donate/
       identifier: cake
       pre:
@@ -64,8 +70,8 @@ menus:
     - name: Try a demo
       URL: /app/demos/
       identifier: feed
-      pre:
-      post: " 🥩"
+      pre:  "⏯️ "
+      post: " 🦖"
       weight: 120
 # links to linkedin left & right
 

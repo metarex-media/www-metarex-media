@@ -14,7 +14,7 @@ snippets:
     [ "prod" == "$(yq -r '.releases[0].build'  assets/data/releases.yaml)" ]
   git:
     tag:
-      ref: echo "yq -r '.releases[0].version'  assets/data/releases.yaml"
+      ref: yq -r '.releases[0].version'  assets/data/releases.yaml
     message:
       ref:  yq -r '.releases[0].note'  assets/data/releases.yaml
   project:

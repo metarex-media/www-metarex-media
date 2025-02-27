@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://metarex.media/reg/0195477a-e716-709f-a18f-15ab454471ec",
+  "type": "array",
+  "default": [],
+  "title": "Metarex Demo Schema",
+  "items": {
+     "type": "object",
+     "title": "A Schema",
+     "required": ["w","h","name"],
+     "properties": {
+       "w": {
+         "type": "integer",
+         "title": "width",
+         "examples": [3840,1920,960,480,240]
+       },
+       "h": {
+           "type": "integer",
+           "title": "height",
+           "examples": [2160,1080,540,270,135]
+       },
+       "name": {
+         "type": "string",
+         "title": "name",
+         "examples": ["4k","HD","qHD","q2D","q3D"]
+       }
+     },
+     "example": [
+        {"w": 3840,"h": 2160,"name": "4k"},
+        {"w": 1920,"h": 1080,"name": "HD"},
+        {"w": 960,"h": 540,"name": "qHD"},
+        {"w": 480,"h": 270,"name": "q2D"},
+        {"w": 240,"h": 135,"name": "q3D"}
+     ]
+  }
+}

@@ -26,9 +26,10 @@ tmp/
 !tmp/readme.md
 tmp-*
 
-#ignore mac cruft
+#ignore mac & wsl cruft
 **/*/.DS_Store
 .DS_Store
+*Zone.Identifier
 # IDE files
 .idea
 
