@@ -21,13 +21,13 @@ else
   hopts="--gc --logLevel info"
   dopts="--push"
 fi
-fHugoBuild "$opts"
+fHugoBuild "$hopts"
 
 dockerfile="clogrc/dockerfile"
 repo="metarexmedia"
 
-fHugoDocker "$hopts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$(clog git tag ref)"
-fHugoDocker "$hopts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$(clog git tag ref)"
+fHugoDocker "$dopts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$(clog git tag ref)"
+fHugoDocker "$dopts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$(clog git tag ref)"
 
 [ -n "$GITHUB_ACTIONS" ]&&clog Log -I "build complete"&&exit 0
 

@@ -51,6 +51,7 @@ Devlin
 docsearch
 docsy
 Docsy
+dopts
 dpkg
 eidr
 Eluvio
@@ -86,6 +87,7 @@ hashorigin
 headhash
 headmessage
 hookprefix
+hopts
 iabm
 imfug
 incorpration
