@@ -160,7 +160,7 @@ We estimate about 4 weeks of engineering for each phase.
 {{% fo
    t = "image"
    src = "mrx-worker2.svg"
-   srcClass = "ui large image"
+   srcClass = "ui large centered image"
    alt = "mrx-worker"
    text = "Metarex Worker structure"
    header = "Figure 2"

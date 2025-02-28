@@ -1,0 +1,55 @@
+---
+title: engineering
+date:  2025-03-31
+---
+
+{{< fo
+    t = "mnu-page"
+    header = "MetaRex Menu"
+    text = " A la carte "
+    src = "some-image"
+>}}
+
+{{< fo t = "mnu-row" >}}
+
+
+{{< fo t = "mnu-block" header = "Appetiser" src = "some-image" >}}
+
+{{< fo t = "mnu-item" header = "Appetiser" src = "some-image" >}}
+The item text
+{{/* close the mnu-item*/}}{{< /fo >}}
+
+{{< fo t = "mnu-description" header = "Appetiser" src = "some-image" >}}
+The description text
+{{/* close the mnu-description*/}}{{< /fo >}}
+
+{{< fo t = "mnu-price" header = "Appetiser" src = "some-image" >}}
+The price text
+<div class = "ui pink label">£1200</div>
+{{/* close the mnu-price*/}}{{< /fo >}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{/* close the mnu-block*/}}{{< /fo >}}
+{{/* close the row */}}{{< /fo >}}
+{{/* --------------------------------------------------------------------- */}}
+{{/* ------------
+
+BRUCE READ THIS ... some words 
+
+--------------------------- */}}
+
+
+
+{{/* close the page block*/}}{{< /fo >}}
