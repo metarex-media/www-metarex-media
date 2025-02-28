@@ -1,10 +1,10 @@
 ---
-title:       AI - content at rest
-linkTitle:   AI - content at rest
-date:        2025-02-19
+title:       AI efficiency with Time Addressable Media
+linkTitle:   AI - T.A.M
+date:        2025-02-28
 description: How metarex and VC-6 improve training and re-training workflows
 ---
-
+<!-- markdownlint-disable MD033 -->
 {{% fo
    t = "image"
    src = "content-at-rest.png"
@@ -14,7 +14,7 @@ description: How metarex and VC-6 improve training and re-training workflows
    header = "Figure 1"
 /%}}
 
-#### We're proposing a simple paradigm:
+#### We're proposing a simple paradigm
 
 * Store your content at rest in full resolution
 * Use an API to retrieve the resolution you need
@@ -26,7 +26,7 @@ description: How metarex and VC-6 improve training and re-training workflows
 
 {{% fo
    t = "image"
-   src = "car.svg"
+   src = "aicar.svg"
    srcClass = "ui fluid image"
    alt = "Workflow"
    header = "Figure 2"
@@ -42,13 +42,15 @@ The PoC works like this:
     text = "Generic monitoring flow  for a live event"
  >}}
 
-1. Ingest - nothing special - just store [VC-6][vc6] asset like any other asset
+1. Ingest - nothing special - just store [VC-6][vc6], just like any other media
+   asset.
 2. Define a metadata document identifying the properties of each available
-   resolution in the stored content (e.g.
-   `src`=`s3:bucket/asset.vc6?resolution=0`).
-3. Define an API for the `src` parameter the media (i.e. a string compatible
-   with `S3:frames` or `aws:rekognition` or `THEOplayer` or `shaka-player` or
-   `video.js`)
+   resolution in the stored content<br>(e.g.
+   `lo`= low resolution asset at 240 x 135 pixel Rec.709 SDR).
+3. Define a simple API adapter to convert simple fetching operations in
+   existing tools (e.g. AI segmentation) to meet [Time Addressable Media][tam]
+   principles. Ideally, this should work with tools like `aws:rekognition` or
+   `THEOplayer` or `shaka-player` or `video.js`)
 4. BASIC - high volume AI pass
    * choose the lowest practical resolution and scan every asset for
      audio-visual-engagement metrics
@@ -65,6 +67,10 @@ The PoC works like this:
 The important part of this PoC is that no proxies are generated. The content
 exists as a single asset that's programmatically retrieved from generic storage
 that has been optimised for the user's workflow needs.
+
+[tam]: https://downloads.bbc.co.uk/rd/pubs/whp/whp-pdf-files/WHP421.pdf
+[vc6]: https://www.v-nova.com/vc-6-higher-quality-at-lower-bitrates/vc6-encoding-and-decoding-sdk/
+
 {{< /fo >}}
 
 ## The processing in more detail
@@ -84,13 +90,16 @@ uri = "mode:location/asset.vc6?api-specific-selectors"
 An example document could be really simple JSON:
 
 ```javascript
-[
-   {"w":3840, "h":2160, "name":"4k"},
-   {"w":1920, "h":1080, "name":"HD", "alias": "hi"},
-   {"w":960,  "h":540,  "name":"qHD"},
-   {"w":480,  "h":270,  "name":"q2D", "alias": "mi"},
-   {"w":240,  "h":135,  "name":"q3D", "alias": "lo"}
-]
+{
+   "metarexId": "0195477a-e716-709f-a18f-15ab454471ec",
+   "ladder":[
+     {"w":3840, "h":2160, "name":"4k"},
+     {"w":1920, "h":1080, "name":"HD", "alias": "hi"},
+     {"w":960,  "h":540,  "name":"qHD"},
+     {"w":480,  "h":270,  "name":"q2D", "alias": "mi"},
+     {"w":240,  "h":135,  "name":"q3D", "alias": "lo"}
+   ]
+}
 ```
 
 This example assumes secret information that the array is ordered from highest
@@ -146,22 +155,55 @@ an [online tool][01] and registered on the metarex.media register.
 }
 ```
 
-### 3. Make a simple media API
+### 3. Make a simple TAM API interface
 
+The diagram shows the {{<metarex>}} footprint. This is where we use the
+{{<metarex>}} principles to convert the simple API into a more sophisticated
+API that does the actual object fetching depending on the properties required.
 A sample API definition is available on API Hub
 [/apis/Mr-MXF/AICAR-demo/1.0.0#/][03]/
 
 It takes a request of the form:
 
 ```url
-https://mrmxf.com/a/mrx/aicar/get/asset/rexy-roar0036.vc6&res=mi
+https://mrmxf.com/a/mrx/aicar/get/asset/rexy-roar0036.vc6/mi
 ```
 
-and returns a vc6 stream of the appropriate resolution that's extracted from
-the single stored content.
+and returns a vc6 frame of the appropriate resolution that's extracted from
+the stored content stream.
 
-Trivial, but most importantly it's extensible for different resolution ladders,
-different uri types, updating API versions and even different compression types
+For this proof of concept it's trivial, but most importantly it's extensible to
+take into account capabilities of good professional codecs:
+
+* AssetId - anything from filenames to ID chains
+* Resolutions - from proxy to 8k
+* Dynamic Range - a selector for the required dynamic range characteristics
+* Start - the start point in the asset (time offset, frame offset etc)
+* Duration - Retrieve multiple units of data to prevent network chatter
+* Colorimetry - What color space should the retrieved asset be in.
+
+Done properly, such an interface can be beneficial:
+
+* simplification an re-use of workflows through configuration
+* optimise store/compute decisions when requests use profiling metadata
+* migration from many-version workflows to primary version + cache to simplify
+  asset storage and future de-duplication headaches
+
+The metarex API adapter looks a bit like this:
+
+```mermaid
+sequenceDiagram
+  participant A as App
+  participant M as mrx-adapt
+  participant V as vc6-api
+  participant S as s3
+  
+  A->>M: /rexy-roar0036.vc6/mi
+  M-->>A:  ack
+  M->>V:  /rexy-roar0036.vc6?echelons[1-5]
+  V->>S:  /rexy-roar0036.vc6?echelons[1-5]
+  S->>A:  blob(vc6)
+```
 
 ### 4. BASIC - put it all together
 
@@ -215,6 +257,7 @@ two phases:
 
 We estimate about 5 weeks of engineering for each phase.
 
-[01]: https://jsonschema.net/
-[03]: https://app.swaggerhub.com/apis/Mr-MXF/AICAR-demo/1.0.0#/
+[01]:  https://jsonschema.net/
+[03]:  https://app.swaggerhub.com/apis/Mr-MXF/AICAR-demo/1.0.0#/
+[tam]: https://downloads.bbc.co.uk/rd/pubs/whp/whp-pdf-files/WHP421.pdf
 [vc6]: https://www.v-nova.com/vc-6-higher-quality-at-lower-bitrates/vc6-encoding-and-decoding-sdk/
