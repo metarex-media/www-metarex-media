@@ -64,7 +64,7 @@ is in Section Table 3.
 | MXF Live Primary (Master) Stream Flag                                    |`urn:smpte:ul060e2b34.0101010d.0e170104.03010103`
 | MXF Live Streaming Mode                                                  |`urn:smpte:ul060e2b34.0101010d.0e170104.03010104`
 
-{{% o/caption "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" "table" %}}
+((< fo t = "caption" text = "Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" - header = "table" >))
 
 **Note:** These keys are preliminary keys to be used during experimental
 state; they are subject to change without notice.
