@@ -50,13 +50,21 @@ The palette is pretty simple to look cartoon-like and based on 4 colors
 
 * @amber: `#c2a649`
 * @purple: `#9A3A72`
+  * light purple `#c971a4`
+  * dark purple for footprint `#501e3b`
 * @green: `#4F702A`
+  * light green (body fill) `#b5d690`
+  * dark green for footprint `#518653`
 * @grey:  `#333333`
+* @consumer `#00cccc`
+  * ligth cyan `#80ffff`
+  * dark cyan `#009999`
+
 
 Black text and white backgrounds (or the inverse) should mostly work. Derived
 colors are computed to give decent cartoon contrast:
 
-* @dinoBody:  _lighten(@green, 40%)_ = `#b5d690`
+* @dinoBody:  _lighten(@green, 40%)_ =  `#b5d690`
 * @dinoEye:  _spin(@purple, 30)_ = `#9a3a42`
 * @trainFill:  _lighten(@grey, 25%)_ = `#737373`
 * @amberSky:   _lighten(@amber, 40%)_ = `#f5f1e2;`
