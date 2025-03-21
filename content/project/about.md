@@ -27,7 +27,7 @@ menu:
 registering and preserving timely metadata for media. The goal is to generate a
 body of open source software that makes it easier to preserve production and
 post-production metadata than it is to lose it or leave it behind.
-{{< /o/block >}}
+{{< fo t = "include" >}}
 
 <!--  ---------------------------------------------------------------------  -->
 

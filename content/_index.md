@@ -12,36 +12,36 @@ date:      2024-08-13
 <!-- | __|  ___   __ _  | |_   _  _   _ _   ___   ___  -->
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
-{{< o/features >}}
-  {{< o/feature
+{{< fo t = "feature" >}}
+  {{< fo t = "feature"
     divClass = "ui green segment"
     msgClass = "ui green message"
     name     = "Why a Dinosaur?"
     src      = "img/dino/mrx-logo.svg"
     link     = "rexy/"
   />}}
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui yellow segment"
     msgClass = "ui yellow message"
     name     = "What does it Do?"
     src      = "project/introduction/featured-fedex.jpg"
     link     = "project/introduction/"
   />}}
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui red segment"
     msgClass = "ui red message"
     name     = "Case Studies"
     src      = "docs/studies/case-studies.webp"
     link     = "docs/studies/"
   />}}
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui blue segment"
     msgClass = "ui blue message"
     name     = "What's the benefit?"
     src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
     link     = "/project/faq/"
   />}}
-{{< /o/features >}}
+{{< fo t = "feature" >}}
 
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
@@ -50,34 +50,25 @@ date:      2024-08-13
 <!--                  |___/                             -->
 {{< fo t = "blog" count = 4 skip = 2 />}}
 
-{{< fo
-    t = "cover"
+{{< fo t = "cover"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexycover-240806.jpg"
+    src = "project/coverpages/rexycover-240806.jpg" />}}
+
+{{< fo t = "include" from = "blog/2024-03-07-rnf-best-accelerator" />}}
+
+{{< fo t = "include" from = "project/goals" />}}
+
+{{< fo t = "include" from = "project/flow-diagram" 
+src = "/img/mrx-flow.png" 
 />}}
 
-{{< o/block
-    blockType = "include"
-    from = "blog/2024-03-07-rnf-best-accelerator"
+{{< fo t = "include" from = "project/Admin/backer-list"
+src = "/img/dino/mrx-logo.svg" 
 />}}
 
-{{< o/block blockType = "include" from = "project/goals" />}}
+{{< fo t = "include" from = "project/introduction" />}}
 
-{{< o/block
-    blockType = "include"
-    from = "project/flow-diagram"
-    src = "/img/mrx-flow.png"
-/>}}
+<!-- {{< fo t = "include" from = "project/videos" />}} -->
 
-{{< o/block
-    blockType = "include"
-    from = "project/Admin/backer-list"
-    src = "/img/dino/mrx-logo.svg"
-/>}}
-
-{{< o/block blockType = "include" from = "project/introduction" />}}
-
-<!-- {{< o/block blockType = "include" from = "project/videos" />}} -->
-
-{{< o/block blockType = "include" from = "project/admin/metarex-ltd" />}}
+{{< fo t = "include" from = "project/admin/metarex-ltd" />}}

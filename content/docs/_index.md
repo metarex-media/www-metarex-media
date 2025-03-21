@@ -13,7 +13,7 @@ description: Learn about metarex?
    |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/
 -->
 {{< o/features >}}
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui green segment"
     msgClass = "ui green message"
     name     = "Rexy clips"
@@ -22,7 +22,7 @@ description: Learn about metarex?
     link     = "/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui yellow segment"
     msgClass = "ui yellow message"
     link     = "https://github.com/orgs/metarex-media/repositories"
@@ -34,13 +34,13 @@ description: Learn about metarex?
 <div class="ui blue message"><i class="laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
   {{</o/feature>}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< o/feature
+  {{< fo t = "feature"
     divClass = "ui red segment"
     msgClass = "ui red message"
     name     = "How does it work?"
     src      = "/r/img/eg-resize.png"
     link     = "/docs"
-  >}}
+  />}}
 
   <i class="book icon"></i> Read the docs.
   {{</o/feature>}}
@@ -51,7 +51,7 @@ description: Learn about metarex?
     description="Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
     src="/img/dino/mrx-logo-0300.png"
     class="ui center aligned olive message"
->}}
+/>}}
 
 ### Metarex Documentation
 
