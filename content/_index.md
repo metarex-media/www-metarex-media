@@ -12,7 +12,7 @@ date:      2024-08-13
 <!-- | __|  ___   __ _  | |_   _  _   _ _   ___   ___  -->
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
-{{< fo t = "feature" >}}
+{{< fo t = "features" >}}
   {{< fo t = "feature"
     divClass = "ui green segment"
     msgClass = "ui green message"
@@ -41,7 +41,7 @@ date:      2024-08-13
     src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
     link     = "/project/faq/"
   />}}
-{{< fo t = "feature" >}}
+{{< / fo t = "features" >}}
 
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
