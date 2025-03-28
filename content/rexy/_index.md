@@ -8,10 +8,10 @@ description: Who is Rexy & why the dinosaur?
 ---
 <!-- markdownlint-disable MD033 -->
 {{< f/message
-    header="Who is Rexy?"
-    description="She's our mascot, and this is her story."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
+    header = "Who is Rexy?"
+    description = "She's our mascot, and this is her story."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
 >}}
 
 ## Why the dinosaur?

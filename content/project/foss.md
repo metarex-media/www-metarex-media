@@ -9,10 +9,10 @@ categories: ["backers"]
 tags: ["backers"]
 ---
 {{< f/message
-    header="Free Open Source Software"
-    description="Our goal is to give away [Free Open Source Software](https://github.com/metarex-media) to allow easy implementation of the {{% metarex %}} framework."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
+    header = "Free Open Source Software"
+    description = "Our goal is to give away [Free Open Source Software](https://github.com/metarex-media) to allow easy implementation of the {{% metarex %}} framework."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
 >}}
 Our goal is to give away Free Open Source Software to allow easy implementation
 of the {{% metarex %}} framework.

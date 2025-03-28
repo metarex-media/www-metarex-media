@@ -15,10 +15,10 @@ tags: ["contact"]
 ---
 
 <div class = "ui basic container segment">
-<form class="ui form">
-<div class="field">
+<form class = "ui form">
+<div class = "field">
 <label>first name</label>
-<input type="text" name="last name" placeholder="Last Name">
+<input type = "text" name = "last name" placeholder = "Last Name">
 </div>
 </form>
 </div>

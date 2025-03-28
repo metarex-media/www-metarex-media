@@ -9,10 +9,10 @@ description: The original MXF-Live specification as used in the mxf-live project
 
 
 {{< f/message
-    header="MXF-Live-2019"
-    description="The original parent of MetaRex. This spec is out of date."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned red message"
+    header = "MXF-Live-2019"
+    description = "The original parent of MetaRex. This spec is out of date."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned red message"
 >}}
 
 <a id="version"></a>

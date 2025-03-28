@@ -15,22 +15,18 @@ menu:
 <style>
   span.ui.green.text { color: #73a33d;}
 </style>
-{{< choo-choo	src = "/img/dino/mrx-splash-color.svg" >}}
+{{< fo t = "message"	src = "/img/dino/mrx-splash-color.svg" >}}
 
-#### All Aboard the <span class="ui green text" >META</span>data <span class="ui green text" >R</span>esource <span class="ui green text" >EX</span>press
+#### All Aboard the <span class = "ui green text" >META</span>data <span class = "ui green text" >R</span>esource <span class = "ui green text" >EX</span>press
 
-{{< /choo-choo >}}
+{{< /fo >}}
 <!--  ---------------------------------------------------------------------  -->
 
-{{< o/block src = "/img/dino/mrx-logo.svg"  srcWidth = 0.01 >}}
+{{< fo t = "imagine" src = "/img/dino/mrx-logo.svg"  srcWidth = 0.01 />}}
 {{%metarex%}}.media is a project dedicated to transporting,
 registering and preserving timely metadata for media. The goal is to generate a
 body of open source software that makes it easier to preserve production and
 post-production metadata than it is to lose it or leave it behind.
-{{< fo t = "include" >}}
-
-<!--  ---------------------------------------------------------------------  -->
-
-{{<   include    "/project/admin/backer-list.md"                         >}}
+{{< fo t = "include" from = "/project/admin/backer-list.md" />}}
 
 <!--  ---------------------------------------------------------------------  -->

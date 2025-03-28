@@ -7,8 +7,10 @@ description: Why is MetaRex needed?
 date:       2023-08-08
 tags: ["status"]
 ---
-{{< f/message header="An Introduction to Metarex"
-    src="/img/dino/mrx-logo-0300.png" class="ui center aligned olive message"
+{{< f/message 
+    header = "An Introduction to Metarex"
+    src = "/img/dino/mrx-logo-0300.png" 
+    class = "ui center aligned olive message"
     >}}
 
 ## What is {{< metarex >}}?

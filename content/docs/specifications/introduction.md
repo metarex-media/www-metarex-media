@@ -7,10 +7,10 @@ description: How does metarex.media work under the hood?
 ---
 
 {{< f/message
-    header="Metarex Introduction"
-    description="Metarex is like a zip file envelope with a timeline... like an electronic FedEx service."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
+    header = "Metarex Introduction"
+    description = "Metarex is like a zip file envelope with a timeline... like an electronic FedEx service."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
 >}}
 
 ### Core principals
