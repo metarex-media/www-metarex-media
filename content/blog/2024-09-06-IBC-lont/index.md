@@ -23,8 +23,8 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears behind books and furniture at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class = "ui centered bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** offers a platform that combines video
 production with real-time personalization at scale. We help B2B enterprises
@@ -56,9 +56,9 @@ still has some availability for meetings. [DM him to schedule a time][meet].
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@Lont](https://www.linkedin.com/company/infusevideo/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@Lont](https://www.linkedin.com/company/infusevideo/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://lont.ai/
 [meet]:   https://www.linkedin.com/in/ruudvanderlinden/

@@ -15,36 +15,35 @@ description: Learn about metarex?
 {{< fo t = "features" >}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    divClass = "ui green segment"
-    msgClass = "ui green message"
-    name     = "Rexy clips"
-    src      = "{{% relref /mp4/mrx2-fire.mp4 %}}"
-    srcStyle = "max-width: 300px;"
-    link     = "/about"
+    blockClass = "ui green segment"     divClass = blockClass
+    class      = "ui green message"     msgClass = class
+    header     = "Rexy clips"           name = header
+    src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
+    srcStyle   = "max-width: 300px;"
+    link       = "/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "features"
-    divClass = "ui yellow segment"
-    msgClass = "ui yellow message"
-    link     = "https://github.com/orgs/metarex-media/repositories"
-  >}}
-<div class = "ui pink message"><i class="tv icon"></i></i> Any resolution, any colour space </div>
-<div class = "ui red message"><i class="ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
-<div class = "ui orange message"><i class="python icon"></i> Marimo Browser user experience</div>
-<div class = "ui green message"><i class="blender icon"></i> Rectangular & Blender 3D images</div>
-<div class = "ui blue message"><i class="laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
+    blockClass = "ui yellow segment"    divClass = blockClass
+    class      = "ui yellow message"    msgClass = class
+    link       = "https://github.com/orgs/metarex-media/repositories"
+  />}}
+<div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
+<div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
+<div class = "ui orange message"><i class = "python icon"></i> Marimo Browser user experience</div>
+<div class = "ui green message"><i class = "blender icon"></i> Rectangular & Blender 3D images</div>
+<div class = "ui blue message"><i class = "laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
   {{< /fo >}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< fo t = "feature"
-    divClass = "ui red segment"
-    msgClass = "ui red message"
-    name     = "How does it work?"
-    src      = "/r/img/eg-resize.png"
-    link     = "/docs"
-  >}}
+  {{< fo t = "features"
+    blockClass = "ui red segment"      divClass = blockClass
+    class      = "ui red message"      msgClass = class
+    header     = "How does it work?"   name = header
+    src        = "/r/img/eg-resize.png"
+    link       = "/docs"
+ >}}
 
   <i class = "book icon"></i> Read the docs.
-  {{< /fo >}}
   <!-- ---------------------------------------------------------------------- -->
 {{< /fo >}}
 

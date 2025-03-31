@@ -23,7 +23,7 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
+<img  class = "ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** is proud to support MetaRex and Rexy! Visit
 **[{{% param backer %}}][web]** at booth **[5.C74]** as part of the Rexy
@@ -51,9 +51,9 @@ Platform optimizes workflows and collaboration in Media and Entertainment.
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@Signiant](https://www.linkedin.com/company/signiant/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@Signiant](https://www.linkedin.com/company/signiant/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    http://www.signiant.com/
 [5.C74]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&sv=Signiant&hallID=K&selectedBooth=5.C74

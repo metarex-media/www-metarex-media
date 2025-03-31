@@ -14,7 +14,7 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style="text-align:center;"><span class="ui red text">Rexy's Treasure hunt is go!!</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure hunt is go!!</span></p>**
 
 Today, Rexy will be exploring Amsterdam, walking around IBC and looking forward
 to being won by someone!
@@ -24,7 +24,7 @@ visit one of our partners. Register to win by scanning a QR code on their booth.
 
 See you at 17:00 on the **V-Nova** booth 14.AI03!
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 
 [@ezdrm @ 5.A50](https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=K&selectedBooth=5.A50)
 [@GlobalM @ 1.B23](https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=A&selectedBooth=1.B23)
@@ -46,9 +46,9 @@ See you at 17:00 on the **V-Nova** booth 14.AI03!
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 {{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
 

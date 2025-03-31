@@ -20,8 +20,8 @@ The more partners and backers you visit, the greater chance you'll win on
 booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instructions on the
 [treasure hunt page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class="ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** can be found at IBC in the Owners Pavilion,
 located in the RAI [Hall 8 Lobby][meet], at the top of the escalator. The
@@ -55,9 +55,9 @@ For more information and to see all the exciting things **[{{% param backer
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@SMPTE](https://www.linkedin.com/company/smpte/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@SMPTE](https://www.linkedin.com/company/smpte/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://www.smpte.org/blog/smpte-announces-ibc2024-sessions-and-highlights/
 [meet]:   https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&sv=smpte&hallID=D&selectedBooth=8.F55

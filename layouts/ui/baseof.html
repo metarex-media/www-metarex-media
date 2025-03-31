@@ -6,34 +6,34 @@
   {{ partial "head.html" . }}
 </head>
 
-<body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
-  <div class="ui wide container">
+<body class = "{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
+  <div class = "ui wide container">
     <header>
       {{ partial "navbar.html" . }}
     </header>
   </div>
 
-  <div class="ui wide container">
-    <div class="ui grid">
-      <div class="row">
-        <div class="eight wide column">
-          <main role="main" class="ui main">
+  <div class = "ui wide container">
+    <div class = "ui grid">
+      <div class = "row">
+        <div class = "eight wide column">
+          <main role = "main" class="ui main">
           {{ partial "version-banner.html" . }}
           {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "docsy/breadcrumb.html" . }}{{ end }}
           {{ block "main" . }}{{ end }}
         </main>
         </div>
-        <div class="eight wide column">
-          <div class="ui segment">
-            <div class="ui message">
-              <div id="mrx-reg-header" class="header">reg query ...</div>
+        <div class = "eight wide column">
+          <div class = "ui segment">
+            <div class = "ui message">
+              <div id = "mrx-reg-header" class="header">reg query ...</div>
             </div>
-            <div id="mrx-reg-response">Register query in progress</div>
-            <div id="mrx-reg-help"></div>
+            <div id = "mrx-reg-response">Register query in progress</div>
+            <div id = "mrx-reg-help"></div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class = "row">
         {{ partial "footer.html" . }}
       </div>
     </div>

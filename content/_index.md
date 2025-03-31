@@ -13,34 +13,34 @@ date:      2024-08-13
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
 
-{{< fo t = "feature" />}}
+{{< fo t = "features" >}}
   {{< fo t = "feature"
-    divClass = "ui green segment"
-    msgClass = "ui green message"
-    name     = "Why a Dinosaur?"
-    src      = "img/dino/mrx-logo.svg"
-    link     = "rexy/"
+    blockClass = "ui green segment"         divClass = blockClass
+    class      = "ui green message"         msgClass = class
+    header     = "Why a Dinosaur?"          name = header
+    src        = "img/dino/mrx-logo.svg"
+    link       = "rexy/"
   />}}
   {{< fo t = "feature"
-    divClass = "ui yellow segment"
-    msgClass = "ui yellow message"
-    name     = "What does it Do?"
-    src      = "project/introduction/featured-fedex.jpg"
-    link     = "project/introduction/"
+    blockClass = "ui yellow segment"        divClass = blockClass
+    class      = "ui yellow message"        msgClass = class
+    header     = "What does it Do?"         name = header
+    src        = "project/introduction/featured-fedex.jpg"
+    link       = "project/introduction/"
   />}}
   {{< fo t = "feature"
-    divClass = "ui red segment"
-    msgClass = "ui red message"
-    name     = "Case Studies"
-    src      = "docs/studies/case-studies.webp"
-    link     = "docs/studies/"
+    blockClass = "ui red segment"           divClass = blockClass
+    class      = "ui red message"           msgClass = class
+    header     = "Case Studies"             name = header
+    src        = "docs/studies/case-studies.webp"
+    link       = "docs/studies/"
   />}}
   {{< fo t = "feature"
-    divClass = "ui blue segment"
-    msgClass = "ui blue message"
-    name     = "What's the benefit?"
-    src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
-    link     = "/project/faq/"
+    blockClass = "ui blue segment"          divClass = blockClass
+    class      = "ui blue message"          msgClass = class
+    header     = "What's the benefit?"      name = header
+    src        = "/project/admin/metarex-ltd/featured-boardroom.jpg"
+    link       = "/project/faq/"
   />}}
   {{< /fo >}}
 <!-- ---------------------------------------------------------------------- -->

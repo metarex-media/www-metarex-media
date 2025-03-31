@@ -23,7 +23,7 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
+<img  class="ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 
 **[GlobalM][web]** automates and orchestrates the cloud so you don't have to
 setup SRT, RIST or RTMP gateway resources manually, saving you lots of time and
@@ -50,9 +50,9 @@ is: <https://calendly.com/globalm-sales/meet-globalm-at-the-ibc-2024>
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@GlobalM](https://www.linkedin.com/company/globalmmedia/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@GlobalM](https://www.linkedin.com/company/globalmmedia/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://www.globalm.media/
 [meet]: https://calendly.com/globalm-sales/meet-globalm-at-the-ibc-2024

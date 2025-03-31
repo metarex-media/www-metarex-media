@@ -14,7 +14,7 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style="text-align:center;"><span class="ui red text">Rexy's Treasure hunt is go!!</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure hunt is go!!</span></p>**
 
 The **[{{% param backer %}}][web]** for Rexy's treasure hunt will be this
 Sunday! **[Register][ths]** to have a chance of ***winning a cuddly Rexy!***
@@ -24,8 +24,8 @@ booth.
 
 Thanks to all our supporters!
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
@@ -35,9 +35,9 @@ Thanks to all our supporters!
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 {{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
 
