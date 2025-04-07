@@ -12,7 +12,7 @@ description: Learn about metarex?
    |  _| / -_) / _` | |  _| | || | | '_| / -_) (_-<
    |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/
 -->
-{{< fo t = "features" >}}
+{{< fo t = "feature-group" >}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
     blockClass = "ui green segment"     divClass = blockClass
@@ -23,7 +23,7 @@ description: Learn about metarex?
     link       = "/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< fo t = "features"
+  {{< fo t = "feature"
     blockClass = "ui yellow segment"    divClass = blockClass
     class      = "ui yellow message"    msgClass = class
     link       = "https://github.com/orgs/metarex-media/repositories"
@@ -35,7 +35,7 @@ description: Learn about metarex?
 <div class = "ui blue message"><i class = "laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
   {{< /fo >}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< fo t = "features"
+  {{< fo t = "feature"
     blockClass = "ui red segment"      divClass = blockClass
     class      = "ui red message"      msgClass = class
     header     = "How does it work?"   name = header
@@ -49,12 +49,12 @@ description: Learn about metarex?
 
 {{< fo t = "message"
     header = "Docs"
-    description = "Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
+    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
 />}}
 
-### Metarex Documentation
+### MetaRex Documentation
 
 Start by reading the [MRX container introduction][01] that leads you through the
 container design choices amongst the many containers available. From that

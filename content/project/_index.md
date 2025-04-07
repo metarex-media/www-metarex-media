@@ -87,8 +87,7 @@ team did a lot of talking to  content creators, facility owners, software
 vendors and many others about what were the blockers that stopped metadata being
 a first class citizen. The biggest issue was "_The metadata gets lost_".
 
-{{< fo
-    t =        "fblock"
+{{< fo t = "block"
     alt =      "mxf-live demo at ARRI"
     position = "left"
     size =     "small"

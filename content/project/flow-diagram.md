@@ -6,11 +6,13 @@ description:  How Metarex flows metadata
 type:        docs
 ---
 
-{{% f/block id="gg" %}}
+{{< fo t = "block" 
+    id = "gg" 
+>}}
 
 <div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
 
-{{< f/image-fluid "/img/mrx-flow.png" "The MetaRex Flow Diagram 2024" "showCaption" >}}
+{{< fo t = "image-fluid" "/img/mrx-flow.png" "The MetaRex Flow Diagram 2024" "showCaption" >}}
 
 {{% metarex %}} is like Fedex for metadata.
 
@@ -28,4 +30,4 @@ type:        docs
   * The end user now has access to, potentially, several variants of the metadata
     before they write their first line of code.
 
-{{% /f/block %}}
+{{< /fo >}}

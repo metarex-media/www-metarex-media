@@ -9,7 +9,7 @@ tags:        ["project",  "Mr MXF", "IBC"]
 
 ## NAB Show 2022
 
-{{< f/block
+{{< fo t = "block"
   id    = "summary"
   src   = "featured-intelligent-content-icon.webp"
   srcOn = "left"
@@ -23,10 +23,9 @@ It came as a surprise to find that the world can fill 80% of the world's interne
 traffic with streams of video and audio, but the metadata transport puzzle was
 still a piecemeal region-by-region, application-by-application, device-by-device
 tailored solution.
+{{< /fo >}}bvv
 
-{{< /f/block >}}
-
-{{< f/block
+{{< fo t = "block"
   id    = "block2"
 >}}
 We proposed the {{% metarex %}} project to gauge interest Specifically we asked:
@@ -36,12 +35,12 @@ We proposed the {{% metarex %}} project to gauge interest Specifically we asked:
 * Would it help if there were a common timing model independent of frame rate and sample rate and timezone?
 * Would it help if you could download tools and apps from Github for free?
 * Would you be prepared to contribute to a fund to make it happen?
-{{</ f/block >}}
+{{< /fo>}}
 
-{{< f/block
+{{< fo t = "block"
   id    = "block3"
   src   = "/img/dino/mrx-logo.svg"
   srcOn = "left"
 >}}
 The answer to all these questions was **Yes**. Time to start figuring out how to make it real...
-{{</ f/block >}}
+{{< /fo >}}

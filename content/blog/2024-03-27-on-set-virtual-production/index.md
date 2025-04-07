@@ -19,7 +19,7 @@ params:
 </div>
 <div class="ui eight wide column">
 
-{{< f/block
+{{< fo t = "block"
   id    = "summary"
 >}}
 <!-- markdownlint-disable MD025 -->
@@ -40,12 +40,12 @@ will eventually follow.
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
 [1]: https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production
 
-{{< /f/block >}}
+{{< /fo >}}
 
 </div>
 </div>
 
-{{< f/block
+{{< fo t = "block
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
   srcOn = "right"
@@ -69,10 +69,10 @@ used, what is its **specification**, can it be automatically **QC**'d with a
 **schema** and are there any **services** available to be sure it's right
 before it's too late?
 
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
-  id    = "smpte"
+{{< fo t = "block"
+   id    = "smpte"
 >}}
 
 As the SMPTE Rapid Industry Solutions On Set Virtual Production project enters
@@ -82,7 +82,7 @@ world. {{% metarex %}} aims to provide the plumbing to allow multiple variants
 of the same metadata values to be managed on a single network without insanity
 taking over.
 
-{{< /f/block >}}
+{{< /fo >}}
 
 <div class="ui container segment">
   <a href="https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production" _target="blank">
@@ -90,7 +90,7 @@ taking over.
   </a>
 </div>
 
-{{< f/block
+{{< fo t = "block"
   id    = "examples"
 >}}
 
@@ -110,9 +110,9 @@ delivering our [free software][f] and make it production ready for you to use.
 [f]: https://github.com/metarex-media
 [b]: /backers/
 
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
+{{< fo t = "block"
   id    = "live"
 >}}
 
@@ -149,4 +149,4 @@ Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
 [n]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}

@@ -9,7 +9,7 @@ featured:    /img/amber-simi.png
 ---
 
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block1"
   src      = "/img/amber-simi.png"
   srcOn    = "left"
@@ -37,33 +37,33 @@ ways of working can be integrated into the pipeline, making more room for the
 collaboration of our disciplines.
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block2"
   src      = "/meeja/mrx-rexy-nab-2023.mp4"
   srcOn    = "right"
 >}}
-We wanted Rex to feel familiar and friendly, but with a slight edge that
-could scare other characters in her world when he gets protective of his
+We wanted Rexy to feel familiar and friendly, but with a slight edge that
+could scare other characters in her world when he gets protective of her
 metadata. The process of bringing her to life began with discussions and Amber’s
 sketches, usually digital but sometimes scrawled on paper scraps. In line with
-Amber’s penchant for tactile mediums, they initially modelled Rex in plasticine.
+Amber’s penchant for tactile mediums, they initially modelled Rexy in plasticine.
 Simi then used photogrammetry to create a 3D model and we worked together to
 adjust her shape to perfection using 3D software. As we’ve continued to develop
 our workflow, we’ve also been using VR to model the initial shapes of 3D assets.
 Rex is still a very young dinosaur, so expect to see some character development!
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block3"
   src      = "/img/dino/assets/agapanthus.png"
   srcOn    = "left"
 >}}
 
- For the scenery, Amber usually makes a plan of the whole scene and then gets
+For the scenery, Amber usually makes a plan of the whole scene and then gets
 stuck right into individual assets. Their illustrative style for this project
 uses chunky black lines and bright, layered colours. Simi takes these digital
 drawings and starts mocking up a scene in Unreal Engine. This way, we can
@@ -79,9 +79,9 @@ nod to the performing arts. We have married this simple approach with dynamic
 elements such as caustics and volumetric fog for more visual interest.
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block4"
   src      = "/img/dino/assets/cowslip.png"
   srcOn    = "right"
@@ -111,4 +111,4 @@ icon"></i> Instagram.
 [www.simizeko.com]:      http://www.simizeko.com
 [LinkedIn]:              https://uk.linkedin.com/in/amber-bardell
 
-{{< /f/block >}}
+{{< /fo >}}

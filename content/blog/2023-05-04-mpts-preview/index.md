@@ -8,7 +8,7 @@ tags:        ["project",  "NAB", "MrMXF"]
 ---
 
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block1"
   src      = "featured-chris.png"
   srcOn    = "left"
@@ -20,8 +20,9 @@ The **Media Production and Technology Show** takes place on the 10th & 11th of
 May, at [Olympia](https://goo.gl/maps/eLfifzhXA63WTkYE6) in London. We're
 thrilled to be one of the exhibitors at booth **H.24** in this year's event
 where we'll launch the [Metarex Project](/) officially.
-{{< /f/block >}}
-{{< f/block >}}
+{{< /fo >}}
+
+{{< fo t = "block"
 This leading industry event will bring together experts and innovators in
 production and media technology for two days. There is an impressive line-up of
 exhibitors and speakers, including our Executive Director Bruce Devlin. He will
@@ -37,27 +38,27 @@ late on the 10th of May. If you would like to attend, please e-mail
 [chris@metarex.media] to be added to the guest list.
 
 If you can’t make the show and want to talk Metadata [set up a meeting with us by clicking here](/meet/).
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block1"
   src      = "mpts.png"
   srcOn    = "right"
 >}}
-## May Mega Metarex update
+## May Mega MetaRex update
 
 We hope this online newsletter finds you well. We have some exciting updates to
 share with you.
 
-Firstly, we are thrilled to announce that Metarex is part of the [IBC
+Firstly, we are thrilled to announce that MetaRex is part of the [IBC
 Accelerator](https://show.ibc.org/responsive-narrative-factory), a prestigious
 programme designed to foster innovation and accelerate the development of new
 media and entertainment industry technologies. [Click
-here](https://show.ibc.org/responsive-narrative-factory) to learn how Metarex
+here](https://show.ibc.org/responsive-narrative-factory) to learn how MetaRex
 will drive customized video viewing experiences.
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block >}}
+{{< fo t = "block"
 We also recently attended NAB, where Bruce and Katya spread the word about
 Metarex and gained numerous new backers, including Signiant, SDVI, GrayMeta, and
 Metaglue, who are all investing to help realize our vision for seamlessly
@@ -69,8 +70,7 @@ best investment you will make this year and to make sure you don’t get left
 behind.
 
 We hope to see you at the **Media Production and Technology Show**!
-
-{{< /f/block >}}
+{{< /fo }}
 <br />
 {{< f/image
   src   =  "mpts-panel.png"

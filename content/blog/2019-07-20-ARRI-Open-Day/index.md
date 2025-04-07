@@ -23,12 +23,11 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-This 2 year project was a pre-cursor to **[metarex]**
+This 2 year project was a pre-cursor to **[MetaRex]**
 
-{{< f/image-fluid
-  "international-broadcast-day-demo.jpg"
-  "2019 International Broadcast Demo Day"
-  "caption"
+ {{< fo t = "image-fluid"
+    src  = "international-broadcast-day-demo.jpg"
+    text = "2019 International Broadcast Demo Day" 
 >}}
 
 Ideal for semi-custom metadata such as position,  logging, device parameters
@@ -88,42 +87,44 @@ Use the [contact] form to ask questions and suggestions.
 
 <a id="team"></a>
 
-{{< f/image-fluid
-  "featured-mxf-live-team.jpg"
-  "MXF Live Team"
-  "showCaption"
->}}
+{{< fo t = "image-fluid"
+    src  = "featured-mxf-live-team.jpg"
+    text = "MXF Live Team"
+/>}}
 
 <a id="system" ></a>
 
-{{< f/image-fluid  "mxf-live-system.jpg" "MXF Live Demo System" "showCaption" >}}
+{{< fo t = "image-fluid"  "mxf-live-system.jpg" "MXF Live Demo System" "showCaption" >}}
 
 <a id="rig" ></a>
 
-{{< f/image-fluid  "mxf-live-rig.jpg" "MXF Live Demo Rig" "showCaption" >}}
+
+{{< fo t = "image-fluid"  "mxf-live-rig.jpg" "MXF Live Demo Rig" "showCaption" >}}
 
 <a id="cgi1" ></a>
 
-{{< f/image-fluid  "mxf-live-cgi.jpg" "MXF Live CGI Demo" "showCaption" >}}
+
+{{< fo t = "image-fluid" "mxf-live-cgi.jpg" "MXF Live CGI Demo" "showCaption" >}}
 
 <a id="cgi2" ></a>
 
-{{< f/image-fluid  "mxf-live-cgi2.jpg" "MXF Live CGI Demo" "showCaption" >}}
+
+{{< fo t = "image-fluid"  "mxf-live-cgi2.jpg" "MXF Live CGI Demo" "showCaption" >}}
 
 <a id="camera" ></a>
 
-{{< f/image-fluid
-  "mxf-live-camera.jpg"
-  "MXF Live Demo Camera"
-  "showCaption"
+
+{{< fo t = "image-fluid"
+    src  = "mxf-live-camera.jpg"
+    text = "MXF Live Demo Camera"
 >}}
 
 <a id="demo" ></a>
 
-{{< f/image-fluid
-  "international-broadcast-day-demo.jpg"
-  "MXF Live Demo"
-  "showCaption"
+
+{{< fo t = "image-fluid"  
+  src  = "international-broadcast-day-demo.jpg"
+  text = "MXF Live Demo"
 >}}
 
 # Partners

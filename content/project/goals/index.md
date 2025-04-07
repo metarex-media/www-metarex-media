@@ -7,7 +7,9 @@ resources:
    -
      src:  img/featured-goals.jpg
 ---
-{{< f/block id    = "summary" >}}
+{{< fo t = "block" 
+    id   = "summary" 
+>}}
 <!-- markdownlint-disable MD025 -->
 
 ## MetaRex needs you
@@ -46,4 +48,4 @@ over the finish line. But first, lets lay out our objectives:
 [3]: https://metarex.media/ui/reg/
 
 {{% sitelinks %}}
-{{< /f/block >}}
+{{< /fo >}}

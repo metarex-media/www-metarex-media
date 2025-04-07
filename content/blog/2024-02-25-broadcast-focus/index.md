@@ -10,7 +10,7 @@ blog-id: 2376418927365
 ---
 
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block1"
   src      = featured-broadcast-focus.png
   srcOn    = "left"
@@ -19,13 +19,14 @@ blog-id: 2376418927365
 # Broadcast Focus interview
 
 I had the honour to talk about all things metadata and to preview NAB 2024 with
-Russel Trafford Jones from [Broadcast Focus].
+Russel Trafford Jones from [Broadcast Focus](http://broadcastfocus.com/).
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 
 <!-- ####################################################################### -->
-{{< f/block >}}{{< /f/block >}}
+{{< fo t = "block" }}
 {{% youtube "b_2Q0K6Lfd8" %}}
+{{< /fo >}}
 
 [Broadcast Focus]: http://broadcastfocus.com/

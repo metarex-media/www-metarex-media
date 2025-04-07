@@ -7,7 +7,7 @@ author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-pe
 tags:        ["project",  "CES", "yellowbasket"]
 ---
 
-{{< f/block
+{{< fo t = "block"
     id    = "summary"
     src   = "featured-ces-2023.jpg"
     srcOn = "left"
@@ -30,8 +30,9 @@ CES features every aspect of the tech sector.
  challenging for us to stay focused and not to be distracted by all the toys on
  show.
 
-{{< /f/block>}}
-{{< f/block>}}
+{{< /fo >}}
+
+{{< fo t = "block"
 Beside the Expo itself it will be also important Keynotes, for example [Dr. Lisa
 Su](https://www.youtube.com/live/sRXVRgMF2lc?feature=share&t=887) from AMD and
 other interesting Conference presentation.
@@ -74,4 +75,4 @@ other social media.
 
 [blog]:     /blog                    "Blog"
 
-{{< /f/block>}}
+{{< /fo >}}

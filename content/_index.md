@@ -13,7 +13,7 @@ date:      2024-08-13
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
 
-{{< fo t = "features" >}}
+{{< fo t = "feature-group" >}}
   {{< fo t = "feature"
     blockClass = "ui green segment"         divClass = blockClass
     class      = "ui green message"         msgClass = class
