@@ -28,12 +28,14 @@ can be achieved when you mix the following in a simple demonstration:
 * customer interaction
 * IBC show guest
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
-[RNF]:                          /project/archive/ibc2023/
+[RNF](/project/archive/ibc2023/)
 [BBC]:
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
-Basically **ultra-fine-grained-personalisation** becomes a relatively simple
+    id   = "block2"
+>}}
+Basically ultra-fine-grained-personalisation becomes a relatively simple
 task if you have all the right components ready to go.
 
 The Infuse video player uses metadata provided by Metarex to deliver the
@@ -46,7 +48,7 @@ you can follow along and maybe even download the MetaRex code from our [github].
 
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
 [RNF]:                          /project/archive/ibc2023/
-{{< /fo }}
+{{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
   id       = "block3"

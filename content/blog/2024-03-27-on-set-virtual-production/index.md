@@ -45,7 +45,7 @@ will eventually follow.
 </div>
 </div>
 
-{{< fo t = "block
+{{< fo t = "block"
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
   srcOn = "right"

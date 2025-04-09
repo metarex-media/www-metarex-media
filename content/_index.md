@@ -56,7 +56,9 @@ date:      2024-08-13
     from = "project/coverpages/rexycover.md"
     src = "project/coverpages/rexycover-240806.jpg" />}}
 
-{{< fo t = "include" from = "blog/2024-03-07-rnf-best-accelerator" />}}
+{{< fo t = "include" 
+    from = "blog/2024-03-07-rnf-best-accelerator" 
+/>}}
 
 {{< fo t = "include" from = "project/goals" />}}
 

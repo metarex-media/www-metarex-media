@@ -28,6 +28,8 @@ important role.
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
+    id   = "block2"
+>}}
 NAB show offering the two hours of show floor tours: “**The Data, Data, Data
 Tour**” happens twice a day (10-12 and 13-15) on Monday 17 and Tuesday 18 and on
 Sunday 16 one tour from 10:30 till 12:30. Plus there's the very impressive panel
@@ -55,7 +57,7 @@ on Tuesday 18 at W1143C Intelligent Content Experimental Zone. All the news from
 the show floor and conference on metadata you will find here at  our Metarex
 Resource.
 
-However, the best event we are inviting you to participate in will be Metarex
+However, the best event we are inviting you to participate in will be MetaRex
 project meeting at our backer Signiant's booth on the last day of the show
 Wednesday 19. Please come to W1713 to learn about new free software and
 standardization initiative which will make your life is much easy. **Metadata

@@ -31,8 +31,10 @@ CES features every aspect of the tech sector.
  show.
 
 {{< /fo >}}
-
+<!-- ####################################################################### -->
 {{< fo t = "block"
+  id    = "block2"
+>}}
 Beside the Expo itself it will be also important Keynotes, for example [Dr. Lisa
 Su](https://www.youtube.com/live/sRXVRgMF2lc?feature=share&t=887) from AMD and
 other interesting Conference presentation.
@@ -70,9 +72,7 @@ Samsung Ads, SiriusXM, Snap, T-Mobile, TikTok, Warner Bros. and more.
 
 You can follow CES digitally: save this dates Jan. 5-8, 2023 at our [blog] and
 other social media.
-
+{{< /fo >}}
 <!-- ####################################################################### -->
 
 [blog]:     /blog                    "Blog"
-
-{{< /fo >}}

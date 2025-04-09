@@ -1,8 +1,8 @@
 ---
-title:       "2023-05-04 Metarex @ MPTS"
-linkTitle:   "2023-05-04 Metarex @ MPTS"
+title:       "2023-05-04 MetaRex @ MPTS"
+linkTitle:   "2023-05-04 MetaRex @ MPTS"
 date:        2023-05-04
-description: Chris talks us through Metarex @ MPTS 2023.
+description: Chris talks us through MetaRex @ MPTS 2023.
 author:      Chris Parry [@in](https://www.linkedin.com/in/chris-parry-2b0a607/)
 tags:        ["project",  "NAB", "MrMXF"]
 ---
@@ -16,17 +16,17 @@ tags:        ["project",  "NAB", "MrMXF"]
 <!-- markdownlint-disable MD025 -->
 # MetaRex at the Media Production Show 2023
 
-The **Media Production and Technology Show** takes place on the 10th & 11th of
-May, at [Olympia](https://goo.gl/maps/eLfifzhXA63WTkYE6) in London. We're
-thrilled to be one of the exhibitors at booth **H.24** in this year's event
-where we'll launch the [Metarex Project](/) officially.
+The **Media Production and Technology Show** takes place on the 10th & 11th of May, at [Olympia](https://goo.gl/maps/eLfifzhXA63WTkYE6) in London. We're thrilled to be one of the exhibitors at booth **H.24** in this year's event
+where we'll launch the [MetaRex Project](/) officially.
 {{< /fo >}}
 
 {{< fo t = "block"
+    id   = "block2"
+>}}
 This leading industry event will bring together experts and innovators in
 production and media technology for two days. There is an impressive line-up of
 exhibitors and speakers, including our Executive Director Bruce Devlin. He will
-be hosting a discussion on Metarex with an [inspiring
+be hosting a discussion on MetaRex with an [inspiring
 panel](https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows),
 including representatives from Garden Studios, Eluvio, Anna Valley and Mo-Sys
 Engineering, starting at 16:00 – 16:30 on the 11th of May.
@@ -41,9 +41,9 @@ If you can’t make the show and want to talk Metadata [set up a meeting with us
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
-  id       = "block1"
-  src      = "mpts.png"
-  srcOn    = "right"
+    id   = "block1"
+    src  = "mpts.png"
+    srcOn  = "right"
 >}}
 ## May Mega MetaRex update
 
@@ -59,6 +59,8 @@ will drive customized video viewing experiences.
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
+    id   = "block2"
+>}}
 We also recently attended NAB, where Bruce and Katya spread the word about
 Metarex and gained numerous new backers, including Signiant, SDVI, GrayMeta, and
 Metaglue, who are all investing to help realize our vision for seamlessly
@@ -70,11 +72,11 @@ best investment you will make this year and to make sure you don’t get left
 behind.
 
 We hope to see you at the **Media Production and Technology Show**!
-{{< /fo }}
+{{< /fo >}}
 <br />
-{{< f/image
+{{< fo t = "image"
   src   =  "mpts-panel.png"
   class = "ui fluid spaced bordered image"
   alt   = "MPTS metarex web page "
   link  = "https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows"
->}}
+/>}}

@@ -8,11 +8,15 @@ type:        docs
 
 {{< fo t = "block" 
     id = "gg" 
->}}
+/>}}
 
 <div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
 
-{{< fo t = "image-fluid" "/img/mrx-flow.png" "The MetaRex Flow Diagram 2024" "showCaption" >}}
+{{< fo t = "image-fluid"  
+    src = "/img/mrx-flow.png" 
+    name = "The MetaRex Flow Diagram 2024" 
+    id = "showCaption" 
+>}}
 
 {{% metarex %}} is like Fedex for metadata.
 

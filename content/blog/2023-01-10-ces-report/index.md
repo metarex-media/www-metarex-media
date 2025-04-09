@@ -76,6 +76,8 @@ _How the Metaverse Will Transform Our Relationship to Technology Forever_
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
+  id     = "block4"
+>}}
 Needless to say that engineering part of Metaverse today in term of
 standartization is much weaker than the futurist dreams about it, so here we
 are: Closing the gap.

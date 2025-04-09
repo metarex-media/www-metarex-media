@@ -25,8 +25,8 @@ Russel Trafford Jones from [Broadcast Focus](http://broadcastfocus.com/).
 {{< /fo >}}
 
 <!-- ####################################################################### -->
-{{< fo t = "block" }}
-{{% youtube "b_2Q0K6Lfd8" %}}
-{{< /fo >}}
-
+{{< fo t = "block"
+    src = "https://www.youtube.com/watch?v=b_2Q0K6Lfd8"
+    id = youtube
+/>}}
 [Broadcast Focus]: http://broadcastfocus.com/

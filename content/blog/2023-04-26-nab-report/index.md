@@ -46,12 +46,13 @@ content as well as downstream data from the consumption of the content.
 {{< /fo >}}
 
 {{< fo t = "block"
+    id   = "block3"
+>}}
 On the show floor there were busy clumps and quiet areas. A curious mix of
 activity all around. It seemed that anyone with cloud native solutions had a
 continuous stream of visitors whereas some of the smaller hardware sellers had
 time to doom-scroll on their favourite social media.
 
 Next stop for Metarex is the Media Production Show in London 10-11 May. Come and
-see us, we'll [have a great
-panel(https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows)]!
+see us, we'll [have a great panel(https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows)]!
 {{< /fo >}}
