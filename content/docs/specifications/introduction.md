@@ -3,15 +3,15 @@ title:       Introduction
 linkTitle:   Introduction
 date:        2024-06-17
 type:        docs
-description: How does metarex.media work under the hood?
+description: How does MetaRex work under the hood?
 ---
 
-{{< f/message
-    header = "Metarex Introduction"
-    description = "Metarex is like a zip file envelope with a timeline... like an electronic FedEx service."
+{{< fo t = "banner"
+    header = "MetaRex Introduction"
+    description = "MetaRex is like a zip file envelope with a timeline... like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
->}}
+/>}}
 
 ### Core principals
 
@@ -20,11 +20,11 @@ The core technology works like this:
 * **Sender**
   * Categorize metadata as { (`binary` or `text`) and (`clocked` or `unclocked`) }
   * Put metadata in an envelope according to category
-  * Stamp envelope with a metarex Id (`mrxId`) & timing information
+  * Stamp envelope with a MetaRex ID (`mrxId`) & timing information
   * Publish the `mrxId` in a public register so that anyone can figure out what the metadata is
   * Map the envelope(s) into a network transport for real time distribution
 * **Receiver**
-  * Unmap network transport into a sequence of metarex envelopes
+  * Unmap network transport into a sequence of MetaRex envelopes
   * Store / preserve / mux / process the envelopes as a file or stream
   * Get `mrxId` registration info [from the register]({{% relref "/app/reg/" %}})
   * Process metadata / download a plugin / display a message based on the

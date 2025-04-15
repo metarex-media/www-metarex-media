@@ -5,12 +5,12 @@ date:        2025-02-03
 description: Case Studies for using Metarex
 ---
 
-{{< f/message
+{{< fo t = "banner"
     header = "Case Studies"
     description = "Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
->}}
+/>}}
 
 We want the metadata experience for users to be a good one. In our concept
 diagram, you can see that video and audio generally flow well with

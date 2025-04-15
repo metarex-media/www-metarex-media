@@ -7,7 +7,7 @@ weight:      10
 description: Who is Rexy & why the dinosaur?
 ---
 <!-- markdownlint-disable MD033 -->
-{{< fo t = "message"
+{{< fo t = "banner"
     header = "Who is Rexy?"
     description = "She's our mascot, and this is her story."
     src = "/img/dino/mrx-logo-0300.png"

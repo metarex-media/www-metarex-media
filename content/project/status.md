@@ -8,11 +8,11 @@ description: Current Status.
 tags: ["status"]
 ---
 
-{{< f/message 
+{{< fo t = "banner"
     header = "We're over half way through & on target!"
     src = "/img/dino/mrx-logo-0300.png" 
     class = "ui center aligned olive message"
->}}
+/>}}
 
 {{% metarex %}} is looking for more [backers] to create a financial reserve
 from which we can give out grants to engineering teams to create the Open

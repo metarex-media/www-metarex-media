@@ -47,7 +47,7 @@ description: Learn about metarex?
   <!-- ---------------------------------------------------------------------- -->
 {{< /fo >}}
 
-{{< fo t = "message"
+{{< fo t = "banner"
     header = "Docs"
     description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"

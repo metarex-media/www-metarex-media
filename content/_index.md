@@ -54,24 +54,33 @@ date:      2024-08-13
 {{< fo t = "cover"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexycover-240806.jpg" />}}
+    src = "project/coverpages/rexycover-240806.jpg" 
+/>}}
+
+{{< fo t = "include"
+    from = "/blog/2024-03-07-rnf-best-accelerator/index.md"
+/>}}
+
+{{< fo t = "include"
+    from = "/project/goals/index.md"
+/>}}
+
+{{< fo t = "include"
+    from = "/project/flow-diagram.md" 
+    src = "/img/mrx-flow.png" 
+/>}}
+
+{{< fo t = "include"
+    from = "/project/Admin/backer-list.md"
+    src = "/img/dino/mrx-logo.svg" 
+/>}}
 
 {{< fo t = "include" 
-    from = "blog/2024-03-07-rnf-best-accelerator" 
+    from = "/project/introduction/index.md" 
 />}}
 
-{{< fo t = "include" from = "project/goals" />}}
+<!-- {{< fo t = "include" from = "/project/videos.md" />}} -->
 
-{{< fo t = "include" from = "project/flow-diagram" 
-src = "/img/mrx-flow.png" 
+{{< fo t = "include" 
+    from = "/project/Admin/metarex-ltd/index.md" 
 />}}
-
-{{< fo t = "include" from = "project/Admin/backer-list"
-src = "/img/dino/mrx-logo.svg" 
-/>}}
-
-{{< fo t = "include" from = "project/introduction" />}}
-
-<!-- {{< fo t = "include" from = "project/videos" />}} -->
-
-{{< fo t = "include" from = "project/admin/metarex-ltd" />}}

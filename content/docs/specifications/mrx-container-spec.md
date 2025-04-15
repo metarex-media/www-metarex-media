@@ -349,9 +349,16 @@ Metadata" which is further described in this document. As such, the framework is
 referenced in the Preface Set while the track itself is referenced in the
 Material Package (Figure 1)
 
-{{% f/image "/img/doc/mxf-live-fig-1.png" "MXF Live" "ui centered large image" %}}
+{{< fo t = "image" 
+    src = "/img/doc/mxf-live-fig-1.png" 
+    text = "MXF Live" 
+    class = "ui centered large image" 
+/>}}
 
-{{< fo t = "caption" text = "Linkage of MXF Live DM Track in MXF Header Data" header = "figure" />}}
+{{< fo t = "caption" 
+    text = "Linkage of MXF Live DM Track in MXF Header Data" 
+    header = "figure" 
+/>}}
 
 The new keys and labels used for the descriptive metadata are taken from ARRI
 private space. Table 1 shows the scheme applied to make up the keys within ARRI

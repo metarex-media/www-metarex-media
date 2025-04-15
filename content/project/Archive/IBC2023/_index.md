@@ -8,14 +8,17 @@ weight:      20
 The Responsive Narrative Factory won _**Best IBC Accelerator Project 202**_3.
 {{% /pageinfo %}}
 
-{{< f/message
-    header = "metarex.media need you"
+{{< fo t = "banner"
+    header = "MetaRex need you"
     description = "The Responsive Narrative Factory won _**Best IBC Accelerator Project 2023**_."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
->}}
+/>}}
 
-{{% f/image "rnf-title-image-web.png" "ui fluid image" %}}
+{{< fo t = "image" 
+    src = "rnf-title-image-web.png" 
+    class = "ui fluid image" 
+/>}}
 
 ## Where should I go next?
 

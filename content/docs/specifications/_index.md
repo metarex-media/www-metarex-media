@@ -3,15 +3,15 @@ title:       Specifications
 linkTitle:   Specifications
 date:        2025-02-19
 weight:      30
-description: How does metarex.media work under the hood?
+description: How does MetaRex work under the hood?
 ---
 
-{{< f/message
+{{< fo t = "banner"
     header = "Technical Specifications"
-    description = "Metarex is like a zip file envelope with a timeline... like an electronic FedEx service."
+    description = "MetaRex is like a zip file envelope with a timeline... like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
->}}
+/>}}
 
 ### The {{% metarex %}} Envelope
 
