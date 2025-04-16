@@ -4,14 +4,14 @@
 
 <head>
   {{ partial "my/site-head-begin.html" . }}
-  {{ partial "head.html" . }}
+  {{ partial "fotpl/head.html" . }}
   {{ partial "my/site-head-end.html" . }}
 </head>
 
 <body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
   <div class="ui wide container">
     <header>
-      {{ partial "navbar.html" . }}
+      {{ partial "fotpl/navbar" . }}
     </header>
   </div>
   <div class="ui wide container">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="row">
-      {{ partial "footer.html" . }}
+      {{ partial "fotpl/footer" . }}
     </div>
   </div>
   </div>

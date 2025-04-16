@@ -17,7 +17,6 @@ Key points:
 * Web Service (metarex enabled) to synthesise svg ok/err icons
 * Monitor wall mockup to show status
 
-
-{{% include 07-demo-segment.html %}}
+{{< fo t = "include" from = "07-demo-segment.html" />}}
 {{% sitelinks %}}
 {{% /nab24-demo %}}
