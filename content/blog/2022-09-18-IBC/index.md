@@ -7,7 +7,7 @@ tags:        ["project",  "Mr MXF", "IBC", "Modulamedia"]
 description: Finding support on the show floor of IBC 2022.
 ---
 
-{{< f/block
+{{< fo t = "block"
   id    = "summary"
   src   = "featured-ibc-2022.jpg"
   srcOn = "left"
@@ -21,9 +21,9 @@ discarded during productions. More folks were inventing new protocols for their
 AI metadata because there isn't a standard way to ship metadata on a timeline
 from where it's made to where it's needed.
 
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
+{{< fo t = "block" 
   id    = "block2"
 >}}
 My big take away is that if we run the {{% metarex %}} project with the
@@ -37,7 +37,7 @@ following constraints then it is likely to be a success:
 * Support Javascript, Python, C++ and GoLang.
 
 Check our the [backers] page to see how you can help.
-{{< /f/block >}}
+{{< /fo >}}
 
 [DPP]:         https://www.thedpp.com/events/leaders-briefing-2022
 [NAB]:         /blog/2022/09/18/2022-09-18-ibc/

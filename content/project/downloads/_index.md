@@ -34,13 +34,13 @@ resources:
     group: Project Documents
 # ------------------------------------------------------------------------------
 - name: mrxf-rexy-sunbathing
-  title: Rexy Sunbathing Metarex Sidecar
+  title: Rexy Sunbathing MetaRex Sidecar
   # this file is uploaded directly to the host and is not in GitHub
   src: /downloads/samples/rexy_sunbathe_mrx.zip
   params:
     icon: file zip
     download: true
-    description: A sample metarex file with the metadata for the rexy video.
+    description: A sample MetaRex file with the metadata for the Rexy video.
     group: Samples
 
 - name: mp4-rexy-sunbathing
@@ -50,7 +50,7 @@ resources:
   params:
     icon: video
     download: true
-    description: A sample metarex file with the metadata for the rexy video.
+    description: A sample MetaRex file with the metadata for the Rexy video.
     group: Samples
 # ------------------------------------------------------------------------------
 

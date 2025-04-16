@@ -7,16 +7,16 @@ weight:      10
 description: Who is Rexy & why the dinosaur?
 ---
 <!-- markdownlint-disable MD033 -->
-{{< f/message
-    header="Who is Rexy?"
-    description="She's our mascot, and this is her story."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
->}}
+{{< fo t = "banner"
+    header = "Who is Rexy?"
+    description = "She's our mascot, and this is her story."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
+/>}}
 
 ## Why the dinosaur?
 
-The MetaRex logo (the dinosaur) was created by [Amber Bardell][AB].
+The {{% metarex %}} logo (the dinosaur) was created by [Amber Bardell][AB].
 
 The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
@@ -26,9 +26,9 @@ With [Amber’s][AB] fabulous creativity, Rexy (the dinosaur) was born in 2021.
 Working together, [Amber][SZ] and [Simi Zeko][SZ], created the first rendering
 video of Rexy which was released in March 2021.
 
-<div class="ui olive container segment">
-  <video class="ui image" autoplay="1" loop="1" controls="1" muted="1">
-    <source src="/meeja/mrx3-roar.mp4">
+<div class = "ui olive container segment">
+  <video class = "ui image" autoplay = "1" loop = "1" controls = "1" muted = "1">
+    <source src = "/meeja/mrx3-roar.mp4">
   </video>
 </div>
 
@@ -49,13 +49,13 @@ what technology can bring to the process.
 Check out their [first blog post][blog] if you missed it, to find out more about Rexy’s
 creation:
 
-<div class="ui centered fluid image"><img src="/img/dino/mrx-train-long-1000.png" alt="rexy"></div>
+<div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
 ### Why is Rexy driving a steam train?
 
 Not only having a dinosaur (Rexy) shows how the industry treats metadata, to
 have her driving a steam train also represents the way the media and tech
-industry uses metadata – slow and old-fashion
+industry uses metadata – slow and old-fashion.
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com

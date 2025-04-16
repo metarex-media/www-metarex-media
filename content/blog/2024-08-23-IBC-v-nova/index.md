@@ -20,7 +20,7 @@ Instructions on the [treasure hunt page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img class="ui centered bordered rounded image" src="featured-v-nova.png" alt="V-Nova">
+<img class="ui centered bordered rounded image" src = "featured-v-nova.png" alt="V-Nova">
 
 With the support of **[V-Nova][web]**, MetaRex is working on the smart
 transform of metadata and content for AI, editing and visualization.
@@ -34,8 +34,6 @@ been granted international standard status by MPEG/ISO and SMPTE.
 1,000 international patents, along with a range of software products and
 solutions'
 
-Visit the V-Nova booths at IBC 2024, booth numbers **[5.A2A]**, **[5.B40]**,
-**[14.AI03]**, to see their rage of software products and solutions.
 
 [#V-Nova](https://www.linkedin.com/search/results/all/?keywords=%23v-nova)
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
@@ -46,9 +44,9 @@ Visit the V-Nova booths at IBC 2024, booth numbers **[5.A2A]**, **[5.B40]**,
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@V-Nova](https://www.linkedin.com/company/v-nova-ltd-/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@V-Nova](https://www.linkedin.com/company/v-nova-ltd-/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:   https://www.v-nova.com/
 [5.A2A]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=K&selectedBooth=5.A24

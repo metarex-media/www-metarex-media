@@ -12,58 +12,59 @@ description: Learn about metarex?
    |  _| / -_) / _` | |  _| | || | | '_| / -_) (_-<
    |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/
 -->
-{{< o/features >}}
-  {{< o/feature
-    divClass = "ui green segment"
-    msgClass = "ui green message"
-    name     = "Rexy clips"
-    src      = "{{% relref /mp4/mrx2-fire.mp4 %}}"
-    srcStyle = "max-width: 300px;"
-    link     = "/about"
+{{< fo t = "feature-group" >}}
+<!-- ---------------------------------------------------------------------- -->
+  {{< fo t = "feature"
+    blockClass = "ui green segment"     divClass = blockClass
+    class      = "ui green message"     msgClass = class
+    header     = "Rexy clips"           name = header
+    src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
+    srcStyle   = "max-width: 300px;"
+    link       = "/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< o/feature
-    divClass = "ui yellow segment"
-    msgClass = "ui yellow message"
-    link     = "https://github.com/orgs/metarex-media/repositories"
-  >}}
-<div class="ui pink message"><i class="tv icon"></i></i> Any resolution, any colour space </div>
-<div class="ui red message"><i class="ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
-<div class="ui orange message"><i class="python icon"></i> Marimo Browser user experience</div>
-<div class="ui green message"><i class="blender icon"></i> Rectangular & Blender 3D images</div>
-<div class="ui blue message"><i class="laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
-  {{</o/feature>}}
+  {{< fo t = "feature"
+    blockClass = "ui yellow segment"    divClass = blockClass
+    class      = "ui yellow message"    msgClass = class
+    link       = "https://github.com/orgs/metarex-media/repositories"
+  />}}
+<div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
+<div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
+<div class = "ui orange message"><i class = "python icon"></i> Marimo Browser user experience</div>
+<div class = "ui green message"><i class = "blender icon"></i> Rectangular & Blender 3D images</div>
+<div class = "ui blue message"><i class = "laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
+  {{< /fo >}}
 <!-- ---------------------------------------------------------------------- -->
-  {{< o/feature
-    divClass = "ui red segment"
-    msgClass = "ui red message"
-    name     = "How does it work?"
-    src      = "/r/img/eg-resize.png"
-    link     = "/docs"
-  >}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"      divClass = blockClass
+    class      = "ui red message"      msgClass = class
+    header     = "How does it work?"   name = header
+    src        = "/r/img/eg-resize.png"
+    link       = "/docs"
+ >}}
 
-  <i class="book icon"></i> Read the docs.
-  {{</o/feature>}}
-{{< /o/features >}}
+  <i class = "book icon"></i> Read the docs.
+  <!-- ---------------------------------------------------------------------- -->
+{{< /fo >}}
 
-{{< f/message
-    header="Docs"
-    description="Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
->}}
+{{< fo t = "banner"
+    header = "Docs"
+    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
+/>}}
 
-### Metarex Documentation
+### MetaRex Documentation
 
 Start by reading the [MRX container introduction][01] that leads you through the
 container design choices amongst the many containers available. From that
 point, you can read the detailed spec of the [MRX container][02] in its
 work-in-progress status. There may be further detailed discussions in the
-metarex [GitHub][03] repository's [issues][03] section.
+MetaRex [GitHub][03] repository's [issues][03] section.
 
 There's also the easy-access [White Paper blog from 2024][04].
 
-### The Metarex Register
+### The MetaRex Register
 
 The register converts a `metarexId` e.g. [MRX.123.456.789.reg][id] into a set
 of links where you can find information and services related to that metadata

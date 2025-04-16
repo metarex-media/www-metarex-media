@@ -23,8 +23,8 @@ IBC and visit our [website][web], try one of our [demos], or just [contact] us
 to find out about Media Metadata workflows and the free software we're giving
 away to make Media Metadata Flow.
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.jpg" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.jpg" alt = "{{% param img %}}">
 
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
@@ -35,8 +35,8 @@ away to make Media Metadata Flow.
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://metarex.media/
 [demos]:    https://metarex.media/app/demos

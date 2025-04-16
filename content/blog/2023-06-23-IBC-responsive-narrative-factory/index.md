@@ -8,7 +8,7 @@ tags:        ["project",  "IBC", "RNF", "Infuse"]
 ---
 
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block1"
   src      = "featured-bruce.png"
   srcOn    = "left"
@@ -28,12 +28,14 @@ can be achieved when you mix the following in a simple demonstration:
 * customer interaction
 * IBC show guest
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
-[RNF]:                          /project/archive/ibc2023/
+[RNF](/project/archive/ibc2023/)
 [BBC]:
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block  >}}
-Basically **ultra-fine-grained-personalisation** becomes a relatively simple
+{{< fo t = "block"
+    id   = "block2"
+>}}
+Basically ultra-fine-grained-personalisation becomes a relatively simple
 task if you have all the right components ready to go.
 
 The Infuse video player uses metadata provided by Metarex to deliver the
@@ -42,13 +44,13 @@ is required - it's just a matter of using the metadata to automate the
 preparation.
 
 Technical, timeline and demonstration details will appear on our [RNF] page so
-you can follow along and maybe even download the metarex code from our [github].
+you can follow along and maybe even download the MetaRex code from our [github].
 
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
 [RNF]:                          /project/archive/ibc2023/
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block3"
   src      = "/img/event/ibc2023-rnf-web.png"
   srcOn    = "right"
@@ -66,4 +68,4 @@ the secrets of our demonstration.
 [Infuse Video]:                 https://www.infuse.video/
 [MPTS2023]:                     /blog/2023/05/04/2023-05-04-metarex-mpts-2023-may-mega-update/
 [RNF]:                          /project/archive/ibc2023/
-{{< /f/block >}}
+{{< /fo >}}

@@ -1,7 +1,9 @@
 ---
 type:        docs
 ---
-{{< f/block id    = "summary" >}}
+{{< fo t = "block" 
+    id   = "summary" 
+>}}
 <!-- markdownlint-disable MD025 -->
 
 <div class="ui stackable horizontal segments">
@@ -28,4 +30,4 @@ type:        docs
 </div>
 
 {{% sitelinks %}}
-{{< /f/block >}}
+{{< /fo >}}

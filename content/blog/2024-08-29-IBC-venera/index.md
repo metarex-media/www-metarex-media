@@ -23,7 +23,7 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
+<img  class="ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt="{{% param img %}}">
 
 **[Venera][web]** brings trust and reliability to automated QC workflows. Their
 relentless drive to make sophisticated software understandable, usable and,
@@ -53,9 +53,9 @@ this [link][meet] and you can also visit them in [Hall 7, Stand #D45][7.D45].
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@Venera](https://www.linkedin.com/company/venera-technologies/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@Venera](https://www.linkedin.com/company/venera-technologies/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://www.veneratech.com/
 [qc]:     https://www.veneratech.com/qctudio/

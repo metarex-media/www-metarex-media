@@ -24,16 +24,16 @@ wordcoutn assumes 220 words/minute
 {{ end }}
 {{ $ext := path.Ext $src }}
 {{ $srcIs := cond (eq $ext ".mp4") "video" "image" }}
-<div class="ui card">
+<div class = "ui card">
   {{ with $src }}
   {{ if eq $srcIs "video"}}
-  <video class="ui image" autoplay loop>
-    <source src="{{ $src }}" type="video/mp4" />
+  <video class = "ui image" autoplay loop>
+    <source src = "{{ $src }}" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <figcaption><small class="text-muted">{{ . | html }}</small></figcaption>
+  <figcaption><small class = "text-muted">{{ . | html }}</small></figcaption>
   {{ else }}
-  <a href="{{ $link }}"><img class="ui centered image" src="{{ $src }}" /></a>
+  <a href = "{{ $link }}"><img class = "ui centered image" src = "{{ $src }}" /></a>
   {{ end }}
   {{ end }}
   <div class="content">

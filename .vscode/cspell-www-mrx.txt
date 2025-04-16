@@ -43,6 +43,7 @@ configparam
 core
 countwords
 Courgenay
+coverpages
 coverprofile
 Dappname
 dbaeumer

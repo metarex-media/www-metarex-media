@@ -23,7 +23,7 @@ chance you'll win. Instructions on our [treasure hunt page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy in public and is hiding from cameras at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img %}}.jpg" alt="{{% param img %}}">
+<img  class = "ui centered bordered rounded image" src = "featured-{{% param img %}}.jpg" alt = "{{% param img %}}">
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
@@ -33,8 +33,8 @@ the show. She’s shy in public and is hiding from cameras at the moment!
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    http://www.remotefilming.com/
 [meet]:   https://www.veneratech.com/ibc2024

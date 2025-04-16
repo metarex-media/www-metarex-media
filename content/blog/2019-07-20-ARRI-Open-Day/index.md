@@ -23,13 +23,12 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-This 2 year project was a pre-cursor to **[metarex]**
+This 2 year project was a pre-cursor to **[MetaRex]**
 
-{{< f/image-fluid
-  "international-broadcast-day-demo.jpg"
-  "2019 International Broadcast Demo Day"
-  "caption"
->}}
+{{< fo t = "image-fluid"
+    src  = "international-broadcast-day-demo.jpg"
+    text = "2019 International Broadcast Demo Day" 
+/>}}
 
 Ideal for semi-custom metadata such as position,  logging, device parameters
 **Shoot** with on-set metadata from devices and from humans<br>
@@ -68,7 +67,7 @@ re-engineering the data.
 Led by **[Arri]**, the team included **[Nablet]**, **[Trackmen]**,
 **[Fusionmedia]** and **[Mr MXF]** as coordinator. What's Next? The system
 works and we're looking for partners to develop a framwework for handling any
-kind of metadata. See the [metarex] website for details
+kind of metadata. See the [MetaRex] website for details
 
 ### Contact
 
@@ -76,55 +75,102 @@ Use the [contact] form to ask questions and suggestions.
 
 #### Photos
 
-<div class="ui tiny images">
-{{< f/image "mxf-live-team-sm.jpg"                    "Team"   "#team"   >}}
-{{< f/image "mxf-live-system-sm.jpg"                  "System" "#system" >}}
-{{< f/image "mxf-live-rig-sm.jpg"                     "Rig"    "#rig"    >}}
-{{< f/image "mxf-live-cgi-sm.jpg"                     "CGI1"   "#cgi1"   >}}
-{{< f/image "mxf-live-cgi2-sm.jpg"                    "CGI2"   "#cgi2"   >}}
-{{< f/image "mxf-live-camera-sm.jpg"                  "Camera" "#camera" >}}
-{{< f/image "international-broadcast-day-demo-sm.jpg" "Demo"   "#demo"   >}}
+<div class = "ui tiny images">
+{{< fo t = "image" 
+     src = "mxf-live-team-sm.jpg"
+     text = "Team"
+     id =  "#team"   
+/>}}
+
+{{< fo t = "image" 
+     src = "mxf-live-system-sm.jpg"
+     text = "System"
+     id =  "#system" 
+/>}}
+
+{{< fo t = "image" 
+     src = "mxf-live-rig-sm.jpg"
+     text = "Rig" 
+     id =  "#rig"
+/>}}
+
+{{< fo t = "image" 
+     src = "mxf-live-cgi-sm.jpg"   
+     text = "CGI1"
+     id = "#cgi1"
+/>}}
+
+{{< fo t = "image" 
+     src = "mxf-live-cgi2-sm.jpg"  
+     text = "CGI2"
+     id = "#cgi2"
+/>}}
+
+{{< fo t = "image" 
+     src = "mxf-live-camera-sm.jpg" 
+     text = "Camera" 
+     id = "#camera"
+/>}}
+{{< fo t = "image" 
+     src = "international-broadcast-day-demo-sm.jpg" 
+     text = "Demo"
+     id = "#demo"
+/>}}
 </div>
 
 <a id="team"></a>
 
-{{< f/image-fluid
-  "featured-mxf-live-team.jpg"
-  "MXF Live Team"
-  "showCaption"
->}}
+{{< fo t = "image-fluid"
+    src  = "featured-mxf-live-team.jpg"
+    text = "MXF Live Team"
+/>}}
 
 <a id="system" ></a>
 
-{{< f/image-fluid  "mxf-live-system.jpg" "MXF Live Demo System" "showCaption" >}}
+{{< fo t = "image-fluid"  
+    src = "mxf-live-system.jpg" 
+    text = "MXF Live Demo System"
+/>}}
 
 <a id="rig" ></a>
 
-{{< f/image-fluid  "mxf-live-rig.jpg" "MXF Live Demo Rig" "showCaption" >}}
+
+{{< fo t = "image-fluid"  
+    src = "mxf-live-rig.jpg" 
+    text = "MXF Live Demo Rig"
+/>}}
 
 <a id="cgi1" ></a>
 
-{{< f/image-fluid  "mxf-live-cgi.jpg" "MXF Live CGI Demo" "showCaption" >}}
+
+{{< fo t = "image-fluid" 
+    src = "mxf-live-cgi.jpg" 
+    text = "MXF Live CGI Demo"
+/>}}
 
 <a id="cgi2" ></a>
 
-{{< f/image-fluid  "mxf-live-cgi2.jpg" "MXF Live CGI Demo" "showCaption" >}}
+
+{{< fo t = "image-fluid"  
+    src = "mxf-live-cgi2.jpg" 
+    text = "MXF Live CGI Demo"
+/>}}
 
 <a id="camera" ></a>
 
-{{< f/image-fluid
-  "mxf-live-camera.jpg"
-  "MXF Live Demo Camera"
-  "showCaption"
->}}
+
+{{< fo t = "image-fluid"
+    src  = "mxf-live-camera.jpg"
+    text = "MXF Live Demo Camera"
+/>}}
 
 <a id="demo" ></a>
 
-{{< f/image-fluid
-  "international-broadcast-day-demo.jpg"
-  "MXF Live Demo"
-  "showCaption"
->}}
+
+{{< fo t = "image-fluid"  
+  src  = "international-broadcast-day-demo.jpg"
+  text = "MXF Live Demo"
+/>}}
 
 # Partners
 

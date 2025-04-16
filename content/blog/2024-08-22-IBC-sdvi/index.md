@@ -21,7 +21,7 @@ Instructions on the [treasure hunt page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img class="ui centered bordered rounded image" src="featured-sdvi.png" alt="sdvi">
+<img class = "ui centered bordered rounded image" src = "featured-sdvi.png" alt = "sdvi">
 
 **[SDVI][sdvi]** is an award-winning supplier of cloud-based media supply chain
 technology that empowers organisations to optimize content ingest, processing,
@@ -44,9 +44,9 @@ operational efficiency and process intelligence.
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@SDVI](https://www.linkedin.com/company/sdvi-corporation/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@SDVI](https://www.linkedin.com/company/sdvi-corporation/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [sdvi]:  https://sdvi.com
 [rally]: https://sdvi.com/platform/

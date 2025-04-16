@@ -23,8 +23,8 @@ and backers you visit, the greater chance you'll win on **Sunday
 booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instructions on the
 [treasure hunt page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 Join **[{{% param backer %}}][web]**  as they celebrate their 50<sup>th</sup>
 anniversary with a bigger presence than ever before in a new, larger space at
@@ -57,9 +57,9 @@ Be sure to visit Ross Video and celebrate their 50<sup>th</sup> birthday in
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
 [meet]:   https://www.thedpp.com/events/dpp-bt-drinks-reception-ibc/

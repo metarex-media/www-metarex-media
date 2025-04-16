@@ -7,7 +7,7 @@ author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "NAB", "MrMXF"]
 ---
 
-{{< f/block
+{{< fo t = "block"
   id    = "summary"
   src   = "featured-bruce.jpg"
   srcOn = "left"
@@ -25,9 +25,9 @@ spec on the [GitHub](https://github.com/metarex-media) as well as adding more
 tutorial material and references to existing standards up which {{% metarex %}}
 is based.
 
-{{< /f/block >}}
+{{< /fo >}}
 <!-- ####################################################################### -->
-{{< f/block
+{{< fo t = "block"
   id       = "block2"
   src      = "las vegas.jpg"
   srcOn    = "right"
@@ -43,14 +43,16 @@ industry. For me, a key message was that data is continuing to drive business
 decisions and that trusting the provenance of that data is key to ensuring the
 decisions are good ones. This includes upstream data from the creation of the
 content as well as downstream data from the consumption of the content.
-{{< /f/block >}}
-{{< f/block >}}
+{{< /fo >}}
+
+{{< fo t = "block"
+    id   = "block3"
+>}}
 On the show floor there were busy clumps and quiet areas. A curious mix of
 activity all around. It seemed that anyone with cloud native solutions had a
 continuous stream of visitors whereas some of the smaller hardware sellers had
 time to doom-scroll on their favourite social media.
 
 Next stop for Metarex is the Media Production Show in London 10-11 May. Come and
-see us, we'll [have a great
-panel(https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows)]!
-{{< /f/block >}}
+see us, we'll [have a great panel(https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows)]!
+{{< /fo >}}

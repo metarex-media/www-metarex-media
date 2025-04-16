@@ -23,7 +23,7 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img %}}.png" alt="{{% param img %}}">
+<img  class="ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** loves being a supporter of {{% metarex %}}. You
 can fit **[{{% param backer %}}][web]** anywhere into your streaming
@@ -56,9 +56,9 @@ and how **simple** it is [on our website][web].
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@RemoteFilming](https://www.linkedin.com/company/remotefilming/)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@RemoteFilming](https://www.linkedin.com/company/remotefilming/)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    http://www.remotefilming.com/
 

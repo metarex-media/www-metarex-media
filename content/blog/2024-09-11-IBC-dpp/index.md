@@ -22,8 +22,8 @@ The more partners and backers you visit, the greater chance you'll win on
 booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instructions on the
 [treasure hunt page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.jpg" alt="{{% param img %}}">
+<img  class="ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.jpg" alt = "{{% param img %}}">
 
 Rexy recommends that you join the **[{{% param backer %}}][web]** now and
 attend one of their awesome events to get the best insights and predictions for
@@ -53,9 +53,9 @@ the hospitality with [BT Media and Broadcast][booth].
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
 [meet]:   https://www.thedpp.com/events/dpp-bt-drinks-reception-ibc/

@@ -21,8 +21,8 @@ visit, the greater chance you'll win on **Sunday 15th Sep** at **17:00** in the
 IBC [AI Zone][rxydraw] on the V-Nova booth. Enter on our [Sign up Page][ths].
 Instructions on the [treasure hunt page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.jpg" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.jpg" alt = "{{% param img %}}">
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
@@ -32,9 +32,9 @@ Instructions on the [treasure hunt page][thp].
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
 

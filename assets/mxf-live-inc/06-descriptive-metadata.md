@@ -27,7 +27,7 @@ Material Package (Figure 1)
 
 {{% f/image "/img/doc/mxf-live-fig-1.png" "MXF Live" "ui centered large image" %}}
 
-{{% o/caption "Linkage of MXF Live DM Track in MXF Header Data" "figure" %}}
+{{< fo t = "caption" text = "Linkage of MXF Live DM Track in MXF Header Data" header = "figure" >}}
 
 The new keys and labels used for the descriptive metadata are taken from ARRI
 private space. Table 1 shows the scheme applied to make up the keys within ARRI
@@ -50,7 +50,7 @@ is in Section Table 3.
 | 14-15         | Further Classification                  |                   | Distinction within each group   |
 | 16            | Index                                   | `00`              | Index in case of more than one item of the same type, e.g. multiple data streams, or distinction within group. |
 
-{{% o/caption "2 - UL Key Definitions for this Specification (multi-byte values in network order)" "table" %}}
+{{< fo t = "caption" text = "2 - UL Key Definitions for this Specification (multi-byte values in network order)" header = "table" >}}
 
 | Item Name                                                                |  UL Key
 |--------------------------------------------------------------------      |-------------------------------------

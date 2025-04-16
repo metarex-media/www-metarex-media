@@ -4,7 +4,7 @@ linkTitle:   Project
 date:        2025-02-19
 weight:      10
 type:       docs
-description: What is the MetaRex.media project? Where did it come from? What will it deliver?
+description: What is the {{% metarex %}} project? Where did it come from? What will it deliver?
 menu:
   main:
     identifier: project
@@ -14,11 +14,11 @@ tags:        ["docs", "project"]
 ---
 <!-- markdownlint-disable MD033-->
 
-{{< fo t="banner"
-    header="metarex.media"
-    text="is like a zip file with a timeline. It's used like an electronic FedEx service."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui olive message"
+{{< fo t = "banner"
+    header = "metarex.media"
+    text = "is like a zip file with a timeline. It's used like an electronic FedEx service."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui olive message"
 />}}
 
 **Status**: [view timeline](/project/status).
@@ -87,8 +87,7 @@ team did a lot of talking to  content creators, facility owners, software
 vendors and many others about what were the blockers that stopped metadata being
 a first class citizen. The biggest issue was "_The metadata gets lost_".
 
-{{< fo
-    t =        "fblock"
+{{< fo t = "block"
     alt =      "mxf-live demo at ARRI"
     position = "left"
     size =     "small"
@@ -96,7 +95,7 @@ a first class citizen. The biggest issue was "_The metadata gets lost_".
     linkUrl =  "/blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/"
 >}}
 
-Metarex  was shown to work back in 1998, when the original MXF team
+{{% metarex %}} was shown to work back in 1998, when the original MXF team
 demonstrated file workflows with [metadata preservation][01] at the BBC in a
 project called [G-FORS][02] (see page 219 of linked PDF). The demo was brought
 up to date with live networking and VFX and shown at the [ARRI Broadcast

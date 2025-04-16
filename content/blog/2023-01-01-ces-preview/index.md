@@ -7,7 +7,7 @@ author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-pe
 tags:        ["project",  "CES", "yellowbasket"]
 ---
 
-{{< f/block
+{{< fo t = "block"
     id    = "summary"
     src   = "featured-ces-2023.jpg"
     srcOn = "left"
@@ -30,8 +30,11 @@ CES features every aspect of the tech sector.
  challenging for us to stay focused and not to be distracted by all the toys on
  show.
 
-{{< /f/block>}}
-{{< f/block>}}
+{{< /fo >}}
+<!-- ####################################################################### -->
+{{< fo t = "block"
+  id    = "block2"
+>}}
 Beside the Expo itself it will be also important Keynotes, for example [Dr. Lisa
 Su](https://www.youtube.com/live/sRXVRgMF2lc?feature=share&t=887) from AMD and
 other interesting Conference presentation.
@@ -69,9 +72,7 @@ Samsung Ads, SiriusXM, Snap, T-Mobile, TikTok, Warner Bros. and more.
 
 You can follow CES digitally: save this dates Jan. 5-8, 2023 at our [blog] and
 other social media.
-
+{{< /fo >}}
 <!-- ####################################################################### -->
 
 [blog]:     /blog                    "Blog"
-
-{{< /f/block>}}

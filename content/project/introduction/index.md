@@ -7,13 +7,15 @@ description: Why is MetaRex needed?
 date:       2023-08-08
 tags: ["status"]
 ---
-{{< f/message header="An Introduction to Metarex"
-    src="/img/dino/mrx-logo-0300.png" class="ui center aligned olive message"
-    >}}
+{{< fo t = "banner"
+    header = "An Introduction to MetaRex"
+    src = "/img/dino/mrx-logo-0300.png" 
+    class = "ui center aligned olive message"
+/>}}
 
 ## What is {{< metarex >}}?
 
-Metarex is an initiative dedicated to developing an open-source framework for
+{{< metarex >}} is an initiative dedicated to developing an open-source framework for
 the transport of media metadata. This framework will allow you to preserve,
 transport, identify, and use metadata from many sources in a single workflow.
 This will make it easier to manage metadata and ensure that it is accurate and

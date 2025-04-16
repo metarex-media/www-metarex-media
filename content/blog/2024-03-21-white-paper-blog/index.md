@@ -10,7 +10,7 @@ params:
     linkedin:  true
 ---
 
-{{< f/block
+{{< fo t = "block"
   id    = "summary"
   src   = "featured-nabshow-2024.png"
   srcOn = "left"
@@ -56,9 +56,9 @@ let's lay out our objectives:
 [4]: /backers/
 
 {{% sitelinks %}}
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
+{{< fo t = "block"
   id    = "why"
   src   = "money.png"
   srcOn = "right"
@@ -80,9 +80,9 @@ reduces the amount of engineering for metadata interchange and introduces a new
 monetization opportunity between metadata creators and consumers - _even if the
 two companies have never met_.
 
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
+{{< fo t = "block"
   id    = "examples"
 >}}
 
@@ -129,10 +129,10 @@ in lots of effort being wasted just to interchange metadata between systems in
 a reliable format.
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
-  id    = "live"
+{{< fo t = "block"
+   id    = "live"
 >}}
 
 ### Transport makes things worse
@@ -209,10 +209,10 @@ next hour or two while they let off steam.
 **<span class="ui red header text">There must be a better way!</span>**
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
-  id    = "live"
+{{< fo t = "block"
+   id    = "live"
 >}}
 
 ### Compare with {{% metarex %}}
@@ -278,10 +278,10 @@ GitHub-like robustness to versioning and updating metadata flow. That's for a
 future study.
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}
 
-{{< f/block
-  id    = "live"
+{{< fo t = "block"
+   id    = "live"
 >}}
 
 ### So who benefits?
@@ -320,4 +320,4 @@ Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth
 [3]: /backers/
 
 {{< sitelinks >}}
-{{< /f/block >}}
+{{< /fo >}}

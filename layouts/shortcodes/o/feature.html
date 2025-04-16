@@ -13,9 +13,9 @@
 <div class="{{$divClass}}">
 <div class= "{{$msgClass}}">
   {{- if $link }}<a href="{{ $link }}">{{ end }}
-  <h2 class="header">{{.Page.Title}} - {{$name}}</h2>
+  <h2 class = "header">{{.Page.Title}} - {{$name}}</h2>
   {{- with .Get "src"}}
-  <img class= "ui medium image" src="{{ . }}">
+  <img class = "ui medium image" src = "{{ . }}">
   {{ end -}}
 {{ .Inner | markdownify}}
   {{- if $link }}</a>{{ end }}
