@@ -18,20 +18,22 @@ markmap:
 katex:
   enable: false
 
-# --- taxonomy -----------------------------------------------------------------
+# --- taxonomy control --------------------------------------------------------
+# turn on taxonomies. This allows tags to appear on posts, blogs & articles
+# a taxonomy must first be defined in hugo.yaml
 taxonomy:
-# set taxonomyCloud: [] to hide taxonomy clouds
-taxonomyCloud:
-  - tags
-  - categories
-# If used, must have same length as taxonomyCloud
-taxonomyCloudTitle:
-  - Tags
-  - Categories
-# set taxonomyPageHeader: [] to hide taxonomies on the page headers
-taxonomyPageHeader:
-  - tags
-  - categories
+  # set taxonomyCloud: [] to hide taxonomy clouds
+  taxonomyCloud:
+    - tags
+    - categories
+  # If used, must have same length as taxonomyCloud
+  taxonomyCloudTitle:
+    - Tag
+    - Category
+  # control which tags are shown on pages
+  showOnPage:
+    - tags
+    # - categories
 
 # --- Highlighting -------------------------------------------------------------
 pygmentsCodeFences: true

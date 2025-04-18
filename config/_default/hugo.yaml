@@ -90,6 +90,8 @@ ignoreFiles:
   - \.tmp-$
 
 # You can add your own taxonomies
+# See params for how these are shown on pages
+# https://gohugo.io/content-management/taxonomies/#what-is-a-taxonomy
 taxonomies:
   tag: tags
   category: categories

@@ -4,7 +4,7 @@
 
 <head>
   {{ partial "my/site-head-begin.html" . }}
-  {{ partial "fotpl/head.html" . }}
+  {{ partial "tmpl/head.html" . }}
   {{ partial "my/site-head-end.html" . }}
   <script src="/js/jquery.responsive-iframe.js"></script>
 </head>
@@ -12,7 +12,7 @@
 <body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
   <div class="ui wide container">
     <header>
-      {{ partial "fotpl/navbar" . }}
+      {{ partial "tmpl/navbar" . }}
     </header>
   </div>
 
@@ -31,11 +31,11 @@
       </div>
     </div>
     <div class="row">
-      {{ partial "fotpl/footer.html" . }}
+      {{ partial "tmpl/footer.html" . }}
     </div>
   </div>
   </div>
-  {{ partial "fotpl/body-scripts.html" . }}
+  {{ partial "tmpl/body-scripts.html" . }}
 </body>
 
 </html>
