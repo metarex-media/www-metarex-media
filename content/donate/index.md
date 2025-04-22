@@ -13,7 +13,7 @@ params:
       production ready code that you can get from our
       [github repo](https://github.com/metarex-media).
     url: https://google.com
-    src: /img/donate-coffee.jpg
+    src: /img/donate-rexy-coffee-cup.png
   cake:
     value: 10
     title: Buy us Cake
@@ -23,16 +23,16 @@ params:
       food of champions and Rexy believes her. Buy us 2 slices and we'll post
       a picture of cake for you.
     url: https://google.com
-    src: /img/donate-cake.jpg
+    src: /img/donate-rexy-cake.png
   food:
     value: 25
     title: Feed Rexy!
     description: |
       Sometimes you need more than cake and Rexy is a growing young girl with
       attitude and serious hunger. Help her reach her full potential and we'll
-      add your name and message to our [Backers](/backers) page.
+      add your name and a message to our social pages! 
     url: https://google.com
-    src: /img/donate-feed.jpg
+    src: /img/donate-feed-rexy-cake.png
 ---
 
 {{% metarex %}} is 100% supported by its backers and by donations.

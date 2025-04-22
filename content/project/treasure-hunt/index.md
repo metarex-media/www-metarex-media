@@ -18,6 +18,7 @@ weight:      10
   srcClass ="ui fluid image"
   srcCredit = "[IBC](https://show.ibc.org)"
   srcUrl = "https://show.ibc.org"
+  alt = 
 >}}
 
 ## Scan the QR codes on our partner stands to enter the draw
