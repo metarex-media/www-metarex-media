@@ -8,7 +8,7 @@
 
 hugoVersion:
   extended: true
-  min: v0.144.2
+  min: v0.145
 imports:
   - path: github.com/mrmxf/fohuw
     disable: false
