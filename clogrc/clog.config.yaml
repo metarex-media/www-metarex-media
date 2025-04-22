@@ -27,7 +27,7 @@ snippets:
       git-lfs: git-lfs version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'|head -1
     needs:
       golang: echo "1.24.0"
-      hugo: echo "0.144.2"
+      hugo: echo "0.145.0"
       git-lfs: echo "3.6.0"
   testamd: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-amd:latest"
   testarm: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-arm:latest"
