@@ -1,6 +1,6 @@
 ---
-title:       "2023-07-28 Metarex Creative Team"
-linkTitle:   "2023-07-28 Metarex Creative Team"
+title:       "2023-07-28 MetaRex Creative Team"
+linkTitle:   "2023-07-28 MetaRex Creative Team"
 date:        2023-07-27
 description: Amber tells us where the art comes from.
 author:      Amber Bardell [@in](https://www.linkedin.com/in/mrmxf/)
@@ -12,6 +12,7 @@ featured:    /img/amber-simi.png
 {{< fo t = "block"
   id       = "block1"
   src      = "/img/amber-simi.png"
+  alt      = "drawing of Amber and Simi"
   srcOn    = "left"
   srcLink  = "https://www.amberbardell.com"
 >}}
@@ -43,6 +44,7 @@ collaboration of our disciplines.
   id       = "block2"
   src      = "/meeja/mrx-rexy-nab-2023.mp4"
   srcOn    = "right"
+  alt      = "video of Rexy sunbathing"
 >}}
 We wanted Rexy to feel familiar and friendly, but with a slight edge that
 could scare other characters in her world when he gets protective of her
@@ -61,6 +63,7 @@ Rex is still a very young dinosaur, so expect to see some character development!
   id       = "block3"
   src      = "/img/dino/assets/agapanthus.png"
   srcOn    = "left"
+  alt      = "a drawing from Amber of a purple flower"
 >}}
 
 For the scenery, Amber usually makes a plan of the whole scene and then gets
@@ -85,6 +88,7 @@ elements such as caustics and volumetric fog for more visual interest.
   id       = "block4"
   src      = "/img/dino/assets/cowslip.png"
   srcOn    = "right"
+  alt      = "a drawing from Amber of a flower"
 >}}
 An important part of the project is being able to extract engine data from
 Unreal and pass it on to the MetaRex software developers for testing. We first
@@ -99,8 +103,7 @@ It is exciting to be using our strengths and constantly learning new things in
 this project, we look forward to sharing new test pattern scenes in the coming
 months!
 
-To find out more about what **[Amber]** creates, head to [www.amberbardell.com],
-check out [@amberbardell](https://www.instagram.com/amberbardell/?hl=en) on <i
+To find out more about what Amber creates, head to [www.amberbardell.com], or check out [@amberbardell](https://www.instagram.com/amberbardell/?hl=en) on <i
 class="instagram icon"></i>Instagram, or connect with them on [LinkedIn].
 
 Simi can be found at [www.simizeko.com] and keep up to date with his experiments

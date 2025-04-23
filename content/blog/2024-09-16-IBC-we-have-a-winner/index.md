@@ -22,8 +22,7 @@ Congratulations to [Amy](https://www.linkedin.com/posts/metarex-media_rexy-activ
 
 Many thanks to all our supporters and everyone who took part!
 
-<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
-%}}.png" alt = "{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)

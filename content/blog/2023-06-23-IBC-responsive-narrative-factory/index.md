@@ -1,6 +1,6 @@
 ---
-title:       "2023-06-23 Metarex: IBC Accelerator"
-linkTitle:   "2023-06-23 Metarex: IBC Accelerator"
+title:       "2023-06-23 MetaRex: IBC Accelerator"
+linkTitle:   "2023-06-23 MetaRex: IBC Accelerator"
 date:        2023-06-23
 description: Bruce tells us about the Responsive Narrative Factory Project for IBC 2023.
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -14,7 +14,7 @@ tags:        ["project",  "IBC", "RNF", "Infuse"]
   srcOn    = "left"
   alt = "photo of Bruce Devlin"
 >}}
-# MetaRex at IBC 2023: Responsive Narrative Factory
+# {{% metarex %}} at IBC 2023: Responsive Narrative Factory
 
 The **Responsive Narrative Factory** [(RNF)](/project/archive/ibc2023/) is an [IBC Accelerator](https://show.ibc.org/accelerator-media-innovation-programme) project that will
 be showcased at this year's IBC show between 15th - 18th September 2023 at the RAI
