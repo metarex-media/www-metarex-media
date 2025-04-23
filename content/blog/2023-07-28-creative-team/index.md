@@ -16,7 +16,7 @@ featured:    /img/amber-simi.png
   srcLink  = "https://www.amberbardell.com"
 >}}
 <!-- markdownlint-disable MD025 -->
-# Making Rex, Insights from our Creative Team
+# Making Rexy - Insights from our Creative Team
 
 ### Meet the creatives behind Rexy:
 

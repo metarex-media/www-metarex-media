@@ -2,7 +2,7 @@
 title:       MetaRex at NAB 2022 in Las Vegas
 linkTitle:   2022-04-23 NAB
 date:        2022-04-23
-description: Is MetaRex needed? We talked to companies at NAB 2022
+description: Is {{% metarex %}} needed?  We talked to companies at NAB 2022
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["project",  "Mr MXF", "IBC"]
 ---
@@ -13,9 +13,9 @@ tags:        ["project",  "Mr MXF", "IBC"]
   id    = "summary"
   src   = "featured-intelligent-content-icon.webp"
   srcOn = "left"
+  alt   = "multicoloured cube"
 >}}
-[Intelligent Content](https://nabshow.com/2022/experience-whats-new/connect/)
-was a key theme of the show and the {{% metarex %}} team wandered the show floor
+Intelligent Content was a key theme of the show and the {{% metarex %}} team wandered the show floor
 expecting to find that all the problems had been solved by existing products and
 services.
 
@@ -41,6 +41,7 @@ We proposed the {{% metarex %}} project to gauge interest Specifically we asked:
   id    = "block3"
   src   = "/img/dino/mrx-logo.svg"
   srcOn = "left"
+  alt = "metarex logo"
 >}}
 The answer to all these questions was **Yes**. Time to start figuring out how to make it real...
 {{< /fo >}}

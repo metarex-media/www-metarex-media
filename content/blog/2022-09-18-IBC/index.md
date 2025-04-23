@@ -11,9 +11,10 @@ description: Finding support on the show floor of IBC 2022.
   id    = "summary"
   src   = "featured-ibc-2022.jpg"
   srcOn = "left"
+  alt = "photo of a bike beside a canal with the sun setting"
 >}}
 An in-person IBC after the long COVID break was both exciting and busy. My 10km
-stope count goal was exceeded every day and conversations with both exhibitors and attendees was stimulating and informative.
+step count goal was exceeded every day and conversations with both exhibitors and attendees was stimulating and informative.
 
 It became rapidly clear that business models had changed radically since COVID.
 Many folks were investing in AI technologies to guess at the metadata that gets

@@ -1,6 +1,6 @@
 ---
-title:       We have a winner
-linkTitle:   We have a winner
+title:       We have a winner!
+linkTitle:   We have a winner!
 date:        2024-09-16
 description: "{{% metarex %}} thanks everyone who took part!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -14,15 +14,13 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure hunt is done!!</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure Hunt is done!</span></p>**
 
-We have  a **[{{% param winner %}}][web]** for Rexy's treasure hunt will be this
-Sunday! **[Register][ths]** to have a chance of ***winning a cuddly Rexy!***
-The more partners and backers you visit, the greater chance you'll win on
-**Sunday 15th Sep** at **17:00** in the IBC [AI Zone][rxydraw] on the V-Nova
-booth.
+We have  a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
 
-Thanks to all our supporters!
+Congratulations to [Amy](https://www.linkedin.com/posts/metarex-media_rexy-activity-7276567164059303936-SPaK) from [France Télévisions](https://fr.linkedin.com/company/france-televisions?trk=public_profile_topcard-current-company) on winning a cuddly **Rexy** in our Treasure Hunt at IBC 2024. 
+
+Many thanks to all our supporters and everyone who took part!
 
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">

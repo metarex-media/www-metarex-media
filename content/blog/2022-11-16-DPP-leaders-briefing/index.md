@@ -11,6 +11,7 @@ tags:        ["project",  "Mr MXF", "ModulaMedia", "DPP"]
   id    = "summary"
   src   = "featured-dpp-leaders.jpg"
   srcOn = "left"
+  alt = "selfie of Bruce Devlin holding a glass of wine in a large crowd"
 >}}
 The DPP Leaders briefing is one of the must-attend events of the year. A truly
 international crowd with awesome speakers and a great 2 day narrative including

@@ -11,9 +11,10 @@ tags:        ["project",  "CES", "yellowbasket"]
     id    = "summary"
     src   = "featured-ces-2023.jpg"
     srcOn = "left"
+    alt = "ces 2023 logo"
 >}}
 
-**CES® 2023** will take place in **Las-Vegas, Nevada** 5-8 of January and
+**CES® 2023** will take place in **Las-Vegas, Nevada** 5-8 of January 2023 and
 {{% metarex %}} is going to be there!
 
 It is the most influential tech event in the world – the proving ground for

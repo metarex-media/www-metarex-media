@@ -23,7 +23,7 @@ The Responsive Narrative Factory won _**Best IBC Accelerator Project 202**_3.
 ## Where should I go next?
 
 * [RNF Timeline]
-* [RNF on IBC Website]
+* [RNF on IBC Website](https://show.ibc.org/accelerator-project-responsive-narrative-factory#:~:text=The%20Responsive%20Narrative%20Factory%20Accelerator,and%20extremely%20engaging%20viewing%20experiences.)
 * [mrx-tool] - a test tool that implements the {{% metarex %}} protocol
 * [mrx-demo] - some demonstration data for the test tool to simulate [Responsive Narrative Factory] workflows
 

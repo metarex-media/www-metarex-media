@@ -12,14 +12,15 @@ tags:        ["project",  "IBC", "RNF", "Infuse"]
   id       = "block1"
   src      = "featured-bruce.png"
   srcOn    = "left"
+  alt = "photo of Bruce Devlin"
 >}}
 # MetaRex at IBC 2023: Responsive Narrative Factory
 
-The **[Responsive Narrative Factory]** (**[RNF]**) is an [IBC Accelerator] project that will
-be showcased at this year's IBC show between 15 & 18 September at the RAI
+The **Responsive Narrative Factory** [(RNF)](/project/archive/ibc2023/) is an [IBC Accelerator](https://show.ibc.org/accelerator-media-innovation-programme) project that will
+be showcased at this year's IBC show between 15th - 18th September 2023 at the RAI
 centre, Amsterdam.
 
-We're teaming up with [Infuse Video], the [BBC], [CuVo] and others to show what
+We're teaming up with [Infuse Video]( https://www.infuse.video/), the **BBC**, [CuVo](https://cuvo.ai/cuvo-to-showcase-innovations-at-ibc2023-conference/#:~:text=The%20Accelerator%20Program%20is%20an,test%20and%20refine%20groundbreaking%20concepts) and others to show what
 can be achieved when you mix the following in a simple demonstration:
 
 * seamless metadata handling
@@ -27,9 +28,7 @@ can be achieved when you mix the following in a simple demonstration:
 * great content
 * customer interaction
 * IBC show guest
-[Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
-[RNF](/project/archive/ibc2023/)
-[BBC]:
+[Responsive Narrative Factory](/project/archive/ibc2023/) and **BBC**
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
@@ -38,13 +37,13 @@ can be achieved when you mix the following in a simple demonstration:
 Basically ultra-fine-grained-personalisation becomes a relatively simple
 task if you have all the right components ready to go.
 
-The Infuse video player uses metadata provided by Metarex to deliver the
+The Infuse video player uses metadata provided by {{% metarex %}} to deliver the
 components of a programme that the viewer wants. No extra storage or redndering
 is required - it's just a matter of using the metadata to automate the
 preparation.
 
 Technical, timeline and demonstration details will appear on our [RNF] page so
-you can follow along and maybe even download the MetaRex code from our [github].
+you can follow along and maybe even download the MetaRex code from our [github repo.](https://github.com/metarex-media)
 
 [Responsive Narrative Factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
 [RNF]:                          /project/archive/ibc2023/
@@ -54,6 +53,7 @@ you can follow along and maybe even download the MetaRex code from our [github].
   id       = "block3"
   src      = "/img/event/ibc2023-rnf-web.png"
   srcOn    = "right"
+  alt = "Responsive Narrative Factory logo"
 >}}
 The [Responsive Narrative
 Factory](https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory)

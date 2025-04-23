@@ -27,7 +27,8 @@ This 2 year project was a pre-cursor to **[MetaRex]**
 
 {{< fo t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"
-    text = "2019 International Broadcast Demo Day" 
+    text = "2019 International Broadcast Demo Day"
+    alt = "a group of people listen to a presentation from Bruce Devlin"
 />}}
 
 Ideal for semi-custom metadata such as position,  logging, device parameters
@@ -170,6 +171,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"  
   src  = "international-broadcast-day-demo.jpg"
   text = "MXF Live Demo"
+  alt = "group photo of the MXF Team"
 />}}
 
 # Partners

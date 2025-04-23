@@ -11,6 +11,7 @@ tags:        ["project",  "CES", "yellowbasket"]
   id    = "summary"
   src   = "featured-ces-logo.png"
   srcOn = "left"
+  alt = "ces 2023 logo"
 >}}
 ### Metaverse and Metadata at CES® 2023
 
@@ -71,8 +72,8 @@ Conference Stream at the Aria conference centre:
 
 where we met a plethora of like minded colleagues, including Leslie Shannon -
 Head of Ecosystem and Trend Scouting for Nokia based in Silicon Valley and the
-author of **[Interconnected Realities]**:
-_How the Metaverse Will Transform Our Relationship to Technology Forever_
+author of [Interconnected Realities: _How the Metaverse Will Transform Our Relationship to Technology Forever_](https://www.amazon.com/Interconnected-Realities-Metaverse-Relationship-Technology/dp/1394160844)
+
 {{< /fo >}}
 <!-- ####################################################################### -->
 {{< fo t = "block"
