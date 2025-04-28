@@ -1,5 +1,5 @@
 ---
-title:       About Metarex
+title:       About MetaRex
 date:        2024-08-28
 linkTitle:   About
 url:         /about

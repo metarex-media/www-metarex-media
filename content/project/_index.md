@@ -26,12 +26,12 @@ tags:        ["docs", "project"]
 
 ## Rationale
 
-It's super easy to send anything by FedEx - even a baby dinosaur. You put your
+It's super easy to send anything by FedEx - even a baby dinosaur! You just put your
 stuff in a box and they slap two labels on it.
 
 1. The Destination - send to {{% metarex %}} HQ
 2. The Manifest - a bar code that points to a database. The record in the
-   database says _Baby Dinosaur - do not drop_
+   database says **_Baby Dinosaur - do not drop_**
 
 Magic happens and the box travels over train networks, air networks, couriers,
 bicycles and just gets to where you want it.

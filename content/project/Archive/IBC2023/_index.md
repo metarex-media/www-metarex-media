@@ -1,11 +1,12 @@
 ---
-title:       IBC-2023
-linkTitle:   IBC-2023
+title:       IBC 2023
+linkTitle:   IBC 2023
 weight:      20
 ---
 
 {{% pageinfo %}}
-The Responsive Narrative Factory won _**Best IBC Accelerator Project 202**_3.
+
+The Responsive Narrative Factory won **Best IBC Accelerator Project 2023** 🎉
 {{% /pageinfo %}}
 
 {{< fo t = "banner"
@@ -25,6 +26,6 @@ The Responsive Narrative Factory won _**Best IBC Accelerator Project 202**_3.
 * [RNF Timeline]
 * [RNF on IBC Website](https://show.ibc.org/accelerator-project-responsive-narrative-factory#:~:text=The%20Responsive%20Narrative%20Factory%20Accelerator,and%20extremely%20engaging%20viewing%20experiences.)
 * [mrx-tool] - a test tool that implements the {{% metarex %}} protocol
-* [mrx-demo] - some demonstration data for the test tool to simulate [Responsive Narrative Factory] workflows
+* [mrx-demo] - some demonstration data for the test tool to simulate **Responsive Narrative Factory** workflows
 
 {{% sitelinks %}}

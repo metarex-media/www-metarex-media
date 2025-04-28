@@ -9,7 +9,7 @@ params:
 
 # We're going to IBC
 
-Come and join us at the RAI, Amsterdam on Sunday 15th September for a special
+Come and join us at the RAI, Amsterdam on Sunday 15th September 2024 for a special
 MetaRex Treasure Hunt, prize-giving to celebrate and thank our Sponsors,
 Backers and all the people who have supported us with the MetaRex project.
 

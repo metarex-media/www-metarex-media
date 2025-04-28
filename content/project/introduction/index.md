@@ -61,7 +61,7 @@ benefit from free-flowing metadata.
 
 We can help you streamline your workflows and connect you with our growing
 network of companies. Your involvement will give you the opportunity to adapt
-the Metarex framework to your requirements and allow you to be first to market.
+the MetaRex framework to your requirements and allow you to be first to market.
 
 Why not [arrange a meeting] and see how we can help?
 
