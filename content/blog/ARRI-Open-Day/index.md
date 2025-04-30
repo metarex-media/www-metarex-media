@@ -1,9 +1,9 @@
 ---
 title:       MXF-LIVE at ARRI International Broadcast Day 2019
-linkTitle:   2019-07-20 ARRI day
+linkTitle:   ARRI day
 date:        2019-07-20
 description: The ARRI International Broadcast Day in 2019
-author:      Bruce Devlin ([@mrmxf](https://twitter.com/mrmxf))
+author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
 
 resources:
@@ -23,7 +23,7 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-This 2 year project was a pre-cursor to **[MetaRex]**
+This 2 year project was a pre-cursor to [{{% metarex %}}](https://metarex.media)
 
 {{< fo t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"
@@ -31,12 +31,13 @@ This 2 year project was a pre-cursor to **[MetaRex]**
     alt = "a group of people listen to a presentation from Bruce Devlin"
 />}}
 
-Ideal for semi-custom metadata such as position,  logging, device parameters
-**Shoot** with on-set metadata from devices and from humans<br>
-**Wrap** the metadata in MXF using open standards<br>
-**Move** the video, audio and metadata over a standard IP network<br>
-**Store** the stream as an open MXF file with enhanced metadata<br>
-**Share** the content live and in files environments re-wrapping
+Ideal for semi-custom metadata such as position, logging, device parameters. 
+
+* **Shoot** with on-set metadata from devices and from humans<br>
+* **Wrap** the metadata in MXF using open standards<br>
+* **Move** the video, audio and metadata over a standard IP network<br>
+* **Store** the stream as an open MXF file with enhanced metadata<br>
+* **Share** the content live and in files environments re-wrapping
 
 <a id="what" style="float:none;clear:both;">&nbsp;</a>
 
@@ -66,21 +67,19 @@ re-engineering the data.
 ### Who?
 
 Led by **[Arri]**, the team included **[Nablet]**, **[Trackmen]**,
-**[Fusionmedia]** and **[Mr MXF]** as coordinator. What's Next? The system
-works and we're looking for partners to develop a framwework for handling any
-kind of metadata. See the [MetaRex] website for details
+**[Fusionmedia]** and **[Mr MXF]** as coordinator. 
+_What's Next?_ The system works and we're looking for partners to develop a framwework for handling any
+kind of metadata. See the [MetaRex] website for futher details. 
 
-### Contact
-
-Use the [contact] form to ask questions and suggestions.
 
 #### Photos
 
 <div class = "ui tiny images">
-{{< fo t = "image" 
-     src = "mxf-live-team-sm.jpg"
+{{< fo t  = "image" 
+     src  = "mxf-live-team-sm.jpg"
      text = "Team"
-     id =  "#team"   
+     id   =  "#team"
+     alt  = "mxf team"
 />}}
 
 {{< fo t = "image" 
@@ -124,6 +123,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"
     src  = "featured-mxf-live-team.jpg"
     text = "MXF Live Team"
+    alt = "mxf team"
 />}}
 
 <a id="system" ></a>
@@ -131,6 +131,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"  
     src = "mxf-live-system.jpg" 
     text = "MXF Live Demo System"
+    alt = "mxf live system"
 />}}
 
 <a id="rig" ></a>
@@ -139,6 +140,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"  
     src = "mxf-live-rig.jpg" 
     text = "MXF Live Demo Rig"
+    alt = "mxf live rig"
 />}}
 
 <a id="cgi1" ></a>
@@ -147,6 +149,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid" 
     src = "mxf-live-cgi.jpg" 
     text = "MXF Live CGI Demo"
+    alt = "mxf live cgi"
 />}}
 
 <a id="cgi2" ></a>
@@ -155,6 +158,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"  
     src = "mxf-live-cgi2.jpg" 
     text = "MXF Live CGI Demo"
+    alt = "mxf live CGI"
 />}}
 
 <a id="camera" ></a>
@@ -163,6 +167,7 @@ Use the [contact] form to ask questions and suggestions.
 {{< fo t = "image-fluid"
     src  = "mxf-live-camera.jpg"
     text = "MXF Live Demo Camera"
+    alt = "mxf camera"
 />}}
 
 <a id="demo" ></a>

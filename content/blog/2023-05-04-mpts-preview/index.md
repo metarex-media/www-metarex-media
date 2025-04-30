@@ -62,7 +62,7 @@ will drive customized video viewing experiences.
     id   = "block2"
 >}}
 We also recently attended NAB, where Bruce and Katya spread the word about
-Metarex and gained numerous new backers, including Signiant, SDVI, GrayMeta, and
+MetaRex and gained numerous new backers, including Signiant, SDVI, GrayMeta, and
 Metaglue, who are all investing to help realize our vision for seamlessly
 flowing Metadata and releasing its full potential.
 

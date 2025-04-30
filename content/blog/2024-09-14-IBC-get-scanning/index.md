@@ -60,8 +60,6 @@ Thanks to all our supporters!
 <i class = "linkedin icon"></i>[@metarex][limrx]
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
-{{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
-
 [web]:    {{% param web %}}
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media

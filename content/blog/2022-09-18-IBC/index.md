@@ -1,6 +1,6 @@
 ---
 title:       IBC Show 2022
-linkTitle:   2022-09-18 IBC
+linkTitle:   IBC 2022
 date:        2022-09-18
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["project",  "Mr MXF", "IBC", "Modulamedia"]
@@ -37,10 +37,8 @@ following constraints then it is likely to be a success:
 * Support FFMPEG
 * Support Javascript, Python, C++ and GoLang.
 
-Check our the [backers] page to see how you can help.
 {{< /fo >}}
 
 [DPP]:         https://www.thedpp.com/events/leaders-briefing-2022
 [NAB]:         /blog/2022/09/18/2022-09-18-ibc/
 [IBC]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/
-[backers]:     /backers/

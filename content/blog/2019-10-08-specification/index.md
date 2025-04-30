@@ -1,6 +1,6 @@
 ---
 title:       Original MXF-Live Specification
-linkTitle:   2019-10-08-mxf-live
+linkTitle:   MXF-Live
 date:        2019-10-08
 description: First release of the specification from the [mxf-live.io](https://mxf-live.io) project.
 tags:        ["mxf", "Nablet", "Trackmen", "ARRI"]
@@ -14,10 +14,10 @@ tags:        ["mxf", "Nablet", "Trackmen", "ARRI"]
       id       =  "spec"
  >}}
 
-Full details of the release in the {{% metarex %}} [docs section]. Details of the
-mxf-live project in the [blog].
+Details of the mxf-live project can be found in this [blog] post. 
+For further details of the release can be found in the {{% metarex %}}[Docs](https://metarex.media/docs/) section.
 
-This specification was the impetus for starting the Metarex project. We hope to
+This specification was the impetus for starting the MetaRex project.  We hope to
 repeat the demo on a larger scale with a more generic solution in 2024.
 
 [blog]:         /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/

@@ -1,6 +1,6 @@
 ---
-title:       "2022-12-08 World Cup"
-linkTitle:   "2022-12-08 World Cup"
+title:       "2022 World Cup"
+linkTitle:   "2022 World Cup"
 date:        2022-12-08
 description: Katya reports from the SVG on metadata flows.
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)

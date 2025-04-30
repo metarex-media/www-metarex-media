@@ -1,6 +1,6 @@
 ---
-title:       Today at 17:00 at V-Nova booth!
-linkTitle:   Today at 17:00 at V-Nova booth!
+title:       17:00 at V-Nova booth!
+linkTitle:   17:00 at V-Nova booth!
 date:        2024-09-15
 description: "{{% metarex %}} thanks all its Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -14,16 +14,17 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure hunt is go!!</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">_Rexy's Treasure Hunt 2024 is completed_</span></p>**
 
-Today, Rexy will be exploring Amsterdam, walking around IBC and looking forward to being won by someone!
+Many thanks to all who took part in the [MetaRex Treasure Hunt](https://metarex.media/project/treasure-hunt/) at IBC 2024, and to all our Backers and Partners for their support! 
 
-The **[{{% param backer %}}][web]** is today! Get your Sunday step count up and visit one of our partners. Register to win by scanning a QR code on their booth.
+A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
-See you at 17:00 on the **V-Nova** booth 14.AI03!
+<img  class = "ui centered large bordered rounded image" src = "annoucing-rexy-winner.jpeg" alt = "{{% param img %}}">
 
-<img  class = "ui centered large bordered rounded image" src = "featured-rexy-prize.png" alt = "{{% param img %}}">
 
+
+Go to the next blog post to find out who the winner was.....
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
@@ -36,8 +37,6 @@ See you at 17:00 on the **V-Nova** booth 14.AI03!
 <i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
 <i class = "linkedin icon"></i>[@metarex][limrx]
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
-
-{{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
 
 [web]:    {{% param web %}}
 

@@ -16,7 +16,7 @@ params:
 
 **<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure Hunt is done!</span></p>**
 
-We have  a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
+We have a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
 
 Congratulations to [Amy](https://www.linkedin.com/posts/metarex-media_rexy-activity-7276567164059303936-SPaK) from [France Télévisions](https://fr.linkedin.com/company/france-televisions?trk=public_profile_topcard-current-company) on winning a cuddly **Rexy** in our Treasure Hunt at IBC 2024. 
 
@@ -35,8 +35,6 @@ Many thanks to all our supporters and everyone who took part!
 <i class = "linkedin icon"></i>[@{{% param winner %}}]({{% param lin %}})
 <i class = "linkedin icon"></i>[@metarex][limrx]
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
-
-{{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
 
 [web]:    {{% param web %}}
 

@@ -1,6 +1,6 @@
 ---
 ---
-{{< fo t = "card"
+{{< fo t = "banner"
       src =  "/meeja/mrx-rexy-nab-2023.mp4"
       credit   =  ""
       title    =  "MetaRex - it's like FedEx for Metadata"

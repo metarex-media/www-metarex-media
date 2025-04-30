@@ -81,6 +81,48 @@ menus:
       post: " 🦖"
       weight: 120
 # links to linkedin left & right
+  
+  
+  # Menu Rexy
+  menurexy:
+    - name: MetaRex on Instagram 
+      URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
+      identifier: Instagram
+      pre: '<i class="instagram icon"></i>'
+      post: " 🦖"
+      weight: 90
+    - name: MetaRex on LinkedIn
+      URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+      identifier: LinkedIn
+      pre: '<i class="linkedin icon"></i>'
+      post: " 🦖"
+      weight: 100
+    - name: MetaRex on GitHub
+      URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
+      identifier: GitHub
+      pre: '<i class="github icon"></i>'
+      post: " 🦖"
+      weight: 110
+
+    # - name:       See the IBC Winner
+    #   URL:        /donate/
+    #   identifier: cake
+    #   pre:
+    #   post:       " 🦖"
+    #   weight:     110
+    - name: Feed Rexy
+      URL: /donate/
+      identifier: cake
+      pre:
+      post: " 🍰"
+      weight: 110
+    - name: Try a demo
+      URL: /app/demos/
+      identifier: feed
+      pre:  "⏯️ "
+      post: " 🦖"
+      weight: 120
+# links to linkedin left & right
 
 # --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.
