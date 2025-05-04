@@ -5,7 +5,6 @@ date:        2024-03-26
 type:        docs
 weight:      900
 description: How the Project is Funded.
-categories: ["backers"]
 tags: ["backers"]
 ---
 

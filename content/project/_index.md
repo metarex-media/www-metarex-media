@@ -9,7 +9,6 @@ menu:
   main:
     identifier: project
     weight: 100
-categories:  ["project"]
 tags:        ["docs", "project"]
 ---
 <!-- markdownlint-disable MD033-->

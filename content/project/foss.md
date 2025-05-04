@@ -5,7 +5,6 @@ date:         2022-01-01
 weight:      300
 type:        docs
 description: What software can you expect from Metarex.
-categories: ["backers"]
 tags: ["backers"]
 ---
 {{< fo t = "banner"

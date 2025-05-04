@@ -10,7 +10,6 @@ menu:
     parent: project
     weight: 900
 
-categories:  ["project"]
 tags:        ["docs", "project", "reference"]
 ---
 

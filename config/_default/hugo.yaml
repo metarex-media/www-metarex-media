@@ -143,7 +143,6 @@ ignoreFiles:
 # https://gohugo.io/content-management/taxonomies/#what-is-a-taxonomy
 taxonomies:
   tag: tags
-  category: categories
 
 # --- Permalink --------------------------------------------------------------
 # Configure how URLs look like per section.

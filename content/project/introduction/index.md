@@ -11,6 +11,7 @@ tags: ["status"]
     header = "An Introduction to MetaRex"
     src = "/img/dino/mrx-logo-0300.png" 
     class = "ui center aligned olive message"
+    alt = "metarex logo"
 />}}
 
 ## What is {{< metarex >}}?

@@ -1,8 +1,8 @@
 ---
-title:       "2023-05-04 MetaRex @ MPTS"
-linkTitle:   "2023-05-04 MetaRex @ MPTS"
+title:       "2023-05-04 MetaRex at MPTS"
+linkTitle:   "2023-05-04 MetaRex at MPTS"
 date:        2023-05-04
-description: Chris talks us through MetaRex @ MPTS 2023.
+description: Chris talks us through MetaRex at MPTS 2023.
 author:      Chris Parry [@in](https://www.linkedin.com/in/chris-parry-2b0a607/)
 tags:        ["project",  "NAB", "MrMXF"]
 ---

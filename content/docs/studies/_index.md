@@ -7,7 +7,7 @@ description: Case Studies for using Metarex
 
 {{< fo t = "banner"
     header = "Case Studies"
-    description = "Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
+    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
 />}}
