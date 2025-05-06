@@ -7,8 +7,8 @@ type:        docs
 
 menu:
   main:
-    parent:   project
-    weight:   999
+    parent: tech
+    weight:   9
 
 # Use the block/cover shortcode to have a picture landing page
 ---

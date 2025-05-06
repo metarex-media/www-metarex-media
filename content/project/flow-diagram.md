@@ -4,6 +4,9 @@ linkTitle:     Flow Diagram
 date:         2024-02-29
 description:  How Metarex flows metadata
 type:        docs
+
+params:
+  src: img/mrx-flow.png
 ---
 
 {{< fo t = "block" 
@@ -13,7 +16,7 @@ type:        docs
 <div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
 
 {{< fo t = "image-fluid"  
-    src = "/img/mrx-flow.png" 
+    src = "/" 
     name = "The MetaRex Flow Diagram 2024" 
     id = "showCaption" 
 >}}

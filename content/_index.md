@@ -43,44 +43,47 @@ date:      2024-08-13
     link       = "/project/faq/"
   />}}
   {{< /fo >}}
+
+{{< fo t = "item-group" >}}
 <!-- ---------------------------------------------------------------------- -->
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< fo t = "blog" count = 4 skip = 2 />}}
+{{< fo t = "item-blog-group" count = 4 skip = 2 />}}
 
-{{< fo t = "cover"
+{{< fo t = "item-include"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
     src = "project/coverpages/rexycover-240806.jpg" 
 />}}
 
-{{< fo t = "include"
+{{< fo t = "item-include"
     from = "/blog/2024-03-07-rnf-best-accelerator/index.md"
 />}}
 
-{{< fo t = "include"
+{{< fo t = "item-include"
     from = "/project/goals/index.md"
 />}}
 
-{{< fo t = "include"
+{{< fo t = "item-include"
     from = "/project/flow-diagram.md" 
     src = "/img/mrx-flow.png" 
 />}}
 
-{{< fo t = "include"
+{{< fo t = "item-include"
     from = "/project/Admin/backer-list.md"
     src = "/img/dino/mrx-logo.svg" 
 />}}
 
-{{< fo t = "include" 
+<!-- {{< fo t = "item-include" 
     from = "/project/introduction/index.md" 
-/>}}
+/>}} -->
 
 <!-- {{< fo t = "include" from = "/project/videos.md" />}} -->
 
-{{< fo t = "include" 
+<!-- {{< fo t = "item-include" 
     from = "/project/Admin/metarex-ltd/index.md" 
-/>}}
+/>}} -->
+{{</fo>}}

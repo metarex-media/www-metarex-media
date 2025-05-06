@@ -5,6 +5,7 @@ date:       2024-08-13
 layout:     cover
 params:
   coversrc: /project/coverpages/rexycover-240806.jpg
+  src: project/coverpages/rexycover-240806.jpg
 ---
 
 # We're going to IBC
