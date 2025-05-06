@@ -41,7 +41,7 @@ params:
 donations go towards keeping the team supplied with food and a living wage.
 Help us give this project to the industry without having to charge.
 
-<div class="ui equal width center aligned stackable grid">
+<div class = "ui equal width center aligned stackable grid">
   {{< donate-card "coffee" >}}
   {{< donate-card "cake" >}}
   {{< donate-card "food" >}}

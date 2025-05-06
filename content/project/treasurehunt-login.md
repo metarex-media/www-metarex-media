@@ -6,16 +6,16 @@ weight:      10
 url:       "/treasure-hunt/login"
 ---
 <!-- markdownlint-disable MD001 MD034 -->
-<div class="ui center aligned  segment">
+<div class = "ui center aligned  segment">
 
-{{< fo t = "banner" text = "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!<br><span class='ui blue text'>**Please rescan the qr code**</span> in front of you if you have just signed up." />}}
+{{< fo t = "banner"text = "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!<br><span class='ui blue text'>**Please rescan the qr code**</span> in front of you if you have just signed up." />}}
 
-{{< f/block
+{{< fo t = "block"
   id    = "opening"
   src   = "/blog/2024/09/12/2024-09-12-rexy-prize-draw/featured-draw.jpg"
   srcOn = "right"
   srcWidth = 0.3
-  srcClass ="ui fluid image"
+  srcClass = "ui fluid image"
   srcCredit = "[IBC](https://show.ibc.org)"
   srcUrl = "https://show.ibc.org"
 >}}
@@ -30,22 +30,22 @@ You're now registered with an email address that we will use to log your visits.
 * Ask our partners and backers about metadata workflows - they'll be happy to help
 * Want to know if you've won Rexy? Come to our Prize Draw,.
 
-<div class="ui olive centered message">
+<div class = "ui olive centered message">
 Prize Draw
-<a href="https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
+<a href = "https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
 Sunday 15 Sept
 </strong></a>
 at
-<a href="https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
+<a href = "https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
 17:00
 </strong></a>
 booth
-<a href="https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
+<a href = "https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03"><strong>
 14.AI03
 </strong></a>
 </div>
 
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-{{< /f/block >}}
+{{< /fo >}}
 
 {{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}

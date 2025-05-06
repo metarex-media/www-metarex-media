@@ -23,8 +23,8 @@ page][thp].
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears behind books and furniture at the moment!
 
-<img  class="ui centered bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class = "ui centered bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** is a global leader in innovative video and
 audio optimization solutions for broadcast, theatrical, OTT, and web delivery.
@@ -51,9 +51,9 @@ For more information and to see all the exciting things **[{{% param backer
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@Cinnafilm](https://www.linkedin.com/company/cinnafilm-inc./)
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@Cinnafilm](https://www.linkedin.com/company/cinnafilm-inc./)
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://cinnafilm.com/
 [meet]:   https://cinnafilm.com/ibc/

@@ -23,8 +23,8 @@ the IBC [AI Zone][rxydraw] on the V-Nova booth. Sign up at
 [https://auth.metarex.media/ui/registration][ths]. Instructions on the [treasure hunt
 page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 **[{{% param backer %}}][web]** is the leader in broadcast standards conversion
 technology. The company, spun out of  digital broadcast pioneer Snell & Wilcox
@@ -55,9 +55,9 @@ conversions!
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
 [meet]:   https://www.thedpp.com/events/dpp-bt-drinks-reception-ibc/

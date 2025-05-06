@@ -9,12 +9,12 @@ categories: ["backers"]
 tags: ["backers"]
 ---
 
-{{< f/message
-    header="The {{% metarex %}}.media project needs you"
-    description="If you use metadata - [read our white paper blog post](/blog/2024/03/21/2024-03-25-white-paper-blog/)."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
->}}
+{{< fo t = "banner"
+    header = "The {{% metarex %}}.media project needs you"
+    description = "If you use metadata - [read our white paper blog post](/blog/2024/03/21/2024-03-25-white-paper-blog/)."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
+/>}}
 
 The project is being funded by backers who want to see a body of Open Source
 code appear in the industry. Backers may be product vendors, integrators,

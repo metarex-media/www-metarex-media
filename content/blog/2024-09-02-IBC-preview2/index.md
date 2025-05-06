@@ -11,7 +11,7 @@ params:
 ---
 
 
-<img class="ui centered bordered rounded image" src="featured-rexy-jigsaw2.png">
+<img class = "ui centered bordered rounded image" src = "featured-rexy-jigsaw2.png">
 
 Can you tell what the jigsaw is? Our lovely plush **Rexy** is only revealing
 herself in Jigsaw form at the moment. She is sure to pluck up the courage to
@@ -37,9 +37,9 @@ how to make them better and what metadata processing you would like to see!
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[@V-Nova](https://www.linkedin.com/company/v-nova-ltd-/)
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[@V-Nova](https://www.linkedin.com/company/v-nova-ltd-/)
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [booth]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [li]: https://uk.linkedin.com/company/metarex-media

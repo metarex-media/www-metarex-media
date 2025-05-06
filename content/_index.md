@@ -12,37 +12,38 @@ date:      2024-08-13
 <!-- | __|  ___   __ _  | |_   _  _   _ _   ___   ___  -->
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
-{{< o/features >}}
-  {{< o/feature
-    divClass = "ui green segment"
-    msgClass = "ui green message"
-    name     = "Why a Dinosaur?"
-    src      = "img/dino/mrx-logo.svg"
-    link     = "rexy/"
-  />}}
-  {{< o/feature
-    divClass = "ui yellow segment"
-    msgClass = "ui yellow message"
-    name     = "What does it Do?"
-    src      = "project/introduction/featured-fedex.jpg"
-    link     = "project/introduction/"
-  />}}
-  {{< o/feature
-    divClass = "ui red segment"
-    msgClass = "ui red message"
-    name     = "Case Studies"
-    src      = "docs/studies/case-studies.webp"
-    link     = "docs/studies/"
-  />}}
-  {{< o/feature
-    divClass = "ui blue segment"
-    msgClass = "ui blue message"
-    name     = "What's the benefit?"
-    src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
-    link     = "/project/faq/"
-  />}}
-{{< /o/features >}}
 
+{{< fo t = "feature-group" >}}
+  {{< fo t = "feature"
+    blockClass = "ui green segment"         divClass = blockClass
+    class      = "ui green message"         msgClass = class
+    header     = "Why a Dinosaur?"          name = header
+    src        = "img/dino/mrx-logo.svg"
+    link       = "rexy/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui yellow segment"        divClass = blockClass
+    class      = "ui yellow message"        msgClass = class
+    header     = "What does it Do?"         name = header
+    src        = "project/introduction/featured-fedex.jpg"
+    link       = "project/introduction/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"           divClass = blockClass
+    class      = "ui red message"           msgClass = class
+    header     = "Case Studies"             name = header
+    src        = "docs/studies/case-studies.webp"
+    link       = "docs/studies/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui blue segment"          divClass = blockClass
+    class      = "ui blue message"          msgClass = class
+    header     = "What's the benefit?"      name = header
+    src        = "/project/admin/metarex-ltd/featured-boardroom.jpg"
+    link       = "/project/faq/"
+  />}}
+  {{< /fo >}}
+<!-- ---------------------------------------------------------------------- -->
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
@@ -50,34 +51,36 @@ date:      2024-08-13
 <!--                  |___/                             -->
 {{< fo t = "blog" count = 4 skip = 2 />}}
 
-{{< fo
-    t = "cover"
+{{< fo t = "cover"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexycover-240806.jpg"
+    src = "project/coverpages/rexycover-240806.jpg" 
 />}}
 
-{{< o/block
-    blockType = "include"
-    from = "blog/2024-03-07-rnf-best-accelerator"
+{{< fo t = "include"
+    from = "/blog/2024-03-07-rnf-best-accelerator/index.md"
 />}}
 
-{{< o/block blockType = "include" from = "project/goals" />}}
-
-{{< o/block
-    blockType = "include"
-    from = "project/flow-diagram"
-    src = "/img/mrx-flow.png"
+{{< fo t = "include"
+    from = "/project/goals/index.md"
 />}}
 
-{{< o/block
-    blockType = "include"
-    from = "project/Admin/backer-list"
-    src = "/img/dino/mrx-logo.svg"
+{{< fo t = "include"
+    from = "/project/flow-diagram.md" 
+    src = "/img/mrx-flow.png" 
 />}}
 
-{{< o/block blockType = "include" from = "project/introduction" />}}
+{{< fo t = "include"
+    from = "/project/Admin/backer-list.md"
+    src = "/img/dino/mrx-logo.svg" 
+/>}}
 
-<!-- {{< o/block blockType = "include" from = "project/videos" />}} -->
+{{< fo t = "include" 
+    from = "/project/introduction/index.md" 
+/>}}
 
-{{< o/block blockType = "include" from = "project/admin/metarex-ltd" />}}
+<!-- {{< fo t = "include" from = "/project/videos.md" />}} -->
+
+{{< fo t = "include" 
+    from = "/project/Admin/metarex-ltd/index.md" 
+/>}}

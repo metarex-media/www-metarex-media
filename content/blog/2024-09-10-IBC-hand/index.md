@@ -22,8 +22,8 @@ The more partners and backers you visit, the greater chance you'll win on
 booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instructions on the
 [treasure hunt page][thp].
 
-<img  class="ui centered large bordered rounded image" src="featured-{{% param img
-%}}.png" alt="{{% param img %}}">
+<img  class="ui centered large bordered rounded image" src = "featured-{{% param img
+%}}.png" alt = "{{% param img %}}">
 
 A partner of the Beta Program at  **[{{% param backer %}}][web]** (Human &
 Digital), {{% metarex %}} is working with the team for easier transport of
@@ -60,9 +60,9 @@ For more information and to see all the exciting things **[{{% param backer
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class="linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
-<i class="linkedin icon"></i>[@metarex][limrx]
-<i class="linkedin icon"></i>[Rexy at IBC][lirxy]
+<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
+<i class = "linkedin icon"></i>[@metarex][limrx]
+<i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
 
