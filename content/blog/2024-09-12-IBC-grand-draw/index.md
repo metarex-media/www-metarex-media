@@ -1,10 +1,11 @@
 ---
-title:       2024-09-12 Rexy Prize Draw
-linkTitle:   2024-09-12 Rexy Prize Draw
+title:       Rexy's Treasure Hunt
+linkTitle:   Rexy's Treasure Hunt 2024
 date:        2024-09-12
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
-author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+description: "The Prize Draw for Rexy's Treasure Hunt"
+author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -20,6 +21,11 @@ have a chance of ***winning a cuddly Rexy!*** The more partners and backers you
 visit, the greater chance you'll win on **Sunday 15th Sep** at **17:00** in the
 IBC [AI Zone][rxydraw] on the V-Nova booth. Enter on our [Sign up Page][ths].
 Instructions on the [treasure hunt page][thp].
+
+
+
+
+
 
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.jpg" alt = "{{% param img %}}">

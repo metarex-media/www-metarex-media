@@ -1,10 +1,11 @@
 ---
-title:       2024-09-06 Thank you Cinnafilm
-linkTitle:   2024-09-06 Thank you Cinnafilm
+title:       Thank you Cinnafilm
+linkTitle:   Thank you Cinnafilm
 date:        2024-09-06
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -12,16 +13,7 @@ params:
   img: cinnafilm
 ---
 
-**[{{% param backer %}}][web]** is one of our wonderful backers and we couldn’t
-be successful without them. If you sign up to Rexy's fun **[IBC treasure
-hunt][ths]** then you'll have a chance of ***winning a cuddly Rexy!*** The more
-partners and backers you visit, the greater chance you'll win on Sunday
-afternoon in the IBC [AI Zone][rxydraw]. Sign up at
-[https://auth.metarex.media/ui/registration][ths]. Instructions on the [treasure hunt
-page][thp].
-
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
-the show. She’s shy and only appears behind books and furniture at the moment!
+**[{{% param backer %}}][web]** is one of our wonderful partners and we couldn’t be successful without them and having them support us in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
 <img  class = "ui centered bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">
@@ -38,8 +30,8 @@ and standards conversions; transcoding and complex image packaging.  Combined,
 these tools provide the finest-looking, optimized video and image sequences for
 *“media now and everywhere”* distribution models.
 
-For more information and to see all the exciting things **[{{% param backer
-%}}][web]** are working on, [book a meeting with them at IBC][meet].
+Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+the show. She’s shy and only appears behind books and furniture at the moment!
 
 [@Cinnafilm](https://www.linkedin.com/company/cinnafilm-inc./)
 [#cinnafilm](https://www.linkedin.com/search/results/all/?keywords=%23cinnafilm)
@@ -61,5 +53,3 @@ For more information and to see all the exciting things **[{{% param backer
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-[ths]:     https://auth.metarex.media/ui/registration
-[thp]:     /project/treasure-hunt/

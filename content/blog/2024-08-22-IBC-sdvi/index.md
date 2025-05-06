@@ -1,10 +1,11 @@
 ---
-title:       2024-08-22 Thank you SDVI
-linkTitle:   2024-08-22 Thank you SDVI
+title:       Thank you SDVI
+linkTitle:   Thank you SDVI
 date:        2024-08-22
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+old tags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true

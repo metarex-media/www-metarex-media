@@ -2,9 +2,10 @@
 title:       We have a winner!
 linkTitle:   We have a winner!
 date:        2024-09-16
-description: "{{% metarex %}} thanks everyone who took part!"
-author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+description: "Many thanks to everyone who took part!"
+author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -14,7 +15,7 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure Hunt is done!</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">Rexy's 2024 Treasure Hunt is done!</span></p>**
 
 We have a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
 

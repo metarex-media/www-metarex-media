@@ -1,10 +1,11 @@
 ---
-title:       2024-09-10 Thank you Ross
-linkTitle:   2024-09-10 Thank you Ross
+title:       Thank you Ross
+linkTitle:   Thank you Ross
 date:        2024-09-10
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "Many thanks all our Sponsors, Backers and Partners for taking part in the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -15,13 +16,7 @@ params:
 ---
 
 **[{{% param backer %}}][web]** is one of our wonderful partners and we
-couldn’t be successful without them. If you sign up to Rexy's fun **[IBC
-treasure hunt][ths]** then you'll have a chance of ***winning a cuddly Rexy!***
-when you visit them for their 50<sup>th</sup> anniversary. The more partners
-and backers you visit, the greater chance you'll win on **Sunday
-15<sup>th</sup> Sep** at **17:00** in the IBC [AI Zone][rxydraw] on the V-Nova
-booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instructions on the
-[treasure hunt page][thp].
+could not of been successful without their willing support in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">

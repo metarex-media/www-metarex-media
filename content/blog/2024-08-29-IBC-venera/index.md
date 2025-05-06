@@ -4,7 +4,8 @@ linkTitle:   2024-08-29 Thank you Venera
 date:        2024-08-29
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+old tags:   ["project",  "backers"]
 params:
   publish:
     linkedin:  true

@@ -1,10 +1,11 @@
 ---
-title:       2024-09-10 Thank you HAND Identity
-linkTitle:   2024-09-10 Thank you HAND
+title:       Thank you HAND Identity
+linkTitle:   Thank you HAND
 date:        2024-09-10
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "Many thanks to all everyone who has got involved with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true

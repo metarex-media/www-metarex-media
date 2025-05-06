@@ -1,10 +1,11 @@
 ---
-title:       2024-09-08 Thank you Lont
-linkTitle:   2024-09-08 Thank you Lont
+title:       Thank you Lont
+linkTitle:   Thank you Lont
 date:        2024-09-08
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "{{% metarex %}} thanks all its Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -12,16 +13,7 @@ params:
   img: lont
 ---
 
-**[{{% param backer %}}][web]** is one of our wonderful backers and we couldn’t
-be successful without them. If you sign up to Rexy's fun **[IBC treasure
-hunt][ths]** then you'll have a chance of ***winning a cuddly Rexy!*** The more
-partners and backers you visit, the greater chance you'll win on Sunday
-afternoon in the IBC [AI Zone][rxydraw]. Sign up at
-[https://auth.metarex.media/ui/registration][ths]. Instructions on the [treasure hunt
-page][thp].
-
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
-the show. She’s shy and only appears behind books and furniture at the moment!
+**[{{% param backer %}}][web]** has been one of our is one of our partners and we couldn’t be successful without their support and willing to be apart of the ***MetaRex Treasure Hunt*** at IBC 2024.
 
 <img  class = "ui centered bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">
@@ -35,14 +27,14 @@ minimal manual effort, seamlessly integrating into existing workflows. While
 this approach is gaining traction in B2B, we believe it will also shape the
 future of media and entertainment in the coming years.
 
-**[{{% param backer %}}][web]** on MetaRex: _"It was amazing to work with Bruce
+**[{{% param backer %}}][web]** on {{% metarex %}}: _"It was amazing to work with Bruce
 and the MetaRex team to win the IBC Accelerator 2024 Media Innovation Award!
 What they are building will be instrumental in creating efficient, low-friction
 workflows that deliver customized and personalized content to viewers without
 overly complicating the production process."_
 
-**[{{% param backer %}}][web]**'s CEO, Ruud van der Linden, will be at IBC and
-still has some availability for meetings. [DM him to schedule a time][meet].
+Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+the IBC 2024 Show!
 
 [@Lont](https://www.linkedin.com/company/infusevideo/)
 [#lont](https://www.linkedin.com/search/results/all/?keywords=%23lont)
@@ -61,10 +53,7 @@ still has some availability for meetings. [DM him to schedule a time][meet].
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    https://lont.ai/
-[meet]:   https://www.linkedin.com/in/ruudvanderlinden/
-
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-[ths]:     https://auth.metarex.media/ui/registration
-[thp]:     /project/treasure-hunt/
+

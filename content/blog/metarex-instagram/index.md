@@ -2,7 +2,7 @@
 title:       MetaRex is on Instagram
 linkTitle:   MetaRex is on Instagram
 date:        2025-04-07
-author:      MetaRex Media [@in](https://www.linkedin.com/company/metarex-media)
+author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:        ["Rexy"]
 description: MetaRex is on Instagram!
 ---

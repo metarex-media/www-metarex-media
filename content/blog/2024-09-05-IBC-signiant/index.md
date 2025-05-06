@@ -1,10 +1,11 @@
 ---
-title:       2024-09-05 Thank you Signiant
-linkTitle:   2024-09-05 Thank you Signiant
+title:       Thank you Signiant
+linkTitle:   Thank you Signiant
 date:        2024-09-05
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "Many thanks to all our Supporters, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true

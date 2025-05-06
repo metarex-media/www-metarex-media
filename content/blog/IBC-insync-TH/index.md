@@ -1,10 +1,11 @@
 ---
-title:       2024-09-11 Thank you Insync Technology
-linkTitle:   2024-09-11 Thank you Insync
+title:       Thank you Insync Technology
+linkTitle:   Thank you Insync
 date:        2024-09-11
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
+description: "Many thanks to all our Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -15,13 +16,7 @@ params:
 ---
 
 **[{{% param backer %}}][web]** is one of our wonderful partners and we
-couldn’t be successful without them. If you sign up to Rexy's fun **[IBC
-treasure hunt][ths]** then you'll have a chance of ***winning a cuddly Rexy!***
-when you visit them on their [booth]. The more partners and backers you visit,
-the greater chance you'll win on **Sunday 15<sup>th</sup> Sep** at **17:00** in
-the IBC [AI Zone][rxydraw] on the V-Nova booth. Sign up at
-[https://auth.metarex.media/ui/registration][ths]. Instructions on the [treasure hunt
-page][thp].
+couldn’t be successful without them and their support in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">
@@ -39,9 +34,6 @@ solutions and turnkey software applications. Based in Petersfield, UK, InSync
 has created a global network of embedded partners for its “InSync Inside”
 solutions. For more information, visit  [their website][web].
 
-**[{{% param backer %}}][web]** will be at IBC, so be sure to visit their
-[booth] in Hall 2 – **[2.C30]** to find out more about frame rates and format
-conversions!
 
 [@{{% param backer %}}]({{% param lin %}})
 [#InSync](https://www.linkedin.com/search/results/all/?keywords=%23insync)
@@ -60,9 +52,6 @@ conversions!
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 
 [web]:    {{% param web %}}
-[meet]:   https://www.thedpp.com/events/dpp-bt-drinks-reception-ibc/
-[booth]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=M&selectedBooth=2.C30
-[2.C30]:  https://ibc2024.mapyourshow.com/8_0/floorplan/?hallID=M&selectedBooth=2.C30
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy

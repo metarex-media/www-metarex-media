@@ -1,10 +1,11 @@
 ---
-title:       2024-08-21 Thank you nxtedition
-linkTitle:   2024-08-21 Thank you nxtedition
+title:       Thank you nxtedition
+linkTitle:   Thank you nxtedition
 date:        2024-08-21
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:     ["project",  "backers"]
 params:
   publish:
     linkedin:  true

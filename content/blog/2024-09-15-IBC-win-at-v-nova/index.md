@@ -4,7 +4,8 @@ linkTitle:   17:00 at V-Nova booth!
 date:        2024-09-15
 description: "{{% metarex %}} thanks all its Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+oldtags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -14,9 +15,9 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style = "text-align:center;"><span class = "ui red text">_Rexy's Treasure Hunt 2024 is completed_</span></p>**
+**<p style = "text-align:center;"><span class = "ui red text">_MetaRex Treasure Hunt 2024 is completed_</span></p>**
 
-Many thanks to all who took part in the [MetaRex Treasure Hunt](https://metarex.media/project/treasure-hunt/) at IBC 2024, and to all our Backers and Partners for their support! 
+Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and to all our Sponsers, Backers, Partners for their support! 
 
 A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
@@ -45,3 +46,5 @@ Go to the next blog post to find out who the winner was.....
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://auth.metarex.media/ui/registration
 [thp]:     /project/treasure-hunt/
+
+[MetaRex Treasure Hunt]: https://metarex.media/project/treasure-hunt/

@@ -1,10 +1,11 @@
 ---
-title:       2024-08-28 Thank you GlobalM
-linkTitle:   2024-08-28 Thank you GlobalM
+title:       Thank you GlobalM
+linkTitle:   Thank you GlobalM
 date:        2024-08-28
 description: "{{% metarex %}} thanks all its sponsors, backers and partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
+tags:        ["collaborations",  "event"]
+old tags:    ["project",  "backers"]
 params:
   publish:
     linkedin:  true
