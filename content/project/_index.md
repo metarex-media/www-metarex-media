@@ -105,7 +105,7 @@ right time.
 
 [01]: https://www.govinfo.gov/content/pkg/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c/pdf/GOVPUB-C13-de2599f27af453fcf0f525f99cebe66c.pdf
 [02]: https://www.tvtechnology.com/news/mxf-gets-ready-for-nab-are-you-ready-for-it-242793
-[03]: {{% relref "/blog/2019-07-20-ARRI-Open-Day/index.md" %}}
+[03]: {{% relref "/blog/ARRI-Open-Day/index.md" %}}
 
 {{</fo>}}
 <br>

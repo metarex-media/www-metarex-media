@@ -5,6 +5,7 @@ date:        2019-07-20
 description: The ARRI International Broadcast Day in 2019
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
+oldtags:     ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
 
 resources:
 - name: spec

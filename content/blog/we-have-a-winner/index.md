@@ -18,7 +18,7 @@ params:
 
 We have a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
 
-Congratulations to [Amy](https://www.linkedin.com/posts/metarex-media_rexy-activity-7276567164059303936-SPaK) from [France Télévisions](https://fr.linkedin.com/company/france-televisions?trk=public_profile_topcard-current-company) on winning a cuddly **Rexy** in our Treasure Hunt at IBC 2024. 
+Congratulations to [Amy] from [France Télévisions] on winning a cuddly **Rexy** in our Treasure Hunt at IBC 2024. 
 
 Many thanks to all our supporters and everyone who took part!
 
@@ -42,3 +42,8 @@ Many thanks to all our supporters and everyone who took part!
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
 [ths]:     https://auth.metarex.media/ui/registration
+
+[Amy]: https://www.linkedin.com/posts/metarex-media_rexy-activity-7276567164059303936-SPaK
+[France Télévisions]: https://fr.linkedin.com/company/france-televisions?trk=public_profile_topcard-current-company
+
+[contact]: {{< relref "/contact" >}}

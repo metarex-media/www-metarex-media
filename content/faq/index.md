@@ -25,7 +25,7 @@ tags:        ["faq"]
 
 {{< fo t = "block"
     id   = "block1"
->}}
+/>}}
 
 # Project FAQ
 
@@ -64,7 +64,7 @@ Who doesn’t love saving some time and money!
 
 {{< fo t = "block"
     id   = "block2"
->}}
+/>}}
 
 # Engineering FAQ
 
@@ -92,7 +92,7 @@ You can view the MetaRex Registry here.
 
 {{< fo t = "block"
     id   = "block3"
->}}
+/>}}
 
 # Try the code for free! 
 
@@ -116,7 +116,6 @@ Otherwise, you can book a meeting with us if you or your company have any issues
 Or fill in our easy Contact Form if you have any questions about MetaRex. 
 We would be happy to help! 
 
-{{< /fo >}}
 
 
 

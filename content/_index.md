@@ -43,6 +43,29 @@ date:      2024-08-13
     link       = "/project/faq/"
   />}}
   {{< /fo >}}
+{{< fo t = "feature-group" >}}
+  {{< fo t = "feature"
+    blockClass = "ui green segment"         divClass = blockClass
+    class      = "ui green message"         msgClass = class
+    header     = "VC6"          name = header
+    src        = "img/dino/mrx-logo.svg"
+    link       = "rexy/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui yellow segment"        divClass = blockClass
+    class      = "ui yellow message"        msgClass = class
+    header     = "Techex"         name = header
+    src        = "project/introduction/featured-fedex.jpg"
+    link       = "project/introduction/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"           divClass = blockClass
+    class      = "ui red message"           msgClass = class
+    header     = "AI"             name = header
+    src        = "docs/studies/case-studies.webp"
+    link       = "docs/studies/"
+  />}}
+  {{< /fo >}}
 
 {{< fo t = "item-group" >}}
 <!-- ---------------------------------------------------------------------- -->
@@ -51,7 +74,7 @@ date:      2024-08-13
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< fo t = "item-blog-group" count = 4 skip = 2 />}}
+{{< fo t = "item-blog-group" count = 4 skip = 0 />}}
 
 {{< fo t = "item-include"
     header = "BUG - without header the include fails"
