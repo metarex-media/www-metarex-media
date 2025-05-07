@@ -13,8 +13,7 @@ params:
 
 <img class="ui centered bordered rounded image" src="/img/blog/sponthanks-2024-08-10.png" alt="Thank you sponsors">
 
-Many thanks to our great sponsors, backers and partners. We couldn't do this
-without you.
+Many thanks to our great sponsors, backers and partners. We couldn't do this without you.
 
 Over the next few weeks we'll be telling you about our sponsors, their metadata
 products and services and how {{% metarex %}} fits into their world. You can

@@ -4,7 +4,7 @@ linkTitle:   Thank you Qibb
 date:        2024-08-27
 description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:       ["project",  "backers"]
+tags:        ["project",  "backers"]
   publish:
     linkedin:  true
 ---

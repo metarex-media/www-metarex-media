@@ -1,10 +1,11 @@
 ---
-title:       2024-03-27 Virtual Production
-linkTitle:   2024-03-27 Virtual Production
+title:       Virtual Production
+linkTitle:   Virtual Production
 date:        2024-03-27
-description: "{{% metarex %}} needs you - sign up and make metadata flow!"
+description: ""
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project", "smpte", "osvp"]
+tags:        []
+oldtags:     ["project", "smpte", "osvp"]
 params:
   publish:
     linkedin:  true
@@ -26,11 +27,7 @@ params:
 
 ## {{% metarex %}} on the set
 
-The [award winning][0], philanthropic, non-profit {{%  metarex %}} project
-makes metadata flow. In the rapidly changing world of On Set Virtual Production
-we already have too many incompatible formats and protocols and the poor
-setup and data wrangling crew perform miracles on every shoot do get things
-stable and keep them stable until it's time for tear down.
+The [award winning][0], philanthropic, non-profit {{%  metarex %}} project makes metadata flow. In the rapidly changing world of On Set Virtual Production we already have too many incompatible formats and protocols and the poor setup and data wrangling crew perform miracles on every shoot do get things stable and keep them stable until it's time for tear down.
 
 Play the video on the left to hear the views from the [SMPTE RIS OSVP][1]
 experts on the debate between Standards & Products. We believe, like many
