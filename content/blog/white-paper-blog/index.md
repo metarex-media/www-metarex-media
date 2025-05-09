@@ -2,9 +2,10 @@
 title:       White Paper Blog
 linkTitle:   White Paper Blog
 date:        2024-03-21
-description: "{{% metarex %}} needs you - sign up and make metadata flow!"
+description: "Why is {{% metarex %}} useful?"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "award"]
+tags:        ["sustainability", "project"]
+oldtags:     ["project",  "award"]
 params:
   publish:
     linkedin:  true
@@ -15,39 +16,29 @@ params:
   src   = "featured-nabshow-2024.png"
   srcOn = "left"
   srcWidth = 0.2
+  alt = "nab2024 poster"
 >}}
 <!-- markdownlint-disable MD025 -->
 
-## {{% metarex %}} needs you
+## {{% metarex %}} - one of the many ways that it can benefit you and your company
 
-The [award winning][0], philanthropic, non-profit {{%  metarex %}} project
-makes metadata flow. The more metadata you have, the more you will benefit. But
-we need more [backers][4] to get the project over the finish line. Ideally we'd
-like 2 more **<span class="ui violet text">silver</span>** [backers][4] or 15
-more **<span class="ui brown text">regular</span>** [backers][4]; but first,
-let's lay out our objectives:
+The [award winning][0], **{{% metarex %}} Project** makes metadata flow. 
+The more metadata you have, the more you will benefit.  
+But how?  Here are our top 10 reasons (there are plenty more!): 
 
-1. 🆓 {{<  metarex >}} is a _**<span class="ui red text">free</span>**_
-   [software framework][1]
-2. 😎 {{%  metarex %}} lets you define _your own_ metadata.
-3. 📦 {{%  metarex %}} [defines a container][2] for your metadata.
-4. 🌐 {{%  metarex %}} maps containers to many types of network so that you
-   get metadata transport for _**<span class="ui red text">free</span>**_!
-5. 🆔 {{%  metarex %}} gives you a [unique Id][3] for your new **_type_** of
-   metadata.
-6. 📢 {{%  metarex %}} lets you publish _services_ for your metadata
-   **_type_**.
-7. 💲 You can _**<span class="ui red text">monetize</span>**_ those _services_.
-8. 🔎 {{%  metarex %}} lets you discover _services_ for _unknown_ metadata
-   types.
-9. 👨‍👩‍👧‍👧 {{%  metarex %}} supports **all** types of metadata including <span
-   class="ui red text">text & binary</span>, <span class="ui green
-   text">timeline & static</span>, <span class="ui brown text">frame locked,
-   sample locked & stochastic</span>, <span class="ui violet text">single
-   stream & mixed streams</span> of metadata.
-10. ⚖️ {{%  metarex %}} is built on standard tools, standard formats & standard
-    frameworks.
-11. 😎 {{%  metarex %}} can run in a product, on-premise or globally.
+1. {{% metarex %}} lets you define **_your own_** metadata.
+2. {{% metarex %}} [defines a container][2] for your metadata.
+3. {{% metarex %}} maps containers to many types of network so that you get metadata transport for _**<span class="ui purple text">free</span>**_!
+4. {{% metarex %}} gives you a [unique ID][3] for your new **_type_** of metadata.
+5. {{% metarex %}} lets you publish _services_ for your metadata _type_.
+6. You can **_monetize_** those services.
+7. {{% metarex %}} lets you discover _services_ for _unknown_ metadata types.
+8. {{% metarex %}} supports **all** types of metadata including text & binary, timeline & static, frame locked, sample locked & stochastic, single stream & mixed streams of metadata.
+9. {{% metarex %}} is built on standard tools, standard formats and standard frameworks.
+10. {{% metarex %}} can run in a product, on-premise or globally.
+
+**Bonus one** {{% metarex >}} is a _**<span class="ui purple text">free</span>**_
+   [software framework][1]!
 
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
 [1]: https://github.com/metarex-media
@@ -61,6 +52,7 @@ let's lay out our objectives:
 {{< fo t = "block"
   id    = "why"
   src   = "money.png"
+  alt = "image of money"
   srcOn = "right"
   srcWidth = 0.2
   srcClass ="ui small image"
@@ -76,9 +68,7 @@ always gets lost!
 It's often faster and easier to invent your own metadata than it is to use
 someone else's - often because there's not a good description of what the
 metadata is. {{% metarex %}} makes those descriptions readily available and so
-reduces the amount of engineering for metadata interchange and introduces a new
-monetization opportunity between metadata creators and consumers - _even if the
-two companies have never met_.
+reduces the amount of engineering for metadata interchange and introduces a new monetization opportunity between metadata creators and consumers - _even if the two companies have never met_.
 
 {{< /fo >}}
 
@@ -88,7 +78,7 @@ two companies have never met_.
 
 ### Some examples
 
-Here are some examples from the {{% metarex %}} use-case :
+Here are some examples from the {{% metarex %}} Use Case :
 
 <table class="ui celled definition table">
   <thead class="center aligned">
@@ -97,7 +87,6 @@ Here are some examples from the {{% metarex %}} use-case :
     <th>Live<br>Production</th>
     <th>Virtual<br>Production</th>
     <th>Post<br>Production</th>
-    <th>Distribution</th>
     <th>Distribution</th>
     </tr>
     </thead>
@@ -145,9 +134,7 @@ IDENTICAL XML**.
 
 If you're not familiar with this problem, just find an engineer who's
 implemented an interoperable subtitling transport system, then buy them a drink
-and ask <span class="ui blue text">"_Sounds like moving a few bytes per frame
-is pretty easy, isn't it?_"</span> then sit back and enjoy the show for the
-next hour or two while they let off steam.
+and ask _"Sounds like moving a few bytes per frame is pretty easy, isn't it?_" then sit back and enjoy the show for the next hour or two while they let off steam.
 
 <table class="ui celled definition table">
   <thead class="center aligned">
@@ -156,7 +143,6 @@ next hour or two while they let off steam.
     <th>Live<br>Production</th>
     <th>Virtual<br>Production</th>
     <th>Post<br>Production</th>
-    <th>Distribution</th>
     <th>Distribution</th>
     </tr>
     </thead>
@@ -183,9 +169,8 @@ next hour or two while they let off steam.
       number of products in each segment by the number of protocols and the
       number of file formats and then take some arbitrary engineering cost for
       20 weeks of engineering (8 for sending metadata, 8 for receiving and 4
-      for ongoing version upgrades and support). I've called this the (very
-      rough) <em>integration factor</em> below and, yes, I've ignored volume
-      of transactions.
+      for ongoing version upgrades and support). 
+      I've called this the (very rough) <em>Integration Factor</em> below and, yes, I've ignored volume of transactions.
       </td>
     </tr>
     <tr>
@@ -206,7 +191,7 @@ next hour or two while they let off steam.
   </tbody>
 </table>
 
-**<span class="ui red header text">There must be a better way!</span>**
+**<span class="ui purple header text">There must be a better way!</span>**
 
 {{< sitelinks >}}
 {{< /fo >}}
@@ -218,19 +203,13 @@ next hour or two while they let off steam.
 ### Compare with {{% metarex %}}
 
 The {{% metarex %}} framework requires someone to register meta-meta-data that
-allows a decoding device to say <span class="ui blue text">"_Aha, there is
-NinJS in the MetaRex container_"</span>. It allows a network interface to say
-<span class="ui blue text">"_Aha, I know how to put MetaRex containers on my
-network_"</span>.
+allows a decoding device to say _Aha, there is NinJS in the MetaRex container_". It allows a network interface to say _"Aha, I know how to put MetaRex containers on my network"_.
 
 The {{% metarex %}} framework also allows transformers to be registered that
 can perform a canonical conversion from format A to format B (and possibly
-charge for it), so if your application receives NewsML but needs NinJS then you
-can write your own or try a 3rd party one BEFORE YOU WRITE CODE.
+charge for it), so if your application receives NewsML but needs NinJS then you can write your own or try a 3rd party one **_BEFORE YOU WRITE CODE_**.
 
-The integration factor for {{% metarex %}} is simply the number of base formats
-& networks added together rather than being multiplied together and then
-multiplied by all the implementations.
+The integration factor for {{% metarex %}} is simply the number of base formats & networks added together rather than being multiplied together and then multiplied by all the implementations.
 
 <table class="ui celled definition table">
   <thead class="center aligned">
@@ -239,7 +218,6 @@ multiplied by all the implementations.
     <th>Live<br>Production</th>
     <th>Virtual<br>Production</th>
     <th>Post<br>Production</th>
-    <th>Distribution</th>
     <th>Distribution</th>
     </tr>
     </thead>
@@ -273,9 +251,7 @@ multiplied by all the implementations.
 I've tweaked the non-{{% metarex %}} number to compensate for the range
 of products available in each segment.
 
-What I've not included in the numbers is how {{% metarex %}} can give an almost
-GitHub-like robustness to versioning and updating metadata flow. That's for a
-future study.
+What I've not included in the numbers is how {{% metarex %}} can give an almost GitHub-like robustness to versioning and updating metadata flow. That's for a future study.
 
 {{< sitelinks >}}
 {{< /fo >}}
@@ -284,12 +260,11 @@ future study.
    id    = "live"
 >}}
 
-### So who benefits?
+### So who benefits from this?
 
-**<span class="ui red header text">Everyone Benefits!</span>**
+**<span class="ui green header text">Everyone benefits!</span>**
 
-{{% metarex %}} enables a generic metadata supply chain with the rigour that we
-are starting to develop with video and audio.
+{{% metarex %}} enables a generic metadata supply chain with the rigour that we are starting to develop with video and audio.
 
 * **Content Creators** can now track and convert metadata from camera to screen
 * **Product Vendors** can now integrate more metadata types for less initial
@@ -303,14 +278,9 @@ are starting to develop with video and audio.
 * **The Industry** can benefit by spending the money saved by {{% metarex %}}
   on creating rich, metadata driven workflows instead of just leaving the
   metadata on the floor
-* **The planet** might benefit if we spent microWatts of energy remembering the
-  source metadata rather than spending kiloWatts of energy guessing what was
-  lost by using an AI algorithm
+* **The planet** might benefit if we spent microWatts of energy remembering the source metadata rather than spending kiloWatts of energy guessing what was lost by using an AI algorithm
 
-The {{% metarex %}} project needs **you!**
-Please become a [backer][3] - We're offering a
-10% discount until April 30th 2024. We will happily shout your company's name
-across the globe if you can help us get the project over the finish line.
+If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact] us. 
 
 Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth
 [W.1931][2]
@@ -318,6 +288,7 @@ Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth
 [1]: https://signiant.com/
 [2]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
 [3]: /backers/
+[contact]:  {{< relref "/contact" >}}
 
 {{< sitelinks >}}
 {{< /fo >}}

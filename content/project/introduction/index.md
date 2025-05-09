@@ -44,9 +44,7 @@ share metadata between different systems, and it will also make it easier to
 access metadata from different sources.
 
 {{< metarex >}} will be **extensible**, meaning new metadata formats can be
-easily added to the framework. This will ensure that {{< metarex >}} can support
-the latest metadata standards, and it will also make it easier to add new
-metadata fields to the framework.
+easily added to the framework. This will ensure that {{< metarex >}} can support the latest metadata standards, and it will also make it easier to add new metadata fields to the framework.
 
 ## Who is behind the {{< metarex >}} project and how is it funded?
 
@@ -64,8 +62,10 @@ We can help you streamline your workflows and connect you with our growing
 network of companies. Your involvement will give you the opportunity to adapt
 the MetaRex framework to your requirements and allow you to be first to market.
 
-Why not [arrange a meeting] and see how we can help?
+Why not [contact us] and see how we can help?
 
-You can [download a PDF](/downloads/introduction-to-metarex.pdf) of this document
+You can [download a PDF](/downloads/introduction-to-metarex.pdf) of this document. 
 
 {{% sitelinks %}}
+
+[contact us]: {{< relref "/contact" >}}

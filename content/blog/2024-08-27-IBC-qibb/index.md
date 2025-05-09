@@ -1,15 +1,15 @@
 ---
-title:       Thank you Qibb
-linkTitle:   Thank you Qibb
-date:        2024-08-27
-description: "Many thanks to all our supporters with the Treasure Hunt"
-author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
+title:        Thank you Qibb
+linkTitle:    Thank you Qibb
+date:         2024-08-27
+description:  "Thank you to all who have taken part"
+author:      Bruce Devlin
 tags:        ["project",  "backers"]
   publish:
     linkedin:  true
 ---
 
-**[qibb][web]** is one of our wonderful backers and we couldn’t be successful
+**[qibb][web]** is one of our wonderful Backers and we couldn’t be successful
 without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
 you'll have a chance of ***winning a cuddly Rexy!***
 

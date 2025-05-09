@@ -2,40 +2,31 @@
 title:       Virtual Production
 linkTitle:   Virtual Production
 date:        2024-03-27
-description: ""
+description: "The rapidly changing world of On Set Virtual Production"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        []
+tags:        ["sustainability", "project",  "workflow"]
 oldtags:     ["project", "smpte", "osvp"]
 params:
   publish:
     linkedin:  true
 ---
 
-<div class="ui grid">
-<div class="ui eight wide column">
-<iframe width="100%" height="315"
- src="https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381"
- title="NAB 2023 OSVP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
- referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="ui eight wide column">
 
 {{< fo t = "block"
   id    = "summary"
 >}}
 <!-- markdownlint-disable MD025 -->
 
-## {{% metarex %}} on the set
+## {{% metarex %}} On Set Virtual Production
 
-The [award winning][0], philanthropic, non-profit {{%  metarex %}} project makes metadata flow. In the rapidly changing world of On Set Virtual Production we already have too many incompatible formats and protocols and the poor setup and data wrangling crew perform miracles on every shoot do get things stable and keep them stable until it's time for tear down.
+The [award winning][0], philanthropic, non-profit {{%  metarex %}} Project makes metadata flow. 
+In the rapidly changing world of On Set Virtual Production we already have too many incompatible formats and protocols and the poor setup and data wrangling crew perform miracles on every shoot do get things stable and keep them stable until it's time for tear down.
 
-Play the video on the left to hear the views from the [SMPTE RIS OSVP][1]
-experts on the debate between Standards & Products. We believe, like many
-of the points raised in the video, that products will lead the way and standards
-will eventually follow.
+Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on the debate between Standards & Products. We believe, like many of the points raised in the video, that products will lead the way and standards will eventually follow.
 
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
 [1]: https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production
+[video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
 {{< /fo >}}
 
@@ -45,6 +36,7 @@ will eventually follow.
 {{< fo t = "block"
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
+  alt = "photo of cameraman"
   srcOn = "right"
   srcWidth = 0.3
   srcClass ="ui small image"
@@ -92,20 +84,11 @@ taking over.
 >}}
 
 <!-- markdownlint-disable MD026 -->
-### We Need You!
 
 We'll be showing {{% metarex %}} use-case examples for Virtual Production at
-NAB. You'll be able to play with the examples online - even if you're not at
-the show.
-
-Most importantly - we need you! We need more [backers][b] to get the project
-over the finish line. Ideally we'd like 2 more **<span class="ui violet
-text">silver</span>** [backers][b] or 15 more **<span class="ui brown
-text">regular</span>** [backers][b] so that we can finish this phase of
-delivering our [free software][f] and make it production ready for you to use.
+NAB this year. You will be able to play with the examples online - even if you're not at the show.
 
 [f]: https://github.com/metarex-media
-[b]: /backers/
 
 {{< /fo >}}
 
@@ -113,10 +96,11 @@ delivering our [free software][f] and make it production ready for you to use.
   id    = "live"
 >}}
 
-### So who benefits? <span class="ui red text">Everyone Benefits!</span>
+## So who benefits from this?
 
-{{% metarex %}} enables a generic metadata supply chain with the rigour that we
-are starting to develop with video and audio.
+**<span class="ui green header text">Everyone benefits!</span>**
+
+{{% metarex %}} enables a generic metadata supply chain with the rigour that we are starting to develop with video and audio.
 
 * **Content Creators** can now track and convert metadata from camera to screen
 * **Product Vendors** can now integrate more metadata types for less initial
@@ -130,14 +114,9 @@ are starting to develop with video and audio.
 * **The Industry** can benefit by spending the money saved by {{% metarex %}}
   on creating rich, metadata driven workflows instead of just leaving the
   metadata on the floor
-* **The planet** might benefit if we spent microWatts of energy remembering the
-  source metadata rather than spending kiloWatts of energy guessing what was
-  lost by using an AI algorithm
+* **The planet** might benefit if we spent microWatts of energy remembering the source metadata rather than spending kiloWatts of energy guessing what was lost by using an AI algorithm
 
-The {{% metarex %}} project needs **you!** Please become a [backer][b] - We're
-offering a 10% discount until April 30th 2024. We will happily shout your
-company's name across the globe if you can help us get the project over the
-finish line.
+If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact] us. 
 
 Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
 [W.1931][n]

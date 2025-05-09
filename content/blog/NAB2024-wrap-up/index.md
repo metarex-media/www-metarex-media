@@ -39,7 +39,7 @@ See you all at MPTS in London 15th - 16th May 2024!
 {{< /fo >}}
 
 <div class="ui grid">
-<div class="ui center middle aligned stackable eight wide  column">
+<div class="ui center middle aligned stackable eight wide column">
 <img src="nab2024-00.jpg" class="ui fluid image" alt="nab cyclists">
 <div class="ui center aligned message">
 Hoover Dam Bike Ride
@@ -49,6 +49,16 @@ Hoover Dam Bike Ride
 <img src="nab2024-03.jpg" class="ui fluid image"  alt="imfug presentation on stage">
 <div class="ui center aligned message">
 IMF QC Panel
+</div>
+</div>
+<div class="ui center middle aligned stackable eight wide column">
+<img src="nab2024-02.jpg" class="ui fluid image" alt="sweep sweep">
+<div class="ui center aligned message">
+</div>
+</div>
+</div class="ui center middle aligned stackable eight wide column">
+<img src="nab2024-04.jpg" class="ui fluid image" alt="nab2024 show floor">
+<div class="ui center aligned message">
 </div>
 </div>
 </div>
