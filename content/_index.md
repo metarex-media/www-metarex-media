@@ -45,25 +45,27 @@ date:      2024-08-13
   {{< /fo >}}
 {{< fo t = "feature-group" >}}
   {{< fo t = "feature"
-    blockClass = "ui green segment"         divClass = blockClass
-    class      = "ui green message"         msgClass = class
-    header     = "VC6"          name = header
+    blockClass = "ui purple segment"         divClass = blockClass
+    class      = "ui purple message"         msgClass = class
+    header     = "VC-6 - improving AI training"          name = header
     src        = "img/dino/mrx-logo.svg"
-    link       = "rexy/"
+    link       = "https://vc6.metarex.media"
   />}}
   {{< fo t = "feature"
-    blockClass = "ui yellow segment"        divClass = blockClass
-    class      = "ui yellow message"        msgClass = class
-    header     = "Techex"         name = header
-    src        = "project/introduction/featured-fedex.jpg"
-    link       = "project/introduction/"
+    blockClass = "ui purple segment"                       divClass = blockClass
+    class      = "ui purple message"                       msgClass = class
+    header     = "Case Study - Live Production Monitoring" name = header
+    src        = "docs/studies/monitoring/mrx-worker2.svg
+    alt        = "docs/studies/monitoring/mrx-worker2.svg" 
+    link       = "docs/studies/monitoring"
   />}}
   {{< fo t = "feature"
-    blockClass = "ui red segment"           divClass = blockClass
-    class      = "ui red message"           msgClass = class
-    header     = "AI"             name = header
-    src        = "docs/studies/case-studies.webp"
-    link       = "docs/studies/"
+    blockClass = "ui purple segment"           divClass = blockClass
+    class      = "ui purple message"           msgClass = class
+    header     = "Case Study - AI efficiency"             name = header
+    src        = "docs/studies/ai-content-at-rest/aicar-basic-flow.png"
+    alt = "flow diagram of aicar"  
+    link       = "docs/studies/ai-content-at-rest/"
   />}}
   {{< /fo >}}
 
