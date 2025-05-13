@@ -4,7 +4,8 @@ linkTitle:   "Collaborations"
 date:        2025-05-28
 type:        docs
 weight:      700
-tags: ["backers"]
+tags:     ["collaborations"]
+oldtags:  ["backers"]
 ---
 
 {{< fo t = "banner"

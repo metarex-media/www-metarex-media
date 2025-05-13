@@ -37,7 +37,7 @@ But how?  Here are our top 10 reasons (there are plenty more!):
 9. {{% metarex %}} is built on standard tools, standard formats and standard frameworks.
 10. {{% metarex %}} can run in a product, on-premise or globally.
 
-**Bonus one** {{% metarex >}} is a _**<span class="ui purple text">free</span>**_
+**Bonus one** {{% metarex %}} is a _**<span class="ui purple text">free</span>**_
    [software framework][1]!
 
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/

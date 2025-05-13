@@ -17,15 +17,17 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui green segment"         divClass = blockClass
     class      = "ui green message"         msgClass = class
-    header     = "Why a Dinosaur?"          name = header
+    header     = "Why a Dinosaur logo?"          name = header
     src        = "img/dino/mrx-logo.svg"
+    alt        = "metarex logo"
     link       = "rexy/"
   />}}
   {{< fo t = "feature"
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
-    header     = "What does it Do?"         name = header
+    header     = "What does MetaRex do?"         name = header
     src        = "project/introduction/featured-fedex.jpg"
+    alt        = "dino stacking a box"
     link       = "project/introduction/"
   />}}
   {{< fo t = "feature"
@@ -33,6 +35,7 @@ date:      2024-08-13
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
     src        = "docs/studies/case-studies.webp"
+    alt        = "dino doing research"
     link       = "docs/studies/"
   />}}
   {{< fo t = "feature"
@@ -40,31 +43,33 @@ date:      2024-08-13
     class      = "ui blue message"          msgClass = class
     header     = "What's the benefit?"      name = header
     src        = "/project/admin/metarex-ltd/featured-boardroom.jpg"
+    alt        = "dino in a suit"
     link       = "/project/faq/"
   />}}
   {{< /fo >}}
 {{< fo t = "feature-group" >}}
   {{< fo t = "feature"
-    blockClass = "ui purple segment"         divClass = blockClass
-    class      = "ui purple message"         msgClass = class
-    header     = "VC-6 - improving AI training"          name = header
-    src        = "img/dino/mrx-logo.svg"
+    blockClass = "ui red segment"         divClass = blockClass
+    class      = "ui pink message"         msgClass = class
+    header     = "Case Study - Live Production"     name = header
+    src        = "docs/studies/monitoring/monitoring-generic.png"
+    alt        = "monitoring-generic"
+    link       = "/studies/monitoring"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"                   divClass = blockClass
+    class      = "ui pink message"                   msgClass = class
+    header     = "VC-6"                    name = header
+    src        = "img/vc6.png"
+    alt        = "vc6 logo"
     link       = "https://vc6.metarex.media"
   />}}
   {{< fo t = "feature"
-    blockClass = "ui purple segment"                       divClass = blockClass
-    class      = "ui purple message"                       msgClass = class
-    header     = "Case Study - Live Production Monitoring" name = header
-    src        = "docs/studies/monitoring/mrx-worker2.svg
-    alt        = "docs/studies/monitoring/mrx-worker2.svg" 
-    link       = "docs/studies/monitoring"
-  />}}
-  {{< fo t = "feature"
-    blockClass = "ui purple segment"           divClass = blockClass
-    class      = "ui purple message"           msgClass = class
-    header     = "Case Study - AI efficiency"             name = header
-    src        = "docs/studies/ai-content-at-rest/aicar-basic-flow.png"
-    alt = "flow diagram of aicar"  
+    blockClass = "ui red segment"           divClass = blockClass
+    class      = "ui pink message"           msgClass = class
+    header     = "Case Study - AI efficiency"
+    src        = "docs/studies/ai-content-at-rest/aicar.svg"
+    alt        = "monitoring-generic"                                     name = header
     link       = "docs/studies/ai-content-at-rest/"
   />}}
   {{< /fo >}}
@@ -76,12 +81,13 @@ date:      2024-08-13
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< fo t = "item-blog-group" count = 4 skip = 0 />}}
+{{< fo t = "item-blog-group" count = 4 skip = 3 />}}
 
 {{< fo t = "item-include"
     header = "BUG - without header the include fails"
     from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexycover-240806.jpg" 
+    src = "project/coverpages/rexycover-240806.jpg"
+    alt = "rexycover page"
 />}}
 
 {{< fo t = "item-include"
@@ -95,11 +101,13 @@ date:      2024-08-13
 {{< fo t = "item-include"
     from = "/project/flow-diagram.md" 
     src = "/img/mrx-flow.png" 
+    alt = "flow diagram"
 />}}
 
 {{< fo t = "item-include"
     from = "/project/Admin/backer-list.md"
     src = "/img/dino/mrx-logo.svg" 
+    alt = "rexy logo"
 />}}
 
 <!-- {{< fo t = "item-include" 

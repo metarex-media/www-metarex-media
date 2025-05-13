@@ -34,6 +34,6 @@ If these case studies sound like an issue you are having, then get in [contact] 
 
 [01]:   {{% relref "/docs/specifications/introduction/" %}}
 [02]:   {{% relref "/docs/specifications/mrx-container-spec/" %}}
-[04]:   {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
+[04]:   {{% relref "/blog/white-paper-blog/" %}}
 
 [contact]: {{< relref "/contact" >}}

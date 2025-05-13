@@ -1,11 +1,13 @@
 ---
-title:       MetaRex.media Ltd
-linkTitle:   MetaRex.media Ltd
-date:        2024-07-03
+title:       "Introduction" 
+linkTitle:   MetaRex
+date:        2025-05-11
 
 ---
-{{% metarex %}} is a UK Limited Company that exists for the following
-reasons:
+{{% metarex %}} was created for the following reasons:
+
+
+{{% metarex %}} is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow. This will make it easier to manage metadata and ensure that it is accurate and consistent whenever video content is processed, broadcast, or distributed.
 
 1. Raise funds to create the {{% metarex %}} Open Source Software
 2. Maintain a board until end 2024
@@ -25,8 +27,7 @@ by the Gold & Silver Tier backers.
 The work plan is managed in working groups that comprise small, targetted work
 packages that result in:
 
-1. Open Source Code including SDK, apps, schemas, encoding, registration &
-   processing.
+1. Open Source Code including SDK, apps, schemas, encoding, registration & processing.
 1. Open Source Hardware Definitions.
 1. Public Domain Data (for testing, registration, operational use).
 1. Specification documents - machine readable where possible.

@@ -2,11 +2,10 @@
 title:        Thank you Qibb
 linkTitle:    Thank you Qibb
 date:         2024-08-27
-description:  "Thank you to all who have taken part"
-author:      Bruce Devlin
-tags:        ["project",  "backers"]
-  publish:
-    linkedin:  true
+description:  "A specail MetaRex thank you to all our sponsers, backers and partners"
+author:       Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
+tags:         ["collaborations", "event"]
+oldtags:      ["project", "event"]
 ---
 
 **[qibb][web]** is one of our wonderful Backers and we couldn’t be successful

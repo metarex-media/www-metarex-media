@@ -38,7 +38,6 @@ Thanks to all who took part - we hoped you enjoyed the **_MetaRex Treasure Hunt_
 [#rexytreasurehunt](https://www.linkedin.com/search/results/all/?keywords=%23rexytreasurehunt)
 [#dinorexy](https://www.linkedin.com/search/results/all/?keywords=%23dinorexy)
 
-<i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
 <i class = "linkedin icon"></i>[@metarex][limrx]
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
 

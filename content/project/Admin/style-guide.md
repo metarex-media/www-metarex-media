@@ -1,19 +1,20 @@
 ---
 title:       metarex.media Style guide
-linkTitle:   Style guide
+linkTitle:   Style Guide
 date:        2022-11-25
-description: Colors, Fonts and images to help promote metarex.media.
+description: Colours, Fonts and images to help promote MetaRex
 
 url:         "/style"
 
-tags:        ["style"] 
+tags:       ["rexy"] 
+oldtags:    ["style"] 
 ---
 
-### Rex the Dinosaur
+### Rexy the Dinosaur
 
-The Dinosaur is available in a variety of flavours:
+MetaRex's logo.  This is available in a variety of styles:
 
-* **simple icon**: 
+* **Simple icon**: 
   [svg](/img/dino/mrx-logo.svg),
   [png 100px](/img/dino/mrx-logo-0100.png),
   [png 300px](/img/dino/mrx-logo-0300.png),
@@ -37,16 +38,16 @@ The Dinosaur is available in a variety of flavours:
   [png 300px](/img/dino/mrx-splash-0300.png)
   [png 1000ox](/img/dino/mrx-splash-1000.png)
   [jpg 50%](/img/dino/mrx-splash.jpg)
-* **Colored Splash Card**:
+* **Coloured Splash Card**:
   [svg](/img/dino/mrx-splash-color.svg),
   [png 100px](/img/dino/mrx-splash-color-0100.png),
   [png 300px](/img/dino/mrx-splash-color-0300.png)
   [png 1000ox](/img/dino/mrx-splash-color-1000.png)
   [jpg 50%](/img/dino/mrx-splash-color.jpg)
 
-### colors
+### Colours
 
-The palette is pretty simple to look cartoon-like and based on 4 colors
+The palette is pretty simple to look cartoon-like and based on four colours
 
 * @amber: `#c2a649`
 * @purple: `#9A3A72`
@@ -61,8 +62,7 @@ The palette is pretty simple to look cartoon-like and based on 4 colors
   * dark cyan `#009999`
 
 
-Black text and white backgrounds (or the inverse) should mostly work. Derived
-colors are computed to give decent cartoon contrast:
+Black text and white backgrounds (or the inverse) should mostly work. Derived colours are computed to give decent cartoon contrast:
 
 * @dinoBody:  _lighten(@green, 40%)_ =  `#b5d690`
 * @dinoEye:  _spin(@purple, 30)_ = `#9a3a42`
@@ -70,4 +70,4 @@ colors are computed to give decent cartoon contrast:
 * @amberSky:   _lighten(@amber, 40%)_ = `#f5f1e2;`
 * @purpleGround: _lighten(@purple, 25%)_ = `#d083b0;`
 
-Other shades / compliments calculated as needed
+Other shades / compliments calculated as needed. 

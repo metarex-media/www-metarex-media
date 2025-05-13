@@ -78,7 +78,7 @@ you can inspect the register using the API [here][reg].
 [01]: {{% relref "/docs/specifications/introduction/" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}
 [03]: https://github.com/metarex-media/mrx-container/issues
-[04]: {{% relref "/blog/2024-03-21-white-paper-blog" %}}
+[04]: {{% relref "/blog/white-paper-blog" %}}
 
 [rux]:  https://metarex.media/appapp/reg
 [reg]:  https://metarex.media/appreg

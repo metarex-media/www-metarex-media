@@ -14,11 +14,7 @@ tags: ["status"]
     class = "ui center aligned olive message"
 />}}
 
-{{% metarex %}} is looking for more [backers] to create a financial reserve
-from which we can give out grants to engineering teams to create the Open
-Source that we need to enable free tooling for all. Please make a small
-financial or engineering contribution if a working global media meta data
-ecosystem is of interest to you or your company.
+{{% metarex %}} is looking for more [backers] to create a financial reserve from which we can give out grants to engineering teams to create the Open Source that we need to enable free tooling for all. Please make a small financial or engineering contribution if a working global media meta data ecosystem is of interest to you or your company.
 
 ```mermaid
 gantt

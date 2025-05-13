@@ -16,9 +16,10 @@ params:
 <div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
 
 {{< fo t = "image-fluid"  
-    src = "/" 
+    src = "/img/mrx-flow.png" 
     name = "The MetaRex Flow Diagram 2024" 
     id = "showCaption" 
+    alt = "metarex flow diagram"
 >}}
 
 {{% metarex %}} is like Fedex for metadata.

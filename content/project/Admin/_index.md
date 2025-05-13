@@ -10,7 +10,8 @@ menu:
     parent: project
     weight: 900
 
-tags:        ["docs", "project", "reference"]
+tags:        
+oldtags:    ["docs", "project", "reference"]
 ---
 
 {{% pageinfo %}}
