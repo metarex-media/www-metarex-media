@@ -4,10 +4,10 @@ go 1.24.0
 
 replace github.com/mrmxf/clog => ../../pub-mrmxf/clog
 
+require github.com/mrmxf/clog v0.7.7
+
 require (
 	github.com/go-chi/chi/v5 v5.2.1 // indirect
-	github.com/mrmxf/clog v0.7.7 // indirect
-	github.com/mrmxf/fohuw v0.4.3 // indirect
 	github.com/samber/slog-chi v1.14.0 // indirect
 	go.opentelemetry.io/otel v1.29.0 // indirect
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect

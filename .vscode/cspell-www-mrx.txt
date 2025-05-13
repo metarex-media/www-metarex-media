@@ -80,6 +80,7 @@ GOHOSTARCH
 GOHOSTOS
 golangci
 goldmark
+gommi
 gommon
 GOPATH
 graymeta

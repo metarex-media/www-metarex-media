@@ -53,7 +53,7 @@ date:      2024-08-13
 <!--                  |___/                             -->
 {{< fo t = "item-blog-group" count = 4 skip = 2 />}}
 
-{{< fo t = "item-socials" count = 3 [instagra,linkedin,instagram-mrmx] = 2 />}}
+{{< fo t = "item-socials" count = 1 skip = 1 from = "instagram linkedin instagram-mrmxf" />}}
 
 {{< fo t = "item-include"
     header = "BUG - without header the include fails"

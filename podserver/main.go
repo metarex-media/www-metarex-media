@@ -10,7 +10,6 @@ import (
 	"fmt"
 	"log/slog"
 	"net/http"
-	"os"
 
 	"github.com/mrmxf/clog/gommi"
 	"github.com/mrmxf/clog/slogger"
@@ -19,24 +18,9 @@ import (
 var Port = 8080
 
 func main() {
-	log := gommi.GetLogger()
+	r, _ := gommi.Bare()
+	r.NewFileServer(urlPrefix, mountPath)
 
-	r, err := gommi.Bare()
-	if err != nil {
-		log.Error("cannot initialize static server", "err", err)
-		os.Exit(1)
-	}
-
-	// use the default logger
-	r.Use(middleware.Logger)
-	// recover from panics and set return status
-	r.Use(middleware.Recoverer)
-
-	//set up routes
-	r.Get("/", RouteLanding)
-
-	// simple embedded file server for logs & static images, pages etc.
-	embedFileServer(r, embedFs, "/r/", "www")
 	listenAddr := fmt.Sprintf("%s:%d", "", Port)
 	slog.Info(fmt.Sprintf("Listening on port %d", Port))
 
@@ -45,5 +29,5 @@ func main() {
 }
 
 func init() {
-	slogger.UsePrettyLogger()
+	slogger.UsePrettyLogger(slog.LevelError)
 }
