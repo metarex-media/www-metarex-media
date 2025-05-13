@@ -11,21 +11,21 @@ menu:
     parent:     project
     weight:     09
 
-
+note-to-bruce: Accordion demo for CG (with items - like history)
 tags:        ["faq"]
 ---
 <!-- ####################################################################### -->
+
 {{< fo t = "banner"
     header = "MetaRex FAQ's"
     text = "MetaRex FAQ's"
     src = "/img/dino/mrx-logo-0300.png"
     alt = "metarex logo"
     class = "ui olive message"
+
 />}}
 
-{{< fo t = "block"
-    id   = "block1"
-/>}}
+{{< fo t = "block"  id = "block1" >}}
 
 # Project FAQ
 
@@ -61,10 +61,10 @@ The need for richer data sets is growing, and the performance of AI and automate
 
 Who doesn’t love saving some time and money!
 
-
+{{</fo>}}
 {{< fo t = "block"
     id   = "block2"
-/>}}
+>}}
 
 # Engineering FAQ
 
@@ -89,10 +89,10 @@ You can view the MetaRex Registry here.
 
 * _What does it cost?_
 
-
+{{</fo>}}
 {{< fo t = "block"
     id   = "block3"
-/>}}
+>}}
 
 # Try the code for free! 
 
@@ -116,6 +116,4 @@ Otherwise, you can book a meeting with us if you or your company have any issues
 Or fill in our easy Contact Form if you have any questions about MetaRex. 
 We would be happy to help! 
 
-
-
-
+{{< /fo >}}
