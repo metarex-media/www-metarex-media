@@ -10,24 +10,30 @@ import (
 	"fmt"
 	"log/slog"
 	"net/http"
+	"os"
 
 	"github.com/mrmxf/clog/gommi"
 	"github.com/mrmxf/clog/slogger"
 )
 
-var Port = 8080
+// the default port to serve data is 8080
+var Port = "8080"
+var urlPrefix="/"
+var mountPath="kodata"
 
 func main() {
 	r, _ := gommi.Bare()
 	r.NewFileServer(urlPrefix, mountPath)
 
-	listenAddr := fmt.Sprintf("%s:%d", "", Port)
-	slog.Info(fmt.Sprintf("Listening on port %d", Port))
-
 	// run the server in a thread
-	http.ListenAndServe(listenAddr, r)
+	slog.Info(fmt.Sprintf("Listening on port %s", Port))
+	http.ListenAndServe("0.0.0.0:"+Port, r)
 }
 
 func init() {
 	slogger.UsePrettyLogger(slog.LevelError)
+	containerDataPath, runningInsideKoContainer := os.LookupEnv("KO_DATA_PATH")
+	if runningInsideKoContainer {
+		mountPath = containerDataPath
+	}
 }

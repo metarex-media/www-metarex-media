@@ -1,7 +1,10 @@
-baseURL: "/"
+baseURL: "https://metarex.media"
 title: "metarex.media"
 theme: fohuw
 contentDir: "content"
+
+# override publishing to public so that ko can build a lightweight container
+publishDir: kodata
 
 enableRobotsTXT: true
 

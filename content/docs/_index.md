@@ -20,13 +20,13 @@ description: Learn about metarex?
     header     = "Rexy clips"           name = header
     src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
     srcStyle   = "max-width: 300px;"
-    link       = "/about"
+    link       = "/project/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
     blockClass = "ui yellow segment"    divClass = blockClass
     class      = "ui yellow message"    msgClass = class
-    link       = "https://github.com/orgs/metarex-media/repositories"
+    TODO-link       = "https://github.com/orgs/metarex-media/repositories"
   />}}
 <div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
 <div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>

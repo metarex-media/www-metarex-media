@@ -9,7 +9,8 @@ description: MetaRex is on Instagram!
 
 {{< fo t = "block"
   id    = "Rexy hiding behind a tree"
-  src   = "/rexy peek 1.2.png"
+  src   = "rexy peek 1.2.png"
+  srcClass = "ui fluid image"
   alt = "rexy eating cake"
 >}}
 

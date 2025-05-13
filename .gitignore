@@ -2,6 +2,7 @@
 
 
 # ignore synthesised outputs
+kodata
 public/
 resources/
 static/r
