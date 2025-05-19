@@ -27,10 +27,57 @@ snippets:
       git-lfs: git-lfs version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'|head -1
     needs:
       golang: echo "1.24.0"
-      hugo: echo "0.145.0"
-      git-lfs: echo "3.6.0"
+      hugo: echo "0.147.3"
+      git-lfs: echo "3.6.1"
   testamd: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-amd:latest"
   testarm: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-arm:latest"
+
+  hugo-pod: |
+    eval "$(clog Source project config)"    # configure project - local config
+    eval "$(clog Inc)"                      # shell embedded help (sh, zsh & bash)
+    help="core/sh/help-golang.sh"           # build embedded help
+    eval "$(clog Cat $help)"                # golang build helpers
+
+    clog Log -I "Build$cC $PROJECT $cT using clog's$cF $help"
+
+    clog Check pre-build #&& [ $? -gt 0 ] && exit 1
+    clog Check build     && [ $? -gt 0 ] && exit 1
+    # ------------------------------------------------------------------------------
+    app=podserver  # our pod server app command
+    export MAKE="hugo $app ko"
+
+    # ensure tmp dir exists
+    mkdir -p tmp
+
+    if (clog Should MAKE "hugo"); then
+      [ ! -d content ] && ln -s documentation/content content
+      clog Log -I "Purging kodata/ and building site"
+      rm -rf kodata/*
+      [ $? -gt 0 ] && fWarn "purging kodata/ - failed - continuing anyway"
+      hugo build --minify --forceSyncStatic --logLevel warn --buildDrafts --buildFuture 
+      [ -d content ] && rm content
+    fi
+
+    if (clog Should MAKE "$app"); then
+      fGoBuild tmp/$app-amd-lnx     linux   amd64
+      fGoBuild tmp/$app-arm-lnx     linux   arm64
+      fGoBuild tmp/$app-arm-mac     darwin  arm64
+      clog Log -I "stand-alone exe built to the$cF tmp/$cT folder\n"
+    fi
+
+    if (clog Should MAKE "ko"); then
+      tag="$(clog git tag ref)"
+      # config is in .ko.yaml
+      # use the default docker repo unless told otherwise
+      [ -z "$DOCKER_NS" ] && DOCKER_NS="metarexmedia"
+      [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
+      export KO_DOCKER_REPO="metarexmedia"
+      export KO_CONFIG_PATH=".ko.yaml"
+      export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
+      ko build --base-import-paths --tags "$tag-stage" --tags "latest-stage" .
+      
+      clog Log -I "multi-arch docker build$cF $PROJECT$cT:$cW$tag$cT and ${cW}latest"
+    fi
 
   lfs-install: |
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
@@ -63,3 +110,8 @@ check:
         try: which docker 2>/dev/null
         ok: clog Log -I "docker ok"
         catch: clog Log -E "docker not on path"
+      - name: docker-login
+        try: |
+          docker manifest inspect metarex-media/www-metarex-media > /dev/null 2>&1
+        ok: clog Log -I "you can access the docker hub to push images"
+        catch: clog Log -E "cannot access hub metarex-media/www-metarex-media - login as metarex!"
