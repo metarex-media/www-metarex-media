@@ -17,6 +17,6 @@ Key points:
 * Samples from
   * Graymeta
 
-{{% include 04-demo-segment.html %}}
+{{< fo t = "include" from = "04-demo-segment.html" />}}
 {{% sitelinks %}}
 {{% /nab24-demo %}}

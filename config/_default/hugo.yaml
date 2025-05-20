@@ -1,7 +1,10 @@
-baseURL: "/"
+baseURL: "https://metarex.media"
 title: "metarex.media"
 theme: fohuw
 contentDir: "content"
+
+# override publishing to public so that ko can build a lightweight container
+publishDir: kodata
 
 enableRobotsTXT: true
 
@@ -43,6 +46,12 @@ menus:
   #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
   #                                  |_|_|
   menu2:
+    - name: MetaRex on Instagram 
+      URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
+      identifier: Instagram
+      pre: '<i class="instagram icon"></i>'
+      post: " 🦖"
+      weight: 90
     - name: MetaRex on LinkedIn
       URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
@@ -55,13 +64,56 @@ menus:
       pre: '<i class="github icon"></i>'
       post: " 🦖"
       weight: 110
+
     # - name:       See the IBC Winner
     #   URL:        /donate/
     #   identifier: cake
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Feed rexy &nbsp;<em>Cake</em>
+    - name: Feed Rexy
+      URL: /donate/
+      identifier: cake
+      pre:
+      post: " 🍰"
+      weight: 110
+    - name: Try a demo
+      URL: /app/demos/
+      identifier: feed
+      pre:  "⏯️ "
+      post: " 🦖"
+      weight: 120
+# links to linkedin left & right
+  
+  
+  # Menu Rexy
+  menurexy:
+    - name: MetaRex on Instagram 
+      URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
+      identifier: Instagram
+      pre: '<i class="instagram icon"></i>'
+      post: " 🦖"
+      weight: 90
+    - name: MetaRex on LinkedIn
+      URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+      identifier: LinkedIn
+      pre: '<i class="linkedin icon"></i>'
+      post: " 🦖"
+      weight: 100
+    - name: MetaRex on GitHub
+      URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
+      identifier: GitHub
+      pre: '<i class="github icon"></i>'
+      post: " 🦖"
+      weight: 110
+
+    # - name:       See the IBC Winner
+    #   URL:        /donate/
+    #   identifier: cake
+    #   pre:
+    #   post:       " 🦖"
+    #   weight:     110
+    - name: Feed Rexy
       URL: /donate/
       identifier: cake
       pre:
@@ -90,9 +142,10 @@ ignoreFiles:
   - \.tmp-$
 
 # You can add your own taxonomies
+# See params for how these are shown on pages
+# https://gohugo.io/content-management/taxonomies/#what-is-a-taxonomy
 taxonomies:
   tag: tags
-  category: categories
 
 # --- Permalink --------------------------------------------------------------
 # Configure how URLs look like per section.
@@ -155,3 +208,5 @@ outputs:
   section:
     - HTML
     - RSS
+
+refLinksErrorLevel: warning 

@@ -17,6 +17,6 @@ Key Points:
 * What's the register
 * How to help
 
-{{% include 02-demo-segment.html %}}
+{{< fo t = "include" from = "02-demo-segment.html" />}}
 {{% sitelinks %}}
 {{% /nab24-demo %}}

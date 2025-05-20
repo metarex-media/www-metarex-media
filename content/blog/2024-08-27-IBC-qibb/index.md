@@ -1,21 +1,16 @@
 ---
-title:       2024-08-27 Thank you Qibb
-linkTitle:   2024-08-27 Thank you Qibb
-date:        2024-08-27
-description: "{{% metarex %}} thanks all its sponsors, backers and partners"
-author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-tags:        ["project",  "backers"]
-params:
-  publish:
-    linkedin:  true
+title:        Thank you Qibb
+linkTitle:    Thank you Qibb
+date:         2024-08-27
+description:  "A specail MetaRex thank you to all our sponsers, backers and partners"
+author:       Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
+tags:         ["collaborations", "event"]
+oldtags:      ["project", "event"]
 ---
 
-**[qibb][web]** is one of our wonderful backers and we couldn’t be successful
+**[qibb][web]** is one of our wonderful Backers and we couldn’t be successful
 without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
-you'll have a chance of ***winning a cuddly Rexy!*** The more partners and
-backers you visit, the greater chance you'll win on Sunday afternoon in the IBC
-[AI Zone][rxydraw]. Sign up at [https://auth.metarex.media/ui/registration][ths].
-Instructions on the [treasure hunt page][thp].
+you'll have a chance of ***winning a cuddly Rexy!***
 
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
@@ -37,8 +32,7 @@ orchestrating media planning, streamlining asset management, integrating AI
 tools, or accelerating asset delivery, **[qibb][web]** meets every workflow
 need.
 
-Visit qibb at IBC 2024, booth number **[10.C31]**, to explore all their innovative
-media workflow solutions.
+Visit qibb at IBC 2024, booth number **[10.C31]**, to explore all their innovative media workflow solutions.
 
 [#qibb](https://www.linkedin.com/search/results/all/?keywords=%23qibb)
 [#ipaas](https://www.linkedin.com/search/results/all/?keywords=%23ipaas)
