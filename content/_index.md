@@ -19,6 +19,7 @@ date:      2024-08-13
     class      = "ui green message"         msgClass = class
     header     = "Why a Dinosaur logo?"          name = header
     src        = "img/dino/mrx-logo.svg"
+    srcClass   = "ui fluid image"
     alt        = "metarex logo"
     link       = "rexy/"
   />}}
@@ -27,6 +28,7 @@ date:      2024-08-13
     class      = "ui yellow message"        msgClass = class
     header     = "What does MetaRex do?"         name = header
     src        = "project/introduction/featured-fedex.jpg"
+    srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
     link       = "project/introduction/"
   />}}
@@ -35,6 +37,7 @@ date:      2024-08-13
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
     src        = "docs/studies/case-studies.webp"
+    srcClass   = "ui fluid image"
     alt        = "dino doing research"
     link       = "docs/studies/"
   />}}
@@ -53,6 +56,7 @@ date:      2024-08-13
     class      = "ui pink message"         msgClass = class
     header     = "Case Study - Live Production"     name = header
     src        = "docs/studies/monitoring/monitoring-generic.png"
+    srcClass   = "ui fluid image"
     alt        = "monitoring-generic"
     link       = "/studies/monitoring"
   />}}
@@ -61,6 +65,7 @@ date:      2024-08-13
     class      = "ui pink message"                   msgClass = class
     header     = "VC-6"                    name = header
     src        = "img/vc6.png"
+    srcClass   = "ui fluid image"
     alt        = "vc6 logo"
     link       = "https://vc6.metarex.media"
   />}}
@@ -69,6 +74,7 @@ date:      2024-08-13
     class      = "ui pink message"           msgClass = class
     header     = "Case Study - AI efficiency"
     src        = "docs/studies/ai-content-at-rest/aicar.svg"
+    srcClass   = "ui fluid image"
     alt        = "monitoring-generic"                                     name = header
     link       = "docs/studies/ai-content-at-rest/"
   />}}

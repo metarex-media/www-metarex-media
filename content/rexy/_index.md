@@ -22,8 +22,8 @@ The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
 doesn't happen!.
 
-With [Amber’s][AB] fabulous creativity, Rexy (the dinosaur) was born in 2021.
-Working together, [Amber][SZ] and [Simi Zeko][SZ], created the first rendering
+With Amber’s fabulous creativity, Rexy (the dinosaur) was born in 2021.
+Working together, [Amber][AB] and [Simi Zeko][SZ], created the first rendering
 video of Rexy which was released in March 2021.
 
 <div class = "ui olive container segment">
