@@ -15,6 +15,7 @@ pubish:
 {{< fo t = "block"
   id    = "summary"
   src   = "featured-rnf0.jpg"
+  srcClass   = "ui fluid image"
   srcOn = "left"
   alt   = "photo of Bruce Devlin, Ruud van der Linden and Chris Parry with the IBC Accelerator Award"
 >}}
@@ -45,10 +46,10 @@ With the help of [Cuvo], [EZDRM], [JPBMedia] and the **IBC Accelerator Team** th
 We would like to thank the whole team that made this possible: 
 
 * [Ruud van der Linden] and [Ismael Garrido] from [Infuse Video] who spent long hours wrestling with Content Delivery networks and sitting at the booth to make this a success.
-*  `[Tristan Larke] at [MetaRex] who fought with all the metadata to make it all seem so simple.
-* [Joshua Berger] for his support. 
+* [Tristan Larke] at [MetaRex] who fought with all the metadata to make it all seem so simple.
+* Joshua Berger for his support. 
 * [Ian Wagdin] at the [BBC]
-* [Russell Trafford-Jones] at the [Institution of Engineering and Technology (theIET)]
+* [Russell Trafford-Jones] at the Institution of Engineering and Technology [(theIET)]
 * [Olga Kornienko] at [EZDRM]
 * [Mala Ramakrishnan], [Phani Kolaraja] and [Ganesh Sundaram] at [CuVo]. 
 
@@ -57,14 +58,13 @@ Also a warm thanks to [Mark  Smith] and [Muki Kulhan] at the [IBC] (Internationa
 {{< sitelinks >}}
 {{< /fo >}}
 
-[Tristan Larke]:  https://www.linkedin.com/in/ACoAADFKxjUBM-OwLh5FCkT4k2_LZJcnQLR14uM 
-[Joshua Berger]:  https://www.linkedin.com/in/bergerjoshua/
-[Ian Wagdin]:    https://www.linkedin.com/in/ACoAAAJvIk0BCuYzzlMRQTybNXdlnYPSU1nR-vE
-[BBC]:            https://www.bbc.co.uk/rd/author/?id=author-people-ian-wagdin 
+[Tristan Larke]: https://www.linkedin.com/in/tristanlarke/
+[Ian Wagdin]:    https://www.linkedin.com/in/ian-wagdin-b2581411/
+[BBC]:          https://www.bbc.co.uk/rd/author/?id=author-people-ian-wagdin 
 [Russell Trafford-Jones]:  https://www.linkedin.com/in/russell-trafford-jones/
-[Mark  Smith]:    https://www.linkedin.com/in/ACoAAAAwDhsBq_Dx6ZvNEXeYPUja1vctZVXdHQI
+[Mark  Smith]:  https://www.linkedin.com/in/marksmith2017/
 [Muki Kulhan]:  https://www.linkedin.com/in/ACoAAABFmH0ByhDceebheeKnI86bhi_XsrBMoVA
-[Institution of Engineering and Technology (theIET)]:  https://www.theiet.org
+[(theIET)]:  https://www.theiet.org
 [Olga Kornienko]:  https://www.linkedin.com/in/ACoAAAFsDD0BF1FP91UB7I04RwyUU9JT12PnLJw
 [EZDRM]:  https://www.ezdrm.com
 [Mala Ramakrishnan]:  https://www.linkedin.com/in/ACoAAAAJfAsBg3svssNHvpaEEEOFBhnxlKcdPlo

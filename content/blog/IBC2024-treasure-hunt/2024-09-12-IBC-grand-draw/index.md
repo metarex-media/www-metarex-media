@@ -13,6 +13,8 @@ params:
   img: draw
   web: https://metarex.media/
   lin: https://www.linkedin.com/company/metarex-media/
+
+noIndex:     true
 ---
 
 The **[{{% param backer %}}][web]** for Rexy's treasure hunt will be this

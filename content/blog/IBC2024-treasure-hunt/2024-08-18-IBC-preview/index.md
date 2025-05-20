@@ -5,9 +5,11 @@ date: 2024-08-19
 description: "{{% metarex %}} needs you - sign up and make metadata flow!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["project",  "award"]
+
 params:
   publish:
     linkedin:  true
+noIndex:     true
 ---
 
 

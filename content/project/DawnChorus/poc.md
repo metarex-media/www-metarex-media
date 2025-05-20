@@ -6,6 +6,8 @@ description: The Dawn Chorus Proof of Concept Specification
 author:      Bruce Devlin
 tags:        ["dawn-chorus", "poc"]
 weight:      199
+
+noIndex:     true
 ---
 
 {{< fo t = "banner" text =  "Dawn Chorus Proof Of Concept Proposal." />}}

@@ -27,7 +27,7 @@ date:      2024-08-13
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
     header     = "What does MetaRex do?"         name = header
-    src        = "project/introduction/featured-fedex.jpg"
+    src        = "img/dino/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
     link       = "project/introduction/"
@@ -36,7 +36,7 @@ date:      2024-08-13
     blockClass = "ui red segment"           divClass = blockClass
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
-    src        = "docs/studies/case-studies.webp"
+    src        = "img/dino/rexy-case-study.png"
     srcClass   = "ui fluid image"
     alt        = "dino doing research"
     link       = "docs/studies/"

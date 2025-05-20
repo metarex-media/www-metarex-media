@@ -6,6 +6,8 @@ description: The Dawn Chorus Phase 2 Specification
 author:      Bruce Devlin
 tags:        ["dawn-chorus", "phase-2"]
 weight:      199
+
+noIndex:     true
 ---
 
 {{< fo t = "banner" text =  "Dawn Chorus Phase 2." />}}

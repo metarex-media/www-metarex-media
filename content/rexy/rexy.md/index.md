@@ -30,4 +30,3 @@ Her adventures are far from over, so be sure to follow on the {{% insta %}} for 
 />}}
 
 [Amber Bardell]:  https://www.amberbardell.com
-[Instagram]:  https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==

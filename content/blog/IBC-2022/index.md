@@ -14,14 +14,10 @@ oldtags:     ["project",  "Mr MXF", "IBC", "Modulamedia"]
   srcOn = "left"
   alt = "photo of a bike beside a canal with the sun setting"
 >}}
-An in-person IBC after the long COVID break was both exciting and busy. My 10km
-step count goal was exceeded every day and conversations with both exhibitors and attendees was stimulating and informative.
+An in-person IBC after the long COVID break was both exciting and busy. My 10km step count goal was exceeded every day and conversations with both exhibitors and attendees was stimulating and informative.
 
 It became rapidly clear that business models had changed radically since COVID.
-Many folks were investing in AI technologies to guess at the metadata that gets
-discarded during productions. More folks were inventing new protocols for their
-AI metadata because there isn't a standard way to ship metadata on a timeline
-from where it's made to where it's needed.
+Many folks were investing in AI technologies to guess at the metadata that gets discarded during productions. More folks were inventing new protocols for their AI metadata because there isn't a standard way to ship metadata on a timeline from where it's made to where it's needed.
 
 {{< /fo >}}
 

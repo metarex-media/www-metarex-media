@@ -155,7 +155,12 @@ links:
       url: https://discord.gg/uBxZXYZARw
       icon: "rss"
       desc: "RSS feed for website updates"
-
+    - name: LinkedIn
+      url: https://www.linkedin.com/company/metarex-media/
+      icon: "linkedin logo"
+    - name: Instagram
+      url:  https://www.instagram.com/metarex.media
+      icon: "Instagram logo"
   # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
   developer:
     - name: GitHub
