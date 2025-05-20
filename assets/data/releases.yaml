@@ -1,3 +1,5 @@
+- { version:  1.7.5, date: 2025-05-15, build: dev,  note: podserver update}
+- { version:  1.7.4, date: 2025-05-13, build: dev,  note: MPTS2025 version}
 - { version:  1.7.3, date: 2025-02-24, build: dev,  note: aicar demo}
 - { version:  1.7.2, date: 2025-02-24, build: dev,  note: partials bug fixing}
 - { version:  1.7.1, date: 2025-02-24, build: prod, note: ai study}

@@ -26,7 +26,7 @@ description: Learn about metarex?
   {{< fo t = "feature"
     blockClass = "ui yellow segment"    divClass = blockClass
     class      = "ui yellow message"    msgClass = class
-    link       = "https://github.com/orgs/metarex-media/repositories"
+    TODO-link       = "https://github.com/orgs/metarex-media/repositories"
   />}}
 <div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
 <div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>

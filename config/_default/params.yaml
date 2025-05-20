@@ -59,33 +59,24 @@ site_is_archived: false
 # This menu appears only if you have at least one [params.jumbo] set.
 #jumbo_menu_text: Software
 
-# The jumbo selector is a categorised array number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the
-# current doc set.
-No_jumbo:
-  - category: mrx-tool
-    items:
-    - item: "@latest"
-      url:  https://github.com/metarex-media/mrx-tool
-      icon: cloud download alternate icon
-    - item: "α alpha"
-      url:  https://github.com/metarex-media/mrx-tool/tree/3ab19f0c1e558e1f57467461abf75fb1f849d5fd
-  - category: mrx-demo
-    items:
-    - item: "@latest"
-      url:  https://github.com/metarex-media/mrx-demo
-      icon: cloud download alternate icon
-    - item: "α alpha"
-      url:  https://github.com/metarex-media/mrx-demo/tree/c6a28748f33be2db752fc73951de5b7ddc0033d8
-
-# A link to latest version of the docs. Used in the "version-banner" partial to
-# point people to the main doc site.
-url_latest_version: https://metarex.media
-
-# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo: https://github.com/metarex-media/www-metarex-media
-# An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo: https://github.com/orgs/metarex-media/repositories
+#          _   _     _             _
+#   __ _  (_) | |_  | |_    _  _  | |__
+#  / _` | | | |  _| | ' \  | || | | '_ \
+#  \__, | |_|  \__| |_||_|  \_,_| |_.__/
+#  |___/
+# github information for providing "edit page" or "issues"
+github:
+  # Account URL for in-page links to opening issues and suggesting changes
+  url: https://github.com/metarex-media
+  # Repository name for in-page links to opening issues and suggesting changes
+  repo: www-metarex-media
+  # what branch should the generated site point to e.g. main
+  branch: main
+  # path to the content folder relative to project root e.g. sample/fohuw-docs/
+  contentParent: 
+  # If one of your languages is in "/content" (not /content/de) mark it here
+  # this is a workaround because a partial cannot read site.DefaultContentLanguageinSubdir
+  languageInContentFolder: en
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir: ""
