@@ -20,7 +20,7 @@ description: Learn about metarex?
     header     = "Rexy clips"           name = header
     src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
     srcStyle   = "max-width: 300px;"
-    link       = "/about"
+    link       = "project/about"
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"

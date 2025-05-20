@@ -205,3 +205,5 @@ outputs:
   section:
     - HTML
     - RSS
+
+refLinksErrorLevel: warning 

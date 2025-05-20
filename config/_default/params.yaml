@@ -5,7 +5,7 @@ contact:          /contact
 time_format_blog: 2006-01-02
 
 gdpr:
-  owner: Metarex.media Ltd
+  owner: Mr MXF Ltd. 
   email: hello@metarex.media
 
 # --- libraries loaded in partial scripts.html -----------------------------------
@@ -113,7 +113,7 @@ ui:
   #  Set to true to disable breadcrumb navigation.
   breadcrumb_disable: false
   # Set to true to disable the About link in the site footer
-  footer_about_disable: false
+  footer_about_disable: true
   # Set to false if you don't want to display a logo (/static/brand/logo.svg) in the top navbar
   navbar_logo: true
   # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
@@ -147,7 +147,7 @@ readingtime:
 # End user relevant links show up on the footer and community page.
 # icon names are here: https://fomantic-ui.com/elements/icon.html
 links:
-  user:
+  main:
     - name: Newsletter
       url: /contact
       icon: envelope outline
@@ -171,7 +171,7 @@ links:
       url: https://github.com/metarex-media
       icon: github
       desc: Development takes place here!
-    - name: Metarex Register
+    - name: MetaRex Register
       url: https://metarex-media/app/reg
       icon: laptop code
       desc: Browse the metarex regoster

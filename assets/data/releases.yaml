@@ -1,4 +1,4 @@
-`- { version:  1.7.3, date: 2025-02-24, build: dev,  note: aicar demo}
+- { version:  1.7.3, date: 2025-02-24, build: dev,  note: aicar demo}
 - { version:  1.7.2, date: 2025-02-24, build: dev,  note: partials bug fixing}
 - { version:  1.7.1, date: 2025-02-24, build: prod, note: ai study}
 - { version:  1.7.0, date: 2025-02-10, build: prod, note: case studies}

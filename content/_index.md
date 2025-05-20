@@ -58,7 +58,7 @@ date:      2024-08-13
     src        = "docs/studies/monitoring/monitoring-generic.png"
     srcClass   = "ui fluid image"
     alt        = "monitoring-generic"
-    link       = "/studies/monitoring"
+    link       = "docs/studies/monitoring"
   />}}
   {{< fo t = "feature"
     blockClass = "ui red segment"                   divClass = blockClass

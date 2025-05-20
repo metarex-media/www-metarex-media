@@ -1,7 +1,7 @@
 ---
 title:       "Rexy's Backstory"
 linkTitle:   "History of Rexy"
-type:        
+layout:      blog  
 weight:      50
 description: 
 date:        2025-06-29   
@@ -17,7 +17,7 @@ tags: ["rexy"]
 
 The first drafts of Rexy was created in early 2021 by [Amber Bardell].  At the time she was just a logo for {{% metarex %}} but since then Rexy has grown as a character, with her own personality and backstory, had various artwork and vidoes made of her adventures and even been made into a soft toy! 
 
-Her adventures are far from over, so be sure to follow on the {{% metarex %}} [Instagram] for the latest artwork by Amber and Simi!
+Her adventures are far from over, so be sure to follow on the {{% insta %}} for the latest artwork by Amber and Simi!
 
 
 
@@ -27,7 +27,7 @@ Her adventures are far from over, so be sure to follow on the {{% metarex %}} [I
   id       = "Rexy's backstory"
   src      = "rexy.md/rexy-backstory.png"
   alt      = "rexy backstory"
->}}
+/>}}
 
 [Amber Bardell]:  https://www.amberbardell.com
 [Instagram]:  https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==

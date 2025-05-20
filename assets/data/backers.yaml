@@ -1,19 +1,38 @@
 mrmxf:
   backer: gold
+
+metarex:
+  case-study: 
+ - name: MetaRex 
+  url: https://metarex.media/app/demos/demo02
+  descriptions of demo: |
+  MetaRex allows self describing metadata to be used with low or no code.  The code is all feww to use. 
+  describing the apiVersion: apps/v2
+
 modulamedia:
   backer: gold
+  donation: £ free
+  description: |
+  nt (infuse video):
+  backer: regular
   donation: £
   description: |
+  case-study: 
+ - name: Dawn Chorus 
+  url: https://metarex.media/app/demos/demo03
+  descriptions of demo: |
+  Add MetaRex to precision audio field recordings for a unique Dolby Atmos nature experience.
+  describing the apiVersion: apps/v3
 
 yellow basket"
    backer: gold
-   donation: £
+   donation: £ free
    description: |
+
 signiant: 
  backer: silver 
- donation:
- description: |
-
+ donation: £ 10,000
+ description: | 
  key:  
  case-study:
  - name: LPX Cloud Ingest - Live Production Exchange ingest with Jet
@@ -23,30 +42,30 @@ signiant:
   describing the apiVersion: apps/v1
  - name: File Transfer costs
  url: https://cloud-costs.metarex.media
- description: |
+
 v-nova: 
   backer: regular 
-  donation: £
+  donation: £ 
   description: |
-    This is line 1 of the descrilskdih sadfh;alskdf
-    alkafsdjhlkasf
-    alkjhfdlaksjdhf
-    Ikaisdhflkah
-  key6: banana
+  key:
+  case-study:
+ - name: No More Proxies
+  url: https://metarex.media/app/demos/demo09
+  descriptions of demo: |
+  Smart transform of metadata and content for editing and visualization with MetaRex. 
+  describing the apiVersion: apps/v9
+
 arqiva:
   backer: regular
   donation: £
   description: |
+
 bbc:
   backer: regular
-  donation: £
-  description: |
-cinnafilm:
-  backer: regular
-  donation: £
+  donation: £ 
   description: |
 
-codemill:
+cinnafilm:
   backer: regular
   donation: £
   description: |
@@ -65,15 +84,22 @@ ezdrm:
   backer: regular
   donation: £
   description: |
+
 graymeta:
-  backer: regular
-  donation: £
+  backer: sliver
+  donation: £ 1,000
   description: |
 
 lont (infuse video):
   backer: regular
   donation: £
   description: |
+  case-study: 
+ - name: Responsive Narrative Factory 
+  url: https://metarex.media/app/demos/demo12
+  descriptions of demo: |
+  Hyper personalization - watch Big Buck Bunny with no nudity and no Bunny!
+  describing the apiVersion: apps/v12
 
 jpb media solutions (josh berger):
   backer: regular
@@ -87,67 +113,97 @@ media mavens:
 
 metaglue:
   backer: regular
-  donation: £
+  donation: £ free
   description: |
+  case-study: 
+ - name: Contect Authenticity
+  url: https://metarex.media/app/demos/demo08
+  descriptions of demo: |
+  Extracting C2PA and displaying results. 
+  describing the apiVersion: apps/v8
 
 nxtedition:
   backer: regular
-  donation: £
+  donation: £ 1,250
   description: |
+  case-study: 
+ - name: Live News
+  url: https://metarex.media/app/demos/demo10
+  descriptions of demo: |
+  Lossless normalization of metadata using MetaRex for news, avails and more.
+  describing the apiVersion: apps/v10
 
 remote filming:
   backer: regular
-  donation: £
+  donation: £ free
   description: |
 
 sdvi:
   backer: regular
-  donation: £
+  donation: £ 1,000
   description: |
 
 tag:
   backer: regular
-  donation: £
+  donation: £ 
   description: |
+  case-study: 
+ - name: Production Monitoring
+  url: https://metarex.media/app/demos/demo07
+  descriptions of demo: |
+  Easy customization and visualization of metadata with low or no code.
+  describing the apiVersion: apps/v7
 
 testronic:
   backer: regular
-  donation: £
+  donation: £ 1,000
   description: |
 
 venera: 
-  backer: 
-  donation: £
+  backer: regular
+  donation: £ 1,000
   description: |
 
 dpp:
   backer: partners
-  donation: £
+  donation: £ free
   description: |
 
 eidr:
   backer: partners
-  donation: £
+  donation: £ free
   description: |
 
 hand (human digital):
   backer: partners
-  donation: £
+  donation: £ free
   description: |
+  case-study: 
+ - name: Identity
+  url: https://metarex.media/app/demos/demo11
+  descriptions of demo: |
+  Search the HAND database and control the formats that you need for your workflow MetaRex
+  describing the apiVersion: apps/v11
 
 iadm:
   backer: partners
-  donation: £
+  donation: £ free
   description: | 
 
 imfug:
   backer: partners
   donation: £
   description: |
+  case-study: 
+ - name: IMF QC
+  url: https://metarex.media/app/demos/demo05
+  descriptions of demo: |
+  Auto validation of QC reports using MetaRex register and services. 
+  describing the apiVersion: apps/v5
 
 mesa:
   backer: partners
-  donation: £
+  donation: £ free
   description: |
 
 theiet:
@@ -155,5 +211,25 @@ theiet:
   donation: £
   description: |
 
+codemill:
+  backer: regular
+  donation: £1,000
+  description: |
+  case-study: 
+ - name: AI segmentation
+  url: https://metarex.media/app/demos/demo04
+  descriptions of demo: |
+  Auto-normalizing AI segmentation metadata for different MAM and DAM systems with MetaRex.
+  describing the apiVersion: apps/v4
 
-  
+smpts:
+  backer: partners
+  donation: £ free
+
+good film compony:
+  backer: regular
+  donation: £ 1,000
+
+flimic:
+  backer: regular
+  donation: £ 1,000

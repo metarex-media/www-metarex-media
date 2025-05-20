@@ -1,6 +1,12 @@
  
-- name:
-- links: 
+- name: Rexy Sunbathing MetaRex Sidecar
+  link from website:  /downloads/samples/rexy_sunbathe_mrx.zip
   description: |
-describtion of Rexy video
+  A sample MetaRex file with the metadata for the Rexy video.
 - icon: 
+
+- name: Rexy Sunbathing Video
+  link from website: /downloads/samples/rexy_sunbathe.mp4
+  new link: /meeja/mrx-rexy-nab-2023.mp4
+  description: |
+  A sample MetaRex file with the metadata for the Rexy video.
