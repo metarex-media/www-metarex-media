@@ -1,0 +1,30 @@
+{{ `<!-- metarex/partials/my-head-end.html -->` | safeHTML }}
+
+<meta http-equiv="Content-Security-Policy"  content="frame-src https://faq.metarex.media;">
+{{/* ------------ HOME PAGE ONLY ----------------------------------------- */}}
+{{ $urlStub := .Page.RelPermalink }}
+{{ $isHome := eq .Site.Home.RelPermalink $urlStub }}
+{{ $isRexy := strings.HasPrefix $urlStub "/rexyBLAH" }}
+{{- if  or $isHome $isRexy }}
+<style>
+body {
+  background-attachment: fixed;
+  background-image: url("/img/dino/mrx-logo-bg.svg");
+  background-color: #ffffff;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;    /* Resize the background image to contain the entire container */
+ }
+</style>
+{{ end -}}
+<style>
+  .rexyBG {
+    background-attachment: fixed;
+    background-image: url("/img/dino/mrx-logo-bg.svg");
+    background-color: #ffffff;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+   }
+  </style>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js" integrity = "sha512-SYfDUYPg5xspsG6OOpXU366G8SZsdHOhqk/icdrYJ2E/WKZxPxze7d2HD3AyXpT7U22PZ5y74xRpqZ6A2bJ+kQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer"></script>

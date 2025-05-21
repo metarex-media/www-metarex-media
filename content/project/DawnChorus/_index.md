@@ -6,9 +6,10 @@ description: The Dawn Chorus Collaborative Project
 author:      Bruce Devlin
 tags:        ["dawn chorus"]
 weight:      199
+noIndex:     true
 ---
 
-{{% banner "Dawn Chorus is an Immersive Audio Metarex Collaboration." %}}
+{{< fo t = "banner" text =  "Dawn Chorus is an Immersive Audio Metarex Collaboration." class = "ui olive message" />}}
 
 See the [Proof of Concept Spec](poc)
 

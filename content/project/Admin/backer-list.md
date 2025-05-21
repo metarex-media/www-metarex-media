@@ -4,21 +4,21 @@ linkTitle:   Backer List
 date:        2023-01-12
 
 url:         "/backers/"
-tags:        ["backers"]
+tags:        ["collaborations"]
+oldtags:     ["backers"]
 ---
-## Our Backers
 
 {{< backer/logo-wall >}}
 
-{{< backer/section name="<span class='ui yellow text'>GOLD</span> - the {{% metarex %}}.media board" >}}
+{{< backer/section name="<span class='ui yellow text'>GOLD</span>" >}}
 {{< backer/logo    name="mrmxf"                                     url="https://mrmxf.com"             >}}
 {{< backer/logo    name="modulamedia"                                                                   >}}
 {{< backer/logo    name="yellowbasket"   title="yellow basket"                                          >}}
 
-{{< backer/section name="<span class='ui violet text'>SILVER</span> - guiding {{% metarex %}}.media's destiny" >}}
+{{< backer/section name="<span class='ui purple text'>SILVER</span>" >}}
 {{< backer/logo    name="signiant"                                  url="https://signiant.com/"         >}}
 
-{{< backer/section name="<span class='ui brown text'>REGULAR</span> - helping {{% metarex %}}.media finish on time" >}}
+{{< backer/section name="<span class='ui brown text'>REGULAR</span>" >}}
 {{< backer/logo    name="arqiva"                                    url="https://arqiva.com/"           >}}
 {{< backer/logo    name="bbc (r&d)"                                 url="https://www.bbc.co.uk/programmes/p0f8xhj4/" >}}
 {{< backer/logo    name="cinnafilm"                                 url="https://cinnafilm.com/"        >}}
@@ -38,7 +38,7 @@ tags:        ["backers"]
 {{< backer/logo    name="testronic"                                 url="https://testroniclabs.com/"    >}}
 {{< backer/logo    name="v-nova"                                    url="https://v-nova.com/"           >}}
 
-{{< backer/section name="<span class='ui blue text'>PARTNERS</span> - gathering the {{% metarex %}}.media requirements" >}}
+{{< backer/section name="<span class='ui blue text'>PARTNERS</span>" >}}
 {{< backer/logo    name="dpp"                                       url="https://www.dpp.com/"          >}}
 {{< backer/logo    name="eidr"                                      url="https://www.eidr.org/"         >}}
 {{< backer/logo    name="hand"                                      url="https://handidentity.com/"     >}}

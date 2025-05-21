@@ -4,13 +4,23 @@ linkTitle:     Flow Diagram
 date:         2024-02-29
 description:  How Metarex flows metadata
 type:        docs
+
+params:
+  src: img/mrx-flow.png
 ---
 
-{{% f/block id="gg" %}}
+{{< fo t = "block"
+    id = "gg"
+/>}}
 
 <div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
 
-{{< f/image-fluid "/img/mrx-flow.png" "The MetaRex Flow Diagram 2024" "showCaption" >}}
+{{< fo t = "image-fluid"  
+    src = "/img/mrx-flow.png"
+    name = "The MetaRex Flow Diagram 2024"
+    id = "showCaption"
+    alt = "metarex flow diagram"
+>}}
 
 {{% metarex %}} is like Fedex for metadata.
 
@@ -28,4 +38,4 @@ type:        docs
   * The end user now has access to, potentially, several variants of the metadata
     before they write their first line of code.
 
-{{% /f/block %}}
+{{< /fo >}}

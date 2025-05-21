@@ -8,15 +8,13 @@ description: Current Status.
 tags: ["status"]
 ---
 
-{{< f/message header="We're over half way through & on target!"
-    src="/img/dino/mrx-logo-0300.png" class="ui center aligned olive message"
->}}
+{{< fo t = "banner"
+    header = "We're over half way through & on target!"
+    src = "/img/dino/mrx-logo-0300.png" 
+    class = "ui center aligned olive message"
+/>}}
 
-{{% metarex %}} is looking for more [backers] to create a financial reserve
-from which we can give out grants to engineering teams to create the Open
-Source that we need to enable free tooling for all. Please make a small
-financial or engineering contribution if a working global media meta data
-ecosystem is of interest to you or your company.
+{{% metarex %}} is looking for more [backers] to create a financial reserve from which we can give out grants to engineering teams to create the Open Source that we need to enable free tooling for all. Please make a small financial or engineering contribution if a working global media meta data ecosystem is of interest to you or your company.
 
 ```mermaid
 gantt

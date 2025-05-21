@@ -96,7 +96,7 @@ deploy:
     - docker info
   script:
     #create env from upstream dependencies
-    - vCODE="$(cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
+    - vCODE="$(cat assets/data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
     - PROJECT=www-metarex-media
     - echo "Deploying website version ($vCODE) from branch ($BRANCH)"
 
@@ -119,7 +119,7 @@ hook:
   stage: deploy
   needs: [deploy]
   script:
-    - vCODE="$(cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
+    - vCODE="$(cat assets/data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+')"
     - PROJECT=www-metarex-media
     - echo "Hook website version ($vCODE) from branch ($BRANCH)"
     - echo "fire the CI/CD hook to the website signalling no errors"

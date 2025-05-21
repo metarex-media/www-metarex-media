@@ -1,27 +1,31 @@
 ---
-title:       IBC-2023
-linkTitle:   IBC-2023
+title:       IBC 2023
+linkTitle:   IBC 2023
 weight:      20
 ---
 
 {{% pageinfo %}}
-The Responsive Narrative Factory won _**Best IBC Accelerator Project 202**_3.
+
+The Responsive Narrative Factory won **Best IBC Accelerator Project 2023** 🎉
 {{% /pageinfo %}}
 
-{{< f/message
-    header="metarex.media need you"
-    description="The Responsive Narrative Factory won _**Best IBC Accelerator Project 2023**_."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned olive message"
->}}
+{{< fo t = "banner"
+    header = "MetaRex need you"
+    description = "The Responsive Narrative Factory won _**Best IBC Accelerator Project 2023**_."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
+/>}}
 
-{{% f/image "rnf-title-image-web.png" "ui fluid image" %}}
+{{< fo t = "image" 
+    src = "rnf-title-image-web.png" 
+    class = "ui fluid image" 
+/>}}
 
 ## Where should I go next?
 
 * [RNF Timeline]
-* [RNF on IBC Website]
+* [RNF on IBC Website](https://show.ibc.org/accelerator-project-responsive-narrative-factory#:~:text=The%20Responsive%20Narrative%20Factory%20Accelerator,and%20extremely%20engaging%20viewing%20experiences.)
 * [mrx-tool] - a test tool that implements the {{% metarex %}} protocol
-* [mrx-demo] - some demonstration data for the test tool to simulate [Responsive Narrative Factory] workflows
+* [mrx-demo] - some demonstration data for the test tool to simulate **Responsive Narrative Factory** workflows
 
 {{% sitelinks %}}

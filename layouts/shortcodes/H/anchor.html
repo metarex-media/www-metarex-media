@@ -1,5 +1,0 @@
-{{- $name := .Get 0 -}}
-{{- $suffix := "" -}}
-{{- if not .Ordinal -}}{{- $suffix = fmt.Printf "%d" .Ordinal -}}{{- end -}}
-{{ .Page.Scratch.SetInMap "Anchors" $name $name }}
-<a href="{{ $name }}" ></a>

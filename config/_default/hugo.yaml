@@ -1,7 +1,10 @@
-baseURL: "/"
+baseURL: "https://metarex.media"
 title: "metarex.media"
 theme: fohuw
 contentDir: "content"
+
+# override publishing to public so that ko can build a lightweight container
+publishDir: kodata
 
 enableRobotsTXT: true
 
@@ -19,21 +22,21 @@ menus:
     - name: Technology
       identifier: tech
     - name: Specifications
-      pageRef: /docs/specifications/
+      URL: /docs/specifications/
       parent: tech
       weight: 10
-    - name: Studies
-      pageRef: /docs/studies/
+    - name: Case Studies
+      URL: /docs/studies/
       parent: tech
       weight: 20
       identifier: specs
     - name: app/reg
-      pageRef: /app/reg/
+      URL: /app/reg/
       parent: tech
       weight: 50
       identifier: appreg
     - name: app/demos
-      pageRef: /app/demos/
+      URL: /app/demos/
       parent: tech
       weight: 51
       identifier: appdemos
@@ -43,31 +46,86 @@ menus:
   #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
   #                                  |_|_|
   menu2:
-    - name: See us on LinkedIn
-      pageRef: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+    - name: MetaRex on Instagram 
+      URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
+      identifier: Instagram
+      pre: '<i class="instagram icon"></i>'
+      post: " 🦖"
+      weight: 90
+    - name: MetaRex on LinkedIn
+      URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
       pre: '<i class="linkedin icon"></i>'
       post: " 🦖"
       weight: 100
+    - name: MetaRex on GitHub
+      URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
+      identifier: GitHub
+      pre: '<i class="github icon"></i>'
+      post: " 🦖"
+      weight: 110
+
     # - name:       See the IBC Winner
     #   URL:        /donate/
     #   identifier: cake
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Buy us &nbsp;<em>Cake</em>
-      pageRef: /donate/
+    - name: Feed Rexy
+      URL: /donate/
       identifier: cake
       pre:
       post: " 🍰"
       weight: 110
     - name: Try a demo
-      pageRef: /app/demos/
+      URL: /app/demos/
       identifier: feed
-      pre:
-      post: " 🥩"
+      pre:  "⏯️ "
+      post: " 🦖"
       weight: 120
-# linsks to linkedin left & right
+# links to linkedin left & right
+  
+  
+  # Menu Rexy
+  menurexy:
+    - name: MetaRex on Instagram 
+      URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
+      identifier: Instagram
+      pre: '<i class="instagram icon"></i>'
+      post: " 🦖"
+      weight: 90
+    - name: MetaRex on LinkedIn
+      URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
+      identifier: LinkedIn
+      pre: '<i class="linkedin icon"></i>'
+      post: " 🦖"
+      weight: 100
+    - name: MetaRex on GitHub
+      URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
+      identifier: GitHub
+      pre: '<i class="github icon"></i>'
+      post: " 🦖"
+      weight: 110
+
+    # - name:       See the IBC Winner
+    #   URL:        /donate/
+    #   identifier: cake
+    #   pre:
+    #   post:       " 🦖"
+    #   weight:     110
+    - name: Feed Rexy
+      URL: /donate/
+      identifier: cake
+      pre:
+      post: " 🍰"
+      weight: 110
+    - name: Try a demo
+      URL: /app/demos/
+      identifier: feed
+      pre:  "⏯️ "
+      post: " 🦖"
+      weight: 120
+# links to linkedin left & right
 
 # --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.
@@ -84,9 +142,10 @@ ignoreFiles:
   - \.tmp-$
 
 # You can add your own taxonomies
+# See params for how these are shown on pages
+# https://gohugo.io/content-management/taxonomies/#what-is-a-taxonomy
 taxonomies:
   tag: tags
-  category: categories
 
 # --- Permalink --------------------------------------------------------------
 # Configure how URLs look like per section.
@@ -149,3 +208,5 @@ outputs:
   section:
     - HTML
     - RSS
+
+refLinksErrorLevel: warning 

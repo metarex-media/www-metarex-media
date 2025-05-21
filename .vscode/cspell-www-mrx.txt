@@ -1,3 +1,4 @@
+AICAR
 amberbardell
 ansicolor
 appname
@@ -42,6 +43,7 @@ configparam
 core
 countwords
 Courgenay
+coverpages
 coverprofile
 Dappname
 dbaeumer
@@ -50,6 +52,7 @@ Devlin
 docsearch
 docsy
 Docsy
+dopts
 dpkg
 eidr
 Eluvio
@@ -77,6 +80,7 @@ GOHOSTARCH
 GOHOSTOS
 golangci
 goldmark
+gommi
 gommon
 GOPATH
 graymeta
@@ -85,6 +89,7 @@ hashorigin
 headhash
 headmessage
 hookprefix
+hopts
 iabm
 imfug
 incorpration
@@ -117,6 +122,7 @@ Lsuffix
 ltrimstr
 markdownify
 markdownit
+matroska
 matrox
 meeja
 messagelatest
@@ -136,7 +142,9 @@ ninjs
 nxtedition
 ommand
 openapi
+Oplayer
 optimise
+optimised
 Organisation
 Organisations
 originhash
@@ -144,6 +152,7 @@ originsemver
 osvp
 Ouistreham
 overriden
+packetizing
 pdate
 piersdeseilligny
 plantuml
@@ -154,6 +163,7 @@ prioritises
 prismjs
 pygments
 qrdata
+quicktime
 raidersofthelostpast
 rangav
 ransform
@@ -213,6 +223,7 @@ unstaged
 unwrapper
 upgradedev
 USERPROFILE
+utilise
 ux
 vals
 VANC

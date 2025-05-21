@@ -2,10 +2,10 @@
   Use the value of the page urls to query the register
 */}}
 {{- $id := .Page.Permalink | path.BaseName -}}
-<div class="header">Register entry for
-  <span class="ui blue text"><code>{{ $id }}</code></span></div>
+<div class = "header">Register entry for
+  <span class = "ui blue text"><code>{{ $id }}</code></span></div>
 <hr />
-  <div id="mrx-reg-response"></div>
+  <div id = "mrx-reg-response"></div>
 
 <script>
 // Query the register when the document is ready

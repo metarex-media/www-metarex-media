@@ -4,15 +4,16 @@
 
 <head>
   {{ partial "my/site-head-begin.html" . }}
-  {{ partial "docsy/head.html" . }}
+  {{ partial "tmpl/head.html" . }}
   {{ partial "my/site-head-end.html" . }}
   <script src="/js/jquery.responsive-iframe.js"></script>
 </head>
-
-<body class="{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
+{{- $bodyClass := ""}}
+{{- if isset .Page.Params.ui "bodyClass" }}{{ $bodyClass = printf "class=\"%s\"" .Page.Params.ui.bodyClass }}{{ end }}
+<body {{$bodyClass | safeHTMLAttr}}>
   <div class="ui wide container">
     <header>
-      {{ partial "navbar.html" . }}
+      {{ partial "tmpl/navbar" . }}
     </header>
   </div>
 
@@ -31,11 +32,11 @@
       </div>
     </div>
     <div class="row">
-      {{ partial "footer.html" . }}
+      {{ partial "tmpl/footer.html" . }}
     </div>
   </div>
   </div>
-  {{ partial "body-scripts.html" . }}
+  {{ partial "tmpl/body-scripts.html" . }}
 </body>
 
 </html>

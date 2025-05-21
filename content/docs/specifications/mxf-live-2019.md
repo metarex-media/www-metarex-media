@@ -7,13 +7,12 @@ description: The original MXF-Live specification as used in the mxf-live project
 ---
 <!-- markdownlint-disable MD051 (link fragment check) -->
 
-
-{{< f/message
-    header="MXF-Live-2019"
-    description="The original parent of MetaRex. This spec is out of date."
-    src="/img/dino/mrx-logo-0300.png"
-    class="ui center aligned red message"
->}}
+{{< fo t = "banner"
+    header = "MXF-Live-2019"
+    description = "The original parent of MetaRex. This spec is out of date."
+    src = "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned red message"
+/>}}
 
 <a id="version"></a>
 
@@ -70,20 +69,27 @@ Date: **30 October 2019**
 8. [Considerations](#considerations)
 
 <a id="scope"></a>
-{{% include ">/assets/mxf-live-inc/01-scope.md"                %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/01-scope.md" />}}
+
 <a id="conformance-notation"></a>
-{{% include ">/assets/mxf-live-inc/02-conformance-notation.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/02-conformance-notation.md" />}}
+
 <a id="normative-references"></a>
-{{% include ">/assets/mxf-live-inc/03-normative-references.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/03-normative-references.md" />}}
+
 <a id="introduction"></a>
-{{% include ">/assets/mxf-live-inc/04-introduction.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/04-introduction.md" />}}
+
 <a id="implementation"></a>
-{{% include ">/assets/mxf-live-inc/05-implementation.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/05-implementation.md" />}}
+
 <a id="mxf-live-DM"></a>
-{{% include ">/assets/mxf-live-inc/06-descriptive-metadata.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/06-descriptive-metadata.md" />}}
+
 <a id="user-metadata"></a>
-{{% include ">/assets/mxf-live-inc/07-user-metadata.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/07-user-metadata.md" />}}
+
 <a id="considerations"></a>
-{{% include ">/assets/mxf-live-inc/08-considerations.md" %}}
+{{< fo t = "include" from = "/assets/mxf-live-inc/08-considerations.md" />}}
 
 _2019-10-23_ **Peter Neumann**

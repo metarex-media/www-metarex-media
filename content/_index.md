@@ -4,80 +4,122 @@
 #  | '  \  | '_| \ \ /   | __ | / _ \ | '  \  / -_) |  _/ / _` | / _` | / -_)
 #  |_|_|_| |_|   /_\_\   |_||_| \___/ |_|_|_| \___| |_|   \__,_| \__, | \___|
 #                                                                |___/
-title:     Metarex
-linkTitle: Metarex
+title:     MetaRex
+linkTitle: MetaRex
 date:      2024-08-13
 ---
 <!--  ___                _                             -->
 <!-- | __|  ___   __ _  | |_   _  _   _ _   ___   ___  -->
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
-{{< o/features >}}
-  {{< o/feature
-    divClass = "ui green segment"
-    msgClass = "ui green message"
-    name     = "Why a Dinosaur?"
-    src      = "/img/dino/mrx-logo.svg"
-    link     = "/rexy"
-  />}}
-  {{< o/feature
-    divClass = "ui yellow segment"
-    msgClass = "ui yellow message"
-    name     = "What does it Do?"
-    src      = "/project/introduction/featured-fedex.jpg"
-    link     = "/project/introduction/"
-  />}}
-  {{< o/feature
-    divClass = "ui red segment"
-    msgClass = "ui red message"
-    name     = "How does it work?"
-    src      = "/img/mrx-flow.png"
-    link     = "/project/flow-diagram/"
-  />}}
-  {{< o/feature
-    divClass = "ui blue segment"
-    msgClass = "ui blue message"
-    name     = "What's the benefit?"
-    src      = "/project/admin/metarex-ltd/featured-boardroom.jpg"
-    link     = "/project/faq/"
-  />}}
-{{< /o/features >}}
 
+{{< fo t = "feature-group" >}}
+  {{< fo t = "feature"
+    blockClass = "ui green segment"         divClass = blockClass
+    class      = "ui green message"         msgClass = class
+    header     = "Why a Dinosaur logo?"          name = header
+    src        = "img/dino/mrx-logo.svg"
+    srcClass   = "ui fluid image"
+    alt        = "metarex logo"
+    link       = "rexy/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui yellow segment"        divClass = blockClass
+    class      = "ui yellow message"        msgClass = class
+    header     = "What does MetaRex do?"         name = header
+    src        = "project/introduction/featured-fedex.jpg"
+    srcClass   = "ui fluid image"
+    alt        = "dino stacking a box"
+    link       = "project/introduction/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"           divClass = blockClass
+    class      = "ui red message"           msgClass = class
+    header     = "Case Studies"             name = header
+    src        = "docs/studies/case-studies.webp"
+    srcClass   = "ui fluid image"
+    alt        = "dino doing research"
+    link       = "docs/studies/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui blue segment"          divClass = blockClass
+    class      = "ui blue message"          msgClass = class
+    header     = "What's the benefit?"      name = header
+    src        = "project/featured-boardroom.jpg"
+    alt        = "dino in a suit"
+    link       = "/project/faq/"
+  />}}
+  {{< /fo >}}
+{{< fo t = "feature-group" >}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"
+    class      = "ui pink message"
+    header     = "Case Study - Live Production"  
+    src        = "docs/studies/monitoring/monitoring-generic.png"
+    srcClass   = "ui fluid image"
+    alt        = "monitoring-generic"
+    link       = "docs/studies/monitoring"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"
+    class      = "ui pink message"
+    header     = "VC-6"
+    src        = "img/vc6.png"
+    srcClass   = "ui fluid image"
+    alt        = "vc6 logo"
+    link       = "<https://vc6.metarex.media>"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"
+    class      = "ui pink message"
+    header     = "Case Study - AI efficiency"
+    src        = "docs/studies/ai-content-at-rest/aicar.svg"
+    srcClass   = "ui fluid image"
+    alt        = "monitoring-generic"                                     name = header
+    link       = "docs/studies/ai-content-at-rest/"
+  />}}
+  {{< fo t = "feature"
+    blockClass = "ui red segment"
+    class      = "ui pink message"
+    header     = "Case Study - Cloud Cost"
+    src        = "docs/studies/cloud-cost/featured-costs.png"
+    alt        = "monitoring-generic"
+    link       = "docs/studies/cloud-cost/"
+  />}}
+  {{< /fo >}}
+
+{{< fo t = "item-group" >}}
+<!-- ---------------------------------------------------------------------- -->
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< o/block blockType = "blog" count = 2 skip = 0 />}}
+{{< fo t = "item-blog-group" count = 4 skip = 3 />}}
 
-{{< o/block
-    blockType = "cover"
-    header = "BUG - without header the include fails"
-    from = "project/coverpages/rexycover.md"
-    src = "project/coverpages/rexycover-240806.jpg"
+{{< fo t = "item-socials" count = 1 skip = 1 from = "instagram linkedin instagram-mrmxf" />}}
+
+{{< fo t = "item-include"
+    from = "/blog/rnf-best-accelerator/index.md"
+    src  = "/img/blog/rnf1.jpg"
+    alt = "Prize winners"
 />}}
 
-{{< o/block
-    blockType = "include"
-    from = "blog/2024-03-07-rnf-best-accelerator"
+{{< fo t = "item-include"
+    from = "/project/goals/index.md"
 />}}
 
-{{< o/block blockType = "include" from = "project/goals" />}}
-
-{{< o/block
-    blockType = "include"
-    from = "project/flow-diagram"
+{{< fo t = "item-include"
+    from = "/project/flow-diagram.md"
     src = "/img/mrx-flow.png"
+    alt = "flow diagram"
 />}}
 
-{{< o/block
-    blockType = "include"
-    from = "project/Admin/backer-list"
+{{< fo t = "item-include"
+    from = "/project/Admin/backer-list.md"
+    text = "Our backers helped us get to the stage where we can give away our software to help metadata flow. Meet them here."
     src = "/img/dino/mrx-logo.svg"
+    alt = "rexy logo"
 />}}
 
-{{< o/block blockType = "include" from = "project/introduction" />}}
-
-<!-- {{< o/block blockType = "include" from = "project/videos" />}} -->
-
-{{< o/block blockType = "include" from = "project/admin/metarex-ltd" />}}
+{{</fo>}}

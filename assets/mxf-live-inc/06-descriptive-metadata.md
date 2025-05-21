@@ -25,9 +25,9 @@ Metadata" which is further described in this document. As such, the framework is
 referenced in the Preface Set while the track itself is referenced in the
 Material Package (Figure 1)
 
-{{% f/image "/img/doc/mxf-live-fig-1.png" "MXF Live" "ui centered large image" %}}
+{{< fo t = "image" src = "/img/doc/mxf-live-fig-1.png" alt = "MXF Live" srcClass = "ui centered large image" />}}
 
-{{% o/caption "Linkage of MXF Live DM Track in MXF Header Data" "figure" %}}
+{{< fo t = "caption" text = "Linkage of MXF Live DM Track in MXF Header Data" header = "figure" />}}
 
 The new keys and labels used for the descriptive metadata are taken from ARRI
 private space. Table 1 shows the scheme applied to make up the keys within ARRI
@@ -50,7 +50,7 @@ is in Section Table 3.
 | 14-15         | Further Classification                  |                   | Distinction within each group   |
 | 16            | Index                                   | `00`              | Index in case of more than one item of the same type, e.g. multiple data streams, or distinction within group. |
 
-{{% o/caption "2 - UL Key Definitions for this Specification (multi-byte values in network order)" "table" %}}
+{{< fo t = "caption" text = "2 - UL Key Definitions for this Specification (multi-byte values in network order)" header = "table" />}}
 
 | Item Name                                                                |  UL Key
 |--------------------------------------------------------------------      |-------------------------------------
@@ -64,7 +64,7 @@ is in Section Table 3.
 | MXF Live Primary (Master) Stream Flag                                    |`urn:smpte:ul060e2b34.0101010d.0e170104.03010103`
 | MXF Live Streaming Mode                                                  |`urn:smpte:ul060e2b34.0101010d.0e170104.03010104`
 
-{{% o/caption "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" "table" %}}
+{{< fo t = "caption" text = "Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" header = "table" />}}
 
 **Note:** These keys are preliminary keys to be used during experimental
 state; they are subject to change without notice.

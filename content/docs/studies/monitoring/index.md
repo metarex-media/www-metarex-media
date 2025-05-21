@@ -1,14 +1,17 @@
 ---
 title:     Live Production Monitoring
 linkTitle: Live Production Monitoring
-date:     2025-02-10
+date:     2025-02-24
 ---
 
 {{% fo
-    t = "image-fluid"
+    t = "image"
     src = "monitoring-generic.svg"
-    alt = "MetaRex Generic Live Production Scenario"
-    text = "MetaRex Generic Live Production Scenario" /%}}
+    srcClass = "ui fluid image"
+    alt = "Generic monitoring flow"
+    header = "Figure 1"
+    text = "Generic monitoring flow  for a live event"
+ /%}}
 
 In a live event there are are many links involved between getting the action
 to the viewers with minimal delay. 4 decades ago, there was only one type of
@@ -27,9 +30,35 @@ MetaRex takes a novel approach to the problem where we aim to provide
 resilience across multiple networks and to give the vendors and operators a
 chance to cooperate whilst maintaining control of their own data when needed.
 
-The solution works like this
+The solution works like this:
+{{< fo
+    t = "block"
+    src = "/brand/logo.svg"
+    srcClass = "ui fluid image"
+    srcWidth = 0.05
+    text = "Generic monitoring flow  for a live event"
+ >}}
 
-1. An operator or vendor publishes the schema for their metadata via
+1. Use your own custom metadata for the measurement
+2. Publish the schema for that metadata (in a product, in a room, in a facility or globally)
+3. Publish some services for that metadata
+4. Put the metadata in a metarex envelope
+5. Put the envelope in the Transport Stream / ST2110 / NDI / SRT feed
+6. Extract the envelope from the feed (generic software)
+7. Open the envelope to find the class of metadata inside via the `metarexId` (generic software)
+8. Use a service to process that metadata e.g. convert for display, place in a
+   queue, compare with a value from a different feed. (custom software)
+
+Of the 8 steps, only steps #1 & #8 are custom software for your app. The remaining
+steps are handled by {{<metarex>}}. This means you concentrate on the value-add
+of your metadata, {{<metarex>}} handles the plumbing and waste disposal.
+{{</fo>}}
+
+## The processing in more detail
+
+### 1. Define some custom metadata
+
+An operator or vendor publishes the schema for their metadata via
    {{%metarex%}}. The simplest form of this is to register a `metarexId` for a
    proprietary measurement document. For example, an instance document might
    look like this:
@@ -46,6 +75,11 @@ The solution works like this
 
    A real example would be more sophisticated, but this document shows a
    `metarexID` that could be looked up in the register.
+
+### 2. Publish the schema
+
+### 3. Publish some services
+
 2. Now we know the format of a document, let's use it to forward a measurement
    of the link between the Production and the Broadcaster (`linkPB`) for every
    frame (or packet or time-unit) of the signal.
@@ -101,7 +135,7 @@ standard IT web services. The slow elements (caching metarexIDs,  authentication
 warming up serverless API functions) can be done in advance of the event. This
 allows speedy processing of the workflows.
 
-### Status 2025-02-10
+### Status 2025-02-24
 
 Most of the components exist to trial this workflow:
 
@@ -109,14 +143,27 @@ Most of the components exist to trial this workflow:
 * an envelope specification
 * golang code for inserting and extracting documents from the envelope
 * a specification for service representation in the register
-* a [prototype register](https://metarex.media/reg)
+* a [prototype register][reg]
 
 We are looking for supporters to turn this into a real Proof Of Concept in
 two phases:
 
-1. Q1/Q2 20205 - optimise the {{%metarex%}} software for a vendors sending and
-   listening equipment. This will involve creating, registering and testing
-   a proprietary document format in a simulated or real network.
+1. Q1/Q2 20205 - optimise the {{%metarex%}} software into a `mrx-worker`
+   module for a vendors sending and listening equipment. This will involve
+   creating, registering and testing a proprietary document format in a
+   simulated or real network.
 2. Deploying the test system at a real event.
 
 We estimate about 4 weeks of engineering for each phase.
+
+<div class="ui container">
+{{% fo
+   t = "image"
+   src = "mrx-worker2.svg"
+   srcClass = "ui large centered image"
+   alt = "mrx-worker"
+   text = "Metarex Worker structure"
+   header = "Figure 2"
+/%}}
+</div>
+[reg]: {{% relref "/app/reg/" %}}

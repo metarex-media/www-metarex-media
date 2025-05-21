@@ -51,16 +51,14 @@ params:
 7. [User Meta Data](#meta-data)
 8. [Considerations](#considerations)
 
-{{% H/resetAutoNumbering %}}
-{{% H/anchor "scope" %}}
 
-# {{% H/1 %}} Scope
+# {{% H 1 %}} Scope<a href="scope"></a>
 
 This document specifies constraints for an MXF Live Streaming format and a
 method for mapping of metadata related to MXF Live streaming into a DM Framework
 static track within an MXF Generic Container.
 
-# {{% H/1 %}}  Conformance Notation
+# {{% H 1 %}}  Conformance Notation
 
 Normative text is text that describes elements of the design that are
 indispensable or contains the conformance language keywords: "**shall**",
@@ -101,7 +99,7 @@ information in this document shall be as follows: Normative prose shall be the
 authoritative definition; Tables shall be next; followed by formal languages;
 then figures; and then any other language forms.
 
-# {{% H/1 %}}  Normative References
+# {{% H 1 %}}  Normative References
 
 The following standards contain provisions which, through reference in this
 text, constitute provisions of this recommended practice. At the time of
@@ -135,7 +133,7 @@ Descriptions
 - SMPTE EG 42:2004 Material Exchange Format (MXF) -- MXF Descriptive
 Metadata
 
-# {{% H/1 %}} Introduction (informative)
+# {{% H 1 %}} Introduction (informative)
 
 The Metarex Container is designed to enable metadata to flow in media networks
 and workflows. This means it has to be able to carry the following:
@@ -165,15 +163,15 @@ With those properties moving data from one network type to another (e.g. from
 NDI to ST 2110) becomes a simple mapping of the container. No need for protocol
 change, and the metarexId can be used by firewalls for allow / deny lists.
 
-# {{% H/1 %}}  Implementation
+# {{% H 1 %}}  Implementation
 
 <a id="5-1"></a>
 
-## {{% H/2 %}} MXF Live Encoder
+## {{% H 2 %}} MXF Live Encoder
 
 <a id="5-1-1"></a>
 
-### {{% H/3 %}} Basic Stream Structure Constraints
+### {{% H 3 %}} Basic Stream Structure Constraints
 
 SMPTE ST 2049 already defines a low latency MXF streaming. Based on this and
 additional constraints the general rules for an MXF Live stream are:
@@ -214,7 +212,7 @@ additional constraints the general rules for an MXF Live stream are:
 
 <a id="5-1-2"></a>
 
-### {{% H/3 %}} MXF Live Streaming Modes
+### {{% H 3 %}} MXF Live Streaming Modes
 
 Different streaming modes and additional control signals allow a variety of use
 cases, including a remote control of an MXF Live receiver. Streaming modes and
@@ -258,7 +256,7 @@ be synchronized with the primary stream at the receiver side.
 
 <a id="5-1-3"></a>
 
-### {{% H/3 %}} Multiple linked MXF Live streams {{% H/4 %}} | {{% H/4 %}}
+### {{% H 3 %}} Multiple linked MXF Live streams {{% H 4 %}} | {{% H 4 %}}
 
 On Set, multiple MXF Live streams may be transmitted from different sources, to
 be gathered at a central receiver. In such scenario one stream, typically from a
@@ -268,11 +266,11 @@ streams must share the same timecode. All streams must use the same edit rate.
 
 <a id="5-2"></a>
 
-## {{% H/2 %}} MXF Live Decoder/Receiver {{% H/4 %}}
+## {{% H 2 %}} MXF Live Decoder/Receiver {{% H 4 %}}
 
 <a id="5-2-1"></a>
 
-### {{% H/3 %}}  Receiver for Continuous Stream
+### {{% H 3 %}}  Receiver for Continuous Stream
 
 A receiver which shall capture and process an incoming continuous stream from
 beginning (Header partition) to the end (RIP) can be simple. Capturing to file
@@ -305,7 +303,7 @@ to re-multiplex them all into a single stream anyway.
 
 <a id="5-2-2"></a>
 
-### {{% H/3 %}}  Receiver for Continuous Segmented Stream and Intermittent Segmented Stream
+### {{% H 3 %}}  Receiver for Continuous Segmented Stream and Intermittent Segmented Stream
 
 A simple Receiver which listens to and monitors segmented streams and also shall
 capture segments to file must start a new file for each segment, triggered by
@@ -322,7 +320,7 @@ segment of interest. Secondary streams may be unsegmented.
 A receiver may also be configured to ignore segment boundaries and further
 process all segments as a continuous stream
 
-# {{% H/1 %}}  MXF Live Descriptive Metadata
+# {{% H 1 %}}  MXF Live Descriptive Metadata
 
 For streaming MXF content, an easy transition between streaming media and
 file-based storage is desired while keeping flexibility for different scenarios.
@@ -337,7 +335,7 @@ comments to improve consistency are welcome.
 
 <a id='6-1'></a>
 
-## {{% H/2 %}} Header Metadata Mapping
+## {{% H 2 %}} Header Metadata Mapping
 
 Files adhering to this specification shall be compliant with the MXF Live
 specification, the MXF generic container and OP 1a as defined in SMPTE ST
@@ -349,9 +347,16 @@ Metadata" which is further described in this document. As such, the framework is
 referenced in the Preface Set while the track itself is referenced in the
 Material Package (Figure 1)
 
-{{% f/image "/img/doc/mxf-live-fig-1.png" "MXF Live" "ui centered large image" %}}
+{{< fo t = "image" 
+    src = "/img/doc/mxf-live-fig-1.png" 
+    text = "MXF Live" 
+    class = "ui centered large image" 
+/>}}
 
-{{% o/caption "Linkage of MXF Live DM Track in MXF Header Data" "figure" %}}
+{{< fo t = "caption" 
+    text = "Linkage of MXF Live DM Track in MXF Header Data" 
+    header = "figure" 
+/>}}
 
 The new keys and labels used for the descriptive metadata are taken from ARRI
 private space. Table 1 shows the scheme applied to make up the keys within ARRI
@@ -361,7 +366,7 @@ is in Section Table 3.
 
 <a id='6-2'></a>
 
-## {{% H/2 %}} Keys used for Coding
+## {{% H 2 %}} Keys used for Coding
 
 | **Byte No.**  | **Description**                         | **Value (hex)**   | **Meaning**               |
 |---------------|-------------------------                |-------------------|-----------------------    |
@@ -374,7 +379,7 @@ is in Section Table 3.
 | 14-15         | Further Classification                  |                   | Distinction within each group   |
 | 16            | Index                                   | `00`              | Index in case of more than one item of the same type, e.g. multiple data streams, or distinction within group. |
 
-{{% o/caption "2 - UL Key Definitions for this Specification (multi-byte values in network order)" "table" %}}
+{{< fo t = "caption" text = "2 - UL Key Definitions for this Specification (multi-byte values in network order)" header = "table" />}}
 
 | Item Name                                                                |  UL Key
 |--------------------------------------------------------------------      |-------------------------------------
@@ -388,18 +393,18 @@ is in Section Table 3.
 | MXF Live Primary (Master) Stream Flag                                    |`urn:smpte:ul060e2b34.0101010d.0e170104.03010103`
 | MXF Live Streaming Mode                                                  |`urn:smpte:ul060e2b34.0101010d.0e170104.03010104`
 
-{{% o/caption "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" "table" %}}
+{{< fo t = "caption" text = "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" header = "table" />}}
 
 **Note:** These keys are preliminary keys to be used during experimental
 state; they are subject to change without notice.
 
 <a id='6-3'></a>
 
-## {{% H/2 %}} Specification of Sets, Descriptors and Properties
+## {{% H 2 %}} Specification of Sets, Descriptors and Properties
 
 <a id='6-3-1'></a>
 
-### {{% H/3 %}}  MXF Live Streaming Specific Descriptive Metadata Framework Set
+### {{% H 3 %}}  MXF Live Streaming Specific Descriptive Metadata Framework Set
 
 The MXF Live Streaming Specific Descriptive Metadata Set groups all items
 relevant to streaming. It shall be coded as a local set using 2-byte tags and
@@ -416,7 +421,7 @@ relevant to streaming. It shall be coded as a local set using 2-byte tags and
 | Primary (Master) Stream Flag                                     | Boolean   | 1    | dynamic     | Opt  | `urn:smpte:ul:060e2b34.0101010d.0e170104.03010103` Flag set in the stream by the upstream controller receiver behavior.|
 | Streaming                                                        | UInt8     | 1    | dynamic     | Opt  |`urn:smpte:ul:060e2b34.0101010d.0e170104.03010104` Control to enable user-defined or remote-controlled (by sender) capture.  In continuous mode, a user can select which part to capture while in segmented modes, the receiver is  controlled by "`Segment of Interest Flag`".<br> `0`: Continuous Streaming Mode<br>`1`: Continuous Segmented Streaming Mode<br>`2`: Intermittent  Segmented Streaming Mode
 
-# {{% H/1 %}} User Metadata
+# {{% H 1 %}} User Metadata
 
 As mentioned in the introduction, meta data is an important factor of MXF Live.
 All meta data shall always be available together with the A/V data immediately.
@@ -443,7 +448,7 @@ Generally, definitions for meta data carriage will not affect the MXF Live
 specification directly but constraints or recommendations to use a specific meta
 data wrapping style for specific kind of meta data may be added.
 
-# {{% H/1 %}} Considerations
+# {{% H 1 %}} Considerations
 
 It needs to be discussed whether MXF Live streams which carry meta data only
 need to be based on the same edit rate than the primary A/V stream as specified

@@ -8,38 +8,41 @@
 eval "$(clog Inc)"
 eval "$(clog project config)"
 eval "$(cat clogrc/help-hugo.sh)"
-# clog Check
+clog Check pre-build
+clog Check build
 
-$devMode=[ -z "$1" ]
-
-if $devMode; then
-   fInfo "${cE}DEVELOPMENT$cW mode"
-  # we're in development mode, so build quickly
-  opts="--gc --logLevel info"
+if $(clog is-prod-release); then
+  clog Log -W "PRODUCTION mode"
+  hopts=""
+  dopts="--push"
 else
-   fInfo "${cE}Production$cW mode"
+  clog Log -I "development mode"
+  # we're in development mode, so build quickly
+  hopts="--gc --logLevel info"
+  dopts="--push"
 fi
-fHugoBuild "$opts"
+fHugoBuild "$hopts"
 
-# override these values to use development friendly values
-if $devMode; then
-   opts="--push"
-fi
 dockerfile="clogrc/dockerfile"
-VV="$(clog git tag ref)"
-# ignore the repo environment if set
 repo="metarexmedia"
 
-fHugoDocker "$opts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$VV"
-fHugoDocker "$opts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$VV"
+fHugoDocker "$dopts" "$dockerfile" "linux/arm64" "$repo/www-metarex-media-arm:latest" "$repo/www-metarex-media-arm:$(clog git tag ref)"
+fHugoDocker "$dopts" "$dockerfile" "linux/amd64" "$repo/www-metarex-media-amd:latest" "$repo/www-metarex-media-amd:$(clog git tag ref)"
 
-FoundLocally="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$VV")"
+[ -n "$GITHUB_ACTIONS" ]&&clog Log -I "build complete"&&exit 0
+
+# interactive builds...
+
+FoundLocally="$(docker images | grep -oE "metarexmedia\/www-metarex-media-arm\s+$(clog git tag ref)")"
 if [ -z "$FoundLocally" ]; then
-   fError "Build failed? Docker image (www-metarex-media:$VV) not found locally\n"
+   fError "Build failed? Docker image (www-metarex-media:$(clog git tag ref)) not found locally\n"
    fError "Aborting....\n"
    exit 1
 fi
 
-if $devMode; then
-  fInfo "1.$cC clog test$cT to try the docker image"
+if $(clog is-prod-release); then
+   clog Log -W "PRODUCTION mode build complete"
+else
+  clog Log -I "development build complete"
+  clog Log -I "clog test  to run image port 12080"
 fi
