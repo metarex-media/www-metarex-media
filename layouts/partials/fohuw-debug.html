@@ -1,0 +1,22 @@
+{{/* fohuw debug partial
+
+*/}}
+{{/* ------- mode dump --------------------------------------------- -*/}}
+{{- if eq .mode "dump" }}
+{{ $type := (printf "%T" .) }}
+<p>Parameter is of type {{ $type }}</p>
+{{ if eq $type "map[string]interface {}" }}
+<ul>
+  {{- range $key, $value := . -}}
+  <li>[{{ $key }}] == {{$value}}</li>
+  {{ end -}}
+</ul>
+{{ end -}}
+{{ end -}}
+
+{{/* ------- mode log ---------------------------------------------------- -*/}}
+{{- if eq .mode "log" }}
+<div class="ui fluid red message">
+  <span class="ui blue text">{{ .text }}</span>
+</div>
+{{- end -}}

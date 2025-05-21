@@ -7,107 +7,61 @@
 #  \___/  \_/  \___| |_|   |_|   |_| \__,_| \___| /__/
 ### when clog starts it uses these config values to override the defaults.
 
-# --- shell snippets ----------------------------------------------------------
+# --- shell snippets for this project -----------------------------------------
 snippets:
-  test: 'python3 -m http.server 1414 -d ./public && open localhost:1414'
   watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
-  vCODE: cat data/releases.yaml|grep version|head -1|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
-  git-message-ref: cat data/releases.yaml|grep note|head -1|sed -nr 's/(\s*note:\s+"{0,1})(.*)"{0,1}$/\2/p'
+  git:
+    tag:
+      ref: yq -r '.releases[0].version'  data/releases.yaml
+    message:
+      ref:  yq -r '.releases[0].note'  data/releases.yaml
+  project:
+    config: |
+      PROJECT=www-metarex-media
+      DOCKER_NS="metarexmedia"
+    has:
+      golang: go version|grep '^go '|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
+      hugo: hugo version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
+      git-lfs: git-lfs version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'|head -1
+    needs:
+      golang: echo "1.24.0"
+      hugo: echo "0.143.1"
+      git-lfs: echo "3.6.0"
+  testamd: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-amd:latest"
+  testarm: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-arm:latest"
+
   lfs-install: |
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
     sudo apt-get install git-lfs
-  install:
-    hugo: |
-      VER=$(hugo -h  > /dev/null 2>&1)
-      eval "$(clog Inc)"
-      if [[ $? -eq 0 ]] ; then
-        fInfo "$oK hugo$cT installed$cX"
-      else
-        fInfo "$cC hugo$cT missing ... installing ...$cX"
-        VER="0.138.0"
-        SRC="https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-amd64.tar.gz"
-        # check if we're on arm and update the source
-        if [[ "aarch64" == $(uname -m) ]]; then
-          SRC="https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_extended_${VER}_linux-arm64.tar.gz"
-        fi
-        # get the tarball - following 302 redirections to the real source
-        curl --silent --output /tmp/hugo.tar.gz --location $SRC
-        sudo tar --extract --file /tmp/hugo.tar.gz --directory /usr/local/bin hugo
-        # install the scss compiler if needed
-        if [[ -e "package.json" ]] ; then
-          npm install --silent postcss-cli
-        fi
-        fOk "$oK hugo$cT installed$cX"
-      fi
 
 
 # --- check project -----------------------------------------------------------
 check:
-  # setting to debug will break the workflow but give you more information
-  # setting to warning or error will effectively mute most of the output
-  checkLogLevel: Info
-  # --- clog Check default ----------------------------------------------------
   build:
-    # report on clog-only properties
-    # report:
-    #   tag-ref:       clog Sh vCode
-    # a dependency check passes if the return status is 0 or the text value matches
-    dependencies:
-      - name: Golang Version
-        snippet: cat go.mod | grep -oE 'go\s([0-9]+\.[0-9]+)' | head -1 | grep -oE '[0-9]+\.[0-9]+'
-        error-msg: 1.22 expected Golang version
-        error-if:
-          - golang-version: '[[ $VALUE != "1.22" ]]'
-        help-msg: update the version of golang or update clog.config.yaml/check
-      - name: Hugo Version
-        snippet: hugo version|grep -oE 'v([0-9]+\.[0-9]+)\.'|head -1
-        error-msg: v0.133. expected Golang version
-        error-if:
-          - hugo-version: '[[ $VALUE != "v0.133." ]]'
-        help-msg: update the version of hugo or update clog.config.yaml/check
-      - name: Git-LFS
-        snippet: git lfs version|grep -oE '[0-9]+\.[0-9]+'|head -1
-        error-msg: Git LFS not installed
-        error-if:
-          - lfs-version: '[[ "$VALUE" < "3.5" ]]'
-        help-msg: try clog Sh lfs-install
-  # --- clog Check docker logins ----------------------------------------------
-  docker:
-    dependencies:
-      - name: Docker Username
-        snippet: echo "$MRX_DOCKER_USR"
-        error-msg: "$MRX_DOCKER_USR is unset"
-        error-if:
-          - DOCKER_USR_unset: '[ -z "$MRX_DOCKER_USR" ]]'
-        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
-      - name: Docker Password
-        snippet: '[ -z "$MRX_DOCKER_PWD" ] && echo "no password"'
-        error-msg: "$MRX_DOCKER_PWD is unset"
-        error-if:
-          - DOCKER_PWD_unset: '[ -z "$MRX_DOCKER_PWD" ]'
-        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
-      - name: Docker Password
-        snippet: '[ -z "$MRX_DOCKER_NS" ] && echo "no password"'
-        error-msg: "$MRX_DOCKER_NS is unset"
-        error-if:
-          - MRX_DOCKER_NS_unset: '[ -z "$MRX_DOCKER_NS" ]'
-        help-msg: Check your cicd secrets or ~/.bashrc  or ~/.zshrc
-  # --- clog Check gitlab-env -------------------------------------------------
-  gl-env:
-    report:
-      vHUGO:
-      vGOLANG:
-      IMAGE:
-      BASE_URL:
-      vDART:
-      vNODE:
-      vDOCKER_IMAGE:
-  # --- clog Check deploy -----------------------------------------------------
-  deploy:
-    dependencies:
-      - name: Docker installed
-        snippet: docker --version
-        error-msg: docker not found
-        error-if:
-          - expect_docker: '[ -z "$VALUE" ]'
-        help-msg: install docker engine or docker desktop
+    blocks:
+      - name: golang version
+        try: |
+          [[ "$(clog project has golang)" == "$(clog project needs golang)" ]]
+        ok: clog Log -I "golang $(clog project has golang) good"
+        catch: |
+          clog Log -E "golang: bad version. Need $(clog project needs golang), got $(clog project has golang)"
+      - name: hugo version
+        try: | 
+          [[ "$(clog project has hugo)" == "$(clog project needs hugo)" ]]
+        ok: clog Log -I "hugo $(clog project has golang) good"
+        catch: |
+          clog Log -E "hugo: bad version. Need $(clog project needs hugo), got $(clog project has hugo)"
+      - name: git-lfs version
+        try: |
+          [[ "$(clog project has git-lfs)"  == "$(clog project needs git-lfs)" ]]
+        ok: clog Log -I "git-lfs $(clog project has git-lfs) good"
+        catch: |
+          clog Log -W "git-lfs: bad version. Need $(clog project needs git-lfs), got $(clog project has git-lfs)"
+      - name: docker?
+        try: which docker 2>/dev/null
+        ok: clog Log -I "docker ok"
+        catch: clog Log -E "docker not on path"
+      - name: docker?
+        try: which docker 2>/dev/null
+        ok: clog Log -I "docker ok"
+        catch: clog Log -E "docker not on path"
