@@ -45,8 +45,8 @@ date:      2024-08-13
     blockClass = "ui blue segment"          divClass = blockClass
     class      = "ui blue message"          msgClass = class
     header     = "What's the benefit?"      name = header
-    src        = "project/featured-boardroom.jpg"
-    alt        = "dino in a suit"
+    src        = "img/dino/rexy-benefits.png"
+    alt        = "rexy with microphone"
     link       = "/project/faq/"
   />}}
   {{< /fo >}}
@@ -116,7 +116,7 @@ date:      2024-08-13
 />}}
 
 {{< fo t = "item-include"
-    from = "/project/Admin/backer-list.md"
+    from = "/project/about.md"
     text = "Our backers helped us get to the stage where we can give away our software to help metadata flow. Meet them here."
     src = "/img/dino/mrx-logo.svg"
     alt = "rexy logo"

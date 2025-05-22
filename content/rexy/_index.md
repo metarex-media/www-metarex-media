@@ -33,8 +33,7 @@ video of Rexy which was released in March 2021.
 </div>
 
 Rexy is such a wonderful character and now has her own backstory, personality,
-and character development, which will be serialized here. Please [subscribe to
-our newsletter][contact] to get informed of Rexy clips and posts.
+and character development.  You can find more on her backstory [here] and follow us on our {{% insta %}} for all the latest artwork.
 
 ### Meet the creatives behind Rexy
 
@@ -46,8 +45,9 @@ Simi Zeko is a Graphic Designer and 3D animator who enjoys problem solving.
 He’s always looking for the next opportunity to try something new and explore
 what technology can bring to the process.
 
-Check out their [first blog post][blog] if you missed it, to find out more about Rexy’s
-creation:
+Check out Amber and Simi's [first blog post][blog], to find out more about Rexy’s
+creation. 
+
 
 <div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
@@ -55,7 +55,9 @@ creation:
 
 Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 
+
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
-[blog]:    https://metarex.media/blog/2023/07/27/2023-07-28-metarex-creative-team/
+[blog]:    blog/creative-team/index.md
 [contact]: /contact
+[here]:    project/rexy-backstory/index.md

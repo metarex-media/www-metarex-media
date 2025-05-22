@@ -1,7 +1,7 @@
 ---
 title:       About MetaRex
 date:        2024-08-28
-linkTitle:   About
+linkTitle:   About MetaRex 
 url:         /about
 type:        docs
 

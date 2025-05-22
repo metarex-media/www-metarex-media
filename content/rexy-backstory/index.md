@@ -20,12 +20,11 @@ The first drafts of Rexy was created in early 2021 by [Amber Bardell].  At the t
 Her adventures are far from over, so be sure to follow on the {{% insta %}} for the latest artwork by Amber and Simi!
 
 
-
 ## Rexy's Backstory by Amber Bardell
 
 {{< fo t = "image"
   id       = "Rexy's backstory"
-  src      = "rexy.md/rexy-backstory.png"
+  src      = "rexy-backstory/rexy-backstory.png"
   alt      = "rexy backstory"
 />}}
 
