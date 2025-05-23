@@ -3,9 +3,7 @@
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.Language.Lang }}" class="no-js">
 
 <head>
-  {{ partial "my/site-head-begin.html" . }}
   {{ partial "tmpl/head.html" . }}
-  {{ partial "my/site-head-end.html" . }}
 </head>
 {{- $bodyClass := ""}}
 {{- if isset .Page.Params.ui "bodyClass" }}{{ $bodyClass = printf "class=\"%s\"" .Page.Params.ui.bodyClass }}{{ end }}

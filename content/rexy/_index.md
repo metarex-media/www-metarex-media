@@ -46,8 +46,7 @@ He’s always looking for the next opportunity to try something new and explore
 what technology can bring to the process.
 
 Check out Amber and Simi's [first blog post][blog], to find out more about Rexy’s
-creation. 
-
+creation.
 
 <div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
@@ -55,8 +54,8 @@ creation.
 
 Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 
-{{< fo t = "children" />}}
 
+{{< fo t = "children" />}}
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
