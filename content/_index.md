@@ -47,7 +47,7 @@ date:      2024-08-13
     header     = "What's the benefit?"      name = header
     src        = "img/dino/rexy-benefits.png"
     alt        = "rexy with microphone"
-    link       = "/project/faq/"
+    link       = "/faq/index.md"
   />}}
   {{< /fo >}}
 {{< fo t = "feature-group" >}}

@@ -6,7 +6,7 @@ metarex:
  - name: MetaRex 
   url: https://metarex.media/app/demos/demo02
   descriptions of demo: |
-  MetaRex allows self describing metadata to be used with low or no code.  The code is all feww to use. 
+  MetaRex allows self describing metadata to be used with low or no code.  The code is all few to use. 
   describing the apiVersion: apps/v2
 
 modulamedia:

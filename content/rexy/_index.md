@@ -16,14 +16,14 @@ description: Who is Rexy & why the dinosaur logo?
 
 ## Why the dinosaur?
 
-The {{% metarex %}} logo (the dinosaur) was created by [Amber Bardell][AB].
+The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
 
 The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
-doesn't happen!.
+doesn't happen!
 
 With Amber’s fabulous creativity, Rexy (the dinosaur) was born in 2021.
-Working together, [Amber][AB] and [Simi Zeko][SZ], created the first rendering
+Working together, Amber and Simi Zeko, created the first rendering
 video of Rexy which was released in March 2021.
 
 <div class = "ui olive container segment">
@@ -32,28 +32,26 @@ video of Rexy which was released in March 2021.
   </video>
 </div>
 
-Rexy is such a wonderful character and now has her own backstory, personality,
-and character development.  You can find more on her backstory [here] and follow us on our {{% insta %}} for all the latest artwork.
-
-### Meet the creatives behind Rexy
-
-Amber Bardell is a multidisciplinary creative with a passion for tactile art
-techniques. You’ll often find them painting walls, or canvas. Their trusty iPad
-is the digital canvas where most of the MetaRex visual concepts begin.
-
-Simi Zeko is a Graphic Designer and 3D animator who enjoys problem solving.
-He’s always looking for the next opportunity to try something new and explore
-what technology can bring to the process.
-
-Check out Amber and Simi's [first blog post][blog], to find out more about Rexy’s
-creation. 
-
+### Why is Rexy driving a steam train?
 
 <div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
-### Why is Rexy driving a steam train?
+Not only having a dinosaur to show how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 
-Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
+### Meet the creatives behind Rexy
+
+[Amber Bardell][AB] is a multidisciplinary creative with a passion for tactile art
+techniques. You’ll often find them painting walls, or canvas. Their trusty iPad
+is the digital canvas where most of the MetaRex visual concepts begin.
+
+[Simi Zeko][SZ] is a Graphic Designer and 3D animator who enjoys problem solving.
+He’s always looking for the next opportunity to try something new and explore
+what technology can bring to the process.
+
+Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
+
+Rexy is such a wonderful character and now has her own backstory, personality,
+and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
 
 {{< fo t = "children" />}}
 
@@ -62,4 +60,4 @@ Not only having a dinosaur (Rexy) shows how the industry treats metadata, to hav
 [SZ]:      https://simizeko.com
 [blog]:    {{% relref "blog/creative-team/index.md" %}}
 [contact]: {{% relref "/contact" %}}
-[here]:    {{% relref "rexy/backstory/index.md" %}}
+[backstory]:    {{% relref "rexy/backstory/index.md" %}}

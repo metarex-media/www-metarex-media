@@ -12,13 +12,14 @@ description:  MetaRex is on Instagram!
   src   = "rexy peek 1.2.png"
   srcClass = "ui fluid image"
   alt = "rexy hiding behind tree"
->}}
+/>}}
 
-MetaRex is on [**Instagram!**](https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==) 
+
+
+MetaRex is on **{{% insta %}}**!
 
 Follow us on our Instagram and see the creative side of MetaRex with Rexy, Egg and much more! 
 
 Our Instagram page is run by our Creative Team, [Amber Bardell](https://www.amberbardell.com) and [Simi Zeko,](http://www.simizeko.com) and will have all the latest Rexy artwork, sketches and designs. 
 
 
-{{< /fo >}}
