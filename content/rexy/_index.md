@@ -55,9 +55,11 @@ creation.
 
 Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 
+{{< fo t = "children" />}}
+
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
-[blog]:    blog/creative-team/index.md
-[contact]: /contact
-[here]:    project/rexy-backstory/index.md
+[blog]:    {{% relref "blog/creative-team/index.md" %}}
+[contact]: {{% relref "/contact" %}}
+[here]:    {{% relref "rexy/backstory/index.md" %}}

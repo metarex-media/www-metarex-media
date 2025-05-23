@@ -1,7 +1,6 @@
 ---
 title:       "Rexy's Backstory"
 linkTitle:   "History of Rexy"
-layout:      blog  
 weight:      50
 description: 
 date:        2025-06-29   
