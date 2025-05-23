@@ -209,4 +209,4 @@ outputs:
     - HTML
     - RSS
 
-refLinksErrorLevel: warning 
+refLinksErrorLevel: WARNING
