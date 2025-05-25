@@ -1,6 +1,6 @@
 ---
 ---
-{{< f/card
+{{< fo t = "banner"
       src =  "/meeja/mrx-rexy-nab-2023.mp4"
       credit   =  ""
       title    =  "MetaRex - it's like FedEx for Metadata"
@@ -29,4 +29,4 @@ metadata.
 
 [1]: https://staging.metarex.media/app/reg/search?qry=reg&mrxId=MRX.123.456.789.def
 [2]: https://staging.metarex.media/app/reg/search?qry=reg&mrxId=MRX.123.456.789.reg
-{{< /f/card >}}
+{{< /fo >}}

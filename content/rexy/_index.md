@@ -4,12 +4,16 @@ linkTitle:   Rexy
 date:        2024-09-27
 weight:      10
 
-description: Who is Rexy & why the dinosaur?
+description: Who is Rexy & why the dinosaur logo?
 ---
 <!-- markdownlint-disable MD033 -->
 {{< fo t = "banner"
     header = "Who is Rexy?"
+<<<<<<< HEAD
     description = "She's our mascot, and this is her story."
+=======
+    description = "She's our mascot, and this is her creative story."
+>>>>>>> CharlottesWeb2/main
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
 />}}
@@ -53,9 +57,13 @@ creation:
 
 ### Why is Rexy driving a steam train?
 
+<<<<<<< HEAD
 Not only having a dinosaur (Rexy) shows how the industry treats metadata, to
 have her driving a steam train also represents the way the media and tech
 industry uses metadata – slow and old-fashion.
+=======
+Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
+>>>>>>> CharlottesWeb2/main
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com

@@ -15,6 +15,4 @@ menu:
 tags:        ["faq"]
 ---
 
-<div class="ui horizontal center aligned message">
-<p>Still got questions? <a href="/contact">Contact</a> us and we'll help you.</p>
-</div>
+[FAQ's]:  /faq/index.md

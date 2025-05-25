@@ -14,11 +14,11 @@ url: "/contact/"
 tags: ["contact"]
 ---
 
-<div class = "ui basic container segment">
-<form class = "ui form">
-<div class = "field">
-<label>first name</label>
-<input type = "text" name = "last name" placeholder = "Last Name">
-</div>
-</form>
-</div>
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "26321893",
+    formId: "e2e406fe-bcff-49b0-b9b5-bb15ae785242",
+    region: "eu1"
+  });
+</script>

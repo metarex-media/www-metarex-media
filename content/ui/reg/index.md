@@ -9,7 +9,7 @@ js:
    - src: reg-query-ui.js
    - src: reg-query.js
 ---
-## Metarex Register
+## MetaRex Register
 
 The register contains definitions for different types of metadata. The register
 browser on this page is under continuous development. Please [contact] us if you

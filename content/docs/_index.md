@@ -20,13 +20,21 @@ description: Learn about metarex?
     header     = "Rexy clips"           name = header
     src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
     srcStyle   = "max-width: 300px;"
+<<<<<<< HEAD
     link       = "/about"
+=======
+    link       = "/project/about"
+>>>>>>> CharlottesWeb2/main
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
     blockClass = "ui yellow segment"    divClass = blockClass
     class      = "ui yellow message"    msgClass = class
+<<<<<<< HEAD
     link       = "https://github.com/orgs/metarex-media/repositories"
+=======
+    TODO-link       = "https://github.com/orgs/metarex-media/repositories"
+>>>>>>> CharlottesWeb2/main
   />}}
 <div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
 <div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
@@ -78,7 +86,7 @@ you can inspect the register using the API [here][reg].
 [01]: {{% relref "/docs/specifications/introduction/" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec/" %}}
 [03]: https://github.com/metarex-media/mrx-container/issues
-[04]: {{% relref "/blog/2024-03-21-white-paper-blog" %}}
+[04]: {{% relref "/blog/white-paper-blog" %}}
 
 [rux]:  https://metarex.media/appapp/reg
 [reg]:  https://metarex.media/appreg

@@ -4,6 +4,9 @@ linkTitle:     Flow Diagram
 date:         2024-02-29
 description:  How Metarex flows metadata
 type:        docs
+
+params:
+  src: img/mrx-flow.png
 ---
 
 {{< fo t = "block" 
@@ -16,6 +19,10 @@ type:        docs
     src = "/img/mrx-flow.png" 
     name = "The MetaRex Flow Diagram 2024" 
     id = "showCaption" 
+<<<<<<< HEAD
+=======
+    alt = "metarex flow diagram"
+>>>>>>> CharlottesWeb2/main
 >}}
 
 {{% metarex %}} is like Fedex for metadata.

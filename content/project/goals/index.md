@@ -6,6 +6,8 @@ type:        docs
 resources:
    -
      src:  img/featured-goals.jpg
+params:
+   src:  project/goals/featured-goals.jpg
 ---
 {{< fo t = "block" 
     id   = "summary" 

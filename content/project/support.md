@@ -1,8 +1,8 @@
 ---
-title:       Support - Get Help!
+title:       Support
 linkTitle:   Support
 date:        2024-04-20
-description: What's not working?
+description: Something not working?  Please let us know. 
 type:        docs
 
 menu:
@@ -13,7 +13,8 @@ menu:
 
 url:         "/support/"
 
-tags:        ["admin", "support"]
+tags:       ["support"] 
+oldtags:    ["admin", "support"]
 ---
 
 <div>

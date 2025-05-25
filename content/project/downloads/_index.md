@@ -17,7 +17,7 @@ resources:
 - name: backerAgreement
   title: Backer Agreement
   # this file is uploaded directly to the host and is not in GitHub
-  src: /downloads/mrx-backer-agreement-sample.pdf
+  
   params:
     icon: file pdf outline
     download: true
@@ -60,17 +60,8 @@ resources:
 
 These are all available on the [style](/style) page.
 
-### Backer Agreement
-
-You can download a sample of the current backer agreement. If you become a
-backer, then a signable version will be sent to you along with your invoice.
-
-{{< resource/listByGroup "Project Documents" >}}
-
 ### Samples
 
-Sample files are continually updated during the project. Typically the versions
-on the various GitHub repos will be less reliable that the older, published
-versions here.
+Sample files are continually updated during the project. Typically the versions on the various GitHub repos will be less reliable that the older, published versions here.
 
 {{< resource/listByGroup "Samples" >}}

@@ -43,7 +43,7 @@ The register API is generated from an [OpenAPI 3.0 document][d1] that can be
 [01]: {{% relref "/docs/specifications/introduction.md" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec.md" %}}
 [03]: https://github.com/metarex-media/mrx-container/issues
-[04]: {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
+[04]: {{% relref "/blog/white-paper-blog/" %}}
 
 [10]: {{% relref "/app/reg/" %}}
 [11]: {{% relref "/" %}}reg/

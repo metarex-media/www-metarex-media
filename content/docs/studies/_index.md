@@ -7,14 +7,22 @@ description: Case Studies for using Metarex
 
 {{< fo t = "banner"
     header = "Case Studies"
+<<<<<<< HEAD
     description = "Metarex is like a zip file with a timeline. It's used like an electronic FedEx service."
+=======
+    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
+>>>>>>> CharlottesWeb2/main
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
 />}}
 
+<<<<<<< HEAD
 We want the metadata experience for users to be a good one. In our concept
 diagram, you can see that video and audio generally flow well with
 today's media tools. The metadata, however, is usually subject to failure.
+=======
+We want the metadata experience for users to be a good one. In our concept diagram, you can see that video and audio generally flow well with today's media tools. The metadata, however, is usually subject to failure.
+>>>>>>> CharlottesWeb2/main
 This is <span class = "ui red text">bad</span>!
 
 {{% fo
@@ -27,12 +35,15 @@ This is <span class = "ui red text">bad</span>!
    header = "Figure"
 /%}}
 
-{{< metarex >}} allows metadata to flow in a wide variety of situations. Below
-is a list of case studies, some of which we're already working on. Other's
-we're looking for sponsors to tailor the free software to your precise needs.
+{{< metarex >}} allows metadata to flow in a wide variety of situations. Below is a list of case studies, some of which we are already working on. 
 
-Read & enjoy
+Read & enjoy!
+
+If these case studies sound like an issue you are having, then get in [contact] with us and we will be happy to discuss a tailored solution to your precise needs, using the free software.
+
 
 [01]:   {{% relref "/docs/specifications/introduction/" %}}
 [02]:   {{% relref "/docs/specifications/mrx-container-spec/" %}}
-[04]:   {{% relref "/blog/2024-03-21-white-paper-blog/" %}}
+[04]:   {{% relref "/blog/white-paper-blog/" %}}
+
+[contact]: {{< relref "/contact" >}}
