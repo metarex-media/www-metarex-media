@@ -101,14 +101,16 @@ prism_syntax_highlighting: true
 
 # --- UI -----------------------------------------------------------------------
 ui:
+  # hide things that would normally be seen
+  hide:
+    navbar:
+      logo: false
+      title: false
+      background_cover: false
   #  Set to true to disable breadcrumb navigation.
   breadcrumb_disable: false
   # Set to true to disable the About link in the site footer
   footer_about_disable: true
-  # Set to false if you don't want to display a logo (/static/brand/logo.svg) in the top navbar
-  navbar_logo: true
-  # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-  navbar_translucent_over_cover_disable: false
   # Enable to show the side bar menu in its compact state.
   sidebar_menu_compact: false
   # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -155,7 +157,12 @@ links:
       url: https://discord.gg/uBxZXYZARw
       icon: "rss"
       desc: "RSS feed for website updates"
-
+    - name: LinkedIn
+      url: https://www.linkedin.com/company/metarex-media/
+      icon: "linkedin logo"
+    - name: Instagram
+      url:  https://www.instagram.com/metarex.media
+      icon: "Instagram logo"
   # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
   developer:
     - name: GitHub

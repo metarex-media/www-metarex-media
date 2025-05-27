@@ -1,6 +1,7 @@
 ---
 title:       We have a winner!
 linkTitle:   We have a winner!
+layout:      blog
 date:        2024-09-16
 description: "Many thanks to everyone who took part!"
 author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
