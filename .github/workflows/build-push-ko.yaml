@@ -1,0 +1,79 @@
+# GitHub Workflow for building and deploying a Hugo site to GitHub Pages
+# - secrets.DOCKER_PAT - the personal access token for docker hub
+# -     vars.DOCKER_NS - the account namespace for docker hub e.g. mrmxf
+# - secrets.HOOK_SLACK - the SLACK HOOK to post messages to the team
+
+name: build-www-metarex-media
+run-name: 👷🏻‍♀️${{ github.actor }} 🏗️dev-build-ko(www-metarex-media) 🚀
+on:
+  push:                         # run every push
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:            # run manually from Actions tab
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+# Allow only one concurrent deployment, skipping runs queued between the run
+# in-progress and latest queued. Allow cancelling in-progress runs.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+
+jobs:
+  #dump properties of this run
+  dump:
+    # run for pushes & pull requests to the mrmxf fork
+    if: github.repository_owner == 'mrmxf'
+    uses: ./.github/workflows/dump-context.yaml
+
+  # Build job
+  staging-build:
+    # run for pushes & pull requests to the mrmxf fork
+    if: github.repository_owner == 'mrmxf'
+    runs-on: ubuntu-latest
+    steps:
+      - # ---------------------------------------------------------------------
+        name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - # ---------------------------------------------------------------------
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKER_NS }}
+          password: ${{ secrets.DOCKER_PAT }}
+      - # ---------------------------------------------------------------------
+        name: Build Hugo & Container with clog
+        env:
+          DOCKER_NS: ${{ vars.DOCKER_NS }}
+          HOOK_SLACK: ${{ secrets.HOOK_SLACK }}
+        run: |
+          curl https://mrmxf.com/get/clogdev | bash
+          #        _                   _             
+          #   __  | |  ___   __ _   __| |  ___  __ __
+          #  / _| | | / _ \ / _` | / _` | / -_) \ V /
+          #  \__| |_| \___/ \__, | \__,_| \___|  \_/ 
+          #                 |___/                    
+          clog install golang
+          clog install hugo
+          clog install ko
+          clog build
+      - # ---------------------------------------------------------------------
+        name: ping Slack
+        env:
+          HOOK_SLACK:  ${{ secrets.HOOK_SLACK }}
+        run: |
+          eval "$(clog Source project config)"
+          idUrl="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          msg="GitHub built $PROJECT $(clog git tag ref) after(${{ github.event_name }} event by ${{github.triggering_actor}})"
+          msg="$msg from ${{github.repository}} branch $(clog git branch) $idUrl"
+          [ -n "$HOOK_SLACK" ] && clog Slack "$msg"

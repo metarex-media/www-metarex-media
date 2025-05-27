@@ -11,8 +11,8 @@
       "mode": "auto",
       "program": "${workspaceFolder}/podserver",
       "args":[
-        "--path=public",
-        "--prefix=ofo"
+        "--path=kodata",
+        "--prefix=\"/\""
       ]
     }
   ]
