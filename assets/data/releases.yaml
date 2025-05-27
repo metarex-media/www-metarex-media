@@ -1,3 +1,4 @@
+- { version:  1.7.6-stage, date: 2025-05-20, build: dev,  note: start of Rexy backstory}
 - { version:  1.7.5, date: 2025-05-15, build: dev,  note: podserver update}
 - { version:  1.7.4, date: 2025-05-13, build: dev,  note: MPTS2025 version}
 - { version:  1.7.3, date: 2025-02-24, build: dev,  note: aicar demo}

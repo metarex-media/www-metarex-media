@@ -15,7 +15,7 @@ blog-id: 2376418927365
   id       = "block1"
   src      = featured-broadcast-focus.png
   srcOn    = "left"
-  alt = "screenshot of Russel Trafford Jones and Bruce Devlin for the video interview" 
+  alt = "screenshot of Russel Trafford Jones and Bruce Devlin for the video interview"
 >}}
 <!-- markdownlint-disable MD025 -->
 # Broadcast Focus interview
@@ -23,24 +23,11 @@ blog-id: 2376418927365
 I had the honour to talk about all things metadata and to preview NAB 2024 with
 Russel Trafford Jones from [Broadcast Focus](http://broadcastfocus.com/).
 
-<<<<<<< HEAD:content/blog/2024-02-25-broadcast-focus/index.md
-{{< sitelinks >}}
-{{< /fo >}}
-
-<!-- ####################################################################### -->
-{{< fo t = "block"
-    src = "https://www.youtube.com/watch?v=b_2Q0K6Lfd8"
-    id = youtube
-/>}}
-[Broadcast Focus]: http://broadcastfocus.com/
-=======
 <!-- ####################################################################### -->
 
-Watch the episode [Bruce Devlin on AI and Self-Describing Metadata]. 
+Watch the episode [Bruce Devlin on AI and Self-Describing Metadata].
 
 {{< sitelinks >}}
 {{< /fo >}}
 
-[Broadcast Focus]:  http://broadcastfocus.com/ 
 [Bruce Devlin on AI and Self-Describing Metadata]:  https://www.youtube.com/watch?v=b_2Q0K6Lfd8
->>>>>>> CharlottesWeb2/main:content/blog/broadcast-focus-interview/index.md

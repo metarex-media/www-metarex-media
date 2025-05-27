@@ -6,13 +6,9 @@
   {{ partial "tmpl/head.html" . }}
 </head>
 
-<<<<<<< HEAD
-<body class = "{{ with .Page.Params.bodyClass }} {{ . }}{{ end }}">
-=======
 {{- $bodyClass := ""}}
 {{- if isset .Page.Params.ui "bodyClass" }}{{ $bodyClass = printf "class=\"%s\"" .Page.Params.ui.bodyClass }}{{ end }}
 <body {{$bodyClass | safeHTMLAttr}}>
->>>>>>> CharlottesWeb2/main
   <div class = "ui wide container">
     <header>
       {{ partial "tmpl/navbar.html" . }}
@@ -24,12 +20,7 @@
       <div class = "row">
         <div class = "eight wide column">
           <main role = "main" class="ui main">
-<<<<<<< HEAD
-          {{ partial "version-banner.html" . }}
-          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "docsy/breadcrumb.html" . }}{{ end }}
-=======
           {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "tmpl/breadcrumb.html" . }}{{ end }}
->>>>>>> CharlottesWeb2/main
           {{ block "main" . }}{{ end }}
         </main>
         </div>
@@ -44,11 +35,7 @@
         </div>
       </div>
       <div class = "row">
-<<<<<<< HEAD
-        {{ partial "footer.html" . }}
-=======
         {{ partial "tmpl/footer.html" . }}
->>>>>>> CharlottesWeb2/main
       </div>
     </div>
   </div>

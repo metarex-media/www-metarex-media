@@ -15,26 +15,15 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-<<<<<<< HEAD:content/blog/2024-09-13-IBC-is go/index.md
-**<p style = "text-align:center;"><span class = "ui red text">Rexy's Treasure hunt is go!!</span></p>**
-=======
 **<p style = "text-align:center;"><span class = "ui red text">_MetaRex Treasure Hunt 2024 is completed_</span></p>**
->>>>>>> CharlottesWeb2/main:content/blog/win-at-v-nova-TH/index.md
 
-Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and to all our Sponsers, Backers, Partners for their amazing support! 
+Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and to all our Sponsers, Backers, Partners for their amazing support!
 
 A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
-<<<<<<< HEAD:content/blog/2024-09-13-IBC-is go/index.md
-<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
-%}}.png" alt = "{{% param img %}}">
-=======
 <img  class = "ui centered large bordered rounded image" src = "annoucing-rexy-winner.jpeg" alt = "{{% param img %}}">
 
-
-
 Go to the next blog post to find out who the winner was.....
->>>>>>> CharlottesWeb2/main:content/blog/win-at-v-nova-TH/index.md
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
 [#metarex](https://www.linkedin.com/search/results/all/?keywords=%23metarex)
@@ -47,18 +36,10 @@ Go to the next blog post to find out who the winner was.....
 <i class = "linkedin icon"></i>[@{{% param backer %}}]({{% param lin %}})
 <i class = "linkedin icon"></i>[@metarex][limrx]
 <i class = "linkedin icon"></i>[Rexy at IBC][lirxy]
-<<<<<<< HEAD:content/blog/2024-09-13-IBC-is go/index.md
-
-{{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}
-=======
->>>>>>> CharlottesWeb2/main:content/blog/win-at-v-nova-TH/index.md
 
 [web]:    {{% param web %}}
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
-[rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-[ths]:     https://auth.metarex.media/ui/registration
-[thp]:     /project/treasure-hunt/
 
 [MetaRex Treasure Hunt]: https://metarex.media/project/treasure-hunt/

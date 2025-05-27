@@ -43,7 +43,7 @@ other interesting Conference presentation.
 
 Here is our plan for CES 2023. We are breaking it down for you so you can ask some questions in advance and we would be concentrate on this and make the most of our four days in Las Vegas this January.
 
-### LVCC Central Hall definitely is place of the interest:
+### LVCC Central Hall definitely is place of the interest
 
 There we will find gaming, metaverse, XR, audio/video and some of our Fortune
 500 companies such as Bosch, Canon, LG Electronics, Microsoft, Nikon, Panasonic,
@@ -72,17 +72,6 @@ exhibitors will include Amazon Advertising, Google, LG Ads, Microsoft,
 NBCUniversal, Netflix, The Nielsen Company, Omnicom Media Group, Pandora, Roku,
 Samsung Ads, SiriusXM, Snap, T-Mobile, TikTok, Warner Bros. and more.
 
-<<<<<<< HEAD:content/blog/2023-01-01-ces-preview/index.md
-You can follow CES digitally: save this dates Jan. 5-8, 2023 at our [blog] and
-other social media.
-{{< /fo >}}
-<!-- ####################################################################### -->
-
-[blog]:     /blog                    "Blog"
-=======
 You can find Katya's report of the CES 2023 [here.]
 {{< /fo >}}
 <!-- ####################################################################### -->
-
-[here]:   /blog/2023-01-10-ces-report/index.md                  
->>>>>>> CharlottesWeb2/main:content/blog/ces2023-katya-preview/index.md

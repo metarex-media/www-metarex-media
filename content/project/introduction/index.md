@@ -10,26 +10,15 @@ oldtags:     ["status"]
 ---
 {{< fo t = "banner"
     header = "An Introduction to MetaRex"
-    src = "/img/dino/mrx-logo-0300.png" 
+    src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
-<<<<<<< HEAD
-=======
     alt = "metarex logo"
->>>>>>> CharlottesWeb2/main
 />}}
 
 ## What is {{% metarex %}}?
 
-<<<<<<< HEAD
-{{< metarex >}} is an initiative dedicated to developing an open-source framework for
-the transport of media metadata. This framework will allow you to preserve,
-transport, identify, and use metadata from many sources in a single workflow.
-This will make it easier to manage metadata and ensure that it is accurate and
-consistent whenever video content is processed, broadcast, or distributed.
-=======
 MetaRex is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow.
 This will make it easier to manage metadata and ensure that it is accurate and consistent whenever video content is processed, broadcast, or distributed.
->>>>>>> CharlottesWeb2/main
 
 ## Why is {{% metarex %}} needed?
 
@@ -57,9 +46,9 @@ We can help you streamline your workflows and connect you with our growing netwo
 
 Why not [contact] us and see how we can help?
 
-You can [download a PDF](/downloads/introduction-to-metarex.pdf) of this document. 
+You can [download a PDF](/downloads/introduction-to-metarex.pdf) of this document.
 
 {{% sitelinks %}}
 
 [contact]: {{< relref "/contact" >}}
-[Bruce Devlin]:  https://mrmxf.com
+[Bruce Devlin]:  <https://mrmxf.com>

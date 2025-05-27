@@ -24,23 +24,15 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-This 2 year project was a pre-cursor to **[MetaRex]**
-
-{{< fo t = "image-fluid"
-    src  = "international-broadcast-day-demo.jpg"
-    text = "2019 International Broadcast Demo Day" 
-=======
 This 2 year project was a pre-cursor to [{{% metarex %}}](https://metarex.media)
 
 {{< fo t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"
     text = "2019 International Broadcast Demo Day"
     alt = "a group of people listen to a presentation from Bruce Devlin"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
-Ideal for semi-custom metadata such as position, logging, device parameters. 
+Ideal for semi-custom metadata such as position, logging, device parameters.
 
 * **Shoot** with on-set metadata from devices and from humans<br>
 * **Wrap** the metadata in MXF using open standards<br>
@@ -76,65 +68,51 @@ re-engineering the data.
 ### Who?
 
 Led by **[Arri]**, the team included **[Nablet]**, **[Trackmen]**,
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-**[Fusionmedia]** and **[Mr MXF]** as coordinator. What's Next? The system
-works and we're looking for partners to develop a framwework for handling any
-kind of metadata. See the [MetaRex] website for details
-=======
-**[Fusionmedia]** and **[Mr MXF]** as coordinator. 
+**[Fusionmedia]** and **[Mr MXF]** as coordinator.
 _What's Next?_ The system works and we're looking for partners to develop a framwework for handling any
-kind of metadata. See the [MetaRex] website for futher details. 
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
-
+kind of metadata. See the [MetaRex] website for futher details.
 
 #### Photos
 
 <div class = "ui tiny images">
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-{{< fo t = "image" 
-     src = "mxf-live-team-sm.jpg"
-     text = "Team"
-     id =  "#team"   
-=======
-{{< fo t  = "image" 
+{{< fo t  = "image"
      src  = "mxf-live-team-sm.jpg"
      text = "Team"
      id   =  "#team"
      alt  = "mxf team"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
-{{< fo t = "image" 
+{{< fo t = "image"
      src = "mxf-live-system-sm.jpg"
      text = "System"
-     id =  "#system" 
+     id =  "#system"
 />}}
 
-{{< fo t = "image" 
+{{< fo t = "image"
      src = "mxf-live-rig-sm.jpg"
-     text = "Rig" 
+     text = "Rig"
      id =  "#rig"
 />}}
 
-{{< fo t = "image" 
-     src = "mxf-live-cgi-sm.jpg"   
+{{< fo t = "image"
+     src = "mxf-live-cgi-sm.jpg"
      text = "CGI1"
      id = "#cgi1"
 />}}
 
-{{< fo t = "image" 
+{{< fo t = "image"
      src = "mxf-live-cgi2-sm.jpg"  
      text = "CGI2"
      id = "#cgi2"
 />}}
 
-{{< fo t = "image" 
-     src = "mxf-live-camera-sm.jpg" 
-     text = "Camera" 
+{{< fo t = "image"
+     src = "mxf-live-camera-sm.jpg"
+     text = "Camera"
      id = "#camera"
 />}}
-{{< fo t = "image" 
-     src = "international-broadcast-day-demo-sm.jpg" 
+{{< fo t = "image"
+     src = "international-broadcast-day-demo-sm.jpg"
      text = "Demo"
      id = "#demo"
 />}}
@@ -145,81 +123,55 @@ kind of metadata. See the [MetaRex] website for futher details.
 {{< fo t = "image-fluid"
     src  = "featured-mxf-live-team.jpg"
     text = "MXF Live Team"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf team"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="system" ></a>
 
 {{< fo t = "image-fluid"  
-    src = "mxf-live-system.jpg" 
+    src = "mxf-live-system.jpg"
     text = "MXF Live Demo System"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf live system"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="rig" ></a>
 
-
 {{< fo t = "image-fluid"  
-    src = "mxf-live-rig.jpg" 
+    src = "mxf-live-rig.jpg"
     text = "MXF Live Demo Rig"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf live rig"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="cgi1" ></a>
 
-
-{{< fo t = "image-fluid" 
-    src = "mxf-live-cgi.jpg" 
+{{< fo t = "image-fluid"
+    src = "mxf-live-cgi.jpg"
     text = "MXF Live CGI Demo"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf live cgi"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="cgi2" ></a>
 
-
 {{< fo t = "image-fluid"  
-    src = "mxf-live-cgi2.jpg" 
+    src = "mxf-live-cgi2.jpg"
     text = "MXF Live CGI Demo"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf live CGI"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="camera" ></a>
 
-
 {{< fo t = "image-fluid"
     src  = "mxf-live-camera.jpg"
     text = "MXF Live Demo Camera"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
     alt = "mxf camera"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 <a id="demo" ></a>
 
-
 {{< fo t = "image-fluid"  
   src  = "international-broadcast-day-demo.jpg"
   text = "MXF Live Demo"
-<<<<<<< HEAD:content/blog/2019-07-20-ARRI-Open-Day/index.md
-=======
   alt = "group photo of the MXF Team"
->>>>>>> CharlottesWeb2/main:content/blog/ARRI-Open-Day/index.md
 />}}
 
 # Partners

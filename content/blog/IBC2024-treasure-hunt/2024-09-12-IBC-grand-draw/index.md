@@ -22,14 +22,6 @@ visit, the greater chance you'll win on **Sunday 15th Sep** at **17:00** in the
 IBC [AI Zone][rxydraw] on the V-Nova booth. Enter on our [Sign up Page][ths].
 Instructions on the [treasure hunt page][thp].
 
-<<<<<<< HEAD:content/blog/2024-09-12-IBC-grand-draw/index.md
-=======
-
-
-
-
-
->>>>>>> CharlottesWeb2/main:content/blog/IBC2024-treasure-hunt/2024-09-12-IBC-grand-draw/index.md
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.jpg" alt = "{{% param img %}}">
 

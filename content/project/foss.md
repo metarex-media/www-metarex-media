@@ -10,11 +10,7 @@ oldtags:    ["backers"]
 ---
 {{< fo t = "banner"
     header = "Free Open Source Software"
-<<<<<<< HEAD
-    description = "Our goal is to give away [Free Open Source Software](https://github.com/metarex-media) to allow easy implementation of the {{% metarex %}} framework."
-=======
     description = "Our goal is to give away [Free Open-Source Software](https://github.com/metarex-media) to allow easy implementation of the {{% metarex %}} framework."
->>>>>>> CharlottesWeb2/main
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
 />}}

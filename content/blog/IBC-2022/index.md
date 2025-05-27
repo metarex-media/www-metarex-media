@@ -25,7 +25,7 @@ from where it's made to where it's needed.
 
 {{< /fo >}}
 
-{{< fo t = "block" 
+{{< fo t = "block"
   id    = "block2"
 >}}
 My big take away is that if we run the {{% metarex %}} project with the
@@ -38,12 +38,4 @@ following constraints then it is likely to be a success:
 * Support FFMPEG
 * Support Javascript, Python, C++ and GoLang.
 
-<<<<<<< HEAD:content/blog/2022-09-18-IBC/index.md
-Check our the [backers] page to see how you can help.
-=======
->>>>>>> CharlottesWeb2/main:content/blog/IBC-2022/index.md
 {{< /fo >}}
-
-[DPP]:         https://www.thedpp.com/events/leaders-briefing-2022
-[NAB]:         /blog/2022/09/18/2022-09-18-ibc/
-[IBC]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/

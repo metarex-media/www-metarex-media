@@ -7,10 +7,6 @@ description: The original MXF-Live specification as used in the mxf-live project
 ---
 <!-- markdownlint-disable MD051 (link fragment check) -->
 
-<<<<<<< HEAD
-
-=======
->>>>>>> CharlottesWeb2/main
 {{< fo t = "banner"
     header = "MXF-Live-2019"
     description = "The original parent of MetaRex. This spec is out of date."
