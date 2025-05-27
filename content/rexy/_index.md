@@ -55,7 +55,6 @@ and character development.  You can read about Rexy's [backstory] and follow us 
 
 {{< fo t = "children" />}}
 
-
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
 [blog]:    {{% relref "blog/creative-team/index.md" %}}

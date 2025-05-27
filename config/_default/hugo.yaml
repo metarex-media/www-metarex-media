@@ -1,5 +1,5 @@
 baseURL: "https://metarex.media"
-title: "metarex.media"
+title: "MetaRex"
 theme: fohuw
 contentDir: "content"
 
@@ -209,4 +209,4 @@ outputs:
     - HTML
     - RSS
 
-refLinksErrorLevel: warning 
+refLinksErrorLevel: WARNING
