@@ -46,19 +46,19 @@ menus:
   #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
   #                                  |_|_|
   menu2:
-    - name: MetaRex on Instagram 
+    - name: Instagram 
       URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
       identifier: Instagram
       pre: '<i class="instagram icon"></i>'
       post: " 🦖"
       weight: 90
-    - name: MetaRex on LinkedIn
+    - name: LinkedIn
       URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
       pre: '<i class="linkedin icon"></i>'
       post: " 🦖"
       weight: 100
-    - name: MetaRex on GitHub
+    - name: GitHub
       URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
       identifier: GitHub
       pre: '<i class="github icon"></i>'
@@ -75,9 +75,9 @@ menus:
       URL: /donate/
       identifier: cake
       pre:
-      post: " 🍰"
+      post: " 🦖🍰"
       weight: 110
-    - name: Try a demo
+    - name: Demos
       URL: /app/demos/
       identifier: feed
       pre:  "⏯️ "

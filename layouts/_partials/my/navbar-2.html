@@ -1,10 +1,13 @@
 {{/* .Site.Menus.menu2 - secondary navbar for donations etc -------------- */}}
 {{ $thisPage := . -}}
-<nav class="ui bottom attached centered fluid borderless wrapping menu">
+<nav class="ui bottom attached centered fluid borderless wrapping menu navbar2">
   {{ range .Site.Menus.menu2.ByWeight -}}
 
-  {{- if .HasChildren -}}{{ template "navBasic" (dict "page" $thisPage "menu" .) }}
-  {{else}}{{ template "navBasic" (dict "page" $thisPage "menu" .) }}{{ end -}}
+  {{- if .HasChildren -}}
+  {{ template "navBasic" (dict "page" $thisPage "menu" .) }}
+  {{- else -}}
+  {{ template "navBasic" (dict "page" $thisPage "menu" .) }}
+  {{- end -}}
 
   {{ end -}}
 </nav>
