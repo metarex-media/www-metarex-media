@@ -13,4 +13,4 @@ imports:
   - path: github.com/mrmxf/fohuw
     disable: false
 # uncomment line below for temporary local development of module
-replacements: "github.com/mrmxf/fohuw->../../0_mrmxf/fohuw"
+# replacements: "github.com/mrmxf/fohuw->../../0_mrmxf/fohuw"

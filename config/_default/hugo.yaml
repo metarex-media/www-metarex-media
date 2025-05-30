@@ -46,19 +46,19 @@ menus:
   #  |_|_|_| \___| |_||_|  \_,_|   |_     _| /___|
   #                                  |_|_|
   menu2:
-    - name: Instagram 
+    - name:  
       URL: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA==
       identifier: Instagram
       pre: '<i class="instagram icon"></i>'
       post: " 🦖"
       weight: 90
-    - name: LinkedIn
+    - name: 
       URL: https://www.linkedin.com/search/results/all/?keywords=%23metarex
       identifier: LinkedIn
       pre: '<i class="linkedin icon"></i>'
       post: " 🦖"
       weight: 100
-    - name: GitHub
+    - name: 
       URL: https://github.com/orgs/metarex-media/repositories?q=sort%3Aname-asc
       identifier: GitHub
       pre: '<i class="github icon"></i>'
@@ -71,18 +71,18 @@ menus:
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
+    - name: Demo
+      URL: /app/demos/
+      identifier: feed
+      pre:  "⏯️ "
+      post: " 🦖"
+      weight: 150
     - name: Feed Rexy
       URL: /donate/
       identifier: cake
       pre:
       post: " 🦖🍰"
-      weight: 110
-    - name: Demos
-      URL: /app/demos/
-      identifier: feed
-      pre:  "⏯️ "
-      post: " 🦖"
-      weight: 120
+      weight: 200
 # links to linkedin left & right
   
   
@@ -173,7 +173,7 @@ enableMissingTranslationPlaceholders: false
 # Language configuration
 languages:
   en:
-    title: metarex.media
+    title: MetaRex
     languageName: English
     # Weight used for sorting.
     weight: 1

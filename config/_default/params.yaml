@@ -116,7 +116,9 @@ ui:
   # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
   sidebar_search_disable: true
   # define a partial for a secondary menu e.g. for promos / payments etc.
-  navbar2partial: my/navbar-2.html
+  navbar2:
+    partial: my/navbar-2        # the name of the partial to render the menu
+    menu: menu2                 # the child of menus to supply data
 # --- Feedback -----------------------------------------------------------------
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
