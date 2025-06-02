@@ -76,3 +76,4 @@ You can find Katya's report of the CES 2023 [here.]
 {{< /fo >}}
 <!-- ####################################################################### -->
 
+[here]:   /blog/2023-01-10-ces-report/index.md                  

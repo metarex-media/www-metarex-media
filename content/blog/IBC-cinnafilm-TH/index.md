@@ -51,3 +51,4 @@ the show. She’s shy and only appears behind books and furniture at the moment!
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy
+[rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03

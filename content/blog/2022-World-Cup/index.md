@@ -13,10 +13,14 @@ oldtags:    ["project",  "football", "yellowbasket"]
    src   = "featured-katya.jpg"
    srcOn = "left"
    srcWidth = 0.2
+<<<<<<< HEAD
 <<<<<<< HEAD:content/blog/2022-12-08-World-Cup/index.md
 =======
    alt = "photograph of Katya" 
 >>>>>>> CharlottesWeb2/main:content/blog/2022-World-Cup/index.md
+=======
+   alt = "photograph of Katya" 
+>>>>>>> pr/mrmxf/7
 >}}
 The [FIFA] World Cup Qatar 2022 is nearly over, and the [FIFA] World Cup
 Division, which is responsible for the broadcast production, and Host Broadcast
@@ -122,18 +126,27 @@ additional three-dimensional microphone arrays located closer to the spectators.
 {{< fo t = "image"
     src = "mobile-viewer.jpg"
     caption = "Mobile Viewers"
+<<<<<<< HEAD
 <<<<<<< HEAD:content/blog/2022-12-08-World-Cup/index.md
 =======
     alt = "a man looking on his mobile phone"
 >>>>>>> CharlottesWeb2/main:content/blog/2022-World-Cup/index.md
+=======
+    alt = "a man looking on his mobile phone"
+>>>>>>> pr/mrmxf/7
 />}}
 
 {{< fo t = "image"
     src = "portugal-watchers.jpg"
+<<<<<<< HEAD
 <<<<<<< HEAD:content/blog/2022-12-08-World-Cup/index.md
     caption = "football spectators Morocco-Portugal match taken on Madeira island"
 =======
     caption = "Football spectators Morocco-Portugal match taken on Madeira island"
     alt = "spectators watching a football match"
 >>>>>>> CharlottesWeb2/main:content/blog/2022-World-Cup/index.md
+=======
+    caption = "Football spectators Morocco-Portugal match taken on Madeira island"
+    alt = "spectators watching a football match"
+>>>>>>> pr/mrmxf/7
 />}}

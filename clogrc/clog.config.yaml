@@ -1,103 +1,132 @@
 ---
 # yamllint disable rule:colons
-# clog Jumbo "clog.core.config"
-#                                 _      _
-#   ___  __ __  ___   _ _   _ _  (_)  __| |  ___   ___
-#  / _ \ \ V / / -_) | '_| | '_| | | / _` | / -_) (_-<
-#  \___/  \_/  \___| |_|   |_|   |_| \__,_| \___| /__/
-### when clog starts it uses these config values to override the defaults.
+# clog Jumbo --font small "www-metarex-media-com"
+#                                                  _                                                     _   _        
+#  __ __ __ __ __ __ __ __ __  ___   _ __    ___  | |_   __ _   _ _   ___  __ __  ___   _ __    ___   __| | (_)  __ _ 
+#  \ V  V / \ V  V / \ V  V / |___| | '  \  / -_) |  _| / _` | | '_| / -_) \ \ / |___| | '  \  / -_) / _` | | | / _` |
+#   \_/\_/   \_/\_/   \_/\_/        |_|_|_| \___|  \__| \__,_| |_|   \___| /_\_\       |_|_|_| \___| \__,_| |_| \__,_|
+#                      ⇓⇓⇓⇓⇓⇓⇓⇓⇓
+# ALL KEYS ARE    ⇒⇒  lowercase    ⇐⇐  only. THIS IS A VIPER SETTING.
+#                      ⇑⇑⇑⇑⇑⇑⇑⇑⇑
+### when clog starts it uses these config values to override clog defaults.
+clog:
+  # path to the yaml file defining release history - see semver package
+  releases-path: "assets/data/releases.yaml"
 
 # --- shell snippets for this project -----------------------------------------
 snippets:
-  watch: hugo server --port=1313 --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
-  is-prod-release: |
-    [ "prod" == "$(yq -r '.[0].build'  assets/data/releases.yaml)" ]
+  releases-path: yq -r '.clog."releases-path"' clogrc/clog.config.yaml
+  build-type: yq -r '.[0].build' "$(clog releases-path)"
+  release-type:  yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
+  build-hugo: |
+    eval "$(clog Crayon)"
+    clog Log -I "$step.$(((s+=1))). building hugo content"
+    [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
+    clog Log -I "$step.$(((s+=1))). purging kodata/ and building site"
+    rm -rf kodata/*
+    opt=""
+    [[ "dev" == "$(clog build-type)" ]]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
+    clog Log -I "$step.$(((s+=1))). building hugo to$cF kodata/$cT folder$cC $opt"
+    hugo build --minify --logLevel info $opt
+  build-podserver: |
+    eval "$(clog Crayon)"
+    helper="core/sh/help-golang.sh"    # build helpers
+    eval "$(clog Cat $helper)"
+    clog Log -I "$step.$(((s+=1))). building podserver to$cF tmp/"
+    fGoBuild tmp/podserver-amd-lnx     linux   amd64
+    fGoBuild tmp/podserver-arm-lnx     linux   arm64
+    fGoBuild tmp/podserver-arm-mac     darwin  arm64
+    [ $? -eq 0 ] && clog Log -I "stand-alone podserver exe built to$cF tmp/"
+  build-ko: |
+    eval "$(clog Crayon)"
+    clog Log -I "$step.$(((s+=1))). build & push with ko to docker"
+
+    tag1="$(clog git tag ref)"
+    tag2="latest"
+    [[ "-stage" == "${tag1:(-6)}" ]] &&tag2="latest-stage"
+
+    # config is in .ko.yaml
+    # use the default docker repo unless told otherwise
+    [ -z "$DOCKER_NS" ] && DOCKER_NS="mrmxf"
+    [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
+    export KO_DOCKER_REPO
+    export KO_CONFIG_PATH=".ko.yaml"
+    # ensure that dates are added to the images
+    export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
+    ko build --base-import-paths --tags "$tag1" --tags "$tag2" .
+    
+    clog Log -I "multi-arch docker build$cF $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+
+  build: |
+    export MAKE="hugo podserver" # ko"
+    eval "$(clog Source project config)"
+    clog Check pre-build
+    clog Check build
+    eval "$(clog Crayon)"
+    clog Log -I  "=== === ===== === ===== === ===== === ===== === ===== === =="
+    clog Log -I  "build $cS $PROJECT$cT components: $cC $MAKE"
+    export step=0
+    ((step++));clog Should MAKE "hugo"      && clog build-hugo
+    ((step++));clog Should MAKE "podserver" && clog build-podserver
+    ((step++));clog Should MAKE "ko"        && clog build-ko
+    clog Log -I "   build complete"
+  watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
+    # get the target version for this project from releases.yaml
     tag:
-      ref: yq -r '.[0].version'  assets/data/releases.yaml
+      ref: yq -r '.[0].version' "$(clog releases-path)"
+      # a go package needs a preceding "v"
+      refgo: echo "v$(clog git tag ref)"
     message:
-      ref:  yq -r '.[0].note'  assets/data/releases.yaml
+      ref: yq -r '.[0].note' "$(clog releases-path)"
+    suffix: |
+      b="$(git branch --show-current)"
+      [[ "$b" == main ]] && echo "" || echo "$b"|tr -d '[:blank:]'
   project:
     config: |
-      PROJECT=www-metarex-media
-      DOCKER_NS="metarexmedia"
+      # make some variables for standard build scripts
+      export PROJECT="$(basename $(pwd))"              # project you're building
+      export DOCKER_NS=mrmxf
     has:
-      golang: go version|grep '^go '|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
-      hugo: hugo version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
-      git-lfs: git-lfs version|grep -oE '[0-9]\.[0-9]+\.[0-9]+'|head -1
+      git-lfs: |
+        git lfs --version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
+      golang: |
+        go version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
+      hugo: |
+        hugo version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
     needs:
-      golang: echo "1.24.0"
-      hugo: echo "0.147.3"
       git-lfs: echo "3.6.1"
-  testamd: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-amd:latest"
-  testarm: "docker run -d -p 12020:80 metarexmedia/www-metarex-media-arm:latest"
-
-  hugo-pod: |
-    eval "$(clog Source project config)"    # configure project - local config
-    eval "$(clog Inc)"                      # shell embedded help (sh, zsh & bash)
-    help="core/sh/help-golang.sh"           # build embedded help
-    eval "$(clog Cat $help)"                # golang build helpers
-
-    clog Log -I "Build$cC $PROJECT $cT using clog's$cF $help"
-
-    clog Check pre-build #&& [ $? -gt 0 ] && exit 1
-    clog Check build     && [ $? -gt 0 ] && exit 1
-    # ------------------------------------------------------------------------------
-    app=podserver  # our pod server app command
-    export MAKE="hugo $app ko"
-
-    # ensure tmp dir exists
-    mkdir -p tmp
-
-    if (clog Should MAKE "hugo"); then
-      [ ! -d content ] && ln -s documentation/content content
-      clog Log -I "Purging kodata/ and building site"
-      rm -rf kodata/*
-      [ $? -gt 0 ] && fWarn "purging kodata/ - failed - continuing anyway"
-      hugo build --minify --forceSyncStatic --logLevel warn --buildDrafts --buildFuture 
-      [ -d content ] && rm content
-    fi
-
-    if (clog Should MAKE "$app"); then
-      fGoBuild tmp/$app-amd-lnx     linux   amd64
-      fGoBuild tmp/$app-arm-lnx     linux   arm64
-      fGoBuild tmp/$app-arm-mac     darwin  arm64
-      clog Log -I "stand-alone exe built to the$cF tmp/$cT folder\n"
-    fi
-
-    if (clog Should MAKE "ko"); then
-      tag="$(clog git tag ref)"
-      # config is in .ko.yaml
-      # use the default docker repo unless told otherwise
-      [ -z "$DOCKER_NS" ] && DOCKER_NS="metarexmedia"
-      [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
-      export KO_DOCKER_REPO="metarexmedia"
-      export KO_CONFIG_PATH=".ko.yaml"
-      export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
-      ko build --base-import-paths --tags "$tag-stage" --tags "latest-stage" .
-      
-      clog Log -I "multi-arch docker build$cF $PROJECT$cT:$cW$tag$cT and ${cW}latest"
-    fi
-
-  lfs-install: |
-    curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-    sudo apt-get install git-lfs
-
-
-# --- check project -----------------------------------------------------------
+      # grab the golang version from go.mod
+      golang: cat go.mod|grep '^go '|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
+      # hunt for the hugo version
+      hugo: |
+        # grab the version from configuration
+        if [ -f hugo.yaml ];then
+          yq -r '.module.hugoVersion.min' hugo.yaml
+        elif [ -f config/_default/module.yaml ];then
+          yq -r '.hugoVersion.min' config/_default/module.yaml
+        else
+          echo "hugo config not found"
+        fi
+# =============================================================================
+#    ___   _                 _
+#   / __| | |_    ___   __  | |__
+#  | (__  | ' \  / -_) / _| | / /
+#   \___| |_||_| \___| \__| |_\_\
+# -----------------------------------------------------------------------------
 check:
   build:
     blocks:
       - name: golang version
         try: |
-          [[ "$(clog project has golang)" == "$(clog project needs golang)" ]]
-        ok: clog Log -I "golang $(clog project has golang) good"
+          [[ "$(clog project needs golang)" == "$(clog project has golang)" ]]
+        ok: clog Log -I "golang $(clog project has golang) is up to date"
         catch: |
           clog Log -W "golang: bad version. Need $(clog project needs golang), got $(clog project has golang)"
       - name: hugo version
-        try: | 
-          [[ "$(clog project has hugo)" == "$(clog project needs hugo)" ]]
-        ok: clog Log -I "hugo $(clog project has golang) good"
+        try: |
+          [[ "$(clog project needs hugo)" == "$(clog project has hugo)" ]]
+        ok: clog Log -I "hugo $(clog project has hugo) is up to date"
         catch: |
           clog Log -W "hugo: bad version. Need $(clog project needs hugo), got $(clog project has hugo)"
       - name: git-lfs version
@@ -110,8 +139,8 @@ check:
         try: which docker 2>/dev/null
         ok: clog Log -I "docker ok"
         catch: clog Log -E "docker not on path"
-      - name: docker-login
-        try: |
-          docker manifest inspect metarex-media/www-metarex-media > /dev/null 2>&1
-        ok: clog Log -I "you can access the docker hub to push images"
-        catch: clog Log -E "cannot access hub metarex-media/www-metarex-media - login as metarex!"
+      # - name: docker-login
+      #   try: |
+      #     docker manifest inspect metarex-media/www-metarex-media > /dev/null 2>&1
+      #   ok: clog Log -I "you can access the docker hub to push images"
+      #   catch: clog Log -E "cannot access hub metarex-media/www-metarex-media - login as metarex!"

@@ -13,6 +13,8 @@ params:
   img: draw
   web: https://metarex.media/
   lin: https://www.linkedin.com/company/metarex-media/
+
+noIndex:     true
 ---
 
 The **[{{% param backer %}}][web]** for Rexy's treasure hunt will be this
@@ -21,6 +23,11 @@ have a chance of ***winning a cuddly Rexy!*** The more partners and backers you
 visit, the greater chance you'll win on **Sunday 15th Sep** at **17:00** in the
 IBC [AI Zone][rxydraw] on the V-Nova booth. Enter on our [Sign up Page][ths].
 Instructions on the [treasure hunt page][thp].
+
+
+
+
+
 
 <img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.jpg" alt = "{{% param img %}}">

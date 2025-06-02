@@ -1,9 +1,8 @@
 ---
-title:       metarex.media Style guide
+title:       MetaRex Style guide
 linkTitle:   Style Guide
 date:        2022-11-25
 description: Colours, Fonts and images to help promote MetaRex
-
 url:         "/style"
 
 tags:       ["rexy"] 

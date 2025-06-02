@@ -55,7 +55,7 @@ Because today, every Virtual Set and engineering heavy production is a custom bu
 
 * **What is it not good for?** We will not harmonize schemas for tripod data, lens data, QC data or any other sort of metadata carried. That's outside the scope. MetaRex will carry any metadata through the value chain to where it's needed. MetaRex will identify that metadata and allow applications to enlighten the metadata or move it based on business rules.
 
-* **What is it _not yet_ good for?**: At the end of 2022 MetaRex is just a paper specification, some pictures and a prototype register. At the end of 2023 we should have code for different computer languages and a framework for common tools and apps. By the end of 2024 we should have end to end workflows with common tools and a body of free software that reduces the barrier to transporting and preserving media chain metadata.
+* **What is it *not yet* good for?**: At the end of 2022 MetaRex is just a paper specification, some pictures and a prototype register. At the end of 2023 we should have code for different computer languages and a framework for common tools and apps. By the end of 2024 we should have end to end workflows with common tools and a body of free software that reduces the barrier to transporting and preserving media chain metadata.
 
 <a id="history"></a>
 
@@ -85,3 +85,4 @@ MetaRex was shown to work back in 1998, when the original MXF team demonstrated 
 [DPP]:         /blog/2022/11/16/2022-11-16-dpp-leaders-briefing/
 [IBC]:         /blog/2022/09/18/ibc-show-2022/
 [NAB]:         /blog/2022/04/23/metarex-at-nab-2022-in-las-vegas/
+[status]:      /project/status/

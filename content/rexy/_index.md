@@ -16,14 +16,15 @@ description: Who is Rexy & why the dinosaur logo?
 
 ## Why the dinosaur?
 
-The {{% metarex %}} logo (the dinosaur) was created by [Amber Bardell][AB].
+The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
+The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
 
 The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
-doesn't happen!.
+doesn't happen!
 
 With Amber’s fabulous creativity, Rexy (the dinosaur) was born in 2021.
-Working together, [Amber][AB] and [Simi Zeko][SZ], created the first rendering
+Working together, Amber and Simi Zeko, created the first rendering
 video of Rexy which was released in March 2021.
 
 <div class = "ui olive container segment">
@@ -32,30 +33,42 @@ video of Rexy which was released in March 2021.
   </video>
 </div>
 
-Rexy is such a wonderful character and now has her own backstory, personality,
-and character development, which will be serialized here. Please [subscribe to
-our newsletter][contact] to get informed of Rexy clips and posts.
-
-### Meet the creatives behind Rexy
-
-Amber Bardell is a multidisciplinary creative with a passion for tactile art
-techniques. You’ll often find them painting walls, or canvas. Their trusty iPad
-is the digital canvas where most of the MetaRex visual concepts begin.
-
-Simi Zeko is a Graphic Designer and 3D animator who enjoys problem solving.
-He’s always looking for the next opportunity to try something new and explore
-what technology can bring to the process.
-
-Check out their [first blog post][blog] if you missed it, to find out more about Rexy’s
-creation:
+### Why is Rexy driving a steam train?
 
 <div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
+Not only having a dinosaur to show how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 ### Why is Rexy driving a steam train?
 
-Not only having a dinosaur (Rexy) shows how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
+<div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
+
+Not only having a dinosaur to show how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
+
+### Meet the creatives behind Rexy
+
+[Amber Bardell][AB] is a multidisciplinary creative with a passion for tactile art
+[Amber Bardell][AB] is a multidisciplinary creative with a passion for tactile art
+techniques. You’ll often find them painting walls, or canvas. Their trusty iPad
+is the digital canvas where most of the MetaRex visual concepts begin.
+
+[Simi Zeko][SZ] is a Graphic Designer and 3D animator who enjoys problem solving.
+[Simi Zeko][SZ] is a Graphic Designer and 3D animator who enjoys problem solving.
+He’s always looking for the next opportunity to try something new and explore
+what technology can bring to the process.
+
+Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
+Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
+
+Rexy is such a wonderful character and now has her own backstory, personality,
+and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
+Rexy is such a wonderful character and now has her own backstory, personality,
+and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
+
+{{< fo t = "children" />}}
+{{< fo t = "children" />}}
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
-[blog]:    https://metarex.media/blog/2023/07/27/2023-07-28-metarex-creative-team/
-[contact]: /contact
+[blog]:    {{% relref "blog/creative-team/index.md" %}}
+[contact]: {{% relref "/contact" %}}
+[backstory]:    {{% relref "rexy/backstory/index.md" %}}

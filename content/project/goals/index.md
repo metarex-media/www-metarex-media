@@ -1,6 +1,6 @@
 ---
-title:     Goals
-linkTitle: Goals
+title:     MetaRex's Goals
+linkTitle: MetaRex's Goals
 date:      2022-12-12
 type:        docs
 resources:
@@ -8,43 +8,28 @@ resources:
      src:  img/featured-goals.jpg
 params:
    src:  project/goals/featured-goals.jpg
+
+noIndex:   true
 ---
 {{< fo t = "block" 
     id   = "summary" 
 >}}
 <!-- markdownlint-disable MD025 -->
 
-## MetaRex needs you
+Here are some of the key objectives for the {{%  metarex %}} Project. 
 
-The [award winning][0], philanthropic, non-profit {{%  metarex %}} project
-makes metadata flow. The more metadata you have, the more you will benefit. But
-we need 2 more **<span class="ui violet text">silver backers</span>** or 15
-more **<span class="ui brown text">regular backers</span>** to get the project
-over the finish line. But first, lets lay out our objectives:
+*  MetaRex has a _**free**_ software framework! 
+*  MetaRex lets you define **_your own_** metadata.
+*  MetaRex [defines a container][2] for your metadata.
+*  MetaRex maps containers to many types of network so that you get metadata transport for _**free**_!
+*  MetaRex gives you a [unique ID][3] for your new **_type_** of metadata.
+* MetaRex lets you publish _**services**_ for your metadata _**type**_.  You can monetize those services.
+* MetaRex lets you discover _**services**_ for unknown metadata types.
+* MetaRex supports **all** types of metadata including text and binary, timeline and static, frame locked, sample locked & stochastic, single stream and mixed streams of metadata.
+* MetaRex is built on standard tools, standard formats and standard frameworks.
+* MetaRex can run in a product, on-premise or globally.
 
-1. 😎 {{<  metarex >}} is a _**<span class = "ui red text">free</span>**_
-   [software framework][1].
-2. 😎 {{%  metarex %}} lets you define _your own_ metadata.
-3. 😎 {{%  metarex %}} [defines a container][2] for your metadata.
-4. The container is mapped to many types of network. Transport comes for
-   _**<span class = "ui red text">free</span>**_!
-5. 😎 {{%  metarex %}} gives you a [unique Id][3] for your new **_type_** of
-   metadata.
-6. 😎 {{%  metarex %}} lets you publish _services_ for your metadata
-   **_type_**.
-7. You can _**<span class = "ui red text">monetize</span>**_ those _services_
-8. 😎 {{%  metarex %}} lets you discover _services_ for _unknown_ metadata
-   types.
-9. 😎 {{%  metarex %}} supports **all** types of metadata including <span
-   class = "ui red text">text & binary</span>, <span class = "ui green
-   text">timeline & static</span>, <span class = "ui brown text">frame locked,
-   sample locked & stochastic</span>, <span class = "ui violet text">single
-   stream & mixed streams</span> of metadata.
-10. 😎 {{%  metarex %}} is built on standard tools, standard formats & standard
-    frameworks.
-11. 😎 {{%  metarex %}} can run in a product, on-premise or globally.
-
-[0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
+[0]: /blog/rnf-best-accelerator/index.md
 [1]: https://github.com/metarex-media
 [2]: https://github.com/metarex-media/mrx-container
 [3]: https://metarex.media/ui/reg/

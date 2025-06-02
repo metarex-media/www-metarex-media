@@ -34,7 +34,7 @@ demo:
     detailUrl:   04-demo-ai
     body: |
       Auto-normalizing AI segmentation metadata for different MAM and DAM
-      systems with Metarex.
+      systems with MetaRex.
   -
     number:      5
     title:       IMF QC
@@ -42,7 +42,7 @@ demo:
     imageUrl:    /img/backer/imfug-logo.png
     detailUrl:   05-qc
     body: |
-      Auto validation of QC reports using Metarex register & services.
+      Auto validation of QC reports using MetaRex register & services.
   -
     number:      6
     title:       Virtual production
@@ -50,7 +50,7 @@ demo:
     imageUrl:    /img/backer/smpte-logo.svg
     detailUrl:   06-smpte
     body: |
-      Saving time and money with the common Metarex container.
+      Saving time and money with the common MetaRex container.
   -
     number:      7
     title:       Production Monitoring
@@ -67,7 +67,7 @@ demo:
     detailUrl:   08-etl
     body: |
       Auto-normalizing and validation of metadata for different MAM and DAM
-      systems with Metarex.
+      systems with MetaRex.
   -
     number:      9
     title:       Auto Proxy
@@ -76,7 +76,7 @@ demo:
     detailUrl:   09-proxy
     body: |
       Smart transform of metadata and content for editing and visualization
-      with Metarex.
+      with MetaRex.
   -
     number:      10
     title:       Live News
@@ -84,7 +84,7 @@ demo:
     imageUrl:    /img/backer/nxtedition-logo.svg
     detailUrl:   10-nxt
     body: |
-      Lossless normalization of metadata using Metarex for news, avails
+      Lossless normalization of metadata using MetaRex for news, avails
       and more.
   -
     number:      11
@@ -94,7 +94,7 @@ demo:
     detailUrl:   11-hand
     body: |
       Search the HAND database and control the formats that you need for your
-      workflow Metarex.
+      workflow MetaRex.
   -
     number:      12
     title:       Win a prize
@@ -103,4 +103,4 @@ demo:
     detailUrl:   12-rnf
     body: |
       Win a 2 hr free metadata consultancy with Executive
-      Director of Metarex, **Bruce Devlin**.
+      Director of MetaRex, **Bruce Devlin**.

@@ -27,7 +27,7 @@ date:      2024-08-13
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
     header     = "What does MetaRex do?"         name = header
-    src        = "project/introduction/featured-fedex.jpg"
+    src        = "img/dino/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
     link       = "project/introduction/"
@@ -36,7 +36,7 @@ date:      2024-08-13
     blockClass = "ui red segment"           divClass = blockClass
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
-    src        = "docs/studies/case-studies.webp"
+    src        = "img/dino/rexy-case-study.png"
     srcClass   = "ui fluid image"
     alt        = "dino doing research"
     link       = "docs/studies/"
@@ -45,9 +45,9 @@ date:      2024-08-13
     blockClass = "ui blue segment"          divClass = blockClass
     class      = "ui blue message"          msgClass = class
     header     = "What's the benefit?"      name = header
-    src        = "project/featured-boardroom.jpg"
-    alt        = "dino in a suit"
-    link       = "/project/faq/"
+    src        = "img/dino/rexy-benefits.png"
+    alt        = "rexy with microphone"
+    link       = "/faq/index.md"
   />}}
   {{< /fo >}}
 {{< fo t = "feature-group" >}}
@@ -61,13 +61,13 @@ date:      2024-08-13
     link       = "docs/studies/monitoring"
   />}}
   {{< fo t = "feature"
-    blockClass = "ui red segment"
-    class      = "ui pink message"
-    header     = "VC-6"
+    blockClass = "ui red segment"         
+    class      = "ui pink message"     
+    header     = "VC-6"               
     src        = "img/vc6.png"
     srcClass   = "ui fluid image"
     alt        = "vc6 logo"
-    link       = "<https://vc6.metarex.media>"
+    link       = "https://vc6.metarex.media"
   />}}
   {{< fo t = "feature"
     blockClass = "ui red segment"
@@ -116,7 +116,7 @@ date:      2024-08-13
 />}}
 
 {{< fo t = "item-include"
-    from = "/project/Admin/backer-list.md"
+    from = "/project/about.md"
     text = "Our backers helped us get to the stage where we can give away our software to help metadata flow. Meet them here."
     src = "/img/dino/mrx-logo.svg"
     alt = "rexy logo"

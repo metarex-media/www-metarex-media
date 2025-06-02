@@ -17,7 +17,7 @@ oldtags:     ["project",  "CES", "yellowbasket"]
 >
 ### Metaverse and Metadata at CES® 2023
 
-The CES 2023 theme was a little unusual for consumer tech show, but it was up to date, relevant and contemporary: **“Tech Solving the World’s Biggest Challenges”**.
+The CES 2023 theme was a little unusual for consumer tech show, but it was up to date, relevant and contemporary: **“Tech Solving the World’s Biggest Challenges”**. 
 Tech development is often associated with poor environment credentials or not in the long term interest of humanity, but perhaps only now we are entering an age where technology could help save the world in many ways broken by human interaction.
 {{< /fo >}}
 <!-- ####################################################################### -->
@@ -41,7 +41,7 @@ now.
   id     = "vimverse"
   src    = "ces-vimverse.jpg"
   srcOn  = "left"
-  srcLink = "<https://www.vimmerse.net/>"
+  srcLink = "https://www.vimmerse.net/"
   alt = "photo of vimverse booth"
 >}}
 The show floor saw VR/AR offering – filming, delivering, reproducing
@@ -81,6 +81,7 @@ standartization is much weaker than the futurist dreams about it, so here we are
 {{< /fo >}}
 <!-- ####################################################################### -->
 
+[Interconnected Realities]: https://www.amazon.com/Interconnected-Realities-Metaverse-Relationship-Technology/dp/1394160844
 [Koenig]:         https://www.youtube.com/watch?v=Xp3SqNVRM68
 [TouchCast]:      https://touchcast.com/touchcast-home
 [OVR technology]: https://ovrtechnology.com/

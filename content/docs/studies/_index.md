@@ -25,11 +25,12 @@ This is <span class = "ui red text">bad</span>!
    header = "Figure"
 /%}}
 
-{{< metarex >}} allows metadata to flow in a wide variety of situations. Below is a list of case studies, some of which we are already working on.
+{{< metarex >}} allows metadata to flow in a wide variety of situations. Below is a list of case studies, some of which we are already working on. 
 
 Read & enjoy!
 
 If these case studies sound like an issue you are having, then get in [contact] with us and we will be happy to discuss a tailored solution to your precise needs, using the free software.
+
 
 [01]:   {{% relref "/docs/specifications/introduction/" %}}
 [02]:   {{% relref "/docs/specifications/mrx-container-spec/" %}}
