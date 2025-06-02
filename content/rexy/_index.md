@@ -17,6 +17,7 @@ description: Who is Rexy & why the dinosaur logo?
 ## Why the dinosaur?
 
 The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
+The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
 
 The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
@@ -37,22 +38,33 @@ video of Rexy which was released in March 2021.
 <div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
 
 Not only having a dinosaur to show how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
+### Why is Rexy driving a steam train?
+
+<div class = "ui centered fluid image"><img src = "/img/dino/mrx-train-long-1000.png" alt = "rexy"></div>
+
+Not only having a dinosaur to show how the industry treats metadata, to have her driving a steam train also represents the way the media and tech industry uses metadata – slow and old-fashion.
 
 ### Meet the creatives behind Rexy
 
+[Amber Bardell][AB] is a multidisciplinary creative with a passion for tactile art
 [Amber Bardell][AB] is a multidisciplinary creative with a passion for tactile art
 techniques. You’ll often find them painting walls, or canvas. Their trusty iPad
 is the digital canvas where most of the MetaRex visual concepts begin.
 
 [Simi Zeko][SZ] is a Graphic Designer and 3D animator who enjoys problem solving.
+[Simi Zeko][SZ] is a Graphic Designer and 3D animator who enjoys problem solving.
 He’s always looking for the next opportunity to try something new and explore
 what technology can bring to the process.
 
 Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
+Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
 
 Rexy is such a wonderful character and now has her own backstory, personality,
 and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
+Rexy is such a wonderful character and now has her own backstory, personality,
+and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
 
+{{< fo t = "children" />}}
 {{< fo t = "children" />}}
 
 [AB]:      https://amberbardell.com
