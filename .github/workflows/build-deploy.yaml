@@ -17,7 +17,7 @@
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
 name: build-www-metarex-media
-run-name: 👷🏻‍♀️${{ github.actor }} 🏗️dev-build-ko(www-metarex-media) 🚀
+run-name: "🥷${{ github.actor }}: build-www-metarex-media🏃‍➡️"
 on:
   push:                         # run every push
     branches:
@@ -48,7 +48,7 @@ jobs:
     uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
     with:
       artifact-name: HugoBuild
-      docker_ns: ${{ var.DOCKER_NS }}
+      docker_ns: ${{ vars.DOCKER_NS }}
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
