@@ -1,0 +1,64 @@
+# Copyright ©2017-2025  Mr MXF   info@mrmxf.com
+# BSD-3-Clause License           https://opensource.org/license/bsd-3-clause/
+# clogwork - collection of reusable actions and tools for Mr MXF project.
+#
+#   _             _   _      _            _                _              
+#  | |__   _  _  (_) | |  __| |  ___   __| |  ___   _ __  | |  ___   _  _ 
+#  | '_ \ | || | | | | | / _` | |___| / _` | / -_) | '_ \ | | / _ \ | || |
+#  |_.__/  \_,_| |_| |_| \__,_|       \__,_| \___| | .__/ |_| \___/  \_, |
+#                                                  |_|               |__/ 
+#
+#  GitHub Workflow to build & deploy the metarex website
+#
+# Needs:
+# -     vars.DOCKER_NS - the account namespace for docker hub e.g. mrmxf
+# - secrets.DOCKER_PAT - the personal access token for pushing to docker hub
+# - secrets.SLACK_HOOK - the SLACK WEBHOOK to post messages to the team
+# - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
+
+name: build-www-metarex-media
+run-name: 👷🏻‍♀️${{ github.actor }} 🏗️dev-build-ko(www-metarex-media) 🚀
+on:
+  push:                         # run every push
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:            # run manually from Actions tab
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+# Allow only one concurrent deployment, skipping runs queued between the run
+# in-progress and latest queued. Allow cancelling in-progress runs.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  #dump properties of this run
+  dump-context:
+    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
+
+  # Build job
+  build:
+    uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
+    with:
+      artifact-name: HugoBuild
+      docker_ns: ${{ var.DOCKER_NS }}
+    secrets:
+      docker_pat: ${{ secrets.DOCKER_PAT }}
+      get_clog: ${{ secrets.GET_CLOG }}
+
+
+  notify-team:
+    needs: [build]
+    uses: mrmxf/clogwork/.github/workflows/ping-slack.yaml@main
+    with:
+      message: ${{ needs.build.outputs.message }}
+    secrets:
+      slack_webhook: ${{ secrets.slack_webhook }}
+      get_clog: ${{ secrets.get_clog }}

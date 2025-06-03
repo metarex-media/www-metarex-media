@@ -31,7 +31,7 @@ future of media and entertainment in the coming years.
 and the MetaRex team to win the IBC Accelerator 2024 Media Innovation Award!
 What they are building will be instrumental in creating efficient, low-friction
 workflows that deliver customized and personalized content to viewers without
-overly complicating the production process."*
+overly complicating the production process."_
 
 Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the IBC 2024 Show!

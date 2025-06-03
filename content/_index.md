@@ -17,7 +17,7 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui green segment"         divClass = blockClass
     class      = "ui green message"         msgClass = class
-    header     = "Why a Dinosaur logo?"          name = header
+    header     = "Why a Dinosaur?"          name = header
     src        = "img/dino/mrx-logo.svg"
     srcClass   = "ui fluid image"
     alt        = "metarex logo"
@@ -26,7 +26,7 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
-    header     = "What does MetaRex do?"         name = header
+    header     = "What's MetaRex?"         name = header
     src        = "img/dino/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
@@ -44,7 +44,7 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui blue segment"          divClass = blockClass
     class      = "ui blue message"          msgClass = class
-    header     = "What's the benefit?"      name = header
+    header     = "Why is it good?"          name = header
     src        = "img/dino/rexy-benefits.png"
     alt        = "rexy with microphone"
     link       = "/faq/index.md"
@@ -54,7 +54,8 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
-    header     = "Case Study - Live Production"  
+    header     = "Sports Production"  
+    text       = "Reliability Case Study"  
     src        = "docs/studies/monitoring/monitoring-generic.png"
     srcClass   = "ui fluid image"
     alt        = "monitoring-generic"
@@ -63,7 +64,8 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui red segment"         
     class      = "ui pink message"     
-    header     = "VC-6"               
+    header     = "News Ingest"   
+    text       = "VC6 Case Study"            
     src        = "img/vc6.png"
     srcClass   = "ui fluid image"
     alt        = "vc6 logo"
@@ -72,7 +74,8 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
-    header     = "Case Study - AI efficiency"
+    header     = "Save Money"
+    text       = "VC6 Case Study"
     src        = "docs/studies/ai-content-at-rest/aicar.svg"
     srcClass   = "ui fluid image"
     alt        = "monitoring-generic"                                     name = header
@@ -81,7 +84,8 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
-    header     = "Case Study - Cloud Cost"
+    header     = "Cloud Costs"
+    header     = "API Case Study"
     src        = "docs/studies/cloud-cost/featured-costs.png"
     alt        = "monitoring-generic"
     link       = "docs/studies/cloud-cost/"

@@ -14,7 +14,6 @@ oldtags:     ["project",  "CES", "yellowbasket"]
   srcOn = "left"
   alt = "ces 2023 logo"
 >}}
->
 ### Metaverse and Metadata at CES® 2023
 
 The CES 2023 theme was a little unusual for consumer tech show, but it was up to date, relevant and contemporary: **“Tech Solving the World’s Biggest Challenges”**. 

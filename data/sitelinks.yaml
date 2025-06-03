@@ -1,0 +1,58 @@
+# metarex sitelinks
+#    A dictionary of site links used in most partials that render Markdown
+#
+# To add these to a markdown block:
+#  shortcode - use {{< sitelinks >}}
+#  partial   - use {{ partial "tmpl/sitelinks" . }}
+
+contact:
+  alias: ["contact metarex", "contact us"]
+  url: /contact
+meet:
+  alias: ["meeting", "arrange a meeting"]
+  url: https://metarex.media/meet
+mrx-tool:
+  url: https://github.com/metarex-media/mrx-tool
+mrx-demo:
+  url: https://github.com/metarex-media/mrx-demo
+
+mrmxf:
+  alias: ["mr mxf", "mr mxf ltd", "mr mxf ltd."]
+  url: https://mrmxf.com
+mxf:
+  url: https://en.wikipedia.org/wiki/Material_Exchange_Format
+
+bruce:
+  alias: ["bruce devlin", "devlin"]
+  url: https://www.linkedin.com/in/mrmxf/
+amber:
+  alias: ["amber bardell bardell"]
+  url: https://www.amberbardell.com/
+support amber:
+  url: https://ko-fi.com/amberbardell
+simi:
+  alise: ["simi zeko"]
+  url: https://www.simizeko.com/
+chris:
+  alias: ["chris parry"]
+  url: https://www.linkedin.com/in/chris-parry-2b0a607/
+
+# --- External web sites that are referenced in many places -----------
+opentimelineio:
+  url:  https://opentimelineio.readthedocs.io
+
+# [ibc accelerator]:              https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+# [rnf]:                          https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+# [rnf on ibc website]:           https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+# [responsive narrative factory]: https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+
+# {{/* --- Partner links --------------------------------------------------- */}}
+# {{/*  [Infuse Video]: http://infuse.video/
+# [BBC]:          https://www.bbc.co.uk/rd/people/ian-wagdin
+# [Cuvo]:         https://www.cuvo.io
+# [EZDRM]:        https://www.ezdrm.com
+# [JPBMedia]:     https://www.linkedin.com/in/bergerjoshua
+# [theIET]:       https://tv.theiet.org/
+# [Institution of Engineering and Technology]: https://tv.theiet.org/
+# [IBC Accelerator]:         https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
+# [online demo]:             https://ibcdemo.cuvo.io  */}}
