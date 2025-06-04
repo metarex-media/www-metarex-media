@@ -24,7 +24,7 @@ snippets:
     isDev="$1";[ -n "$isDev" ]&&txt=" (${cE}development${cX})"
     clog Log -I "$step.$(((s+=1))).⚒️  build$txt hugo →$cF kodata/"
     [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
-    clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cT, build site"
+    clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cX, build site"
     rm -rf kodata/*
     opt=""
     [[ "dev" == "$(clog build-type)" ]]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
@@ -34,7 +34,7 @@ snippets:
     eval "$(clog Crayon)"
     helper="core/sh/help-golang.sh"    # build helpers
     eval "$(clog Cat $helper)"
-    clog Log -I "$step.$(((s+=1))).⚒️  build-golang $cC $PROJECT $cT using clog's$cF $help"
+    clog Log -I "$step.$(((s+=1))).⚒️  build-golang $cC $PROJECT $cX using clog's$cF $help"
     clog Log -I "$step.$(((s+=1))). build-podserver →$cF tmp/"
     fGoBuild tmp/podserver-amd-lnx     linux   amd64
     fGoBuild tmp/podserver-arm-lnx     linux   arm64
@@ -58,9 +58,9 @@ snippets:
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
     ko build --base-import-paths --tags "$tag1" --tags "$tag2" .
     if [ $? -gt 0 ]; then
-      clog Log -E "ko build failed $cE $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+      clog Log -E "ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
     else    
-      clog Log -S "multi-arch ko build$cF $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+      clog Log -S "multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
     fi
 
   build: |
@@ -83,8 +83,8 @@ snippets:
     [[ "prod"  != "$(clog build-type)" ]] && isDev="release[0].build=$(clog build-type)"
     
     eval "$(clog Source project config)\n $(clog Crayon)" # setting & highlights
-    [ -n "$isDev" ] && txt="(${cE}development$cT)"
-    clog Log -I  "🤖 build $txt$cS $PROJECT$cT components: $cC $MAKE"
+    [ -n "$isDev" ] && txt="(${cE}development$cX)"
+    clog Log -I  "🤖 build $txt$cS $PROJECT$cX components: $cC $MAKE"
 
     ERR=0
     clog Check pre-build; ERR=$((ERR+$?))
@@ -117,7 +117,6 @@ snippets:
     config: |
       # make some variables for standard build scripts
       export PROJECT="$(basename $(pwd))"              # project you're building
-      export DOCKER_NS=mrmxf
     has:
       git-lfs: |
         git lfs --version 2>/dev/null|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
