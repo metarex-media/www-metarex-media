@@ -47,7 +47,8 @@ snippets:
     clog Log -I "$step.$(((s+=1))).⚒️  build ko →$cU hub.docker.com/$DOCKER_NS$cX"
 
     tag1="$(clog git tag ref)$devtag"         # 1.2.3 or 1.2.3-stage or 1.2.3-stage-dev
-    tag2="latest$(clog should-stage)$devtag"  # latest or latest-stage latest-dev latest-stage-dev
+    [ -n "$(clog should-stage)" ]&& stagetag="-stage"
+    tag2="latest$stagetag$devtag"  # latest or latest-stage latest-dev latest-stage-dev
 
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
