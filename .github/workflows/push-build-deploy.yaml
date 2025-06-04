@@ -48,7 +48,7 @@ jobs:
   build-docker-image:
     uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
     with:
-      artifact-name: HugoBuild
+      artifact-name: kodata-www-metarex-media
       docker_ns: ${{ vars.DOCKER_NS }}
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
