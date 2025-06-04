@@ -61,5 +61,5 @@ jobs:
     with:
       simple_message: ${{ needs.build.outputs.message }}
     secrets:
-      slack_webhook: ${{ secrets.slack_webhook }}
-      get_clog: ${{ secrets.get_clog }}
+      slack_webhook: ${{ secrets.HOOK_SLACK }}
+      get_clog: ${{ secrets.GET_CLOG }}
