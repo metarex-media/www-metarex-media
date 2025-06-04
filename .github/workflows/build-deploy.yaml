@@ -45,7 +45,7 @@ jobs:
     uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
 
   # Build job
-  build:
+  build-docker-image:
     uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
     with:
       artifact-name: HugoBuild
