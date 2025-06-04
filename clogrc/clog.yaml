@@ -17,10 +17,12 @@ clog:
 snippets:
   releases-path: yq -r '.clog."releases-path"' clogrc/clog.yaml
   build-type: yq -r '.[0].build' "$(clog releases-path)"
-  release-type: yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
+  should-stage: yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
   build-hugo: |
     eval "$(clog Crayon)"
-    clog Log -I "$step.$(((s+=1))).⚒️  build hugo →$cF kodata/"
+    isDev="$1"
+    [ -n "$isDev" ]&&txt=" (${cE}development${cX})"
+    clog Log -I "$step.$(((s+=1))).⚒️  build$txt hugo →$cF kodata/"
     [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
     clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cT, build site"
     rm -rf kodata/*
@@ -45,7 +47,7 @@ snippets:
 
     tag1="$(clog git tag ref)"
     tag2="latest"
-    [[ "-stage" == "${tag1:(-6)}" ]] && tag2="latest-stage"
+    [[ "stage" == "$(clog should-stage)" ]] && tag2="latest-stage"
 
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
@@ -63,11 +65,23 @@ snippets:
 
   build: |
     export MAKE="hugo podserver ko"
+    [ -n "$1" ] && [ -n "$2" ] && MAKE="$2"
 
-    isDev="$1"
-    [[ "$(clog git branch)" != "main" ]] && isDev="branch=$(clog git branch)"
-    [ -n "$isDev" ] && [ -n "$2" ] && MAKE="$2"
+    # cli:      clog build MAKE "hugo"  - just do the hugo bit of the build
+    # assets/data/releases .yaml
+    #   - { version: 1.7.9-stage, date: 2025-05-30, build: dev,  note: none}
+    # .version controls whether auto-staging takes place
+    # .build   controls whether the build is dev or prod
+    #
+    # There are 2 different types of build control:
+    # isDev    != "" - build past & future posts, ignore build errors
+    # should-stage != "" - tag the docker image with "latest-stage"
+    # if both flags are empty then a production build is created
+    # The web server takes appropriate actions based on the new image tags
 
+    isDev=""
+    [[ "prod"  != "$(clog build-type)" ]] && isDev="release[0].build=$(clog build-type)"
+    
     eval "$(clog Source project config)\n $(clog Crayon)" # setting & highlights
     [ -n "$isDev" ] && txt="(${cE}development$cT)"
     clog Log -I  "🤖 build $txt$cS $PROJECT$cT components: $cC $MAKE"
@@ -83,9 +97,9 @@ snippets:
     clog Log -I  "$DIV"
 
     export step=0
-    ((step++));clog Should MAKE "hugo"      && clog build-hugo      && clog Log -I "$DIV" || exit 1
-    ((step++));clog Should MAKE "podserver" && clog build-podserver && clog Log -I "$DIV" || exit 1
-    ((step++));clog Should MAKE "ko"        && clog build-ko        && clog Log -I "$DIV" || exit 1
+    ((step++));clog Should MAKE "hugo"      && clog build-hugo      "isDev" && clog Log -I "$DIV" || exit 1
+    ((step++));clog Should MAKE "podserver" && clog build-podserver "isDev" && clog Log -I "$DIV" || exit 1
+    ((step++));clog Should MAKE "ko"        && clog build-ko        "isDev" && clog Log -I "$DIV" || exit 1
     clog Log -I "   build complete"
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
