@@ -13,20 +13,20 @@
 # Needs:
 # -     vars.DOCKER_NS - the account namespace for docker hub e.g. mrmxf
 # - secrets.DOCKER_PAT - the personal access token for pushing to docker hub
-# - secrets.SLACK_HOOK - the SLACK WEBHOOK to post messages to the team
+# - secrets.HOOK_SLACK - the SLACK WEBHOOK to post messages to the team
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
-name: build-www-metarex-media
-run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref }}"
+name: push-build-deploy
+run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 on:
-  create:                       # run when a tag is created
+  # create:                       # run when a tag is created
   push:                         # run every push
     branches:
       - "main"
   pull_request:
     branches:
       - main
-  workflow_dispatch:            # run manually from Actions tab
+  # workflow_dispatch:            # run manually from Actions tab
 
 # Default to bash
 defaults:
