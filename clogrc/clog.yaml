@@ -18,10 +18,10 @@ snippets:
   releases-path: yq -r '.clog."releases-path"' clogrc/clog.yaml
   build-type: yq -r '.[0].build' "$(clog releases-path)"
   should-stage: yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
+  prod-tag:  yq -r 'first(.[] | select(.build == "prod")) | .version' "$(clog releases-path)"
   build-hugo: |
     eval "$(clog Crayon)"
-    isDev="$1"
-    [ -n "$isDev" ]&&txt=" (${cE}development${cX})"
+    isDev="$1";[ -n "$isDev" ]&&txt=" (${cE}development${cX})"
     clog Log -I "$step.$(((s+=1))).⚒️  build$txt hugo →$cF kodata/"
     [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
     clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cT, build site"
@@ -42,12 +42,12 @@ snippets:
     [ $? -eq 0 ] && clog Log -I "stand-alone podserver exe built to$cF tmp/"
   build-ko: |
     eval "$(clog Crayon)"
+    isDev="$1";[ -n "$isDev" ]&&txt=" (${cE}development${cX})"&&devtag="-dev"
     [ -z "$DOCKER_NS" ] && DOCKER_NS="mrmxf"
     clog Log -I "$step.$(((s+=1))).⚒️  build ko →$cU hub.docker.com/$DOCKER_NS$cX"
 
-    tag1="$(clog git tag ref)"
-    tag2="latest"
-    [[ "stage" == "$(clog should-stage)" ]] && tag2="latest-stage"
+    tag1="$(clog git tag ref)$devtag"         # 1.2.3 or 1.2.3-stage or 1.2.3-stage-dev
+    tag2="latest$(clog should-stage)$devtag"  # latest or latest-stage latest-dev latest-stage-dev
 
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
