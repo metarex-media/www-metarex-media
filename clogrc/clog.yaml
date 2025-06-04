@@ -1,8 +1,8 @@
 ---
 # yamllint disable rule:colons
 # clog Jumbo --font small "www-metarex-media-com"
-#                                                  _                                                     _   _        
-#  __ __ __ __ __ __ __ __ __  ___   _ __    ___  | |_   __ _   _ _   ___  __ __  ___   _ __    ___   __| | (_)  __ _ 
+#                                                  _                                                     _   _
+#  __ __ __ __ __ __ __ __ __  ___   _ __    ___  | |_   __ _   _ _   ___  __ __  ___   _ __    ___   __| | (_)  __ _
 #  \ V  V / \ V  V / \ V  V / |___| | '  \  / -_) |  _| / _` | | '_| / -_) \ \ / |___| | '  \  / -_) / _` | | | / _` |
 #   \_/\_/   \_/\_/   \_/\_/        |_|_|_| \___|  \__| \__,_| |_|   \___| /_\_\       |_|_|_| \___| \__,_| |_| \__,_|
 #                      ⇓⇓⇓⇓⇓⇓⇓⇓⇓
@@ -15,67 +15,77 @@ clog:
 
 # --- shell snippets for this project -----------------------------------------
 snippets:
-  releases-path: yq -r '.clog."releases-path"' clogrc/clog.config.yaml
+  releases-path: yq -r '.clog."releases-path"' clogrc/clog.yaml
   build-type: yq -r '.[0].build' "$(clog releases-path)"
-  release-type:  yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
+  release-type: yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
   build-hugo: |
     eval "$(clog Crayon)"
-    clog Log -I "$step.$(((s+=1))). building hugo content"
+    clog Log -I "$step.$(((s+=1))).⚒️  build hugo →$cF kodata/"
     [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
-    clog Log -I "$step.$(((s+=1))). purging kodata/ and building site"
+    clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cT, build site"
     rm -rf kodata/*
     opt=""
     [[ "dev" == "$(clog build-type)" ]]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
-    clog Log -I "$step.$(((s+=1))). building hugo to$cF kodata/$cT folder$cC $opt"
+    clog Log -I "$step.$(((s+=1))). build hugo →${cF}kodata/$cC $opt"
     hugo build --minify --logLevel info $opt
   build-podserver: |
     eval "$(clog Crayon)"
     helper="core/sh/help-golang.sh"    # build helpers
     eval "$(clog Cat $helper)"
-    clog Log -I "$step.$(((s+=1))). building podserver to$cF tmp/"
+    clog Log -I "$step.$(((s+=1))).⚒️  build-golang $cC $PROJECT $cT using clog's$cF $help"
+    clog Log -I "$step.$(((s+=1))). build-podserver →$cF tmp/"
     fGoBuild tmp/podserver-amd-lnx     linux   amd64
     fGoBuild tmp/podserver-arm-lnx     linux   arm64
     fGoBuild tmp/podserver-arm-mac     darwin  arm64
     [ $? -eq 0 ] && clog Log -I "stand-alone podserver exe built to$cF tmp/"
   build-ko: |
     eval "$(clog Crayon)"
-    clog Log -I "$step.$(((s+=1))). build & push with ko to docker"
+    [ -z "$DOCKER_NS" ] && DOCKER_NS="mrmxf"
+    clog Log -I "$step.$(((s+=1))).⚒️  build ko →$cU hub.docker.com/$DOCKER_NS$cX"
 
     tag1="$(clog git tag ref)"
     tag2="latest"
-    [[ "-stage" == "${tag1:(-6)}" ]] &&tag2="latest-stage"
+    [[ "-stage" == "${tag1:(-6)}" ]] && tag2="latest-stage"
 
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
-    [ -z "$DOCKER_NS" ] && DOCKER_NS="mrmxf"
     [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
     export KO_DOCKER_REPO
     export KO_CONFIG_PATH=".ko.yaml"
     # ensure that dates are added to the images
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
     ko build --base-import-paths --tags "$tag1" --tags "$tag2" .
-    
-    clog Log -I "multi-arch docker build$cF $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+    if [ $? -gt 0 ]; then
+      clog Log -E "ko build failed $cE $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+    else    
+      clog Log -S "multi-arch ko build$cF $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
+    fi
 
   build: |
-    isDev="$1"
     export MAKE="hugo podserver ko"
-    [ -n "$isDev" ] && [ -z "$2" ] && MAKE="$2"
-    clog Log -I  "build $cS $PROJECT$cT components: $cC $MAKE"
-    eval "$(clog Source project config)"
+
+    isDev="$1"
+    [[ "$(clog git branch)" != "main" ]] && isDev="branch=$(clog git branch)"
+    [ -n "$isDev" ] && [ -n "$2" ] && MAKE="$2"
+
+    eval "$(clog Source project config)\n $(clog Crayon)" # setting & highlights
+    [ -n "$isDev" ] && txt="(${cE}development$cT)"
+    clog Log -I  "🤖 build $txt$cS $PROJECT$cT components: $cC $MAKE"
 
     ERR=0
     clog Check pre-build; ERR=$((ERR+$?))
+    #clog Check tools; ERR=$((ERR+$?))
     clog Check build; ERR=$((ERR+$?))
-    [ $ERR -gt 0 ] && [ -n "$isDev" ] && clog log -W "==== DEV mode - ignoring errors ===="
-    [ $ERR -gt 0 ] && [ -z "$isDev" ] && clog log -E "Check errors - aborting" && exit 1
+    [ $ERR -gt 0 ] && [ -n "$isDev" ] && clog Log -W "==== DEV mode - ignoring errors ===="
+    [ $ERR -gt 0 ] && [ -z "$isDev" ] && clog Log -E "Check has errors - aborting" && exit 1
 
-    eval "$(clog Crayon)"
-    clog Log -I  "=== === ===== === ===== === ===== === ===== === ===== === =="
+    for i in {1..8}; do DIV="$DIV$cW▬▬▬▬▬▬▬▬▬$cE|"; done
+    clog Log -I  "$DIV"
+
     export step=0
-    ((step++));clog Should MAKE "hugo"      && clog build-hugo
-    ((step++));clog Should MAKE "podserver" && clog build-podserver
-    ((step++));clog Should MAKE "ko"        && clog build-ko
+    ((step++));clog Should MAKE "hugo"      && clog build-hugo      && clog Log -I "$DIV" || exit 1
+    ((step++));clog Should MAKE "podserver" && clog build-podserver && clog Log -I "$DIV" || exit 1
+    ((step++));clog Should MAKE "ko"        && clog build-ko        && clog Log -I "$DIV" || exit 1
     clog Log -I "   build complete"
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
@@ -96,7 +106,7 @@ snippets:
       export DOCKER_NS=mrmxf
     has:
       git-lfs: |
-        git lfs --version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
+        git lfs --version 2>/dev/null|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
       golang: |
         go version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
       hugo: |
@@ -115,6 +125,7 @@ snippets:
         else
           echo "hugo config not found"
         fi
+  testy: echo "($1) ($2) ($3) ($4) ($5)"
 # =============================================================================
 #    ___   _                 _
 #   / __| | |_    ___   __  | |__

@@ -17,7 +17,7 @@
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
 name: build-www-metarex-media
-run-name: "🥷${{ github.actor }}: build-www-metarex-media🏃‍➡️"
+run-name: "🥷${{ github.actor }}: 🏃‍➡️${{ github.workdlow }} @ ${{ github.repository }}"
 on:
   push:                         # run every push
     branches:
