@@ -17,7 +17,7 @@
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
 name: build-www-metarex-media
-run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workdlow }} @ ${{ github.repository }}"
+run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref }}"
 on:
   create:                       # run when a tag is created
   push:                         # run every push
@@ -56,7 +56,7 @@ jobs:
 
 
   notify-team:
-    needs: [build]
+    needs: [build-docker-image]
     uses: mrmxf/clogwork/.github/workflows/ping-slack.yaml@main
     with:
       simple_message: ${{ needs.build.outputs.message }}
