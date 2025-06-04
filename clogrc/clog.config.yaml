@@ -58,13 +58,20 @@ snippets:
     clog Log -I "multi-arch docker build$cF $PROJECT$cT:$cW$tag1$cT and ${cW}$tag2"
 
   build: |
-    export MAKE="hugo podserver" # ko"
+    isDev="$1"
+    export MAKE="hugo podserver ko"
+    [ -n "$isDev" ] && [ -z "$2" ] && MAKE="$2"
+    clog Log -I  "build $cS $PROJECT$cT components: $cC $MAKE"
     eval "$(clog Source project config)"
-    clog Check pre-build
-    clog Check build
+
+    ERR=0
+    clog Check pre-build; ERR=$((ERR+$?))
+    clog Check build; ERR=$((ERR+$?))
+    [ $ERR -gt 0 ] && [ -n "$isDev" ] && clog log -W "==== DEV mode - ignoring errors ===="
+    [ $ERR -gt 0 ] && [ -z "$isDev" ] && clog log -E "Check errors - aborting" && exit 1
+
     eval "$(clog Crayon)"
     clog Log -I  "=== === ===== === ===== === ===== === ===== === ===== === =="
-    clog Log -I  "build $cS $PROJECT$cT components: $cC $MAKE"
     export step=0
     ((step++));clog Should MAKE "hugo"      && clog build-hugo
     ((step++));clog Should MAKE "podserver" && clog build-podserver

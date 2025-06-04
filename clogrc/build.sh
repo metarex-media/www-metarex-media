@@ -8,8 +8,11 @@
 eval "$(clog Inc)"
 eval "$(clog project config)"
 eval "$(cat clogrc/help-hugo.sh)"
-clog Check pre-build
-clog Check build
+COUNT=0
+clog Check pre-build; COUNT=$((COUNT+$?))
+clog Check build; COUNT=$((COUNT+$?))
+[ $COUNT -gt 0 ] && [ -n "$1" ] && clog log -W "==== DEV mode - ignoring errors ===="
+[ $COUNT -gt 0 ] && [ -z "$1" ] && clog log -E "Check errors - aborting" && exit 1
 
 if $(clog is-prod-release); then
   clog Log -W "PRODUCTION mode"
