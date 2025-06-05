@@ -50,18 +50,5 @@ jobs:
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
-      
-  #dump properties of the build output / needs context
-  dump-context:
-    needs: [build]
-    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
-
-  # run the slack call
-  notify:
-    needs: [build]
-    uses: mrmxf/clogwork/.github/workflows/ping-slack.yaml@main
-    with:
-      simple_message: ${{ needs.build.outputs.message }}
-    secrets:
-      slack_webhook: ${{ secrets.HOOK_SLACK }}
-      get_clog: ${{ secrets.GET_CLOG }}
+      # provide a slack_webhook to get a slack message otherwise silence
+      webhook_slack: ${{ secrets.HOOK_SLACK }}

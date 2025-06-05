@@ -68,7 +68,6 @@ snippets:
       printf "$msg" > /tmp/clog-notify
     fi
 
-
   build: |
     export MAKE="hugo podserver ko"
     [ -n "$1" ] && [ -n "$2" ] && MAKE="$2"
@@ -147,7 +146,6 @@ snippets:
         else
           echo "hugo config not found"
         fi
-  testy: echo "($1) ($2) ($3) ($4) ($5)"
 # =============================================================================
 #    ___   _                 _
 #   / __| | |_    ___   __  | |__

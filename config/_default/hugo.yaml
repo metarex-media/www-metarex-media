@@ -1,6 +1,10 @@
-baseURL: "https://metarex.media"
+# Metarex.media fohuw theme
+
+# cSpell:ignore docsy fortawesome fontawesome webfonts
 title: "MetaRex"
-theme: fohuw
+baseURL: "https://metarex.media"
+theme:
+- fohuw
 contentDir: "content"
 
 # override publishing to public so that ko can build a lightweight container
@@ -8,11 +12,7 @@ publishDir: kodata
 
 enableRobotsTXT: true
 
-# --- Menus -------------------------------------------------------------------
-# uncomment this line to automatically generate a top level section menu
-# keep the comment if you only want some of the top level menus to appear
-# sectionPagesMenu: main
-
+# ----------------------------------------------------------------------------------------------------------------------
 #   __  __          _
 #  |  \/  |  __ _  (_)  _ _      _ __    ___   _ _    _  _
 #  | |\/| | / _` | | | | ' \    | '  \  / -_) | ' \  | || |
@@ -181,22 +181,28 @@ languages:
       description: Metadata Resource Express
 
 # --- Markdown ----------------------------------------------------------------
+#   _ __    __ _   _ _  | |__  _  _   _ __
+#  | '  \  / _` | | '_| | / / | || | | '_ \
+#  |_|_|_| \__,_| |_|   |_\_\  \_,_| | .__/
+#                                    |_|
 markup:
   goldmark:
     renderer:
       unsafe: true
 
   highlight:
+    anchorLineNos: true
+    codeFences: true
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # THIS MUST BE FALSE for mermaid to work!!!
     guessSyntax: false
-    # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
+    # hl_Lines: 
+    # See a complete list of available styles at https://gohugo.io/quick-reference/syntax-highlighting-styles/
+    # I like light: pastie   dark: monokailight     neutral: hrdark
     style: vs
-    anchorLineNos: false
-    codeFences: true
     lineAnchors: ""
     # hl_Lines:           1
-    # lineNoStart:        1
+    lineNoStart:        1
     lineNos: true
     lineNumbersInTable: true
     noClasses: true
