@@ -61,6 +61,7 @@ Tooling needed:
 * [Golang]
 * [Hugo]
 * [ko.build][ko]
+* [Docker]
 
 ### testing the docker image locally - static site only
 
@@ -77,14 +78,15 @@ docker run --detach --publish 12345:8080 metarexmedia/www-metarex-media
 curl localhost:12345
 
 # check it's working by launching a browser (linux)
-start "http://localhost:10000"
+start "http://localhost:12345"
 ```
 
 [golang]:            https://go.dev/doc/install
 [ko]:                https://ko.build
 [Hugo]:              https://gohugo.io/installation/
 [metarex.media]:     https://metarex.media
-[clog]:             https://github.com/mrmxf/clog
+[docker]:            https://docker.com
+[clog]:              https://github.com/mrmxf/clog
 [fohuw]:             https://github.com/mrmxf/fohuw
 [ww]:                https://github.com/metarex-media/www-metarex-media
 [de]:                https://github.com/metarex-media/spa-mrx-demos
