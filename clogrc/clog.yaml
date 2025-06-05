@@ -59,10 +59,15 @@ snippets:
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')
     ko build --base-import-paths --tags "$tag1" --tags "$tag2" .
     if [ $? -gt 0 ]; then
-      clog Log -E "ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      msg="ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      clog Log -E "$msg"
+      printf "$msg" > /tmp/clog-notify
     else    
-      clog Log -S "multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      msg="multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      clog Log -S "$msg"
+      printf "$msg" > /tmp/clog-notify
     fi
+
 
   build: |
     export MAKE="hugo podserver ko"
