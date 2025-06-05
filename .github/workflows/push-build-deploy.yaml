@@ -40,12 +40,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  #dump properties of this run
-  dump-context:
-    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
 
   # Build job
-  build-docker-image:
+  build:
     uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
     with:
       artifact-name: kodata-www-metarex-media
@@ -53,13 +50,18 @@ jobs:
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
+      
+  #dump properties of the build output / needs context
+  dump-context:
+    needs: [build]
+    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
 
-
-  notify-team:
-    needs: [build-docker-image]
+  # run the slack call
+  notify:
+    needs: [build]
     uses: mrmxf/clogwork/.github/workflows/ping-slack.yaml@main
     with:
-      simple_message: ${{ needs.build-docker-image.outputs.message }}
+      simple_message: ${{ needs.build.outputs.message }}
     secrets:
       slack_webhook: ${{ secrets.HOOK_SLACK }}
       get_clog: ${{ secrets.GET_CLOG }}
