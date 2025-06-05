@@ -2,8 +2,6 @@
 <!-- CLOG-BADGE-START -->
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmetarex-media%2Fwww-metarex-media%2Frefs%2Fheads%2Fmain%2Fassets%2Fdata%2Freleases.yaml&query=%24.%5B0%5D.version&logo=github&label=https%3A%2F%2Fmetarex.media&color=%23B5D490)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fmetarexmedia%2Fwww-metarex-media%2F&query=%24.last_updated&logo=docker&label=built%20on&color=c971a4)
-
-
 <!-- CLOG-BADGE-END -->
 The [metarex.media] website built with [Hugo] using the [fohuw] theme and
 served inside a container using a lightweight golang server to a web proxy. The
@@ -20,15 +18,15 @@ There are other elements of the website that make it work. Here are the high
 level components, most of which can be found on
 [GitHub](https://github.com/metarex-media/?repositories):
 
-|  url       | repo                    | docker  | purpose                                     |
-|------------|-------------------------|---------|---------------------------------------------|
-| /          | [www-metarex-media][ww] |   -     | main website (this repo)                    |
-| /app/demos | [spa-mrx-demos][de]     |   -     | svelte web app to drive demos (GitHub)      |
-| /app/reg   | [spa-mrx-reg-ux][rg]    |   -     | svelte web app to browse register  (GitHub) |
-| /dl        | _bulky storage_         |   -     | externally hosted download store            |
-| /r         | _bulky storage_         |   -     | externally hosted media store               |
-| /reg       | [mrx-reg-svr][rs]       |   -     | register service (GitHub)                   |
-| /svc/demos | [mrx-svc-demos][ds]     |   -     | demo service (GitHub)                       |
+|  url       | repo                    | purpose                                     |
+|------------|-------------------------|---------------------------------------------|
+| /          | [www-metarex-media][ww] | main website (this repo)                    |
+| /app/demos | [spa-mrx-demos][de]     | svelte web app to drive demos (GitHub)      |
+| /app/reg   | [spa-mrx-reg-ux][rg]    | svelte web app to browse register  (GitHub) |
+| /dl        | _bulky storage_         | externally hosted download store            |
+| /r         | _bulky storage_         | externally hosted media store               |
+| /reg       | [mrx-reg-svr][rs]       | register service (GitHub)                   |
+| /svc/demos | [mrx-svc-demos][ds]     | demo service (GitHub)                       |
 
 ## Forking, cloning & editing
 
