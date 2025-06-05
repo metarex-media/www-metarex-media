@@ -1,5 +1,5 @@
 - { version:  1.7.9-stage, date: 2025-05-30, build: dev,  note: workflow tests}
-- { version:  1.7.8, date: 2025-05-30, build: prod,  note: responsive layout}
+- { version:  1.7.8, date: 2025-05-30, build: dev,  note: responsive layout}
 - { version:  1.7.7, date: 2025-05-27, build: dev,  note: auto-staging testing}
 - { version:  1.7.6, date: 2025-05-20, build: dev,  note: start of Rexy backstory}
 - { version:  1.7.5, date: 2025-05-15, build: dev,  note: podserver update}

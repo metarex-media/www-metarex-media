@@ -81,7 +81,10 @@ snippets:
     # The web server takes appropriate actions based on the new image tags
 
     isDev=""
-    [[ "prod"  != "$(clog build-type)" ]] && isDev="release[0].build=$(clog build-type)"
+    if [[ "prod"  != "$(clog build-type)" ]]; then
+      isDev="release[0].build=$(clog build-type)"
+      clog Log -W "dev mode set in$cF releases.yaml$cX - building$cW future$cX and$cW draft$cX content"
+    fi
     
     eval "$(clog Source project config)\n $(clog Crayon)" # setting & highlights
     [ -n "$isDev" ] && txt="(${cE}development$cX)"
@@ -149,6 +152,18 @@ snippets:
 check:
   build:
     blocks:
+      - name: wsl Zone.Identifier files
+        try: |
+          [ -n "$(find . -name '*Zone.Identifier')" ] && exit 1
+        catch: |
+          eval "$(clog Crayon)"
+          n=$(find . -name '*Zone.Identifier'|wc -l)
+          clog Log -E "Delete $n Zone.Identifier files made by Windows"
+          while IFS= read -r line; do
+            fn="$(echo ${line:2}|cut  -d ":" -f "1")"
+            id="$(echo ${line:2}|cut  -d ":" -f "2")"
+            clog Log -E "      ❌$cF $fn$cX:$cW$id"
+          done < <(find . -name '*Zone.Identifier')
       - name: golang version
         try: |
           [[ "$(clog project needs golang)" == "$(clog project has golang)" ]]
