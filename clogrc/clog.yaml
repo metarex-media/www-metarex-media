@@ -15,27 +15,39 @@ clog:
 
 # --- shell snippets for this project -----------------------------------------
 snippets:
-  releases-path: yq -r '.clog."releases-path"' clogrc/clog.yaml
-  build-type: yq -r '.[0].build' "$(clog releases-path)"
-  should-stage: yq -r '.[0].version' "$(clog releases-path)"|grep -oE 'stage'
-  prod-tag:  yq -r 'first(.[] | select(.build == "prod")) | .version' "$(clog releases-path)"
+  # build control logic for this repo - all commands start with bc
+  bc-releases-yaml: yq -r '.clog."releases-path"' clogrc/clog.yaml
+  bc-is-dev-build: yq -r '.[0].build|select(.=="dev")' "$(clog bc-releases-yaml)"
+  bc-is-prod-build: yq -r '.[0].build|select(.=="prod")' "$(clog bc-releases-yaml)"
+  bc-wants-stage-flow:  yq -r '.[0].flow|select(.=="stage")' "$(clog bc-releases-yaml)"
+  bc-wants-test-flow:  yq -r '.[0].flow|select(.=="test")' "$(clog bc-releases-yaml)"
+  bc-wants-schedule-flow:  yq -r '.[0].flow|select(.=="schedule")' "$(clog bc-releases-yaml)"
+  bc-log-e: |
+    doProd="$1"
+    MSG="$2"
+    [ -z "$doProd" ] && clog Log -E "prod: $MSG - aborting" && exit 1
+    clog Log -W " dev: $MSG -- ignoring errors" && exit 0
+  bc-divider-string: eval "$clog Crayon";for i in {1..8};do DIV="$DIV$cW▬▬▬▬▬▬▬▬▬$cE|";done;echo "$DIV"
+  build-type: val="$(yq -r '.[0].build' "$(clog bc-releases-yaml)")""; 
+  should-stage: yq -r '.[0].version' "$(clog bc-releases-yaml)"|grep -oE 'stage'
+  prod-tag:  yq -r 'first(.[] | select(.build == "prod")) | .version' "$(clog bc-releases-yaml)"
   build-hugo: |
     eval "$(clog Crayon)"
     isDev="$1";[ -n "$isDev" ]&&txt=" (${cE}development${cX})"
-    clog Log -I "$step.$(((s+=1))).⚒️  build$txt hugo →$cF kodata/"
-    [ ! -d content ] && clog Log -E "$step.$(((s+=1))). no content/ folder" && exit 1
-    clog Log -I "$step.$(((s+=1))). purge$cF kodata/$cX, build site"
+    clog Log -I "$STEP.$(((s+=1))).⚒️  build$txt hugo →$cF kodata/"
+    [ ! -d content ] && clog Log -E "$STEP.$(((s+=1))). no content/ folder" && exit 1
+    clog Log -I "$STEP.$(((s+=1))). purge$cF kodata/$cX, build site"
     rm -rf kodata/*
     opt=""
     [[ "dev" == "$(clog build-type)" ]]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
-    clog Log -I "$step.$(((s+=1))). build hugo →${cF}kodata/$cC $opt"
+    clog Log -I "$STEP.$(((s+=1))). build hugo →${cF}kodata/$cC $opt"
     hugo build --minify --logLevel info $opt
   build-podserver: |
     eval "$(clog Crayon)"
     helper="core/sh/help-golang.sh"    # build helpers
     eval "$(clog Cat $helper)"
-    clog Log -I "$step.$(((s+=1))).⚒️  build-golang $cC $PROJECT $cX using clog's$cF $help"
-    clog Log -I "$step.$(((s+=1))). build-podserver →$cF tmp/"
+    clog Log -I "$STEP.$(((s+=1))).⚒️  build-golang $cC $PROJECT $cX using clog's$cF $help"
+    clog Log -I "$STEP.$(((s+=1))). build-podserver →$cF tmp/"
     fGoBuild tmp/podserver-amd-lnx     linux   amd64
     fGoBuild tmp/podserver-arm-lnx     linux   arm64
     fGoBuild tmp/podserver-arm-mac     darwin  arm64
@@ -44,7 +56,7 @@ snippets:
     eval "$(clog Crayon)"
     isDev="$1";[ -n "$isDev" ]&&txt=" (${cE}development${cX})"&&devtag="-dev"
     [ -z "$DOCKER_NS" ] && DOCKER_NS="mrmxf"
-    clog Log -I "$step.$(((s+=1))).⚒️  build ko →$cU hub.docker.com/$DOCKER_NS$cX"
+    clog Log -I "$STEP.$(((s+=1))).⚒️  build ko →$cU hub.docker.com/$DOCKER_NS$cX"
 
     tag1="$(clog git tag ref)$devtag"         # 1.2.3 or 1.2.3-stage or 1.2.3-stage-dev
     [ -n "$(clog should-stage)" ]&& stagetag="-stage"
@@ -69,55 +81,44 @@ snippets:
     fi
 
   build: |
+    # all builds use data from releases.yaml unless: clog build MAKE "hugo ko prod"
     export MAKE="hugo podserver ko"
     [ -n "$1" ] && [ -n "$2" ] && MAKE="$2"
+    doPROD="$(clog bc-is-prod-build)"
+    clog Should MAKE "prod" && doPROD="prod(cli override)"
 
-    # cli:      clog build MAKE "hugo"  - just do the hugo bit of the build
-    # assets/data/releases .yaml
-    #   - { version: 1.7.9-stage, date: 2025-05-30, build: dev,  note: none}
-    # .version controls whether auto-staging takes place
-    # .build   controls whether the build is dev or prod
-    #
-    # There are 2 different types of build control:
-    # isDev    != "" - build past & future posts, ignore build errors
-    # should-stage != "" - tag the docker image with "latest-stage"
-    # if both flags are empty then a production build is created
-    # The web server takes appropriate actions based on the new image tags
-
-    isDev=""
-    if [[ "prod"  != "$(clog build-type)" ]]; then
-      isDev="release[0].build=$(clog build-type)"
-      clog Log -W "dev mode set in$cF releases.yaml$cX - building$cW future$cX and$cW draft$cX content"
-    fi
-    
     eval "$(clog Source project config)\n $(clog Crayon)" # setting & highlights
-    [ -n "$isDev" ] && txt="(${cE}development$cX)"
-    clog Log -I  "🤖 build $txt$cS $PROJECT$cX components: $cC $MAKE"
+    MSG="$cS$doPROD$cX"
+    [ -z "$doPROD" ] && MSG="(${cE}development$cX)"
+
+    clog Log -I  "🤖 build $MSG$cS $PROJECT$cX components: $cC $MAKE"
 
     ERR=0
     clog Check pre-build; ERR=$((ERR+$?))
-    #clog Check tools; ERR=$((ERR+$?))
-    clog Check build; ERR=$((ERR+$?))
-    [ $ERR -gt 0 ] && [ -n "$isDev" ] && clog Log -W "==== DEV mode - ignoring errors ===="
-    [ $ERR -gt 0 ] && [ -z "$isDev" ] && clog Log -E "Check has errors - aborting" && exit 1
+    clog Check build;     ERR=$((ERR+$?))
+    if [ $ERR -gt 0 ]; then
+       clog bc-log-e "$doPROD" "check produced errors" || exit 1; #abort if PROD
+    fi
 
-    for i in {1..8}; do DIV="$DIV$cW▬▬▬▬▬▬▬▬▬$cE|"; done
-    clog Log -I  "$DIV"
+    clog Log -I  "$(clog bc-divider-string)"
 
-    export step=0
-    ((step++));clog Should MAKE "hugo"      && clog build-hugo      "isDev" && clog Log -I "$DIV" || exit 1
-    ((step++));clog Should MAKE "podserver" && clog build-podserver "isDev" && clog Log -I "$DIV" || exit 1
-    ((step++));clog Should MAKE "ko"        && clog build-ko        "isDev" && clog Log -I "$DIV" || exit 1
+    #refactor from here
+    
+    isDev="Y"; [ -n "$doPROD" ] && isDev=""
+    export STEP=0
+    ((STEP++));clog Should MAKE "hugo"      && clog build-hugo      "isDev" && clog Log -I "$DIV" || exit 1
+    ((STEP++));clog Should MAKE "podserver" && clog build-podserver "isDev" && clog Log -I "$DIV" || exit 1
+    ((STEP++));clog Should MAKE "ko"        && clog build-ko        "isDev" && clog Log -I "$DIV" || exit 1
     clog Log -I "   build complete"
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
     # get the target version for this project from releases.yaml
     tag:
-      ref: yq -r '.[0].version' "$(clog releases-path)"
+      ref: yq -r '.[0].version' "$(clog bc-releases-yaml)"
       # a go package needs a preceding "v"
       refgo: echo "v$(clog git tag ref)"
     message:
-      ref: yq -r '.[0].note' "$(clog releases-path)"
+      ref: yq -r '.[0].note' "$(clog bc-releases-yaml)"
     suffix: |
       b="$(git branch --show-current)"
       [[ "$b" == main ]] && echo "" || echo "$b"|tr -d '[:blank:]'

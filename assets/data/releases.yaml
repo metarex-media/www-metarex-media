@@ -1,4 +1,14 @@
-- { version:  1.7.9-stage, date: 2025-05-30, build: dev,  note: workflow tests}
+- {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}
+# v1.8 uses new build infrastructure rules:
+#  every build is a development build unless    build: "prod"
+#  backend workflow can do several things:
+#    flow: "stage"     - upload to the staging server & ping slack
+#    flow: "release"   - single build - no errors allowed       (prod only)
+#    flow: "schedule"  - scheduled rebuilds - no errors allowed (prod only - daily rebuilds)
+#    flow: "test"      - full test suite - no errors allowed    (prod only - final checks)
+#    flow: <anything-else>  - no actions
+# if in doubt set to "stage" and check the staging server when slack goes ping
+# -------------------------------------------------------------------------------------------
 - { version:  1.7.8, date: 2025-05-30, build: dev,  note: responsive layout}
 - { version:  1.7.7, date: 2025-05-27, build: dev,  note: auto-staging testing}
 - { version:  1.7.6, date: 2025-05-20, build: dev,  note: start of Rexy backstory}
