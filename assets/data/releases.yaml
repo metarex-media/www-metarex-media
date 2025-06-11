@@ -9,6 +9,7 @@
 #    flow: <anything-else>  - no actions
 # if in doubt set to "stage" and check the staging server when slack goes ping
 # -------------------------------------------------------------------------------------------
+- { version:  1.7.9, date: 2025-06-11, build: dev,  note: build test}
 - { version:  1.7.8, date: 2025-05-30, build: dev,  note: responsive layout}
 - { version:  1.7.7, date: 2025-05-27, build: dev,  note: auto-staging testing}
 - { version:  1.7.6, date: 2025-05-20, build: dev,  note: start of Rexy backstory}
