@@ -45,7 +45,7 @@ jobs:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
       # provide a slack_webhook to get a slack message otherwise silence
-      webhook_slack: ${{ secrets.HOOK_SLACK }}
+      webhook_slack: ${{ secrets.HOOK_SLACK_LOGS }}
       
   #dump properties of the build output / needs context
   dump-context:
