@@ -49,7 +49,6 @@ jobs:
       # provide a slack_webhook to get a slack message otherwise silence
       webhook_slack: ${{ secrets.HOOK_SLACK_GENERAL }}
      
-  #dump properties of this run - remove "needs:" to check pre-build context
   dump-context:
-    needs: [build]
+    # needs: [build]
     uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main

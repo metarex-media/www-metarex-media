@@ -40,7 +40,7 @@ jobs:
     with:
       artifact-name: kodata-www-metarex-media
       docker_ns: ${{ vars.DOCKER_NS }}
-      make: "schedule prod"
+      make: "golang ko schedule prod"
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
