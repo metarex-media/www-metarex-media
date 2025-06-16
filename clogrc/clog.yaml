@@ -204,7 +204,7 @@ snippets:
     ((STEP++));clog Should MAKE "ko"        && clog build-ko        "$doPROD" "$modeMSG" && clog bc-logs-hr
     icon="✅";[ $ERR -gt 0 ] && icon="❌"
     printf -v MSG "$icon build $modeMSG complete with %d errors" $ERR
-    echo "$modeMSG" > "$(clog workflow-message-file)"
+    echo "$modeMSG" > "$(clog bc-message-file)"
     clog Log -B "$ERR" "$doPROD" "✅ golang build ok - $modeMSG" "❌ golang build failed - $modeMSG" || exit 1; #abort if PROD
     exit 0
 # =============================================================================
