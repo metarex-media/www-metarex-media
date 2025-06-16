@@ -198,10 +198,10 @@ snippets:
     clog Log -B "$ERR" "$doPROD" "✅ checks ok" "❌ checks failed" || exit 1; #abort if PROD
     clog bc-logs-hr
 
-    ((STEP++));clog Should MAKE "schedule"  && clog build-schedule  "$doPROD" "$modeMSG" && clog bc-logs-hr || exit 1
-    ((STEP++));clog Should MAKE "hugo"      && clog build-hugo      "$doPROD" "$modeMSG" && clog bc-logs-hr || exit 1
-    ((STEP++));clog Should MAKE "podserver" && clog build-podserver "$doPROD" "$modeMSG" && clog bc-logs-hr || exit 1
-    ((STEP++));clog Should MAKE "ko"        && clog build-ko        "$doPROD" "$modeMSG" && clog bc-logs-hr || exit 1
+    ((STEP++));clog Should MAKE "schedule"  && clog build-schedule  "$doPROD" "$modeMSG" && clog bc-logs-hr 
+    ((STEP++));clog Should MAKE "hugo"      && clog build-hugo      "$doPROD" "$modeMSG" && clog bc-logs-hr
+    ((STEP++));clog Should MAKE "podserver" && clog build-podserver "$doPROD" "$modeMSG" && clog bc-logs-hr
+    ((STEP++));clog Should MAKE "ko"        && clog build-ko        "$doPROD" "$modeMSG" && clog bc-logs-hr
     icon="✅";[ $ERR -gt 0 ] && icon="❌"
     printf -v MSG "$icon build $modeMSG complete with %d errors" $ERR
     echo "$modeMSG" > "$(clog workflow-message-file)"
