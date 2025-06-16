@@ -13,6 +13,10 @@
     "cspell-www-mrx"
   ],
   "workbench.colorTheme": "Quiet Light",
+    "workbench.colorCustomizations": {
+    // "statusBar.background": "#1a1c88",
+    // "sideBar.background": "#e4d2f0",
+  },
   "editor.wordWrap": "on",
   "markdown.preview.fontSize": 12,
   "markdown.preview.lineHeight": 1.5,
