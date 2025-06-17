@@ -14,10 +14,11 @@
 # - secrets.HOOK_SLACK - the SLACK WEBHOOK to post messages to the team
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
-name: pr-build-deploy
+name: pr-target-build-deploy
 run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 on:
-  pull_request:
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, review_requested, ready_for_review, review_request_removed]
   workflow_dispatch:            # run manually from Actions tab
 
 # Default to bash
