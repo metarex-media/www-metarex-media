@@ -1,5 +1,6 @@
 # flow:"stage",   build:"dev"  = auto-add to staging server
 # flow:"release", build:"prod" = to flag as a production release
+- {version: "1.8.1", date: 2025-06-17, flow: "stage", build: "dev", note: PR build test}
 - {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}
 # v1.8 uses new build infrastructure rules:
 #  every build is a development build unless    build: "prod"
