@@ -1,6 +1,6 @@
 ---
 title:       Set up a meeting!
-linkTitle:   Meeting
+linkTitle:   Set up a meeting
 date:        2025-02-01
 description: Set up an online meeting to chat.
 menu:
@@ -18,6 +18,5 @@ tags:        ["contact"]
 Try the online booking for Mr MXF to schedule an appointment with the {{% metarex %}} leadership team. If you can't find a slot, then please get in touch via the [contact] form.
 
 [contact]: {{< relref "/contact" >}}
-
 
 {{%meet%}}

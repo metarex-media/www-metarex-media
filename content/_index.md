@@ -26,7 +26,7 @@ date:      2024-08-13
   {{< fo t = "feature"
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
-    header     = "What's MetaRex?"         name = header
+    header     = "What is MetaRex?"         name = header
     src        = "img/dino/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
@@ -47,7 +47,7 @@ date:      2024-08-13
     header     = "Why is it good?"          name = header
     src        = "img/dino/rexy-benefits.png"
     alt        = "rexy with microphone"
-    link       = "/faq/index.md"
+    link       = "faq/index.md"
   />}}
   {{< /fo >}}
 {{< fo t = "feature-group" >}}

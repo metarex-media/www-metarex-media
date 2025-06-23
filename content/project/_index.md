@@ -78,7 +78,6 @@ MetaRex was shown to work back in 1998, when the original MXF team demonstrated 
 [03]: {{% relref "/blog/ARRI-Open-Day/index.md" %}}
 
 {{</fo>}}
-<br>
 
 {{< metarex >}} has successfully completed its first phase and has created a pool of software available on {{% github %}}.
 

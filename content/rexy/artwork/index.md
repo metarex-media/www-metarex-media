@@ -1,8 +1,8 @@
 ---
-title:       "Collection of Amber and Simi's Artwork"
-linkTitle:   "Amber and Simi's Artwork"
+title:       Collection of Amber and Simi's Artwork
+linkTitle:   Amber and Simi's Artwork
 date:        2025-06-29   
-tags: ["rexy", "backstory"]
+tags:        ["rexy", "backstory"]
 ---
 
 {{< fo t = "banner"

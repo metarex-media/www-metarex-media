@@ -27,7 +27,7 @@ The event was for a group of sixth formers to work in teams, solving and working
 
 Not only was {{< metarex >}} involved with setting the coding challenge, but [Bruce Devlin] was also one of the speakers on the day, along with with representatives from Amazon Web Services (AWS) and Women in Streaming Media.  
 
-Thank you, Anila, Sirine and Yasmin for your drawing and well done to all the young ladies who took part in the event.  
+A special thank you, to Anila, Sirine and Yasmin for the drawing and well done to all the young ladies who took part in the event.  
 
 
 [Coding for Media]:   https://www.linkedin.com/posts/mrmxf_next-tech-girls-x-eviden-x-aws-coding-for-activity-7163130183867179008-zAQg
