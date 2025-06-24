@@ -40,6 +40,7 @@ snippets:
   # clog bc-prod-logic-xx returns    "dev|prod"+"(reasonString)"
   bc-releases-yaml: yq -r '.clog."releases-path"' clogrc/clog.yaml
   bc-main-repo: echo "metarex-media/www-metarex-media"
+  bc-prod-version: yq -r 'first(.[] | select(.build=="prod" and .type=="main") | .version)' "$(clog bc-releases-yaml)"
   bc-prod-logic-build: |
     do="$(yq -r '.[0].build|select(.=="prod")' "$(clog bc-releases-yaml)")"
     [ -z "$do" ] && do="dev(from releases.yaml)" || do="prod(from releases.yaml)" 
@@ -62,7 +63,6 @@ snippets:
     echo "$do"
   bc-wants-stage-flow:  yq -r '.[0].flow|select(.=="stage")' "$(clog bc-releases-yaml)"
   bc-wants-test-flow:  yq -r '.[0].flow|select(.=="test")' "$(clog bc-releases-yaml)"
-  bc-wants-schedule-flow:  yq -r '.[0].flow|select(.=="schedule")' "$(clog bc-releases-yaml)"
   bc-message-file: echo "tmp/workflow-message"
   bc-logs-hr: eval "$(clog Crayon)";for i in {1..8};do HR="$HR\e[09${i}m▬▬▬▬▬▬▬▬▬$cE|";done;printf "$HR$cX\n"
   # ---------------------------------------------------------------------------------------------------------
@@ -112,13 +112,20 @@ snippets:
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
     exit 0
-  build-schedule: |
+  build-main-website: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
     doPROD="$1"
     modeMSG="$2"
+    vMain="$(clog bc-prod-version)"
 
     ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  build hugo-schedule  $modeMSG→$cF setup queries for daily build/"
+    clog Log -I "$STEP.$(((++s))).⚒️  build-main-website  $modeMSG→$cF setup queries for daily build/"
+    [ -z "vMain" ]&&clog Log -E "releases.yaml has no entry with type=main build=prod"&&exit (((++ERR)))
+    git checkout "vMain"
+    [ $? -gt 0 ]&&clog Log -E "cannot checkout to tag $cE$vMain"&&exit (((++ERR)))
+
+    # we are now checked out to the production snapshot $vMain
+    # releases.yaml and scripts
     clog instagram fetch metarex latest tmp/insta-mrx
   build-hugo: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
@@ -185,7 +192,7 @@ snippets:
     printf "$msg" > /tmp/clog-notify
 
   build: |
-    export MAKE="schedule hugo podserver ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
+    export MAKE="hugo podserver ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
     modeMSG="$(clog bc-prod-logic-build)"
     [[ "${modeMSG:0:4}" == "prod" ]] && doPROD="prod"
 
@@ -198,7 +205,6 @@ snippets:
     clog Log -B "$ERR" "$doPROD" "✅ checks ok" "❌ checks failed" || exit 1; #abort if PROD
     clog bc-logs-hr
 
-    ((STEP++));clog Should MAKE "schedule"  && clog build-schedule  "$doPROD" "$modeMSG" && clog bc-logs-hr 
     ((STEP++));clog Should MAKE "hugo"      && clog build-hugo      "$doPROD" "$modeMSG" && clog bc-logs-hr
     ((STEP++));clog Should MAKE "podserver" && clog build-podserver "$doPROD" "$modeMSG" && clog bc-logs-hr
     ((STEP++));clog Should MAKE "ko"        && clog build-ko        "$doPROD" "$modeMSG" && clog bc-logs-hr
