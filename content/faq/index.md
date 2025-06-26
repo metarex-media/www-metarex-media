@@ -4,10 +4,9 @@ linkTitle:   FAQs
 date:        2025-05-31
 menu:
   main:
-    name:       FAQs
-    identifier: faq
-    parent:     project
-    weight:     09
+    name:      FAQs
+    parent:    Contact
+    weight:    50
 
 note-to-bruce: Accordion demo for CG (with items - like history)
 tags:        ["faq"]

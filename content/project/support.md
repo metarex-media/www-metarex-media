@@ -8,8 +8,8 @@ type:        docs
 menu:
   main:
     name:    Support
-    parent:  project
-    weight:  11
+    parent:  tech
+    weight:  100
 
 url:         "/support/"
 

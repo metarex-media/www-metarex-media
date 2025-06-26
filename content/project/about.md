@@ -1,7 +1,7 @@
 ---
-title:       About MetaRex
+title:       History of MetaRex
 date:        2024-08-28
-linkTitle:   About MetaRex 
+linkTitle:   History 
 url:         /about
 type:        docs
 
@@ -20,7 +20,7 @@ menu:
     alt = "logo of metarex"
 />}}
 
-#### All Aboard the <span class = "ui green text" >META</span>data <span class = "ui green text" >R</span>esource <span class = "ui green text" >EX</span>press
+#### All aboard the <span class = "ui green text" >META</span>data <span class = "ui green text" >R</span>esource <span class = "ui green text" >EX</span>press
 
 <!--  ---------------------------------------------------------------------  -->
 

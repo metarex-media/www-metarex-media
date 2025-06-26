@@ -5,8 +5,8 @@ date: 2023-07-25
 description: Share some metadata with us.
 menu:
   main:
-    name: Contact
-    parent: 
+    name: Contact form
+    parent: Contact
     weight: 10
 
 url: "/contact/"
