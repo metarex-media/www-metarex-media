@@ -3,7 +3,7 @@ title:       AI Segmentation
 linkTitle:   AI Segmentation
 date:        2024-03-06
 
-description: harmonizing different AIs
+description: Harmonizing different AIs
 author:      Bruce Devlin
 tags:        ["tools"]
 ---
@@ -14,8 +14,7 @@ Key points:
 
 * modified RNF demo showing ELT workflow
 * Harmonize different AI data files
-* Samples from
-  * Graymeta
+* Samples from Graymeta
 
 {{< fo t = "include" from = "04-demo-segment.html" />}}
 {{% sitelinks %}}

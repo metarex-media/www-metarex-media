@@ -51,7 +51,7 @@ what technology can bring to the process.
 Check out Amber and Simi's [first blog post][blog] to hear in their own words about Rexy’s creation. 
 
 Rexy is such a wonderful character and now has her own backstory, personality,
-and character development.  You can read about Rexy's [backstory] and follow us on our {{% insta %}} for all the latest artwork.
+and character development.  You can read about Rexy's [backstory][backstory] and follow us on our {{% insta %}} for all the latest artwork.
 
 {{< fo t = "children" />}}
 

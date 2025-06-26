@@ -2,7 +2,7 @@
 title:       Live News
 linkTitle:   Live News
 date:        2024-03-06
-description: Microservices & Metarex smooths production
+description: Microservices & MetaRex smooths production
 author:      Bruce Devlin
 tags:        ["tools"]
 ---

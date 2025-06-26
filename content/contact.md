@@ -6,7 +6,7 @@ description: Share some metadata with us.
 menu:
   main:
     name: Contact
-    parent:
+    parent: 
     weight: 10
 
 url: "/contact/"

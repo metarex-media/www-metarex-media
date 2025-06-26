@@ -30,12 +30,12 @@ menus:
       parent: tech
       weight: 20
       identifier: specs
-    - name: app/reg
+    - name: MetaRex Register
       URL: /app/reg/
       parent: tech
       weight: 50
       identifier: appreg
-    - name: app/demos
+    - name: Demos
       URL: /app/demos/
       parent: tech
       weight: 51

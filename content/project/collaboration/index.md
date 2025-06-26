@@ -3,7 +3,14 @@ title:       "Collaborations"
 linkTitle:   "Collaborations"
 date:        2025-05-28
 type:        docs
-weight:      700
+menu:
+  main:
+    name:    Collaborations
+    parent:  project
+    weight:  11
+
+url:         "/collaborations/"
+
 tags:     ["collaborations"]
 oldtags:  ["backers"]
 ---

@@ -1,7 +1,7 @@
 ---
 title:      Rexy's Backstory
 linkTitle:  History of Rexy
-date:       2025-06-29   
+date:       2025-06-29 
 tags:       ["rexy", "backstory"]
 ---
 {{< fo t = "banner"
