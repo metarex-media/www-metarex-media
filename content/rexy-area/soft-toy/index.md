@@ -2,6 +2,7 @@
 title:       The making of Rexy soft toy
 linkTitle:   The making of Rexy soft toy
 date:        2025-06-29
+layout:      blog
 weight:      5
 tags:        ["rexy", "backstory"]
 ---
