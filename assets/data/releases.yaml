@@ -1,6 +1,6 @@
-# flow:"stage",   build:"dev"  = auto-add to staging server
-# flow:"release", build:"prod" = to flag as a production release
-- {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}
+# build:"dev",  flow:"stage" = auto-add to staging server
+# build:"prod", flow:"main"  = production release to update main server
+- {version: "1.8.0", date: 2025-06-06, build: "dev", flow: "stage", note: auto-stage on PR test}
 # v1.8 uses new build infrastructure rules:
 #  every build is a development build unless    build: "prod"
 #  backend workflow can do several things:

@@ -224,7 +224,7 @@ check:
     blocks:
       - name: wsl Zone.Identifier files
         try: |
-          [ -n "$(find . -name '*Zone.Identifier')" ] && exit 1 || exit 0
+          [ -n "$(find . -name '*Zone.Identifier')" ]
         catch: |
           eval "$(clog Crayon)"
           n=$(find . -name '*Zone.Identifier'|wc -l)
