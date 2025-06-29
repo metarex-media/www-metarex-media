@@ -8,8 +8,7 @@ params:
     value: 5
     title: Buy us Coffee
     description: |
-      Help us concentrate on finishing the code for you. Dinosaurs never grew
-      coffee, but our coders could do with all the help they can get to make
+      Dinosaurs never grew coffee, but our coders could do with all the help they can get to make
       production ready code that you can get from our
       [github repo](https://github.com/metarex-media).
     url: https://google.com
@@ -19,8 +18,7 @@ params:
     title: Buy us Cake
     description: |
       Help keep the team fed. We've heard of micro-biotic diets and we've also
-      heard of cake. The one and only Charlotte assures us that cake is the
-      food of champions and Rexy believes her. Buy us 2 slices and we'll post
+      heard of cake. The one and only Charlotte assures us that cake is the food of champions and Rexy believes her. Buy us 2 slices and we'll post
       a picture of cake for you.
     url: https://google.com
     src: /img/donate-rexy-cake.png
@@ -28,18 +26,13 @@ params:
     value: 25
     title: Feed Rexy!
     description: |
-      Sometimes you need more than cake and Rexy is a growing young girl with
-      attitude and serious hunger. Help her reach her full potential and we'll
-      add your name and a message to our social pages! 
+      Sometimes you need more than cake and Rexy is a growing young girl with  attitude and serious hunger. Help her reach her full potential and we'll add your name and a message to our social pages! 
     url: https://google.com
     src: /img/donate-feed-rexy-cake.png
 ---
 
-{{% metarex %}} is 100% supported by its backers and by donations.
 
-{{% metarex %}}  uses the payment services provided by {{% mrmxf %}}. and all
-donations go towards keeping the team supplied with food and a living wage.
-Help us give this project to the industry without having to charge.
+{{% metarex %}}  uses the payment services provided by {{% mrmxf %}} and all donations go towards keeping the team supplied with food and a living wage.
 
 <div class = "ui equal width center aligned stackable grid">
   {{< donate-card "coffee" >}}

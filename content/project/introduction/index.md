@@ -20,7 +20,7 @@ oldtags:     ["status"]
 MetaRex is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow.
 This will make it easier to manage metadata and ensure that it is accurate and consistent whenever video content is processed, broadcast, or distributed.
 
-## Why is {{% metarex %}} needed?
+## Why was {{% metarex %}} needed?
 
 There is currently no standard way to transport media metadata. The lack of transport medium can cause these metadata issues:
 
@@ -36,9 +36,9 @@ MetaRex will make metadata **interoperable**, which means that it will be compat
 
 MetaRex will be **extensible**, meaning new metadata formats can be easily added to the framework. This will ensure that MetaRex can support the latest metadata standards, and it will also make it easier to add new metadata fields to the framework.
 
-## Who is behind the {{% metarex %}} project and how is it funded?
+## Who is behind the {{% metarex %}} project?
 
-The MetaRex team is led by renowned media technologist [Bruce Devlin] who has had a significant impact on the way that media is produced and distributed.  Bruce is a former head of standards for SMPTE and a member of the EBU. He is passionate about open-source solutions and is committed to making the media industry more accessible and efficient. MetaRex is a not-for-profit initiative and is funded by donations from companies that will benefit from free-flowing metadata.
+The MetaRex team is led by renowned media technologist [Bruce Devlin] who has had a significant impact on the way that media is produced and distributed.  Bruce is a former head of standards for SMPTE and a member of the EBU. He is passionate about open-source solutions and is committed to making the media industry more accessible and efficient.
 
 ## How will {{% metarex %}} benefit me?
 

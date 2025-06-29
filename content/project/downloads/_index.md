@@ -9,10 +9,6 @@ aliases:
 - /downloads
 
 weight: 80
-menu:
-  main:
-    weight: 100
-
 resources:
 - name: backerAgreement
   title: Backer Agreement

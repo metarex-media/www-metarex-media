@@ -20,8 +20,7 @@ blog-id: 2376418927365
 <!-- markdownlint-disable MD025 -->
 # Broadcast Focus interview
 
-I had the honour to talk about all things metadata and to preview NAB 2024 with
-Russel Trafford Jones from [Broadcast Focus].
+I had the honour to talk about all things metadata and to preview NAB 2024 with Russel Trafford Jones from [Broadcast Focus].
 
 <!-- ####################################################################### -->
 
