@@ -1,11 +1,11 @@
 # Copyright ©2017-2025  Mr MXF   info@mrmxf.com
 # BSD-3-Clause License           https://opensource.org/license/bsd-3-clause/
 # clogwork - collection of reusable actions and tools for Mr MXF project.
+#   ___   ___         _             _   _      _ 
+#  | _ \ | _ \  ___  | |__   _  _  (_) | |  __| |
+#  |  _/ |   / |___| | '_ \ | || | | | | | / _` |
+#  |_|   |_|_\       |_.__/  \_,_| |_| |_| \__,_|
 #
-#             _               _          _               _             _   _      _ 
-#   ___  __  | |_    ___   __| |  _  _  | |  ___   ___  | |__   _  _  (_) | |  __| |
-#  (_-< / _| | ' \  / -_) / _` | | || | | | / -_) |___| | '_ \ | || | | | | | / _` |
-#  /__/ \__| |_||_| \___| \__,_|  \_,_| |_| \___|       |_.__/  \_,_| |_| |_| \__,_|
 #  GitHub Workflow to build & deploy the metarex website
 #
 # Needs:
@@ -14,11 +14,11 @@
 # - secrets.HOOK_SLACK - the SLACK WEBHOOK to post messages to the team
 # - secrets.GET_CLOG   - the magic string for eval "$GET_CLOG" to install clog
 
-name: schedule-build-deploy
+name: pr-target-build-deploy
 run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 on:
-  schedule:
-    - cron: "22 2 * * *"        # <=== 02:22 every day
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, review_requested, ready_for_review, review_request_removed]
   workflow_dispatch:            # run manually from Actions tab
 
 # Default to bash
@@ -38,16 +38,14 @@ jobs:
   build:
     uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
     with:
-      artifact-name: kodata-www-metarex-media
+      artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      make: "golang ko live prod"
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
       # provide a slack_webhook to get a slack message otherwise silence
-      webhook_slack: ${{ secrets.HOOK_SLACK_LOGS }}
-      
-  #dump properties of the build output / needs context
+      webhook_slack: ${{ secrets.HOOK_SLACK_GENERAL }}
+     
   dump-context:
-    needs: [build]
+    # needs: [build]
     uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main

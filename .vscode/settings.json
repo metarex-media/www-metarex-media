@@ -38,6 +38,12 @@
       120
     ]
   },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      120
+    ]
+  },
   "[md]": {
     "editor.tabSize": 2,
     "editor.rulers": [
