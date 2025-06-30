@@ -2,7 +2,7 @@
 title:       SMPTE RIS OSVP
 linkTitle:   SMPTE RIS OSVP
 date:        2024-03-06
-description: harmonizing On Set Virtual Production
+description: Harmonizing On Set Virtual Production
 author:      Bruce Devlin
 tags:        ["tools"]
 ---

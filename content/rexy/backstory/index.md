@@ -1,8 +1,8 @@
 ---
-title:       "Rexy's Backstory"
-linkTitle:   "History of Rexy"
-date:        2025-06-29   
-tags: ["rexy", "backstory"]
+title:      Rexy's Backstory
+linkTitle:  History of Rexy
+date:       2025-06-29 
+tags:       ["rexy", "backstory"]
 ---
 {{< fo t = "banner"
     header = "History of a dinosaur"

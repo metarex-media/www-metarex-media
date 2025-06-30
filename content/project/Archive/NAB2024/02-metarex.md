@@ -11,10 +11,10 @@ tags:        ["tools"]
 
 Key Points:
 
-* Why is Metarex useful
-* How does metarex work
+* Why is MetaRex useful
+* How does MetaRex work
 * What's ELT
-* What's the register
+* What's the MetaRex Register
 * How to help
 
 {{< fo t = "include" from = "02-demo-segment.html" />}}

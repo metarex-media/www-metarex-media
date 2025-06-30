@@ -7,7 +7,7 @@ description: Tutorials coming soon.
 ---
 
 {{% pageinfo %}}
-How does metarex work & why is it needed?
+How does MetaRex work and why is it needed?
 {{% /pageinfo %}}
 
 {{< blocks/section color="white" >}}

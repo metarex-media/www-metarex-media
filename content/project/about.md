@@ -1,13 +1,13 @@
 ---
-title:       About MetaRex
+title:       History of MetaRex
 date:        2024-08-28
-linkTitle:   About MetaRex 
+linkTitle:   History 
 url:         /about
 type:        docs
 
 menu:
   main:
-    parent: tech
+    parent: project
     weight:   9
 
 # Use the block/cover shortcode to have a picture landing page
@@ -20,7 +20,7 @@ menu:
     alt = "logo of metarex"
 />}}
 
-#### All Aboard the <span class = "ui green text" >META</span>data <span class = "ui green text" >R</span>esource <span class = "ui green text" >EX</span>press
+#### All aboard the <span class = "ui green text" >META</span>data <span class = "ui green text" >R</span>esource <span class = "ui green text" >EX</span>press
 
 <!--  ---------------------------------------------------------------------  -->
 
