@@ -72,7 +72,7 @@ snippets:
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
     exit 0
-#               ----------------------------------------------------------------------------------------------------
+    #               ----------------------------------------------------------------------------------------------------
     main-website: |
       eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
       doPROD="$1"
@@ -88,7 +88,7 @@ snippets:
       # we are now checked out to the production snapshot $vMain
       # releases.yaml and scripts
       clog instagram fetch metarex latest tmp/insta-mrx
-#               ----------------------------------------------------------------------------------------------------
+    #               ----------------------------------------------------------------------------------------------------
     hugo: |
       eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
       doPROD="$1"
@@ -104,7 +104,7 @@ snippets:
       opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
       clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
       hugo build --minify --logLevel info $opt
-#               ----------------------------------------------------------------------------------------------------
+    #               ----------------------------------------------------------------------------------------------------
     podserver: |
       eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
       doPROD="$1"
@@ -120,7 +120,7 @@ snippets:
       fGoBuild tmp/podserver-arm-lnx     linux   arm64; ((ERR+=$?))
       fGoBuild tmp/podserver-arm-mac     darwin  arm64; ((ERR+=$?))
       clog Log -B "$ERR" "$doPROD" "✅ bc podserver $modeMSG→$cS tmp/$cX ok" "❌ bc podserver  $modeMSG→$cE tmp/$cX failed" || exit 1; #abort if PROD
-#               ----------------------------------------------------------------------------------------------------
+    #               ----------------------------------------------------------------------------------------------------
     ko: |
       eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
       doPROD="$1"
