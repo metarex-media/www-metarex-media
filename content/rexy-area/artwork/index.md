@@ -3,7 +3,6 @@ title:       Collection of Amber and Simi's Artwork
 linkTitle:   Amber and Simi's Artwork
 date:        2025-06-29   
 tags:        ["rexy", "backstory"]
-layout:      docs
 ---
 
 {{< fo t = "banner"
@@ -34,7 +33,5 @@ If you like their work, please think about supporting them!  Your support will m
 
 For the detailed version of the MetaRex's logo and colour palette, see our [Style Guide] page.  
 
-
-{{< fo t = "children" />}}
 
 [Style Guide]:  {{% relref "/project/Admin/style-guide.md" %}}

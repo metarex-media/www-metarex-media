@@ -61,7 +61,7 @@ tags:        ["faq"]
     </div>
     <div class="title">
       <i class="dropdown icon"></i>
-      Our workflows are already set up and we are reciving the metadata we need - why use {{% metarex %}}?
+      Our workflows are already set up and we are reciving the metadata we need - why use {{< metarex >}}?
     </div>
     <div class="content">
       <p class="transition hidden">Many workflows treat metadata as disposable.  Once it has been used for its immediate use, it can be discarded.  Downstream and when content is archived often very little metadata survives, leading to it having to be regenerated when required at additional cost and time.  MetaRex will help preserve data for future use.</p>

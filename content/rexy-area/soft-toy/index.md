@@ -2,33 +2,27 @@
 title:       The making of Rexy soft toy
 linkTitle:   The making of Rexy soft toy
 date:        2025-06-29
-layout:      blog
 weight:      5
 tags:        ["rexy", "backstory"]
 ---
-{{< fo t = "banner"
-    header = "How the Rexy soft toy came to be"
-    src = "/img/dino/mrx-logo-0300.png" 
-    class = "ui center aligned olive message"
-/>}}
 
-## The making of Rexy (soft toy edition)
+## How Rexy the soft toy came to be
 
-The creative team at MetaRex had been talking about getting a soft toy of [Rexy] made for a while. 
+The Creative Team at MetaRex had been talking about getting a soft toy of [Rexy] made for a while. 
 
 After much research and discussion, the start of the project began in May 2024 and Rexy finally become a living, ‘breathing’ soft toy in August 2024, ready for her big debut at IBC 2024 and to be the winning prize of the {{% metarex %}} [Treasure Hunt]. 
+
+{{< fo t = "image"
+    src = "rexy-plane.png"
+    alt = "rexy on a plane"
+    text = "Rexy on her first ever plane journey!"
+/>}}
 
 Rexy was the main star of the MetaRex Treasure Hunt 2024 and was won by the amazing [Amy Rajonson]. 
 
 {{< fo t = "image"
     src = "rexy-bruce-signing.png"
     alt = "Bruce autographing a book"
-/>}}
-
-{{< fo t = "image"
-    src = "rexy-plane.png"
-    caption = "Rexy on her first ever plane journey"
-    alt = "rexy on a plane"
 />}}
 
 
@@ -41,22 +35,24 @@ Many thanks to the whole team at Picture to Puppets.  It was wonderful to have R
 Here are some of the orginal storyboard ideas and design for Rexy soft toy:
 
 {{< fo t = "image"
-    src = "/rexy-soft-toy/rexy-sketch.png"
-    caption = "Design sketch of Rexy"
+    src = "/rexy-area/soft-toy/rexy-sketch.png"
+    srcWidth = "0.5"
+    text = "Design sketch of Rexy"
     alt = "sketch of Rexy"
 />}}
 
 {{< fo t = "image"
-    src = "/rexy-soft-toy/rexy-skin-sample.png"
-    caption = "Rexy sample"
+    src = "/rexy-area/soft-toy/rexy-skin-sample.png"
+    srcWidth = "0.5"
     alt = "rexy skin sample"
 />}}
 
 {{< fo t = "image"
-    src = "/rexy-soft-toy/rexy-tuff-hair.png"
-    caption = "Sample of Rexy's tuff of hair"
+    src = "/rexy-area/soft-toy/rexy-tuff-hair.png"
+    srcWidth = "0.5"
     alt = "Rexy tuff of hair"
 />}}
+
 
 [Rexy]:                {{% relref "rexy/_index.md" %}}
 [Treasure Hunt]:       {{% relref "blog/IBC2024-treasure-hunt/index.md" %}}

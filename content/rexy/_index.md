@@ -60,4 +60,4 @@ and character development.  You can read about Rexy's [backstory][backstory] and
 [SZ]:      https://simizeko.com
 [blog]:    {{% relref "blog/creative-team/index.md" %}}
 [contact]: {{% relref "/contact" %}}
-[backstory]:    {{% relref "rexy/backstory/index.md" %}}
+[backstory]:    {{% relref "rexy-area/backstory/index.md" %}}

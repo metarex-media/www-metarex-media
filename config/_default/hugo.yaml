@@ -71,17 +71,12 @@ menus:
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Demo
-      URL: /app/demos/
-      identifier: feed
-      pre:  "⏯️ "
-      post: " 🦖"
       weight: 150
     - name: Feed Rexy
       URL: /donate/
       identifier: cake
       pre:
-      post: "  🦖🍰"
+      post: "  🍰"
       weight: 200
 # links to linkedin left & right
   
