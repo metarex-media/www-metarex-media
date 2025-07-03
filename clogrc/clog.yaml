@@ -26,174 +26,79 @@ clog:
 #  / _/ |_||_| |_| | .__/ | .__/ \___|  \__| /__/
 #   ||             |_|    |_|
 # -----------------------------------------------------------------------------
-#
-# websites are built with the common clog bc (build control) commands
-#
-# env CHK & env MAKE hold tokens for clog build and clog deploy
-#  e.g. CHK="pre-build build"; MAKE="hugo podserver ko" - these are tokens
-#
-# check runs         clog Check TOKEN                 in the order within CHK
-# build runs snippet clog bc TOKEN $doProd $modeMSG   in the order within MAKE
-#
-# doProd is  "prod" for production builds
-# modeMSG is a display message for the reason we're doing "prod"
-
 snippets:
-  bc:
-    releases-yaml: yq -r '.clog."releases-path"' clogrc/clog.yaml
-    main-repo: echo "metarex-media/www-metarex-media"
-    prod-version: yq -r 'first(.[] | select(.build=="prod" and .type=="main") | .version)' "$(clog bc releases-yaml)"
-    prod-logic-build: |
-      do="$(yq -r '.[0].build|select(.=="prod")' "$(clog bc releases-yaml)")"
-      [ -z "$do" ] && do="dev(from releases.yaml)" || do="prod(from releases.yaml)" 
-      # rules - ensure valid brach for workflow
-      [[ "create" == "$GITHUB_EVENT_NAME " ]] && git checkout main
-      # overrides always win - prod override strongest
-      clog Should MAKE "dev" && do="dev(forced by MAKE)"
-      clog Should MAKE "prod" && do="prod(forced by MAKE)"
-      echo "$do"
-    prod-logic-deploy: |
-      do="$(yq -r '.[0].build|select(.=="prod")' "$(clog bc releases-yaml)")"
-      [ -z "$do" ] && do="dev(from releases.yaml)" || do="prod(from releases.yaml)" 
-      # rules
-      [[ "create" == "$GITHUB_EVENT_NAME " ]] && git checkout main
-      [ -n "$(clog git branch)" ] && [[ "$(clog git branch)" != "main" ]] && do="dev(not main branch)"
-      [[ "$(clog bc main-repo)" != "$(clog git repo)" ]] && do="dev(repo!=$(clog bc main-repo))"
-      # overrides always win - prod override strongest
-      clog Should MAKE "dev" && do="dev(forced by MAKE)"
-      clog Should MAKE "prod" && do="prod(forced by MAKE)"
-      echo "$do"
-    wants-stage-flow:  yq -r '.[0].flow|select(.=="stage")' "$(clog bc releases-yaml)"
-    wants-test-flow:  yq -r '.[0].flow|select(.=="test")' "$(clog bc releases-yaml)"
-    message-file: echo "tmp/workflow-message"
-    log-divider: eval "$(clog Crayon)";for i in {1..8};do HR="$HR\e[09${i}m▬▬▬▬▬▬▬▬▬$cE|";done;printf "$HR$cX\n"
-
-  instagram: |
+  # build control - see core via clog Init
+  bc-main-repo: echo "mrmxf/clog-mrmxf"
+  bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
     exit 0
-    #               ----------------------------------------------------------------------------------------------------
-    main-website: |
-      eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-      doPROD="$1"
-      modeMSG="$2"
-      vMain="$(clog bc prod-version)"
+    # worker function - main website -----------------------------------------------------------------------------------
+  bc-main-checkout: |
+    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
+    doPROD="$1"
+    modeMSG="$2"
+    vMain="$(clog bc-prod-version)"
 
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  bc main-website  $modeMSG→$cF setup queries for daily build/"
-      [ -z "vMain" ]&&clog Log -E "releases.yaml has no entry with type=main build=prod"&&exit (((++ERR)))
-      git checkout "vMain"
-      [ $? -gt 0 ]&&clog Log -E "cannot checkout to tag $cE$vMain"&&exit (((++ERR)))
+    ERR=0
+    clog Log -I "$STEP.$(((++s))).⚒️  bc-main-checkout  $modeMSG→$cF setup queries for daily build/"
+    [ -z "vMain" ]&&clog Log -E "releases.yaml has no entry with type=main build=prod"&&exit (((++ERR)))
+    git checkout "vMain"
+    [ $? -gt 0 ]&&clog Log -E "cannot checkout to tag $cE$vMain"&&exit (((++ERR)))
 
-      # we are now checked out to the production snapshot $vMain
-      # releases.yaml and scripts
-      clog instagram fetch metarex latest tmp/insta-mrx
-    #               ----------------------------------------------------------------------------------------------------
-    hugo: |
-      eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-      doPROD="$1"
-      modeMSG="$2"
+    # we are now checked out to the production snapshot $vMain
+    # releases.yaml and scripts
+    clog instagram fetch metarex latest tmp/insta-mrx
+  # worker function ko (dev)-----------------------------------------------------------------------------------------------
+  bc-ko: |
+    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
+    doPROD="$1"
+    modeMSG="$2"
 
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
+    ERR=0
+    clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
 
-      [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
-      clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
-      rm -rf kodata/*
+    [ -z "$doPROD" ] && devTAG="-dev"
+    [ -n "$(clog bc-wants-stage-flow)" ]&& stageTAG="-stage"
+    
+    tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
+    tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
 
-      opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
-      clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
-      hugo build --minify --logLevel info $opt
-    #               ----------------------------------------------------------------------------------------------------
-    podserver: |
-      eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-      doPROD="$1"
-      modeMSG="$2"
+    # config is in .ko.yaml
+    # use the default docker repo unless told otherwise
+    [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
+    export KO_DOCKER_REPO                                      # push to repo
+    export KO_CONFIG_PATH=".ko.yaml"                           # build options
+    export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
 
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  build podserver $modeMSG→$cF tmp/"
-
-      help="tpl/help-golang.sh"    # build helpers
-      eval "$(clog Cat $help)"
-
-      fGoBuild tmp/podserver-amd-lnx     linux   amd64; ((ERR+=$?))
-      fGoBuild tmp/podserver-arm-lnx     linux   arm64; ((ERR+=$?))
-      fGoBuild tmp/podserver-arm-mac     darwin  arm64; ((ERR+=$?))
-      clog Log -B "$ERR" "$doPROD" "✅ bc podserver $modeMSG→$cS tmp/$cX ok" "❌ bc podserver  $modeMSG→$cE tmp/$cX failed" || exit 1; #abort if PROD
-    #               ----------------------------------------------------------------------------------------------------
-    ko: |
-      eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-      doPROD="$1"
-      modeMSG="$2"
-
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
-
-      [ -z "$doPROD" ] && devTAG="-dev"
-      [ -n "$(clog bc wants-stage-flow)" ]&& stageTAG="-stage"
-      
-      tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
-      tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
-
-      # config is in .ko.yaml
-      # use the default docker repo unless told otherwise
-      [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
-      export KO_DOCKER_REPO                                      # push to repo
-      export KO_CONFIG_PATH=".ko.yaml"                           # build options
-      export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
-
-      ko build --base-import-paths --tags "$tag1" --tags "$tag2" .
-      if [ $? -gt 0 ]; then
-        msg="ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
-        clog Log -E "$msg"
-        printf "$msg" > /tmp/clog-notify
-        exit 1
-      fi
-      msg="multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
-      clog Log -S "$msg"
+    ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
+    if [ $? -gt 0 ]; then
+      msg="ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      clog Log -E "$msg"
       printf "$msg" > /tmp/clog-notify
-#               ----------------------------------------------------------------------------------------------------
-#               ----------------------------------------------------------------------------------------------------
+      exit 1
+    fi
+    msg="multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+    clog Log -S "$msg"
+    printf "$msg" > /tmp/clog-notify
+
+  # ui build function
   build: |
+    export VERB="Build"
     export CHK="pre-build build"
-    export MAKE="hugo podserver ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
-    cTOKs=($CHK)
-    mTOKs=($MAKE)
+    export MAKE="hugo ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
+    export EXE="podserver"
+    export TITLE="podserver"
+    clog bc-flowx                     # use the generic flow script
 
-    modeMSG="$(clog bc prod-logic-build)"
-    [[ "${modeMSG:0:4}" == "prod" ]] && doPROD="prod"
-
-    eval "$(clog Source project config); $(clog Crayon)" # setting & highlight
-    clog Log -I  "🤖 build $modeMSG$cS $PROJECT$cX MAKE ${#mTOKs[@]} steps:$cC ${mTOKs[@]}"
-
-    ERR=0; export STEP=0
-
-    for TOK in "${cTOKs[@]}"; do
-      clog Log -I "$(((++STEP))).  Check $TOK"; clog Check "$TOK"; ERR=$((ERR+$?))
-    done
-
-    clog bc log-divider
-
-    for TOK in "${mTOKs[@]}"; do
-      ((STEP++));clog bc "$TOK" "$doPROD" "$modeMSG" && clog bc log-divider
-    done
-
-    icon="✅";[ $ERR -gt 0 ] && icon="❌"
-    printf -v MSG "$icon build $modeMSG complete with %d errors" $ERR
-    echo "$modeMSG" > "$(clog bc message-file)"
-    clog Log -B "$ERR" "$doPROD" "✅ golang build ok - $modeMSG" "❌ golang build failed - $modeMSG" || exit 1; #abort if PROD
-    exit 0
-#               ----------------------------------------------------------------------------------------------------
-#               ----------------------------------------------------------------------------------------------------
-  watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
     # get the target version for this project from releases.yaml
     tag:
-      ref: yq -r '.[0].version' "$(clog bc releases-yaml)"
+      ref: yq -r '.[0].version' "$(clog bc-releases-yaml)"
       # a go package needs a preceding "v"
       refgo: echo "v$(clog git tag ref)"
     message:
-      ref: yq -r '.[0].note' "$(clog bc releases-yaml)"
+      ref: yq -r '.[0].note' "$(clog bc-releases-yaml)"
     suffix: |
       b="$(git branch --show-current)"
       [[ "$b" == main ]] && echo "" || echo "$b"|tr -d '[:blank:]'
