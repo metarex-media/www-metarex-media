@@ -28,7 +28,8 @@ clog:
 # -----------------------------------------------------------------------------
 snippets:
   # build control - see core via clog Init
-  bc-main-repo: echo "mrmxf/clog-mrmxf"
+  bc-main-repo: echo "mrmxf/www-mrx-2507"
+  bc-artifacts: echo "tmp/artifacts"
   bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
@@ -63,13 +64,17 @@ snippets:
     
     tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
     tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
-
+    
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
     [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
     export KO_DOCKER_REPO                                      # push to repo
     export KO_CONFIG_PATH=".ko.yaml"                           # build options
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
+
+    echo "${VERB}tag1=\"$tag1\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}tag2=\"$tag2\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}repo=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
 
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
     if [ $? -gt 0 ]; then
@@ -81,10 +86,47 @@ snippets:
     msg="multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
     clog Log -S "$msg"
     printf "$msg" > /tmp/clog-notify
+  # worker function flowx (dev)----------------------------------------------------------------------------------------------
+  # this is the core, generic flow script - it never appears in MAKE
+  # $VERB is the title for display
+  # $CHK & $MAKE contain tokens that clog perform
+  #   check:  clog Check $TOK
+  #   build:  clog bc-$TOK
+  bc-flowx: |
+    cTOKs=($CHK)
+    mTOKs=($MAKE)
+
+    modeMSG="$(clog bc-prod-logic-build)"
+    [[ "${modeMSG:0:4}" == "prod" ]] && doPROD="prod"
+
+    eval "$(clog Source project config); $(clog Crayon)"  # setting & highlight
+    clog Log -I  "🤖 $VERB $modeMSG$cS $PROJECT$cX MAKE ${#mTOKs[@]} steps:$cC ${mTOKs[@]}"
+
+    ERR=0; export STEP=0
+
+    for TOK in "${cTOKs[@]}"; do
+      clog Log -I "$(((++STEP))).  Check $TOK"; clog Check "$TOK"; ERR=$((ERR+$?))
+    done
+
+    clog bc-log-divider
+
+    for TOK in "${mTOKs[@]}"; do
+      ((STEP++));clog bc-"$TOK" "$doPROD" "$modeMSG" && clog bc-log-divider
+    done
+
+    icon="✅";[ $ERR -gt 0 ] && icon="❌"
+    printf -v MSG "$icon $VERB $modeMSG complete with %d errors" $ERR
+
+    echo "${VERB}status=$ERR" >> "$(clog bc-artifacts)"
+    echo "${VERB}msg=\"$MSG\"" >> "$(clog bc-artifacts)"
+
+    clog Log -B "$ERR" "$doPROD" "$MSG" "$MSG" || exit 1; #abort if PROD
+    exit 0
 
   # ui build function
   build: |
-    export VERB="Build"
+    rm "$(clog bc-artifacts)"   #remove artifacts at build start
+    export VERB="BUILD"
     export CHK="pre-build build"
     export MAKE="hugo ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
     export EXE="podserver"
