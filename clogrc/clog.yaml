@@ -132,7 +132,8 @@ snippets:
     export EXE="podserver"
     export TITLE="podserver"
     clog bc-flowx                     # use the generic flow script
-
+  # PROJECT config -----------------------------------------------------------------------------------------------------
+  watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
     # get the target version for this project from releases.yaml
     tag:

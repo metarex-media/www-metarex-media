@@ -34,6 +34,7 @@ Engineering, starting at 16:00 – 16:30 on the 11th of May.
     id   = "block1"
     src  = "mpts.png"
     srcOn  = "right"
+    alt    = "MPTS logo"
 >}}
 ## May Mega MetaRex update
 
