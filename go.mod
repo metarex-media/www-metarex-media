@@ -6,8 +6,9 @@ go 1.24.0
 
 require (
 	github.com/mrmxf/clog v0.7.8
-	github.com/mrmxf/fohuw v0.5.0 // indirect
+	github.com/mrmxf/fohuw v0.5.1 // indirect
 )
+
 require (
 	github.com/go-chi/chi/v5 v5.2.1 // indirect
 	github.com/samber/slog-chi v1.15.0 // indirect
