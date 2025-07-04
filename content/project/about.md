@@ -45,7 +45,7 @@ Below is the list of Backers.  Without their support we would not of been able t
 You can view our [GitHub] account to see what we achieved. 
 
 {{< fo t = "include"
-    from = "/project/admin/backer-list.md"
+    from = "/project/Admin/backer-list.md"
 />}}
 
 [GitHub]:  https://github.com/metarex-media
