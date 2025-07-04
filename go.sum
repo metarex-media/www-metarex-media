@@ -8,8 +8,8 @@ github.com/gopherjs/gopherjs v1.17.2 h1:fQnZVsXk8uxXIStYb0N4bGk7jeyTalG/wsZjQ25d
 github.com/gopherjs/gopherjs v1.17.2/go.mod h1:pRRIvn/QzFLrKfvEz3qUuEhtE/zLCWfreZ6J5gM2i+k=
 github.com/jtolds/gls v4.20.0+incompatible h1:xdiiI2gbIgH/gLH7ADydsJ1uDOEzR8yvV7C0MuV77Wo=
 github.com/jtolds/gls v4.20.0+incompatible/go.mod h1:QJZ7F/aHp+rZTRtaJ1ow/lLfFfVYBRgL+9YlvaHOwJU=
-github.com/mrmxf/clog v0.8.0 h1:zuEszKmjNO3FuOVoCRfMYpKrWprZyEZYpEfDVvMIH+Q=
-github.com/mrmxf/clog v0.8.0/go.mod h1:zvxpnWlF7w06ZmFducPKfYJ1HbeFymdX4K4sfniEtOs=
+github.com/mrmxf/clog v0.7.8 h1:c1wgAeqg/KRNIkdG2mdWL5Pl5xJes4yldPcgJwuqeTU=
+github.com/mrmxf/clog v0.7.8/go.mod h1:FutR5Wdlkc0MWq9dJajActPtfcIcrDFnVXF2ENDrUuw=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/samber/slog-chi v1.15.0 h1:3aV4IEv4gOTUzQsMk7FnasZKSRj5kB52+6AqNLjh1m4=
