@@ -129,8 +129,6 @@ snippets:
       clog bc-log-divider
     done
 
-    clog bc-log-divider
-
     for TOK in "${mTOKs[@]}"; do
       ((STEP++))
       clog bc-"$TOK" "$doPROD" "$modeMSG"
