@@ -26,7 +26,7 @@ description: Learn about metarex?
     class      = "ui green message"     msgClass = class
     header     = "Rexy clips"           name = header
     src        = "/meeja/mrx2-fire.mp4"
-    srcStyle   = "max-width: 300px;"
+    srcClass   = "ui fluid image"
     link       = "/about"
     alt        = "rexy fire clip"
   />}}
