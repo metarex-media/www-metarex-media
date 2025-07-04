@@ -34,12 +34,11 @@ snippets:
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
     exit 0
-    # worker function - main website -----------------------------------------------------------------------------------
-  bc-main-checkout: |
+  bc-main-prod-tag: yq -r 'first(.[] | select(.type=="main" and .build=="prod") | .version)' "$(clog bc-releases-yaml)"
+  # worker function - main website -----------------------------------------------------------------------------------
+  bc-main-prod-checkout: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-    doPROD="$1"
-    modeMSG="$2"
-    vMain="$(clog bc-prod-version)"
+    vMain="$(clog bc-main-prod-tag)"
 
     ERR=0
     clog Log -I "$STEP.$(((++s))).⚒️  bc-main-checkout  $modeMSG→$cF setup queries for daily build/"
@@ -49,7 +48,25 @@ snippets:
 
     # we are now checked out to the production snapshot $vMain
     # releases.yaml and scripts
-    clog instagram fetch metarex latest tmp/insta-mrx
+    #clog instagram fetch metarex latest tmp/insta-mrx
+
+  # worker function hugo (dev)---------------------------------------------------------------------------------------------
+  bc-hugo: |
+    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
+    doPROD="$1"
+    modeMSG="$2"
+
+    ERR=0
+    clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
+
+    [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
+    clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
+    rm -rf kodata/*
+
+    opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
+    clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
+    hugo build --minify --logLevel info $opt
+    exit $(((ERR+=$?)))
   # worker function ko (dev)-----------------------------------------------------------------------------------------------
   bc-ko: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
@@ -77,7 +94,8 @@ snippets:
     echo "${VERB}repo=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
 
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
-    if [ $? -gt 0 ]; then
+    ((ERR+=$?))
+    if [ $ERR -gt 0 ]; then
       msg="ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
       clog Log -E "$msg"
       printf "$msg" > /tmp/clog-notify
