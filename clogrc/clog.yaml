@@ -147,7 +147,7 @@ snippets:
 
   # ui build function
   build: |
-    rm "$(clog bc-artifacts)"   #remove artifacts at build start
+    rm "$(clog bc-artifacts)/*"   #remove artifacts at build start
     export VERB="BUILD"
     export CHK="pre-build build"
     export MAKE="hugo ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
