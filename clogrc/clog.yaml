@@ -123,13 +123,19 @@ snippets:
     ERR=0; export STEP=0
 
     for TOK in "${cTOKs[@]}"; do
-      clog Log -I "$(((++STEP))).  Check $TOK"; clog Check "$TOK"; ERR=$((ERR+$?))
+      clog Log -I "$(((++STEP))).  Check $TOK"
+      clog Check "$TOK"
+      ((ERR+=$?))
+      clog bc-log-divider
     done
 
     clog bc-log-divider
 
     for TOK in "${mTOKs[@]}"; do
-      ((STEP++));clog bc-"$TOK" "$doPROD" "$modeMSG" && clog bc-log-divider
+      ((STEP++))
+      clog bc-"$TOK" "$doPROD" "$modeMSG"
+      ((ERR+=$?))
+      clog bc-log-divider
     done
 
     icon="✅";[ $ERR -gt 0 ] && icon="❌"
