@@ -32,7 +32,7 @@ snippets:
   bc-artifacts: echo "tmp/artifacts"
   bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
-    clog Log -W  "    ✖️ $cC clog instagram$cI $*$cX not implemented yet - come back later"
+    clog Log -W  "    ✖️ $cC clog instagram$cW not implemented yet$cX - come back later"
     exit 0
   bc-main-prod-tag: yq -r 'first(.[] | select(.type=="main" and .build=="prod") | .version)' "$(clog bc-releases-yaml)"
   # worker function - main website -----------------------------------------------------------------------------------
