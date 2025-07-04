@@ -22,34 +22,30 @@ description: Learn about metarex?
 {{< fo t = "feature-group" >}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui green segment"     divClass = blockClass
-    class      = "ui green message"     msgClass = class
-    header     = "Rexy clips"           name = header
+    header     = "Rexy clips"
+    blockClass = "ui green segment"
+    class      = "ui green message"
     src        = "/meeja/mrx2-fire.mp4"
-    srcStyle   = "max-width: 300px;"
+    srcClass   = "ui fluid image"
     link       = "/about"
     alt        = "rexy fire clip"
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui yellow segment"    divClass = blockClass
-    class      = "ui yellow message"    msgClass = class
-    src        = "/logo/logo-github.svg"
+    header     = "Repositories"
+    blockClass = "ui yellow segment"
+    class      = "ui yellow message"
+    src        = "/ico/logo-github.svg"
+    srcClass   = "ui small centered image"
     link       = "https://github.com/orgs/metarex-media/repositories"
     alt        = "repositories"
-  >}}
-  <div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
-  <div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
-  <div class = "ui orange message"><i class = "python icon"></i> Marimo Browser user experience</div>
-  <div class = "ui green message"><i class = "blender icon"></i> Rectangular & Blender 3D images</div>
-  <div class = "ui blue message"><i class = "laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
-  {{< /fo >}}
+  />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui red segment"      divClass = blockClass
-    class      = "ui red message"      msgClass = class
-    header     = "How does it work?"   name = header
-    src        = "/r/img/eg-resize.png"
+    header     = "How does it work?"
+    blockClass = "ui red segment"
+    class      = "ui red message"
+    src        = "/img/mrx-flow.png"
     link       = "/docs"
     alt        = "metarex how does it work dinosaur"
  >}}
