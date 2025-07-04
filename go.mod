@@ -6,7 +6,7 @@ go 1.24.0
 
 require (
 	github.com/mrmxf/clog v0.7.8
-	github.com/mrmxf/fohuw v0.5.1 // indirect
+	github.com/mrmxf/fohuw v0.5.2 // indirect
 )
 
 require (
