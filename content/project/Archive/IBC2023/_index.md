@@ -19,6 +19,7 @@ The Responsive Narrative Factory won **Best IBC Accelerator Project 2023** 🎉
 {{< fo t = "image" 
     src = "rnf-title-image-web.png" 
     class = "ui fluid image" 
+    alt   = "responsive narrative factory"
 />}}
 
 ## Where should I go next?

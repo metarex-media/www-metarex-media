@@ -12,47 +12,49 @@ description: Learn about metarex?
    |  _| / -_) / _` | |  _| | || | | '_| / -_) (_-<
    |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/
 -->
+{{< fo t = "banner"
+    header = "Docs"
+    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
+    src =   "/img/dino/mrx-logo-0300.png"
+    class = "ui center aligned olive message"
+/>}}
+
 {{< fo t = "feature-group" >}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui green segment"     divClass = blockClass
-    class      = "ui green message"     msgClass = class
-    header     = "Rexy clips"           name = header
-    src        = "{{% relref /mp4/mrx2-fire.mp4 %}}"
-    srcStyle   = "max-width: 300px;"
-    link       = "project/about"
+    header     = "Rexy clips"
+    blockClass = "ui green segment"
+    class      = "ui green message"
+    src        = "/meeja/mrx2-fire.mp4"
+    srcClass   = "ui fluid image"
+    link       = "/about"
+    alt        = "rexy fire clip"
   />}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui yellow segment"    divClass = blockClass
-    class      = "ui yellow message"    msgClass = class
-    TODO-link       = "https://github.com/orgs/metarex-media/repositories"
+    header     = "Repositories"
+    blockClass = "ui yellow segment"
+    class      = "ui yellow message"
+    src        = "/ico/logo-github.svg"
+    srcClass   = "ui small centered image"
+    link       = "https://github.com/orgs/metarex-media/repositories"
+    alt        = "repositories"
   />}}
-<div class = "ui pink message"><i class = "tv icon"></i></i> Any resolution, any colour space </div>
-<div class = "ui red message"><i class = "ruler combined icon"></i> 8 | 10 | 12 | float RGBA | YCbCr </div>
-<div class = "ui orange message"><i class = "python icon"></i> Marimo Browser user experience</div>
-<div class = "ui green message"><i class = "blender icon"></i> Rectangular & Blender 3D images</div>
-<div class = "ui blue message"><i class = "laptop code icon"></i> SaaS, Kubernetes, Desktop, Laptop</div>
-  {{< /fo >}}
 <!-- ---------------------------------------------------------------------- -->
   {{< fo t = "feature"
-    blockClass = "ui red segment"      divClass = blockClass
-    class      = "ui red message"      msgClass = class
-    header     = "How does it work?"   name = header
-    src        = "/r/img/eg-resize.png"
+    header     = "How does it work?"
+    blockClass = "ui red segment"
+    class      = "ui red message"
+    src        = "/img/mrx-flow.png"
     link       = "/docs"
+    alt        = "metarex how does it work dinosaur"
  >}}
 
   <i class = "book icon"></i> Read the docs.
   <!-- ---------------------------------------------------------------------- -->
 {{< /fo >}}
+{{< /fo >}}
 
-{{< fo t = "banner"
-    header = "Docs"
-    description = "MetaRex is like a zip file with a timeline. It's used like an electronic FedEx service."
-    src = "/img/dino/mrx-logo-0300.png"
-    class = "ui center aligned olive message"
-/>}}
 
 ### MetaRex Documentation
 
