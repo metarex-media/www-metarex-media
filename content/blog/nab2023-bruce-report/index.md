@@ -1,8 +1,8 @@
 ---
-title:       "NAB 2023 Show - Bruce's report"
-linkTitle:   "NAB 2023 Show - Bruce's report"
+title:       "Highlights for MetaRex at NAB"
+linkTitle:   "Highlights for MetaRex at NAB"
 date:        2023-04-26
-description: Bruce talks us through MetaRex highlights at NAB.
+description: Bruce talks us through MetaRex highlights at NAB Show 2023.
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["event"]
 oldtags:     ["project",  "NAB", "MrMXF"]
@@ -15,7 +15,7 @@ oldtags:     ["project",  "NAB", "MrMXF"]
   alt = "photo of Bruce"
 >}}
 
-# MetaRex at NAB 2023
+# MetaRex at the NAB Show
 
 New Backers, offers to write code, offers of financial support, offers to write specification, new workflows and generally a thumbs up that {{% metarex %}} is going in the right direction.
 

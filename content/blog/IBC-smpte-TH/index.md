@@ -1,6 +1,6 @@
 ---
 title:       Thank you SMPTE
-linkTitle:   Thank you SMPTE
+linkTitle:   SMPTE - thank you
 date:        2024-09-09
 description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

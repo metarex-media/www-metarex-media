@@ -22,6 +22,16 @@ Egg, on a search for their own adventure, quickly found Rexy. Whilst initially a
 
 Nowadays Rexy's natural aggression is channeled into protecting her metadata, her intuitive right, as she seldom encounters other dinosaurs or predators in her quiet world. Perhaps she’s the last of her kind? As she roams, she always searches for good homes to store her precious metadata, with the right conditions to keep them safe and sound.
 
+{{< fo t = "image" 
+    src = "/rexy-area/backstory/rexy-bs-2.png" 
+    alt = "Rexy backstory 1" 
+    srcClass   = "ui fluid image"
+/>}}
+{{< fo t = "image" 
+    src = "/rexy-area/backstory/rexy-bs-1.png" 
+    alt = "Rexy backstory 2" 
+    srcClass   = "ui fluid image"
+/>}}
 
 {{% insta %}}
 

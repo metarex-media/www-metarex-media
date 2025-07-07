@@ -1,8 +1,8 @@
 ---
-title:       "NAB Show 2023"
-linkTitle:   "NAB Show 2023"
+title:       "The big topics at this year's NAB Show"
+linkTitle:   "The big topics at this year's NAB Show"
 date:        2023-04-15
-description: Katya Highlights the BIG topics at NAB.
+description: Katya highlights the BIG topics at this year's NAB Show
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
 tags:        ["event"]
 oldtags:     ["project",  "NAB", "yellowbasket"]
@@ -28,11 +28,7 @@ production, XR and virtualization, the accuracy of Metadata is playing the most 
 {{< fo t = "block"
     id   = "block2"
 >}}
-NAB show offering the two hours of show floor tours: “**The Data, Data, Data
-Tour**” happens twice a day (10-12 and 13-15) on Monday 17 and Tuesday 18 and on
-Sunday 16 one tour from 10:30 till 12:30. Plus there's the very impressive panel
-discussion with the same title at the Conference on Monday. We recommend the
-tour because it will show you why Metarex is important.
+NAB show offering the two hours of show floor tours: “**The Data, Data, Data Tour**” happens twice a day (10-12 and 13-15) on Monday 17 and Tuesday 18 and on Sunday 16 one tour from 10:30 till 12:30. Plus there's the very impressive panel discussion with the same title at the Conference on Monday. We recommend the tour because it will show you why Metarex is important.
 
 The panel announcement says:
 

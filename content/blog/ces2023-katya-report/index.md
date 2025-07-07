@@ -1,8 +1,8 @@
 ---
-title:       "CES 2023 report"
-linkTitle:   "CES 2023 report"
+title:       "What are Katya's thoughts on the CES 2023 Show?"
+linkTitle:   "What are Katya's thoughts on the CES 2023 Show?"
 date:        2023-01-12
-description: Katya reports on the CES 2023 Show.
+description:  Katya spends a few moments giving us a report on CES
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
 tags:        ["event"]
 oldtags:     ["project",  "CES", "yellowbasket"]

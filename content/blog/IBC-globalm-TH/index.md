@@ -1,6 +1,6 @@
 ---
 title:       Thank you GlobalM
-linkTitle:   Thank you GlobalM
+linkTitle:   GlobalM - thank you!
 date:        2024-08-28
 description: "A special {{% metarex %}} thanks all our Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

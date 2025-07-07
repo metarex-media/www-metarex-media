@@ -1,8 +1,8 @@
 ---
-title:       White Paper Blog
-linkTitle:   White Paper Blog
+title:       "Why is MetaRex useful?"
+linkTitle:   "Why is MetaRex useful?"
 date:        2024-03-21
-description: "Why is {{% metarex %}} useful?"
+description: "Why is {{% metarex %}} useful?  Let's find out..."
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["sustainability", "project"]
 oldtags:     ["project",  "award"]
@@ -282,8 +282,7 @@ What I've not included in the numbers is how {{% metarex %}} can give an almost 
 
 If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact] us. 
 
-Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth
-[W.1931][2]
+Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth. 
 
 [1]: https://signiant.com/
 [2]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931

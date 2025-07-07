@@ -1,6 +1,6 @@
 ---
-title:       "MetaRex: IBC Accelerator"
-linkTitle:   "MetaRex: IBC Accelerator"
+title:       "MetaRex taking part in the IBC Accelerator"
+linkTitle:   "MetaRex taking part in the IBC Accelerator"
 date:        2023-06-23
 description: Bruce tells us about the Responsive Narrative Factory Project for IBC 2023.
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

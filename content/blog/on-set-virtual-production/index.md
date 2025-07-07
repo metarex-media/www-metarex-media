@@ -1,6 +1,6 @@
 ---
-title:       Virtual Production
-linkTitle:   Virtual Production
+title:       "The changing world of On Set Virtual Production"
+linkTitle:   "The changing world of On Set Virtual Production"
 date:        2024-03-27
 description: "The rapidly changing world of On Set Virtual Production"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

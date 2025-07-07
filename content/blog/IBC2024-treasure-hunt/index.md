@@ -1,8 +1,8 @@
 ---
-title:       The MetaRex Treasure Hunt at IBC 2024
-linkTitle:   The MetaRex Treasure Hunt at IBC 2024
+title:       "Did you miss it?  The MetaRex Treasure Hunt? What was that!?"
+linkTitle:   "Did you miss it? The MetaRex Treasure Hunt"
 date:        
-description: "In case you missed it - what was the MetaRex Treasure Hunt?"
+description: "In case you missed it - what even was the MetaRex Treasure Hunt?"
 author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:        ["collaborations",  "event"]
 oldtags:    ["project",  "backers"]

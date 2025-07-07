@@ -1,11 +1,11 @@
 ---
 title:       Thank you Signiant
-linkTitle:   Thank you Signiant
+linkTitle:   Signiant - thank you 
 date:        2024-09-05
 description: "Many thanks to all our Supporters, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
-oldtags:    ["project",  "backers"]
+oldtags:     ["project",  "backers"]
 params:
   publish:
     linkedin:  true

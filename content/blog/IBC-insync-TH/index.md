@@ -1,6 +1,6 @@
 ---
 title:       Thank you Insync Technology
-linkTitle:   Thank you Insync
+linkTitle:   Insync, thank you 
 date:        2024-09-11
 description: "Many thanks to all our Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

@@ -1,6 +1,6 @@
 ---
-title:       MetaRex's Goals
-linkTitle:   MetaRex's Goals
+title:       "The MetaRex Project's Orginal Goals"
+linkTitle:   "The MetaRex Project's Orginal Goals"
 date:        2022-12-12
 description: "What was the goals for the {{%  metarex %}} project"
 author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)

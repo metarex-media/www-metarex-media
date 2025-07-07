@@ -1,6 +1,6 @@
 ---
 title:       Thank you V-Nova
-linkTitle:   Thank you V-Nova
+linkTitle:   V-Nova - a special thank you!
 date:        2024-08-23
 description: "A special {{% metarex %}} thanks to V-Nova for their support and hosting the Prize Draw for the MetaRex Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

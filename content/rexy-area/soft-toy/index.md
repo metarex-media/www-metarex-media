@@ -14,17 +14,17 @@ After much research and discussion, the start of the project began in May 2024 a
 
 {{< fo t = "image"
     src = "rexy-plane.png"
+    srcClass = "ui centered small image"
     alt = "rexy on a plane"
-    text = "Rexy on her first ever plane journey!"
 />}}
 
 Rexy was the main star of the MetaRex Treasure Hunt 2024 and was won by the amazing [Amy Rajonson]. 
 
 {{< fo t = "image"
     src = "rexy-bruce-signing.png"
+    srcClass = "ui centered medium image"
     alt = "Bruce autographing a book"
 />}}
-
 
 In order to design and make soft toy Rexy, we used the incredibly talented team at [Picture to Puppets], a small, independent company based in Edinburgh, UK, where they make custom, personalised puppets and soft toys.
  
@@ -32,26 +32,12 @@ Throughout the whole process, the team at Picture to Puppets were brilliant and 
 
 Many thanks to the whole team at Picture to Puppets.  It was wonderful to have Rexy brought to life and be able to capture her character. 
 
-Here are some of the orginal storyboard ideas and design for Rexy soft toy:
-
-{{< fo t = "image"
-    src = "/rexy-area/soft-toy/rexy-sketch.png"
-    srcWidth = "0.5"
-    text = "Design sketch of Rexy"
-    alt = "sketch of Rexy"
-/>}}
-
-{{< fo t = "image"
-    src = "/rexy-area/soft-toy/rexy-skin-sample.png"
-    srcWidth = "0.5"
-    alt = "rexy skin sample"
-/>}}
-
-{{< fo t = "image"
-    src = "/rexy-area/soft-toy/rexy-tuff-hair.png"
-    srcWidth = "0.5"
-    alt = "Rexy tuff of hair"
-/>}}
+<div class="ui medium images">
+  <img src="/rexy-area/soft-toy/rexy-sketch.png">
+  <img src="/rexy-area/soft-toy/rexy-fur-2.jpeg">
+  <img src="/rexy-area/soft-toy/rexy-tuff-hair.png">
+  <img src="/rexy-area/soft-toy/rexy-fur.jpeg">
+</div>
 
 
 [Rexy]:                {{% relref "rexy/_index.md" %}}

@@ -1,6 +1,6 @@
 ---
-title:       Tristan's report on IBC 2023
-linkTitle:   Tristan's report on IBC 2023
+title:       "Tristan's review on IBC 2023"
+linkTitle:   "Tristan's review on IBC 2023"
 date:        2023-09-25
 description: "Tristan's reports on his first IBC!"
 author:      Tristan Larke [@in](https://www.linkedin.com/in/tristanlarke/)

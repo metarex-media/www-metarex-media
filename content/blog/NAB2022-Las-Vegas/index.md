@@ -1,14 +1,12 @@
 ---
-title:       NAB 2022 in Las Vegas
-linkTitle:   NAB 2022
+title:       "Is MetaRex needed?"
+linkTitle:   "Is MetaRex needed?"
 date:        2022-04-23
-description: Is {{% metarex %}} needed?  We talked to companies at NAB 2022
+description: Is {{% metarex %}} needed?  We talked to companies at NAB Show 2022
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["project",  "event"]
 oldtags:     ["project",  "Mr MXF", "IBC"]
 ---
-
-## NAB Show 2022
 
 {{< fo t = "block"
   id    = "summary"

@@ -1,6 +1,6 @@
 ---
 title:       Thank you nxtedition
-linkTitle:   Thank you nxtedition
+linkTitle:   nxtedition - thank you 
 date:        2024-08-21
 description: "Thanks to nxtedition for all their support!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

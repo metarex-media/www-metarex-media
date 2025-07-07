@@ -1,6 +1,6 @@
 ---
 title:        Thank you Qibb
-linkTitle:    Thank you Qibb
+linkTitle:    Qibb - thank you
 date:         2024-08-27
 description:  "A specail MetaRex thank you to all our sponsers, backers and partners"
 author:       Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

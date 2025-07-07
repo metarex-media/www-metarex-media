@@ -1,6 +1,6 @@
 ---
 title:       Thank you Venera
-linkTitle:   Thank you Venera
+linkTitle:   Venera, thank you!
 date:        2024-08-29
 description: "A special {{% metarex %}} thanks all our Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

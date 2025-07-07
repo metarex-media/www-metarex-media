@@ -1,6 +1,6 @@
 ---
 title:       Thank you HAND Identity
-linkTitle:   Thank you HAND
+linkTitle:   Hand - Thank you!
 date:        2024-09-10
 description: "Many thanks to all everyone who has got involved with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

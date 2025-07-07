@@ -1,6 +1,6 @@
 ---
 title:       Thank you SDVI
-linkTitle:   Thank you SDVI
+linkTitle:   SDVI - thank you 
 date:        2024-08-22
 description: "{{% metarex %}} sends a big thank you!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

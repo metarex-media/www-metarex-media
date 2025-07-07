@@ -1,6 +1,6 @@
 ---
 title:       Thank you Cinnafilm
-linkTitle:   Thank you Cinnafilm
+linkTitle:   Cinnafilm - thank you 
 date:        2024-09-06
 description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

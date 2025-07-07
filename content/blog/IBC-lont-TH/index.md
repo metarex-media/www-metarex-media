@@ -1,6 +1,6 @@
 ---
 title:       Thank you Lont
-linkTitle:   Thank you Lont
+linkTitle:   Lont - Thank you
 date:        2024-09-08
 description: "{{% metarex %}} thanks all its Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

@@ -71,13 +71,7 @@ menus:
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-      weight: 150
-    - name: Feed Rexy
-      URL: /donate/
-      identifier: cake
-      pre:
-      post: "  🍰"
-      weight: 200
+
 # links to linkedin left & right
   
   

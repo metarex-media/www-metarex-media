@@ -1,6 +1,6 @@
 ---
-title:       17:00 at V-Nova booth!
-linkTitle:   17:00 at V-Nova booth!
+title:       "Annoucing the Winner of MetaRex Treasure Hunt"
+linkTitle:   "Annoucing the Winner of MetaRex Treasure Hunt"
 date:        2024-09-15
 description: "A BIG MetaRex thank you to all the people who contributed to the MetaRex Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -21,9 +21,11 @@ Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and
 
 A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
-<img  class = "ui centered large bordered rounded image" src = "annoucing-rexy-winner.jpeg" alt = "{{% param img %}}">
-
-
+{{< fo t = "image"
+   src = "/blog/win-at-v-nova-TH/annoucing-rexy-winner.png" 
+   alt = "annoucing the winner" 
+   srcClass = "ui centered large image"
+/>}}
 
 Go to the next blog post to find out who the winner was.....
 

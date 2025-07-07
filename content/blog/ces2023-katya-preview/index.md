@@ -1,8 +1,8 @@
 ---
-title:       "CES preview"
-linkTitle:   "CES preview"
+title:       "Katya's preview of the CES Show"
+linkTitle:   "Katya's preview of the CES Show"
 date:        2023-01-04
-description: Katya reports on the upcoming CES 2023 Show.
+description: Preview on the upcoming CES 2023 Show
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
 tags:      ["event"]  
 oldtags:   ["project",  "CES", "yellowbasket"]

@@ -1,8 +1,8 @@
 ---
-title:       RNF wins Best IBC Accelerator 2023!
-linkTitle:   RNF wins Best IBC Accelerator 2023!
+title:       "RNF wins Best IBC Accelerator!"
+linkTitle:   "Winner of Best IBC Accelerator!"
 date:        2024-03-06
-description: MetaRex and Infuse Video lead the Responsive Narrative Factory to the Best IBC Accelerator 2023!
+description: MetaRex and Infuse Video lead the Responsive Narrative Factory to the Best IBC Accelerator 2023! Woohoo!
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "tech",  "workflow"]
 oldtags:     ["project",  "award"]
