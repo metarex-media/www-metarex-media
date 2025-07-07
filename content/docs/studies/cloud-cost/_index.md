@@ -1,10 +1,13 @@
 ---
-title:       Cloud Cost API
-linkTitle:   Cloud Cost
+title:       C3 - Cloud Cost Comparator
+linkTitle:   Cloud Cost Comparator
 date:        2025-05-12
 description: How metarex can build an API to cost your running cloud
 ---
 <!-- markdownlint-disable MD033 -->
+<span class="ui grey text"><i class="chevron circle right icon"></i>|</span>
+[C3]({{% relref "index.md" %}}) |
+[testing]({{% relref "testing" %}}) |
 
 ```mermaid
 flowchart TD
