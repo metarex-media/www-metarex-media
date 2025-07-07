@@ -18,7 +18,7 @@ menu:
 
 ## The history of Rexy 🦖  
 
-The first drafts of Rexy was created in early 2021 by Amber Bardell.  At the time she was just a logo for {{% metarex %}} but since then Rexy has grown as a character with her own personality and backstory, had various artwork and vidoes made of her adventures and even been made into a soft toy! 
+The first drafts of Rexy was created in early 2021 by Amber Bardell.  At the time she was just a logo for {{< metarex >}} but since then Rexy has grown as a character with her own personality and backstory, had various artwork and vidoes made of her adventures and even been made into a soft toy! 
 
 Rexy even has her own [backstory] which was created by one of our **MetaRex Creative Team**, Amber Bardell. 
 

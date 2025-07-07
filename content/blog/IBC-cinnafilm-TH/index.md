@@ -30,7 +30,7 @@ and standards conversions; transcoding and complex image packaging.  Combined,
 these tools provide the finest-looking, optimized video and image sequences for
 *“media now and everywhere”* distribution models.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears behind books and furniture at the moment!
 
 [@Cinnafilm](https://www.linkedin.com/company/cinnafilm-inc./)

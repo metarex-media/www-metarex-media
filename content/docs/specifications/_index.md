@@ -13,7 +13,7 @@ description: How does MetaRex work under the hood?
     class = "ui center aligned olive message"
 />}}
 
-### The {{% metarex %}} Envelope
+### The {{< metarex >}} Envelope
 
 Start by reading the [MRX envelope introduction][01] that leads you through the
 container design choices amongst the many containers available. From that
@@ -23,7 +23,7 @@ metarex [GitHub][03] repository's [issues][03] section.
 
 There's also the easy-access [White Paper blog from 2024][04].
 
-### The {{% metarex %}} Register
+### The {{< metarex >}} Register
 
 The register converts a `metarexId` e.g. [MRX.123.456.789.reg][id] into a set
 of links where you can find information and services related to that metadata
@@ -35,7 +35,7 @@ to browse the register or to add your own content (registration required) or
 you can inspect the register using the API [here][11].
 
 
-### The {{% metarex %}} Register API
+### The {{< metarex >}} Register API
 
 The register API is generated from an [OpenAPI 3.0 document][d1] that can be
 [viewed as an online document][d2].

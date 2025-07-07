@@ -91,7 +91,7 @@ away a chance to boost content creation and output. Content will be stored via
 XAVC-I at 1080p/50, and the server also supports ingest and delivery in HDR
 (with SDR preview). If only we knew and could measure what portion of the live,
 time based metadata associated with the media found its way to the cloud based
-storage.  A {{% metarex %}} fire-hose of metadata might have enriched the quality,
+storage.  A {{< metarex >}} fire-hose of metadata might have enriched the quality,
 quantity and **searchability** of assets.
 
 {{< /fo >}}

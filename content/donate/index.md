@@ -29,7 +29,7 @@ params:
 ---
 
 
-{{% metarex %}}  uses the payment services provided by {{% mrmxf %}} and all donations go towards keeping the team supplied with food and a living wage.
+{{< metarex >}}  uses the payment services provided by {{% mrmxf %}} and all donations go towards keeping the team supplied with food and a living wage.
 
 <div class = "ui equal width center aligned stackable grid">
   {{< donate-card "coffee" >}}

@@ -15,12 +15,12 @@ oldtags:     ["status"]
     alt = "metarex logo"
 />}}
 
-## What is {{% metarex %}}?
+## What is {{< metarex >}}?
 
 MetaRex is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow.
 This will make it easier to manage metadata and ensure that it is accurate and consistent whenever video content is processed, broadcast, or distributed.
 
-## Why was {{% metarex %}} needed?
+## Why was {{< metarex >}} needed?
 
 There is currently no standard way to transport media metadata. The lack of transport medium can cause these metadata issues:
 
@@ -28,7 +28,7 @@ There is currently no standard way to transport media metadata. The lack of tran
 2. Incompatibility with different software applications
 3. Difficulties in managing and searching
 
-## How will {{% metarex %}} help improve metadata management?
+## How will {{< metarex >}} help improve metadata management?
 
 MetaRex will create a **standardised** way to transport metadata, ensuring that metadata is always transported in the same way, regardless of the software application used. This will make it easier to manage and search metadata, and it will also reduce the risk of metadata being lost or corrupted.
 
@@ -36,11 +36,11 @@ MetaRex will make metadata **interoperable**, which means that it will be compat
 
 MetaRex will be **extensible**, meaning new metadata formats can be easily added to the framework. This will ensure that MetaRex can support the latest metadata standards, and it will also make it easier to add new metadata fields to the framework.
 
-## Who is behind the {{% metarex %}} project?
+## Who is behind the {{< metarex >}} project?
 
 The MetaRex team is led by renowned media technologist [Bruce Devlin] who has had a significant impact on the way that media is produced and distributed.  Bruce is a former head of standards for SMPTE and a member of the EBU. He is passionate about open-source solutions and is committed to making the media industry more accessible and efficient.
 
-## How will {{% metarex %}} benefit me?
+## How will {{< metarex >}} benefit me?
 
 We can help you streamline your workflows and connect you with our growing network of companies.  Your involvement will give you the opportunity to adapt the MetaRex framework to your requirements and make life easier, workflow faster and cheaper for you!
 

@@ -13,7 +13,7 @@ params:
     id = "gg" 
 />}}
 
-<div class="ui center aligned header">{{% metarex %}} Flow Diagram</div>
+<div class="ui center aligned header">{{< metarex >}} Flow Diagram</div>
 
 {{< fo t = "image-fluid"  
     src = "/img/mrx-flow.png" 
@@ -22,7 +22,7 @@ params:
     alt = "metarex flow diagram"
 >}}
 
-{{% metarex %}} is like Fedex for metadata.
+{{< metarex >}} is like Fedex for metadata.
 
 * **Sender**
   * The Sender wraps their metadata in a standardized container.

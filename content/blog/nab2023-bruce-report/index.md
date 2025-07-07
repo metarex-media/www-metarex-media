@@ -17,9 +17,9 @@ oldtags:     ["project",  "NAB", "MrMXF"]
 
 # MetaRex at the NAB Show
 
-New Backers, offers to write code, offers of financial support, offers to write specification, new workflows and generally a thumbs up that {{% metarex %}} is going in the right direction.
+New Backers, offers to write code, offers of financial support, offers to write specification, new workflows and generally a thumbs up that {{< metarex >}} is going in the right direction.
 
-The new Backers are being on-boarded and their logos will appear on our Backer-wall as soon as the process for each company is complete. The new workflows and benefits will appear on the website soon and we'll be updating the spec on the [GitHub] as well as adding more tutorial material and references to existing standards up which {{% metarex %}} is based.
+The new Backers are being on-boarded and their logos will appear on our Backer-wall as soon as the process for each company is complete. The new workflows and benefits will appear on the website soon and we'll be updating the spec on the [GitHub] as well as adding more tutorial material and references to existing standards up which {{< metarex >}} is based.
 
 {{< /fo >}}
 <!-- ####################################################################### -->
@@ -41,7 +41,7 @@ As usual, the [Devoncroft summit] and the [IABM breakfast] gave considerable ins
 >}}
 On the show floor there were busy clumps and quiet areas. A curious mix of activity all around. It seemed that anyone with cloud native solutions had a continuous stream of visitors whereas some of the smaller hardware sellers had time to doom-scroll on their favourite social media.
 
-Next stop for {{% metarex %}} is the Media Production Show in London 10th - 11th May 2023. Come and see us - we will have a great panel!
+Next stop for {{< metarex >}} is the Media Production Show in London 10th - 11th May 2023. Come and see us - we will have a great panel!
 {{< /fo >}}
 
 [GitHub]:  https://github.com/metarex-media

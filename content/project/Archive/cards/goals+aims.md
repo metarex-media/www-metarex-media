@@ -8,7 +8,7 @@
       id       =  "splash"
  >}}
 
-{{% metarex %}} will create free Open Source software (**FOSS**) to handle media
+{{< metarex >}} will create free Open Source software (**FOSS**) to handle media
 metadata.
 
 * [Backers](/backers) put money in a pot

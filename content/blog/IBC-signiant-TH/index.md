@@ -15,7 +15,7 @@ params:
 
 **[{{% param backer %}}][web]** is one of our wonderful Backers and we couldn’t be successful without them.  A big thanks for supporting us in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to for the latest updates. 
+Follow {{< metarex >}} on [LinkedIn][limrx] to for the latest updates. 
 
 <img  class = "ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 

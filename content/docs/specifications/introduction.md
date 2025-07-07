@@ -30,7 +30,7 @@ The core technology works like this:
   * Process metadata / download a plugin / display a message based on the
     registration information provided by the owner of the registration record.
 
-### The {{% metarex %}} envelope - MXF
+### The {{< metarex >}} envelope - MXF
 
 #### Why [MXF](https://www.amazon.co.uk/MXF-Book-Introduction-Material-eXchange/dp/024080693X)
 
@@ -61,7 +61,7 @@ implementations including one in [ffmpeg](httpps://ffmpeg.org).
 Basically, MXF already has the tools needed and the other options require
 significant work to create a general purpose global solution.
 
-#### The {{% metarex %}} MXF profile
+#### The {{< metarex >}} MXF profile
 
 Some features of the [MXF profile] are extensions of the [MXF-live profile] that
 was demonstrated in 2019 at the [ARRI Broadcast Day].
@@ -70,7 +70,7 @@ The [MXF profile] document is a work in progress - if you want to contribute to
 it or have issues with the design approach then please [contact] us or join the
 project to help us complete the work an give away the software.
 
-Some desires of the final {{% metarex %}} MXF profile:
+Some desires of the final {{< metarex >}} MXF profile:
 
 * it **must** be possible to serialize & stream an `mrx.mxf` over a network
 * it **must** be possible to concatenate a stream of `mrx.mfx` envelopes to an

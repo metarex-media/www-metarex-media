@@ -2,7 +2,7 @@
 title:       Thank you GlobalM
 linkTitle:   GlobalM - thank you!
 date:        2024-08-28
-description: "A special {{% metarex %}} thanks all our Sponsors, Backers and Partners"
+description: "A special {{< metarex >}} thanks all our Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
 old tags:    ["project",  "backers"]
@@ -15,7 +15,7 @@ params:
 
 **[{{% param backer %}}][web]** is one of our wonderful Backers and we couldn’t be successful without them and their support us in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show!
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show!
 
 <img  class="ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 

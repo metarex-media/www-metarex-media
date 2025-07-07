@@ -2,7 +2,7 @@
 title:       Thank you Lont
 linkTitle:   Lont - Thank you
 date:        2024-09-08
-description: "{{% metarex %}} thanks all its Sponsors, Backers and Partners"
+description: "{{< metarex >}} thanks all its Sponsors, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
 oldtags:    ["project",  "backers"]
@@ -27,13 +27,13 @@ minimal manual effort, seamlessly integrating into existing workflows. While
 this approach is gaining traction in B2B, we believe it will also shape the
 future of media and entertainment in the coming years.
 
-**[{{% param backer %}}][web]** on {{% metarex %}}: _"It was amazing to work with Bruce
+**[{{% param backer %}}][web]** on {{< metarex >}}: _"It was amazing to work with Bruce
 and the MetaRex team to win the IBC Accelerator 2024 Media Innovation Award!
 What they are building will be instrumental in creating efficient, low-friction
 workflows that deliver customized and personalized content to viewers without
 overly complicating the production process."_
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the IBC 2024 Show!
 
 [@Lont](https://www.linkedin.com/company/infusevideo/)

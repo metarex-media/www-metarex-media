@@ -24,7 +24,7 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-This 2 year project was a pre-cursor to [{{% metarex %}}](https://metarex.media)
+This 2 year project was a pre-cursor to [{{< metarex >}}](https://metarex.media)
 
 {{< fo t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"

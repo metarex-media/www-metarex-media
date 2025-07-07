@@ -10,7 +10,7 @@ tags:        ["rexy", "backstory"]
 
 The Creative Team at MetaRex had been talking about getting a soft toy of [Rexy] made for a while. 
 
-After much research and discussion, the start of the project began in May 2024 and Rexy finally become a living, ‘breathing’ soft toy in August 2024, ready for her big debut at IBC 2024 and to be the winning prize of the {{% metarex %}} [Treasure Hunt]. 
+After much research and discussion, the start of the project began in May 2024 and Rexy finally become a living, ‘breathing’ soft toy in August 2024, ready for her big debut at IBC 2024 and to be the winning prize of the {{< metarex >}} [Treasure Hunt]. 
 
 {{< fo t = "image"
     src = "rexy-plane.png"

@@ -6,11 +6,6 @@ weight:      5
 tags:        ["rexy", "backstory"]
 ---
 
-{{< fo t = "banner"
-    header = "The full collection of Amber and Simi's Rexy artwork"
-    src = "/img/dino/mrx-logo-0300.png" 
-    class = "ui center aligned olive message"
-/>}}
 
 Here is a full list of all the illustrations, drawings and videos of Rexy and Egg that has been created by our amazing and incredibly talented, **MetaRex Creative Team**, [Amber][AB] and [Simi][SZ]. 
 
@@ -24,6 +19,7 @@ For every little bit of support, the **MetaRex Creative Team** really do appreci
 For the detailed version of the MetaRex's logo and colour palette, see our [Style Guide] page.  
 
 ### Rexy Artwork
+
 
 <div class="ui grid">
   <div class="five column row">
@@ -50,9 +46,10 @@ For the detailed version of the MetaRex's logo and colour palette, see our [Styl
 
 ### Rexy Videos 
 
+
 <div class="ui equal width grid">
   <div class="column">
-   <video class = "ui image"
+    <video class = "ui image"
        src="/meeja/mrx3-roar.mp4">
    </div>
   <div class="column">

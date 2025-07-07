@@ -13,11 +13,11 @@ params:
 
 **[nxtedition][nxt]** is one of our wonderful Backers and we couldn’t be successful without them!  A specail thanks to them for their enthusiasm in taking part in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a sneak-peek of Rexy before the show!
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a sneak-peek of Rexy before the show!
 
 <img class = "ui centered bordered rounded image" src = "featured-nxtedition.png" alt = "nxtedition">
 
-**[nxtedition][nxt]** is a big supporter of {{% metarex %}}. We show how to
+**[nxtedition][nxt]** is a big supporter of {{< metarex >}}. We show how to
 validate metadata documents, transform metadata formats and enable easier
 metadata workflows, as shown in the MetaRex [website demo #10,][dmo]
 **nxtedition**'s cutting-edge microservices-based storytelling platform

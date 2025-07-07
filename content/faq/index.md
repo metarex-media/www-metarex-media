@@ -27,7 +27,7 @@ tags:        ["faq"]
 <div class="ui basic styled accordion">
     <div class="title">
       <i class="dropdown icon"></i>
-      What does the name {{% metarex %}} stand for?
+      What does the name {{< metarex >}} stand for?
     </div>
     <div class="content">
       <p class="transition hidden">METAdata Resource EXpress:  the streamlined way to deliver and use metadata!</p>
@@ -44,7 +44,7 @@ tags:        ["faq"]
     </div>
     <div class="title">
       <i class="dropdown icon"></i>
-      Why is {{% metarex %}} needed?
+      Why is {{< metarex >}} needed?
     </div>
     <div class="content">
       <p class="transition hidden">There is currently no standard and interoperable way to transport media metadata. Without a transport medium, these are the biggest issues to affect metadata:<p>
@@ -52,7 +52,7 @@ tags:        ["faq"]
     </div>
     <div class="title">
       <i class="dropdown icon"></i>
-      How will {{% metarex %}} help imporve metadata management?
+      How will {{< metarex >}} help imporve metadata management?
     </div>
     <div class="content">
       <p class="transition hidden">Standardisation:  MetaRex will create a standardised way to transport metadata, ensuring that metadata is always transported in the same way, regardless of the software application used. This will make it easier to manage and search metadata, and it will also reduce the risk of metadata being lost or corrupted.</p>
@@ -84,16 +84,16 @@ tags:        ["faq"]
    </div>
     <div class="title">
       <i class="dropdown icon"></i>
-      What is the {{% metarex %}} Registry?
+      What is the {{< metarex >}} Registry?
     </div>
     <div class="content">
       <p class="transition hidden">When FedEx put a barcode on your parcel, they're actually putting a reference to a register that contains metadata about the package.   What's in it?  How heavy is it?  Does it contain a live dinosaur so needs air??</p>
       </p>MetaRex uses the same idea.  A magic number - the MetaRex ID - allows software to read specifications, schema and lists of online services to process classes of metadata.</p>
-      </p>You can view the {{% metarex %}} Registry here</p>
+      </p>You can view the {{< metarex >}} Registry here</p>
       </div>
     <div class="title">
       <i class="dropdown icon"></i>
-      Where can I see the {{% metarex %}} Github?
+      Where can I see the {{< metarex >}} Github?
     </div>
     <div class="content">
       <p class="transition hidden">You can view the MetaRex GitHub here</p>
@@ -110,7 +110,7 @@ tags:        ["faq"]
     <div class="content">
       <p class="transition hidden">MetaRex is a small team with no offices.  We have regular meeting online and you can find us remotely in places like on our LinkedIn and Instagram pages.</p>
       </p>Otherwise, you can book a meeting with us if you or your company have any issues with metadata and think MetaRex can help.</p> 
-      </p>Or fill in our Contact Form if you have any questions about {{% metarex %}}.</p>
+      </p>Or fill in our Contact Form if you have any questions about {{< metarex >}}.</p>
       </p>We would be happy to help! 🦖</p>
      </div>
 </div>

@@ -27,7 +27,7 @@ booth. Sign up at [https://auth.metarex.media/ui/registration][ths]. Instruction
 %}}.png" alt = "{{% param img %}}">
 
 A partner of the Beta Program at  **[{{% param backer %}}][web]** (Human &
-Digital), {{% metarex %}} is working with the team for easier transport of
+Digital), {{< metarex >}} is working with the team for easier transport of
 media metadata and enabling control of the formats that you need for your
 workflow. (See [demo 11 on the website][demo])
 

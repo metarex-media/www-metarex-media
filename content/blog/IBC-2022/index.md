@@ -24,7 +24,7 @@ Many folks were investing in AI technologies to guess at the metadata that gets 
 {{< fo t = "block" 
   id    = "block2"
 >}}
-My big take away is that if we run the {{% metarex %}} project with the
+My big take away is that if we run the {{< metarex >}} project with the
 following constraints then it is likely to be a success:
 
 * Make free software that anyone can use to transport metadata.

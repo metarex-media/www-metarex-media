@@ -15,7 +15,7 @@ oldtags:    ["project",  "IBC", "RNF", "Infuse"]
   srcOn    = "left"
   alt = "photo of Bruce Devlin"
 >}}
-# {{% metarex %}} at IBC 2023: Responsive Narrative Factory
+# {{< metarex >}} at IBC 2023: Responsive Narrative Factory
 
 The **Responsive Narrative Factory** [(RNF)] is an **IBC Accelerator** project that will be showcased at this year's IBC show between 15th - 18th September 2023 at the RAI centre, Amsterdam.
 
@@ -35,7 +35,7 @@ We're teaming up with [Infuse Video], the **BBC**, [CuVo] and others to show wha
 Basically ultra-fine-grained-personalisation becomes a relatively simple
 task if you have all the right components ready to go.
 
-The Infuse video player uses metadata provided by {{% metarex %}} to deliver the
+The Infuse video player uses metadata provided by {{< metarex >}} to deliver the
 components of a programme that the viewer wants. No extra storage or redndering
 is required - it's just a matter of using the metadata to automate the
 preparation.

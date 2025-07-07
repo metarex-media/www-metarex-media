@@ -60,7 +60,7 @@ The conference session also had Metaverse topics with important speakers and wel
 * _Influencers and Actors in the Metaverse_
 * _Metaverse meets Office Space_
 
-However, the most important for {{% metarex %}} project appears to be the Conference Stream at the Aria conference centre:
+However, the most important for {{< metarex >}} project appears to be the Conference Stream at the Aria conference centre:
 
 * _Hollywood streaming and Metaverse_
 
@@ -76,7 +76,7 @@ author of [Interconnected Realities:]_How the Metaverse Will Transform Our Relat
 Needless to say that engineering part of Metaverse today in term of
 standartization is much weaker than the futurist dreams about it, so here we are: Closing the gap.
 
-{{% metarex %}} roar!
+{{< metarex >}} roar!
 {{< /fo >}}
 <!-- ####################################################################### -->
 

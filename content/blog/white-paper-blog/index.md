@@ -2,7 +2,7 @@
 title:       "Why is MetaRex useful?"
 linkTitle:   "Why is MetaRex useful?"
 date:        2024-03-21
-description: "Why is {{% metarex %}} useful?  Let's find out..."
+description: "Why is {{< metarex >}} useful?  Let's find out..."
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["sustainability", "project"]
 oldtags:     ["project",  "award"]
@@ -20,24 +20,24 @@ params:
 >}}
 <!-- markdownlint-disable MD025 -->
 
-## {{% metarex %}} - one of the many ways that it can benefit you and your company
+## {{< metarex >}} - one of the many ways that it can benefit you and your company
 
-The [award winning][0], **{{% metarex %}} Project** makes metadata flow. 
+The [award winning][0], **{{< metarex >}} Project** makes metadata flow. 
 The more metadata you have, the more you will benefit.  
 But how?  Here are our top 10 reasons (there are plenty more!): 
 
-1. {{% metarex %}} lets you define **_your own_** metadata.
-2. {{% metarex %}} [defines a container][2] for your metadata.
-3. {{% metarex %}} maps containers to many types of network so that you get metadata transport for _**<span class="ui purple text">free</span>**_!
-4. {{% metarex %}} gives you a [unique ID][3] for your new **_type_** of metadata.
-5. {{% metarex %}} lets you publish _services_ for your metadata _type_.
+1. {{< metarex >}} lets you define **_your own_** metadata.
+2. {{< metarex >}} [defines a container][2] for your metadata.
+3. {{< metarex >}} maps containers to many types of network so that you get metadata transport for _**<span class="ui purple text">free</span>**_!
+4. {{< metarex >}} gives you a [unique ID][3] for your new **_type_** of metadata.
+5. {{< metarex >}} lets you publish _services_ for your metadata _type_.
 6. You can **_monetize_** those services.
-7. {{% metarex %}} lets you discover _services_ for _unknown_ metadata types.
-8. {{% metarex %}} supports **all** types of metadata including text & binary, timeline & static, frame locked, sample locked & stochastic, single stream & mixed streams of metadata.
-9. {{% metarex %}} is built on standard tools, standard formats and standard frameworks.
-10. {{% metarex %}} can run in a product, on-premise or globally.
+7. {{< metarex >}} lets you discover _services_ for _unknown_ metadata types.
+8. {{< metarex >}} supports **all** types of metadata including text & binary, timeline & static, frame locked, sample locked & stochastic, single stream & mixed streams of metadata.
+9. {{< metarex >}} is built on standard tools, standard formats and standard frameworks.
+10. {{< metarex >}} can run in a product, on-premise or globally.
 
-**Bonus one** {{% metarex %}} is a _**<span class="ui purple text">free</span>**_
+**Bonus one** {{< metarex >}} is a _**<span class="ui purple text">free</span>**_
    [software framework][1]!
 
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
@@ -67,7 +67,7 @@ always gets lost!
 
 It's often faster and easier to invent your own metadata than it is to use
 someone else's - often because there's not a good description of what the
-metadata is. {{% metarex %}} makes those descriptions readily available and so
+metadata is. {{< metarex >}} makes those descriptions readily available and so
 reduces the amount of engineering for metadata interchange and introduces a new monetization opportunity between metadata creators and consumers - _even if the two companies have never met_.
 
 {{< /fo >}}
@@ -78,7 +78,7 @@ reduces the amount of engineering for metadata interchange and introduces a new 
 
 ### Some examples
 
-Here are some examples from the {{% metarex %}} Use Case :
+Here are some examples from the {{< metarex >}} Use Case :
 
 <table class="ui celled definition table">
   <thead class="center aligned">
@@ -200,16 +200,16 @@ and ask _"Sounds like moving a few bytes per frame is pretty easy, isn't it?_" t
    id    = "live"
 >}}
 
-### Compare with {{% metarex %}}
+### Compare with {{< metarex >}}
 
-The {{% metarex %}} framework requires someone to register meta-meta-data that
+The {{< metarex >}} framework requires someone to register meta-meta-data that
 allows a decoding device to say _Aha, there is NinJS in the MetaRex container_". It allows a network interface to say _"Aha, I know how to put MetaRex containers on my network"_.
 
-The {{% metarex %}} framework also allows transformers to be registered that
+The {{< metarex >}} framework also allows transformers to be registered that
 can perform a canonical conversion from format A to format B (and possibly
 charge for it), so if your application receives NewsML but needs NinJS then you can write your own or try a 3rd party one **_BEFORE YOU WRITE CODE_**.
 
-The integration factor for {{% metarex %}} is simply the number of base formats & networks added together rather than being multiplied together and then multiplied by all the implementations.
+The integration factor for {{< metarex >}} is simply the number of base formats & networks added together rather than being multiplied together and then multiplied by all the implementations.
 
 <table class="ui celled definition table">
   <thead class="center aligned">
@@ -248,10 +248,10 @@ The integration factor for {{% metarex %}} is simply the number of base formats 
     </tr>  </tbody>
 </table>
 
-I've tweaked the non-{{% metarex %}} number to compensate for the range
+I've tweaked the non-{{< metarex >}} number to compensate for the range
 of products available in each segment.
 
-What I've not included in the numbers is how {{% metarex %}} can give an almost GitHub-like robustness to versioning and updating metadata flow. That's for a future study.
+What I've not included in the numbers is how {{< metarex >}} can give an almost GitHub-like robustness to versioning and updating metadata flow. That's for a future study.
 
 {{< sitelinks >}}
 {{< /fo >}}
@@ -264,7 +264,7 @@ What I've not included in the numbers is how {{% metarex %}} can give an almost 
 
 **<span class="ui green header text">Everyone benefits!</span>**
 
-{{% metarex %}} enables a generic metadata supply chain with the rigour that we are starting to develop with video and audio.
+{{< metarex >}} enables a generic metadata supply chain with the rigour that we are starting to develop with video and audio.
 
 * **Content Creators** can now track and convert metadata from camera to screen
 * **Product Vendors** can now integrate more metadata types for less initial
@@ -275,12 +275,12 @@ What I've not included in the numbers is how {{% metarex %}} can give an almost 
   file formats with no extra effort
 * **Metadata Consumers** can benefit by simultaneously managing and using
   multiple transformed variants of source metadata without increasing costs
-* **The Industry** can benefit by spending the money saved by {{% metarex %}}
+* **The Industry** can benefit by spending the money saved by {{< metarex >}}
   on creating rich, metadata driven workflows instead of just leaving the
   metadata on the floor
 * **The planet** might benefit if we spent microWatts of energy remembering the source metadata rather than spending kiloWatts of energy guessing what was lost by using an AI algorithm
 
-If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact] us. 
+If you or your company have a question about MetaRex, metadata or want to get involved with the {{< metarex >}} **Project** [contact] us. 
 
 Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth. 
 
