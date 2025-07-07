@@ -151,8 +151,9 @@ snippets:
     export VERB="BUILD"
     export CHK="pre-build build"
     export MAKE="hugo ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
-    export EXE="podserver"
-    export TITLE="podserver"
+    export EXE="podserver"            # force golang to make podserver exe
+    export TITLE="podserver"          # force semver to be called podserver
+    export DOCKER_NS="metarexmedia"   # force the repo to be metarexmedia
     clog bc-flowx                     # use the generic flow script
   # PROJECT config -----------------------------------------------------------------------------------------------------
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
