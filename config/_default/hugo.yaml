@@ -114,7 +114,27 @@ menus:
       pre:  "⏯️ "
       post: " 🦖"
       weight: 120
-# links to linkedin left & right
+
+  footer:
+    - name: FoHuW
+      identifier: fohuw
+      pre: ✏️
+      URL: https://github.com/mrmxf/fohuw
+    - name: Mr MXF
+      identifier: mrmxf
+      pre: © 2025
+      URL: https://mrmxf.com
+    - name: Privacy
+      identifier: privacy
+      URL: https://mrmxf.com/privacy
+    - name: Contact
+      pre: ❓
+      identifier: contact
+      URL: /contact
+    - name: About
+      identifier: about
+      URL: /about
+
 
 # --- Git ---------------------------------------------------------------------
 # Will give values to .Lastmod etc.

@@ -14,8 +14,8 @@
   ],
   "workbench.colorTheme": "Quiet Light",
     "workbench.colorCustomizations": {
-    // "statusBar.background": "#1a1c88",
-    // "sideBar.background": "#e4d2f0",
+    // "statusBar.background": "#b429b48c",
+    // "sideBar.background": "#9987ebab",
   },
   "editor.wordWrap": "on",
   "markdown.preview.fontSize": 12,
