@@ -2,7 +2,7 @@
 title:       Specifications
 linkTitle:   Specifications
 date:        2025-02-19
-weight:      30
+weight:      50
 description: How does MetaRex work under the hood?
 ---
 

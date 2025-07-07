@@ -5,17 +5,12 @@ date:        2024-04-20
 description: Something not working?  Please let us know. 
 type:        docs
 
-menu:
-  main:
-    name:    Support
-    parent:  tech
-    weight:  100
-
 url:         "/support/"
 
 tags:       ["support"] 
 oldtags:    ["admin", "support"]
 ---
+
 
 <div>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
