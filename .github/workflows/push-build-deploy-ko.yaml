@@ -1,6 +1,6 @@
+---
 # Copyright ©2017-2025  Mr MXF   info@mrmxf.com
 # BSD-3-Clause License           https://opensource.org/license/bsd-3-clause/
-# clogwork - collection of reusable actions and tools for Mr MXF project.
 #
 #                      _            _             _   _      _ 
 #   _ __   _  _   ___ | |_    ___  | |__   _  _  (_) | |  __| |
@@ -39,7 +39,7 @@ jobs:
 
   # Build job
   build:
-    uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
+    uses: mrmxf/clog/.github/workflows/build/hugo.yaml@main
     with:
       artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
@@ -51,4 +51,4 @@ jobs:
      
   dump-context:
     # needs: [build]
-    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
+    uses: mrmxf/clog/.github/workflows/dump/context.yaml@main

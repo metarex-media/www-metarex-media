@@ -116,7 +116,7 @@ NAB this year. You will be able to play with the examples online - even if you'r
   metadata on the floor
 * **The planet** might benefit if we spent microWatts of energy remembering the source metadata rather than spending kiloWatts of energy guessing what was lost by using an AI algorithm
 
-If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact] us. 
+If you or your company have a question about MetaRex, metadata or want to get involved with the {{% metarex %}} **Project** [contact]({{< relref "/contact" >}}) us. 
 
 Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
 [W.1931][n]

@@ -36,7 +36,7 @@ jobs:
 
   # Build job
   build:
-    uses: mrmxf/clogwork/.github/workflows/build-hugo.yaml@main
+    uses: mrmxf/clog/.github/workflows/build/hugo.yaml@main
     with:
       artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
@@ -48,4 +48,4 @@ jobs:
      
   dump-context:
     # needs: [build]
-    uses: mrmxf/clogwork/.github/workflows/dump-context.yaml@main
+    uses: mrmxf/clog/.github/workflows/dump/context.yaml@main

@@ -28,7 +28,6 @@ clog:
 # -----------------------------------------------------------------------------
 snippets:
   # build control - see core via clog Init
-  bc-main-repo: echo "mrmxf/www-mrx-2507"
   bc-artifacts: echo "tmp/artifacts"
   bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
