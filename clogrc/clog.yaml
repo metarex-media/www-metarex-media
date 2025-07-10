@@ -173,13 +173,13 @@ snippets:
       export PROJECT="$(basename $(pwd))"              # project you're building
     has:
       git-lfs: |
-        git lfs --version 2>/dev/null|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
+        git lfs version 2>/dev/null|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'|head -1
       golang: |
         go version|grep -oE '[0-9]+\.[0-9]+\.[0-9]+'
       hugo: |
         hugo version|grep -oE 'v[0-9]+\.[0-9]+\.[0-9]+'
     needs:
-      git-lfs: echo "3.6.1"
+      git-lfs: echo "3.7.0"
       # grab the golang version from go.mod
       golang: cat go.mod|grep '^go '|grep -oE '[0-9]\.[0-9]+\.[0-9]+'
       # hunt for the hugo version
@@ -231,13 +231,17 @@ check:
           [[ "$(clog project has git-lfs)"  == "$(clog project needs git-lfs)" ]]
         ok: clog Log -I "git-lfs $(clog project has git-lfs) good"
         catch: |
-          clog Log -W "git-lfs: bad version. Need $(clog project needs git-lfs), got $(clog project has git-lfs)"
+          lfs="$(clog prohect has git-lfs)"
+          [ -z "$lfs" ] && clog Log -W "git-lfs not installed"
+          [ -n "$lfs" ] && clog Log -W "git-lfs: bad version. Need $(clog project needs git-lfs), got $(clog project has git-lfs)"
       - name: docker?
         try: which docker 2>/dev/null
         ok: clog Log -I "docker ok"
         catch: clog Log -E "docker not on path"
-      # - name: docker-login
-      #   try: |
-      #     docker manifest inspect metarex-media/www-metarex-media > /dev/null 2>&1
-      #   ok: clog Log -I "you can access the docker hub to push images"
-      #   catch: clog Log -E "cannot access hub metarex-media/www-metarex-media - login as metarex!"
+      - name: theme replacements
+        try: |
+          themeReplacements="$(yq -r '.replacements' config/_default/module.yaml)"
+          [[ "null" == "$themeReplacements" ]] && exit 0
+          exit 1
+        ok: clog Log -I "theme will be pulled from github"
+        catch: clog Log -E "local theme replacement kill github action ($(yq -r '.replacements' config/_default/module.yaml))"; exit 1
