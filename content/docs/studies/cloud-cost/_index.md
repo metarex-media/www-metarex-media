@@ -1,7 +1,7 @@
 ---
 title:       C3 - Cloud Cost Comparator
-linkTitle:   Cloud Cost Comparator
-date:        2025-05-12
+linkTitle:   C3 - Cloud Cost Comparator
+date:        2025-07-10
 description: How metarex can build an API to cost your running cloud
 ---
 <!-- markdownlint-disable MD033 -->
