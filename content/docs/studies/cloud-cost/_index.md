@@ -12,7 +12,7 @@ description: How metarex can build an API to cost your running cloud
 ```mermaid
 flowchart TD
 %% Nodes
-    A("🛠️ Build a Cloud System")
+    A("🛠️ Spawn a Cloud System")
     D["▶️ Run in different modes"]
     B[("🖥️ Model in mrx-COST")]
     C("🕵🏻 Trace with Open Telemetry (OTEL)")
