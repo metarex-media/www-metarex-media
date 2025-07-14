@@ -15,7 +15,7 @@ linkTitle:   IBC-2023 Summary
       controls  = true
  >}}
 
-{{% metarex %}} was at IBC in Hall 3 on the Responsive Narrative Factory Pod.
+{{< metarex >}} was at IBC in Hall 3 on the Responsive Narrative Factory Pod.
 
 <div class="ui red message"><div class="header">
   <a href="https://www.bbc.co.uk/programmes/p0f8xhj4" target="_blank">BBC</a>

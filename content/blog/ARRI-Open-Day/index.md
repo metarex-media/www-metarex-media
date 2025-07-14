@@ -1,10 +1,10 @@
 ---
-title:       MXF-LIVE at ARRI International Broadcast Day 2019
-linkTitle:   ARRI day
+title:       MXF-Live at the ARRI International Broadcast Day
+linkTitle:   MXF-LIVE at ARRI day
 date:        2019-07-20
 description: The ARRI International Broadcast Day in 2019
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
-tags:        ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
+tags:        ["project", "ARRI", "Mr MXF", "event"]
 oldtags:     ["mxf", "project", "ARRI", "Mr MXF", "Trackmen", "Nablet"]
 
 resources:
@@ -24,7 +24,7 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 ## Live Metadata Capture and Rendering in MXF
 
-This 2 year project was a pre-cursor to [{{% metarex %}}](https://metarex.media)
+This 2 year project was a pre-cursor to [{{< metarex >}}](https://metarex.media)
 
 {{< fo t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"

@@ -16,7 +16,7 @@ description: Who is Rexy & why the dinosaur logo?
 
 ## Why the dinosaur?
 
-The {{% metarex %}} logo (the dinosaur) was created by Amber Bardell.
+The {{< metarex >}} logo (the dinosaur) was created by Amber Bardell.
 
 The original concept of our logo was to symbolize how the media tech
 industry uses metadata – ***like a dinosaur driving a steam train*** - it mostly
@@ -60,4 +60,4 @@ and character development.  You can read about Rexy's [backstory][backstory] and
 [SZ]:      https://simizeko.com
 [blog]:    {{% relref "blog/creative-team/index.md" %}}
 [contact]: {{% relref "/contact" %}}
-[backstory]:    {{% relref "rexy/backstory/index.md" %}}
+[backstory]:    {{% relref "rexy-area/backstory/index.md" %}}

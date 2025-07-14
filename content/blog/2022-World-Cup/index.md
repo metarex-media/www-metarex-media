@@ -1,6 +1,6 @@
 ---
-title:       "2022 World Cup"
-linkTitle:   "2022 World Cup"
+title:       "Katya reports on metadata workflow"
+linkTitle:   "Katya's report on metadata workflow"
 date:        2022-12-08
 description: Katya reports from the SVG on metadata flows.
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
@@ -15,15 +15,10 @@ oldtags:    ["project",  "football", "yellowbasket"]
    srcWidth = 0.2
    alt = "photograph of Katya" 
 >}}
-The [FIFA] World Cup Qatar 2022 is nearly over, and the [FIFA] World Cup
-Division, which is responsible for the broadcast production, and Host Broadcast
-Services ([HBS]) produce a remarkable worldwide coverage, which include
+The [FIFA] World Cup Qatar 2022 is nearly over, and the [FIFA] World Cup Division, which is responsible for the broadcast production, and Host Broadcast Services ([HBS]) produce a remarkable worldwide coverage, which include
 traditional broadcasting, OTT broadband and mobile streaming.
 
-If we leave the art of the game itself and look in to the technology of the
-spectacle, we can see a huge jump forwards in creating a single, unified,
-UHD/HDR capture-transmission workflow for all 64 matches. This approach allows
-all distribution formats to be generated in a single workflow, greatly
+If we leave the art of the game itself and look in to the technology of the spectacle, we can see a huge jump forwards in creating a single, unified, UHD/HDR capture-transmission workflow for all 64 matches. This approach allows all distribution formats to be generated in a single workflow, greatly
 streamlining operations and setup.
 
 [Fifa]: https://www.fifa.com/
@@ -96,7 +91,7 @@ away a chance to boost content creation and output. Content will be stored via
 XAVC-I at 1080p/50, and the server also supports ingest and delivery in HDR
 (with SDR preview). If only we knew and could measure what portion of the live,
 time based metadata associated with the media found its way to the cloud based
-storage.  A {{% metarex %}} fire-hose of metadata might have enriched the quality,
+storage.  A {{< metarex >}} fire-hose of metadata might have enriched the quality,
 quantity and **searchability** of assets.
 
 {{< /fo >}}

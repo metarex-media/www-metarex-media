@@ -13,7 +13,7 @@ tags:        ["signiant", "PoC"]
 
 Signiant Jet can be triggered to capture live events by connecting to an Arqiva
 Live Picture Exchage Directory ([LPX]). An event is selected and an automatic
-ETL (**E**xtract, **T**ransform & **L**oad) from {{% metarex %}} provides
+ETL (**E**xtract, **T**ransform & **L**oad) from {{< metarex >}} provides
 native metadata to Jet:
 
 * show descriptive & QC text in the Jet UI for display

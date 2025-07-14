@@ -1,9 +1,9 @@
 ---
-title:       Coding for Media
-linkTitle:   Coding for Media
+title:       "Empowering the next generation of women in tech"
+linkTitle:   "Empowering the next generation of women in tech"
 layout:      blog
 date:        2024-02-20
-description: "Next Tech Girls - Wemen in the tech industry"
+description: "Special event with Eviden and Next Tech Girls"
 author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:        ["event"]
 ---
@@ -31,9 +31,6 @@ A special thank you, to Anila, Sirine and Yasmin for the drawing and well done t
 
 
 [Coding for Media]:   https://www.linkedin.com/posts/mrmxf_next-tech-girls-x-eviden-x-aws-coding-for-activity-7163130183867179008-zAQg
-
 [Next Tech Girls]:  https://nexttechgirls.com
-
 [Eviden]:  https://fr.linkedin.com/company/eviden?trk=public_post-text
-
 [Bruce Devlin]:   https://www.linkedin.com/in/mrmxf/

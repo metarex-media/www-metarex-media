@@ -26,6 +26,18 @@ clog:
 #  / _/ |_||_| |_| | .__/ | .__/ \___|  \__| /__/
 #   ||             |_|    |_|
 # -----------------------------------------------------------------------------
+#
+# websites are built with the common clog bc (build control) commands
+#
+# env CHK & env MAKE hold tokens for clog build and clog deploy
+#  e.g. CHK="pre-build build"; MAKE="hugo podserver ko" - these are tokens
+#
+# check runs         clog Check TOKEN                 in the order within CHK
+# build runs snippet clog bc TOKEN $doProd $modeMSG   in the order within MAKE
+#
+# doProd is  "prod" for production builds
+# modeMSG is a display message for the reason we're doing "prod"
+
 snippets:
   # build control - see core via clog Init
   bc-artifacts: echo "tmp/artifacts"
@@ -55,12 +67,12 @@ snippets:
     doPROD="$1"
     modeMSG="$2"
 
-    ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
+      ERR=0
+      clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
 
-    [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
-    clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
-    rm -rf kodata/*
+      [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
+      clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
+      rm -rf kodata/*
 
     opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
     clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
@@ -72,8 +84,8 @@ snippets:
     doPROD="$1"
     modeMSG="$2"
 
-    ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
+      ERR=0
+      clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
 
     [ -z "$doPROD" ] && devTAG="-dev"
     [ -n "$(clog bc-wants-stage-flow)" ]&& stageTAG="-stage"

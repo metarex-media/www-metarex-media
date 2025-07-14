@@ -1,6 +1,6 @@
 ---
 title:        Thank you Qibb
-linkTitle:    Thank you Qibb
+linkTitle:    Qibb - thank you
 date:         2024-08-27
 description:  "A specail MetaRex thank you to all our sponsers, backers and partners"
 author:       Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -12,15 +12,15 @@ oldtags:      ["project", "event"]
 without them. If you sign up to Rexy's fun **[IBC treasure hunt][ths]** then
 you'll have a chance of ***winning a cuddly Rexy!***
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears in jigsaw form at the moment!
 
 <img class="ui centered bordered rounded image" src = "featured-qibb.png" alt="qibb">
 
-**[qibb][web]** is supporting {{% metarex %}} in creating no-code visual
+**[qibb][web]** is supporting {{< metarex >}} in creating no-code visual
 workflows.
 
-With qibb's native support for [OpenAPI][oapi], services in the {{% metarex %}}
+With qibb's native support for [OpenAPI][oapi], services in the {{< metarex >}}
 [registry][reg] become available reliably and securely, even if the end user
 wasn’t aware that metadata was accessible when they started the job. qibb + {{%
 metarex %}} = metadata magic! 🦖✨✨

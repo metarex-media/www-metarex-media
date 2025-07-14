@@ -9,7 +9,7 @@ tags: ["backers"]
 ---
 
 {{< fo t = "banner"
-    header = "The {{% metarex %}}.media project needs you"
+    header = "The {{< metarex >}}.media project needs you"
     description = "If you use metadata - [read our white paper blog post](/blog/2024/03/21/2024-03-25-white-paper-blog/)."
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
@@ -43,7 +43,7 @@ elevated to a different tier. Fill in the [contact] form to get started.
 ## Silver Backer - The Leaders
 
 We are looking for Silver Tier Backers. Silver Tier backers pledge £10,000
-during the project. They will form the leadership of the {{% metarex %}} work
+during the project. They will form the leadership of the {{< metarex >}} work
 packages (e.g. QC, Virtual Production, Mastering etc.). Silver Tier backers
 approve our external communications and also enjoy the benefits of the regular
 backer tier. Fill in the [contact] form to get started.
@@ -57,7 +57,7 @@ project or promises work-in-kind to help the project move forwards. A backer
 get their name and logos on the website and, where possible, will be named at
 events on marketing materials. Backers are invited to online work meetings and
 can take part in votes. Backers will be invited to contribute to our regular
-blog posts about {{% metarex %}} to keep the industry informed about our
+blog posts about {{< metarex >}} to keep the industry informed about our
 progress. Fill in the [contact] form to get started.
 
 <a id="free"></a>
@@ -72,7 +72,7 @@ our newsletter. Fill in the [contact] form to get started.
 ## Project Partners
 
 Project partners are trade associations and other bodies that represent groups
-whose work influences or will be influenced by the work of {{% metarex %}}. We
+whose work influences or will be influenced by the work of {{< metarex >}}. We
 work with project partnters to ensure maximum benefit for minimum friction with
 external entities. There is no charge to be a project partner and getting set up
 is a simple as filling in the [contact] form and getting started.

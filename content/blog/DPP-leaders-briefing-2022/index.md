@@ -2,7 +2,7 @@
 title:       "DPP Leaders Briefing"
 linkTitle:   "DPP Leaders Briefing"
 date:        2022-11-16
-description: An awesome brain-trust agree there is a problem to fix.
+description: An awesome brain-trust agree there is a problem to fix...
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        
 oldtags:     ["project",  "Mr MXF", "DPP"]

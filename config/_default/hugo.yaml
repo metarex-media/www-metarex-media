@@ -28,12 +28,12 @@ menus:
     - name: Case Studies
       URL: /docs/studies/
       parent: tech
-      weight: 20
+      weight: 50
       identifier: specs
     - name: MetaRex Register
       URL: /app/reg/
       parent: tech
-      weight: 50
+      weight: 20
       identifier: appreg
     - name: Demos
       URL: /app/demos/
@@ -71,18 +71,7 @@ menus:
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Demo
-      URL: /app/demos/
-      identifier: feed
-      pre:  "⏯️ "
-      post: " 🦖"
-      weight: 150
-    - name: Feed Rexy
-      URL: /donate/
-      identifier: cake
-      pre:
-      post: "  🦖🍰"
-      weight: 200
+
 # links to linkedin left & right
   
   

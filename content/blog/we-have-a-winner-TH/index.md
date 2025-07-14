@@ -1,6 +1,6 @@
 ---
 title:       We have a winner!
-linkTitle:   We have a winner!
+linkTitle:   and the Winner is.....
 layout:      blog
 date:        2024-09-16
 description: "Many thanks to everyone who took part!"

@@ -1,8 +1,8 @@
 ---
-title:       What a great NAB 2024!
-linkTitle:   What a great NAB 2024!
+title:       "What a great NAB 2024!"
+linkTitle:   "What a great NAB 2024!"
 date:        2024-04-23
-description: "A {{% metarex %}} thanks to every visitor at NAB 2024"
+description: "A {{< metarex >}} thanks to every visitor at the NAB Show, 2024"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["event"]
 oldtags:     ["project", "smpte", "osvp"]
@@ -22,9 +22,9 @@ params:
 >}}
 <!-- markdownlint-disable MD025 -->
 
-## Thank you to all the visitors & new Backer at NAB 2024
+## Thank you to all our visitors and new Backer at NAB 2024!
 
-The [award winning][0] {{%  metarex %}} project lit many mental light bulbs at this years NAB. We showed 12 wildly different workflow examples that used a single, service-oriented {{% metarex %}} codebase.  Most people understood that self describing metadata allows simple low code and no code workflows - even if the metadata you're using was unknown when the workflow started.  Interestingly, The [Green Software Foundation](https://podcast.greensoftware.foundation/) podcast from 2024-04-04 explained how low code and no code workflows are often lower carbon than hosts of dedicated workflows - another plus point for {{% metarex %}}.
+The [award winning][0] {{%  metarex %}} project lit many mental light bulbs at this years NAB. We showed 12 wildly different workflow examples that used a single, service-oriented {{< metarex >}} codebase.  Most people understood that self describing metadata allows simple low code and no code workflows - even if the metadata you're using was unknown when the workflow started.  Interestingly, The [Green Software Foundation](https://podcast.greensoftware.foundation/) podcast from 2024-04-04 explained how low code and no code workflows are often lower carbon than hosts of dedicated workflows - another plus point for {{< metarex >}}.
 
 The demos will appear online on our website in the next couple of weeks for anyone to play with. We'd particularly like to thank all the existing
 [Backers](/backers) that made NAB 2024 possible, with a special shout out to the folks at [Signiant](https://signiant.com) who hosted us so wonderfully.

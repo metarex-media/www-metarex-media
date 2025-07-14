@@ -15,11 +15,11 @@ params:
 
 **[{{% param backer %}}][web]** is one of our wonderful partners and we couldn’t be successful without them and having them support us in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
-Be sure to follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
+Be sure to follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
 
 <img  class="ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 
-**[{{% param backer %}}][web]** loves being a supporter of {{% metarex %}}. You can fit **[{{% param backer %}}][web]** anywhere into your streaming
+**[{{% param backer %}}][web]** loves being a supporter of {{< metarex >}}. You can fit **[{{% param backer %}}][web]** anywhere into your streaming
 workflows.
 
 We’ve been big in TV commercials ever since we started out in 2019, getting

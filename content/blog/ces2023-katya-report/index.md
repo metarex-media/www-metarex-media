@@ -1,8 +1,8 @@
 ---
-title:       "CES 2023 report"
-linkTitle:   "CES 2023 report"
+title:       "What are Katya's thoughts on the CES 2023 Show?"
+linkTitle:   "What are Katya's thoughts on the CES 2023 Show?"
 date:        2023-01-12
-description: Katya reports on the CES 2023 Show.
+description:  Katya spends a few moments giving us a report on CES
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
 tags:        ["event"]
 oldtags:     ["project",  "CES", "yellowbasket"]
@@ -60,7 +60,7 @@ The conference session also had Metaverse topics with important speakers and wel
 * _Influencers and Actors in the Metaverse_
 * _Metaverse meets Office Space_
 
-However, the most important for {{% metarex %}} project appears to be the Conference Stream at the Aria conference centre:
+However, the most important for {{< metarex >}} project appears to be the Conference Stream at the Aria conference centre:
 
 * _Hollywood streaming and Metaverse_
 
@@ -76,7 +76,7 @@ author of [Interconnected Realities:]_How the Metaverse Will Transform Our Relat
 Needless to say that engineering part of Metaverse today in term of
 standartization is much weaker than the futurist dreams about it, so here we are: Closing the gap.
 
-{{% metarex %}} roar!
+{{< metarex >}} roar!
 {{< /fo >}}
 <!-- ####################################################################### -->
 

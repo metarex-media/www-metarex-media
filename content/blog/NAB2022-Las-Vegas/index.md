@@ -1,14 +1,12 @@
 ---
-title:       NAB 2022 in Las Vegas
-linkTitle:   NAB 2022
+title:       "Is MetaRex needed?"
+linkTitle:   "Is MetaRex needed?"
 date:        2022-04-23
-description: Is {{% metarex %}} needed?  We talked to companies at NAB 2022
+description: Is {{< metarex >}} needed?  We talked to companies at NAB Show 2022
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
 tags:        ["project",  "event"]
 oldtags:     ["project",  "Mr MXF", "IBC"]
 ---
-
-## NAB Show 2022
 
 {{< fo t = "block"
   id    = "summary"
@@ -17,7 +15,7 @@ oldtags:     ["project",  "Mr MXF", "IBC"]
   srcOn = "left"
 >}}
 
-Intelligent Content was a key theme of the show and the {{% metarex %}} team wandered the show floor expecting to find that all the problems had been solved by existing products and services.
+Intelligent Content was a key theme of the show and the {{< metarex >}} team wandered the show floor expecting to find that all the problems had been solved by existing products and services.
 
 It came as a surprise to find that the world can fill 80% of the world's internet traffic with streams of video and audio, but the metadata transport puzzle was still a piecemeal region-by-region, application-by-application, device-by-device tailored solution.
 {{< /fo >}}
@@ -25,7 +23,7 @@ It came as a surprise to find that the world can fill 80% of the world's interne
 {{< fo t = "block"
   id    = "block2"
 >}}
-We proposed the {{% metarex %}} project to gauge interest Specifically we asked:
+We proposed the {{< metarex >}} project to gauge interest Specifically we asked:
 
 * Is transporting and preserving media metadata a problem?
 * Would it help if there were a common `zip-like` solution for any metadata?
