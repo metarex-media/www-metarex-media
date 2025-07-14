@@ -84,6 +84,7 @@ snippets:
       echo "HUGO_msg=\"❌ failed\"" >> "$(clog bc-artifacts)"
       exit $(((ERR+=$?)))
     fi
+    echo "$VERB_trigger=\"$(clog git origin)\"" >> "$(clog bc-artifacts)"
     echo "HUGO_msg=\"✅ ok\"" >> "$(clog bc-artifacts)"
 
   # worker function ko (dev)-----------------------------------------------------------------------------------------------
@@ -108,9 +109,7 @@ snippets:
     export KO_CONFIG_PATH=".ko.yaml"                           # build options
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
 
-    echo "${VERB}_tag1=\"$tag1\"" >> "$(clog bc-artifacts)"
-    echo "${VERB}_tag2=\"$tag2\"" >> "$(clog bc-artifacts)"
-    echo "${VERB}_repo=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_dst=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
 
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
     ((ERR+=$?))
