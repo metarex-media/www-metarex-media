@@ -19,6 +19,7 @@ on:
     tags-ignore:                # ignore pushes that are also tags
       - '*'
 
+# Default to bash
 defaults:
   run:
     shell: bash
@@ -35,8 +36,11 @@ jobs:
   build:
     uses: mrmxf/clog/.github/workflows/build-hugo.yaml@main
     with:
-      artifact-name: kodata
+      # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
+      bc-from: "trigger: 😺🎬 push ${{ github.actor }} from ${{ github.repository.name }}:${{ github.ref_name }}"
+      bc-toast: "😺🎬 push ${{ github.actor }} ⇒⇒ ${{ github.repository.name }}"
+
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
