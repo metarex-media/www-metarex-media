@@ -38,8 +38,8 @@ jobs:
     with:
       # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      bc-from: "trigger: 😺🎬 push ${{ github.actor }} from ${{ github.repository.name }}:${{ github.ref_name }}"
-      bc-toast: "😺🎬 push ${{ github.actor }} ⇒⇒ ${{ github.repository.name }}"
+      bc-from: "trigger: 😺🎬 push by 🥷${{ github.actor }} from ${{ github.repository }}:${{ github.ref_name }}"
+      bc-toast: "😺🎬 push by 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
 
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}

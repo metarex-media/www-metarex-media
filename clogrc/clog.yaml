@@ -115,7 +115,7 @@ snippets:
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
     ((ERR+=$?))
     if [ $ERR -gt 0 ]; then
-      msg="❌ failed $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      msg="❌ failed $PROJECT:$tag1 and $tag2"
       echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
       clog Log -E "$msg"
       exit $(((ERR+=$?)))

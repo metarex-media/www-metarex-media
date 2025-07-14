@@ -37,8 +37,8 @@ jobs:
     with:
       # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      bc-from: "trigger: 😺🎬⏰ schedule ${{ github.actor }} from ${{ github.repository.name }}:${{ github.ref_name }}"
-      bc-toast: "😺🎬⏰ schedule ${{ github.actor }} ⇒⇒ ${{ github.repository.name }}"
+      bc-from: "trigger: 😺🎬⏰ schedule on ${{ github.repository.name }}:${{ github.ref_name }}"
+      bc-toast: "😺🎬⏰ schedule build ⇒⇒ ${{ github.repository.name }}"
 
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}

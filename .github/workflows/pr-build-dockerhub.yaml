@@ -37,8 +37,8 @@ jobs:
     with:
       # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      bc-from: "trigger: 😺🎬 PR ${{ github.actor }} from ${{ github.event.repository.name }}:${{ github.ref_name }}"
-      bc-toast: "😺🎬 PR ${{ github.actor }} ⇒⇒ ${{ github.repository.name }}"
+      bc-from: "trigger: 😺🎬 PR from 🥷${{ github.actor }} from ${{ github.event.repository.name }}:${{ github.ref_name }}"
+      bc-toast: "😺🎬 PR from 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
 
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
