@@ -39,20 +39,23 @@ clog:
 # modeMSG is a display message for the reason we're doing "prod"
 
 snippets:
-  # build control - see core via clog Init
-  bc-artifacts: echo "tmp/artifacts"
+  #        _         
+  #   ||_ | |__   __ 
+  #  (_-< | '_ \ / _|
+  #  / _/ |_.__/ \__|
+  #   ||             
+  bc-main-repo: echo "metarex-media/www-metarex-media"
   bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cW not implemented yet$cX - come back later"
     exit 0
-  bc-main-prod-tag: yq -r 'first(.[] | select(.type=="main" and .build=="prod") | .version)' "$(clog bc-releases-yaml)"
-  # worker function - main website -----------------------------------------------------------------------------------
+  # worker function - main website (dev) -----------------------------------------------------------------------------------
   bc-main-prod-checkout: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
     vMain="$(clog bc-main-prod-tag)"
 
     ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  bc-main-checkout  $modeMSG→$cF setup queries for daily build/"
+    clog Log -I "$STEP.$(((++s))).⚒️  bc-main-prod-checkout  $modeMSG→$cF setup queries for daily build/"
     [ -z "vMain" ]&&clog Log -E "releases.yaml has no entry with type=main build=prod"&&exit (((++ERR)))
     git checkout "vMain"
     [ $? -gt 0 ]&&clog Log -E "cannot checkout to tag $cE$vMain"&&exit (((++ERR)))
@@ -67,32 +70,37 @@ snippets:
     doPROD="$1"
     modeMSG="$2"
 
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
+    ERR=0
+    clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
 
-      [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
-      clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
-      rm -rf kodata/*
+    [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
+    clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
+    rm -rf kodata/*
 
     opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
     clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
     hugo build --minify --logLevel info $opt
-    exit $(((ERR+=$?)))
+    if [ $? -gt 0 ]; then
+      echo "HUGO_msg=\"❌ failed\"" >> "$(clog bc-artifacts)"
+      exit $(((ERR+=$?)))
+    fi
+    echo "HUGO_msg=\"✅ ok\"" >> "$(clog bc-artifacts)"
+
   # worker function ko (dev)-----------------------------------------------------------------------------------------------
   bc-ko: |
     eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
     doPROD="$1"
     modeMSG="$2"
 
-      ERR=0
-      clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
+    ERR=0
+    clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
 
     [ -z "$doPROD" ] && devTAG="-dev"
     [ -n "$(clog bc-wants-stage-flow)" ]&& stageTAG="-stage"
     
     tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
     tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
-    
+
     # config is in .ko.yaml
     # use the default docker repo unless told otherwise
     [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
@@ -100,21 +108,21 @@ snippets:
     export KO_CONFIG_PATH=".ko.yaml"                           # build options
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
 
-    echo "${VERB}tag1=\"$tag1\"" >> "$(clog bc-artifacts)"
-    echo "${VERB}tag2=\"$tag2\"" >> "$(clog bc-artifacts)"
-    echo "${VERB}repo=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_tag1=\"$tag1\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_tag2=\"$tag2\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_repo=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
 
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
     ((ERR+=$?))
     if [ $ERR -gt 0 ]; then
-      msg="ko build failed $cE $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      msg="❌ failed $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+      echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
       clog Log -E "$msg"
-      printf "$msg" > /tmp/clog-notify
-      exit 1
+      exit $(((ERR+=$?)))
     fi
-    msg="multi-arch ko build$cF $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+    msg="✅ ok $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
     clog Log -S "$msg"
-    printf "$msg" > /tmp/clog-notify
+    echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
   # worker function flowx (dev)----------------------------------------------------------------------------------------------
   # this is the core, generic flow script - it never appears in MAKE
   # $VERB is the title for display
@@ -140,32 +148,50 @@ snippets:
       clog bc-log-divider
     done
 
+    flowMsg=""
     for TOK in "${mTOKs[@]}"; do
       ((STEP++))
-      clog bc-"$TOK" "$doPROD" "$modeMSG"
+      clog bc-"$TOK" "$doPROD" "$modeMSG"                         # run the flow
+      flowMsg="$flowMsg$TOK: \$$(echo $TOK|tr a-z A-Z)_msg, "  # msg accumulator
       ((ERR+=$?))
       clog bc-log-divider
     done
 
-    icon="✅";[ $ERR -gt 0 ] && icon="❌"
+    if [ $ERR -gt 0 ]; then
+      icon="❌"
+      logFlag="-E"
+    else
+      icon="✅"
+      logFlag="-S"
+    fi
+    flowMsg="${flowMsg}errs: $ERR$icon."                               # msg end
     printf -v MSG "$icon $VERB $modeMSG complete with %d errors" $ERR
 
-    echo "${VERB}status=$ERR" >> "$(clog bc-artifacts)"
-    echo "${VERB}msg=\"$MSG\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_level=\"$logFlag\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_msg=\"$flowMsg\"" >> "$(clog bc-artifacts)"      # summary msg
 
     clog Log -B "$ERR" "$doPROD" "$MSG" "$MSG" || exit 1; #abort if PROD
     exit 0
 
   # ui build function
   build: |
-    rm "$(clog bc-artifacts)/*"   #remove artifacts at build start
+    mkdir -p "$(dirname $(clog bc-artifacts))"
     export VERB="BUILD"
+    echo "NOTIFICATIONS=\"$VERB\"" > $(clog bc-artifacts)      # reset artifacts
+
     export CHK="pre-build build"
     export MAKE="hugo ko"; [[ "MAKE" == "$1" ]] && MAKE="$2"
-    export EXE="podserver"            # force golang to make podserver exe
-    export TITLE="podserver"          # force semver to be called podserver
-    export DOCKER_NS="metarexmedia"   # force the repo to be metarexmedia
-    clog bc-flowx                     # use the generic flow script
+    export EXE="podserver"                 # force golang to make podserver exe
+    export TITLE="podserver"               # force semver to be called podserver
+    export DOCKER_NS="metarexmedia"        # force the repo to be metarexmedia
+    clog bc-flowx                          # use the generic flow script
+
+    # The toast message says what we were doing - override in github action script
+    echo "${VERB}_toast=\"😺🪝 build metarex.media\"" >> "$(clog bc-artifacts)"
+
+    # The from message says where it came from - override in github action script
+    echo "${VERB}_from=\"trigger: clog $VERB\""
+
   # PROJECT config -----------------------------------------------------------------------------------------------------
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
