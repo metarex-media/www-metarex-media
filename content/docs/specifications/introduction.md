@@ -67,7 +67,7 @@ Some features of the [MXF profile] are extensions of the [MXF-live profile] that
 was demonstrated in 2019 at the [ARRI Broadcast Day].
 
 The [MXF profile] document is a work in progress - if you want to contribute to
-it or have issues with the design approach then please [contact] us or join the
+it or have issues with the design approach then please [contact]({{< relref "/contact" >}}) us or join the
 project to help us complete the work an give away the software.
 
 Some desires of the final {{% metarex %}} MXF profile:

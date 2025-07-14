@@ -1,6 +1,6 @@
 module github.com/metarex-media/www-metarex-media
 
-go 1.24.0
+go 1.24.3
 
 //replace github.com/mrmxf/clog => ../../pub-mrmxf/clog
 
