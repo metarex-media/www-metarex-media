@@ -1,6 +1,6 @@
 ---
 title:       Thank you DPP
-linkTitle:   Thank you DPP
+linkTitle:   DPP - thank you
 date:        2024-09-11
 description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

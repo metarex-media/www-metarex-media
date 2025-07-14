@@ -10,7 +10,6 @@ menu:
     weight:  11
 
 url:         "/collaborations/"
-
 tags:     ["collaborations"]
 oldtags:  ["backers"]
 ---

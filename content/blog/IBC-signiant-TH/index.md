@@ -1,11 +1,11 @@
 ---
 title:       Thank you Signiant
-linkTitle:   Thank you Signiant
+linkTitle:   Signiant - thank you 
 date:        2024-09-05
 description: "Many thanks to all our Supporters, Backers and Partners"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
-oldtags:    ["project",  "backers"]
+oldtags:     ["project",  "backers"]
 params:
   publish:
     linkedin:  true
@@ -15,7 +15,7 @@ params:
 
 **[{{% param backer %}}][web]** is one of our wonderful Backers and we couldn’t be successful without them.  A big thanks for supporting us in the ***MetaRex Treasure Hunt*** at IBC 2024.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to for the latest updates. 
+Follow {{< metarex >}} on [LinkedIn][limrx] to for the latest updates. 
 
 <img  class = "ui centered bordered rounded image" src = "featured-{{% param img %}}.png" alt = "{{% param img %}}">
 

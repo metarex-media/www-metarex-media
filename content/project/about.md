@@ -30,12 +30,12 @@ menu:
     alt = "rexy train logo"
  />}}
 
-{{% metarex %}} is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow. This will make it easier to preserve production and post-production metadata than it is to lose it or leave it behind.
+{{< metarex >}} is an initiative dedicated to developing an open-source framework for the transport of media metadata. This framework will allow you to preserve, transport, identify, and use metadata from many sources in a single workflow. This will make it easier to preserve production and post-production metadata than it is to lose it or leave it behind.
 
 
 ### A (very) brief history of MetaRex
 
-The {{% metarex %}} project started back in 2022. We had a small board of members which initially create the Gold Teir Backers and led the structure and health of the company. 
+The {{< metarex >}} project started back in 2022. We had a small board of members which initially create the Gold Teir Backers and led the structure and health of the company. 
 At the end of 2024, the board was dissolved. 
 
 The project was completely funded by Backers.  We had three tiers, **Gold, Sliver and Regular** and each tier contributed towards to MetaRex project. 

@@ -4,7 +4,7 @@ linkTitle:   Project
 date:        2025-02-19
 weight:      10
 type:       docs
-description:  What is the {{% metarex %}} project? Where did it come from?  What will it deliver?
+description:  What is the {{< metarex >}} project? Where did it come from?  What will it deliver?
 menu:
   main:
     identifier: project
@@ -27,14 +27,14 @@ oldtags:   ["docs", "project"]
 
 It's super easy to send anything by FedEx - even a baby dinosaur! You just put your stuff in a box and they slap two labels on it.
 
-1. The Destination - send to {{% metarex %}} HQ
+1. The Destination - send to {{< metarex >}} HQ
 2. The Manifest - a bar code that points to a database. The record in the database says **_Baby Dinosaur - do not drop_**
 
 Magic happens and the box travels over train networks, air networks, couriers, bicycles and just gets to where you want it.
 
 **So why is it so hard to send media metadata?**
 
-That's the problem that {{% metarex %}} solves
+That's the problem that {{< metarex >}} solves
 
 1. Map the `mrx` container into networks so that destination addresses work.
 2. Define a database (register) of manifests so that you know what's in the

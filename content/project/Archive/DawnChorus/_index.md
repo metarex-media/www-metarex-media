@@ -17,7 +17,7 @@ See the [Proof of Concept Spec](poc)
 
 * [RNF Timeline]
 * [RNF on IBC Website]
-* [mrx-tool] - a test tool that implements the {{% metarex %}} protocol
+* [mrx-tool] - a test tool that implements the {{< metarex >}} protocol
 * [mrx-demo] - some demonstration data for the test tool to simulate [Responsive Narrative Factory] workflows
 
 {{% sitelinks %}}

@@ -1,8 +1,8 @@
 ---
-title:       "MetaRex Creative Team"
-linkTitle:   "MetaRex Creative Team"
+title:       "MetaRex's Creative Team"
+linkTitle:   "MetaRex's Creative Team"
 date:        2023-07-27
-description: Amber tells us where the art comes from.
+description: Amber tells us where all the MetaRex art comes from.
 author:      Amber Bardell [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["connectivity", "rexy"]
 oldtags:     ["project",  "IBC", "RNF", "Amber"]

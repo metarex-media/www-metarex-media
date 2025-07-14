@@ -1,8 +1,8 @@
 ---
-title:       "CES preview"
-linkTitle:   "CES preview"
+title:       "Katya's preview of the CES Show"
+linkTitle:   "Katya's preview of the CES Show"
 date:        2023-01-04
-description: Katya reports on the upcoming CES 2023 Show.
+description: Preview on the upcoming CES 2023 Show
 author:      Ekaterina Petoukhova [@in](https://www.linkedin.com/in/ekaterina-petoukhova-84141959/)
 tags:      ["event"]  
 oldtags:   ["project",  "CES", "yellowbasket"]
@@ -16,7 +16,7 @@ oldtags:   ["project",  "CES", "yellowbasket"]
 >}}
 
 **CES®2023** will take place in **Las-Vegas, Nevada** 5th - 8th of January 2023 and
-{{% metarex %}} is going to be there!
+{{< metarex >}} is going to be there!
 
 It is the most influential tech event in the world – the proving ground for
 breakthrough technologies and global innovators. This is where the world's
@@ -24,7 +24,7 @@ biggest brands do business and meet new partners, and the sharpest innovators
 hit the stage. Owned and produced by the Consumer Technology Association (CTA)®,
 CES features every aspect of the tech sector.
 
-{{% metarex %}}’s area of interest will be audio-video, however, all new
+{{< metarex >}}’s area of interest will be audio-video, however, all new
  technology are well connected with visualization now. It stands not only with
  TV & Gaming, but also with automotive & medicine, home technology and all other
  sectors that involve moving images and humans. With more than 11 official

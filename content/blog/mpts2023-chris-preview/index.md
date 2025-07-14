@@ -1,8 +1,8 @@
 ---
-title:       "MetaRex at MPTS"
-linkTitle:   "MetaRex at MPTS"
+title:       "MetaRex at MPTS 2023"
+linkTitle:   "MetaRex at MPTS Show 2023"
 date:        2023-05-04
-description: Chris talks us through MetaRex at MPTS 2023.
+description: Chris talks us through MetaRex at MPTS 2023
 author:      Chris Parry [@in](https://www.linkedin.com/in/chris-parry-2b0a607/)
 tags:       ["event",  "connectivity"] 
 oldtags:    ["project",  "NAB", "MrMXF"]

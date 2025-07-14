@@ -1,6 +1,6 @@
 ---
 title:       Thank you Cinnafilm
-linkTitle:   Thank you Cinnafilm
+linkTitle:   Cinnafilm - thank you 
 date:        2024-09-06
 description: "Many thanks to all our supporters with the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
@@ -30,7 +30,7 @@ and standards conversions; transcoding and complex image packaging.  Combined,
 these tools provide the finest-looking, optimized video and image sequences for
 *“media now and everywhere”* distribution models.
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before
 the show. She’s shy and only appears behind books and furniture at the moment!
 
 [@Cinnafilm](https://www.linkedin.com/company/cinnafilm-inc./)

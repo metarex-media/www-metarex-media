@@ -1,10 +1,10 @@
 ---
-title:       IBC Show 2022
-linkTitle:   IBC 2022
+title:       "Thougths after IBC Show 2022"
+linkTitle:   "Thoughts after IBC2022"
 date:        2022-09-18
 description: Finding support on the show floor of IBC 2022.
 author:      Bruce Devlin [@mrmxf](https://twitter.com/mrmxf)
-tags:       ["event"]
+tags:        ["event"]
 oldtags:     ["project",  "Mr MXF", "IBC", "Modulamedia"]
 ---
 
@@ -24,7 +24,7 @@ Many folks were investing in AI technologies to guess at the metadata that gets 
 {{< fo t = "block" 
   id    = "block2"
 >}}
-My big take away is that if we run the {{% metarex %}} project with the
+My big take away is that if we run the {{< metarex >}} project with the
 following constraints then it is likely to be a success:
 
 * Make free software that anyone can use to transport metadata.

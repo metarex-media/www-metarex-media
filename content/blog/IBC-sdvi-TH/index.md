@@ -1,8 +1,8 @@
 ---
 title:       Thank you SDVI
-linkTitle:   Thank you SDVI
+linkTitle:   SDVI - thank you 
 date:        2024-08-22
-description: "{{% metarex %}} sends a big thank you!"
+description: "{{< metarex >}} sends a big thank you!"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
 old tags:    ["project",  "backers"]
@@ -14,7 +14,7 @@ params:
 
 **[SDVI][sdvi]** is one of our wonderful backers and we couldn’t be successful without their continued support. 
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
 
 <img class = "ui centered bordered rounded image" src = "featured-sdvi.png" alt = "sdvi">
 

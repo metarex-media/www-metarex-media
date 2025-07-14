@@ -1,6 +1,6 @@
 ---
 title:       Thank you Ross
-linkTitle:   Thank you Ross
+linkTitle:    ROSS, thank you
 date:        2024-09-10
 description: "Many thanks all our Sponsors, Backers and Partners for taking part in the Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)

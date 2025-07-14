@@ -16,7 +16,7 @@ oldtags:     ["mxf", "Nablet", "Trackmen", "ARRI"]
  >}}
 
 Details of the mxf-live project can be found in this [blog] post. 
-For further details of the release can be found in the {{% metarex %}}[Docs](https://metarex.media/docs/) section.
+For further details of the release can be found in the {{< metarex >}}[Docs](https://metarex.media/docs/) section.
 
 This specification was the impetus for starting the MetaRex project.  We hope to
 repeat the demo on a larger scale with a more generic solution in 2024.

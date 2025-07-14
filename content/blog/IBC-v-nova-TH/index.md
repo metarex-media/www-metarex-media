@@ -1,8 +1,8 @@
 ---
 title:       Thank you V-Nova
-linkTitle:   Thank you V-Nova
+linkTitle:   V-Nova - a special thank you!
 date:        2024-08-23
-description: "A special {{% metarex %}} thanks to V-Nova for their support and hosting the Prize Draw for the MetaRex Treasure Hunt"
+description: "A special {{< metarex >}} thanks to V-Nova for their support and hosting the Prize Draw for the MetaRex Treasure Hunt"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations",  "event"]
 oldtags:     ["project",  "backers"]
@@ -13,7 +13,7 @@ params:
 
 **[V-Nova][web]** is one of our wonderful Backers and we couldn’t be successful without them.  Many thanks to them supporting us in the ***MetaRex Treasure Hunt*** at IBC 2024 and being the hosts for the Prize Draw! 
 
-Follow {{% metarex %}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
+Follow {{< metarex >}} on [LinkedIn][limrx] to catch a glimpse of Rexy before the show.
 
 <img class="ui centered bordered rounded image" src = "featured-v-nova.png" alt="V-Nova">
 

@@ -16,7 +16,7 @@ Less than 2 weeks to go until this years IBC!
 
 Rexy is enjoying the UK sunshine and reading a little bit of family history before travelling to Amsterdam for her Debut on Sunday afternoon in the IBC [AI Zone][rxydraw]. 
 
-Follow {{% metarex %}} on [LinkedIn][limrx] for all the latest updates on Rexy and MetaRex!
+Follow {{< metarex >}} on [LinkedIn][limrx] for all the latest updates on Rexy and MetaRex!
 
 <img  class = "ui centered bordered rounded image" src = "featured-{{% param img %}}.jpg" alt = "{{% param img %}}">
 

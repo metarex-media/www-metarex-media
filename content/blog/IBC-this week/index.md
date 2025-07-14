@@ -2,7 +2,7 @@
 title:       Rexy is off to IBC
 linkTitle:   Rexy is off to IBC!
 date:        2024-09-09
-description: "First visit to IBC for the Rexy"
+description: "First visit to the IBC Show for Rexy (she even got herself a new hairstyle for the event!)"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["collaborations", "event"]
 oldtags:     ["project",  "backers"]
@@ -14,8 +14,8 @@ params:
 ---
 
 **[{{% param backer %}}][web]** is off to this years IBC. She hasn't quite figured out
-selfies yet, but  on Sunday afternoon in the IBC2024 [AI Zone][rxydraw] she'll be
-ready for her first public outing! 
+selfies yet, but on Sunday afternoon in the IBC2024 [AI Zone][rxydraw] she'll be
+ready for her first public outing!  
 
 Visit our [sponsors and backers][thp] to see the best in Metadata workflows at
 IBC and visit our [website][web], try one of our [demos], or just [contact] us

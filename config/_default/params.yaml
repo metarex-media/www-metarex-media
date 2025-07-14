@@ -1,6 +1,6 @@
 # --- Hugo fohuw site.Params are all in this yaml -----------------------------------
 copyright:        Mr MXF Ltd
-privacy_policy:   /privacy
+privacy_policy:   https://mrmxf.com/privacy/
 contact:          /contact
 time_format_blog: 2006-01-02
 
@@ -179,6 +179,10 @@ links:
   # Site relevant links. These will show up on right side of footer and in the community page if you have one.
   site:
     - name: Privacy Policy
-      url: docs/reference/project/privacy/
+      url:  https://mrmxf.com/privacy/
       icon: "fab fa-user-shield"
       desc: "metarex.media privacy policy"
+    - name: T+C
+      url:  https://mrmxf.com/T+C/
+      icon: "fab fa-user-shield"
+      desc: "mrmxf t+c"
