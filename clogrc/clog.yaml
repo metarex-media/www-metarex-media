@@ -119,7 +119,7 @@ snippets:
       clog Log -E "$msg"
       exit $(((ERR+=$?)))
     fi
-    msg="✅ ok $PROJECT$cX:$cW$tag1$cX and ${cW}$tag2"
+    msg="✅ ok $PROJECT:$tag1 and $tag2"
     clog Log -S "$msg"
     echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
   # worker function flowx (dev)----------------------------------------------------------------------------------------------
