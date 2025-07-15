@@ -66,7 +66,7 @@ snippets:
 
   # worker function hugo (dev)---------------------------------------------------------------------------------------------
   bc-hugo: |
-    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
+    eval "$(clog Source project config); $(clog Crayon)"  # setting & highlights
     doPROD="$1"
     modeMSG="$2"
 
@@ -84,7 +84,7 @@ snippets:
       echo "HUGO_msg=\"❌ failed\"" >> "$(clog bc-artifacts)"
       exit $(((ERR+=$?)))
     fi
-    echo "$VERB_trigger=\"$(clog git origin)\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_trigger=\"$(clog git origin)\"" >> "$(clog bc-artifacts)"
     echo "HUGO_msg=\"✅ ok\"" >> "$(clog bc-artifacts)"
 
   # worker function ko (dev)-----------------------------------------------------------------------------------------------
