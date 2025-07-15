@@ -14,11 +14,12 @@ name: push-build-dockerhub
 run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 
 on:
-  workflow_dispatch:            # run manually from Actions tab
-  push:                         # run every push
-    tags-ignore:                # ignore pushes that are also tags
-      - '*'
+  workflow_dispatch:             # run manually from Actions tab
+  push:                          # run every push
+    tags-ignore:                 # we want ONLY pushes, not create tags
+      - '**'                     # ignore pushes with non non-empty tags
 
+# Default to bash
 defaults:
   run:
     shell: bash
@@ -35,8 +36,12 @@ jobs:
   build:
     uses: mrmxf/clog/.github/workflows/build-hugo.yaml@main
     with:
-      artifact-name: kodata
+      # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
+      bc-from: "trigger: 😺🎬 push by 🥷${{ github.actor }} from ${{ github.repository }}:${{ github.ref_name }}"
+      bc-toast: "😺🎬 push by 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
+      bc-trigger: "${{ github.event.repository.html_url }}"
+      
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}
       get_clog: ${{ secrets.GET_CLOG }}
