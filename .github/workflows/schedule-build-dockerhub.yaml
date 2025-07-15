@@ -39,7 +39,7 @@ jobs:
       docker_ns: ${{ vars.DOCKER_NS }}
       bc-from: "trigger: 😺🎬⏰ schedule on ${{ github.repository.name }}:${{ github.ref_name }}"
       bc-toast: "😺🎬⏰ schedule build ⇒⇒ ${{ github.repository.name }}"
-      bc-trigger: ${{ github.event.repository.html_url }}
+      bc-trigger: "${{ github.event.repository.html_url }}"
 
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}

@@ -40,7 +40,7 @@ jobs:
       docker_ns: ${{ vars.DOCKER_NS }}
       bc-from: "trigger: 😺🎬 push by 🥷${{ github.actor }} from ${{ github.repository }}:${{ github.ref_name }}"
       bc-toast: "😺🎬 push by 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
-      bc-trigger: ${{ github.event.repository.html_url }}
+      bc-trigger: "${{ github.event.repository.html_url }}"
       
     secrets:
       docker_pat: ${{ secrets.DOCKER_PAT }}

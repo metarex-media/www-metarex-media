@@ -109,7 +109,7 @@ snippets:
     export KO_CONFIG_PATH=".ko.yaml"                           # build options
     export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
 
-    echo "${VERB}_dst=\"$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
+    echo "${VERB}_target=\"https://hub.docker.com/r/$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
 
     ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
     ((ERR+=$?))
@@ -189,7 +189,7 @@ snippets:
     echo "${VERB}_toast=\"😺🪝 build metarex.media\"" >> "$(clog bc-artifacts)"
 
     # The from message says where it came from - override in github action script
-    echo "${VERB}_from=\"trigger: clog $VERB\""
+    echo "${VERB}_trigger=\"trigger: clog $VERB\""
 
   # PROJECT config -----------------------------------------------------------------------------------------------------
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
