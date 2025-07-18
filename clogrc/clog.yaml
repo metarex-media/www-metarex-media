@@ -132,7 +132,7 @@ snippets:
     cTOKs=($CHK)
     mTOKs=($MAKE)
 
-    modeMSG="$(clog bc-prod-logic-build)"
+    modeMSG="$(clog bc-dev-prod-msg)"
     [[ "${modeMSG:0:4}" == "prod" ]] && doPROD="prod"
 
     eval "$(clog Source project config); $(clog Crayon)"  # setting & highlight
