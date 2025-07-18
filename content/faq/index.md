@@ -119,6 +119,13 @@ tags:        ["faq"]
       Carrying binary, text, isochronous and event driven metadata. Identifying the metadata via a registry and providing links to applications and schemas that can shed light on how to process that metadata. By harmonising the identification and transport of the metadata, an infrastructure can be built to keep the stuff that we currently lose.</p>
     </div>
     <div class="title">
+    <i class="dropdown icon"></i>
+      How could {{< metarex >}} benefit me?
+    </div>
+    <div class="content">
+      <p class="transition hidden">We can help you streamline your workflows and connect you with our growing network of companies.  Your involvement will give you the opportunity to adapt the MetaRex framework to your requirements and make life easier, workflow faster and cheaper for you!</p>
+    </div>
+    <div class="title">
       <i class="dropdown icon"></i>
       Ummm.... I have another question?
     </div>

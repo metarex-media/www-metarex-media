@@ -5,10 +5,6 @@ date:        2025-02-19
 weight:      10
 type:       docs
 description:  What is the {{< metarex >}} project? Where did it come from?  What will it deliver?
-menu:
-  main:
-    identifier: project
-    weight: 100
 tags:      []  
 oldtags:   ["docs", "project"]
 ---

@@ -16,7 +16,7 @@ For every little bit of support, the **MetaRex Creative Team** really do appreci
 
 ### Rexy Style Guide
 
-For the detailed version of the MetaRex's logo and colour palette, see our [Style Guide] page.  
+For the detailed version of the MetaRex's logo and colour palette, see our [Style Guide][SG] page.  
 
 ### Rexy Artwork
 
@@ -97,8 +97,7 @@ For the detailed version of the MetaRex's logo and colour palette, see our [Styl
 </div>
 
 
-
-[Style Guide]:  {{% relref "/project/Admin/style-guide.md" %}}
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
 [donate]:  {{% relref "/donate/index.md" %}}
+[SG]:  {{% relref "/rexy/style-guide/style-guide.md" %}}

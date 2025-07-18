@@ -1,14 +1,14 @@
 ---
 title:       History of MetaRex
 date:        2024-08-28
-linkTitle:   History 
+linkTitle:   History of MetaRex
 url:         /history
 type:        docs
 
 menu:
   main:
-    parent: project
-    weight:   9
+    parent: About
+    weight:   100
 
 # Use the block/cover shortcode to have a picture landing page
 ---

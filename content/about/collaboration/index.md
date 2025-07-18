@@ -6,7 +6,7 @@ type:        docs
 menu:
   main:
     name:    Collaborations
-    parent:  project
+    parent:  About
     weight:  11
 
 url:         "/collaborations/"
@@ -27,9 +27,8 @@ We have worked with some amazing people and companies over the years. Here are s
 Without all their support we would not of been able to get to were we are today.  Many thanks to everyone's support! 
 
 {{< fo t = "include"
-    from = "/project/collaboration/backer-list.md"
+    from = "/about/collaboration/backer-list.md"
 />}}
-
 
 
 ### Other projects 
