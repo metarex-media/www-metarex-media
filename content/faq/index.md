@@ -22,7 +22,6 @@ tags:        ["faq"]
 
 />}}
 
-## Project
 
 <div class="ui basic styled accordion">
     <div class="title">
@@ -40,7 +39,7 @@ tags:        ["faq"]
        <p class="transition hidden">The idea for Rexy was first created between Amber, Simi and Bruce.  The original idea was to represent the media industry and how old-fashioned the ways of working with metadata can be.  
        This is represented by the train and dinosaur.</p>
        </p>Also, who doesn’t love a cute, baby dinosaur!</p>
-       </p>For more information look at our Rexy page.</p>
+       </p>For further detail on the creative side of MetaRex and Rexy, have look at our Rexy's Corner.</p>
     </div>
     <div class="title">
       <i class="dropdown icon"></i>
@@ -70,8 +69,6 @@ tags:        ["faq"]
     </div>
 </div>
 
- ## Engineering
-
 <div class="ui basic styled accordion">
     <div class="title">
       <i class="dropdown icon"></i>
@@ -97,12 +94,30 @@ tags:        ["faq"]
     </div>
     <div class="content">
       <p class="transition hidden">You can view the MetaRex GitHub here</p>
+      </div>
+    <div class="title">
+      <i class="dropdown icon"></i>
+      So why is it so hard to send media metadata?
     </div>
-</div>
-
- ## Extra
-
-<div class="ui basic styled accordion">
+    <div class="content">
+      <p class="transition hidden">That’s the problem that MetaRex solves.  
+      Map the mrx container into networks so that destination addresses work. Define a database (register) of manifests so that you know what’s in the mrx container. An added bonus is that the mrx register can publish cloud endpoints to manage the metadata - this can lead to no code integrations. That should be nice!</p>
+    </div>
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Why would I want to use {{< metarex >}}?
+    </div>
+    <div class="content">
+      <p class="transition hidden">Because today, every Virtual Set and engineering heavy production is a custom build. Every QC report is unlinked to the master content and version workflows lose metadata when content is processed by third parties.</p>
+    </div>
+    <div class="title">
+    <i class="dropdown icon"></i>
+      What is {{< metarex >}} good for?
+    </div>
+    <div class="content">
+      <p class="transition hidden">
+      Carrying binary, text, isochronous and event driven metadata. Identifying the metadata via a registry and providing links to applications and schemas that can shed light on how to process that metadata. By harmonising the identification and transport of the metadata, an infrastructure can be built to keep the stuff that we currently lose.</p>
+    </div>
     <div class="title">
       <i class="dropdown icon"></i>
       Ummm.... I have another question?
@@ -112,10 +127,10 @@ tags:        ["faq"]
       </p>Otherwise, you can book a meeting with us if you or your company have any issues with metadata and think MetaRex can help.</p> 
       </p>Or fill in our Contact Form if you have any questions about {{< metarex >}}.</p>
       </p>We would be happy to help! 🦖</p>
-     </div>
+    </div>
 </div>
 
-
+[RC]:   "/rexy-area/_index.md"
 [form]:  https://metarex.media/contact/
 [linkedin]:  https://www.linkedin.com/company/metarex-media
 [Instagram]: https://www.instagram.com/metarex.media?igsh=MWNidHNudDB5MXlwMA%3D%3D
