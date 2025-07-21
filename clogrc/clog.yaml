@@ -37,6 +37,7 @@ clog:
 #
 # doProd is  "prod" for production builds
 # modeMSG is a display message for the reason we're doing "prod"
+# messages are appended to tmp/artifacts as env definitions e.g. BUILD_msg="yay it builded"
 
 snippets:
   #        _         
@@ -44,135 +45,17 @@ snippets:
   #  (_-< | '_ \ / _|
   #  / _/ |_.__/ \__|
   #   ||             
+  # build control logic for this repo - all commands start with bc-
+  #  clog bc-releases-yaml    - path of releases.yaml
+  #  clog bc-main-prod-tag    - the latest line in releases.yaml with flow="release" build="prod"
+  #  clog Init                - creates a tmp-clog-core.yaml to inspect the available bc- primitive scripts
   bc-main-repo: echo "metarex-media/www-metarex-media"
   bc-instagram: |
     eval "$(clog Crayon)" # setting & highlights
     clog Log -W  "    ✖️ $cC clog instagram$cW not implemented yet$cX - come back later"
     exit 0
-  # worker function - main website (dev) -----------------------------------------------------------------------------------
-  bc-main-prod-checkout: |
-    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-    vMain="$(clog bc-main-prod-tag)"
-
-    ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  bc-main-prod-checkout  $modeMSG→$cF setup queries for daily build/"
-    [ -z "vMain" ]&&clog Log -E "releases.yaml has no entry with type=main build=prod"&&exit (((++ERR)))
-    git checkout "vMain"
-    [ $? -gt 0 ]&&clog Log -E "cannot checkout to tag $cE$vMain"&&exit (((++ERR)))
-
-    # we are now checked out to the production snapshot $vMain
-    # releases.yaml and scripts
-    #clog instagram fetch metarex latest tmp/insta-mrx
-
-  # worker function hugo (dev)---------------------------------------------------------------------------------------------
-  bc-hugo: |
-    eval "$(clog Source project config); $(clog Crayon)"  # setting & highlights
-    doPROD="$1"
-    modeMSG="$2"
-
-    ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  build hugo  $modeMSG→$cF kodata/"
-
-    [ ! -d content ] && clog Log -E "$STEP.$(((++s))). no content/ folder" && exit 1
-    clog Log -I "$STEP.$(((++s))). purge$cF kodata/$cX, build site"
-    rm -rf kodata/*
-
-    opt="";[ -z "$doPROD" ]  && opt="$opt --buildDrafts --buildFuture --buildExpired"
-    clog Log -I "$STEP.$(((++s))). build hugo $modeMSG→${cF}kodata/$cC $opt"
-    hugo build --minify --logLevel info $opt
-    if [ $? -gt 0 ]; then
-      echo "HUGO_msg=\"❌ failed\"" >> "$(clog bc-artifacts)"
-      exit $(((ERR+=$?)))
-    fi
-    echo "${VERB}_trigger=\"$(clog git origin)\"" >> "$(clog bc-artifacts)"
-    echo "HUGO_msg=\"✅ ok\"" >> "$(clog bc-artifacts)"
-
-  # worker function ko (dev)-----------------------------------------------------------------------------------------------
-  bc-ko: |
-    eval "$(clog Source project config); $(clog Crayon)" # setting & highlights
-    doPROD="$1"
-    modeMSG="$2"
-
-    ERR=0
-    clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
-
-    [ -z "$doPROD" ] && devTAG="-dev"
-    [ -n "$(clog bc-wants-stage-flow)" ]&& stageTAG="-stage"
-    
-    tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
-    tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
-
-    # config is in .ko.yaml
-    # use the default docker repo unless told otherwise
-    [ -z "$KO_DOCKER_REPO" ] && KO_DOCKER_REPO="$DOCKER_NS"
-    export KO_DOCKER_REPO                                      # push to repo
-    export KO_CONFIG_PATH=".ko.yaml"                           # build options
-    export KO_DATA_DATE_EPOCH=$(git log -1 --format='%ct')     # date on image
-
-    echo "${VERB}_target=\"https://hub.docker.com/r/$KO_DOCKER_REPO/$PROJECT\"" >> "$(clog bc-artifacts)"
-
-    ko build --base-import-paths --sbom=none --tags "$tag1" --tags "$tag2" .
-    ((ERR+=$?))
-    if [ $ERR -gt 0 ]; then
-      msg="❌ failed $PROJECT:$tag1 and $tag2"
-      echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
-      clog Log -E "$msg"
-      exit $(((ERR+=$?)))
-    fi
-    msg="✅ ok $PROJECT:$tag1 and $tag2"
-    clog Log -S "$msg"
-    echo "KO_msg=\"$msg\"" >> "$(clog bc-artifacts)"
-  # worker function flowx (dev)----------------------------------------------------------------------------------------------
-  # this is the core, generic flow script - it never appears in MAKE
-  # $VERB is the title for display
-  # $CHK & $MAKE contain tokens that clog perform
-  #   check:  clog Check $TOK
-  #   build:  clog bc-$TOK
-  bc-flowx: |
-    cTOKs=($CHK)
-    mTOKs=($MAKE)
-
-    modeMSG="$(clog bc-prod-logic-build)"
-    [[ "${modeMSG:0:4}" == "prod" ]] && doPROD="prod"
-
-    eval "$(clog Source project config); $(clog Crayon)"  # setting & highlight
-    clog Log -I  "🤖 $VERB $modeMSG$cS $PROJECT$cX MAKE ${#mTOKs[@]} steps:$cC ${mTOKs[@]}"
-
-    ERR=0; export STEP=0
-
-    for TOK in "${cTOKs[@]}"; do
-      clog Log -I "$(((++STEP))).  Check $TOK"
-      clog Check "$TOK"
-      ((ERR+=$?))
-      clog bc-log-divider
-    done
-
-    flowMsg=""
-    for TOK in "${mTOKs[@]}"; do
-      ((STEP++))
-      clog bc-"$TOK" "$doPROD" "$modeMSG"                         # run the flow
-      flowMsg="$flowMsg$TOK: \$$(echo $TOK|tr a-z A-Z)_msg, "  # msg accumulator
-      ((ERR+=$?))
-      clog bc-log-divider
-    done
-
-    if [ $ERR -gt 0 ]; then
-      icon="❌"
-      logFlag="-E"
-    else
-      icon="✅"
-      logFlag="-S"
-    fi
-    flowMsg="${flowMsg}errs: $ERR$icon."                               # msg end
-    printf -v MSG "$icon $VERB $modeMSG complete with %d errors" $ERR
-
-    echo "${VERB}_level=\"$logFlag\"" >> "$(clog bc-artifacts)"
-    echo "${VERB}_msg=\"$flowMsg\"" >> "$(clog bc-artifacts)"      # summary msg
-
-    clog Log -B "$ERR" "$doPROD" "$MSG" "$MSG" || exit 1; #abort if PROD
-    exit 0
-
-  # ui build function
+ 
+    # ui build function
   build: |
     mkdir -p "$(dirname $(clog bc-artifacts))"
     export VERB="BUILD"
@@ -196,9 +79,7 @@ snippets:
   git:
     # get the target version for this project from releases.yaml
     tag:
-      ref: yq -r '.[0].version' "$(clog bc-releases-yaml)"
-      # a go package needs a preceding "v"
-      refgo: echo "v$(clog git tag ref)"
+      ref: echo "$(yq -r '.[0].version'"$(clog bc-releases-yaml)")" #only prefix with v for golang projects
     message:
       ref: yq -r '.[0].note' "$(clog bc-releases-yaml)"
     suffix: |
