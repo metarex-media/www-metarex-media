@@ -14,6 +14,7 @@ date:      2024-08-13
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
 
 {{< fo t = "feature-group" >}}
+  <!--  A feature group can have several feature blocks within it. They should self-close or can have body content -->
   {{< fo t = "feature"
     blockClass = "ui green segment"         divClass = blockClass
     class      = "ui green message"         msgClass = class
@@ -27,7 +28,7 @@ date:      2024-08-13
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
     header     = "What is MetaRex?"         name = header
-    src        = "img/dino/rexy-what-does-it-do.png"
+    src        = "img/dino-artwork/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
     link       = "project/introduction/"
@@ -36,7 +37,7 @@ date:      2024-08-13
     blockClass = "ui red segment"           divClass = blockClass
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
-    src        = "img/dino/rexy-case-study.png"
+    src        = "img/dino-artwork/rexy-case-study.png"
     srcClass   = "ui fluid image"
     alt        = "dino doing research"
     link       = "docs/studies/"
@@ -45,7 +46,7 @@ date:      2024-08-13
     blockClass = "ui blue segment"          divClass = blockClass
     class      = "ui blue message"          msgClass = class
     header     = "Why is it good?"          name = header
-    src        = "img/dino/rexy-benefits.png"
+    src        = "img/dino-artwork/rexy-benefits.png"
     alt        = "rexy with microphone"
     link       = "faq/index.md"
   />}}
