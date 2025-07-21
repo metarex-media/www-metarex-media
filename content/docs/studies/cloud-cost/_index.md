@@ -85,7 +85,15 @@ platforms. You can download it and run it with your own cloud accounts.
     * `test` ephemeral smaller/less redundant clusters to get the test command & Grafana graphs working
     * `stage` ephemeral full size/security/redundant clusters approve test methodology
     * `prod` smaller/less redundant clusters to get the framework parameters right
-   
+* Configuration
+    * `c3.yaml` - base configuration of groups, tags, test durations, source content etcc
+    * `common-presets` - data applying to all tests e.g. amazon account / azure account etc.
+    * `{GROUP}` - data applying to {GROUP} Only - e.g. `ga`
+    * `{GROUP}-{MODE}` - data applying to {GROUP}-{MODE} Only - e.g. `ga-dev`#
+* Analysis
+    * All resources are uniquely tagged
+       * to separate infrastructure costs from tests costs
+       * to separate costs from different compute / reqource sizes
 
 
 [c3]: https://github.com/metarex-media/mrx-c3-tool

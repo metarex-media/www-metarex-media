@@ -97,7 +97,7 @@ snippets:
     clog Log -I "$STEP.$(((++s))).⚒️  build ko $modeMSG→$cU hub.docker.com/$DOCKER_NS$cX"
 
     [ -z "$doPROD" ] && devTAG="-dev"
-    [ -n "$(clog bc-wants-stage-flow)" ]&& stageTAG="-stage"
+    [ -n "$(clog bc-flow-stage)" ]&& stageTAG="-stage"
     
     tag1="$(clog git tag ref)$devTAG" # 1.2.3 | 1.2.3-stage | 1.2.3-stage-dev
     tag2="latest$stageTAG$devTAG"     # latest | latest-stage | latest-dev | latest-stage-dev
