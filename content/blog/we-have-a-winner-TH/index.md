@@ -24,13 +24,11 @@ Congratulations to [Amy] from [France Télévisions] on winning a cuddly **Rexy*
 
 Many thanks to all our supporters and everyone who took part!
 
-{{< fo t = "image"
-    src = "winner-of-rexy.png"
-    alt = "winner of rexy"
-/>}}
+<img  class="ui centered medium image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
 
 {{< fo t = "image"
     src = "ibc2024-with-rexy.png"
+    srcClass = "ui centered medium image"
     alt = "rexy on the ibc logo"
 />}}
 

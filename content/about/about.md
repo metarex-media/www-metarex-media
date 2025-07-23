@@ -31,10 +31,34 @@ menu:
 It’s super easy to send anything by FedEx - even a baby dinosaur! 🦖 
 You just put your stuff in a box (or letter) and they slap two labels on it with a barcode, then send it off. 
 
-With {{< metarex >}} it is very similar process, except no physical box or letter!
+With {{< metarex >}} it is very similar process, except no physical box or letter!   {{< metarex >}} is like Fedex for metadata.
 
 1. **The Destination** - send to MetaRex HQ 
 2. **The Manifest** - a barcode that points to a database.  Magic happens and the box travels over train networks, air networks, couriers, bicycles and just gets to where you want it to. 
+
+-----
+
+<div class="ui center aligned header">{{< metarex >}} Flow Diagram</div>
+
+{{< fo t = "image-fluid"  
+    src = "/img/mrx-flow.png" 
+    srcClass = "ui centered large image"
+    name = "The MetaRex Flow Diagram 2024" 
+    id = "showCaption" 
+    alt = "metarex flow diagram"
+/>}}
+
+* **Sender**
+  * The Sender wraps their metadata in a standardized container.
+  * A label is applied to identify the contents
+  * The mapper puts the container on a transport: NDI, ST 2110, email, FTP etc.
+* **Receiver**
+  * The receiver takes the containers from the transport
+  * The unwrapper reads the label to handle the data as clocked / unclocked,
+    text / binary
+  * The unwrapper extracts the metadata and may use a web service to do something automatic with the data e.g. make an overlay / transcode to the receiver's preferred format.
+  * The end user now has access to, potentially, several variants of the metadata before they write their first line of code.
+
 
 -----
 

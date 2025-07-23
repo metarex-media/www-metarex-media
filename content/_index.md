@@ -68,7 +68,7 @@ date:      2024-08-13
     header     = "News Ingest"   
     text       = "VC6 Case Study"            
     src        = "img/vc6.png"
-    srcClass   = "ui fluid image"
+      = "ui fluid image"
     alt        = "vc6 logo"
     link       = "https://vc6.metarex.media"
   />}}

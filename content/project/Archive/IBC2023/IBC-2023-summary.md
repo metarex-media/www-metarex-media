@@ -8,7 +8,6 @@ linkTitle:   IBC-2023 Summary
       src         =  "https://metarex.media/rnf/sources/rnf-sizzle.mp4"
       poster      =  "/img/event/ibc2023-poster-rnf-sizzle.png"
       header      =  "Best IBC Accelerator Project 2023"
-      extra       =  "IBC Hall 3 Friday at 14:00"
       id          =  "splash"
       class       = "ui fluid olive card"
       autoplay  = true

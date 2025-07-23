@@ -35,7 +35,7 @@ Without all their support we would not of been able to get to were we are today.
 
 *  **Winner of the IBC Accelerator 2023** [Responsive Narrative Factory](/project/archive/ibc2023/).
 
-*  [Empowering the next generation of women in tech][CM] with Eviden and Next Tech Girls. 
+*  [Empowering the next generation of women in tech](/blog/coding-for-media/index.md) with Eviden and Next Tech Girls. 
 
 *  [MetaRex Treasure Hunt][TH] at IBC 2024. 
 
