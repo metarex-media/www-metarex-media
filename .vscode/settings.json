@@ -62,4 +62,7 @@
     ],
     "editor.tabSize": 2
   },
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ],
 }

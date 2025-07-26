@@ -10,7 +10,7 @@ tags:         ["event"]
 
 {{< fo t = "image"
   id    = "Rexy at MPTS"
-  src   = "/mpts2025/rexy-mpts.png"
+  src   = "img/blog/rexy-mpts.png"
   srcClass = "ui fluid image"
   alt = "rexy at MPTS"
 />}}
@@ -24,9 +24,8 @@ Many thanks to our panelists, [Dagmar Driesnack][DD], [Dee Davison][Dee], [Rich 
 
 {{< fo t = "image"
   id    = "Rexy at MPTS"
-  src   = "/mpts2025/mpts-2025-session.png"
+  src   = "blog/rexy-mpts.png"
   srcOn = "left"
-  alt = "list of panelist" 
 />}}
 
 {{< fo t = "image"
