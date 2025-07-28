@@ -11,7 +11,16 @@ params:
     linkedin:  true
 ---
 
+
+{{< fo t = "image"
+   src = "featured-goals.jpg" 
+   srcClass = "ui fluid small image"
+   alt = "goals"
+/>}}
+
 Here are some of the key objectives for the {{%  metarex %}} Project:
+
+
 
 {{< fo t = "block"
   id    = "summary"

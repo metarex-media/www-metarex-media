@@ -23,6 +23,7 @@ A special thanks to V-Nova for hosting and allowing us to announce the winnner o
 
 {{< fo t = "image"
    src = "annoucing-rexy-winner.png" 
+   srcClass = "ui fluid image"
    alt = "annoucing the winner" 
    srcClass = "ui centered large image"
 />}}

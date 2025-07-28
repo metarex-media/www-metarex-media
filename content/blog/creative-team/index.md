@@ -15,6 +15,7 @@ featured:    /img/amber-simi.png
   src      = "/img/amber-simi.png"
   alt      = "drawing of Amber and Simi"
   srcOn    = "left"
+  srcClass = "ui fluid image"
   srcLink  = "https://www.amberbardell.com"
 >}}
 <!-- markdownlint-disable MD025 -->
@@ -69,20 +70,9 @@ Rex is still a very young dinosaur, so expect to see some character development!
   alt      = "a drawing from Amber of a purple flower"
 >}}
 
-For the scenery, Amber usually makes a plan of the whole scene and then gets
-stuck right into individual assets. Their illustrative style for this project
-uses chunky black lines and bright, layered colours. Simi takes these digital
-drawings and starts mocking up a scene in Unreal Engine. This way, we can
-continually make adjustments and update the assets as much as we like, seeing
-how they interact with Rex and the environment as a whole.
+For the scenery, Amber usually makes a plan of the whole scene and then gets stuck right into individual assets. Their illustrative style for this project uses chunky black lines and bright, layered colours. Simi takes these digital drawings and starts mocking up a scene in Unreal Engine. This way, we can continually make adjustments and update the assets as much as we like, seeing how they interact with Rex and the environment as a whole.
 
-Our concept for the visual style of the scenery is largely influenced by using
-2D elements in a 3D space. We wanted to prioritise hand-drawn, painterly
-elements instead of making a photorealistic landscape, so we took inspiration
-from theatre. Thinking of our environmental assets as stage flats meant we could
-create a complex and interesting scene that feels playful, familiar, and gives a
-nod to the performing arts. We have married this simple approach with dynamic
-elements such as caustics and volumetric fog for more visual interest.
+Our concept for the visual style of the scenery is largely influenced by using 2D elements in a 3D space. We wanted to prioritise hand-drawn, painterly elements instead of making a photorealistic landscape, so we took inspiration from theatre. Thinking of our environmental assets as stage flats meant we could create a complex and interesting scene that feels playful, familiar, and gives a nod to the performing arts. We have married this simple approach with dynamic elements such as caustics and volumetric fog for more visual interest.
 
 {{< sitelinks >}}
 {{< /fo >}}
@@ -93,18 +83,10 @@ elements such as caustics and volumetric fog for more visual interest.
   srcOn    = "right"
   alt      = "a drawing from Amber of a flower"
 >}}
-An important part of the project is being able to extract engine data from
-Unreal and pass it on to the MetaRex software developers for testing. We first
-created a custom component that tracks any chosen point or object. This location
-data per frame is then exported to a spreadsheet upon rendering the sequence.
-The component is flexible and can be adapted to track whatever data is required
-from an Unreal Engine sequence. We also use a post process material to create a
-custom stencil which adds transparency to the final output. A subtle numbered
-pattern is included to differentiate between objects as they overlap.
+An important part of the project is being able to extract engine data from Unreal and pass it on to the MetaRex software developers for testing. We first created a custom component that tracks any chosen point or object. This location data per frame is then exported to a spreadsheet upon rendering the sequence.
+The component is flexible and can be adapted to track whatever data is required from an Unreal Engine sequence. We also use a post process material to create a custom stencil which adds transparency to the final output. A subtle numbered pattern is included to differentiate between objects as they overlap.
 
-It is exciting to be using our strengths and constantly learning new things in
-this project, we look forward to sharing new test pattern scenes in the coming
-months!
+It is exciting to be using our strengths and constantly learning new things in this project, we look forward to sharing new test pattern scenes in the coming months!
 
 To find out more about what Amber creates, head to [www.amberbardell.com], or check out [@amberbardell] on <i class="instagram icon"></i>Instagram, or connect with them on [LinkedIn].
 

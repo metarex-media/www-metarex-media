@@ -13,6 +13,7 @@ oldtags:    ["project",  "NAB", "MrMXF"]
   id       = "block1"
   src      = "featured-chris.png"
   srcOn    = "left"
+  srcClass = "ui fluid image"
   alt = "photo of chris"
 >}}
 <!-- markdownlint-disable MD025 -->
@@ -33,6 +34,7 @@ Engineering, starting at 16:00 – 16:30 on the 11th of May.
 {{< fo t = "block"
     id   = "block1"
     src  = "mpts.png"
+    srcClass = "ui fluid image"
     srcOn  = "right"
     alt    = "MPTS logo"
 >}}
@@ -55,7 +57,7 @@ We hope to see you at the **Media Production and Technology Show**!
 <br />
 {{< fo t = "image"
   src   =  "mpts-panel.png"
-  class = "ui fluid spaced bordered image"
+  srcClass = "ui fluid spaced bordered image"
   alt   = "MPTS metarex web page "
   link  = "https://www.mediaproductionshow.com/2023-seminar-programme/metarex-s-fedex-metadata-simplifies-workflows"
   alt = "screenshot of MPTS program"
