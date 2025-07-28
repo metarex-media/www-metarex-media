@@ -4,6 +4,7 @@ linkTitle:   "The changing world of On Set Virtual Production"
 date:        2024-03-27
 description: "The rapidly changing world of On Set Virtual Production"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
+layout:      docs
 tags:        ["sustainability", "project",  "workflow"]
 oldtags:     ["project", "smpte", "osvp"]
 params:
@@ -11,11 +12,6 @@ params:
     linkedin:  true
 ---
 
-
-{{< fo t = "block"
-  id    = "summary"
->}}
-<!-- markdownlint-disable MD025 -->
 
 ## {{< metarex >}} On Set Virtual Production
 
@@ -28,10 +24,6 @@ Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on th
 [1]: https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production
 [video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
-{{< /fo >}}
-
-</div>
-</div>
 
 {{< fo t = "block"
   id    = "why"
@@ -98,7 +90,7 @@ NAB this year. You will be able to play with the examples online - even if you'r
 
 ## So who benefits from this?
 
-**<span class="ui green header text">Everyone benefits!</span>**
+<img  class="ui centered medium image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
 
 {{< metarex >}} enables a generic metadata supply chain with the rigour that we are starting to develop with video and audio.
 
@@ -117,12 +109,6 @@ NAB this year. You will be able to play with the examples online - even if you'r
 * **The planet** might benefit if we spent microWatts of energy remembering the source metadata rather than spending kiloWatts of energy guessing what was lost by using an AI algorithm
 
 If you or your company have a question about MetaRex, metadata or want to get involved with the {{< metarex >}} **Project** [contact] us. 
-
-Don't forget to come and see us at NAB 2024 on the [Signiant][s] booth
-[W.1931][n]
-
-[s]: https://signiant.com/
-[n]: https://nab24.mapyourshow.com/8_0/floorplan/?hallID=W&selectedBooth=W1931
 
 {{< sitelinks >}}
 {{< /fo >}}

@@ -27,13 +27,9 @@ The Responsive Narrative Factory won **Best IBC Accelerator Project 2023** 🎉
 #  Where should I go next? 
 
 *  [Responsive Narrative Factory - Accelerator Project 2023](https://www.youtube.com/watch?v=sxdlu-CC2nc)
-* The Responsive Narrative Factory [RNF Timeline]
-* [mrx-tool] - a test tool that implements the {{< metarex >}} protocol
-* [mrx-demo] - some demonstration data for the test tool to simulate **Responsive Narrative Factory** workflows
+*  The Responsive Narrative Factory [RNF Timeline]
+*  [mrx-tool] - a test tool that implements the {{< metarex >}} protocol
+*  [mrx-demo] - some demonstration data for the test tool to simulate **Responsive Narrative Factory** workflows
 
-
-[RNF Timeline]:  "/project/Archive/IBC2023/timeline.md"
-[mrx-tool]: "https://github.com/metarex-media/mrx-tool"
-[mrx-demo]:   "https://github.com/metarex-media/mrx-demo"
 
 {{% sitelinks %}}

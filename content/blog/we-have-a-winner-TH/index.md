@@ -20,11 +20,12 @@ params:
 
 We have a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
 
+
+<img  class="ui centered medium image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
+
 Congratulations to [Amy] from [France Télévisions] on winning a cuddly **Rexy** in our Treasure Hunt at IBC 2024. 
 
 Many thanks to all our supporters and everyone who took part!
-
-<img  class="ui centered medium image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
 
 {{< fo t = "image"
     src = "ibc2024-with-rexy.png"

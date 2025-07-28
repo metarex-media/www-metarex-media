@@ -6,11 +6,10 @@ description:  Timeline to deliver the Responsive Narrative Factory.
 tags:        ["collaborations"]
 ---
 
-{{% pageinfo %}}
-The Responsive Narrative Factory was shown at IBC 2023 in
-the IBC Accelerator Zone.  
+
+The Responsive Narrative Factory was shown at IBC 2023 in the IBC Accelerator Zone.  
 The project won **Best IBC Accelerator Project 2023!**
-{{% /pageinfo %}}
+
 
 ```mermaid
 ---

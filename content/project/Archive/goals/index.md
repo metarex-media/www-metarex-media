@@ -23,11 +23,11 @@ Here are some of the key objectives for the {{%  metarex %}} Project.
 *  MetaRex [defines a container][2] for your metadata.
 *  MetaRex maps containers to many types of network so that you get metadata transport for _**free**_!
 *  MetaRex gives you a [unique ID][3] for your new **_type_** of metadata.
-* MetaRex lets you publish _**services**_ for your metadata _**type**_.  You can monetize those services.
-* MetaRex lets you discover _**services**_ for unknown metadata types.
-* MetaRex supports **all** types of metadata including text and binary, timeline and static, frame locked, sample locked & stochastic, single stream and mixed streams of metadata.
-* MetaRex is built on standard tools, standard formats and standard frameworks.
-* MetaRex can run in a product, on-premise or globally.
+*  MetaRex lets you publish _**services**_ for your metadata _**type**_.  You can monetize those services.
+*  MetaRex lets you discover _**services**_ for unknown metadata types.
+*  MetaRex supports **all** types of metadata including text and binary, timeline and static, frame locked, sample locked & stochastic, single stream and mixed streams of metadata.
+*  MetaRex is built on standard tools, standard formats and standard frameworks.
+*  MetaRex can run in a product, on-premise or globally.
 
 [0]: /blog/rnf-best-accelerator/index.md
 [1]: https://github.com/metarex-media
