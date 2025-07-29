@@ -33,20 +33,19 @@ Without all their support we would not of been able to get to were we are today.
 
 ### Other projects 
 
-*  **Winner of the IBC Accelerator 2023** [Responsive Narrative Factory](/project/archive/ibc2023/).
-
-*  [Empowering the next generation of women in tech](/blog/coding-for-media/index.md) with Eviden and Next Tech Girls. 
-
+*  **Winner of the IBC Accelerator 2023** [Responsive Narrative Factory].
+*  [Empowering the next generation of women in tech][CM] with Eviden and Next Tech Girls. 
 *  [MetaRex Treasure Hunt][TH] at IBC 2024. 
-
 *  [Have I Got Standards for You][01] at MPTS 2025 
 
 
 ###  Want to work with us? 
 
-If you want to collaborate with us, please get in [touch.]  We would love to hear from you! 
+If you want to collaborate with us, please get in [contact].  We would love to hear from you! 
 
-[touch.]:  "/contact/"
+
 [CM]:  "/blog/coding-for-media/index.md"
-[TH]:   "content/blog/IBC2024-treasure-hunt/index.md"
-[01]:   "content/blog/mpts2025/index.md"
+[TH]:   "/blog/IBC2024-treasure-hunt/index.md"
+[01]:   "/blog/mpts2025/index.md"
+
+{{% sielinks }}

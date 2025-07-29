@@ -31,7 +31,7 @@ date:      2024-08-13
     src        = "img/dino-artwork/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
-    link       = "project/introduction/"
+    link       = "/about/about.md"
   />}}
   {{< fo t = "feature"
     blockClass = "ui red segment"           divClass = blockClass

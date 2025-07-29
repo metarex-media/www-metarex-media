@@ -25,7 +25,7 @@ Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on th
 [video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
 
-{{< fo t = "block"
+{{< fo t = "media"
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
   alt = "photo of cameraman"
