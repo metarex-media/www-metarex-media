@@ -11,6 +11,10 @@ menu:
     weight: 100
 tags:      []  
 oldtags:   ["docs", "project"]
+params:
+  ui:
+    hide:
+      sidebar: true
 ---
 <!-- markdownlint-disable MD033-->
 
