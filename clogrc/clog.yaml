@@ -8,6 +8,18 @@
 #                      ⇓⇓⇓⇓⇓⇓⇓⇓⇓
 # ALL KEYS ARE    ⇒⇒  lowercase    ⇐⇐  only. THIS IS A VIPER SETTING.
 #                      ⇑⇑⇑⇑⇑⇑⇑⇑⇑
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# Kfg controls the configuration of clog (or anything using clog/Kfg)
+#   _  __   __         
+#  | |/ /  / _|   __ _ 
+#  | ' /  | |_   / _` |
+#  | . \  |  _| | (_| |
+#  |_|\_\ |_|    \__, |
+#                |___/ 
+kfg:
+  app-key: clog
+  # path to the yaml file defining release history - see semver package
+  releases-path: "assets/data/releases.yaml"
 # #############################################################################
 #                      __   _
 #   __   ___   _ _    / _| (_)  __ _
@@ -56,6 +68,7 @@ snippets:
     exit 0
  
     # ui build function
+  # ----------------------------------------------------------------------------------------------------
   build: |
     mkdir -p "$(dirname $(clog bc-artifacts))"
     export VERB="BUILD"
@@ -74,7 +87,7 @@ snippets:
     # The from message says where it came from - override in github action script
     echo "${VERB}_trigger=\"trigger: clog $VERB\""
 
-  # PROJECT config -----------------------------------------------------------------------------------------------------
+  # GIT & PROJECT snippets -----------------------------------------------------------------------------------------------------
   watch: hugo server --port=1313 --logLevel debug --buildDrafts --buildFuture --buildExpired --cleanDestinationDir
   git:
     # get the target version for this project from releases.yaml
