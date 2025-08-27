@@ -6,9 +6,6 @@ description: "The rapidly changing world of On Set Virtual Production"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
 tags:        ["sustainability", "project",  "workflow"]
 oldtags:     ["project", "smpte", "osvp"]
-params:
-  publish:
-    linkedin:  true
 ---
 
 
@@ -24,7 +21,7 @@ Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on th
 [video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
 
-{{< fo t = "media"
+{{< fo t = "image"
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
   alt = "photo of cameraman"
