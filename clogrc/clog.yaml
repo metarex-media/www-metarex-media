@@ -8,6 +8,18 @@
 #                      ⇓⇓⇓⇓⇓⇓⇓⇓⇓
 # ALL KEYS ARE    ⇒⇒  lowercase    ⇐⇐  only. THIS IS A VIPER SETTING.
 #                      ⇑⇑⇑⇑⇑⇑⇑⇑⇑
+# ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+# Kfg controls the configuration of clog (or anything using clog/Kfg)
+#   _  __   __         
+#  | |/ /  / _|   __ _ 
+#  | ' /  | |_   / _` |
+#  | . \  |  _| | (_| |
+#  |_|\_\ |_|    \__, |
+#                |___/ 
+kfg:
+  app-key: clog
+  # path to the yaml file defining release history - see semver package
+  releases-path: "assets/data/releases.yaml"
 # #############################################################################
 #                      __   _
 #   __   ___   _ _    / _| (_)  __ _
