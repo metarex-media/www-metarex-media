@@ -13,6 +13,7 @@ static/app/demos/
 svelte/demos/static/r
 svelte/demos/static/build
 svelte/demos/static/.svelte-kit
+.action-stash
 
 # ignore npm or yarn generated postcss source files
 node_modules/
