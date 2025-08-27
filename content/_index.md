@@ -31,7 +31,7 @@ date:      2024-08-13
     src        = "img/dino-artwork/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
-    link       = "project/introduction/"
+    link       = "/about/about.md"
   />}}
   {{< fo t = "feature"
     blockClass = "ui red segment"           divClass = blockClass
@@ -68,7 +68,7 @@ date:      2024-08-13
     header     = "News Ingest"   
     text       = "VC6 Case Study"            
     src        = "img/vc6.png"
-    srcClass   = "ui fluid image"
+      = "ui fluid image"
     alt        = "vc6 logo"
     link       = "https://vc6.metarex.media"
   />}}

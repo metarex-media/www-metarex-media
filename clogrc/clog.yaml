@@ -19,9 +19,6 @@ kfg:
   app-key: clog
   # path to the yaml file defining release history - see semver package
   releases-path: "assets/data/releases.yaml"
-# #############################################################################
-kfg:
-  releases-path: assets/data/releases.yaml
 # -----------------------------------------------------------------------------
 clog:
   # path to the yaml file defining release history - see semver package

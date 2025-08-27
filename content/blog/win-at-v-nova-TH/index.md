@@ -15,14 +15,15 @@ params:
   lin: https://www.linkedin.com/company/metarex-media/
 ---
 
-**<p style = "text-align:center;"><span class = "ui red text">_MetaRex Treasure Hunt 2024 is completed_</span></p>**
+**<p style = "text-align:center;"><span class = "ui purple text">_MetaRex Treasure Hunt 2024 is completed_</span></p>**
 
 Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and to all our Sponsers, Backers, Partners for their amazing support! 
 
 A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
 {{< fo t = "image"
-   src = "/blog/win-at-v-nova-TH/annoucing-rexy-winner.png" 
+   src = "annoucing-rexy-winner.png" 
+   srcClass = "ui fluid image"
    alt = "annoucing the winner" 
    srcClass = "ui centered large image"
 />}}

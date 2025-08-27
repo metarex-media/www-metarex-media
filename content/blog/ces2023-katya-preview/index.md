@@ -12,6 +12,7 @@ oldtags:   ["project",  "CES", "yellowbasket"]
     id    = "summary"
     src   = "featured-ces-2023.jpg"
     srcOn = "left"
+    srcClass = "ui fluid image"
     alt = "ces 2023 logo"
 >}}
 

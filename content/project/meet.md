@@ -15,7 +15,7 @@ url:         "/meet/"
 tags:        ["contact"]
 ---
 
-Try the online booking for Mr MXF to schedule an appointment with the {{< metarex >}} leadership team.  If you can't find a slot, then please get in touch via the [contact] form.
+Try the online booking for Mr MXF to schedule an appointment with the {{< metarex >}} leadership team.  If you can't find a slot, then please get in touch via our Contact form.
 
 [contact]: {{< relref "/contact/" >}}
 

@@ -12,6 +12,7 @@ oldtags:     ["project",  "CES", "yellowbasket"]
   id    = "summary"
   src   = "featured-ces-logo.png"
   srcOn = "left"
+  srcClass = "ui fluid image"
   alt = "ces 2023 logo"
 >}}
 ### Metaverse and Metadata at CES® 2023

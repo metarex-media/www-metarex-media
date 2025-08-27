@@ -1,8 +1,8 @@
-# flow:"stage",   build:"dev"  = auto-add to staging server
+# flow:"CG",   build:"dev"  = auto-add CG updates to staging server
 # flow:"release", build:"prod" = to flag as a production release
-- {version: "1.9.1", date: 2025-08-19, flow: "main", build: "prod", note: kfg config}
+- {version: "1.9.1", date: 2025-08-19, flow: "main", build: "dev", note: kfg config}
 - {version: "1.9.0", date: 2025-07-21, flow: "stage", build: "dev", note: approaching v2.0}
-- {version: "1.8.5", date: 2025-07-14, flow: "stage", build: "dev", note: sensible notifications}
+- {version: "1.8.5", date: 2025-07-14, flow: "CG", build: "dev", note: sensible notifications}
 - {version: "1.8.2", date: 2025-07-03, flow: "stage", build: "dev", note: bc build scripts}
 - {version: "1.8.1", date: 2025-06-17, flow: "stage", build: "dev", note: PR build test}
 - {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}

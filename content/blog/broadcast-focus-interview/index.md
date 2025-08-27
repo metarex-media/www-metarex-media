@@ -13,8 +13,9 @@ blog-id: 2376418927365
 <!-- ####################################################################### -->
 {{< fo t = "block"
   id       = "block1"
-  src      = featured-broadcast-focus.png
+  src      = "featured-broadcast-focus.png"
   srcOn    = "left"
+  srcClass = "ui fluid image"
   alt = "screenshot of Russel Trafford Jones and Bruce Devlin for the video interview" 
 >}}
 <!-- markdownlint-disable MD025 -->

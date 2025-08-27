@@ -8,12 +8,15 @@ author:       MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:         ["event"]
 ---
 
+
+
 {{< fo t = "image"
   id    = "Rexy at MPTS"
-  src   = "/mpts2025/rexy-mpts.png"
+  src   = "mpts-panelist.png"
   srcClass = "ui fluid image"
-  alt = "rexy at MPTS"
+  alt = "MPTS session panelists"
 />}}
+
 
 This year's **Media Production and Technology Show** took place on the 14th and 15th of May 2025, at [Olympia] in London. 
 
@@ -21,20 +24,16 @@ The main event of the day was Bruce hosting the session ['Have I Got Standards F
 
 Many thanks to our panelists, [Dagmar Driesnack][DD], [Dee Davison][Dee], [Rich Welsh][RW], [David Thompson][DT] and [James Uren][JU] for being involved in the session and for being such great speakers! 
 
+-----
 
 {{< fo t = "image"
-  id    = "Rexy at MPTS"
-  src   = "/mpts2025/mpts-2025-session.png"
-  srcOn = "left"
-  alt = "list of panelist" 
-/>}}
-
-{{< fo t = "image"
-  id    = "Rexy at MPTS"
-  src   = "/mpts2025/mpts-panelist.png"
-  srcOn = "right"
+  id    = "MPTS 2025 - session"
+  src   = "mpts-2025-session.png"
+  srcClass = "ui fluid image"
   alt = "MPTS session panelists"
 />}}
+
+
 
 
 ['Have I Got Standards For You']:   https://www.mediaproductionshow.com/programme

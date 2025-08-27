@@ -32,6 +32,7 @@ streamlining operations and setup.
   id    = "block2"
   src   = "football-rigging.png"
   srcOn = "right"
+  srcClass = "ui fluid image"
   alt = "drawing of a football pitch"
 >}}
 For HDR (High Dynamic Range), hybrid log gamma (HLG) format is used to provide a
@@ -102,6 +103,7 @@ quantity and **searchability** of assets.
   id    = "block5"
   src   = "feeds.png"
   srcOn = "left"
+  srcClass = "ui fluid image"
   alt = "diagram of football stadiums"
 >}}
 The same could be applied to the audio. Rights holders will have a choice of a

@@ -1,15 +1,15 @@
 ---
 
-title:       "Timeline"
-linkTitle:   "Timeline"
-description: Timeline to deliver the Responsive Narrative Factory.
-tags:        ["status"]
+title:       "RNF Timeline"
+linkTitle:   "RNF Timeline"
+description:  Timeline to deliver the Responsive Narrative Factory.
+tags:        ["collaborations"]
 ---
 
-{{% pageinfo %}}
-The Responsive Narrative Factory will be shown at IBC 2023 in
-the IBC Accelerator Zone.
-{{% /pageinfo %}}
+
+The Responsive Narrative Factory was shown at IBC 2023 in the IBC Accelerator Zone.  
+The project won **Best IBC Accelerator Project 2023!**
+
 
 ```mermaid
 ---
@@ -17,7 +17,7 @@ displayMode: compact
 ---
 gantt
     dateFormat    YYYY-MM-DD
-    title         IBC Responsive Narrative Factory
+    title         IBC Responsive Narrative Factory Timeline
     axisFormat    %Y-%m
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
     todayMarker stroke-width:5px,stroke:#0f0,opacity:0.3
@@ -61,3 +61,4 @@ gantt
 ```
 
 {{% sitelinks %}}
+

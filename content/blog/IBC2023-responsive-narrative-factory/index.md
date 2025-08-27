@@ -13,6 +13,7 @@ oldtags:    ["project",  "IBC", "RNF", "Infuse"]
   id       = "block1"
   src      = "featured-bruce.png"
   srcOn    = "left"
+  srcClass = "ui fluid image"
   alt = "photo of Bruce Devlin"
 >}}
 # {{< metarex >}} at IBC 2023: Responsive Narrative Factory
@@ -50,6 +51,7 @@ you can follow along and maybe even download the MetaRex code from our [Github R
   id       = "block3"
   src      = "/img/event/ibc2023-rnf-web.png"
   srcOn    = "right"
+  srcClass = "ui fluid image"
   alt = "Responsive Narrative Factory logo"
 >}}
 The [Responsive Narrative Factory] will be showcased as an [IBC Accelerator] at
