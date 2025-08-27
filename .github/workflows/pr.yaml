@@ -11,23 +11,22 @@
 # see job.build for secrets & vars
 
 name: pr-build-dockerhub
-run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
+run-name: "www-mrmxf-com pr 🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 
 on:
   workflow_dispatch:            # run manually from Actions tab
   pull_request_target:
     types: [opened, reopened, synchronize, edited, review_requested, ready_for_review, review_request_removed]
 
+# Ensure only one workflow runs at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 # Default to bash
 defaults:
   run:
     shell: bash
-
-# Allow only one concurrent deployment, skipping runs queued between the run
-# in-progress and latest queued. Allow cancelling in-progress runs.
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
 
@@ -37,8 +36,8 @@ jobs:
     with:
       # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      bc-from: "trigger: 😺🎬 PR from 🥷${{ github.actor }} from ${{ github.event.repository.name }}:${{ github.ref_name }}"
-      bc-toast: "😺🎬 PR from 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
+      bc-from: "trigger: event(${{ github.event_name }}) ref(${{ github.ref_name }})"
+      bc-toast: "metarex.media PR 😺🎬(${{ github.workflow }}) 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
       bc-trigger: "${{ github.event.repository.html_url }}"
 
     secrets:
@@ -48,5 +47,4 @@ jobs:
       webhook_slack: ${{ secrets.HOOK_SLACK_LOGS }}
      
   dump-context:
-    # needs: [build]
     uses: mrmxf/clog/.github/workflows/dump-context.yaml@main

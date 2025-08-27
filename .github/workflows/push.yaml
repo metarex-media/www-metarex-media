@@ -11,35 +11,35 @@
 # see job.build for secrets & vars
 
 name: push-build-dockerhub
-run-name: "🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
+run-name: "www-metarex-media push 🥷${{ github.actor }}: 🏃‍➡️ ${{ github.workflow }} @ ${{ github.event.repository.name }}:${{ github.ref_name }}"
 
 on:
   workflow_dispatch:             # run manually from Actions tab
-  push:                          # run every push
-    tags-ignore:                 # we want ONLY pushes, not create tags
-      - '**'                     # ignore pushes with non non-empty tags
+  push:             
+
+# Ensure only one workflow runs at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 # Default to bash
 defaults:
   run:
     shell: bash
 
-# Allow only one concurrent deployment, skipping runs queued between the run
-# in-progress and latest queued. Allow cancelling in-progress runs.
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
 
   # Build job
   build:
+    # don't run if this was a tagging push
+    if: github.event_name != 'create'    
     uses: mrmxf/clog/.github/workflows/build-hugo.yaml@main
     with:
       # artifact-name: kodata
       docker_ns: ${{ vars.DOCKER_NS }}
-      bc-from: "trigger: 😺🎬 push by 🥷${{ github.actor }} from ${{ github.repository }}:${{ github.ref_name }}"
-      bc-toast: "😺🎬 push by 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
+      bc-from: "trigger: event(${{ github.event_name }}) ref(${{ github.ref_name }})"
+      bc-toast: "metarex.media build 😺🎬(${{ github.workflow }}) 🥷${{ github.actor }} ⇒⇒ ${{ github.repository }}"
       bc-trigger: "${{ github.event.repository.html_url }}"
       
     secrets:
@@ -49,5 +49,6 @@ jobs:
       webhook_slack: ${{ secrets.HOOK_SLACK_LOGS }}
      
   dump-context:
-    # needs: [build]
+    # don't run if this was a tagging push
+    if: github.event_name != 'create'    
     uses: mrmxf/clog/.github/workflows/dump-context.yaml@main
