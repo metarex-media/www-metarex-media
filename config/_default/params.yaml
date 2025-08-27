@@ -186,3 +186,44 @@ links:
       url:  https://mrmxf.com/T+C/
       icon: "fab fa-user-shield"
       desc: "mrmxf t+c"
+
+pricelist:
+  sections:
+  - title: appetiser/small plates
+    text: |
+      The pièce de resistance, of MetaRex is to be able to download the MetaRex ID (add link) register and have access
+      to our instruction manual.
+    price: "**_free_**"
+  - title: starter
+    text: If you want us to validate you document or metadata this is the course for you!
+    price: "**£500**"
+  - title: Main Course
+    text: |
+      If you want a custom based service i.e garmin.gpx, this main course is for you
+    price: "**£1000 - £5000**"
+  - title: Sauce/Source
+    text: |
+      We want the MetaRex ID register to be open source and free for all. To do our little bit for the world, by making
+      the use of metadata run smoother, easier and cheaper for all!
+
+      If you want to own any source code we create for you, we'll have to add a surcharge. 
+    price: "**_100% extra_**"
+  - title: Dessert
+    text:  "Please contact our maître for further details (add contact form)"
+    price: "**_POA_**"
+  sides:
+  - title: Custom
+    text: Need a bit more engineering advice? Add this to your order for a catered experience
+    price: "**_£1000/day_**"
+  - title: Consultancy
+    text: For that extra garnish of advice and policy.
+    price: "**_£2500_**"
+  - title: Artwork
+    text: A custom-made piece of artwork/video from our creative team for you to use.
+    price: "**_£1000/day_**"
+  - title: LinkedIn
+    text: Side order of our LinkedIn account (add link)
+    price: "**_free_**"
+  - title: Instagram
+    text: Extra slice of our Instagram (add link) account. Specially designed by our creative team.
+    price: "**_free_**"

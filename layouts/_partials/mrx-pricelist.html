@@ -1,0 +1,97 @@
+{{partial "tmpl/dbg-template-comment" .}}{{/*
+Read the pricelist data from
+site.Params.pricelist.section[].prop
+site.Params.pricelist.sides[].prop
+
+*/}}
+<style>
+  .container.price {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  /* the next two sections align the columns */
+  .item.sections {
+    flex-grow: 3;
+    width: 70%;
+  }
+
+  .item.sides {
+    flex-grow: 1;
+    width: 30%;
+  }
+
+  /* the next two sections are the flex box containers */
+  .container.sections {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  .container.sides {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+  }
+
+  .header.price,
+  .meta.price {
+    text-align: center;
+  }
+
+  .card.price.section {
+    background-color: beige;
+    flex-basis: 30%;
+    width: 30%;
+    max-width: 50em;
+  }
+
+  .card.price.side {
+    background-color: rgb(230, 214, 238);
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50em;
+  }
+</style>
+{{$pricelist := site.Params.pricelist}}
+<div class="container price">
+  <div class="item sections">
+    <div class="container sections">
+      {{range $pricelist.sections}}
+      {{template "mrx-pl-section" (dict "title" .title "text" .text "price" .price)}}
+      {{end}}
+    </div>
+  </div>
+  <div class="item sides">
+    <div class="container sides">
+      {{range $pricelist.sides}}
+      {{template "mrx-pl-side" (dict "title" .title "text" .text "price" .price)}}
+      {{end}}
+    </div>
+  </div>
+</div>
+
+{{define "mrx-pl-section"}}
+<div class="ui card price section">
+  <div class="content">
+    <a class="header price section">{{.title|markdownify}}</a>
+    <div class="meta price section"><span class="date">{{.price|markdownify}}</span></div>
+    <div class="description price section">{{.text|markdownify}}</div>
+  </div>
+</div>
+{{end}}
+
+{{define "mrx-pl-side"}}
+<div class="ui card price side">
+  <div class="content">
+    <a class="header price side">{{.title|markdownify}}</a>
+    <div class="meta price side"><span class="date">{{.price|markdownify}}</span></div>
+    <div class="description">{{.text|markdownify}}</div>
+  </div>
+</div>
+{{end}}
