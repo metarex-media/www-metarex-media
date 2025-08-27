@@ -101,6 +101,7 @@ Katya
 keymap
 keypress
 keyrings
+kodata
 KUBECONFIG
 labstack
 Langres
