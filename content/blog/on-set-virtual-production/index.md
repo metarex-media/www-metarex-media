@@ -4,18 +4,14 @@ linkTitle:   "The changing world of On Set Virtual Production"
 date:        2024-03-27
 description: "The rapidly changing world of On Set Virtual Production"
 author:      Bruce Devlin [@in](https://www.linkedin.com/in/mrmxf/)
-layout:      docs
 tags:        ["sustainability", "project",  "workflow"]
 oldtags:     ["project", "smpte", "osvp"]
-params:
-  publish:
-    linkedin:  true
 ---
 
 
 ## {{< metarex >}} On Set Virtual Production
 
-The [award winning][0], philanthropic, non-profit {{%  metarex %}} Project makes metadata flow. 
+The [award winning][0], philanthropic, non-profit {{< metarex >}} Project makes metadata flow. 
 In the rapidly changing world of On Set Virtual Production we already have too many incompatible formats and protocols and the poor setup and data wrangling crew perform miracles on every shoot do get things stable and keep them stable until it's time for tear down.
 
 Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on the debate between Standards & Products. We believe, like many of the points raised in the video, that products will lead the way and standards will eventually follow.
@@ -25,7 +21,7 @@ Play the [video] from the [SMPTE RIS OSVP][1] experts and hear their views on th
 [video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
 
-{{< fo t = "media"
+{{< fo t = "image"
   id    = "why"
   src   = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
   alt = "photo of cameraman"
@@ -77,8 +73,7 @@ taking over.
 
 <!-- markdownlint-disable MD026 -->
 
-We'll be showing {{< metarex >}} use-case examples for Virtual Production at
-NAB this year. You will be able to play with the examples online - even if you're not at the show.
+We'll be showing {{< metarex >}} use-case examples for Virtual Production at NAB this year. You will be able to play with the examples online - even if you're not at the show.
 
 [f]: https://github.com/metarex-media
 

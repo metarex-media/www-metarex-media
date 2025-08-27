@@ -1,6 +1,6 @@
 ---
 title: "MetaRex Blog"
-linkTitle: "MetaRex Blog"
+linkTitle: "Blog"
 menu:
   main:
     weight: 100
