@@ -111,20 +111,10 @@ date:      2024-08-13
 />}}
 
 {{< fo t = "item-include"
-    from = "/project/goals/index.md"
-/>}}
-
-{{< fo t = "item-include"
     from = "/project/flow-diagram.md"
     src = "/img/mrx-flow.png"
     alt = "flow diagram"
 />}}
 
-{{< fo t = "item-include"
-    from = "/project/about.md"
-    text = "Our backers helped us get to the stage where we can give away our software to help metadata flow. Meet them here."
-    src = "/img/dino/mrx-logo.svg"
-    alt = "rexy logo"
-/>}}
 
 {{</fo>}}

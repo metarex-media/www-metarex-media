@@ -7,6 +7,3 @@ go 1.24.3
 require (
 	github.com/mrmxf/fohuw v0.5.5 // indirect
 )
-
-require (
-)

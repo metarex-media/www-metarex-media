@@ -27,7 +27,6 @@ description: Learn about metarex?
     class      = "ui green message"
     src        = "/meeja/mrx2-fire.mp4"
     srcClass   = "ui fluid image"
-    link       = "/project/about.md"
     alt        = "rexy fire clip"
   />}}
 <!-- ---------------------------------------------------------------------- -->
@@ -37,7 +36,7 @@ description: Learn about metarex?
     class      = "ui yellow message"
     src        = "/ico/logo-github.svg"
     srcClass   = "ui small centered image"
-    link       = "https://github.com/orgs/metarex-media/repositories"
+    link       = "https://github.com/orgs/metarex-media/"
     alt        = "repositories"
   />}}
 <!-- ---------------------------------------------------------------------- -->
