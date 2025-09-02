@@ -7,7 +7,7 @@ type:        docs
 
 menu:
   main:
-    parent: About
+    parent: Learn
     weight:   100
 
 # Use the block/cover shortcode to have a picture landing page

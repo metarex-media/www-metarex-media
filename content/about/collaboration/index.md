@@ -6,7 +6,7 @@ type:        docs
 menu:
   main:
     name:    Collaborations
-    parent:  About
+    parent:  Learn
     weight:  11
 
 url:         "/collaborations/"

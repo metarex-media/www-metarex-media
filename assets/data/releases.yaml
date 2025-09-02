@@ -1,5 +1,6 @@
 # flow:"CG",   build:"dev"  = auto-add CG updates to staging server
 # flow:"release", build:"prod" = to flag as a production release
+- {version: "1.9.2", date: 2025-08-27, flow: "CG", build: "dev", note: newest update}
 - {version: "1.9.1", date: 2025-08-19, flow: "main", build: "dev", note: kfg config}
 - {version: "1.9.0", date: 2025-07-21, flow: "stage", build: "dev", note: approaching v2.0}
 - {version: "1.8.5", date: 2025-07-14, flow: "CG", build: "dev", note: sensible notifications}
