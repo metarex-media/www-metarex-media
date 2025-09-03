@@ -22,14 +22,21 @@ This year's **Media Production and Technology Show** took place on the 14th and 
 
 The main event of the day was Bruce hosting the session ['Have I Got Standards For You'], along with the amazing and enthusiast panelists. 
 
-Many thanks to our panelists, [Dagmar Driesnack][DD], [Dee Davison][Dee], [Rich Welsh][RW], [David Thompson][DT] and [James Uren][JU] for being involved in the session and for being such great speakers! 
+Many thanks to our panelists, [Dagmar Driesnack][DD], [Dee Davison][Dee], [Rich Welsh][RW], [David Thompson][DT] and [James Uren][JU] for being involved in the session and for being such great speakers!
 
------
-
-{{< fo t = "image"
-  id    = "MPTS 2025 - session"
+{{< fo t = "media"
+  id    = "Rexy at MPTS"
   src   = "mpts-2025-session.png"
   srcClass = "ui fluid image"
+  srcOn = "left"
+  alt = "list of panelist" 
+/>}}
+
+{{< fo t = "media"
+  id    = "Rexy at MPTS"
+  src   = "mpts-panelist.png"
+  srcClass = "ui fluid image"
+  srcOn = "right"
   alt = "MPTS session panelists"
 />}}
 
