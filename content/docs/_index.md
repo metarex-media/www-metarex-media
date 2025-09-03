@@ -37,7 +37,7 @@ description: Learn about metarex?
     class      = "ui yellow message"
     src        = "/ico/logo-github.svg"
     srcClass   = "ui small centered image"
-    link       = "https://github.com/mrmxf"
+    link       = "https://github.com/orgs/metarex-media/"
     alt        = "repositories"
   />}}
 <!-- ---------------------------------------------------------------------- -->

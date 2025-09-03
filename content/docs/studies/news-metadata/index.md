@@ -17,8 +17,7 @@ in networks where non-AV transport can be problematic.
 The figure 1, above, shows a simple example of what {{<metarex>}} can achieve. The yellow boxes show the `mrx-worker`
 that is a platform & operating system agnostic piece of code that you can download from the [metarex GitHub][gh] site.
 
-The intention of the `mrx-worker` is to provide most of the tedious functionality required to get at & validate the core
-metadata types in a workflow. In each application there are likely to be a few  lightweight functions needed to adapt
+The intention of the `mrx-worker` is to provide most of the tedious functionality required to get at & validate the core metadata types in a workflow. In each application there are likely to be a few  lightweight functions needed to adapt
 the core services to specific requirements.
 
 The diagram shows a simple example of a demonstration done in 2024 where an LPX feed (live production exchange) was
@@ -49,5 +48,6 @@ Encryption, Authentication and Authorization features can be put into the worker
 
 Contact information at [metarex.media][mrx]
 
-[gh]: https://github.com/orgs/metarex-media/repositories
+[gh]: "https://github.com/orgs/metarex-media/"
 [mrx]: https://metarex.media
+
