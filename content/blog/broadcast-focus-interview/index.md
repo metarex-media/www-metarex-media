@@ -11,7 +11,7 @@ blog-id: 2376418927365
 ---
 
 <!-- ####################################################################### -->
-{{< fo t = "block"
+{{< hw t = "block"
   id       = "block1"
   src      = "featured-broadcast-focus.png"
   srcOn    = "left"
@@ -28,7 +28,7 @@ I had the honour to talk about all things metadata and to preview NAB 2024 with 
 Watch the episode [Bruce Devlin on AI and Self-Describing Metadata]. 
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}
 
 [BF]: http://broadcastfocus.com/
 [Bruce Devlin on AI and Self-Describing Metadata]:  https://www.youtube.com/watch?v=b_2Q0K6Lfd8

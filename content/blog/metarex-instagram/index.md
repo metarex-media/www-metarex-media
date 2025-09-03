@@ -7,7 +7,7 @@ tags:         ["Rexy"]
 description:  Follow MetaRex on Instagram!
 ---
 
-{{< fo t = "image"
+{{< hw t = "image"
   id    = "Rexy hiding behind a tree"
   src   = "rexy peek 1.2.png"
   srcClass = "ui fluid image"

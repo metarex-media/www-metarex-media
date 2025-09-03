@@ -14,7 +14,7 @@ tags:     ["collaborations"]
 oldtags:  ["backers"]
 ---
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "Collaborations - past, present and future"
     src = "/img/dino/mrx-logo-0300.png"
     class = "ui center aligned olive message"
@@ -26,7 +26,7 @@ We have worked with some amazing people and companies over the years. Here are s
 
 Without all their support we would not of been able to get to were we are today.  Many thanks to everyone's support! 
 
-{{< fo t = "include"
+{{< hw t = "include"
     from = "/about/collaboration/backer-list.md"
 />}}
 

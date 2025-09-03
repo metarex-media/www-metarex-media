@@ -24,7 +24,7 @@ follow.
 [1]: https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production
 [video]:  https://www.youtube.com/embed/r9Da_f612YY?si=cWD_sERLjZHI9Wxo&amp;start=381
 
-{{< fo
+{{< hw
     t = "image"
     id = "why"
     src = "featured-daniel-lee-0_z7mj4jKn8-unsplash.png"
@@ -47,9 +47,9 @@ of **what** the metadata is, what **version** of the metadata was used, what is 
 automatically **QC**'d with a **schema** and are there any **services** available to be sure it's right
 before it's too late?
 
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
    id    = "smpte"
 >}}
 
@@ -60,7 +60,7 @@ world. {{< metarex >}} aims to provide the plumbing to allow multiple variants
 of the same metadata values to be managed on a single network without insanity
 taking over.
 
-{{< /fo >}}
+{{< /hw>}}
 
 <div class="ui container segment">
   <a href="https://www.smpte.org/rapid-industry-solutions/on-set-virtual-production" _target="blank">
@@ -68,7 +68,7 @@ taking over.
   </a>
 </div>
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "examples"
 >}}
 
@@ -79,9 +79,9 @@ with the examples online - even if you're not at the show.
 
 [f]: https://github.com/metarex-media
 
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "live"
 >}}
 
@@ -108,4 +108,4 @@ with the examples online - even if you're not at the show.
 If you or your company have a question about MetaRex, metadata or want to get involved with the {{< metarex >}} **Project** [contact] us.
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}

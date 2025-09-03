@@ -5,14 +5,14 @@ date:        2025-02-28
 description: How metarex and VC-6 improve training and re-training workflows
 ---
 <!-- markdownlint-disable MD033 -->
-{{% fo
+{{< hw
    t = "image"
    src = "content-at-rest.png"
    srcClass = "ui centered image"
    alt = "MetaRex Generic Live Production Scenario"
    text = "MetaRex Generic Live Production Scenario"
    header = "Figure 1"
-/%}}
+/>}}
 
 #### We're proposing a simple paradigm
 
@@ -24,17 +24,17 @@ description: How metarex and VC-6 improve training and re-training workflows
   * mid-res for higher-value content
   * highest res for top-tier content
 
-{{% fo
+{{< hw
    t = "image"
    src = "aicar.svg"
    srcClass = "ui fluid image"
    alt = "Workflow"
    header = "Figure 2"
    text = "Content at rest workflow"
-/%}}
+/>}}
 
 The PoC works like this:
-{{< fo
+{{< hw
     t = "block"
     src = "/brand/logo.svg"
     srcClass = "ui fluid image"
@@ -71,7 +71,7 @@ that has been optimised for the user's workflow needs.
 [tam]: https://downloads.bbc.co.uk/rd/pubs/whp/whp-pdf-files/WHP421.pdf
 [vc6]: https://www.v-nova.com/vc-6-higher-quality-at-lower-bitrates/vc6-encoding-and-decoding-sdk/
 
-{{< /fo >}}
+{{< /hw>}}
 
 ## The processing in more detail
 
@@ -207,8 +207,8 @@ sequenceDiagram
 
 ### 4. BASIC - put it all together
 
-{{% fo t = "image" src = "aicar-basic-flow.png" srcClass = "ui centered image"
-   alt = "Basic Flow" header = "Figure 3" text = "Basic Flow" /%}}
+{{< hw t = "image" src = "aicar-basic-flow.png" srcClass = "ui centered image"
+   alt = "Basic Flow" header = "Figure 3" text = "Basic Flow" />}}
 
 The BASIC flow needs to be low cost, yet "good-enough" to triage all the
 inputs. The simplified node-red workflow about shows a simplistic demo that
@@ -227,7 +227,7 @@ different operating modes
    4](#fig-4))
 3. Authenticated network service for use in a mixed security environment
 
-<a id="fig-4"></a>{{% fo
+<a id="fig-4"></a>{{ fo
    id = "fig-4"
    t = "image"
    src = "mrx-worker2.svg"
@@ -235,7 +235,7 @@ different operating modes
    alt = "MetaRex Concept"
    text = "mrx-worker embedded services"
    header = "Figure 4"
-/%}}
+/>}}
 
 ### Status 2025-02-10
 

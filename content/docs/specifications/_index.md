@@ -6,7 +6,7 @@ weight:      50
 description: How does MetaRex work under the hood?
 ---
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "Technical Specifications"
     description = "MetaRex is like a zip file envelope with a timeline... like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"

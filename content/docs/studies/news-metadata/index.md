@@ -12,7 +12,7 @@ on-going maintenance as the metadata evolves to meet fast changing business need
 {{<metarex>}} is a framework to allow metadata to flow between creators and consumers of metadata, especially
 in networks where non-AV transport can be problematic.
 
-{{< fo t = "media" src = "mrx-news.svg" srcClass = "ui centered image" header = "figure 1" text = "mrx-news example" />}}
+{{< hw t = "media" src = "mrx-news.svg" srcClass = "ui centered image" header = "figure 1" text = "mrx-news example" />}}
 
 The figure 1, above, shows a simple example of what {{<metarex>}} can achieve. The yellow boxes show the `mrx-worker`
 that is a platform & operating system agnostic piece of code that you can download from the [metarex GitHub][gh] site.
@@ -33,7 +33,7 @@ Using {{<metarex>}} to abstract the services allows a common interface for the c
 data that might be toxic to a workflow.
 <br><br><br><br><br><br><br>
 
-{{< fo t = "media" src = "mrx-worker.svg" srcClass = "ui centered image" header = "figure 2" text = "mrx-worker" />}}
+{{< hw t = "media" src = "mrx-worker.svg" srcClass = "ui centered image" header = "figure 2" text = "mrx-worker" />}}
 
 The core features of the `mrx-worker` are shown in the diagram above. Inside the `mrx-worker` is a register of known
 metadata types. The `mrx-worker` can synchronize the internal register with parent nodes and child nodes so that a

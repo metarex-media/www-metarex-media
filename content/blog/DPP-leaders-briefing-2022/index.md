@@ -8,7 +8,7 @@ tags:
 oldtags:     ["project",  "Mr MXF", "DPP"]
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-dpp-leaders.jpg"
   srcOn = "left"
@@ -27,4 +27,4 @@ metarex %}} project continues to be needed.
 
 Looks like December and January are going to be busy...
 
-{{< /fo >}}
+{{< /hw>}}

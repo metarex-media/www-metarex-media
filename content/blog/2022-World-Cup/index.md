@@ -8,7 +8,7 @@ tags:       ["sport", "workflow"]
 oldtags:    ["project",  "football", "yellowbasket"]
 ---
 
-{{< fo t = "block" 
+{{< hw t = "block" 
    id    = "summary"
    src   = "featured-katya.jpg"
    srcOn = "left"
@@ -24,11 +24,11 @@ streamlining operations and setup.
 [Fifa]: https://www.fifa.com/
 [HBS]:  https://www.hbs.tv/about-us/
 
-{{< /fo >}}
+{{< /hw>}}
 
 <!-- ####################################################################### -->
 
-{{< fo t = "block" 
+{{< hw t = "block" 
   id    = "block2"
   src   = "football-rigging.png"
   srcOn = "right"
@@ -44,9 +44,9 @@ cameras. If you ask me about metadata in this setup, I would not be able to give
 you a positive answer, I am afraid that many useful metadata elements were not
 considered at all because of the difficulty of integrating the annotation /
 metadata systems with the live production systmes.
-{{< /fo>}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
     id   = "block3"
 >}}
 The standard camera plan has 42 cameras, and both super-slo-mo and ultra-slo-mo
@@ -74,11 +74,11 @@ The lineup of feeds:
 * Action clips
 * Emotion clips
 * Permanent highlights
-{{< /fo >}}
+{{< /hw>}}
 
 <!-- ####################################################################### -->
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "block4"
 >}}
 
@@ -95,11 +95,11 @@ time based metadata associated with the media found its way to the cloud based
 storage.  A {{< metarex >}} fire-hose of metadata might have enriched the quality,
 quantity and **searchability** of assets.
 
-{{< /fo >}}
+{{< /hw>}}
 
 <!-- ####################################################################### -->
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "block5"
   src   = "feeds.png"
   srcOn = "left"
@@ -111,15 +111,15 @@ basic-stereo mix, 5.1 surround-sound mix **_and also_** a **5.1.4** immersive
 mix produced in two immersive-sound galleries at the IBC. At the center of those
 efforts, an eight-capsule microphone array at each stadium is supported by
 additional three-dimensional microphone arrays located closer to the spectators.
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "image"
+{{< hw t = "image"
     src = "mobile-viewer.jpg"
     caption = "Mobile Viewers"
     alt = "a man looking on his mobile phone"
 />}}
 
-{{< fo t = "image"
+{{< hw t = "image"
     src = "portugal-watchers.jpg"
     caption = "Football spectators Morocco-Portugal match taken on Madeira island"
     alt = "spectators watching a football match"

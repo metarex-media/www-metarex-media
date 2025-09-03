@@ -10,23 +10,23 @@ date:  2025-03-31
     src = "some-image"
 >}}
 
-{{< fo t = "mnu-row" >}}
+{{< hw t = "mnu-row" >}}
 
 
-{{< fo t = "mnu-block" header = "Appetiser" src = "some-image" >}}
+{{< hw t = "mnu-block" header = "Appetiser" src = "some-image" >}}
 
-{{< fo t = "mnu-item" header = "Appetiser" src = "some-image" >}}
+{{< hw t = "mnu-item" header = "Appetiser" src = "some-image" >}}
 The item text
-{{/* close the mnu-item*/}}{{< /fo >}}
+{{/* close the mnu-item*/}}{{< /hw>}}
 
-{{< fo t = "mnu-description" header = "Appetiser" src = "some-image" >}}
+{{< hw t = "mnu-description" header = "Appetiser" src = "some-image" >}}
 The description text
-{{/* close the mnu-description*/}}{{< /fo >}}
+{{/* close the mnu-description*/}}{{< /hw>}}
 
-{{< fo t = "mnu-price" header = "Appetiser" src = "some-image" >}}
+{{< hw t = "mnu-price" header = "Appetiser" src = "some-image" >}}
 The price text
 <div class = "ui pink label">£1200</div>
-{{/* close the mnu-price*/}}{{< /fo >}}
+{{/* close the mnu-price*/}}{{< /hw>}}
 
 
 
@@ -41,8 +41,8 @@ The price text
 
 
 
-{{/* close the mnu-block*/}}{{< /fo >}}
-{{/* close the row */}}{{< /fo >}}
+{{/* close the mnu-block*/}}{{< /hw>}}
+{{/* close the row */}}{{< /hw>}}
 {{/* --------------------------------------------------------------------- */}}
 {{/* ------------
 
@@ -52,4 +52,4 @@ BRUCE READ THIS ... some words
 
 
 
-{{/* close the page block*/}}{{< /fo >}}
+{{/* close the page block*/}}{{< /hw>}}

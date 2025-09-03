@@ -8,7 +8,7 @@ tags:        ["event"]
 oldtags:     ["project",  "NAB", "yellowbasket"]
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-katya.jpg"
   srcOn = "left"
@@ -23,9 +23,9 @@ fast you can move it and whether it can pass QC in a given territory. Metadata p
 production, XR and virtualization, the accuracy of Metadata is playing the most important role.
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}
 <!-- ####################################################################### -->
-{{< fo t = "block"
+{{< hw t = "block"
     id   = "block2"
 >}}
 NAB show offering the two hours of show floor tours: “**The Data, Data, Data Tour**” happens twice a day (10-12 and 13-15) on Monday 17 and Tuesday 18 and on Sunday 16 one tour from 10:30 till 12:30. Plus there's the very impressive panel discussion with the same title at the Conference on Monday. We recommend the tour because it will show you why Metarex is important.
@@ -40,4 +40,4 @@ Also there will be several presentations in the open theatres on this theme, suc
 on Tuesday 18th at W1143C Intelligent Content Experimental Zone.
 
 However, the best event we are inviting you to participate in will be MetaRex project meeting at our backer Signiant's booth on the last day of the show Wednesday 19th.  Please come to W1713 to learn about new free software and standardization initiative which will make your life is much easy. **Metadata Resource Express** is coming to NAB 2023!
-{{< /fo >}}
+{{< /hw>}}

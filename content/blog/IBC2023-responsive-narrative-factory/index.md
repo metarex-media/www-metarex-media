@@ -9,7 +9,7 @@ oldtags:    ["project",  "IBC", "RNF", "Infuse"]
 ---
 
 <!-- ####################################################################### -->
-{{< fo t = "block"
+{{< hw t = "block"
   id       = "block1"
   src      = "featured-bruce.png"
   srcOn    = "left"
@@ -27,9 +27,9 @@ We're teaming up with [Infuse Video], the **BBC**, [CuVo] and others to show wha
 * great content
 * customer interaction
 * IBC show guest [Responsive Narrative Factory] and **BBC**
-{{< /fo >}}
+{{< /hw>}}
 <!-- ####################################################################### -->
-{{< fo t = "block"
+{{< hw t = "block"
     id   = "block2"
 >}}
 
@@ -45,9 +45,9 @@ Technical, timeline and demonstration details will appear on our [RNF] page so
 you can follow along and maybe even download the MetaRex code from our [Github Repo.]
 
 
-{{< /fo >}}
+{{< /hw>}}
 <!-- ####################################################################### -->
-{{< fo t = "block"
+{{< hw t = "block"
   id       = "block3"
   src      = "/img/event/ibc2023-rnf-web.png"
   srcOn    = "right"
@@ -69,4 +69,4 @@ The [Responsive Narrative Factory] will be showcased as an [IBC Accelerator] at
 [Github Repo.]:     https://github.com/metarex-media
 [Responsive Narrative Factory]:  https://show.ibc.org/accelerator-media-innovation-programme/accelerator-project-responsive-narrative-factory
 [IBC 2023]:        https://show.ibc.org/
-{{< /fo >}}
+{{< /hw>}}

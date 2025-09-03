@@ -10,7 +10,7 @@ menu:
 ---
 <!-- markdownlint-disable MD033 -->
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "History of a dinosaur"
     src = "/img/dino/mrx-logo-0300.png" 
     class = "ui center aligned olive message"

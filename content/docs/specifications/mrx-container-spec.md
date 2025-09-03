@@ -347,13 +347,13 @@ Metadata" which is further described in this document. As such, the framework is
 referenced in the Preface Set while the track itself is referenced in the
 Material Package (Figure 1)
 
-{{< fo t = "image" 
+{{< hw t = "image" 
     src = "/img/doc/mxf-live-fig-1.png" 
     text = "MXF Live" 
     class = "ui centered large image" 
 />}}
 
-{{< fo t = "caption" 
+{{< hw t = "caption" 
     text = "Linkage of MXF Live DM Track in MXF Header Data" 
     header = "figure" 
 />}}
@@ -379,7 +379,7 @@ is in Section Table 3.
 | 14-15         | Further Classification                  |                   | Distinction within each group   |
 | 16            | Index                                   | `00`              | Index in case of more than one item of the same type, e.g. multiple data streams, or distinction within group. |
 
-{{< fo t = "caption" text = "2 - UL Key Definitions for this Specification (multi-byte values in network order)" header = "table" />}}
+{{< hw t = "caption" text = "2 - UL Key Definitions for this Specification (multi-byte values in network order)" header = "table" />}}
 
 | Item Name                                                                |  UL Key
 |--------------------------------------------------------------------      |-------------------------------------
@@ -393,7 +393,7 @@ is in Section Table 3.
 | MXF Live Primary (Master) Stream Flag                                    |`urn:smpte:ul060e2b34.0101010d.0e170104.03010103`
 | MXF Live Streaming Mode                                                  |`urn:smpte:ul060e2b34.0101010d.0e170104.03010104`
 
-{{< fo t = "caption" text = "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" header = "table" />}}
+{{< hw t = "caption" text = "3 -- Items to be used in the MXF Live Streaming Specific Descriptive Metadata Set" header = "table" />}}
 
 **Note:** These keys are preliminary keys to be used during experimental
 state; they are subject to change without notice.

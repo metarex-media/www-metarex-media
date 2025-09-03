@@ -15,7 +15,7 @@ menu:
 <style>
   span.ui.green.text { color: #73a33d;}
 </style>
-{{< fo t = "banner"	
+{{< hw t = "banner"	
     src = "/img/dino/mrx-splash-color.svg"
     alt = "logo of metarex"
 />}}
@@ -24,7 +24,7 @@ menu:
 
 <!--  ---------------------------------------------------------------------  -->
 
-{{< fo t = "image" 
+{{< hw t = "image" 
     src = "/img/dino/mrx-train-short-0100.png" 
     srcWidth = 0.01 
     alt = "rexy train logo"

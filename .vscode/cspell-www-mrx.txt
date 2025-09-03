@@ -46,6 +46,7 @@ Courgenay
 coverpages
 coverprofile
 Dappname
+Davison
 dbaeumer
 dearmor
 Devlin
@@ -54,6 +55,7 @@ docsy
 Docsy
 dopts
 dpkg
+Driesnack
 eidr
 Eluvio
 embeded
@@ -223,6 +225,7 @@ unclocked
 unstaged
 unwrapper
 upgradedev
+Uren
 USERPROFILE
 utilise
 ux

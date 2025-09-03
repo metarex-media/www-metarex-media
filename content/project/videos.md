@@ -1,7 +1,7 @@
 ---
 type:        docs
 ---
-{{< fo t = "block" 
+{{< hw t = "block" 
     id   = "summary" 
 >}}
 <!-- markdownlint-disable MD025 -->
@@ -30,4 +30,4 @@ type:        docs
 </div>
 
 {{% sitelinks %}}
-{{< /fo >}}
+{{< /hw>}}
