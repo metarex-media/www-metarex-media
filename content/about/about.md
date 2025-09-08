@@ -65,5 +65,5 @@ With {{< metarex >}} it is very similar process, except no physical box or lette
 Visit our [FAQ's][FAQ] page for more information. 
 
 [Collaboration]:   /project/collaboration/index.md
-[FAQ]:  "content/faq/index.md"
+[FAQ]:  /faq/index.md
 <!-----------------------------------------------------------------------  -->

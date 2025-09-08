@@ -55,5 +55,5 @@ MetaRex has successfully completed its first phase and has created a pool of sof
 [03]: {{% relref "/blog/ARRI-Open-Day/index.md" %}}
 
 [GitHub]:  https://github.com/metarex-media
-[Collaboration]:   /project/collaboration/index.md
+[Collaboration]:   /about/collaboration/index.md
 <!-----------------------------------------------------------------------  -->

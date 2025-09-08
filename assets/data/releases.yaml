@@ -6,4 +6,4 @@
 - {version: "1.8.5", date: 2025-07-14, flow: "CG", build: "dev", note: sensible notifications}
 - {version: "1.8.2", date: 2025-07-03, flow: "stage", build: "dev", note: bc build scripts}
 - {version: "1.8.1", date: 2025-06-17, flow: "stage", build: "dev", note: PR build test}
-- {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}
+- {version: "1.8.0", date: 2025-06-06, flow: "stage", build: "dev", note: auto-stage on PR test}`

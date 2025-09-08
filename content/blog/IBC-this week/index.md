@@ -13,17 +13,12 @@ params:
   img: rexyreveal
 ---
 
-**[{{% param backer %}}][web]** is off to this years IBC. She hasn't quite figured out
-selfies yet, but on Sunday afternoon in the IBC2024 [AI Zone][rxydraw] she'll be
+[Rexy][Rex] is off to this years IBC. She hasn't quite figured out selfies yet, but on Sunday afternoon in the IBC2024 [AI Zone][rxydraw] she'll be
 ready for her first public outing!  
 
-Visit our [sponsors and backers][thp] to see the best in Metadata workflows at
-IBC and visit our [website][web], try one of our [demos], or just [contact] us
-to find out about Media Metadata workflows and the free software we're giving
-away to make Media Metadata Flow.
+Visit our [sponsors and backers][thp] to see the best in Metadata workflows at IBC and visit our [website][web], try one of our [demos], or just [contact] us to find out about Media Metadata workflows and the free software we're giving away to make Media Metadata Flow.
 
-<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img
-%}}.jpg" alt = "{{% param img %}}">
+<img  class = "ui centered large bordered rounded image" src = "featured-{{% param img %}}.jpg" alt = "{{% param img %}}">
 
 
 [#IBC2024](https://www.linkedin.com/search/results/all/?keywords=%23IBC2024)
@@ -39,6 +34,8 @@ away to make Media Metadata Flow.
 
 [web]:    https://metarex.media/
 [demos]:    https://metarex.media/app/demos
+
+[Rex]:    /rexy-area/_index.md
 
 [limrx]:   https://uk.linkedin.com/company/metarex-media
 [lirxy]:   https://www.linkedin.com/search/results/all/?keywords=%23ibc2024%20%23metarex%20%23rexy

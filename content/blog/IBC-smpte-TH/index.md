@@ -18,10 +18,7 @@ Many thanks to **[{{% param backer %}}][web]** for their support with the ***Met
 <img  class="ui centered large bordered rounded image" src = "featured-{{% param img
 %}}.png" alt = "{{% param img %}}">
 
-**[{{% param backer %}}][web]** can be found at IBC in the Owners Pavilion,
-located in the RAI [Hall 8 Lobby][meet], at the top of the escalator. The
-**[{{% param backer %}}][web]** Partner Programme Sessions at IBC2024 are free
-to attend and will help you navigate the impacts of technology in our Industry.
+The **[{{% param backer %}}][web]** Partner Programme Sessions at IBC2024 are free to attend and will help you navigate the impacts of technology in our Industry.
 
 * **Saturday, Sept. 14: 14:10 – 15:30 in E102**
   * [The Transformative Impact of AI on the Media Industry][ai]
@@ -30,15 +27,9 @@ to attend and will help you navigate the impacts of technology in our Industry.
 * **Saturday, Sept. 14: 16:30 – 17:15 in E102**
   * [Navigating Guidelines, Policies, and Standards in a Changing Media Landscape][std]
 
-**[{{% param backer %}}][web]** is a global society of more than 5,000 diverse
-and engaged members, including media and creative professionals, media
-technologists, and engineers, all working together to drive the industry
-forward with technical brilliance. Transforming the industry through
-Standard Technology Committees with 800 engineering standards and guidelines
-developed to advance global interoperability of hardware and software.
+**[{{% param backer %}}][web]** is a global society of more than 5,000 diverse and engaged members, including media and creative professionals, media technologists, and engineers, all working together to drive the industry forward with technical brilliance. Transforming the industry through Standard Technology Committees with 800 engineering standards and guidelines developed to advance global interoperability of hardware and software.
 
-For more information and to see all the exciting things **[{{% param backer
-%}}][web]** are working on, [pay them a visit them at IBC][meet].
+For more information and to see all the exciting things **[{{% param backer %}}][web]** are working on, [pay them a visit them at IBC][meet].
 
 [@SMPTE](https://www.linkedin.com/company/smpte/)
 [#smpte](https://www.linkedin.com/search/results/all/?keywords=%23SMPTE)

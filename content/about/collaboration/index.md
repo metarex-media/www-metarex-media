@@ -44,8 +44,8 @@ Without all their support we would not of been able to get to were we are today.
 If you want to collaborate with us, please get in [contact].  We would love to hear from you! 
 
 
-[CM]:  "/blog/coding-for-media/index.md"
-[TH]:   "/blog/IBC2024-treasure-hunt/index.md"
-[01]:   "/blog/mpts2025/index.md"
+[CM]:  /blog/coding-for-media/index.md
+[TH]:   /blog/IBC2024-treasure-hunt/index.md
+[01]:   /blog/mpts2025/index.md
 
 {{% sitelinks %}}
