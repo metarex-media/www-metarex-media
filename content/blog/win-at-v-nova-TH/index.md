@@ -17,7 +17,7 @@ params:
 
 **<p style = "text-align:center;"><span class = "ui purple text">_MetaRex Treasure Hunt 2024 is completed_</span></p>**
 
-Many thanks to all who took part in the [MetaRex Treasure Hunt] at IBC 2024, and to all our Sponsers, Backers, Partners for their amazing support! 
+Many thanks to all who took part in the [MetaRex Treasure Hunt][MT] at IBC 2024, and to all our Sponsers, Backers, Partners for their amazing support! 
 
 A special thanks to V-Nova for hosting and allowing us to announce the winnner on their booth.  
 
@@ -50,4 +50,4 @@ Go to the next blog post to find out who the winner was.....
 [ths]:     https://auth.metarex.media/ui/registration
 [thp]:     /project/treasure-hunt/
 
-[MetaRex Treasure Hunt]: https://metarex.media/project/treasure-hunt/
+[MT]: https://metarex.media/project/treasure-hunt/

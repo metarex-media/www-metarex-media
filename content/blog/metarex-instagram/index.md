@@ -16,10 +16,11 @@ description:  Follow MetaRex on Instagram!
 
 
 
-MetaRex is on **{{% insta %}}**!
+MetaRex is on [*Instagram!*](https://www.instagram.com/metarex.media/) 
 
 Follow us on our Instagram and see the creative side of MetaRex with Rexy, Egg and much more! 
 
 Our Instagram page is run by our Creative Team, [Amber Bardell](https://www.amberbardell.com) and [Simi Zeko,](http://www.simizeko.com) and will have all the latest Rexy artwork, sketches and designs. 
+
 
 
