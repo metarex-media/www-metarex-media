@@ -12,7 +12,7 @@ The Creative Team at MetaRex had been talking about getting a soft toy of [Rexy]
 
 After much research and discussion, the start of the project began in May 2024 and Rexy finally become a living, ‘breathing’ soft toy in August 2024, ready for her big debut at IBC 2024 and to be the winning prize of the {{< metarex >}} [Treasure Hunt]. 
 
-{{< fo t = "image"
+{{< hw t = "image"
     src = "rexy-plane.png"
     srcClass = "ui centered small image"
     alt = "rexy on a plane"
@@ -20,7 +20,7 @@ After much research and discussion, the start of the project began in May 2024 a
 
 Rexy was the main star of the MetaRex Treasure Hunt 2024 and was won by the amazing [Amy Rajonson]. 
 
-{{< fo t = "image"
+{{< hw t = "image"
     src = "rexy-bruce-signing.png"
     srcClass = "ui centered medium image"
     alt = "Bruce autographing a book"

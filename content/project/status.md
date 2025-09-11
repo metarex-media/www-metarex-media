@@ -8,7 +8,7 @@ description: Current Status.
 tags: ["status"]
 ---
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "We're over half way through & on target!"
     src = "/img/dino/mrx-logo-0300.png" 
     class = "ui center aligned olive message"

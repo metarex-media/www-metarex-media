@@ -7,7 +7,7 @@ description: Who is Rexy & why the dinosaur logo?
 
 ---
 <!-- markdownlint-disable MD033 -->
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "Who is Rexy?"
     description = "She's our mascot, and this is her creative story."
     src = "/img/dino/mrx-logo-0300.png"
@@ -54,7 +54,7 @@ Check out Amber and Simi's [first blog post][blog] to hear in their own words ab
 Rexy is such a wonderful character and now has her own backstory, personality,
 and character development.  You can read about Rexy's [backstory][backstory] and follow us on our {{% insta %}} for all the latest artwork.
 
-{{< fo t = "children" />}}
+{{< hw t = "children" />}}
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com

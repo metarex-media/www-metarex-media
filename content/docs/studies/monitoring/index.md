@@ -4,14 +4,14 @@ linkTitle: Live Production Monitoring
 date:     2025-02-24
 ---
 
-{{% fo
+{{< hw
     t = "image"
     src = "monitoring-generic.svg"
     srcClass = "ui fluid image"
     alt = "Generic monitoring flow"
     header = "Figure 1"
     text = "Generic monitoring flow  for a live event"
- /%}}
+ />}}
 
 In a live event there are are many links involved between getting the action
 to the viewers with minimal delay. 4 decades ago, there was only one type of
@@ -31,7 +31,7 @@ resilience across multiple networks and to give the vendors and operators a
 chance to cooperate whilst maintaining control of their own data when needed.
 
 The solution works like this:
-{{< fo
+{{< hw
     t = "block"
     src = "/brand/logo.svg"
     srcClass = "ui fluid image"
@@ -52,7 +52,7 @@ The solution works like this:
 Of the 8 steps, only steps #1 & #8 are custom software for your app. The remaining
 steps are handled by {{<metarex>}}. This means you concentrate on the value-add
 of your metadata, {{<metarex>}} handles the plumbing and waste disposal.
-{{</fo>}}
+{{</hw>}}
 
 ## The processing in more detail
 
@@ -157,13 +157,13 @@ two phases:
 We estimate about 4 weeks of engineering for each phase.
 
 <div class="ui container">
-{{% fo
+{{< hw
    t = "image"
    src = "mrx-worker2.svg"
    srcClass = "ui large centered image"
    alt = "mrx-worker"
    text = "Metarex Worker structure"
    header = "Figure 2"
-/%}}
+/>}}
 </div>
-[reg]: {{% relref "/app/reg/" %}}
+[reg]: /app/reg/

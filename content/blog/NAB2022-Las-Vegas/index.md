@@ -8,7 +8,7 @@ tags:        ["project",  "event"]
 oldtags:     ["project",  "Mr MXF", "IBC"]
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-intelligent-content-icon.webp"
   alt   = "multicoloured cube"
@@ -18,9 +18,9 @@ oldtags:     ["project",  "Mr MXF", "IBC"]
 Intelligent Content was a key theme of the show and the {{< metarex >}} team wandered the show floor expecting to find that all the problems had been solved by existing products and services.
 
 It came as a surprise to find that the world can fill 80% of the world's internet traffic with streams of video and audio, but the metadata transport puzzle was still a piecemeal region-by-region, application-by-application, device-by-device tailored solution.
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "block2"
 >}}
 We proposed the {{< metarex >}} project to gauge interest Specifically we asked:
@@ -30,13 +30,13 @@ We proposed the {{< metarex >}} project to gauge interest Specifically we asked:
 * Would it help if there were a common timing model independent of frame rate and sample rate and timezone?
 * Would it help if you could download tools and apps from Github for free?
 * Would you be prepared to contribute to a fund to make it happen?
-{{< /fo>}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "block3"
   src   = "/img/dino/mrx-logo.svg"
   srcOn = "left"
   alt = "metarex logo"
 >}}
 The answer to all these questions was **_Yes_**, then time to start figuring out how to make it real...
-{{< /fo >}}
+{{< /hw>}}

@@ -26,7 +26,7 @@ MXF-Live was demonstrated at the [ARRI International Broadcast Day
 
 This 2 year project was a pre-cursor to [{{< metarex >}}](https://metarex.media)
 
-{{< fo t = "image-fluid"
+{{< hw t = "image-fluid"
     src  = "international-broadcast-day-demo.jpg"
     text = "2019 International Broadcast Demo Day"
     alt = "a group of people listen to a presentation from Bruce Devlin"
@@ -76,43 +76,43 @@ kind of metadata. See the [MetaRex] website for futher details.
 #### Photos
 
 <div class = "ui tiny images">
-{{< fo t  = "image" 
+{{< hw t  = "image" 
      src  = "mxf-live-team-sm.jpg"
      text = "Team"
      id   =  "#team"
      alt  = "mxf team"
 />}}
 
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "mxf-live-system-sm.jpg"
      text = "System"
      id =  "#system" 
 />}}
 
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "mxf-live-rig-sm.jpg"
      text = "Rig" 
      id =  "#rig"
 />}}
 
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "mxf-live-cgi-sm.jpg"   
      text = "CGI1"
      id = "#cgi1"
 />}}
 
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "mxf-live-cgi2-sm.jpg"  
      text = "CGI2"
      id = "#cgi2"
 />}}
 
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "mxf-live-camera-sm.jpg" 
      text = "Camera" 
      id = "#camera"
 />}}
-{{< fo t = "image" 
+{{< hw t = "image" 
      src = "international-broadcast-day-demo-sm.jpg" 
      text = "Demo"
      id = "#demo"
@@ -121,7 +121,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 
 <a id="team"></a>
 
-{{< fo t = "image-fluid"
+{{< hw t = "image-fluid"
     src  = "featured-mxf-live-team.jpg"
     text = "MXF Live Team"
     alt = "mxf team"
@@ -129,7 +129,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 
 <a id="system" ></a>
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
     src = "mxf-live-system.jpg" 
     text = "MXF Live Demo System"
     alt = "mxf live system"
@@ -138,7 +138,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 <a id="rig" ></a>
 
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
     src = "mxf-live-rig.jpg" 
     text = "MXF Live Demo Rig"
     alt = "mxf live rig"
@@ -147,7 +147,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 <a id="cgi1" ></a>
 
 
-{{< fo t = "image-fluid" 
+{{< hw t = "image-fluid" 
     src = "mxf-live-cgi.jpg" 
     text = "MXF Live CGI Demo"
     alt = "mxf live cgi"
@@ -156,7 +156,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 <a id="cgi2" ></a>
 
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
     src = "mxf-live-cgi2.jpg" 
     text = "MXF Live CGI Demo"
     alt = "mxf live CGI"
@@ -164,7 +164,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 
 <a id="camera" ></a>
 
-{{< fo t = "image-fluid"
+{{< hw t = "image-fluid"
     src  = "mxf-live-camera.jpg"
     text = "MXF Live Demo Camera"
     alt = "mxf camera"
@@ -172,7 +172,7 @@ kind of metadata. See the [MetaRex] website for futher details.
 
 <a id="demo" ></a>
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
   src  = "international-broadcast-day-demo.jpg"
   text = "MXF Live Demo"
   alt = "group photo of the MXF Team"

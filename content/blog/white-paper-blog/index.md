@@ -11,7 +11,7 @@ params:
     linkedin:  true
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-nabshow-2024.png"
   srcOn = "left"
@@ -47,9 +47,9 @@ But how?  Here are our top 10 reasons (there are plenty more!):
 [4]: /backers/
 
 {{% sitelinks %}}
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "why"
   src   = "money.png"
   alt = "image of money"
@@ -70,9 +70,9 @@ someone else's - often because there's not a good description of what the
 metadata is. {{< metarex >}} makes those descriptions readily available and so
 reduces the amount of engineering for metadata interchange and introduces a new monetization opportunity between metadata creators and consumers - _even if the two companies have never met_.
 
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "examples"
 >}}
 
@@ -118,9 +118,9 @@ in lots of effort being wasted just to interchange metadata between systems in
 a reliable format.
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
    id    = "live"
 >}}
 
@@ -194,9 +194,9 @@ and ask _"Sounds like moving a few bytes per frame is pretty easy, isn't it?_" t
 **<span class="ui purple header text">There must be a better way!</span>**
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
    id    = "live"
 >}}
 
@@ -254,9 +254,9 @@ of products available in each segment.
 What I've not included in the numbers is how {{< metarex >}} can give an almost GitHub-like robustness to versioning and updating metadata flow. That's for a future study.
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
    id    = "live"
 >}}
 
@@ -290,4 +290,4 @@ Don't forget to come and see us at NAB 2024 on the [Signiant][1] booth.
 [contact]:  {{< relref "/contact" >}}
 
 {{< sitelinks >}}
-{{< /fo >}}
+{{< /hw>}}

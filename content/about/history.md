@@ -7,7 +7,7 @@ type:        docs
 
 menu:
   main:
-    parent: About
+    parent: Learn
     weight:   100
 
 # Use the block/cover shortcode to have a picture landing page
@@ -15,7 +15,7 @@ menu:
 <style>
   span.ui.green.text { color: #73a33d;}
 </style>
-{{< fo t = "banner"	
+{{< hw t = "banner"	
     src = "/img/dino/mrx-splash-color.svg"
     alt = "logo of metarex"
 />}}
@@ -24,7 +24,7 @@ menu:
 
 <!--  ---------------------------------------------------------------------  -->
 
-{{< fo t = "image" 
+{{< hw t = "image" 
     src = "/img/dino/mrx-train-short-0100.png" 
     srcWidth = 0.01 
     alt = "rexy train logo"
@@ -55,5 +55,5 @@ MetaRex has successfully completed its first phase and has created a pool of sof
 [03]: {{% relref "/blog/ARRI-Open-Day/index.md" %}}
 
 [GitHub]:  https://github.com/metarex-media
-[Collaboration]:   /project/collaboration/index.md
+[Collaboration]:   /about/collaboration/index.md
 <!-----------------------------------------------------------------------  -->

@@ -6,7 +6,7 @@ weight:      50
 description: How does MetaRex work under the hood?
 ---
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "Technical Specifications"
     description = "MetaRex is like a zip file envelope with a timeline... like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
@@ -25,20 +25,14 @@ There's also the easy-access [White Paper blog from 2024][04].
 
 ### The {{< metarex >}} Register
 
-The register converts a `metarexId` e.g. [MRX.123.456.789.reg][id] into a set
-of links where you can find information and services related to that metadata
-type.
+The register converts a `metarexId` e.g. [MRX.123.456.789.reg][id] into a set of links where you can find information and services related to that metadata type.
 
-The specification for the JSON that is returned from a [register query][12]
-has the `metarexId` [MRX.123.456.789.reg][id]. You can use the [web app][10]
-to browse the register or to add your own content (registration required) or
-you can inspect the register using the API [here][11].
+The specification for the JSON that is returned from a [register query][12] has the `metarexId` [MRX.123.456.789.reg][id]. You can use the [web app][10] to browse the register or to add your own content (registration required) or you can inspect the register using the API [here][11].
 
 
 ### The {{< metarex >}} Register API
 
-The register API is generated from an [OpenAPI 3.0 document][d1] that can be
-[viewed as an online document][d2].
+The register API is generated from an [OpenAPI 3.0 document][d1] that can be [viewed as an online document.][d2]
 
 [01]: {{% relref "/docs/specifications/introduction.md" %}}
 [02]: {{% relref "/docs/specifications/mrx-container-spec.md" %}}

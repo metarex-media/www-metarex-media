@@ -15,7 +15,7 @@ menu:
 
 <!--  ---------------------------------------------------------------------  -->
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "MetaRex"
     text = "is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"
@@ -40,7 +40,7 @@ With {{< metarex >}} it is very similar process, except no physical box or lette
 
 <div class="ui center aligned header">{{< metarex >}} Flow Diagram</div>
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
     src = "/img/mrx-flow.png" 
     srcClass = "ui centered large image"
     name = "The MetaRex Flow Diagram 2024" 
@@ -65,5 +65,5 @@ With {{< metarex >}} it is very similar process, except no physical box or lette
 Visit our [FAQ's][FAQ] page for more information. 
 
 [Collaboration]:   /project/collaboration/index.md
-[FAQ]:  "content/faq/index.md"
+[FAQ]:  /faq/index.md
 <!-----------------------------------------------------------------------  -->

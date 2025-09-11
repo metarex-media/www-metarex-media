@@ -11,7 +11,7 @@ params:
     linkedin:  true
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-nab2024-01.jpg"
   alt   = "photo of Las Vegas Sphere which is a smiley face"
@@ -36,7 +36,7 @@ See you all at MPTS in London 15th - 16th May 2024!
 
 [0]: /blog/2024/03/06/2024-03-06-rnf-wins-best-accelerator/
 
-{{< /fo >}}
+{{< /hw>}}
 
 <div class="ui grid">
 <div class="ui center middle aligned stackable eight wide column">

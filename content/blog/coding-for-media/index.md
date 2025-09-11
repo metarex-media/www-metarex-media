@@ -12,7 +12,7 @@ tags:        ["event"]
 
 This brilliant, and cheeky character drawing was created by Anila, Sirine and Yasmin, who took part in the event, [Coding for Media].
 
-{{< fo t = "image"
+{{< hw t = "image"
   id    = "drawing of dinosaur"
   src   = "coding-for-media.png"
   srcClass = "ui fluid image large"

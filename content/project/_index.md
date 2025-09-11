@@ -14,7 +14,7 @@ params:
 ---
 <!-- markdownlint-disable MD033-->
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "MetaRex"
     text = "is like a zip file with a timeline. It's used like an electronic FedEx service."
     src = "/img/dino/mrx-logo-0300.png"

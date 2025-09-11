@@ -17,6 +17,6 @@ Key Points:
 * What's the MetaRex Register
 * How to help
 
-{{< fo t = "include" from = "02-demo-segment.html" />}}
+{{< hw t = "include" from = "02-demo-segment.html" />}}
 {{% sitelinks %}}
 {{% /nab24-demo %}}

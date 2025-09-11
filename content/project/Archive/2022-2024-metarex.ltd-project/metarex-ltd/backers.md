@@ -8,7 +8,7 @@ description: How the Project is Funded.
 tags: ["backers"]
 ---
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "The {{< metarex >}}.media project needs you"
     description = "If you use metadata - [read our white paper blog post](/blog/2024/03/21/2024-03-25-white-paper-blog/)."
     src = "/img/dino/mrx-logo-0300.png"

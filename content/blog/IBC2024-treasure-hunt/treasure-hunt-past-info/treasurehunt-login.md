@@ -8,9 +8,9 @@ url:       "/treasure-hunt/login"
 <!-- markdownlint-disable MD001 MD034 -->
 <div class = "ui center aligned  segment">
 
-{{< fo t = "banner"text = "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!<br><span class='ui blue text'>**Please rescan the qr code**</span> in front of you if you have just signed up." />}}
+{{< hw t = "banner"text = "**<span class='ui red text'>IBC 2024</span>** - Congratulations you've joined **Rexy's** treasure hunt!<br><span class='ui blue text'>**Please rescan the qr code**</span> in front of you if you have just signed up." />}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "opening"
   src   = "/blog/2024/09/12/2024-09-12-rexy-prize-draw/featured-draw.jpg"
   srcOn = "right"
@@ -46,6 +46,6 @@ booth
 </div>
 
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-{{< /fo >}}
+{{< /hw>}}
 
 {{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}

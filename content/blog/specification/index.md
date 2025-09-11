@@ -21,7 +21,7 @@ For further details of the release can be found in the {{< metarex >}}[Docs](htt
 This specification was the impetus for starting the MetaRex project.  We hope to
 repeat the demo on a larger scale with a more generic solution in 2024.
 
-[blog]:         /blog/2019/07/20/mxf-live-at-arri-international-broadcast-day-2019/
+[blog]:         /blog/ARRI-Open-Day/index.md
 [docs section]: /docs/specifications/_index.md
 
 {{< /card/media >}}

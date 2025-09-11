@@ -16,6 +16,6 @@ Key points:
 * Harmonize different AI data files
 * Samples from Graymeta
 
-{{< fo t = "include" from = "04-demo-segment.html" />}}
+{{< hw t = "include" from = "04-demo-segment.html" />}}
 {{% sitelinks %}}
 {{% /nab24-demo %}}

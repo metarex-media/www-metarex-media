@@ -9,13 +9,13 @@ params:
   src: img/mrx-flow.png
 ---
 
-{{< fo t = "block" 
+{{< hw t = "block" 
     id = "gg" 
 />}}
 
 <div class="ui center aligned header">{{< metarex >}} Flow Diagram</div>
 
-{{< fo t = "image-fluid"  
+{{< hw t = "image-fluid"  
     src = "/img/mrx-flow.png" 
     name = "The MetaRex Flow Diagram 2024" 
     id = "showCaption" 
@@ -38,4 +38,4 @@ params:
   * The end user now has access to, potentially, several variants of the metadata
     before they write their first line of code.
 
-{{< /fo >}}
+{{< /hw>}}

@@ -8,7 +8,7 @@ tags:        ["event"]
 oldtags:     ["project",  "Mr MXF", "IBC", "Modulamedia"]
 ---
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "summary"
   src   = "featured-ibc-2022.jpg"
   srcOn = "left"
@@ -19,9 +19,9 @@ An in-person IBC after the long COVID break was both exciting and busy. My 10km 
 It became rapidly clear that business models had changed radically since COVID.
 Many folks were investing in AI technologies to guess at the metadata that gets discarded during productions. More folks were inventing new protocols for their AI metadata because there isn't a standard way to ship metadata on a timeline from where it's made to where it's needed.
 
-{{< /fo >}}
+{{< /hw>}}
 
-{{< fo t = "block" 
+{{< hw t = "block" 
   id    = "block2"
 >}}
 My big take away is that if we run the {{< metarex >}} project with the
@@ -34,7 +34,7 @@ following constraints then it is likely to be a success:
 * Support FFMPEG
 * Support Javascript, Python, C++ and GoLang.
 
-{{< /fo >}}
+{{< /hw>}}
 
 [DPP]:         https://www.thedpp.com/events/leaders-briefing-2022
 [NAB]:         /blog/2022/09/18/2022-09-18-ibc/

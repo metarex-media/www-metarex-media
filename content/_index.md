@@ -12,10 +12,10 @@ date:      2024-08-13
 <!-- | __|  ___   __ _  | |_   _  _   _ _   ___   ___  -->
 <!-- | _|  / -_) / _` | |  _| | || | | '_| / -_) (_-<  -->
 <!-- |_|   \___| \__,_|  \__|  \_,_| |_|   \___| /__/  -->
-
-{{< fo t = "feature-group" >}}
+<!-- ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ -->
+{{< hw t = "feature-group" >}}
   <!--  A feature group can have several feature blocks within it. They should self-close or can have body content -->
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui green segment"         divClass = blockClass
     class      = "ui green message"         msgClass = class
     header     = "Why a Dinosaur?"          name = header
@@ -24,55 +24,55 @@ date:      2024-08-13
     alt        = "metarex logo"
     link       = "rexy/"
   />}}
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui yellow segment"        divClass = blockClass
     class      = "ui yellow message"        msgClass = class
     header     = "What is MetaRex?"         name = header
-    src        = "img/dino-artwork/rexy-what-does-it-do.png"
+    src        = "dino/artwork/rexy-what-does-it-do.png"
     srcClass   = "ui fluid image"
     alt        = "dino stacking a box"
     link       = "/about/about.md"
   />}}
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui red segment"           divClass = blockClass
     class      = "ui red message"           msgClass = class
     header     = "Case Studies"             name = header
-    src        = "img/dino-artwork/rexy-case-study.png"
+    src        = "dino/artwork/rexy-case-study.png"
     srcClass   = "ui fluid image"
     alt        = "dino doing research"
     link       = "docs/studies/"
   />}}
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui blue segment"          divClass = blockClass
     class      = "ui blue message"          msgClass = class
     header     = "Why is it good?"          name = header
-    src        = "img/dino-artwork/rexy-benefits.png"
+    src        = "dino/artwork/rexy-benefits.png"
     alt        = "rexy with microphone"
     link       = "faq/index.md"
   />}}
-  {{< /fo >}}
-{{< fo t = "feature-group" >}}
-  {{< fo t = "feature"
+{{< /hw >}}
+<!-- ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ -->
+{{< hw t = "feature-group" >}}
+  {{< hw t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
     header     = "Sports Production"  
     text       = "Reliability Case Study"  
     src        = "docs/studies/monitoring/monitoring-generic.png"
-    srcClass   = "ui fluid image"
     alt        = "monitoring-generic"
     link       = "docs/studies/monitoring"
   />}}
-  {{< fo t = "feature"
-    blockClass = "ui red segment"         
-    class      = "ui pink message"     
-    header     = "News Ingest"   
-    text       = "VC6 Case Study"            
+  {{< hw t = "feature"
+    blockClass = "ui red segment"
+    class      = "ui pink message"
+    header     = "News Ingest"
+    text       = "VC6 Case Study"
     src        = "img/vc6.png"
       = "ui fluid image"
     alt        = "vc6 logo"
     link       = "https://vc6.metarex.media"
   />}}
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
     header     = "Save Money"
@@ -82,7 +82,7 @@ date:      2024-08-13
     alt        = "monitoring-generic"                                     name = header
     link       = "docs/studies/ai-content-at-rest/"
   />}}
-  {{< fo t = "feature"
+  {{< hw t = "feature"
     blockClass = "ui red segment"
     class      = "ui pink message"
     header     = "Cloud Costs"
@@ -91,40 +91,30 @@ date:      2024-08-13
     alt        = "monitoring-generic"
     link       = "docs/studies/cloud-cost/"
   />}}
-  {{< /fo >}}
-
-{{< fo t = "item-group" >}}
+{{< /hw>}}
+<!-- ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ -->
+{{< hw t = "item-group" >}}
 <!-- ---------------------------------------------------------------------- -->
 <!--   ___   _                             _            -->
 <!--  | _ ) | |  ___   __ _   ___    ___  | |_   __     -->
 <!--  | _ \ | | / _ \ / _` | (_-<   / -_) |  _| / _|    -->
 <!--  |___/ |_| \___/ \__, | /__/   \___|  \__| \__|    -->
 <!--                  |___/                             -->
-{{< fo t = "item-blog-group" count = 4 skip = 3 />}}
+{{< hw t = "item-blog-group" count = 4 skip = 3 />}}
 
-{{< fo t = "item-socials" count = 1 skip = 1 from = "instagram linkedin instagram-mrmxf" />}}
+{{< hw t = "item-socials" count = 1 skip = 1 from = "instagram linkedin instagram-mrmxf" />}}
 
-{{< fo t = "item-include"
+{{< hw t = "item-include"
     from = "/blog/rnf-best-accelerator/index.md"
     src  = "/img/blog/rnf1.jpg"
     alt = "Prize winners"
 />}}
 
-{{< fo t = "item-include"
-    from = "/project/goals/index.md"
+{{< hw
+          t = "item-include"
+       from = "/project/flow-diagram.md"
+        src = "/img/mrx-flow.png"
+        alt = "flow diagram"
 />}}
 
-{{< fo t = "item-include"
-    from = "/project/flow-diagram.md"
-    src = "/img/mrx-flow.png"
-    alt = "flow diagram"
-/>}}
-
-{{< fo t = "item-include"
-    from = "/project/about.md"
-    text = "Our backers helped us get to the stage where we can give away our software to help metadata flow. Meet them here."
-    src = "/img/dino/mrx-logo.svg"
-    alt = "rexy logo"
-/>}}
-
-{{</fo>}}
+{{</hw>}}

@@ -8,9 +8,9 @@ weight:      10
 <!-- markdownlint-disable MD001 MD034 -->
 <div class="ui center aligned  segment">
 
-{{< fo t = "banner" text = "IBC 2024 - Win a cuddly Rexy - join our treasure hunt."/>}}
+{{< hw t = "banner" text = "IBC 2024 - Win a cuddly Rexy - join our treasure hunt."/>}}
 
-{{< fo t = "block"
+{{< hw t = "block"
   id    = "opening"
   src   = "ibc2024.png"
   srcOn = "right"
@@ -52,6 +52,6 @@ Rexy toy on Sunday at 17:00 in the IBC [AI Zone][rxydraw].
 **[Sign up here Now!](https://auth.metarex.media/ui/registration)**
 
 [rxydraw]: https://ibc2024.mapyourshow.com/8_0/floorplan/?st=keyword&hallID=J&sv=V-NOVA&selectedBooth=14.AI03
-{{< /fo >}}
+{{< /hw>}}
 
 {{< markdownifyFile "content/project/treasure-hunt/ibc-list.md" >}}

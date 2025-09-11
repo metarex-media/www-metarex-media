@@ -13,7 +13,7 @@ tags:        ["faq"]
 ---
 <!-- ####################################################################### -->
 
-{{< fo t = "banner"
+{{< hw t = "banner"
     header = "Have a question?"
     text = "MetaRex's FAQ's"
     src = "/img/dino/mrx-logo-0300.png"
