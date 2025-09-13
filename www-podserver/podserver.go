@@ -18,15 +18,16 @@ import (
 
 // the default port to serve data is 8080
 var Port = "8080"
-var urlPrefix="/"
-var mountPath="kodata"
+var urlPrefix = "/"
+var mountPath = "kodata"
 
 func main() {
 	r, _ := gommi.Bare()
 	r.NewFileServer(urlPrefix, mountPath)
 
 	// run the server in a thread
-	slog.Info(fmt.Sprintf("Listening on port %s", Port))
+	addons := ""
+	slog.Info(fmt.Sprintf("PodServer(%s) Listening on port %s", addons, Port))
 	http.ListenAndServe("0.0.0.0:"+Port, r)
 }
 

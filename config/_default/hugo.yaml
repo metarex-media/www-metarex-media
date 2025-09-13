@@ -1,17 +1,15 @@
 # Metarex.media fohuw theme
 
 # cSpell:ignore docsy fortawesome fontawesome webfonts
-title: "MetaRex"
+title:   "MetaRex"
 baseURL: "https://metarex.media"
-theme:
-- fohuw
-contentDir: "content"
+theme:    fohuw
 
 # override publishing to public so that ko can build a lightweight container
-publishDir: kodata
+# www-podserver/go.mod module name becomes the image name in docker hub
+publishDir: www-podserver/kodata
 
 enableRobotsTXT: true
-
 # ----------------------------------------------------------------------------------------------------------------------
 #   __  __          _
 #  |  \/  |  __ _  (_)  _ _      _ __    ___   _ _    _  _

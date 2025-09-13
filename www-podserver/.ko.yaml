@@ -1,0 +1,13 @@
+# .ko.yaml for podserver builds
+#
+# IMPORTANT - ensure that go.mod:module  uses the destination image name
+#
+#   www-podserver/go.mod              module www-metarex-media
+#
+defaultPlatforms:
+  - linux/arm64
+  - linux/amd64
+builds:
+  - id: pod-build               # ID of the build.
+    dir: .
+    main: podserver.go     # path to main package or main.go
