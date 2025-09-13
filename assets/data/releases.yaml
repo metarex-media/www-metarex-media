@@ -1,5 +1,6 @@
 # flow:"CG",   build:"dev"  = auto-add CG updates to staging server
 # flow:"release", build:"prod" = to flag as a production release
+- {version: "1.9.5", date: 2025-09-13, flow: main,  build: prod, note: IBC}
 - {version: "1.9.4", date: 2025-09-11, flow: main,  build: prod, note: IBC}
 - {version: "1.9.3", date: 2025-08-27, flow: BD,    build: dev,  note: grunt}
 - {version: "1.9.2", date: 2025-08-27, flow: CG,    build: dev,  note: sparkle}
