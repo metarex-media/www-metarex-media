@@ -1,4 +1,4 @@
-# --- Hugo fohuw site.Params are all in this yaml -----------------------------------
+# --- Hugo pihuw site.Params are all in this yaml -----------------------------------
 copyright:        Mr MXF Ltd
 privacy_policy:   https://mrmxf.com/privacy/
 contact:          /contact
@@ -72,7 +72,7 @@ github:
   repo: www-metarex-media
   # what branch should the generated site point to e.g. main
   branch: main
-  # path to the content folder relative to project root e.g. sample/fohuw-docs/
+  # path to the content folder relative to project root e.g. sample/pihuw-docs/
   contentParent: 
   # If one of your languages is in "/content" (not /content/de) mark it here
   # this is a workaround because a partial cannot read site.DefaultContentLanguageinSubdir

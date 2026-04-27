@@ -1,9 +1,9 @@
-# Metarex.media fohuw theme
+# Metarex.media pihuw theme
 
 # cSpell:ignore docsy fortawesome fontawesome webfonts
 title:   "MetaRex"
 baseURL: "https://metarex.media"
-theme:    fohuw
+theme:    pihuw
 
 # override publishing to public so that ko can build a lightweight container
 # www-podserver/go.mod module name becomes the image name in docker hub
@@ -64,7 +64,7 @@ menus:
       weight: 110
 
     # - name:       See the IBC Winner
-    #   URL:        /donate/
+    #   URL:       
     #   identifier: cake
     #   pre:
     #   post:       " 🦖"
@@ -95,17 +95,11 @@ menus:
       weight: 110
 
     # - name:       See the IBC Winner
-    #   URL:        /donate/
+    #   URL:        
     #   identifier: cake
     #   pre:
     #   post:       " 🦖"
     #   weight:     110
-    - name: Feed Rexy
-      URL: /donate/
-      identifier: cake
-      pre:
-      post: " 🍰"
-      weight: 110
     - name: Try a demo
       URL: /app/demos/
       identifier: feed
@@ -114,10 +108,10 @@ menus:
       weight: 120
 
   footer:
-    - name: FoHuW
-      identifier: fohuw
+    - name: PiHuW
+      identifier: pihuw
       pre: ✏️
-      URL: https://github.com/mrmxf/fohuw
+      URL: https://github.com/mrmxf/pihuw
     - name: Mr MXF
       identifier: mrmxf
       pre: © 2025
@@ -139,9 +133,9 @@ menus:
 enableGitInfo: true
 
 # --- Taxonomies --------------------------------------------------------------
-# Comment out to enable taxonomies in fohuw
+# Comment out to enable taxonomies in pihuw
 # --- Taxonomies --------------------------------------------------------------
-# Comment out to enable taxonomies in fohuw
+# Comment out to enable taxonomies in pihuw
 # disableKinds: ["taxonomy", "taxonomyTerm"]
 
 # ignore `tmp-` files in /content /data & i*ln

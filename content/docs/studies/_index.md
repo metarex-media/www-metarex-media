@@ -30,8 +30,8 @@ This is <span class = "ui red text">bad</span>!
 Read & enjoy!
 
 If these case studies sound like an issue you are having, then get in [contact] with us and we will be happy to discuss a tailored solution to your precise needs, using the free software.
-[01]:   /docs/specifications/introduction/"
+[01]:   /docs/specifications/introduction/
 [02]:   /docs/specifications/mrx-container-spec/
 [04]:   /blog/white-paper-blog/
 
-[contact]: "/contact"
+[contact]: /contact

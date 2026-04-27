@@ -1,0 +1,85 @@
+{{/*
+    Shortcode to create a card with media on the left. The shortcode can be used
+    multiple times on a page resulting in ids splash0, splash1 etc
+
+    Usage:
+      {{% card/left
+           mediaUrl   = "vid.mp4"
+           mediaOn    = "left"
+           widthFloat = 0.2            # between 0.1 & 1
+           title      = "Some markdown"
+           extra      = "Date or annotation or blank"
+           id         = "splash"
+      %}}
+      Markdown Text to be rendereed
+      {{% /card/media %}}
+*/}}
+{{ $media     := .Get "mediaUrl"                                              }}
+{{ $mediaOn   := .Get "mediaOn"                                               }}
+{{ $mediaCount :=  "eight wide"                                               }}
+{{ $textCount  :=  "eight wide"                                               }}
+{{ $slice := slice "zero wide" "one wide" "two wide" "three wide" "four wide" "five wide" "six wide" "seven wide" "eight wide" "nine wide" "ten wide" "eleven wide" "twelve wide" "thirteen wide" "fourteen wide" "fifteen wide" }}
+{{ if .Get "widthFloat" }}
+{{   $type := printf "%T" (.Get "widthFloat" )               }}
+{{   if eq $type "float64"                                   }}
+{{   $r := math.Round ( mul 16.0 (.Get "widthFloat" ) )      }}
+{{   $r = math.Min 15 ( math.Max 1 $r )     | int            }}
+{{   $mediaCount = index  $slice $r                          }}
+{{   $textCount =  index  $slice ( sub 16 $r  )              }}
+{{   end }}
+{{ else }}
+{{ end }}
+{{ $title     := .Get "title"                                                 }}
+{{ $credit    := .Get "credit"                                                }}
+{{ $extra     := .Get "extra"                                                 }}
+{{ $col_id    := .Get "color" | default "dark"                                }}
+{{ $id        := .Get "id"                                                    }}
+{{ $ext       := path.Ext $media                                              }}
+{{ $mediaIs   := cond (eq $ext ".mp4") "video" "image"                        }}
+<a href="{{ $id }}{{ .Ordinal }}"></a>
+<div class="td-box--{{ .Ordinal }}" style="margin-left:-15px;margin-right:-15px;">
+  <section class="container">
+    <div class="ui stackable two column grid">
+      <div class="row">
+{{ if eq $mediaOn "left"                                                      }}
+        <div class="{{$mediaCount}} column">
+          {{ if eq $mediaIs "video"}}
+          <video class="ui image" autoplay loop>
+            <source src="/meeja/mrx-rexy-nab-2023.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {{ else}}
+          <img class="ui image" src="{{ $media }}" />
+          {{end}}
+        </div>
+{{end}}
+        <div class="{{$textCount}} column">
+          <div class="ui fluid card">
+            <div class="content">
+              <div class="header">{{ $title }}</div>
+              <div class="meta">
+                <span class="category"></span>{{ $extra }}</span>
+              </div>
+              <div class="description">
+                {{ .Inner | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+{{ if ne $mediaOn "left"                                                      }}
+        <div class="{{$mediaCount}} column">
+          {{ if eq $mediaIs "video"}}
+          <video class="ui image" autoplay loop>
+            <source src="/meeja/mrx-rexy-nab-2023.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {{ else}}
+          <img class="ui image" src="{{ $media }}" />
+          {{end}}
+        </div>
+{{end}}
+      </div>
+    </div>
+  </section>
+</div>

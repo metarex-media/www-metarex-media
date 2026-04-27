@@ -1,17 +1,17 @@
-# fohuw theme
+# pihuw theme
 # hugo module configuration
 
-# CLI upgrade to the latest theme:   hugo mod get github.com/mrmxf/fohuw@latest
+# CLI upgrade to the latest theme:   hugo mod get github.com/mrmxf/pihuw@latest
 
 hugoVersion:
   extended: true
-  min: v0.148.0
+  min: v0.159.0
 
 imports:
-  - path: github.com/mrmxf/fohuw
+  - path: github.com/mrmxf/pihuw
     disable: false
 # uncomment line below for temporary local development of module
-# replacements: "github.com/mrmxf/fohuw->../../../0_mrmxf/fohuw"
+# replacements: "github.com/mrmxf/pihuw->../../0_mrmxf/pihuw"
 
 mounts:
   - disableWatch: false

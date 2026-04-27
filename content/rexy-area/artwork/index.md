@@ -7,42 +7,28 @@ tags:        ["rexy", "backstory"]
 ---
 
 
-Here is a full list of all the illustrations, drawings and videos of Rexy and Egg that has been created by our amazing and incredibly talented, **MetaRex Creative Team**, [Amber][AB] and [Simi][SZ]. 
-
-If you like their work, please think about supporting them!  Your support will mean a lot and you can do this by follow them on social media or donating on their [Feed Rexy][donate] page.  🍰 🦖   
-For every little bit of support, the **MetaRex Creative Team** really do appreciate it!
-
-
+Here is a full list of all the illustrations, drawings and videos of Rexy and Egg that has been created by our amazing and incredibly talented, **MetaRex Creative Team**, _**[Amber][AB]**_ and _**[Simi][SZ]**_. 
 
 ### Rexy Style Guide
 
-For the detailed version of the MetaRex's logo and colour palette, see our [Style Guide][SG] page.  
+For the detailed version of the MetaRex's logo and colour palette, see our _**[Style Guide][SG]**_ page.  
 
 ### Rexy Artwork
 
 
-<div class="ui grid">
-  <div class="five column row">
-    <div class="column">
-      <img src="/img/dino/donate-feed-rexy-cake.png">
-      <img src="/img/dino/dino-artwork/rexy-2.png">
-    </div>
-    <div class="column">
-      <img src="/img/dino/donate-rexy-coffee-cup.png">
-      <img src="/img/dino/dino-artwork/rexy-3.png">
-    </div>
-    <div class="column">
-      <img src="/img/dino/rexy-benefits.png">
-      <img src="/img/dino/mrx-logo-0800.jpg">
-    </div>
-    <div class="column">
-      <img src="/img/dino/rexy-case-study.png">
-    </div>
-    <div class="column">
-      <img src="/img/dino/rexy-what-does-it-do.png">
-    </div>
-</div>
 
+{{<hw t = "feature-group">}}
+
+{{<hw t = "feature" src = "/rexy-area/artwork/feed-rexy-cake.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/rexy-area/artwork/rexy-coffee-cup.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/dino/artwork/rexy-2.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/assets/dino/artwork/rexy-3.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/dino/artwork/rexy-benefits.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/dino/artwork/rexy-case-study.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/dino/artwork/rexy-christmas.png" srcClass = "full half-800"/>}}
+{{<hw t = "feature" src = "/dino/artwork/rexy-what-does-it-do.png" srcClass = "full half-800"/>}}
+
+{{</hw >}}
 
 ### Rexy Videos 
 
@@ -99,5 +85,4 @@ For the detailed version of the MetaRex's logo and colour palette, see our [Styl
 
 [AB]:      https://amberbardell.com
 [SZ]:      https://simizeko.com
-[donate]:  {{% relref "/donate/index.md" %}}
 [SG]:  {{% relref "/rexy/style-guide/style-guide.md" %}}

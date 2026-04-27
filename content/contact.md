@@ -1,11 +1,10 @@
 ---
-title: Contact - Join the project!
-linkTitle: Contact
+title: Have a question?  Or just want to say hi?
 date: 2023-07-25
 description: Share some metadata with us.
 menu:
   main:
-    name: Contact form
+    name: Want to get in touch?
     parent: Contact
     weight: 10
 

@@ -68,7 +68,7 @@ hugo:
         npm i || true
       fi
     # Hugo fails unexpectedly if the theme folder does not exist.
-    - mkdir -p themes/fohuw
+    - mkdir -p themes/pihuw
     - clog Check build
     # Build
     - hugo mod get && hugo --gc --minify

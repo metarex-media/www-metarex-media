@@ -77,8 +77,8 @@ has the `metarexId` [MRX.123.456.789.reg][id]. You can use the [web app][rux]
 to browse the register or to add your own content (registration required) or
 you can inspect the register using the API [here][reg].
 
-[01]: /docs/specifications/introduction/"
-[02]: /docs/specifications/mrx-container-spec/"
+[01]: /docs/specifications/introduction/
+[02]: /docs/specifications/mrx-container-spec/
 [03]: https://github.com/metarex-media/mrx-container/issues
 [04]: /blog/white-paper-blog
 

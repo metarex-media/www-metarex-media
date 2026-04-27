@@ -8,6 +8,4 @@ tags:
 oldtags:    ["docs", "project", "reference"]
 ---
 
-{{% pageinfo %}}
-Administrative Reference Documents for the project.
-{{% /pageinfo %}}
+{{< hw t = "banner" >}}Administrative Reference Documents for the project.{{< /hw >}}

@@ -6,7 +6,11 @@ date:        2024-09-16
 description: "Many thanks to everyone who took part!"
 author:      MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:        ["collaborations",  "event"]
-oldtags:    ["project",  "backers"]
+summary: |
+  We have a winner!! Congratulations to Amy from France Télévision on winning a cuddly **Rexy** in our Treasure Hunt at
+  IBC 2024. 
+  
+  Many thanks to all our supporters and everyone who took part! 
 params:
   publish:
     linkedin:  true
@@ -19,7 +23,6 @@ params:
 **<p style = "text-align:center;"><span class = "ui red text">Rexy's 2024 Treasure Hunt is done!</span></p>**
 
 We have a **[{{% param winner %}}](https://www.linkedin.com/posts/metarex-media_rexy-treasurehunt-ibc2024-activity-7241828285431648260-f6gx)**!
-
 
 <img  class="ui centered medium image" src = "winner-of-rexy.png" alt = "{{% param img %}}">
 

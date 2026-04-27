@@ -31,8 +31,6 @@ follow.
 
 {{< /hw >}}
 
-</div>
-</div>
 
 {{< hw t = "block"
   id    = "why"
