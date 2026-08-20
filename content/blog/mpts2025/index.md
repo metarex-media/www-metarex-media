@@ -6,13 +6,15 @@ date:         2025-05-16
 description:  MetaRex at the Media Production Show 2025
 author:       MetaRex [@in](https://www.linkedin.com/company/metarex-media)
 tags:         ["event"]
+summary: |
+  We has a superbly fun session at MPTS2025 where Bruce hosted that Game Show _"Have I Got Standards For You"_.
+  The contestants aced the questions and a great learning journey was had by all. Thank you SMPTE & MPTS.
 ---
 
-{{< hw t = "image"
+{{< hw t = "block"
   id    = "Rexy at MPTS"
   src   = "/mpts2025/rexy-mpts.png"
-  srcClass = "ui fluid image"
-       alt = "MPTS session panelists"
+  alt = "MPTS session panelists"
 />}}
 
 This year's **Media Production and Technology Show** took place on the 14th and 15th of May 2025, at [Olympia] in

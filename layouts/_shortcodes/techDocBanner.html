@@ -1,0 +1,18 @@
+{{/* Requires certain params to exist */}}
+{{- $colour := .Get 0 | default "grey" -}}
+{{- $title := .Page.Param "docTitle" -}}
+{{- $date := .Page.Param "date" -}}
+{{- $version := .Page.Param "version" -}}
+{{- $author := .Page.Param "author" -}}
+{{ if not $title }}{{errorf "Page Param docTitle Missing."}}{{end}}
+{{ if not $date }}{{errorf " Param date Missing."}}{{end}}
+{{ if not $version }}{{errorf " Param version Missing."}}{{end}}
+{{ if not $author }}{{errorf " Param author Missing."}}{{end}}
+{{- $timeValue := .Page.Param "date" | time.AsTime -}}
+<div class="ui {{$colour}} message">
+  <h1 class="ui header">{{$title}}</h1>
+  <a id="version"></a>
+  <div class="ui {{$colour}} label"><i class="code branch icon"></i>{{$version}}</div>
+  <div class="ui {{$colour}} label"><i class="calendar icon"></i>{{time.Format "2006-01-02" $timeValue}}</div>
+  <div class="ui {{$colour}} label"><i class="user icon"></i>{{$author}}</div>
+</div>

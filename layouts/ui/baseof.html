@@ -7,7 +7,7 @@
 </head>
 
 {{- $bodyClass := ""}}
-{{- if isset .Page.Params.ui "bodyClass" }}{{ $bodyClass = printf "class=\"%s\"" .Page.Params.ui.bodyClass }}{{ end }}
+{{- with .Page.Params.ui }}{{ if isset . "bodyClass" }}{{ $bodyClass = printf "class=\"%s\"" .bodyClass }}{{ end }}{{ end }}
 <body {{$bodyClass | safeHTMLAttr}}>
   <div class = "ui wide container">
     <header>

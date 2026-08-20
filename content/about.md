@@ -34,7 +34,7 @@ menu:
 
 ### A (very) brief history of MetaRex
 
-The {{< metarex >}} project started back in 2022. We had a small board of members which initially create the Gold Teir Backers and led the structure and health of the company.
+The {{< metarex >}} project started back in 2022. We had a small board of members which initially create the Gold Tier Backers and led the structure and health of the company.
 At the end of 2024, the board was dissolved.
 
 The project was completely funded by Backers.  We had three tiers, **Gold, Sliver and Regular** and each tier contributed towards to MetaRex project.

@@ -8,7 +8,7 @@ This is a Hugo-based static website for metarex.media. The project uses clog for
 
 ```bash
 hugo mod get                        # update all dependencies
-hugo mod get github.com/mrmxf/fohuw # update theme
+hugo mod get github.com/mrmxf/pihuw # update theme
 hugo server                         # basic interactive development
 clog watch                          # Watch mode with all drafts/future content
 clog build                          # production build, docker & tag
@@ -44,7 +44,7 @@ This is a multi-component website ecosystem:
 
 ### Technology Stack
 
-- **Hugo**: Static site generator with fohuw theme
+- **Hugo**: Static site generator with pihuw theme
 - **clog**: Cross-platform script management and build automation
 - **Go**: Backend server (podserver.go) for container serving
 - **ko.build**: Container image building

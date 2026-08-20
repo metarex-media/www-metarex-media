@@ -3,7 +3,7 @@
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmetarex-media%2Fwww-metarex-media%2Frefs%2Fheads%2Fmain%2Fassets%2Fdata%2Freleases.yaml&query=%24.%5B0%5D.version&logo=github&label=https%3A%2F%2Fmetarex.media&color=%23B5D490)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fmetarexmedia%2Fwww-metarex-media%2F&query=%24.last_updated&logo=docker&label=built%20on&color=c971a4)
 <!-- CLOG-BADGE-END -->
-The [metarex.media] website built with [Hugo] using the [fohuw] theme and
+The [metarex.media] website built with [Hugo] using the [pihuw] theme and
 served inside a container using a lightweight golang server to a web proxy. The
 end result is a static website that can sit on an S3 bucket, USB stick or
 similar and runs just fine without a database or high power server.
@@ -85,7 +85,7 @@ start "http://localhost:12345"
 [metarex.media]:     https://metarex.media
 [docker]:            https://docker.com
 [clog]:              https://github.com/mrmxf/clog
-[fohuw]:             https://github.com/mrmxf/fohuw
+[pihuw]:             https://github.com/mrmxf/pihuw
 [ww]:                https://github.com/metarex-media/www-metarex-media
 [de]:                https://github.com/metarex-media/spa-mrx-demos
 [ds]:                https://gitlab.com/mm-eng/mrx-elt-first-demo

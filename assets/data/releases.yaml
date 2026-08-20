@@ -1,5 +1,10 @@
 # flow:"CG",   build:"dev"  = auto-add CG updates to staging server
 # flow:"release", build:"prod" = to flag as a production release
+- {version: "1.9.2", date: 2026-08-20, flow: "BD", build: "dev", note: pihuw v0.4.5, hook migration, build warnings cleared}
+- {version: "1.9.1", date: 2026-04-08, flow: "BD", build: "dev", note: upgrade podeserver}
+- {version: "1.9.0", date: 2026-04-03, flow: "BD", build: "dev", note: pihuw theme}
+- {version: "1.8.8", date: 2025-10-11, flow: "CG", build: "dev", note: updates}
+- {version: "1.8.7", date: 2025-10-03, flow: "CG", build: "dev", note: build-serve}
 - {version: "1.8.6", date: 2025-10-01, flow: "main", build: "prod", note: pitch}
 - {version: "1.8.5", date: 2025-07-14, flow: "main", build: "prod", note: sensible notifications}
 - {version: "1.8.2", date: 2025-07-03, flow: "stage", build: "dev", note: bc build scripts}

@@ -3,6 +3,7 @@
 
 # ignore synthesised outputs
 www-podserver/kodata
+kodata
 public/
 resources/
 static/r

@@ -7,7 +7,7 @@ menu:
   main:
     name:   Book a meeting
     parent: Contact
-    weight: 09
+    weight: 9
 
 
 url:         "/meet/"
